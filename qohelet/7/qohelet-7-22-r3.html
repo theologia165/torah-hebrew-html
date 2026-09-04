@@ -1,0 +1,30 @@
+<!doctype html><html lang="he"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>コヘレト7:22 対話型ヘブライ語</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;background:#fff;color:#12233f;font-family:"Noto Sans Hebrew","Ezra SIL","Times New Roman",serif}
+body{padding:34px 12px 72px;overflow-x:hidden;min-height:220px}
+.verse{direction:rtl;text-align:center;font-size:46px;line-height:1.45}
+.word{display:inline-flex;flex-direction:column;align-items:center;vertical-align:top;margin:0 2px 10px}
+.tok{display:inline-block;cursor:pointer;border-radius:6px;padding:1px 3px;outline:none;line-height:1.25;white-space:nowrap}
+.tok:hover,.tok:focus,.tok.active{background:#eef4ff}
+.gloss{direction:ltr;font-family:system-ui,sans-serif;font-size:12px;line-height:1.25;color:#596579;margin-top:3px;max-width:125px;text-align:center}
+.punct{display:inline-block;vertical-align:top;line-height:1.25;margin:1px -2px 0;font-size:46px}
+.popup{position:fixed;display:none;direction:ltr;text-align:left;width:min(360px,calc(100vw - 16px));max-height:calc(100vh - 16px);overflow:auto;background:#fff;color:#15243b;border:1px solid #d7dfeb;border-radius:10px;box-shadow:0 8px 28px #0003;padding:12px 14px;z-index:9999;font-family:system-ui,sans-serif;font-size:14px;line-height:1.55}
+.popup.open{display:block}.popup b{color:#163a70}.popup .lemma{font-family:"Noto Sans Hebrew","Ezra SIL","Times New Roman",serif;font-size:1.3em}
+.src{margin-top:22px;text-align:center;font:12px/1.4 system-ui,sans-serif;color:#667085}
+@media(max-width:600px){.verse,.punct{font-size:44px}body{padding-left:8px;padding-right:8px}}
+</style></head><body><div class="verse"><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='כִּי' data-pos='接続詞' data-morph='接続詞'>כִּ֛י</span><span class='gloss'>なぜなら</span></span><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='גַּם' data-pos='副詞' data-morph='副詞'>גַּם</span><span class='gloss'>また</span></span><span class='punct'>־</span><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='פַּעַם' data-pos='名詞' data-morph='名詞・女性・複数・絶対形'>פְּעָמִ֥ים</span><span class='gloss'>幾度も</span></span><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='רַב' data-pos='形容詞' data-morph='形容詞・女性・複数・絶対形'>רַבּ֖וֹת</span><span class='gloss'>多く</span></span><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='יָדַע' data-pos='動詞' data-morph='動詞・カル・完了形・3人称・男性・単数'>יָדַ֣ע</span><span class='gloss'>知っている</span></span><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='לֵב' data-pos='代名詞' data-morph='名詞・男性・単数・連語形＋接尾代名詞・2人称・男性・単数'>לִבֶּ֑ךָ</span><span class='gloss'>あなたの心は</span></span><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='אֲשֶׁר' data-pos='関係詞' data-morph='関係詞'>אֲשֶׁ֥ר</span><span class='gloss'>～ということを</span></span><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='גַּם' data-pos='副詞' data-morph='副詞'>גַּם</span><span class='gloss'>また</span></span><span class='punct'>־</span><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='אַתָּה' data-pos='代名詞' data-morph='人称代名詞・2人称・男性・単数'>אַתָּ֖ה</span><span class='gloss'>あなたも</span></span><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='קָלַל' data-pos='動詞' data-morph='動詞・ピエル・完了形・2人称・男性・単数'>קִלַּ֥לְתָּ</span><span class='gloss'>呪った</span></span><span class='word'><span class='tok' tabindex='0' role='button' aria-label='語彙・文法情報' data-lemma='אַחֵר' data-pos='形容詞' data-morph='形容詞・男性・複数・絶対形'>אֲחֵרִֽים</span><span class='gloss'>他の人々を</span></span><span class='punct'>׃</span></div><div id="popup" class="popup" role="dialog" aria-live="polite"></div><div class="src">Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0</div>
+<script>
+const popup=document.getElementById('popup');let pinned=null,current=null;
+function hide(force=false){if(!force&&pinned)return;popup.classList.remove('open');if(current)current.classList.remove('active');current=null}
+function place(t){const r=t.getBoundingClientRect(),q=popup.getBoundingClientRect();let x=Math.max(8,Math.min(r.left+r.width/2-q.width/2,innerWidth-q.width-8));let y=r.bottom+8;if(y+q.height>innerHeight-8)y=r.top-q.height-8;y=Math.max(8,Math.min(y,innerHeight-q.height-8));popup.style.left=x+'px';popup.style.top=y+'px'}
+function show(t){if(current&&current!==t)current.classList.remove('active');current=t;t.classList.add('active');popup.innerHTML='<b>lemma：</b><span class="lemma" dir="rtl">'+t.dataset.lemma+'</span><br><b>品詞：</b>'+t.dataset.pos+'<br><b>形態：</b>'+t.dataset.morph;popup.classList.add('open');requestAnimationFrame(()=>place(t))}
+document.querySelectorAll('.tok').forEach(t=>{
+ t.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&!pinned)show(t)});
+ t.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'&&!pinned)hide(true)});
+ t.addEventListener('focus',()=>{if(!pinned)show(t)});
+ t.addEventListener('blur',()=>{if(!pinned)hide(true)});
+ t.addEventListener('click',e=>{e.stopPropagation();if(pinned===t){pinned=null;hide(true)}else{pinned=t;show(t)}});
+});
+document.addEventListener('click',e=>{if(!e.target.closest('.tok')){pinned=null;hide(true)}});
+addEventListener('resize',()=>{pinned=null;hide(true)});
+</script></body></html>
