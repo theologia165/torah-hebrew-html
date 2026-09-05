@@ -39,15 +39,21 @@ def main() -> None:
         fail(f"verse range mismatch: expected {expected}, got {actual}")
 
     for verse in data["verses"]:
-        surfaces = [w["surface"] for w in verse["words"]]
-        if len(surfaces) != len(set(surfaces)):
-            print(f"WARN: verse {verse['verse']} contains repeated surface forms; this is allowed")
         if not all(w["gloss"].strip() for w in verse["words"]):
             fail(f"verse {verse['verse']} contains an empty gloss")
+        reconstructed = "".join(w["surface"] + w["separator_after"] for w in verse["words"])
+        if reconstructed != verse["hebrew"]:
+            fail(
+                f"verse {verse['verse']} WLC reconstruction mismatch\n"
+                f"MASTER: {verse['hebrew']}\n"
+                f"TOKENS: {reconstructed}"
+            )
+        if verse["words"][-1]["separator_after"] != "׃":
+            fail(f"verse {verse['verse']} must end with sof pasuq in separator_after")
 
     print(
         f"PASS: schema=2.0 sequence={data['sequence']} passage={p['display']} "
-        f"verses={len(data['verses'])}"
+        f"verses={len(data['verses'])} exact_wlc_reconstruction=PASS"
     )
 
 
