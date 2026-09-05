@@ -55,6 +55,16 @@ def detailed_toggle(text):
     return {"object": "block", "type": "toggle", "toggle": {"rich_text": rt("詳しい解説"), "children": detailed_blocks(text)}}
 
 
+def rich_text_plain(items):
+    return "".join(x.get("plain_text", "") for x in items or [])
+
+
+def block_plain_text(block):
+    t = block.get("type")
+    payload = block.get(t, {}) if t else {}
+    return rich_text_plain(payload.get("rich_text", []))
+
+
 def req(method, path, token, **kwargs):
     headers = kwargs.pop("headers", {})
     headers.update({"Authorization": f"Bearer {token}", "Notion-Version": NOTION_VERSION})
@@ -199,12 +209,19 @@ def main():
     got = fetch_children(page_id, token)
     embeds = [b for b in got if b.get("type") == "embed"]
     audios = [b.get("audio", {}).get("external", {}).get("url") for b in got if b.get("type") == "audio"]
-    toggles = [b for b in got if b.get("type") == "toggle" and "詳しい解説" in "".join(x.get("plain_text", "") for x in b.get("toggle", {}).get("rich_text", []))]
+    toggles = [b for b in got if b.get("type") == "toggle" and "詳しい解説" in block_plain_text(b)]
     toggle_children_ok = True
+    devotional_toggle_count = 0
+    devotional_missing_toggle_ids = []
     for t in toggles:
-        if not fetch_children(t["id"], token):
+        kids = fetch_children(t["id"], token)
+        if not kids:
             toggle_children_ok = False
-            break
+        devotional_heads = [k for k in kids if k.get("type") in ("heading_1","heading_2","heading_3") and block_plain_text(k) == "デボーショナルな受けとめ"]
+        if len(devotional_heads) == 1:
+            devotional_toggle_count += 1
+        else:
+            devotional_missing_toggle_ids.append(t["id"])
     embed_urls = [b.get("embed", {}).get("url") for b in embeds]
     missing_fallback = [u for u in fallback_urls if u not in embed_urls]
     missing_audio = [u for u in audio_urls if u not in audios]
@@ -221,12 +238,22 @@ def main():
         "audio_count": len(audios),
         "toggle_count": len(toggles),
         "toggle_children_ok": toggle_children_ok,
+        "devotional_toggle_count": devotional_toggle_count,
+        "devotional_missing_toggle_ids": devotional_missing_toggle_ids,
         "missing_fallback_html": missing_fallback,
         "missing_audio": missing_audio,
         "route_manifest": f"ver2/state/{seq}-notion-html-route.json",
         "pages_manifest": f"ver2/state/{seq}-pages-map.json" if fallback_verses else None,
     })
-    ok = len(embeds) == len(d["verses"]) and not missing_fallback and not missing_audio and len(toggles) == len(d["verses"]) and toggle_children_ok
+    ok = (
+        len(embeds) == len(d["verses"])
+        and not missing_fallback
+        and not missing_audio
+        and len(toggles) == len(d["verses"])
+        and toggle_children_ok
+        and devotional_toggle_count == len(d["verses"])
+        and not devotional_missing_toggle_ids
+    )
     state["status"] = "PASS" if ok else "FAIL_VERIFY"
     state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(state, ensure_ascii=False))
