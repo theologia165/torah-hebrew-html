@@ -4,6 +4,7 @@ import re
 import subprocess
 import sys
 import urllib.request
+import urllib.parse
 from pathlib import Path
 
 POCKETTORAH_SHA = "8a23287221dd535966ee9914de9a03e71769a469"
@@ -57,27 +58,17 @@ def detect_silences(path):
 
 
 def boundary_meta(candidate, silences):
-    # Deterministic C-layer rule: PocketTorah word onset remains the actual
-    # shared boundary. Signal analysis may annotate nearby pauses, but may not
-    # shift a boundary earlier/later because completion of the prior word and
-    # absence of the next verse onset require MODEL_AUDIO QA.
     nearby = []
     for st, en in silences:
         if en < candidate - SIGNAL_WINDOW or st > candidate + SIGNAL_WINDOW:
             continue
         nearby.append((min(abs(candidate-st), abs(candidate-en)), st, en))
-    rec = {
-        "candidate": candidate,
-        "refined": candidate,
-        "method": "label_onset_model_pending"
-    }
+    rec = {"candidate": candidate, "refined": candidate, "method": "label_onset_model_pending"}
     if nearby:
         _, st, en = min(nearby, key=lambda x: x[0])
-        rec["signal"] = {
-            "nearest_silence_start": st,
-            "nearest_silence_end": en,
-            "distance_to_silence_end": candidate - en
-        }
+        rec["signal"] = {"nearest_silence_start": st,
+                         "nearest_silence_end": en,
+                         "distance_to_silence_end": candidate - en}
     return rec
 
 
@@ -94,12 +85,13 @@ def resolve_source(data):
         fail(f"PocketTorah aliyah mapping expected 1 match for {begin}-{end}, got {matches}")
     parsha, num = matches[0]
     base = f"{parsha}-{num}"
+    safe_base = urllib.parse.quote(base, safe="")
     return {
         "parsha": parsha,
         "aliyah": num,
         "base": base,
-        "audio_url": f"{BASE_RAW}/data/audio/{base}.mp3",
-        "labels_url": f"{BASE_RAW}/data/torah/labels/{base}.txt"
+        "audio_url": f"{BASE_RAW}/data/audio/{safe_base}.mp3",
+        "labels_url": f"{BASE_RAW}/data/torah/labels/{safe_base}.txt"
     }
 
 
