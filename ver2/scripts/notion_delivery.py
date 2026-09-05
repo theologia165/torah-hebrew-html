@@ -63,17 +63,28 @@ def find_existing_child(parent, wanted_title, token):
         if not r.get("has_more"): return None
         cursor=r.get("next_cursor")
 
+def load_pages_map(seq):
+    path=Path(f"ver2/state/{seq}-pages-map.json")
+    if not path.exists():
+        raise RuntimeError(f"Pages manifest missing: {path}")
+    data=json.loads(path.read_text(encoding="utf-8"))
+    return {int(e["verse"]):e["url"] for e in data.get("entries",[])}
+
 def main():
     if len(sys.argv)!=2: raise SystemExit("usage: notion_delivery.py ver2/published/NNN/current.enriched.json")
     d=json.loads(Path(sys.argv[1]).read_text(encoding="utf-8")); seq=d["sequence"]
     token=os.getenv("NOTION_TOKEN","").strip(); parent=os.getenv("NOTION_PARENT_PAGE_ID","").strip()
-    pages_base=os.getenv("PAGES_BASE_URL","https://theologia165.github.io/torah-hebrew-html").rstrip("/")
     repo=os.getenv("GITHUB_REPOSITORY","theologia165/torah-hebrew-html"); branch=os.getenv("VER2_BRANCH","asaichi-torah-ver2")
     state_path=Path(f"ver2/state/{seq}-notion-delivery.json"); state_path.parent.mkdir(parents=True,exist_ok=True)
     state={"sequence":seq,"owner":"GITHUB_ACTIONS","notion_version":NOTION_VERSION,"status":"PENDING","html_mode":"GITHUB_PAGES","page_id":None,"page_url":None,"errors":[]}
     if not token or not parent:
         state["status"]="BLOCKED_MISSING_NOTION_SECRET"; state["errors"].append("NOTION_TOKEN and/or NOTION_PARENT_PAGE_ID is not configured")
         state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2),encoding="utf-8"); print(json.dumps(state,ensure_ascii=False)); return 3
+
+    pages_map=load_pages_map(seq)
+    wanted_verses={int(v["verse"]) for v in d["verses"]}
+    if set(pages_map) != wanted_verses:
+        raise RuntimeError(f"Pages manifest verse mismatch: expected={sorted(wanted_verses)} actual={sorted(pages_map)}")
 
     wanted_title=title_for(d); existing=find_existing_child(parent,wanted_title,token)
     if existing and os.getenv("NOTION_UPDATE_EXISTING","false").lower()!="true":
@@ -84,7 +95,7 @@ def main():
     children=[callout(f"PARASHA：{parasha}　/　ALIYAH：{aliyah}　/　RANGE：{rng}"),callout(d["summary"])]
     html_urls=[]; audio_urls=[]; ch=d["passage"]["chapter"]
     for v in d["verses"]:
-        n=v["verse"]; html_url=f"{pages_base}/{seq}/genesis-{ch}-{n}.html"; audio_url=f"https://raw.githubusercontent.com/{repo}/{branch}/ver2/published/{seq}/audio/{seq}_{n}_r2.mp3"
+        n=int(v["verse"]); html_url=pages_map[n]; audio_url=f"https://raw.githubusercontent.com/{repo}/{branch}/ver2/published/{seq}/audio/{seq}_{n}_r2.mp3"
         html_urls.append(html_url); audio_urls.append(audio_url)
         children += [heading(2,f"創世記 {ch}:{n}"),audio_external(audio_url),heading(3,"私訳"),paragraph(v["translation"]),heading(3,"ヘブライ語"),embed_external(html_url),heading(3,"簡易な説明"),paragraph(v["short_commentary"]),heading(3,"詳しい解説")]
         children += detailed_blocks(v["detailed_commentary"])
@@ -103,7 +114,7 @@ def main():
         cursor=r.get("next_cursor")
     embeds=[b.get("embed",{}).get("url") for b in got if b.get("type")=="embed"]; audios=[b.get("audio",{}).get("external",{}).get("url") for b in got if b.get("type")=="audio"]
     missing_html=[u for u in html_urls if u not in embeds]; missing_audio=[u for u in audio_urls if u not in audios]
-    state.update({"page_id":page_id,"page_url":page.get("url"),"verse_count":len(d["verses"]),"embed_count":len(embeds),"audio_count":len(audios),"missing_html":missing_html,"missing_audio":missing_audio})
+    state.update({"page_id":page_id,"page_url":page.get("url"),"verse_count":len(d["verses"]),"embed_count":len(embeds),"audio_count":len(audios),"missing_html":missing_html,"missing_audio":missing_audio,"pages_manifest":f"ver2/state/{seq}-pages-map.json"})
     state["status"]="PASS" if not missing_html and not missing_audio else "FAIL_VERIFY"
     state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2),encoding="utf-8"); print(json.dumps(state,ensure_ascii=False)); return 0 if state["status"]=="PASS" else 4
 
