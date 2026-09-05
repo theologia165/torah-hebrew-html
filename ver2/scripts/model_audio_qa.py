@@ -14,14 +14,11 @@ def fail(msg: str):
 
 
 def hebrew_letters(text: str) -> str:
-    # Compare consonantal Hebrew only. This intentionally ignores niqqud,
-    # te'amim, punctuation, whitespace, and transcription punctuation.
     text = unicodedata.normalize("NFD", text)
     return "".join(ch for ch in text if "HEBREW LETTER" in unicodedata.name(ch, ""))
 
 
 def token_letters(text: str):
-    # Keep Hebrew token boundaries when transcription supplies them.
     out = []
     for raw in re.split(r"\s+", text.strip()):
         t = hebrew_letters(raw)
@@ -50,10 +47,7 @@ def main():
         print("PENDING: OPENAI_API_KEY is not configured; MODEL_AUDIO remains false")
         return 0
 
-    try:
-        from openai import OpenAI
-    except Exception as e:
-        fail(f"openai package unavailable: {e}")
+    from openai import OpenAI
 
     data = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
     out = Path(sys.argv[2])
@@ -66,9 +60,11 @@ def main():
     verses = data["verses"]
     for i, verse in enumerate(verses):
         n = verse["verse"]
-        audio = out / f"{data['sequence']}_{n}_r1.mp3"
+        # QA the actual file delivered to the learner, not only the source-speed
+        # split. Deterministic checks already validate r1 and the r1->r2 timing.
+        audio = out / f"{data['sequence']}_{n}_r2.mp3"
         if not audio.exists():
-            fail(f"verse {n}: r1 audio missing")
+            fail(f"verse {n}: r2 audio missing")
 
         with audio.open("rb") as f:
             transcript_obj = client.audio.transcriptions.create(
@@ -104,9 +100,6 @@ def main():
             next_first = hebrew_letters(verses[i+1]["words"][0]["surface"])
             next_intrusion = best_token_ratio(next_first, observed_tokens[-2:])
 
-        # Boundary-sensitive acceptance. The thresholds are deliberately
-        # tolerant of Biblical-vs-modern orthographic transcription variation,
-        # but strict enough to catch a clipped first/last word or adjacent verse.
         verse_pass = (
             overall >= 0.62
             and first_score >= 0.58
@@ -117,6 +110,7 @@ def main():
         all_pass = all_pass and verse_pass
         results.append({
             "verse": n,
+            "audio_file": audio.name,
             "transcript": transcript,
             "expected_consonants": expected_all,
             "observed_consonants": observed_all,
@@ -139,20 +133,22 @@ def main():
 
     report = {
         "model": "gpt-transcribe",
-        "method": "r1 full-verse transcription + consonantal similarity + first/last word + adjacent-word intrusion checks",
+        "audio_revision": "r2",
+        "method": "delivered r2 full-verse transcription + consonantal similarity + first/last word + adjacent-word intrusion checks",
         "pass": all_pass,
         "verses": results,
     }
     (out / "model_audio_qa.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     manifest["qa"]["MODEL_AUDIO_CHECKED"] = bool(all_pass)
     manifest["qa"]["model_audio_model"] = "gpt-transcribe"
+    manifest["qa"]["model_audio_revision"] = "r2"
     manifest["qa"]["model_audio_report"] = "model_audio_qa.json"
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     if not all_pass:
         bad = [str(x["verse"]) for x in results if not x["pass"]]
         fail("MODEL_AUDIO failed verses=" + ",".join(bad))
-    print(f"PASS: MODEL_AUDIO verses={len(results)} model=gpt-transcribe")
+    print(f"PASS: MODEL_AUDIO verses={len(results)} model=gpt-transcribe revision=r2")
     return 0
 
 
