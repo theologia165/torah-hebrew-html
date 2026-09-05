@@ -1,0 +1,27 @@
+{
+  "mode": "production",
+  "timezone": "Asia/Tokyo",
+  "first_run_date": "2026-09-06",
+  "next_sequence": "035",
+  "next_passage": {
+    "parasha": "Hayei Sarah",
+    "aliyah": 7,
+    "book": "Genesis",
+    "chapter": 25,
+    "start_verse": 12,
+    "end_verse": 18,
+    "display": "ハイェイ・サラ｜第7アリヤー｜創世記25:12–18"
+  },
+  "sequence_rule": "Advance by exactly one only after a successful production run. Ignore sequence 050 because it is a Ver.2 development experiment.",
+  "notion_output_rule": {
+    "title": "NNN｜創世記X:Y–Z",
+    "show_development_labels": false,
+    "show_process_specification": false,
+    "show_internal_status_footer": false
+  },
+  "html_delivery_priority": [
+    "NOTION_ATTACHMENT",
+    "GITHUB_PAGES_FALLBACK"
+  ],
+  "model_audio_default": false
+}
