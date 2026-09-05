@@ -22,24 +22,33 @@ def choose_destination(src: Path, dest_dir: Path):
 
 
 def main():
-    if len(sys.argv) != 6:
-        raise SystemExit("usage: publish_pages.py enriched_json src_dir pages_checkout pages_base manifest_path")
+    if len(sys.argv) not in (6, 7):
+        raise SystemExit("usage: publish_pages.py enriched_json src_dir pages_checkout pages_base manifest_path [notion_route_json]")
 
     enriched_path = Path(sys.argv[1])
     src_dir = Path(sys.argv[2])
     pages_checkout = Path(sys.argv[3])
     pages_base = sys.argv[4].rstrip("/")
     manifest_path = Path(sys.argv[5])
+    route_path = Path(sys.argv[6]) if len(sys.argv) == 7 else None
 
     data = json.loads(enriched_path.read_text(encoding="utf-8"))
     seq = data["sequence"]
     chapter = int(data["passage"]["chapter"])
+    fallback_only = None
+    if route_path:
+        route = json.loads(route_path.read_text(encoding="utf-8"))
+        fallback_only = {int(v) for v in route.get("fallback_needed", [])}
+
     dest_dir = pages_checkout / seq
-    dest_dir.mkdir(parents=True, exist_ok=True)
+    if fallback_only:
+        dest_dir.mkdir(parents=True, exist_ok=True)
 
     entries = []
     for verse_obj in data["verses"]:
         verse = int(verse_obj["verse"])
+        if fallback_only is not None and verse not in fallback_only:
+            continue
         expected = src_dir / f"genesis-{chapter}-{verse}.html"
         if not expected.exists():
             raise SystemExit(f"missing generated HTML: {expected}")
@@ -58,6 +67,7 @@ def main():
         "sequence": seq,
         "chapter": chapter,
         "pages_base_url": pages_base,
+        "fallback_only": sorted(fallback_only) if fallback_only is not None else None,
         "entries": entries
     }
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
