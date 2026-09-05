@@ -35,6 +35,9 @@ jobs:
           rm -rf ver2/work
           python ver2/scripts/enrich_morphhb.py ver2/input/current.json ver2/work/current.enriched.json
 
+      - name: Refine Japanese morphology labels
+        run: python ver2/scripts/refine_morphology_ja.py ver2/work/current.enriched.json
+
       - name: Reject placeholder morphology
         run: |
           python - <<'PY'
