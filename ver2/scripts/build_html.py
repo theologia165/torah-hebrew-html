@@ -8,7 +8,7 @@ CSS = r'''*{box-sizing:border-box}html,body{margin:0;background:#fff;color:#1223
 body{padding:50px 12px 86px;overflow-x:hidden}.verse{direction:rtl;text-align:center;font-size:clamp(27px,5.5vw,47px);line-height:1.55}
 .word{display:inline-flex;flex-direction:column;align-items:center;vertical-align:top;margin:.08em .04em .28em}.tok{display:inline-block;cursor:pointer;border-radius:7px;padding:1px 4px;outline:none;transition:background-color .12s ease,box-shadow .12s ease}
 .tok:hover,.tok:focus,.tok.active{background:#dbeafe;box-shadow:0 0 0 1px #93c5fd}.gloss{direction:ltr;font:500 clamp(11px,2.2vw,15px)/1.25 system-ui,sans-serif;color:#34445f;white-space:nowrap;margin-top:2px}
-.popup{position:fixed;display:none;direction:ltr;text-align:left;width:min(350px,calc(100vw - 16px));max-height:calc(100vh - 16px);overflow:auto;background:#fff;color:#15243b;border:1px solid #cbd5e1;border-radius:11px;box-shadow:0 10px 30px #0003;padding:13px 15px;z-index:9999;font:14px/1.55 system-ui,sans-serif}.popup.open{display:block}.popup b{color:#163a70}.popup [dir=rtl]{font-size:18px}.src{margin-top:20px;text-align:center;font:12px/1.4 system-ui,sans-serif;color:#667085}@media(pointer:coarse){.tok{padding:4px 6px}.verse{line-height:1.7}}'''
+.sep{display:inline-block;vertical-align:top}.popup{position:fixed;display:none;direction:ltr;text-align:left;width:min(350px,calc(100vw - 16px));max-height:calc(100vh - 16px);overflow:auto;background:#fff;color:#15243b;border:1px solid #cbd5e1;border-radius:11px;box-shadow:0 10px 30px #0003;padding:13px 15px;z-index:9999;font:14px/1.55 system-ui,sans-serif}.popup.open{display:block}.popup b{color:#163a70}.popup [dir=rtl]{font-size:18px}.src{margin-top:20px;text-align:center;font:12px/1.4 system-ui,sans-serif;color:#667085}@media(pointer:coarse){.tok{padding:4px 6px}.verse{line-height:1.7}}'''
 
 JS = r'''const popup=document.getElementById('popup');let active=null;
 function closePopup(){popup.classList.remove('open');if(active)active.classList.remove('active');active=null}
@@ -21,22 +21,25 @@ def esc(value: str) -> str:
 
 
 def render_verse(book: str, chapter: int, verse: dict) -> str:
-    spans = []
+    chunks = []
     for word in verse["words"]:
-        spans.append(
+        chunks.append(
             '<span class="word">'
             f'<span class="tok" tabindex="0" data-lemma="{esc(word["lemma"])}" '
-            f'data-pos="{esc(word["pos"])}" data-morph="{esc(word["morph"])}">{esc(word["surface"])}</span>'
+            f'data-pos="{esc(word["pos"])}" data-morph="{esc(word["morph"])}" '
+            f'data-morph-code="{esc(word["morph_code"])}">{esc(word["surface"])}</span>'
             f'<span class="gloss">{esc(word["gloss"])}</span>'
             '</span>'
         )
+        if word["separator_after"]:
+            chunks.append(f'<span class="sep" aria-hidden="true">{esc(word["separator_after"])}</span>')
     ref = f"{book} {chapter}:{verse['verse']}"
-    body = " ".join(spans)
+    body = "".join(chunks)
     return (
         '<!doctype html><html lang="ja"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         f'<title>{esc(ref)}</title><style>{CSS}</style></head><body>'
-        f'<div class="verse" aria-label="{esc(ref)}">{body}</div>'
+        f'<div class="verse" aria-label="{esc(ref)}" data-wlc="{esc(verse["hebrew"])}">{body}</div>'
         '<div id="popup" class="popup" role="dialog" aria-live="polite"></div>'
         '<div class="src">Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0</div>'
         f'<script>{JS}</script></body></html>'
