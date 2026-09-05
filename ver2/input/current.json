@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-09-06",
+  "sequence": "035",
+  "passage": {
+    "book": "Genesis",
+    "chapter": 25,
+    "start_verse": 12,
+    "end_verse": 12,
+    "display": "創世記25:12"
+  },
+  "verses": [
+    {
+      "verse": 12,
+      "hebrew": "וְאֵלֶּה תֹּולְדֹת יִשְׁמָעֵאל",
+      "translation": "これはイシュマエルの系図である。",
+      "short_commentary": "Ver.2接続試験用のサンプルデータです。",
+      "detailed_commentary": "WorkからGitHubへのJSON接続を検証するための仮データ。",
+      "words": [
+        {
+          "surface": "וְאֵלֶּה",
+          "gloss": "そしてこれらは",
+          "lemma": "אֵלֶּה",
+          "pos": "指示代名詞",
+          "morph": "接続詞を伴う・複数"
+        },
+        {
+          "surface": "תֹּולְדֹת",
+          "gloss": "系図",
+          "lemma": "תּוֹלֵדוֹת",
+          "pos": "名詞",
+          "morph": "女性・複数・連語形"
+        },
+        {
+          "surface": "יִשְׁמָעֵאל",
+          "gloss": "イシュマエルの",
+          "lemma": "יִשְׁמָעֵאל",
+          "pos": "固有名詞",
+          "morph": "固有名詞"
+        }
+      ]
+    }
+  ],
+  "summary": "接続試験",
+  "modern_connection": "",
+  "interpretive_cautions": "",
+  "callout2": "",
+  "radio_script": ""
+}
