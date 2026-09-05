@@ -93,7 +93,7 @@ jobs:
           python ver2/scripts/build_audio.py ver2/work/current.enriched.json ver2/audio
           python ver2/scripts/verify_audio.py ver2/audio
 
-      - name: Publish immutable Ver.2 assets to branch
+      - name: Publish Ver.2 assets to branch
         run: |
           SEQ=$(python - <<'PY'
           import json
@@ -102,10 +102,30 @@ jobs:
           )
           PUB="ver2/published/${SEQ}"
           mkdir -p "$PUB/html" "$PUB/audio"
-          cp ver2/output/${SEQ}/*.html "$PUB/html/"
-          cp ver2/audio/${SEQ}_*_r2.mp3 "$PUB/audio/"
-          cp ver2/audio/audio_manifest.json "$PUB/audio/"
-          cp ver2/work/current.enriched.json "$PUB/current.enriched.json"
+          for src in ver2/output/${SEQ}/*.html; do
+            dst="$PUB/html/$(basename "$src")"
+            if [ -e "$dst" ] && ! cmp -s "$src" "$dst"; then
+              echo "Refusing to overwrite existing HTML: $dst" >&2
+              exit 21
+            fi
+            [ -e "$dst" ] || cp "$src" "$dst"
+          done
+          for src in ver2/audio/${SEQ}_*_r2.mp3; do
+            dst="$PUB/audio/$(basename "$src")"
+            if [ -e "$dst" ] && ! cmp -s "$src" "$dst"; then
+              echo "Refusing to overwrite existing audio: $dst" >&2
+              exit 22
+            fi
+            [ -e "$dst" ] || cp "$src" "$dst"
+          done
+          for pair in "ver2/audio/audio_manifest.json:$PUB/audio/audio_manifest.json" "ver2/work/current.enriched.json:$PUB/current.enriched.json"; do
+            src="${pair%%:*}"; dst="${pair#*:}"
+            if [ -e "$dst" ] && ! cmp -s "$src" "$dst"; then
+              echo "Refusing to overwrite existing published metadata: $dst" >&2
+              exit 23
+            fi
+            [ -e "$dst" ] || cp "$src" "$dst"
+          done
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$PUB"
@@ -114,7 +134,7 @@ jobs:
             git push origin HEAD:asaichi-torah-ver2
           fi
 
-      - name: Publish HTML to GitHub Pages source branch without overwriting prior files
+      - name: Publish HTML to immutable GitHub Pages paths and build manifest
         run: |
           SEQ=$(python - <<'PY'
           import json
@@ -123,22 +143,12 @@ jobs:
           )
           rm -rf /tmp/torah-pages
           git worktree add /tmp/torah-pages origin/main
-          mkdir -p "/tmp/torah-pages/${SEQ}"
-          for src in ver2/output/${SEQ}/*.html; do
-            base=$(basename "$src")
-            dst="/tmp/torah-pages/${SEQ}/${base}"
-            if [ -e "$dst" ]; then
-              if cmp -s "$src" "$dst"; then
-                echo "Reuse existing Pages file: $dst"
-                continue
-              fi
-              stem="${base%.html}"
-              n=2
-              while [ -e "/tmp/torah-pages/${SEQ}/${stem}-r${n}.html" ]; do n=$((n+1)); done
-              dst="/tmp/torah-pages/${SEQ}/${stem}-r${n}.html"
-            fi
-            cp "$src" "$dst"
-          done
+          python ver2/scripts/publish_pages.py \
+            ver2/work/current.enriched.json \
+            "ver2/output/${SEQ}" \
+            /tmp/torah-pages \
+            "$PAGES_BASE_URL" \
+            "ver2/state/${SEQ}-pages-map.json"
           cd /tmp/torah-pages
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -159,16 +169,16 @@ jobs:
           )
           python ver2/scripts/notion_delivery.py "ver2/published/${SEQ}/current.enriched.json"
 
-      - name: Persist Notion delivery audit
+      - name: Persist Pages and Notion delivery audit
         if: always()
         run: |
           git switch asaichi-torah-ver2
           git pull --ff-only origin asaichi-torah-ver2
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ver2/state/*-notion-delivery.json 2>/dev/null || true
+          git add ver2/state/*-pages-map.json ver2/state/*-notion-delivery.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Record Ver.2 Notion delivery audit"
+            git commit -m "Record Ver.2 delivery audit"
             git push origin HEAD:asaichi-torah-ver2
           fi
 
