@@ -38,6 +38,9 @@ jobs:
           rm -rf ver2/output
           python ver2/scripts/build_html.py ver2/input/current.json ver2/output
 
+      - name: Verify HTML acceptance contract
+        run: python ver2/scripts/verify_html.py ver2/input/current.json ver2/output
+
       - name: List generated files
         run: find ver2/output -type f -maxdepth 3 -print
 
