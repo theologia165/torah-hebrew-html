@@ -19,9 +19,19 @@
     "show_process_specification": false,
     "show_internal_status_footer": false
   },
-  "html_delivery_priority": [
-    "NOTION_ATTACHMENT",
-    "GITHUB_PAGES_FALLBACK"
+  "delivery_owner": "GITHUB_ACTIONS",
+  "chatgpt_notion_create_attachment_required": false,
+  "notion_api_version": "2026-03-11",
+  "html_delivery": {
+    "primary": "GITHUB_ACTIONS_TO_NOTION_API",
+    "html_transport": "GITHUB_PAGES_EMBED",
+    "pages_source": "main/root",
+    "pages_base_url": "https://theologia165.github.io/torah-hebrew-html",
+    "rule": "GitHub generates, verifies, publishes and embeds the HTML. ChatGPT connector create_attachment schema is not part of the production delivery path. Existing published files are never overwritten."
+  },
+  "notion_required_github_configuration": [
+    "NOTION_TOKEN",
+    "NOTION_PARENT_PAGE_ID"
   ],
   "model_audio_default": false
 }
