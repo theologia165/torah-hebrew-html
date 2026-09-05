@@ -61,18 +61,21 @@ jobs:
           )
           python ver2/scripts/merge_commentary.py ver2/work/current.enriched.json "ver2/content/${SEQ}-commentary.json"
 
-      - name: Reject placeholders and non-exegetical commentary headings
+      - name: Reject placeholders and enforce exegetical commentary policy
         run: |
           python - <<'PY'
-          import json
+          import json, re
           d=json.load(open('ver2/work/current.enriched.json',encoding='utf-8'))
           bad=[]
-          forbidden=('構造展開試験','本番用の節固有解説','神学的受けとめ','受けとめ')
+          forbidden=('構造展開試験','本番用の節固有解説','**神学的受けとめ**','**受けとめ**')
+          required='**デボーショナルな受けとめ**'
           for v in d['verses']:
               detail=v.get('detailed_commentary','')
               short=v.get('short_commentary','')
               if any(x in detail for x in forbidden) or any(x in short for x in forbidden[:2]):
                   bad.append(str(v['verse']))
+              if detail.count(required) != 1:
+                  bad.append(f"{v['verse']}:devotional-count={detail.count(required)}")
               if 'ラビ・教父' in detail or 'ユダヤ・教父' in detail:
                   bad.append(f"{v['verse']}:tradition-mixed")
               for i,w in enumerate(v['words'],1):
@@ -80,7 +83,7 @@ jobs:
                       bad.append(f"{v['verse']}:{i}")
           if bad:
               raise SystemExit('FAIL commentary/data policy: '+','.join(bad))
-          print('PASS: commentary/data policy')
+          print('PASS: commentary/data policy incl. devotional section')
           PY
 
       - name: Validate enriched JSON
@@ -130,9 +133,6 @@ jobs:
             exit 23
           fi
           [ -e "$dst" ] || cp "$src" "$dst"
-          # Research/commentary revisions intentionally do not overwrite the historical
-          # published/current.enriched.json snapshot. The live Notion delivery consumes
-          # ver2/work/current.enriched.json from this run instead.
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$PUB"
