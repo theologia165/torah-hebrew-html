@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   validate-build-html-audio:
@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: asaichi-torah-ver2
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -92,6 +94,30 @@ jobs:
           print('MODEL_AUDIO_CHECKED=',m['qa']['MODEL_AUDIO_CHECKED'],'(optional / not run in normal workflow)')
           print('PASS: normal audio pipeline complete')
           PY
+
+      - name: Publish current Ver.2 assets to branch
+        run: |
+          SEQ=$(python - <<'PY'
+          import json
+          print(json.load(open('ver2/work/current.enriched.json',encoding='utf-8'))['sequence'])
+          PY
+          )
+          PUB="ver2/published/${SEQ}"
+          rm -rf "$PUB"
+          mkdir -p "$PUB/html" "$PUB/audio"
+          cp ver2/output/${SEQ}/*.html "$PUB/html/"
+          cp ver2/audio/${SEQ}_*_r2.mp3 "$PUB/audio/"
+          cp ver2/audio/audio_manifest.json "$PUB/audio/"
+          cp ver2/work/current.enriched.json "$PUB/current.enriched.json"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$PUB"
+          if git diff --cached --quiet; then
+            echo "No published asset changes"
+          else
+            git commit -m "Publish Ver.2 ${SEQ} assets for Notion"
+            git push origin HEAD:asaichi-torah-ver2
+          fi
 
       - name: List generated files
         run: |
