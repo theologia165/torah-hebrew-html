@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "config_type": "ASAICHI_TORAH_IMAGE_MASTER",
+  "scope": "GLOBAL",
+  "series_title": "朝一トーラー",
+  "canvas": {
+    "width": 1200,
+    "height": 630,
+    "orientation": "landscape",
+    "aspect_ratio": "40:21"
+  },
+  "layout": {
+    "model": "LEFT_INFO_RIGHT_SCENE",
+    "left_panel_ratio_target": 0.38,
+    "right_scene_ratio_target": 0.62,
+    "left_panel_range": [0.34, 0.42],
+    "right_scene_range": [0.58, 0.66],
+    "boundary": "soft organic transition; no hard modern UI divider",
+    "safe_margin": "generous; all text must remain comfortably inside canvas"
+  },
+  "left_panel": {
+    "function": "reader information area",
+    "visual_weight": "calm, dignified, high contrast",
+    "texture": "subtle parchment, stone, or woven-paper texture; never noisy",
+    "hierarchy": [
+      "series_title",
+      "nnn",
+      "parasha",
+      "aliyah",
+      "range",
+      "theme",
+      "optional_subcopy"
+    ],
+    "dividers": "thin restrained ornamental rules may be used",
+    "readability_priority": "highest"
+  },
+  "typography": {
+    "language": "Japanese-first",
+    "style": "beautiful, strong, dignified, highly legible",
+    "series_title": "large display treatment",
+    "nnn": "large three-digit numeral",
+    "parasha": "prominent",
+    "aliyah": "secondary prominent",
+    "range": "clear scripture reference",
+    "theme": "short passage-derived headline",
+    "optional_subcopy": "one short line only when useful",
+    "forbid": [
+      "garbled text",
+      "missing characters",
+      "invented extra labels",
+      "text from another run"
+    ]
+  },
+  "right_scene": {
+    "mode": "realistic cinematic biblical-world scene",
+    "historical_world": "ancient Near East appropriate to Genesis",
+    "purpose": "visualize only what the current aliyah can responsibly support",
+    "composition": "narrative scene with depth, natural light, restrained drama",
+    "historical_fidelity": "prefer plausible Bronze Age / ancient Near Eastern materials, clothing, landscape and architecture without false precision",
+    "forbid": [
+      "modern objects",
+      "modern buildings",
+      "modern maps or infographic overlays",
+      "crosses, churches, halos or unrelated later religious symbols",
+      "medieval European fantasy costume",
+      "fantasy spectacle",
+      "people, events or symbols absent from or unsupported by the current passage"
+    ]
+  },
+  "generation_policy": {
+    "fresh_generation_only": true,
+    "previous_image_as_input": false,
+    "failed_image_as_input": false,
+    "previous_gen_id_as_input": false,
+    "source_layers": [
+      "GLOBAL_IMAGE_MASTER",
+      "CURRENT_PARASHA_PROFILE",
+      "CURRENT_RUN_IMAGE_PACKAGE"
+    ],
+    "priority": [
+      "exact required text",
+      "current passage fidelity",
+      "parasha visual continuity",
+      "global series continuity"
+    ],
+    "notion_page_required_before_generation": false
+  },
+  "required_dynamic_text": [
+    "朝一トーラー",
+    "NNN",
+    "PARASHA_JP",
+    "第Xアリヤー",
+    "聖書箇所",
+    "本文由来の短い主題句"
+  ],
+  "optional_dynamic_text": [
+    "CALLOUT2由来の短い補助コピー"
+  ],
+  "qa": {
+    "max_generation_attempts": 3,
+    "fresh_generation_on_retry": true,
+    "checks": [
+      "NNN exact",
+      "parasha exact",
+      "aliyah exact",
+      "range exact",
+      "theme is derived from current passage",
+      "optional subcopy is consistent with current callout2",
+      "no typo, garbling or omission",
+      "no cross-run number/title/range/scene contamination",
+      "right-side scene is consistent with current passage",
+      "final image is 1200x630"
+    ]
+  },
+  "persistence": {
+    "store_image_audit_json": false,
+    "failure_details_destination": "Gmail incomplete-run report",
+    "approved_image_destination": "Gmail attachment only; do not insert into Notion"
+  }
+}
