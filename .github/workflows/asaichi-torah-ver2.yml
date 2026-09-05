@@ -27,8 +27,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install validator
-        run: python -m pip install --disable-pip-version-check jsonschema
+      - name: Install Python dependencies
+        run: python -m pip install --disable-pip-version-check jsonschema openai
 
       - name: Install ffmpeg toolchain
         run: |
@@ -79,8 +79,26 @@ jobs:
           rm -rf ver2/audio
           python ver2/scripts/build_audio.py ver2/work/current.enriched.json ver2/audio
 
-      - name: Verify audio acceptance contract
+      - name: Verify deterministic audio acceptance contract
         run: python ver2/scripts/verify_audio.py ver2/audio
+
+      - name: Run GPT Transcribe MODEL_AUDIO QA
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python ver2/scripts/model_audio_qa.py ver2/work/current.enriched.json ver2/audio
+
+      - name: Report MODEL_AUDIO state
+        run: |
+          python - <<'PY'
+          import json
+          m=json.load(open('ver2/audio/audio_manifest.json',encoding='utf-8'))
+          state=m['qa']['MODEL_AUDIO_CHECKED']
+          print(f'MODEL_AUDIO_CHECKED={state}')
+          if state:
+              print('PASS: MODEL_AUDIO gate complete')
+          else:
+              print('PENDING: MODEL_AUDIO requires OPENAI_API_KEY GitHub Secret')
+          PY
 
       - name: List generated files
         run: |
