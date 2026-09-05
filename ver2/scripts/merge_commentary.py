@@ -36,8 +36,8 @@ def main():
             fail(f"verse {verse['verse']}: placeholder commentary remains")
         verse["short_commentary"] = short
         verse["detailed_commentary"] = detailed
-    data.setdefault("content_provenance", {})["commentary_file"] = str(commentary_path)
-    data["content_provenance"]["commentary_status"] = c.get("status", "unknown")
+    # Keep the enriched JSON exactly within the production schema. Research
+    # provenance is stored separately in ver2/research/, not as an extra root key.
     enriched_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"PASS: merged researched commentary verses={len(data['verses'])}")
 
