@@ -37,14 +37,19 @@ jobs:
 
       - name: Reject placeholder morphology
         run: |
-          if grep -q '"morph_code": "TEST"' ver2/work/current.enriched.json; then
-            echo 'FAIL: TEST morphology remains' >&2
-            exit 1
-          fi
-          if grep -q '要MorphHB照合\|展開試験用' ver2/work/current.enriched.json; then
-            echo 'FAIL: placeholder morphology text remains' >&2
-            exit 1
-          fi
+          python - <<'PY'
+          import json
+          p='ver2/work/current.enriched.json'
+          d=json.load(open(p,encoding='utf-8'))
+          bad=[]
+          for v in d['verses']:
+              for i,w in enumerate(v['words'],1):
+                  if w['morph_code']=='TEST' or w['pos']=='要MorphHB照合' or '展開試験用' in w['morph']:
+                      bad.append(f"{v['verse']}:{i}")
+          if bad:
+              raise SystemExit('FAIL placeholder morphology: '+','.join(bad))
+          print('PASS: no placeholder morphology fields')
+          PY
 
       - name: Validate enriched JSON
         run: python ver2/scripts/validate.py ver2/work/current.enriched.json
