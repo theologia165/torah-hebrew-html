@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "config_type": "ASAICHI_TORAH_IMAGE_MASTER",
   "scope": "GLOBAL",
   "series_title": "朝一トーラー",
@@ -85,6 +85,25 @@
     ],
     "notion_page_required_before_generation": false
   },
+  "parasha_profile_policy": {
+    "index_path": "ver2/config/parasha-image/index.json",
+    "lookup": "exact Japanese parasha name only; never guess slug",
+    "if_missing": "ChatGPT creates one new profile before image generation, writes it to ver2/config/parasha-image/<slug>.json, and adds the exact Japanese parasha name to index.json",
+    "new_profile_basis": [
+      "GLOBAL_IMAGE_MASTER",
+      "the current parasha identity and its broad biblical world",
+      "abstract visual continuity rules only"
+    ],
+    "never_store_in_profile": [
+      "past NNN",
+      "past aliyah-specific scene",
+      "past image",
+      "failed image",
+      "gen_id",
+      "current-run-only people or events"
+    ],
+    "existing_profile_update": "do not overwrite automatically during a production run; use the existing profile unless the user explicitly requests a design revision"
+  },
   "required_dynamic_text": [
     "朝一トーラー",
     "NNN",
@@ -114,6 +133,7 @@
   },
   "persistence": {
     "store_image_audit_json": false,
+    "store_current_run_image_package": false,
     "failure_details_destination": "Gmail incomplete-run report",
     "approved_image_destination": "Gmail attachment only; do not insert into Notion"
   }
