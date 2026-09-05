@@ -6,6 +6,7 @@ on:
       - asaichi-torah-ver2
     paths:
       - 'ver2/input/current.json'
+      - 'ver2/content/**'
       - 'ver2/schema/**'
       - 'ver2/scripts/**'
       - '.github/workflows/asaichi-torah-ver2.yml'
@@ -49,6 +50,15 @@ jobs:
       - name: Refine Japanese morphology labels
         run: python ver2/scripts/refine_morphology_ja.py ver2/work/current.enriched.json
 
+      - name: Merge researched commentary
+        run: |
+          SEQ=$(python - <<'PY'
+          import json
+          print(json.load(open('ver2/work/current.enriched.json',encoding='utf-8'))['sequence'])
+          PY
+          )
+          python ver2/scripts/merge_commentary.py ver2/work/current.enriched.json "ver2/content/${SEQ}-commentary.json"
+
       - name: Reject placeholder morphology
         run: |
           python - <<'PY'
@@ -63,6 +73,20 @@ jobs:
           if bad:
               raise SystemExit('FAIL placeholder morphology: '+','.join(bad))
           print('PASS: no placeholder morphology fields')
+          PY
+
+      - name: Reject placeholder commentary
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('ver2/work/current.enriched.json',encoding='utf-8'))
+          bad=[]
+          for v in d['verses']:
+              if '構造展開試験' in v.get('short_commentary','') or '本番用の節固有解説' in v.get('detailed_commentary',''):
+                  bad.append(str(v['verse']))
+          if bad:
+              raise SystemExit('FAIL placeholder commentary: '+','.join(bad))
+          print('PASS: researched commentary present for all verses')
           PY
 
       - name: Validate enriched JSON
