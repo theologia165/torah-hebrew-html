@@ -61,21 +61,26 @@ jobs:
           )
           python ver2/scripts/merge_commentary.py ver2/work/current.enriched.json "ver2/content/${SEQ}-commentary.json"
 
-      - name: Reject placeholders
+      - name: Reject placeholders and non-exegetical commentary headings
         run: |
           python - <<'PY'
           import json
           d=json.load(open('ver2/work/current.enriched.json',encoding='utf-8'))
           bad=[]
+          forbidden=('構造展開試験','本番用の節固有解説','神学的受けとめ','受けとめ')
           for v in d['verses']:
-              if '構造展開試験' in v.get('short_commentary','') or '本番用の節固有解説' in v.get('detailed_commentary',''):
+              detail=v.get('detailed_commentary','')
+              short=v.get('short_commentary','')
+              if any(x in detail for x in forbidden) or any(x in short for x in forbidden[:2]):
                   bad.append(str(v['verse']))
+              if 'ラビ・教父' in detail or 'ユダヤ・教父' in detail:
+                  bad.append(f"{v['verse']}:tradition-mixed")
               for i,w in enumerate(v['words'],1):
                   if w['morph_code']=='TEST' or w['pos']=='要MorphHB照合' or '展開試験用' in w['morph']:
                       bad.append(f"{v['verse']}:{i}")
           if bad:
-              raise SystemExit('FAIL placeholder data: '+','.join(bad))
-          print('PASS: no placeholder data')
+              raise SystemExit('FAIL commentary/data policy: '+','.join(bad))
+          print('PASS: commentary/data policy')
           PY
 
       - name: Validate enriched JSON
@@ -134,7 +139,36 @@ jobs:
             git push origin HEAD:asaichi-torah-ver2
           fi
 
-      - name: Publish HTML to immutable GitHub Pages paths and build manifest
+      - name: Prepare native Notion HTML attachments
+        run: |
+          SEQ=$(python - <<'PY'
+          import json
+          print(json.load(open('ver2/work/current.enriched.json',encoding='utf-8'))['sequence'])
+          PY
+          )
+          python ver2/scripts/prepare_notion_html.py \
+            ver2/work/current.enriched.json \
+            "ver2/output/${SEQ}" \
+            "ver2/state/${SEQ}-notion-html-route.json"
+
+      - name: Detect whether Pages fallback is needed
+        id: fallback
+        run: |
+          SEQ=$(python - <<'PY'
+          import json
+          print(json.load(open('ver2/work/current.enriched.json',encoding='utf-8'))['sequence'])
+          PY
+          )
+          NEED=$(python - <<PY
+          import json
+          d=json.load(open('ver2/state/${SEQ}-notion-html-route.json',encoding='utf-8'))
+          print('true' if d.get('fallback_needed') else 'false')
+          PY
+          )
+          echo "needed=$NEED" >> "$GITHUB_OUTPUT"
+
+      - name: Publish only failed attachment verses to GitHub Pages
+        if: steps.fallback.outputs.needed == 'true'
         run: |
           SEQ=$(python - <<'PY'
           import json
@@ -148,13 +182,14 @@ jobs:
             "ver2/output/${SEQ}" \
             /tmp/torah-pages \
             "$PAGES_BASE_URL" \
-            "ver2/state/${SEQ}-pages-map.json"
+            "ver2/state/${SEQ}-pages-map.json" \
+            "ver2/state/${SEQ}-notion-html-route.json"
           cd /tmp/torah-pages
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$SEQ"
           if ! git diff --cached --quiet; then
-            git commit -m "Publish Torah HTML ${SEQ} for Notion embed"
+            git commit -m "Publish Torah HTML ${SEQ} fallback for Notion"
             git push origin HEAD:main
           fi
 
@@ -167,16 +202,18 @@ jobs:
           print(json.load(open('ver2/work/current.enriched.json',encoding='utf-8'))['sequence'])
           PY
           )
-          python ver2/scripts/notion_delivery.py "ver2/published/${SEQ}/current.enriched.json"
+          python ver2/scripts/notion_delivery.py \
+            "ver2/published/${SEQ}/current.enriched.json" \
+            "ver2/state/${SEQ}-notion-html-route.json"
 
-      - name: Persist Pages and Notion delivery audit
+      - name: Persist Notion HTML route and delivery audit
         if: always()
         run: |
           git switch asaichi-torah-ver2
           git pull --ff-only origin asaichi-torah-ver2
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ver2/state/*-pages-map.json ver2/state/*-notion-delivery.json 2>/dev/null || true
+          git add ver2/state/*-notion-html-route.json ver2/state/*-pages-map.json ver2/state/*-notion-delivery.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Record Ver.2 delivery audit"
             git push origin HEAD:asaichi-torah-ver2
@@ -190,5 +227,6 @@ jobs:
             ver2/work/current.enriched.json
             ver2/output/
             ver2/audio/
+            ver2/state/*-notion-html-route.json
           if-no-files-found: error
           retention-days: 14
