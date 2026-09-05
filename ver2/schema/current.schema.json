@@ -40,13 +40,15 @@
             "items": {
               "type": "object",
               "additionalProperties": false,
-              "required": ["surface", "gloss", "lemma", "pos", "morph"],
+              "required": ["surface", "separator_after", "gloss", "lemma", "pos", "morph", "morph_code"],
               "properties": {
                 "surface": {"type": "string", "minLength": 1},
+                "separator_after": {"type": "string", "pattern": "^[ ־׃׀]*$"},
                 "gloss": {"type": "string", "minLength": 1},
                 "lemma": {"type": "string", "minLength": 1},
                 "pos": {"type": "string", "minLength": 1},
-                "morph": {"type": "string", "minLength": 1}
+                "morph": {"type": "string", "minLength": 1},
+                "morph_code": {"type": "string", "minLength": 1}
               }
             }
           }
