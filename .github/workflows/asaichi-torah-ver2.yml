@@ -98,7 +98,7 @@ jobs:
           python ver2/scripts/build_audio.py ver2/work/current.enriched.json ver2/audio
           python ver2/scripts/verify_audio.py ver2/audio
 
-      - name: Publish Ver.2 assets to branch
+      - name: Publish immutable Ver.2 media assets to branch
         run: |
           SEQ=$(python - <<'PY'
           import json
@@ -123,19 +123,21 @@ jobs:
             fi
             [ -e "$dst" ] || cp "$src" "$dst"
           done
-          for pair in "ver2/audio/audio_manifest.json:$PUB/audio/audio_manifest.json" "ver2/work/current.enriched.json:$PUB/current.enriched.json"; do
-            src="${pair%%:*}"; dst="${pair#*:}"
-            if [ -e "$dst" ] && ! cmp -s "$src" "$dst"; then
-              echo "Refusing to overwrite existing published metadata: $dst" >&2
-              exit 23
-            fi
-            [ -e "$dst" ] || cp "$src" "$dst"
-          done
+          src="ver2/audio/audio_manifest.json"
+          dst="$PUB/audio/audio_manifest.json"
+          if [ -e "$dst" ] && ! cmp -s "$src" "$dst"; then
+            echo "Refusing to overwrite existing audio manifest: $dst" >&2
+            exit 23
+          fi
+          [ -e "$dst" ] || cp "$src" "$dst"
+          # Research/commentary revisions intentionally do not overwrite the historical
+          # published/current.enriched.json snapshot. The live Notion delivery consumes
+          # ver2/work/current.enriched.json from this run instead.
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$PUB"
           if ! git diff --cached --quiet; then
-            git commit -m "Publish Ver.2 ${SEQ} assets"
+            git commit -m "Publish Ver.2 ${SEQ} immutable media assets"
             git push origin HEAD:asaichi-torah-ver2
           fi
 
@@ -203,7 +205,7 @@ jobs:
           PY
           )
           python ver2/scripts/notion_delivery.py \
-            "ver2/published/${SEQ}/current.enriched.json" \
+            "ver2/work/current.enriched.json" \
             "ver2/state/${SEQ}-notion-html-route.json"
 
       - name: Persist Notion HTML route and delivery audit
