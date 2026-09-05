@@ -8,22 +8,26 @@ on:
       - 'ver2/input/current.json'
       - 'ver2/content/**'
       - 'ver2/schema/**'
-      - 'ver2/scripts/**'
-      - '.github/workflows/asaichi-torah-ver2.yml'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  validate-build-html-audio:
+  validate-build-html-audio-notion:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
+    env:
+      VER2_BRANCH: asaichi-torah-ver2
+      PAGES_BASE_URL: https://theologia165.github.io/torah-hebrew-html
+      NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+      NOTION_PARENT_PAGE_ID: ${{ secrets.NOTION_PARENT_PAGE_ID }}
     steps:
-      - name: Checkout
+      - name: Checkout Ver.2 branch
         uses: actions/checkout@v4
         with:
           ref: asaichi-torah-ver2
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -31,7 +35,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install Python dependencies
-        run: python -m pip install --disable-pip-version-check jsonschema
+        run: python -m pip install --disable-pip-version-check jsonschema requests
 
       - name: Install ffmpeg toolchain
         run: |
@@ -39,8 +43,6 @@ jobs:
           sudo apt-get install -y ffmpeg
           command -v ffmpeg
           command -v ffprobe
-          ffmpeg -version | head -n 1
-          ffprobe -version | head -n 1
 
       - name: Enrich from pinned MorphHB
         run: |
@@ -59,23 +61,7 @@ jobs:
           )
           python ver2/scripts/merge_commentary.py ver2/work/current.enriched.json "ver2/content/${SEQ}-commentary.json"
 
-      - name: Reject placeholder morphology
-        run: |
-          python - <<'PY'
-          import json
-          p='ver2/work/current.enriched.json'
-          d=json.load(open(p,encoding='utf-8'))
-          bad=[]
-          for v in d['verses']:
-              for i,w in enumerate(v['words'],1):
-                  if w['morph_code']=='TEST' or w['pos']=='要MorphHB照合' or '展開試験用' in w['morph']:
-                      bad.append(f"{v['verse']}:{i}")
-          if bad:
-              raise SystemExit('FAIL placeholder morphology: '+','.join(bad))
-          print('PASS: no placeholder morphology fields')
-          PY
-
-      - name: Reject placeholder commentary
+      - name: Reject placeholders
         run: |
           python - <<'PY'
           import json
@@ -84,42 +70,30 @@ jobs:
           for v in d['verses']:
               if '構造展開試験' in v.get('short_commentary','') or '本番用の節固有解説' in v.get('detailed_commentary',''):
                   bad.append(str(v['verse']))
+              for i,w in enumerate(v['words'],1):
+                  if w['morph_code']=='TEST' or w['pos']=='要MorphHB照合' or '展開試験用' in w['morph']:
+                      bad.append(f"{v['verse']}:{i}")
           if bad:
-              raise SystemExit('FAIL placeholder commentary: '+','.join(bad))
-          print('PASS: researched commentary present for all verses')
+              raise SystemExit('FAIL placeholder data: '+','.join(bad))
+          print('PASS: no placeholder data')
           PY
 
       - name: Validate enriched JSON
         run: python ver2/scripts/validate.py ver2/work/current.enriched.json
 
-      - name: Build HTML
+      - name: Build and verify HTML
         run: |
           rm -rf ver2/output
           python ver2/scripts/build_html.py ver2/work/current.enriched.json ver2/output
+          python ver2/scripts/verify_html.py ver2/work/current.enriched.json ver2/output
 
-      - name: Verify HTML acceptance contract
-        run: python ver2/scripts/verify_html.py ver2/work/current.enriched.json ver2/output
-
-      - name: Build PocketTorah audio
+      - name: Build and verify PocketTorah audio
         run: |
           rm -rf ver2/audio
           python ver2/scripts/build_audio.py ver2/work/current.enriched.json ver2/audio
+          python ver2/scripts/verify_audio.py ver2/audio
 
-      - name: Verify deterministic audio acceptance contract
-        run: python ver2/scripts/verify_audio.py ver2/audio
-
-      - name: Report audio state
-        run: |
-          python - <<'PY'
-          import json
-          m=json.load(open('ver2/audio/audio_manifest.json',encoding='utf-8'))
-          print('MAPPING_CONFIRMED=',m['qa']['MAPPING_CONFIRMED'])
-          print('SIGNAL_CHECKED=',m['qa']['SIGNAL_CHECKED'])
-          print('MODEL_AUDIO_CHECKED=',m['qa']['MODEL_AUDIO_CHECKED'],'(optional / not run in normal workflow)')
-          print('PASS: normal audio pipeline complete')
-          PY
-
-      - name: Publish current Ver.2 assets to branch
+      - name: Publish immutable Ver.2 assets to branch
         run: |
           SEQ=$(python - <<'PY'
           import json
@@ -127,7 +101,6 @@ jobs:
           PY
           )
           PUB="ver2/published/${SEQ}"
-          rm -rf "$PUB"
           mkdir -p "$PUB/html" "$PUB/audio"
           cp ver2/output/${SEQ}/*.html "$PUB/html/"
           cp ver2/audio/${SEQ}_*_r2.mp3 "$PUB/audio/"
@@ -136,32 +109,76 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$PUB"
-          if git diff --cached --quiet; then
-            echo "No published asset changes"
-          else
-            git commit -m "Publish Ver.2 ${SEQ} assets for Notion"
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish Ver.2 ${SEQ} assets"
             git push origin HEAD:asaichi-torah-ver2
           fi
 
-      - name: List generated files
+      - name: Publish HTML to GitHub Pages source branch without overwriting prior files
         run: |
-          find ver2/output -type f -maxdepth 3 -print
-          find ver2/audio -type f -maxdepth 2 -print
+          SEQ=$(python - <<'PY'
+          import json
+          print(json.load(open('ver2/work/current.enriched.json',encoding='utf-8'))['sequence'])
+          PY
+          )
+          rm -rf /tmp/torah-pages
+          git worktree add /tmp/torah-pages origin/main
+          mkdir -p "/tmp/torah-pages/${SEQ}"
+          for src in ver2/output/${SEQ}/*.html; do
+            base=$(basename "$src")
+            dst="/tmp/torah-pages/${SEQ}/${base}"
+            if [ -e "$dst" ]; then
+              if cmp -s "$src" "$dst"; then
+                echo "Reuse existing Pages file: $dst"
+                continue
+              fi
+              stem="${base%.html}"
+              n=2
+              while [ -e "/tmp/torah-pages/${SEQ}/${stem}-r${n}.html" ]; do n=$((n+1)); done
+              dst="/tmp/torah-pages/${SEQ}/${stem}-r${n}.html"
+            fi
+            cp "$src" "$dst"
+          done
+          cd /tmp/torah-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$SEQ"
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish Torah HTML ${SEQ} for Notion embed"
+            git push origin HEAD:main
+          fi
 
-      - name: Upload enriched JSON and generated HTML
+      - name: Deliver finished page from GitHub to Notion
+        id: notion_delivery
+        continue-on-error: true
+        run: |
+          SEQ=$(python - <<'PY'
+          import json
+          print(json.load(open('ver2/work/current.enriched.json',encoding='utf-8'))['sequence'])
+          PY
+          )
+          python ver2/scripts/notion_delivery.py "ver2/published/${SEQ}/current.enriched.json"
+
+      - name: Persist Notion delivery audit
+        if: always()
+        run: |
+          git switch asaichi-torah-ver2
+          git pull --ff-only origin asaichi-torah-ver2
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ver2/state/*-notion-delivery.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Record Ver.2 Notion delivery audit"
+            git push origin HEAD:asaichi-torah-ver2
+          fi
+
+      - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: asaichi-torah-ver2-html-${{ github.run_number }}
+          name: asaichi-torah-ver2-${{ github.run_number }}
           path: |
             ver2/work/current.enriched.json
             ver2/output/
-          if-no-files-found: error
-          retention-days: 14
-
-      - name: Upload audio package
-        uses: actions/upload-artifact@v4
-        with:
-          name: asaichi-torah-ver2-audio-${{ github.run_number }}
-          path: ver2/audio/
+            ver2/audio/
           if-no-files-found: error
           retention-days: 14
