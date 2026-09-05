@@ -1,0 +1,1477 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-09-05",
+  "sequence": "050",
+  "passage": {
+    "book": "Genesis",
+    "chapter": 32,
+    "start_verse": 4,
+    "end_verse": 13,
+    "display": "ヴァイシュラハ｜第1アリヤー｜創世記32:4–13"
+  },
+  "verses": [
+    {
+      "verse": 4,
+      "hebrew": "וַיִּשְׁלַ֨ח יַעֲקֹ֤ב מַלְאָכִים֙ לְפָנָ֔יו אֶל־עֵשָׂ֖ו אָחִ֑יו אַ֥רְצָה שֵׂעִ֖יר שְׂדֵ֥ה אֱדֽוֹם׃",
+      "translation": "ヤコブは自分に先立って、兄エサウのもとへ、セイルの地、エドムの野へ使者たちを遣わした。",
+      "short_commentary": "ヤコブはエサウとの再会を前に、まず使者を先行させます。מַלְאָכִים は文脈上『使者たち』と読むのが自然ですが、ラシは創世記ラッバーに従って『実際の御使いたち』と解釈します。",
+      "detailed_commentary": "32:4はヤコブとエサウの再会物語の開始点です。アリヤー冒頭の動詞 וַיִּשְׁלַח はQal wayyiqtolで物語を前進させ、לְפָנָיו は使者たちを『自分に先立って』遣わしたことを示します。אֶל־עֵשָׂו のマカフ、および節末のソフ・パスークを含め、WLC文字列を再構成可能な形で保持します。",
+      "words": [
+        {
+          "surface": "וַיִּשְׁלַ֨ח",
+          "separator_after": " ",
+          "gloss": "そして遣わした",
+          "lemma": "שָׁלַח",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：wayyiqtol・3人称・男性・単数",
+          "morph_code": "HC/Vqw3ms"
+        },
+        {
+          "surface": "יַעֲקֹ֤ב",
+          "separator_after": " ",
+          "gloss": "ヤコブは",
+          "lemma": "יַעֲקֹב",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "מַלְאָכִים֙",
+          "separator_after": " ",
+          "gloss": "使者たちを",
+          "lemma": "מֲלְאָךְ",
+          "pos": "名詞",
+          "morph": "名詞・男性・複数・絶対形",
+          "morph_code": "HNcmpa"
+        },
+        {
+          "surface": "לְפָנָ֔יו",
+          "separator_after": " ",
+          "gloss": "自分に先立って",
+          "lemma": "פָּנִים",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・両性・複数・連語形／人称代名詞接尾辞・3人称・男性・単数",
+          "morph_code": "HR/Ncbpc/Sp3ms"
+        },
+        {
+          "surface": "אֶל",
+          "separator_after": "־",
+          "gloss": "〜へ",
+          "lemma": "אֵל",
+          "pos": "前置詞",
+          "morph": "前置詞",
+          "morph_code": "HR"
+        },
+        {
+          "surface": "עֵשָׂ֖ו",
+          "separator_after": " ",
+          "gloss": "エサウ",
+          "lemma": "עֵשָׂו",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "אָחִ֑יו",
+          "separator_after": " ",
+          "gloss": "彼の兄弟",
+          "lemma": "אָח",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・連語形／人称代名詞接尾辞・3人称・男性・単数",
+          "morph_code": "HNcmsc/Sp3ms"
+        },
+        {
+          "surface": "אַ֥רְצָה",
+          "separator_after": " ",
+          "gloss": "地へ",
+          "lemma": "אֶרֶץ",
+          "pos": "名詞",
+          "morph": "名詞・両性・単数・連語形／方向接尾辞 ה",
+          "morph_code": "HNcbsc/Sd"
+        },
+        {
+          "surface": "שֵׂעִ֖יר",
+          "separator_after": " ",
+          "gloss": "セイルの",
+          "lemma": "שֵׂעִיר",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "שְׂדֵ֥ה",
+          "separator_after": " ",
+          "gloss": "野",
+          "lemma": "שָׂדֶה",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・連語形",
+          "morph_code": "HNcmsc"
+        },
+        {
+          "surface": "אֱדֽוֹם",
+          "separator_after": "׃",
+          "gloss": "エドムの",
+          "lemma": "אֱדֹם",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        }
+      ]
+    },
+    {
+      "verse": 5,
+      "hebrew": "וַיְצַ֤ו אֹתָם֙ לֵאמֹ֔ר כֹּ֣ה תֹאמְר֔וּן לַֽאדֹנִ֖י לְעֵשָׂ֑ו כֹּ֤ה אָמַר֙ עַבְדְּךָ֣ יַעֲקֹ֔ב עִם־לָבָ֣ן גַּ֔רְתִּי וָאֵחַ֖ר עַד־עָֽתָּה׃",
+      "translation": "彼らに命じて言った。「私の主人エサウにこう言いなさい。『あなたのしもべヤコブはこう申します。私はラバンと共に寄留し、今までとどまっていました。』」",
+      "short_commentary": "32:4で固定したVer.2 HTML仕様を複数節へ展開できるかを確認する構造試験です。",
+      "detailed_commentary": "この節ではWLC本文、マカフ、ソフ・パスーク、語順、語数、HTML構造の自動再現性を検証します。逐語訳・lemma・MorphHB形態情報は本番化前に確定値へ差し替えます。",
+      "words": [
+        {
+          "surface": "וַיְצַ֤ו",
+          "separator_after": " ",
+          "gloss": "そして彼は命じた",
+          "lemma": "צָוָה",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Piel・形：wayyiqtol・3人称・男性・単数",
+          "morph_code": "HC/Vpw3ms"
+        },
+        {
+          "surface": "אֹתָם֙",
+          "separator_after": " ",
+          "gloss": "彼らに",
+          "lemma": "אֵת",
+          "pos": "対格標識",
+          "morph": "対格標識／人称代名詞接尾辞・3人称・男性・複数",
+          "morph_code": "HTo/Sp3mp"
+        },
+        {
+          "surface": "לֵאמֹ֔ר",
+          "separator_after": " ",
+          "gloss": "言うために",
+          "lemma": "אָמַר",
+          "pos": "動詞",
+          "morph": "前置詞／動詞・語幹：Qal・形：不定詞連語形",
+          "morph_code": "HR/Vqc"
+        },
+        {
+          "surface": "כֹּ֣ה",
+          "separator_after": " ",
+          "gloss": "このように",
+          "lemma": "כֹּה",
+          "pos": "副詞",
+          "morph": "副詞",
+          "morph_code": "HD"
+        },
+        {
+          "surface": "תֹאמְר֔וּן",
+          "separator_after": " ",
+          "gloss": "あなたがたは言いなさい",
+          "lemma": "אָמַר",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：未完了形・2人称・男性・複数／語尾のヌン",
+          "morph_code": "HVqi2mp/Sn"
+        },
+        {
+          "surface": "לַֽאדֹנִ֖י",
+          "separator_after": " ",
+          "gloss": "私の主人に",
+          "lemma": "אָדוֹן",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・男性・単数・連語形／人称代名詞接尾辞・1人称・共通・単数",
+          "morph_code": "HR/Ncmsc/Sp1cs"
+        },
+        {
+          "surface": "לְעֵשָׂ֑ו",
+          "separator_after": " ",
+          "gloss": "エサウに",
+          "lemma": "עֵשָׂו",
+          "pos": "固有名詞",
+          "morph": "前置詞／固有名詞",
+          "morph_code": "HR/Np"
+        },
+        {
+          "surface": "כֹּ֤ה",
+          "separator_after": " ",
+          "gloss": "このように",
+          "lemma": "כֹּה",
+          "pos": "副詞",
+          "morph": "副詞",
+          "morph_code": "HD"
+        },
+        {
+          "surface": "אָמַר֙",
+          "separator_after": " ",
+          "gloss": "言った",
+          "lemma": "אָמַר",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：完了形・3人称・男性・単数",
+          "morph_code": "HVqp3ms"
+        },
+        {
+          "surface": "עַבְדְּךָ֣",
+          "separator_after": " ",
+          "gloss": "あなたのしもべ",
+          "lemma": "עֶבֶד",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・連語形／人称代名詞接尾辞・2人称・男性・単数",
+          "morph_code": "HNcmsc/Sp2ms"
+        },
+        {
+          "surface": "יַעֲקֹ֔ב",
+          "separator_after": " ",
+          "gloss": "ヤコブは",
+          "lemma": "יַעֲקֹב",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "עִם",
+          "separator_after": "־",
+          "gloss": "〜と共に",
+          "lemma": "עִם",
+          "pos": "前置詞",
+          "morph": "前置詞",
+          "morph_code": "HR"
+        },
+        {
+          "surface": "לָבָ֣ן",
+          "separator_after": " ",
+          "gloss": "ラバン",
+          "lemma": "לָבָן",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "גַּ֔רְתִּי",
+          "separator_after": " ",
+          "gloss": "私は寄留した",
+          "lemma": "גּוּר",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：完了形・1人称・共通・単数",
+          "morph_code": "HVqp1cs"
+        },
+        {
+          "surface": "וָאֵחַ֖ר",
+          "separator_after": " ",
+          "gloss": "そして私はとどまった",
+          "lemma": "אָחַר",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：wayyiqtol・1人称・共通・単数",
+          "morph_code": "HC/Vqw1cs"
+        },
+        {
+          "surface": "עַד",
+          "separator_after": "־",
+          "gloss": "〜まで",
+          "lemma": "עַד",
+          "pos": "前置詞",
+          "morph": "前置詞",
+          "morph_code": "HR"
+        },
+        {
+          "surface": "עָֽתָּה",
+          "separator_after": "׃",
+          "gloss": "今",
+          "lemma": "עַתָּה",
+          "pos": "副詞",
+          "morph": "副詞",
+          "morph_code": "HD"
+        }
+      ]
+    },
+    {
+      "verse": 6,
+      "hebrew": "וַֽיְהִי־לִי֙ שׁ֣וֹר וַחֲמ֔וֹר צֹ֖אן וְעֶ֣בֶד וְשִׁפְחָ֑ה וָֽאֶשְׁלְחָה֙ לְהַגִּ֣יד לַֽאדֹנִ֔י לִמְצֹא־חֵ֖ן בְּעֵינֶֽיךָ׃",
+      "translation": "私には牛、ろば、羊、男奴隷、女奴隷があります。私は主人に知らせ、あなたの目に好意を得ようとして使いを送りました。",
+      "short_commentary": "32:4で固定したVer.2 HTML仕様を複数節へ展開できるかを確認する構造試験です。",
+      "detailed_commentary": "この節ではWLC本文、マカフ、ソフ・パスーク、語順、語数、HTML構造の自動再現性を検証します。逐語訳・lemma・MorphHB形態情報は本番化前に確定値へ差し替えます。",
+      "words": [
+        {
+          "surface": "וַֽיְהִי",
+          "separator_after": "־",
+          "gloss": "そしてあった",
+          "lemma": "הָיָה",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：wayyiqtol・3人称・男性・単数",
+          "morph_code": "HC/Vqw3ms"
+        },
+        {
+          "surface": "לִי֙",
+          "separator_after": " ",
+          "gloss": "私に",
+          "lemma": "לְ",
+          "pos": "前置詞",
+          "morph": "前置詞／人称代名詞接尾辞・1人称・共通・単数",
+          "morph_code": "HR/Sp1cs"
+        },
+        {
+          "surface": "שׁ֣וֹר",
+          "separator_after": " ",
+          "gloss": "牛",
+          "lemma": "שׁוֹר",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・絶対形",
+          "morph_code": "HNcmsa"
+        },
+        {
+          "surface": "וַחֲמ֔וֹר",
+          "separator_after": " ",
+          "gloss": "そしてろば",
+          "lemma": "חֲמוֹר",
+          "pos": "名詞",
+          "morph": "接続詞／名詞・両性・単数・絶対形",
+          "morph_code": "HC/Ncbsa"
+        },
+        {
+          "surface": "צֹ֖אן",
+          "separator_after": " ",
+          "gloss": "羊の群れ",
+          "lemma": "צֹאן",
+          "pos": "名詞",
+          "morph": "名詞・両性・単数・絶対形",
+          "morph_code": "HNcbsa"
+        },
+        {
+          "surface": "וְעֶ֣בֶד",
+          "separator_after": " ",
+          "gloss": "そして男奴隷",
+          "lemma": "עֶבֶד",
+          "pos": "名詞",
+          "morph": "接続詞／名詞・男性・単数・絶対形",
+          "morph_code": "HC/Ncmsa"
+        },
+        {
+          "surface": "וְשִׁפְחָ֑ה",
+          "separator_after": " ",
+          "gloss": "そして女奴隷",
+          "lemma": "שִׁפְחָה",
+          "pos": "名詞",
+          "morph": "接続詞／名詞・女性・単数・絶対形",
+          "morph_code": "HC/Ncfsa"
+        },
+        {
+          "surface": "וָֽאֶשְׁלְחָה֙",
+          "separator_after": " ",
+          "gloss": "そして私は遣わした",
+          "lemma": "שָׁלַח",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：wayyiqtol・1人称・共通・単数／方向/強意の ה 接尾辞",
+          "morph_code": "HC/Vqw1cs/Sh"
+        },
+        {
+          "surface": "לְהַגִּ֣יד",
+          "separator_after": " ",
+          "gloss": "告げるために",
+          "lemma": "נָגַד",
+          "pos": "動詞",
+          "morph": "前置詞／動詞・語幹：Hiphil・形：不定詞連語形",
+          "morph_code": "HR/Vhc"
+        },
+        {
+          "surface": "לַֽאדֹנִ֔י",
+          "separator_after": " ",
+          "gloss": "私の主人に",
+          "lemma": "אָדוֹן",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・男性・単数・連語形／人称代名詞接尾辞・1人称・共通・単数",
+          "morph_code": "HR/Ncmsc/Sp1cs"
+        },
+        {
+          "surface": "לִמְצֹא",
+          "separator_after": "־",
+          "gloss": "見いだすために",
+          "lemma": "מָצָא",
+          "pos": "動詞",
+          "morph": "前置詞／動詞・語幹：Qal・形：不定詞連語形",
+          "morph_code": "HR/Vqc"
+        },
+        {
+          "surface": "חֵ֖ן",
+          "separator_after": " ",
+          "gloss": "好意を",
+          "lemma": "חֵן",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・絶対形",
+          "morph_code": "HNcmsa"
+        },
+        {
+          "surface": "בְּעֵינֶֽיךָ",
+          "separator_after": "׃",
+          "gloss": "あなたの目に",
+          "lemma": "עַיִן",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・両性・双数・連語形／人称代名詞接尾辞・2人称・男性・単数",
+          "morph_code": "HR/Ncbdc/Sp2ms"
+        }
+      ]
+    },
+    {
+      "verse": 7,
+      "hebrew": "וַיָּשֻׁ֨בוּ֙ הַמַּלְאָכִ֔ים אֶֽל־יַעֲקֹ֖ב לֵאמֹ֑ר בָּ֤אנוּ אֶל־אָחִ֨יךָ֙ אֶל־עֵשָׂ֔ו וְגַם֙ הֹלֵ֣ךְ לִקְרָֽאתְךָ֔ וְאַרְבַּע־מֵא֥וֹת אִ֖ישׁ עִמּֽוֹ׃",
+      "translation": "使者たちはヤコブのもとへ戻って言った。「私たちはあなたの兄エサウのもとへ行きました。彼もあなたを迎えに来ています。しかも四百人が彼と共にいます。」",
+      "short_commentary": "32:4で固定したVer.2 HTML仕様を複数節へ展開できるかを確認する構造試験です。",
+      "detailed_commentary": "この節ではWLC本文、マカフ、ソフ・パスーク、語順、語数、HTML構造の自動再現性を検証します。逐語訳・lemma・MorphHB形態情報は本番化前に確定値へ差し替えます。",
+      "words": [
+        {
+          "surface": "וַיָּשֻׁ֨בוּ֙",
+          "separator_after": " ",
+          "gloss": "そして戻った",
+          "lemma": "שׁוּב",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：wayyiqtol・3人称・男性・複数",
+          "morph_code": "HC/Vqw3mp"
+        },
+        {
+          "surface": "הַמַּלְאָכִ֔ים",
+          "separator_after": " ",
+          "gloss": "その使者たちは",
+          "lemma": "מֲלְאָךְ",
+          "pos": "名詞",
+          "morph": "定冠詞／名詞・男性・複数・絶対形",
+          "morph_code": "HTd/Ncmpa"
+        },
+        {
+          "surface": "אֶֽל",
+          "separator_after": "־",
+          "gloss": "〜へ",
+          "lemma": "אֵל",
+          "pos": "前置詞",
+          "morph": "前置詞",
+          "morph_code": "HR"
+        },
+        {
+          "surface": "יַעֲקֹ֖ב",
+          "separator_after": " ",
+          "gloss": "ヤコブ",
+          "lemma": "יַעֲקֹב",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "לֵאמֹ֑ר",
+          "separator_after": " ",
+          "gloss": "言うために",
+          "lemma": "אָמַר",
+          "pos": "動詞",
+          "morph": "前置詞／動詞・語幹：Qal・形：不定詞連語形",
+          "morph_code": "HR/Vqc"
+        },
+        {
+          "surface": "בָּ֤אנוּ",
+          "separator_after": " ",
+          "gloss": "私たちは行きました",
+          "lemma": "בּוֹא",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：完了形・1人称・共通・複数",
+          "morph_code": "HVqp1cp"
+        },
+        {
+          "surface": "אֶל",
+          "separator_after": "־",
+          "gloss": "〜へ",
+          "lemma": "אֵל",
+          "pos": "前置詞",
+          "morph": "前置詞",
+          "morph_code": "HR"
+        },
+        {
+          "surface": "אָחִ֨יךָ֙",
+          "separator_after": " ",
+          "gloss": "あなたの兄弟",
+          "lemma": "אָח",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・連語形／人称代名詞接尾辞・2人称・男性・単数",
+          "morph_code": "HNcmsc/Sp2ms"
+        },
+        {
+          "surface": "אֶל",
+          "separator_after": "־",
+          "gloss": "〜へ",
+          "lemma": "אֵל",
+          "pos": "前置詞",
+          "morph": "前置詞",
+          "morph_code": "HR"
+        },
+        {
+          "surface": "עֵשָׂ֔ו",
+          "separator_after": " ",
+          "gloss": "エサウ",
+          "lemma": "עֵשָׂו",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "וְגַם֙",
+          "separator_after": " ",
+          "gloss": "そしてまた",
+          "lemma": "גַּם",
+          "pos": "副詞的小辞",
+          "morph": "接続詞／副詞的小辞",
+          "morph_code": "HC/Ta"
+        },
+        {
+          "surface": "הֹלֵ֣ךְ",
+          "separator_after": " ",
+          "gloss": "向かっている",
+          "lemma": "הָלַךְ",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：分詞・男性・単数・絶対形",
+          "morph_code": "HVqrmsa"
+        },
+        {
+          "surface": "לִקְרָֽאתְךָ֔",
+          "separator_after": " ",
+          "gloss": "あなたを迎えに",
+          "lemma": "קִרְאָה",
+          "pos": "動詞",
+          "morph": "前置詞／動詞・語幹：Qal・形：不定詞連語形／人称代名詞接尾辞・2人称・男性・単数",
+          "morph_code": "HR/Vqc/Sp2ms"
+        },
+        {
+          "surface": "וְאַרְבַּע",
+          "separator_after": "־",
+          "gloss": "そして四",
+          "lemma": "אַרְבַּע",
+          "pos": "数詞",
+          "morph": "接続詞／基数詞・女性・単数・絶対形",
+          "morph_code": "HC/Acfsa"
+        },
+        {
+          "surface": "מֵא֥וֹת",
+          "separator_after": " ",
+          "gloss": "百",
+          "lemma": "מֵאָה",
+          "pos": "数詞",
+          "morph": "基数詞・両性・複数・絶対形",
+          "morph_code": "HAcbpa"
+        },
+        {
+          "surface": "אִ֖ישׁ",
+          "separator_after": " ",
+          "gloss": "人",
+          "lemma": "אִישׁ",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・絶対形",
+          "morph_code": "HNcmsa"
+        },
+        {
+          "surface": "עִמּֽוֹ",
+          "separator_after": "׃",
+          "gloss": "彼と共に",
+          "lemma": "עִם",
+          "pos": "前置詞",
+          "morph": "前置詞／人称代名詞接尾辞・3人称・男性・単数",
+          "morph_code": "HR/Sp3ms"
+        }
+      ]
+    },
+    {
+      "verse": 8,
+      "hebrew": "וַיִּירָ֧א יַעֲקֹ֛ב מְאֹ֖ד וַיֵּ֣צֶר ל֑וֹ וַיַּ֜חַץ אֶת־הָעָ֣ם אֲשֶׁר־אִתּ֗וֹ וְאֶת־הַצֹּ֧אן וְאֶת־הַבָּקָ֛ר וְהַגְּמַלִּ֖ים לִשְׁנֵ֥י מַחֲנֽוֹת׃",
+      "translation": "ヤコブは非常に恐れ、苦しんだ。そこで彼は、自分と共にいる人々、羊、牛、らくだを二つの陣営に分けた。",
+      "short_commentary": "32:4で固定したVer.2 HTML仕様を複数節へ展開できるかを確認する構造試験です。",
+      "detailed_commentary": "この節ではWLC本文、マカフ、ソフ・パスーク、語順、語数、HTML構造の自動再現性を検証します。逐語訳・lemma・MorphHB形態情報は本番化前に確定値へ差し替えます。",
+      "words": [
+        {
+          "surface": "וַיִּירָ֧א",
+          "separator_after": " ",
+          "gloss": "そして恐れた",
+          "lemma": "יָרֵא",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：wayyiqtol・3人称・男性・単数",
+          "morph_code": "HC/Vqw3ms"
+        },
+        {
+          "surface": "יַעֲקֹ֛ב",
+          "separator_after": " ",
+          "gloss": "ヤコブは",
+          "lemma": "יַעֲקֹב",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "מְאֹ֖ד",
+          "separator_after": " ",
+          "gloss": "非常に",
+          "lemma": "מְאֹד",
+          "pos": "副詞",
+          "morph": "副詞",
+          "morph_code": "HD"
+        },
+        {
+          "surface": "וַיֵּ֣צֶר",
+          "separator_after": " ",
+          "gloss": "そして苦しんだ",
+          "lemma": "יָצַר",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：wayyiqtol・3人称・男性・単数",
+          "morph_code": "HC/Vqw3ms"
+        },
+        {
+          "surface": "ל֑וֹ",
+          "separator_after": " ",
+          "gloss": "彼は",
+          "lemma": "לְ",
+          "pos": "前置詞",
+          "morph": "前置詞／人称代名詞接尾辞・3人称・男性・単数",
+          "morph_code": "HR/Sp3ms"
+        },
+        {
+          "surface": "וַיַּ֜חַץ",
+          "separator_after": " ",
+          "gloss": "そして分けた",
+          "lemma": "חָצָה",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：wayyiqtol・3人称・男性・単数",
+          "morph_code": "HC/Vqw3ms"
+        },
+        {
+          "surface": "אֶת",
+          "separator_after": "־",
+          "gloss": "〜を",
+          "lemma": "אֵת",
+          "pos": "対格標識",
+          "morph": "対格標識",
+          "morph_code": "HTo"
+        },
+        {
+          "surface": "הָעָ֣ם",
+          "separator_after": " ",
+          "gloss": "その民",
+          "lemma": "עַם",
+          "pos": "名詞",
+          "morph": "定冠詞／名詞・男性・単数・絶対形",
+          "morph_code": "HTd/Ncmsa"
+        },
+        {
+          "surface": "אֲשֶׁר",
+          "separator_after": "־",
+          "gloss": "〜である",
+          "lemma": "אֲשֶׁר",
+          "pos": "関係詞",
+          "morph": "関係詞",
+          "morph_code": "HTr"
+        },
+        {
+          "surface": "אִתּ֗וֹ",
+          "separator_after": " ",
+          "gloss": "彼と共に",
+          "lemma": "אֵת",
+          "pos": "前置詞",
+          "morph": "前置詞／人称代名詞接尾辞・3人称・男性・単数",
+          "morph_code": "HR/Sp3ms"
+        },
+        {
+          "surface": "וְאֶת",
+          "separator_after": "־",
+          "gloss": "そして〜を",
+          "lemma": "אֵת",
+          "pos": "対格標識",
+          "morph": "接続詞／対格標識",
+          "morph_code": "HC/To"
+        },
+        {
+          "surface": "הַצֹּ֧אן",
+          "separator_after": " ",
+          "gloss": "羊の群れ",
+          "lemma": "צֹאן",
+          "pos": "名詞",
+          "morph": "定冠詞／名詞・両性・単数・絶対形",
+          "morph_code": "HTd/Ncbsa"
+        },
+        {
+          "surface": "וְאֶת",
+          "separator_after": "־",
+          "gloss": "そして〜を",
+          "lemma": "אֵת",
+          "pos": "対格標識",
+          "morph": "接続詞／対格標識",
+          "morph_code": "HC/To"
+        },
+        {
+          "surface": "הַבָּקָ֛ר",
+          "separator_after": " ",
+          "gloss": "牛の群れ",
+          "lemma": "בָּקָר",
+          "pos": "名詞",
+          "morph": "定冠詞／名詞・両性・単数・絶対形",
+          "morph_code": "HTd/Ncbsa"
+        },
+        {
+          "surface": "וְהַגְּמַלִּ֖ים",
+          "separator_after": " ",
+          "gloss": "そしてらくだたち",
+          "lemma": "גָּמָל",
+          "pos": "名詞",
+          "morph": "接続詞／定冠詞／名詞・男性・複数・絶対形",
+          "morph_code": "HC/Td/Ncmpa"
+        },
+        {
+          "surface": "לִשְׁנֵ֥י",
+          "separator_after": " ",
+          "gloss": "二つの",
+          "lemma": "שְׁנַיִם",
+          "pos": "数詞",
+          "morph": "前置詞／基数詞・男性・双数・連語形",
+          "morph_code": "HR/Acmdc"
+        },
+        {
+          "surface": "מַחֲנֽוֹת",
+          "separator_after": "׃",
+          "gloss": "陣営に",
+          "lemma": "מַחֲנֶה",
+          "pos": "名詞",
+          "morph": "名詞・両性・複数・絶対形",
+          "morph_code": "HNcbpa"
+        }
+      ]
+    },
+    {
+      "verse": 9,
+      "hebrew": "וַיֹּ֕אמֶר אִם־יָב֥וֹא עֵשָׂ֛ו אֶל־הַמַּחֲנֶ֥ה הָאַחַ֖ת וְהִכָּ֑הוּ וְהָיָ֛ה הַמַּחֲנֶ֥ה הַנִּשְׁאָ֖ר לִפְלֵיטָֽה׃",
+      "translation": "彼は言った。「もしエサウが一方の陣営に来てこれを打っても、残った陣営は逃れることができる。」",
+      "short_commentary": "32:4で固定したVer.2 HTML仕様を複数節へ展開できるかを確認する構造試験です。",
+      "detailed_commentary": "この節ではWLC本文、マカフ、ソフ・パスーク、語順、語数、HTML構造の自動再現性を検証します。逐語訳・lemma・MorphHB形態情報は本番化前に確定値へ差し替えます。",
+      "words": [
+        {
+          "surface": "וַיֹּ֕אמֶר",
+          "separator_after": " ",
+          "gloss": "そして言った",
+          "lemma": "אָמַר",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：wayyiqtol・3人称・男性・単数",
+          "morph_code": "HC/Vqw3ms"
+        },
+        {
+          "surface": "אִם",
+          "separator_after": "־",
+          "gloss": "もし",
+          "lemma": "אִם",
+          "pos": "接続詞",
+          "morph": "接続詞",
+          "morph_code": "HC"
+        },
+        {
+          "surface": "יָב֥וֹא",
+          "separator_after": " ",
+          "gloss": "来るなら",
+          "lemma": "בּוֹא",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：未完了形・3人称・男性・単数",
+          "morph_code": "HVqi3ms"
+        },
+        {
+          "surface": "עֵשָׂ֛ו",
+          "separator_after": " ",
+          "gloss": "エサウが",
+          "lemma": "עֵשָׂו",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "אֶל",
+          "separator_after": "־",
+          "gloss": "〜へ",
+          "lemma": "אֵל",
+          "pos": "前置詞",
+          "morph": "前置詞",
+          "morph_code": "HR"
+        },
+        {
+          "surface": "הַמַּחֲנֶ֥ה",
+          "separator_after": " ",
+          "gloss": "その陣営",
+          "lemma": "מַחֲנֶה",
+          "pos": "名詞",
+          "morph": "定冠詞／名詞・両性・単数・絶対形",
+          "morph_code": "HTd/Ncbsa"
+        },
+        {
+          "surface": "הָאַחַ֖ת",
+          "separator_after": " ",
+          "gloss": "一方の",
+          "lemma": "אֶחָד",
+          "pos": "数詞",
+          "morph": "定冠詞／基数詞・女性・単数・絶対形",
+          "morph_code": "HTd/Acfsa"
+        },
+        {
+          "surface": "וְהִכָּ֑הוּ",
+          "separator_after": " ",
+          "gloss": "そしてそれを打つなら",
+          "lemma": "נָכָה",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Hiphil・形：連続完了形・3人称・男性・単数／人称代名詞接尾辞・3人称・男性・単数",
+          "morph_code": "HC/Vhq3ms/Sp3ms"
+        },
+        {
+          "surface": "וְהָיָ֛ה",
+          "separator_after": " ",
+          "gloss": "そうすればなる",
+          "lemma": "הָיָה",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：連続完了形・3人称・男性・単数",
+          "morph_code": "HC/Vqq3ms"
+        },
+        {
+          "surface": "הַמַּחֲנֶ֥ה",
+          "separator_after": " ",
+          "gloss": "その陣営",
+          "lemma": "מַחֲנֶה",
+          "pos": "名詞",
+          "morph": "定冠詞／名詞・両性・単数・絶対形",
+          "morph_code": "HTd/Ncbsa"
+        },
+        {
+          "surface": "הַנִּשְׁאָ֖ר",
+          "separator_after": " ",
+          "gloss": "残された",
+          "lemma": "שָׁאַר",
+          "pos": "動詞",
+          "morph": "定冠詞／動詞・語幹：Niphal・形：分詞・男性・単数・絶対形",
+          "morph_code": "HTd/VNrmsa"
+        },
+        {
+          "surface": "לִפְלֵיטָֽה",
+          "separator_after": "׃",
+          "gloss": "逃れたものに",
+          "lemma": "פְּלֵיטָה",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・女性・単数・絶対形",
+          "morph_code": "HR/Ncfsa"
+        }
+      ]
+    },
+    {
+      "verse": 10,
+      "hebrew": "וַיֹּאמֶר֮ יַעֲקֹב֒ אֱלֹהֵי֙ אָבִ֣י אַבְרָהָ֔ם וֵאלֹהֵ֖י אָבִ֣י יִצְחָ֑ק יְהוָ֞ה הָאֹמֵ֣ר אֵלַ֗י שׁ֧וּב לְאַרְצְךָ֛ וּלְמוֹלַדְתְּךָ֖ וְאֵיטִ֥יבָה עִמָּֽךְ׃",
+      "translation": "ヤコブは言った。「私の父アブラハムの神、私の父イサクの神、主よ。あなたは私に『あなたの地、あなたの親族のもとへ帰れ。私はあなたを幸せにする』と言われました。」",
+      "short_commentary": "32:4で固定したVer.2 HTML仕様を複数節へ展開できるかを確認する構造試験です。",
+      "detailed_commentary": "この節ではWLC本文、マカフ、ソフ・パスーク、語順、語数、HTML構造の自動再現性を検証します。逐語訳・lemma・MorphHB形態情報は本番化前に確定値へ差し替えます。",
+      "words": [
+        {
+          "surface": "וַיֹּאמֶר֮",
+          "separator_after": " ",
+          "gloss": "そして言った",
+          "lemma": "אָמַר",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：wayyiqtol・3人称・男性・単数",
+          "morph_code": "HC/Vqw3ms"
+        },
+        {
+          "surface": "יַעֲקֹב֒",
+          "separator_after": " ",
+          "gloss": "ヤコブは",
+          "lemma": "יַעֲקֹב",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "אֱלֹהֵי֙",
+          "separator_after": " ",
+          "gloss": "神よ",
+          "lemma": "אֱלֹהִים",
+          "pos": "名詞",
+          "morph": "名詞・男性・複数・連語形",
+          "morph_code": "HNcmpc"
+        },
+        {
+          "surface": "אָבִ֣י",
+          "separator_after": " ",
+          "gloss": "私の父の",
+          "lemma": "אָב",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・連語形／人称代名詞接尾辞・1人称・共通・単数",
+          "morph_code": "HNcmsc/Sp1cs"
+        },
+        {
+          "surface": "אַבְרָהָ֔ם",
+          "separator_after": " ",
+          "gloss": "アブラハムの",
+          "lemma": "אַבְרָהָם",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "וֵאלֹהֵ֖י",
+          "separator_after": " ",
+          "gloss": "そして神よ",
+          "lemma": "אֱלֹהִים",
+          "pos": "名詞",
+          "morph": "接続詞／名詞・男性・複数・連語形",
+          "morph_code": "HC/Ncmpc"
+        },
+        {
+          "surface": "אָבִ֣י",
+          "separator_after": " ",
+          "gloss": "私の父の",
+          "lemma": "אָב",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・連語形／人称代名詞接尾辞・1人称・共通・単数",
+          "morph_code": "HNcmsc/Sp1cs"
+        },
+        {
+          "surface": "יִצְחָ֑ק",
+          "separator_after": " ",
+          "gloss": "イサクの",
+          "lemma": "יִצְחָק",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "יְהוָ֞ה",
+          "separator_after": " ",
+          "gloss": "主よ",
+          "lemma": "יְהֹוָה",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "הָאֹמֵ֣ר",
+          "separator_after": " ",
+          "gloss": "語っておられる方",
+          "lemma": "אָמַר",
+          "pos": "動詞",
+          "morph": "定冠詞／動詞・語幹：Qal・形：分詞・男性・単数・絶対形",
+          "morph_code": "HTd/Vqrmsa"
+        },
+        {
+          "surface": "אֵלַ֗י",
+          "separator_after": " ",
+          "gloss": "私に",
+          "lemma": "אֵל",
+          "pos": "前置詞",
+          "morph": "前置詞／人称代名詞接尾辞・1人称・共通・単数",
+          "morph_code": "HR/Sp1cs"
+        },
+        {
+          "surface": "שׁ֧וּב",
+          "separator_after": " ",
+          "gloss": "帰れ",
+          "lemma": "שׁוּב",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：命令形・2人称・男性・単数",
+          "morph_code": "HVqv2ms"
+        },
+        {
+          "surface": "לְאַרְצְךָ֛",
+          "separator_after": " ",
+          "gloss": "あなたの地へ",
+          "lemma": "אֶרֶץ",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・両性・単数・連語形／人称代名詞接尾辞・2人称・男性・単数",
+          "morph_code": "HR/Ncbsc/Sp2ms"
+        },
+        {
+          "surface": "וּלְמוֹלַדְתְּךָ֖",
+          "separator_after": " ",
+          "gloss": "あなたの生まれ故郷へ",
+          "lemma": "מוֹלֶדֶת",
+          "pos": "名詞",
+          "morph": "接続詞／前置詞／名詞・女性・単数・連語形／人称代名詞接尾辞・2人称・男性・単数",
+          "morph_code": "HC/R/Ncfsc/Sp2ms"
+        },
+        {
+          "surface": "וְאֵיטִ֥יבָה",
+          "separator_after": " ",
+          "gloss": "そして私は良くしよう",
+          "lemma": "יָטַב",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Hiphil・形：命令法相当/コホルタティブ系・1人称・共通・単数",
+          "morph_code": "HC/Vhh1cs"
+        },
+        {
+          "surface": "עִמָּֽךְ",
+          "separator_after": "׃",
+          "gloss": "あなたと共に",
+          "lemma": "עִם",
+          "pos": "前置詞",
+          "morph": "前置詞／人称代名詞接尾辞・2人称・女性・単数",
+          "morph_code": "HR/Sp2fs"
+        }
+      ]
+    },
+    {
+      "verse": 11,
+      "hebrew": "קָטֹ֜נְתִּי מִכֹּ֤ל הַחֲסָדִים֙ וּמִכָּל־הָ֣אֱמֶ֔ת אֲשֶׁ֥ר עָשִׂ֖יתָ אֶת־עַבְדֶּ֑ךָ כִּ֣י בְמַקְלִ֗י עָבַ֨רְתִּי֙ אֶת־הַיַּרְדֵּ֣ן הַזֶּ֔ה וְעַתָּ֥ה הָיִ֖יתִי לִשְׁנֵ֥י מַחֲנֽוֹת׃",
+      "translation": "私は、あなたがしもべに施してくださったすべての慈しみとすべての真実に値しません。杖一本でこのヨルダンを渡りましたが、今では二つの陣営になるほどになりました。",
+      "short_commentary": "32:4で固定したVer.2 HTML仕様を複数節へ展開できるかを確認する構造試験です。",
+      "detailed_commentary": "この節ではWLC本文、マカフ、ソフ・パスーク、語順、語数、HTML構造の自動再現性を検証します。逐語訳・lemma・MorphHB形態情報は本番化前に確定値へ差し替えます。",
+      "words": [
+        {
+          "surface": "קָטֹ֜נְתִּי",
+          "separator_after": " ",
+          "gloss": "私は小さすぎます",
+          "lemma": "קָטֹן",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：完了形・1人称・共通・単数",
+          "morph_code": "HVqp1cs"
+        },
+        {
+          "surface": "מִכֹּ֤ל",
+          "separator_after": " ",
+          "gloss": "すべての〜より",
+          "lemma": "כֹּל",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・男性・単数・連語形",
+          "morph_code": "HR/Ncmsc"
+        },
+        {
+          "surface": "הַחֲסָדִים֙",
+          "separator_after": " ",
+          "gloss": "慈しみより",
+          "lemma": "חֵסֵד",
+          "pos": "名詞",
+          "morph": "定冠詞／名詞・男性・複数・絶対形",
+          "morph_code": "HTd/Ncmpa"
+        },
+        {
+          "surface": "וּמִכָּל",
+          "separator_after": "־",
+          "gloss": "そしてすべての〜より",
+          "lemma": "כֹּל",
+          "pos": "名詞",
+          "morph": "接続詞／前置詞／名詞・男性・単数・連語形",
+          "morph_code": "HC/R/Ncmsc"
+        },
+        {
+          "surface": "הָ֣אֱמֶ֔ת",
+          "separator_after": " ",
+          "gloss": "真実より",
+          "lemma": "אֶמֶת",
+          "pos": "名詞",
+          "morph": "定冠詞／名詞・女性・単数・絶対形",
+          "morph_code": "HTd/Ncfsa"
+        },
+        {
+          "surface": "אֲשֶׁ֥ר",
+          "separator_after": " ",
+          "gloss": "〜ところの",
+          "lemma": "אֲשֶׁר",
+          "pos": "関係詞",
+          "morph": "関係詞",
+          "morph_code": "HTr"
+        },
+        {
+          "surface": "עָשִׂ֖יתָ",
+          "separator_after": " ",
+          "gloss": "あなたが行った",
+          "lemma": "עָשָׂה",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：完了形・2人称・男性・単数",
+          "morph_code": "HVqp2ms"
+        },
+        {
+          "surface": "אֶת",
+          "separator_after": "־",
+          "gloss": "〜と共に",
+          "lemma": "אֵת",
+          "pos": "前置詞",
+          "morph": "前置詞",
+          "morph_code": "HR"
+        },
+        {
+          "surface": "עַבְדֶּ֑ךָ",
+          "separator_after": " ",
+          "gloss": "あなたのしもべに",
+          "lemma": "עֶבֶד",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・連語形／人称代名詞接尾辞・2人称・男性・単数",
+          "morph_code": "HNcmsc/Sp2ms"
+        },
+        {
+          "surface": "כִּ֣י",
+          "separator_after": " ",
+          "gloss": "なぜなら",
+          "lemma": "כִּי",
+          "pos": "接続詞",
+          "morph": "接続詞",
+          "morph_code": "HC"
+        },
+        {
+          "surface": "בְמַקְלִ֗י",
+          "separator_after": " ",
+          "gloss": "私の杖一本で",
+          "lemma": "מַקֵּל",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・男性・単数・連語形／人称代名詞接尾辞・1人称・共通・単数",
+          "morph_code": "HR/Ncmsc/Sp1cs"
+        },
+        {
+          "surface": "עָבַ֨רְתִּי֙",
+          "separator_after": " ",
+          "gloss": "私は渡った",
+          "lemma": "עָבַר",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：完了形・1人称・共通・単数",
+          "morph_code": "HVqp1cs"
+        },
+        {
+          "surface": "אֶת",
+          "separator_after": "־",
+          "gloss": "〜を",
+          "lemma": "אֵת",
+          "pos": "対格標識",
+          "morph": "対格標識",
+          "morph_code": "HTo"
+        },
+        {
+          "surface": "הַיַּרְדֵּ֣ן",
+          "separator_after": " ",
+          "gloss": "ヨルダン川",
+          "lemma": "יַרְדֵּן",
+          "pos": "固有名詞",
+          "morph": "定冠詞／固有名詞",
+          "morph_code": "HTd/Np"
+        },
+        {
+          "surface": "הַזֶּ֔ה",
+          "separator_after": " ",
+          "gloss": "この",
+          "lemma": "זֶה",
+          "pos": "代名詞",
+          "morph": "定冠詞／指示代名詞・不定",
+          "morph_code": "HTd/Pdxms"
+        },
+        {
+          "surface": "וְעַתָּ֥ה",
+          "separator_after": " ",
+          "gloss": "そして今",
+          "lemma": "עַתָּה",
+          "pos": "副詞",
+          "morph": "接続詞／副詞",
+          "morph_code": "HC/D"
+        },
+        {
+          "surface": "הָיִ֖יתִי",
+          "separator_after": " ",
+          "gloss": "私はなった",
+          "lemma": "הָיָה",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：完了形・1人称・共通・単数",
+          "morph_code": "HVqp1cs"
+        },
+        {
+          "surface": "לִשְׁנֵ֥י",
+          "separator_after": " ",
+          "gloss": "二つの",
+          "lemma": "שְׁנַיִם",
+          "pos": "数詞",
+          "morph": "前置詞／基数詞・男性・双数・連語形",
+          "morph_code": "HR/Acmdc"
+        },
+        {
+          "surface": "מַחֲנֽוֹת",
+          "separator_after": "׃",
+          "gloss": "陣営に",
+          "lemma": "מַחֲנֶה",
+          "pos": "名詞",
+          "morph": "名詞・両性・複数・絶対形",
+          "morph_code": "HNcbpa"
+        }
+      ]
+    },
+    {
+      "verse": 12,
+      "hebrew": "הַצִּילֵ֥נִי נָ֛א מִיַּ֥ד אָחִ֖י מִיַּ֣ד עֵשָׂ֑ו כִּֽי־יָרֵ֤א אָנֹכִי֙ אֹת֔וֹ פֶּן־יָב֣וֹא וְהִכַּ֔נִי אֵ֖ם עַל־בָּנִֽים׃",
+      "translation": "どうか私を兄の手、エサウの手から救い出してください。私は彼を恐れています。彼が来て、母も子も共に打つのではないかと。",
+      "short_commentary": "32:4で固定したVer.2 HTML仕様を複数節へ展開できるかを確認する構造試験です。",
+      "detailed_commentary": "この節ではWLC本文、マカフ、ソフ・パスーク、語順、語数、HTML構造の自動再現性を検証します。逐語訳・lemma・MorphHB形態情報は本番化前に確定値へ差し替えます。",
+      "words": [
+        {
+          "surface": "הַצִּילֵ֥נִי",
+          "separator_after": " ",
+          "gloss": "どうか私を救い出してください",
+          "lemma": "נָצַל",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Hiphil・形：命令形・2人称・男性・単数／人称代名詞接尾辞・1人称・共通・単数",
+          "morph_code": "HVhv2ms/Sp1cs"
+        },
+        {
+          "surface": "נָ֛א",
+          "separator_after": " ",
+          "gloss": "どうか",
+          "lemma": "נָא",
+          "pos": "小辞",
+          "morph": "勧奨小辞",
+          "morph_code": "HTe"
+        },
+        {
+          "surface": "מִיַּ֥ד",
+          "separator_after": " ",
+          "gloss": "手から",
+          "lemma": "יָד",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・両性・単数・連語形",
+          "morph_code": "HR/Ncbsc"
+        },
+        {
+          "surface": "אָחִ֖י",
+          "separator_after": " ",
+          "gloss": "私の兄弟の",
+          "lemma": "אָח",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・連語形／人称代名詞接尾辞・1人称・共通・単数",
+          "morph_code": "HNcmsc/Sp1cs"
+        },
+        {
+          "surface": "מִיַּ֣ד",
+          "separator_after": " ",
+          "gloss": "手から",
+          "lemma": "יָד",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・両性・単数・連語形",
+          "morph_code": "HR/Ncbsc"
+        },
+        {
+          "surface": "עֵשָׂ֑ו",
+          "separator_after": " ",
+          "gloss": "エサウの",
+          "lemma": "עֵשָׂו",
+          "pos": "固有名詞",
+          "morph": "固有名詞",
+          "morph_code": "HNp"
+        },
+        {
+          "surface": "כִּֽי",
+          "separator_after": "־",
+          "gloss": "なぜなら",
+          "lemma": "כִּי",
+          "pos": "接続詞",
+          "morph": "接続詞",
+          "morph_code": "HC"
+        },
+        {
+          "surface": "יָרֵ֤א",
+          "separator_after": " ",
+          "gloss": "私は恐れている",
+          "lemma": "יָרֵא",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：分詞・男性・単数・絶対形",
+          "morph_code": "HVqrmsa"
+        },
+        {
+          "surface": "אָנֹכִי֙",
+          "separator_after": " ",
+          "gloss": "私は",
+          "lemma": "אָנֹכִי",
+          "pos": "代名詞",
+          "morph": "人称代名詞・1人称・共通・単数",
+          "morph_code": "HPp1cs"
+        },
+        {
+          "surface": "אֹת֔וֹ",
+          "separator_after": " ",
+          "gloss": "彼を",
+          "lemma": "אֵת",
+          "pos": "対格標識",
+          "morph": "対格標識／人称代名詞接尾辞・3人称・男性・単数",
+          "morph_code": "HTo/Sp3ms"
+        },
+        {
+          "surface": "פֶּן",
+          "separator_after": "־",
+          "gloss": "〜しないように",
+          "lemma": "פֵּן",
+          "pos": "接続詞",
+          "morph": "接続詞",
+          "morph_code": "HC"
+        },
+        {
+          "surface": "יָב֣וֹא",
+          "separator_after": " ",
+          "gloss": "彼が来て",
+          "lemma": "בּוֹא",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：未完了形・3人称・男性・単数",
+          "morph_code": "HVqi3ms"
+        },
+        {
+          "surface": "וְהִכַּ֔נִי",
+          "separator_after": " ",
+          "gloss": "そして私を打つ",
+          "lemma": "נָכָה",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Hiphil・形：連続完了形・3人称・男性・単数／人称代名詞接尾辞・1人称・共通・単数",
+          "morph_code": "HC/Vhq3ms/Sp1cs"
+        },
+        {
+          "surface": "אֵ֖ם",
+          "separator_after": " ",
+          "gloss": "母を",
+          "lemma": "אֵם",
+          "pos": "名詞",
+          "morph": "名詞・女性・単数・絶対形",
+          "morph_code": "HNcfsa"
+        },
+        {
+          "surface": "עַל",
+          "separator_after": "־",
+          "gloss": "〜と共に",
+          "lemma": "עַל",
+          "pos": "前置詞",
+          "morph": "前置詞",
+          "morph_code": "HR"
+        },
+        {
+          "surface": "בָּנִֽים",
+          "separator_after": "׃",
+          "gloss": "子らを",
+          "lemma": "בֵּן",
+          "pos": "名詞",
+          "morph": "名詞・男性・複数・絶対形",
+          "morph_code": "HNcmpa"
+        }
+      ]
+    },
+    {
+      "verse": 13,
+      "hebrew": "וְאַתָּ֣ה אָמַ֔רְתָּ הֵיטֵ֥ב אֵיטִ֖יב עִמָּ֑ךְ וְשַׂמְתִּ֤י אֶֽת־זַרְעֲךָ֙ כְּח֣וֹל הַיָּ֔ם אֲשֶׁ֥ר לֹא־יִסָּפֵ֖ר מֵרֹֽב׃",
+      "translation": "あなたは『私は必ずあなたを幸せにし、あなたの子孫を多くて数えきれない海の砂のようにする』と言われました。",
+      "short_commentary": "32:4で固定したVer.2 HTML仕様を複数節へ展開できるかを確認する構造試験です。",
+      "detailed_commentary": "この節ではWLC本文、マカフ、ソフ・パスーク、語順、語数、HTML構造の自動再現性を検証します。逐語訳・lemma・MorphHB形態情報は本番化前に確定値へ差し替えます。",
+      "words": [
+        {
+          "surface": "וְאַתָּ֣ה",
+          "separator_after": " ",
+          "gloss": "しかしあなたは",
+          "lemma": "אַתָּה",
+          "pos": "代名詞",
+          "morph": "接続詞／人称代名詞・2人称・男性・単数",
+          "morph_code": "HC/Pp2ms"
+        },
+        {
+          "surface": "אָמַ֔רְתָּ",
+          "separator_after": " ",
+          "gloss": "言われました",
+          "lemma": "אָמַר",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Qal・形：完了形・2人称・男性・単数",
+          "morph_code": "HVqp2ms"
+        },
+        {
+          "surface": "הֵיטֵ֥ב",
+          "separator_after": " ",
+          "gloss": "必ず良く",
+          "lemma": "יָטַב",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Hiphil・形：不定詞絶対形",
+          "morph_code": "HVha"
+        },
+        {
+          "surface": "אֵיטִ֖יב",
+          "separator_after": " ",
+          "gloss": "私は良くする",
+          "lemma": "יָטַב",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Hiphil・形：未完了形・1人称・共通・単数",
+          "morph_code": "HVhi1cs"
+        },
+        {
+          "surface": "עִמָּ֑ךְ",
+          "separator_after": " ",
+          "gloss": "あなたと共に",
+          "lemma": "עִם",
+          "pos": "前置詞",
+          "morph": "前置詞／人称代名詞接尾辞・2人称・女性・単数",
+          "morph_code": "HR/Sp2fs"
+        },
+        {
+          "surface": "וְשַׂמְתִּ֤י",
+          "separator_after": " ",
+          "gloss": "そして私はする",
+          "lemma": "שׂוּם",
+          "pos": "動詞",
+          "morph": "接続詞／動詞・語幹：Qal・形：連続完了形・1人称・共通・単数",
+          "morph_code": "HC/Vqq1cs"
+        },
+        {
+          "surface": "אֶֽת",
+          "separator_after": "־",
+          "gloss": "〜を",
+          "lemma": "אֵת",
+          "pos": "対格標識",
+          "morph": "対格標識",
+          "morph_code": "HTo"
+        },
+        {
+          "surface": "זַרְעֲךָ֙",
+          "separator_after": " ",
+          "gloss": "あなたの子孫",
+          "lemma": "זֶרַע",
+          "pos": "名詞",
+          "morph": "名詞・男性・単数・連語形／人称代名詞接尾辞・2人称・男性・単数",
+          "morph_code": "HNcmsc/Sp2ms"
+        },
+        {
+          "surface": "כְּח֣וֹל",
+          "separator_after": " ",
+          "gloss": "砂のように",
+          "lemma": "חוֹל",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・男性・単数・連語形",
+          "morph_code": "HR/Ncmsc"
+        },
+        {
+          "surface": "הַיָּ֔ם",
+          "separator_after": " ",
+          "gloss": "海の",
+          "lemma": "יָם",
+          "pos": "名詞",
+          "morph": "定冠詞／名詞・男性・単数・絶対形",
+          "morph_code": "HTd/Ncmsa"
+        },
+        {
+          "surface": "אֲשֶׁ֥ר",
+          "separator_after": " ",
+          "gloss": "〜ところの",
+          "lemma": "אֲשֶׁר",
+          "pos": "関係詞",
+          "morph": "関係詞",
+          "morph_code": "HTr"
+        },
+        {
+          "surface": "לֹא",
+          "separator_after": "־",
+          "gloss": "〜ない",
+          "lemma": "לֹא",
+          "pos": "否定辞",
+          "morph": "否定辞",
+          "morph_code": "HTn"
+        },
+        {
+          "surface": "יִסָּפֵ֖ר",
+          "separator_after": " ",
+          "gloss": "数えられる",
+          "lemma": "סָפַר",
+          "pos": "動詞",
+          "morph": "動詞・語幹：Niphal・形：未完了形・3人称・男性・単数",
+          "morph_code": "HVNi3ms"
+        },
+        {
+          "surface": "מֵרֹֽב",
+          "separator_after": "׃",
+          "gloss": "多さのゆえに",
+          "lemma": "רֹב",
+          "pos": "名詞",
+          "morph": "前置詞／名詞・両性・単数・絶対形",
+          "morph_code": "HR/Ncbsa"
+        }
+      ]
+    }
+  ],
+  "summary": "MorphHB/OSHMの固定コミットからWLC本文・lemma・形態情報を自動取得し、Work由来の文脈的逐語訳と統合した050本番化実験。",
+  "modern_connection": "",
+  "interpretive_cautions": "32:5–13の逐語訳・lemma・品詞・MorphHB形態情報は展開試験用プレースホルダー。WLC本文とHTML構造の再現性確認後、本番公開前に確定値へ差し替える。",
+  "callout2": "ヤコブはエサウとの再会を前に、使者を送り、状況を見極め、危機に備え、神の約束を祈りの根拠とする。",
+  "radio_script": ""
+}
