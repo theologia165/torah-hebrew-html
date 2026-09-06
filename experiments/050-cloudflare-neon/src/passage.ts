@@ -89,8 +89,8 @@ export function parsePassageUrl(url: URL): PassageCriteria {
 
 export function buildPassageQuery(criteria: PassageCriteria): QuerySpec {
   // source_passages is the stable bridge from a corpus source to the common
-  // reference layer. The final join to dtworks.* is deliberately isolated here;
-  // future corpora can use their own storage while preserving the API response.
+  // reference layer. Lexeme joins are optional LEFT JOINs so the passage text
+  // remains readable even when a future token has no lexical identity.
   return {
     text: `
       SELECT
@@ -122,6 +122,12 @@ export function buildPassageQuery(criteria: PassageCriteria): QuerySpec {
         t.gender_code,
         t.number_code,
         t.state_code,
+        lx.source_lexeme_key AS lexeme_key,
+        lx.lemma_text AS lexeme_lemma,
+        lx.lemma_search AS lexeme_search,
+        lx.transliteration AS lexeme_transliteration,
+        lx.pos_code AS lexeme_pos_code,
+        lxs.code AS lexicon_source_code,
         COALESCE((
           SELECT jsonb_agg(
                    jsonb_build_object(
@@ -141,6 +147,8 @@ export function buildPassageQuery(criteria: PassageCriteria): QuerySpec {
       JOIN core.reference_passages rp ON rp.id = sp.reference_passage_id
       JOIN dtworks.verses v ON v.osis_wlc = sp.source_key
       JOIN dtworks.tokens t ON t.verse_id = v.id
+      LEFT JOIN core.lexemes lx ON lx.id = t.primary_lexeme_id
+      LEFT JOIN core.lexicon_sources lxs ON lxs.id = lx.lexicon_source_id
       WHERE cs.code = $1
         AND rp.book_osis = $2
         AND (rp.chapter, rp.verse) >= ($3, $4)
