@@ -46,7 +46,7 @@ jobs:
           cache: pip
           cache-dependency-path: experiments/050-postgresql/requirements.txt
 
-      - name: Install Python dependency
+      - name: Install Python dependencies
         working-directory: experiments/050-postgresql
         run: python -m pip install -r requirements.txt
 
@@ -94,7 +94,7 @@ jobs:
           echo "Imported Genesis token rows: $TOKEN_COUNT"
           test "$TOKEN_COUNT" -gt 10000
 
-      - name: Exercise current 050-style query
+      - name: Exercise current 050-style SQL query
         working-directory: experiments/050-postgresql
         run: |
           psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -c "
@@ -108,3 +108,26 @@ jobs:
             ORDER BY canonical_order, chapter_wlc, verse_wlc, token_index
             LIMIT 20;
           "
+
+      - name: Exercise FastAPI HTTP boundary against PostgreSQL
+        working-directory: experiments/050-postgresql
+        run: |
+          uvicorn api:app --host 127.0.0.1 --port 8000 > /tmp/dtworks-fastapi.log 2>&1 &
+          API_PID=$!
+          trap 'kill "$API_PID" 2>/dev/null || true' EXIT
+
+          READY=0
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/health >/dev/null; then
+              READY=1
+              break
+            fi
+            sleep 1
+          done
+          if [ "$READY" -ne 1 ]; then
+            cat /tmp/dtworks-fastapi.log
+            exit 1
+          fi
+
+          python verify_api.py http://127.0.0.1:8000
+          cat /tmp/dtworks-fastapi.log
