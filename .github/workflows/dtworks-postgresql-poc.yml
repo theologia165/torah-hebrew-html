@@ -1,0 +1,110 @@
+name: DTWorks PostgreSQL POC
+
+on:
+  push:
+    branches:
+      - dtworks-postgresql-poc
+    paths:
+      - "experiments/050-postgresql/**"
+      - ".github/workflows/dtworks-postgresql-poc.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  genesis-postgresql-poc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: dtworks_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d dtworks_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/dtworks_test
+      PGPASSWORD: postgres
+
+    steps:
+      - name: Checkout POC branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: experiments/050-postgresql/requirements.txt
+
+      - name: Install Python dependency
+        working-directory: experiments/050-postgresql
+        run: python -m pip install -r requirements.txt
+
+      - name: Unit-test normalization and MorphHB parsing
+        working-directory: experiments/050-postgresql
+        run: python -m unittest -v test_import_morphhb.py
+
+      - name: Create DTWorks PostgreSQL schema
+        working-directory: experiments/050-postgresql
+        run: |
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f schema.sql
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f seed_books.sql
+
+      - name: Import pinned MorphHB Genesis and verify 050 in source
+        working-directory: experiments/050-postgresql
+        run: python import_morphhb.py --verify-050 --database-url "$DATABASE_URL"
+
+      - name: Verify Genesis 32:4 through SQL
+        working-directory: experiments/050-postgresql
+        run: |
+          MATCHES=$(psql "$DATABASE_URL" -Atc "
+            SELECT count(*)
+            FROM dtworks.search_tokens
+            WHERE book = 'Gen'
+              AND chapter_wlc = 32
+              AND verse_wlc = 4
+              AND primary_strong = 7971
+              AND main_pos_code = 'V'
+              AND main_stem_code = 'q'
+              AND main_conjugation_code = 'w';
+          ")
+          echo "050 SQL matches: $MATCHES"
+          test "$MATCHES" -ge 1
+
+          KJV_REF=$(psql "$DATABASE_URL" -Atc "
+            SELECT chapter_kjv || ':' || verse_kjv
+            FROM dtworks.search_tokens
+            WHERE book = 'Gen' AND osis_wlc = 'Gen.32.4'
+            LIMIT 1;
+          ")
+          echo "VerseMap check: WLC Gen.32.4 -> KJV Gen.$KJV_REF"
+          test "$KJV_REF" = "32:3"
+
+          TOKEN_COUNT=$(psql "$DATABASE_URL" -Atc "SELECT count(*) FROM dtworks.search_tokens WHERE book = 'Gen';")
+          echo "Imported Genesis token rows: $TOKEN_COUNT"
+          test "$TOKEN_COUNT" -gt 10000
+
+      - name: Exercise current 050-style query
+        working-directory: experiments/050-postgresql
+        run: |
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -c "
+            SELECT book, chapter_wlc, verse_wlc, surface,
+                   primary_strong, main_stem_code, main_conjugation_code
+            FROM dtworks.search_tokens
+            WHERE primary_strong = 7971
+              AND main_stem_code = 'q'
+              AND main_conjugation_code = 'w'
+              AND tanakh_group = 'torah'
+            ORDER BY canonical_order, chapter_wlc, verse_wlc, token_index
+            LIMIT 20;
+          "
