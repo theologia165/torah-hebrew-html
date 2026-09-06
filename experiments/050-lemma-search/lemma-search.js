@@ -1,4 +1,4 @@
-const DATA_FILE = './050-genesis-32-4.json';
+const DATA_FILE = 'https://raw.githubusercontent.com/theologia165/torah-hebrew-html/main/experiments/050-lemma-search/050-genesis-32-4.json';
 const MORPHHB_COMMIT = '3d15126fb1ef74867fc1434be1942e837932691f';
 const RAW_BASE = `https://raw.githubusercontent.com/openscriptures/morphhb/${MORPHHB_COMMIT}/wlc/`;
 
