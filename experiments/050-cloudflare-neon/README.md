@@ -1,38 +1,37 @@
-# DTWorks 2 Cloudflare Workers + Neon PostgreSQL POC — 050
+# DTWorks 2 Cloudflare Workers + Neon PostgreSQL — 050
 
 ## Goal
 
-Replace the temporary FastAPI hosting layer with a zero-fixed-cost-friendly edge API while keeping PostgreSQL and the existing 050 HTTP contract.
+Provide a zero-fixed-cost-friendly public API for the DTWorks 2 biblical corpus while keeping the database reproducible from GitHub.
 
 ```text
-Notion / later WordPress
+Notion / later WordPress / independent research UI
         ↓
-JavaScript search UI
+JavaScript
         ↓
 Cloudflare Worker
         ↓
 Neon PostgreSQL
         ↓
-dtworks.search_tokens
+core.* reference layer + dtworks.* MorphHB corpus
 ```
 
-The previous `experiments/050-postgresql/` FastAPI implementation remains in the branch history as the reference contract. This directory implements the same search boundary in TypeScript for Cloudflare Workers.
+The PostgreSQL database is a derived index. GitHub source, migrations, importers, and pinned upstream corpora are the reproducible source of truth.
 
 ## Current status
 
-**Cloudflare Worker code/contract POC: PASS**
+Live Worker:
 
-Verified in GitHub Actions on 2026-09-06:
+`https://dtworks-hebrew-search.nishiharat.workers.dev`
 
-- dependency installation: PASS
-- 6 search-contract / SQL-binding tests: PASS
-- TypeScript typecheck: PASS
-- Wrangler 4.129.0 dry-run bundle: PASS
-- bundle size: 207.78 KiB / gzip 56.04 KiB
+Genesis is currently the only imported biblical corpus:
 
-The Worker is **not yet deployed** and is **not yet connected to a real Neon project**. The next live step requires a Neon project/connection string and a Cloudflare Workers account deployment.
+- 1,533 WLC verses
+- 20,629 MorphHB word tokens
+- pinned MorphHB commit `3d15126fb1ef74867fc1434be1942e837932691f`
+- WLC/KJV reference mappings loaded into the common `core.*` reference layer
 
-Existing Notion 050, main, and Ver.2 production remain unchanged.
+The existing search baseline remains Strong 7971 + Qal + wayyiqtol in Genesis = 15 results.
 
 ## API contract
 
@@ -42,11 +41,11 @@ Returns runtime/database health, imported token count, and MorphHB source commit
 
 ### `GET /books`
 
-Returns the 39-book metadata from `dtworks.books`.
+Returns biblical book metadata.
 
 ### `GET /search`
 
-Supported parameters are intentionally aligned with the FastAPI POC:
+Current MorphHB search parameters:
 
 - `strong=7971`
 - `form=וַיִּשְׁלַח`
@@ -58,7 +57,7 @@ Supported parameters are intentionally aligned with the FastAPI POC:
 - `offset=0..1000000`
 - `versification=wlc|kjv`
 
-At least one of `strong`, `form`, `stem`, or `conjugation` is required. A scope-only full-data request is rejected.
+At least one lexical/morphological condition is required.
 
 Example:
 
@@ -66,73 +65,117 @@ Example:
 GET /search?strong=7971&stem=q&conjugation=w&books=Gen&limit=100
 ```
 
+### `GET /passage`
+
+`/passage` is source-aware from its first version even though only Genesis in MorphHB/WLC is currently loaded.
+
+Single verse:
+
+```text
+GET /passage?source=morphhb-wlc&ref=Gen.32.4
+```
+
+Verse range:
+
+```text
+GET /passage?source=morphhb-wlc&start=Gen.32.4&end=Gen.32.8
+```
+
+`source` defaults to `morphhb-wlc` at this stage.
+
+The response includes:
+
+- corpus source metadata
+- reference system (`WLC` currently)
+- OSIS verse reference
+- linked reference mappings, including KJV-style numbering where applicable
+- ordered word tokens
+- Strong / lemma / morphology fields already used by `/search`
+- a convenience `text` assembled from the ordered MorphHB word tokens
+
+The response deliberately identifies that convenience text as `joined-from-MorphHB-word-tokens`; token data remains authoritative for this stage.
+
+Example conceptual response:
+
+```json
+{
+  "api": "passage",
+  "version": "1",
+  "source": {
+    "code": "morphhb-wlc",
+    "reference_system": "WLC"
+  },
+  "requested": {
+    "start": "Gen.32.4",
+    "end": "Gen.32.4"
+  },
+  "passage_count": 1,
+  "verses": [
+    {
+      "reference": {
+        "system": "WLC",
+        "osis": "Gen.32.4"
+      },
+      "mappings": [
+        {"system": "KJV", "osis": "Gen.32.3", "relation": "renumbered"}
+      ],
+      "tokens": []
+    }
+  ]
+}
+```
+
+## Long-term passage contract
+
+The URL and response shape are designed so later corpora can use the same endpoint rather than receiving corpus-specific endpoints:
+
+```text
+/passage?source=morphhb-wlc&ref=Gen.1.1
+/passage?source=lxx&ref=Gen.1.1
+/passage?source=peshitta&ref=Gen.1.1
+```
+
+Future source codes are not accepted until their corpora are actually loaded.
+
+The Worker resolves the source through `core.corpus_sources` and `core.source_passages`, so the public API is not conceptually tied to WLC verse IDs. The present final join to `dtworks.*` is isolated in `src/passage.ts`; a Greek or Syriac corpus may use different physical token/analysis tables while preserving the same API contract.
+
+Reference-system differences are represented through `core.reference_passages` and `core.passage_mappings`, not by silently renumbering the source text.
+
+## Relation to Asaichi Torah JSON
+
+Future Asaichi Torah JSON should identify passages through a stable external reference pair, for example:
+
+```json
+{
+  "reference": {
+    "system": "WLC",
+    "osis": "Gen.32.4"
+  }
+}
+```
+
+The `content.documents` and `content.document_passages` tables provide the database-side bridge from those GitHub JSON documents to the common passage reference layer. The JSON remains the canonical authored content; PostgreSQL provides linking, retrieval, and search indexes.
+
 ## SQL safety
 
-Search values are not concatenated into SQL values. `src/search.ts` constructs a fixed SQL shape using numbered PostgreSQL placeholders (`$1`, `$2`, ...), and `@neondatabase/serverless` sends the values separately through `sql.query(text, params)`.
+Search and passage values use numbered PostgreSQL placeholders (`$1`, `$2`, ...). User-supplied values are not concatenated into SQL values.
 
-Book codes are additionally restricted to the 39 supported OSIS identifiers before SQL construction.
+## Secrets
 
-## Neon connection secret
+Never commit the Neon connection URI. Runtime access uses the Cloudflare secret binding `DATABASE_URL`.
 
-Never commit the Neon connection string. After a Worker and Neon project exist, configure it as a Cloudflare secret:
+## Reproducibility
 
-```bash
-npx wrangler secret put DATABASE_URL
-```
-
-For local development only, `.dev.vars` may contain:
+Long-term database design and migrations live under:
 
 ```text
-DATABASE_URL="postgresql://..."
+dtworks2/database/
 ```
 
-`.dev.vars` and `.env` are ignored by this experiment's `.gitignore`.
-
-## Reusing the proven PostgreSQL layer
-
-The Neon database should use the already-proven files in `../050-postgresql/`:
-
-1. `schema.sql`
-2. `seed_books.sql`
-3. `import_morphhb.py`
-4. pinned MorphHB / VerseMap source
-
-Conceptually:
+The current reference/content-layer migration is:
 
 ```text
-schema.sql + seed_books.sql
-          ↓
-Neon PostgreSQL
-          ↑
-import_morphhb.py
-          ↑
-pinned MorphHB
+dtworks2/database/migrations/001_reference_content_layer.sql
 ```
 
-The database remains a derived search index. GitHub + pinned source + importer remain the reproducible source of truth.
-
-## CI
-
-`.github/workflows/dtworks-cloudflare-neon-poc.yml` runs:
-
-1. dependency installation,
-2. search-contract tests,
-3. TypeScript typecheck,
-4. `wrangler deploy --dry-run` bundle validation.
-
-No Cloudflare API token or Neon password is required for this code-validation stage.
-
-## Next deployment step
-
-The first live deployment should remain Genesis-only:
-
-1. create a Neon PostgreSQL project,
-2. apply the existing schema and 39-book metadata,
-3. import Genesis with the existing Python importer,
-4. create the Cloudflare Worker,
-5. save the Neon connection string as `DATABASE_URL` secret,
-6. deploy the Worker,
-7. verify `/health` and the 050 search over HTTPS,
-8. create a separate 050-B UI so the current XML-backed 050 remains available for A/B comparison.
-
-Only after the live 050-B result matches the existing 050 should the importer be expanded to all 39 books.
+MorphHB import remains pinned to the recorded upstream Git commit. A lost Neon database must be reconstructible from GitHub + pinned upstream source rather than from a manually maintained database snapshot.
