@@ -3,7 +3,7 @@ import test from "node:test";
 import { ApiInputError } from "../src/search";
 import { buildPassageQuery, parsePassageUrl } from "../src/passage";
 
-test("single verse uses source-aware OSIS contract", () => {
+test("single verse uses source-aware OSIS and lexeme contract", () => {
   const criteria = parsePassageUrl(new URL("https://example.test/passage?source=morphhb-wlc&ref=Gen.32.4"));
   assert.equal(criteria.source, "morphhb-wlc");
   assert.equal(criteria.start.osis, "Gen.32.4");
@@ -12,6 +12,9 @@ test("single verse uses source-aware OSIS contract", () => {
   assert.deepEqual(query.params, ["morphhb-wlc", "Gen", 32, 4, 32, 4]);
   assert.match(query.text, /core\.source_passages/);
   assert.match(query.text, /core\.reference_links/);
+  assert.match(query.text, /LEFT JOIN core\.lexemes/);
+  assert.match(query.text, /lexeme_lemma/);
+  assert.match(query.text, /lexeme_key/);
 });
 
 test("verse range is accepted within Genesis", () => {
