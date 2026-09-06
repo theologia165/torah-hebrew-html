@@ -3,12 +3,24 @@ import { ApiInputError, buildSearchPlan, parseSearchUrl } from "./search";
 
 const MORPHHB_COMMIT = "3d15126fb1ef74867fc1434be1942e837932691f";
 
+interface SecretStoreBinding {
+  get(): Promise<string>;
+}
+
 interface Env {
-  DATABASE_URL: string;
+  DATABASE_URL?: string | SecretStoreBinding;
   CORS_ORIGINS?: string;
 }
 
 type JsonObject = Record<string, unknown>;
+
+async function resolveDatabaseUrl(env: Env): Promise<string | null> {
+  const binding = env.DATABASE_URL;
+  if (!binding) return null;
+  if (typeof binding === "string") return binding;
+  if (typeof binding.get === "function") return await binding.get();
+  return null;
+}
 
 function corsOrigin(request: Request, env: Env): string | null {
   const configured = (env.CORS_ORIGINS ?? "*")
@@ -44,8 +56,8 @@ function asRows(value: unknown): JsonObject[] {
   return Array.isArray(value) ? (value as JsonObject[]) : [];
 }
 
-async function handleHealth(request: Request, env: Env): Promise<Response> {
-  const sql = neon(env.DATABASE_URL);
+async function handleHealth(request: Request, env: Env, databaseUrl: string): Promise<Response> {
+  const sql = neon(databaseUrl);
   const result = await sql.query(`
     SELECT
       (SELECT count(*)::text FROM dtworks.search_tokens) AS tokens,
@@ -65,8 +77,8 @@ async function handleHealth(request: Request, env: Env): Promise<Response> {
   });
 }
 
-async function handleBooks(request: Request, env: Env): Promise<Response> {
-  const sql = neon(env.DATABASE_URL);
+async function handleBooks(request: Request, env: Env, databaseUrl: string): Promise<Response> {
+  const sql = neon(databaseUrl);
   const rows = await sql.query(`
     SELECT osis_code AS book, english_name, japanese_name,
            tanakh_group, canonical_order
@@ -76,10 +88,10 @@ async function handleBooks(request: Request, env: Env): Promise<Response> {
   return json(request, env, { books: rows });
 }
 
-async function handleSearch(request: Request, env: Env, url: URL): Promise<Response> {
+async function handleSearch(request: Request, env: Env, url: URL, databaseUrl: string): Promise<Response> {
   const criteria = parseSearchUrl(url);
   const plan = buildSearchPlan(criteria);
-  const sql = neon(env.DATABASE_URL);
+  const sql = neon(databaseUrl);
 
   const [countResult, rowResult] = await Promise.all([
     sql.query(plan.count.text, plan.count.params),
@@ -116,7 +128,9 @@ export default {
     if (request.method !== "GET") {
       return json(request, env, { detail: "Method not allowed" }, 405);
     }
-    if (!env.DATABASE_URL) {
+
+    const databaseUrl = await resolveDatabaseUrl(env);
+    if (!databaseUrl) {
       return json(request, env, { detail: "DATABASE_URL is not configured" }, 503);
     }
 
@@ -132,9 +146,9 @@ export default {
           endpoints: ["/health", "/books", "/search"]
         });
       }
-      if (url.pathname === "/health") return await handleHealth(request, env);
-      if (url.pathname === "/books") return await handleBooks(request, env);
-      if (url.pathname === "/search") return await handleSearch(request, env, url);
+      if (url.pathname === "/health") return await handleHealth(request, env, databaseUrl);
+      if (url.pathname === "/books") return await handleBooks(request, env, databaseUrl);
+      if (url.pathname === "/search") return await handleSearch(request, env, url, databaseUrl);
       return json(request, env, { detail: "Not found" }, 404);
     } catch (error) {
       if (error instanceof ApiInputError) {
