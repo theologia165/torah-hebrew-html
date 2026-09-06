@@ -3,6 +3,7 @@ import { ApiInputError, buildSearchPlan, parseSearchUrl } from "./search";
 import { buildPassageQuery, parsePassageUrl } from "./passage";
 
 const MORPHHB_COMMIT = "3d15126fb1ef74867fc1434be1942e837932691f";
+const OSHB_LEXICON_COMMIT = "21c9add13bc727d3a951361778e97e3ff7afd1ce";
 
 interface SecretStoreBinding {
   get(): Promise<string>;
@@ -75,10 +76,17 @@ async function handleHealth(request: Request, env: Env, databaseUrl: string): Pr
   const result = await sql.query(`
     SELECT
       (SELECT count(*)::text FROM dtworks.search_tokens) AS tokens,
+      (SELECT count(*)::text FROM core.lexemes) AS lexemes,
+      (SELECT count(*)::text FROM core.lexemes WHERE lemma_text IS NOT NULL) AS labeled_lexemes,
+      (SELECT count(*)::text FROM dtworks.tokens WHERE primary_lexeme_id IS NOT NULL) AS linked_lexical_tokens,
       (SELECT source_commit
          FROM dtworks.source_versions
         ORDER BY imported_at DESC
-        LIMIT 1) AS source_commit
+        LIMIT 1) AS source_commit,
+      (SELECT source_version
+         FROM core.lexicon_sources
+        WHERE code = 'oshb-hebrew-lexicon'
+        LIMIT 1) AS lexicon_commit
   `, []);
   const row = asRows(result)[0] ?? {};
   return json(request, env, {
@@ -86,8 +94,13 @@ async function handleHealth(request: Request, env: Env, databaseUrl: string): Pr
     database: "neon-postgresql",
     runtime: "cloudflare-workers",
     tokens: Number(row.tokens ?? 0),
+    lexemes: Number(row.lexemes ?? 0),
+    labeled_lexemes: Number(row.labeled_lexemes ?? 0),
+    linked_lexical_tokens: Number(row.linked_lexical_tokens ?? 0),
     source_commit: row.source_commit ?? null,
-    expected_morphhb_commit: MORPHHB_COMMIT
+    lexicon_commit: row.lexicon_commit ?? null,
+    expected_morphhb_commit: MORPHHB_COMMIT,
+    expected_lexicon_commit: OSHB_LEXICON_COMMIT
   });
 }
 
@@ -170,6 +183,15 @@ async function handlePassage(request: Request, env: Env, url: URL, databaseUrl: 
       verseMap.set(osis, verse);
     }
 
+    const lexeme = row.lexeme_key ? {
+      key: row.lexeme_key,
+      lemma: row.lexeme_lemma ?? null,
+      search: row.lexeme_search ?? null,
+      transliteration: row.lexeme_transliteration ?? null,
+      pos: row.lexeme_pos_code ?? null,
+      source: row.lexicon_source_code ?? null
+    } : null;
+
     verse.tokens.push({
       token_id: row.token_id,
       index: row.token_index,
@@ -177,8 +199,10 @@ async function handlePassage(request: Request, env: Env, url: URL, databaseUrl: 
       form_search: row.form_search,
       form_consonantal: row.form_consonantal,
       lemma_raw: row.lemma_raw,
+      // Kept for old clients only. New clients identify a lemma by lexeme.key.
       primary_strong: row.primary_strong,
-      lemma_display: row.lemma_display,
+      lemma_display: row.lexeme_lemma ?? row.lemma_display ?? null,
+      lexeme,
       morph_raw: row.morph_raw,
       language_code: row.language_code,
       pos: row.main_pos_code,
@@ -209,13 +233,17 @@ async function handlePassage(request: Request, env: Env, url: URL, databaseUrl: 
   const first = rows[0] ?? {};
   return json(request, env, {
     api: "passage",
-    version: "1",
+    version: "2",
     source: {
       code: first.source_code ?? criteria.source,
       label: first.source_label ?? null,
       language: first.source_language ?? null,
       version: first.source_version ?? null,
-      reference_system: first.reference_system ?? null
+      reference_system: first.reference_system ?? null,
+      lexicon: {
+        code: "oshb-hebrew-lexicon",
+        version: OSHB_LEXICON_COMMIT
+      }
     },
     requested: {
       start: criteria.start.osis,
@@ -248,11 +276,15 @@ export default {
           service: "DTWorks 2 Biblical Corpus API",
           runtime: "Cloudflare Workers",
           database: "Neon PostgreSQL",
-          version: "0.2.0",
+          version: "0.3.0",
           endpoints: ["/health", "/books", "/search", "/passage"],
           passage_examples: [
             "/passage?source=morphhb-wlc&ref=Gen.32.4",
             "/passage?source=morphhb-wlc&start=Gen.32.4&end=Gen.32.8"
+          ],
+          search_examples: [
+            "/search?lexeme=7971&books=Gen",
+            "/search?lexeme=7971&stem=q&conjugation=w&books=Gen"
           ]
         });
       }
