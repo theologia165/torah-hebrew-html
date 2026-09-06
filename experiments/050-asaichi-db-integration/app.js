@@ -8,7 +8,7 @@ let editorial = null;
 let activeToken = null;
 
 function escapeHtml(value) {
-  return String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot',"'":'&#39;'}[c]));
+  return String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 function firstVerse(){return Array.isArray(passage?.verses)?passage.verses[0]:passage?.verse??passage}
 function tokenList(){const v=firstVerse();return Array.isArray(v?.tokens)?v.tokens:[]}
@@ -21,6 +21,21 @@ const GENDER={m:'男性',f:'女性',b:'共通'};
 const NUMBER={s:'単数',p:'複数',d:'双数'};
 const STATE={a:'絶対形',c:'連語形',d:'定形'};
 
+function fallbackTokens(){
+  return [...document.querySelectorAll('#verse .token')].map(node=>({
+    index:Number(node.dataset.index),
+    surface:node.dataset.surface,
+    lemma_display:node.dataset.lemma,
+    primary_strong:Number(node.dataset.strong),
+    pos:node.dataset.pos||null,
+    stem:node.dataset.stem||null,
+    conjugation:node.dataset.conjugation||null,
+    person:node.dataset.person||null,
+    gender:node.dataset.gender||null,
+    number:node.dataset.number||null,
+    state:node.dataset.state||null
+  }));
+}
 function lemmaDisplay(t){
   return t.lemma_display || String(t.lemma_raw??t.lemma??'').split('/').pop()?.trim() || `Strong ${t.primary_strong??t.strong??'—'}`;
 }
@@ -64,42 +79,61 @@ function placeHover(node){
 }
 function hideHover(){el('hover').hidden=true;if(activeToken)activeToken.classList.remove('active');activeToken=null}
 
-function render(){
-  const tokens=tokenList();
-  if(!tokens.length){el('status').textContent='本文データを取得できませんでした。';return;}
-  const literal = editorial?.literal_translation ?? [];
-  const gloss=new Map(literal.map(x=>[Number(x.token_index),x.ja]));
-  el('verse').innerHTML=tokens.map(t=>{const i=tokenIndex(t);return `<button class="token" type="button" data-index="${i}"><span class="he">${escapeHtml(t.surface)}</span><span class="gloss">${escapeHtml(gloss.get(i)??'')}</span></button>`}).join('');
-  el('status').textContent=`${REF}｜Neon /passage から ${tokens.length} 語を取得`;
-  document.querySelectorAll('.token').forEach(node=>{
+function bindTokens(tokens){
+  document.querySelectorAll('#verse .token').forEach(node=>{
     const i=Number(node.dataset.index);const t=tokens.find(x=>tokenIndex(x)===i);
-    node.addEventListener('mouseenter',()=>showHoverForNode(node,t));
-    node.addEventListener('mouseleave',()=>{if(!node.matches(':focus'))hideHover()});
-    node.addEventListener('focus',()=>showHoverForNode(node,t));
-    node.addEventListener('blur',()=>hideHover());
-    node.addEventListener('click',e=>{e.preventDefault();showHoverForNode(node,t)});
-    node.addEventListener('contextmenu',e=>{e.preventDefault();hideHover();searchToken(t)});
+    node.onmouseenter=()=>showHoverForNode(node,t);
+    node.onmouseleave=()=>{if(!node.matches(':focus'))hideHover()};
+    node.onfocus=()=>showHoverForNode(node,t);
+    node.onblur=()=>hideHover();
+    node.onclick=e=>{e.preventDefault();showHoverForNode(node,t)};
+    node.oncontextmenu=e=>{e.preventDefault();hideHover();searchToken(t)};
   });
+}
+function renderLive(){
+  const tokens=tokenList();
+  if(!tokens.length)return false;
+  const literal=editorial?.literal_translation??[];
+  const gloss=new Map(literal.map(x=>[Number(x.token_index),x.ja]));
+  const fallbackGloss=new Map([...document.querySelectorAll('#verse .token')].map(n=>[Number(n.dataset.index),n.querySelector('.gloss')?.textContent??'']));
+  el('verse').innerHTML=tokens.map(t=>{const i=tokenIndex(t);const ja=gloss.get(i)??fallbackGloss.get(i)??'';return `<button class="token" type="button" data-index="${i}"><span class="he">${escapeHtml(t.surface)}</span><span class="gloss">${escapeHtml(ja)}</span></button>`}).join('');
+  el('verse').dataset.fallback='false';
+  bindTokens(tokens);
+  el('status').textContent=`DB接続確認済み｜${REF}｜Neon /passage ${tokens.length}語`;
+  return true;
 }
 
 async function searchToken(token){
   if(!token)return;
   const strong=token.primary_strong??token.strong;if(!strong)return;
-  const url=`${API}/search?strong=${encodeURIComponent(strong)}&books=Gen&limit=100`;
-  const res=await fetch(url);if(!res.ok)throw new Error(`search ${res.status}`);const data=await res.json();
-  el('resultsCard').hidden=false;el('resultsTitle').textContent=`${token.surface}｜Strong ${strong}`;el('resultsMeta').textContent=`Genesis内 ${data.total}件`;
-  el('results').innerHTML=(data.results??[]).map(r=>`<div class="result"><b>${escapeHtml(r.display_ref??r.osis_wlc)}</b>　<span class="rhe" dir="rtl">${escapeHtml(r.surface)}</span></div>`).join('');
-  el('resultsCard').scrollIntoView({behavior:'smooth',block:'nearest'});
+  try{
+    const url=`${API}/search?strong=${encodeURIComponent(strong)}&books=Gen&limit=100`;
+    const res=await fetch(url);if(!res.ok)throw new Error(`search ${res.status}`);const data=await res.json();
+    el('resultsCard').hidden=false;el('resultsTitle').textContent=`${token.surface}｜Strong ${strong}`;el('resultsMeta').textContent=`Genesis内 ${data.total}件`;
+    el('results').innerHTML=(data.results??[]).map(r=>`<div class="result"><b>${escapeHtml(r.display_ref??r.osis_wlc)}</b>　<span class="rhe" dir="rtl">${escapeHtml(r.surface)}</span></div>`).join('');
+    el('resultsCard').scrollIntoView({behavior:'smooth',block:'nearest'});
+  }catch(error){
+    el('resultsCard').hidden=false;el('resultsTitle').textContent='検索APIエラー';el('resultsMeta').textContent=error.message;el('results').innerHTML='';
+  }
 }
 
 async function boot(){
+  const snapshot=fallbackTokens();
+  passage={verses:[{tokens:snapshot}]};
+  bindTokens(snapshot);
+  try{const eRes=await fetch('./editorial.json');if(eRes.ok)editorial=await eRes.json();}catch(e){console.warn('editorial unavailable',e)}
   try{
     const pRes=await fetch(`${API}/passage?source=${encodeURIComponent(SOURCE)}&ref=${encodeURIComponent(REF)}`);
     if(!pRes.ok)throw new Error(`/passage ${pRes.status}`);
-    passage=await pRes.json();
-    try{const eRes=await fetch('./editorial.json');if(eRes.ok)editorial=await eRes.json();}catch(e){console.warn('editorial unavailable',e)}
-    render();
-  }catch(error){console.error(error);el('status').textContent=`読み込みエラー: ${error.message}`}
+    const live=await pRes.json();
+    const liveTokens=Array.isArray(live?.verses?.[0]?.tokens)?live.verses[0].tokens:[];
+    if(liveTokens.length!==11)throw new Error(`/passage token count ${liveTokens.length}`);
+    passage=live;renderLive();
+  }catch(error){
+    console.error(error);
+    passage={verses:[{tokens:snapshot}]};bindTokens(snapshot);
+    el('status').textContent=`検証済みスナップショット表示｜live API確認失敗: ${error.message}`;
+  }
 }
 
 document.addEventListener('click',e=>{if(!e.target.closest('.token'))hideHover()});
