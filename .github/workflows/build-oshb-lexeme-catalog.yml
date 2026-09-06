@@ -1,0 +1,50 @@
+name: Build OSHB lexeme catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dtworks2/database/tools/build_oshb_lexeme_catalog.py'
+      - 'dtworks2/database/migrations/002_lexeme_layer.sql'
+      - '.github/workflows/build-oshb-lexeme-catalog.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build deterministic lexeme catalog
+        run: |
+          python dtworks2/database/tools/build_oshb_lexeme_catalog.py \
+            --output-dir build/oshb-lexemes \
+            --chunk-size 750
+      - name: Validate catalog manifest
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path('build/oshb-lexemes/manifest.json').read_text(encoding='utf-8'))
+          assert m['source']['commit']=='21c9add13bc727d3a951361778e97e3ff7afd1ce'
+          assert m['rows'] > 8000, m['rows']
+          assert len(m['missing_entries']) == 0, m['missing_entries'][:10]
+          assert m['benchmark']['source_lexeme_key']=='7971'
+          assert m['benchmark']['lemma_text']=='שָׁלַח', m['benchmark']
+          assert m['benchmark']['lemma_search']=='שלח', m['benchmark']
+          assert len(m['sql_chunks']) >= 10
+          print(json.dumps({'ok':True,'rows':m['rows'],'chunks':len(m['sql_chunks']),'benchmark':m['benchmark']}, ensure_ascii=False))
+          PY
+      - name: Upload lexeme catalog artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: oshb-lexeme-catalog
+          path: build/oshb-lexemes/
+          retention-days: 14
+          if-no-files-found: error
