@@ -32,14 +32,18 @@ jobs:
           import json
           from pathlib import Path
           m=json.loads(Path('build/oshb-lexemes/manifest.json').read_text(encoding='utf-8'))
-          assert m['source']['commit']=='21c9add13bc727d3a951361778e97e3ff7afd1ce'
-          assert m['rows'] > 8000, m['rows']
+          assert m['source']['lexicon_commit']=='21c9add13bc727d3a951361778e97e3ff7afd1ce'
+          assert m['source']['morphhb_commit']=='3d15126fb1ef74867fc1434be1942e837932691f'
+          assert m['catalog_rows'] > 9000, m['catalog_rows']
+          assert 1700 < m['genesis_rows'] < 2000, m['genesis_rows']
+          assert m['genesis_rows']==m['genesis_keys']
           assert len(m['missing_entries']) == 0, m['missing_entries'][:10]
+          assert len(m['genesis_missing']) == 0, m['genesis_missing'][:10]
           assert m['benchmark']['source_lexeme_key']=='7971'
           assert m['benchmark']['lemma_text']=='שָׁלַח', m['benchmark']
           assert m['benchmark']['lemma_search']=='שלח', m['benchmark']
-          assert len(m['sql_chunks']) >= 10
-          print(json.dumps({'ok':True,'rows':m['rows'],'chunks':len(m['sql_chunks']),'benchmark':m['benchmark']}, ensure_ascii=False))
+          assert 2 <= len(m['sql_chunks']) <= 4
+          print(json.dumps({'ok':True,'catalog_rows':m['catalog_rows'],'genesis_rows':m['genesis_rows'],'chunks':len(m['sql_chunks']),'benchmark':m['benchmark']}, ensure_ascii=False))
           PY
       - name: Upload lexeme catalog artifact
         uses: actions/upload-artifact@v4
