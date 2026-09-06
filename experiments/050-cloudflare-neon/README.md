@@ -20,7 +20,17 @@ The previous `experiments/050-postgresql/` FastAPI implementation remains in the
 
 ## Current status
 
-The Worker code is implemented but is **not yet deployed** and is **not yet connected to a real Neon project**. CI validates the request parser, parameter-bound SQL plan, TypeScript compilation, and Wrangler Worker bundle without requiring Cloudflare or Neon credentials.
+**Cloudflare Worker code/contract POC: PASS**
+
+Verified in GitHub Actions on 2026-09-06:
+
+- dependency installation: PASS
+- 6 search-contract / SQL-binding tests: PASS
+- TypeScript typecheck: PASS
+- Wrangler 4.129.0 dry-run bundle: PASS
+- bundle size: 207.78 KiB / gzip 56.04 KiB
+
+The Worker is **not yet deployed** and is **not yet connected to a real Neon project**. The next live step requires a Neon project/connection string and a Cloudflare Workers account deployment.
 
 Existing Notion 050, main, and Ver.2 production remain unchanged.
 
@@ -110,11 +120,11 @@ The database remains a derived search index. GitHub + pinned source + importer r
 3. TypeScript typecheck,
 4. `wrangler deploy --dry-run` bundle validation.
 
-No Cloudflare API token or Neon password is required for this stage.
+No Cloudflare API token or Neon password is required for this code-validation stage.
 
 ## Next deployment step
 
-After CI passes, the first live deployment should remain Genesis-only:
+The first live deployment should remain Genesis-only:
 
 1. create a Neon PostgreSQL project,
 2. apply the existing schema and 39-book metadata,
