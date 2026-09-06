@@ -1,0 +1,22 @@
+name: Validate 050 Notion integration
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'experiments/050-asaichi-db-integration/**'
+      - 'experiments/050-cloudflare-neon/**'
+      - '.github/workflows/validate-050-integration.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate Cloudflare → Neon → 050 render contract
+        run: node experiments/050-asaichi-db-integration/validate-integration.mjs
