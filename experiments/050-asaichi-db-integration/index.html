@@ -22,15 +22,57 @@
       <button class="token" type="button" data-index="10" data-surface="שְׂדֵ֥ה" data-lemma="שָׂדֶה" data-strong="7704" data-pos="N" data-gender="m" data-number="s" data-state="c"><span class="he">שְׂדֵ֥ה</span><span class="gloss">野</span></button>
       <button class="token" type="button" data-index="11" data-surface="אֱדֽוֹם" data-lemma="אֱדוֹם" data-strong="123" data-pos="N"><span class="he">אֱדֽוֹם</span><span class="gloss">エドム</span></button>
     </div>
-    <p class="hint">PC：語にマウスを重ねると分解情報を表示。右クリックでGenesis内を検索します。スマホ：タップで分解情報を表示します。</p>
+    <p class="hint">PC：語にマウスを重ねると分解情報を表示し、その中から「レーマ検索」「フォーム検索」を開始できます。スマホ：語をタップしてください。</p>
     <div id="status" class="status">検証済みスナップショットを表示中。Neon /passage を確認しています…</div>
   </section>
 
   <section id="resultsCard" class="results-card" hidden>
     <div class="results-head">
-      <strong id="resultsTitle">検索結果</strong>
-      <button id="closeResults" type="button">閉じる</button>
+      <div>
+        <strong id="resultsTitle">検索</strong>
+        <div id="searchTarget" class="search-target"></div>
+      </div>
+      <button id="closeResults" type="button" class="quiet-button">表示を消す</button>
     </div>
+
+    <div class="search-controls">
+      <div class="control-group">
+        <span class="control-label">検索方法</span>
+        <div class="segmented" role="group" aria-label="検索方法">
+          <button id="modeLemma" type="button" data-mode="lemma">レーマ検索</button>
+          <button id="modeForm" type="button" data-mode="form">フォーム検索</button>
+        </div>
+      </div>
+
+      <label class="control-group">
+        <span class="control-label">検索の幅</span>
+        <select id="scopeSelect">
+          <option value="Gen">Genesis 全体</option>
+          <option value="torah" disabled>トーラー全体（全書DB化後）</option>
+          <option value="tanakh" disabled>タナハ全体（全書DB化後）</option>
+        </select>
+      </label>
+
+      <div class="filter-row">
+        <label><input id="qalOnly" type="checkbox"> Qal形のみ</label>
+        <label><input id="sameConjugation" type="checkbox"> 同じ活用のみ</label>
+      </div>
+
+      <label class="control-group compact-control">
+        <span class="control-label">最大表示件数</span>
+        <select id="limitSelect">
+          <option value="50">50件</option>
+          <option value="100" selected>100件</option>
+          <option value="250">250件</option>
+        </select>
+      </label>
+
+      <div class="search-actions">
+        <button id="runSearch" type="button" class="primary-button">検索を実行</button>
+        <span id="searchCondition" class="condition"></span>
+      </div>
+    </div>
+
     <div id="resultsMeta" class="meta"></div>
     <div id="results"></div>
   </section>
