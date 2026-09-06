@@ -16,6 +16,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: lexeme_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d lexeme_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      PGPASSWORD: postgres
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -45,6 +61,35 @@ jobs:
           assert 2 <= len(m['sql_chunks']) <= 4
           print(json.dumps({'ok':True,'catalog_rows':m['catalog_rows'],'genesis_rows':m['genesis_rows'],'chunks':len(m['sql_chunks']),'benchmark':m['benchmark']}, ensure_ascii=False))
           PY
+      - name: Validate all Genesis SQL chunks in PostgreSQL 17
+        run: |
+          psql -h 127.0.0.1 -U postgres -d lexeme_test -v ON_ERROR_STOP=1 <<'SQL'
+          CREATE SCHEMA core;
+          CREATE TABLE core.lexicon_sources (
+            id SMALLINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+            code TEXT NOT NULL UNIQUE
+          );
+          CREATE TABLE core.lexemes (
+            id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+            lexicon_source_id SMALLINT NOT NULL REFERENCES core.lexicon_sources(id),
+            source_lexeme_key TEXT NOT NULL,
+            source_entry_id TEXT,
+            language_code TEXT NOT NULL,
+            lemma_text TEXT,
+            lemma_search TEXT,
+            transliteration TEXT,
+            strong_number INTEGER,
+            pos_code TEXT,
+            updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+            UNIQUE (lexicon_source_id, source_lexeme_key)
+          );
+          INSERT INTO core.lexicon_sources(code) VALUES ('oshb-hebrew-lexicon');
+          SQL
+          for f in build/oshb-lexemes/genesis-lexemes-*.sql; do
+            psql -h 127.0.0.1 -U postgres -d lexeme_test -v ON_ERROR_STOP=1 -f "$f"
+          done
+          test "$(psql -h 127.0.0.1 -U postgres -d lexeme_test -Atc "SELECT count(*) FROM core.lexemes")" = "1812"
+          test "$(psql -h 127.0.0.1 -U postgres -d lexeme_test -Atc "SELECT lemma_text FROM core.lexemes WHERE source_lexeme_key='7971'")" = "שָׁלַח"
       - name: Upload lexeme catalog artifact
         uses: actions/upload-artifact@v4
         with:
