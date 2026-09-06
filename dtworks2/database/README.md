@@ -37,7 +37,7 @@ The existing `dtworks.books`, `dtworks.verses`, `dtworks.tokens`, `dtworks.token
 
 `core.reference_passages` and `core.source_passages` project imported MorphHB verses into the generic reference layer. For VerseMap entries, explicit KJV numbering is used. Where MorphHB VerseMap has no exception row, WLC and KJV numbering are treated as identical for the mapping projection.
 
-This means the present Genesis database stays valid while gaining the long-term cross-corpus reference layer.
+This means the Genesis benchmark stays valid while the same cross-corpus reference layer covers all 39 Tanakh books.
 
 ## Lightweight lexeme layer
 
@@ -120,6 +120,6 @@ The public API should expose `reference_system`, `osis_ref`, and original-script
 5. Build/import the pinned OSHB lexeme catalog and verify Genesis token→lexeme coverage.
 6. Verify `/passage`, `/search`, and the Notion 050 hover/search UI against lexeme IDs.
 7. Measure database/index size and query plans.
-8. Only then expand MorphHB to all Tanakh books.
+8. Expand MorphHB to all Tanakh books behind the measured Neon Free capacity gate.
 9. Add LXX/Peshitta corpora, language-specific lexicons, and curated mappings.
 10. Index 朝一トーラー JSON progressively through `content.documents` + `content.document_passages`.

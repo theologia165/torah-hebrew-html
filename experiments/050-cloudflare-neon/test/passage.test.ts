@@ -17,10 +17,16 @@ test("single verse uses source-aware OSIS and lexeme contract", () => {
   assert.match(query.text, /lexeme_key/);
 });
 
-test("verse range is accepted within Genesis", () => {
+test("verse range is accepted within a Tanakh book", () => {
   const criteria = parsePassageUrl(new URL("https://example.test/passage?start=Gen.32.4&end=Gen.32.8"));
   assert.equal(criteria.start.verse, 4);
   assert.equal(criteria.end.verse, 8);
+});
+
+test("non-Genesis Tanakh references preserve the same passage contract", () => {
+  const criteria = parsePassageUrl(new URL("https://example.test/passage?ref=Exod.1.1"));
+  assert.equal(criteria.start.book, "Exod");
+  assert.deepEqual(buildPassageQuery(criteria).params, ["morphhb-wlc", "Exod", 1, 1, 1, 1]);
 });
 
 test("ref and range parameters cannot be mixed", () => {
@@ -30,9 +36,9 @@ test("ref and range parameters cannot be mixed", () => {
   );
 });
 
-test("current implementation rejects non-Genesis content without changing API shape", () => {
+test("non-Tanakh book codes are rejected without changing API shape", () => {
   assert.throws(
-    () => parsePassageUrl(new URL("https://example.test/passage?ref=Exod.1.1")),
+    () => parsePassageUrl(new URL("https://example.test/passage?ref=Matt.1.1")),
     (error: unknown) => error instanceof ApiInputError && error.status === 422
   );
 });

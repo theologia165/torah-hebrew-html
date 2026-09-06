@@ -1,0 +1,213 @@
+name: Import MorphHB Tanakh to Neon
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'experiments/050-postgresql/**'
+      - 'dtworks2/database/**'
+      - 'experiments/050-cloudflare-neon/src/passage.ts'
+      - 'experiments/050-cloudflare-neon/test/passage.test.ts'
+      - '.github/workflows/import-morphhb-tanakh-neon.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dtworks2-morphhb-neon-production
+  cancel-in-progress: false
+
+env:
+  MORPHHB_DIR: build/sources/morphhb
+  LEXICON_DIR: build/sources/lexicon
+  LEXEME_BUILD_DIR: build/oshb-lexemes
+
+jobs:
+  validate-complete-corpus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: dtworks_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d dtworks_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/dtworks_test
+      PGPASSWORD: postgres
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: experiments/050-postgresql/requirements.txt
+      - name: Install PostgreSQL importer dependencies
+        run: python -m pip install -r experiments/050-postgresql/requirements.txt
+      - name: Unit-test importer and morphology contracts
+        run: PYTHONPATH=experiments/050-postgresql python -m unittest -v experiments/050-postgresql/test_import_morphhb.py
+      - name: Fetch and validate pinned corpus sources
+        run: |
+          python experiments/050-postgresql/fetch_pinned_sources.py \
+            --morphhb-dir "$MORPHHB_DIR" \
+            --lexicon-dir "$LEXICON_DIR" \
+            --manifest build/source-manifest.json
+      - name: Build and validate Tanakh lexeme catalog
+        run: |
+          python dtworks2/database/tools/build_oshb_lexeme_catalog.py \
+            --scope tanakh \
+            --output-dir "$LEXEME_BUILD_DIR" \
+            --chunk-size 750 \
+            --morphhb-dir "$MORPHHB_DIR" \
+            --lexicon-dir "$LEXICON_DIR"
+          python - <<'PY'
+          import json
+          m=json.load(open('build/oshb-lexemes/manifest.json', encoding='utf-8'))
+          assert m['scope']=='tanakh'
+          assert len(m['books'])==39
+          assert m['scope_rows']==m['scope_keys']==9263, m['scope_rows']
+          assert m['scope_missing']==[]
+          assert len(m['hebrew_strong_fallback_keys'])==11
+          assert m['benchmark']['source_lexeme_key']=='7971'
+          assert m['benchmark']['lemma_text']=='שָׁלַח'
+          assert len(m['sql_chunks'])==13
+          PY
+      - name: Create all DTWorks 2 schemas in PostgreSQL 17
+        run: |
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f experiments/050-postgresql/schema.sql
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f experiments/050-postgresql/seed_books.sql
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f dtworks2/database/migrations/001_reference_content_layer.sql
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f dtworks2/database/migrations/002_lexeme_layer.sql
+          for file in "$LEXEME_BUILD_DIR"/tanakh-lexemes-*.sql; do
+            psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f "$file"
+          done
+      - name: Import all 39 books with per-book transaction checks
+        run: |
+          python experiments/050-postgresql/import_morphhb.py \
+            --books all \
+            --source-dir "$MORPHHB_DIR" \
+            --verify-050 \
+            --database-url "$DATABASE_URL"
+      - name: Project reference and lexeme layers after corpus import
+        run: |
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f dtworks2/database/migrations/001_reference_content_layer.sql
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f dtworks2/database/migrations/002_lexeme_layer.sql
+      - name: Verify all row counts, lexeme links, references, passage, and search benchmark
+        run: |
+          python experiments/050-postgresql/verify_tanakh.py verify \
+            --source-dir "$MORPHHB_DIR" \
+            --database-url "$DATABASE_URL" \
+            --output build/ephemeral-verification.json
+      - name: Upload reproducibility reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: dtworks2-tanakh-validation
+          path: |
+            build/source-manifest.json
+            build/oshb-lexemes/manifest.json
+            build/ephemeral-verification.json
+          retention-days: 14
+          if-no-files-found: error
+
+  capacity-gate-and-import-neon:
+    needs: validate-complete-corpus
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      DATABASE_URL: ${{ secrets.NEON_DATABASE_URL || secrets.DATABASE_URL_UNPOOLED || secrets.DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: experiments/050-postgresql/requirements.txt
+      - name: Require configured direct Neon connection
+        run: |
+          test -n "$DATABASE_URL" || { echo 'Set NEON_DATABASE_URL as a GitHub Actions secret.' >&2; exit 1; }
+          python - <<'PY'
+          import os
+          from urllib.parse import urlparse
+          host=urlparse(os.environ['DATABASE_URL']).hostname or ''
+          if '-pooler' in host:
+              raise SystemExit('Use a direct Neon URL for bulk import, not a -pooler hostname.')
+          print('Direct Neon connection configuration: OK')
+          PY
+      - name: Install PostgreSQL importer dependencies
+        run: python -m pip install -r experiments/050-postgresql/requirements.txt
+      - name: Fetch and validate the same pinned sources
+        run: |
+          python experiments/050-postgresql/fetch_pinned_sources.py \
+            --morphhb-dir "$MORPHHB_DIR" \
+            --lexicon-dir "$LEXICON_DIR" \
+            --manifest build/source-manifest.json
+      - name: Build the exact Tanakh lexeme slice
+        run: |
+          python dtworks2/database/tools/build_oshb_lexeme_catalog.py \
+            --scope tanakh \
+            --output-dir "$LEXEME_BUILD_DIR" \
+            --chunk-size 750 \
+            --morphhb-dir "$MORPHHB_DIR" \
+            --lexicon-dir "$LEXICON_DIR"
+      - name: Enforce Neon Free capacity gate before writes
+        run: |
+          python experiments/050-postgresql/verify_tanakh.py capacity \
+            --source-dir "$MORPHHB_DIR" \
+            --database-url "$DATABASE_URL" \
+            --limit-bytes 536870912 \
+            --output build/neon-capacity-before.json
+      - name: Apply idempotent schema and lexeme catalog
+        run: |
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f experiments/050-postgresql/schema.sql
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f experiments/050-postgresql/seed_books.sql
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f dtworks2/database/migrations/001_reference_content_layer.sql
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f dtworks2/database/migrations/002_lexeme_layer.sql
+          for file in "$LEXEME_BUILD_DIR"/tanakh-lexemes-*.sql; do
+            psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f "$file"
+          done
+      - name: Import missing Tanakh books to Neon
+        run: |
+          python experiments/050-postgresql/import_morphhb.py \
+            --books all \
+            --source-dir "$MORPHHB_DIR" \
+            --verify-050 \
+            --database-url "$DATABASE_URL"
+      - name: Synchronize reference and lexeme projections
+        run: |
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f dtworks2/database/migrations/001_reference_content_layer.sql
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f dtworks2/database/migrations/002_lexeme_layer.sql
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -c 'ANALYZE dtworks.verses; ANALYZE dtworks.tokens; ANALYZE dtworks.token_lemmas; ANALYZE dtworks.morph_segments;'
+      - name: Verify Neon corpus, lexeme layer, reference layer, passage, and search
+        run: |
+          python experiments/050-postgresql/verify_tanakh.py verify \
+            --source-dir "$MORPHHB_DIR" \
+            --database-url "$DATABASE_URL" \
+            --output build/neon-verification.json
+      - name: Record post-import capacity
+        run: |
+          python experiments/050-postgresql/verify_tanakh.py capacity \
+            --source-dir "$MORPHHB_DIR" \
+            --database-url "$DATABASE_URL" \
+            --limit-bytes 536870912 \
+            --output build/neon-capacity-after.json
+      - name: Upload non-secret Neon reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: dtworks2-neon-tanakh-import
+          path: |
+            build/source-manifest.json
+            build/oshb-lexemes/manifest.json
+            build/neon-capacity-before.json
+            build/neon-verification.json
+            build/neon-capacity-after.json
+          retention-days: 30
+          if-no-files-found: error

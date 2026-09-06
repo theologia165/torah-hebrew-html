@@ -2,11 +2,17 @@ import { ApiInputError } from "./search";
 
 const OSIS_VERSE = /^([1-3]?[A-Za-z]+)\.(\d+)\.(\d+)$/;
 
-// The API contract is source-aware from the beginning. At this stage only the
-// MorphHB/WLC Genesis corpus is loaded, but adding LXX/Peshitta later should be
-// a data/configuration extension rather than a new endpoint shape.
+const TANAKH_BOOKS = new Set([
+  "Gen", "Exod", "Lev", "Num", "Deut",
+  "Josh", "Judg", "1Sam", "2Sam", "1Kgs", "2Kgs",
+  "Isa", "Jer", "Ezek", "Hos", "Joel", "Amos", "Obad", "Jonah", "Mic", "Nah", "Hab", "Zeph", "Hag", "Zech", "Mal",
+  "Ps", "Job", "Prov", "Ruth", "Song", "Eccl", "Lam", "Esth", "Dan", "Ezra", "Neh", "1Chr", "2Chr"
+]);
+
+// The source-aware API shape stays unchanged; only the verified MorphHB/WLC
+// availability expands from Genesis to the complete Tanakh.
 const SOURCE_CAPABILITIES = new Map([
-  ["morphhb-wlc", { referenceSystem: "WLC", books: new Set(["Gen"]) }]
+  ["morphhb-wlc", { referenceSystem: "WLC", books: TANAKH_BOOKS }]
 ]);
 
 export interface VerseRef {
@@ -78,7 +84,7 @@ export function parsePassageUrl(url: URL): PassageCriteria {
     throw new ApiInputError(422, "A passage range must currently stay within one book.");
   }
   if (!capability.books.has(start.book)) {
-    throw new ApiInputError(422, "This source currently contains Genesis only.");
+    throw new ApiInputError(422, "This source does not contain the requested book.");
   }
   if (compareRef(start, end) > 0) {
     throw new ApiInputError(422, "start must not come after end.");

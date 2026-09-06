@@ -1,6 +1,6 @@
 # DTWorks 2 `/passage` API contract
 
-Status: v1 contract fixed for the Genesis/MorphHB stage, deliberately extensible to later corpora.
+Status: v1 request/response contract fixed; MorphHB availability expanded to all 39 Tanakh books.
 
 ## Design rule
 
@@ -18,7 +18,7 @@ Current loaded source:
 ```text
 source=morphhb-wlc
 reference system=WLC
-available book=Gen
+available books=all 39 Tanakh books
 ```
 
 Future sources should retain the same endpoint shape:
@@ -82,9 +82,8 @@ Database indexing/linking uses `content.documents` + `content.document_passages`
 
 ## Non-goals at this stage
 
-- No Exodus–Chronicles passage delivery yet.
 - No LXX/Peshitta corpus delivery yet.
 - No parallel-text endpoint yet.
 - No final Notion/BibleWorks-style visual design yet.
 
-The Genesis stage exists to validate the long-term API boundary before Tanakh-wide corpus loading.
+The Genesis benchmark remains the regression anchor while the same API boundary serves the complete Tanakh.
