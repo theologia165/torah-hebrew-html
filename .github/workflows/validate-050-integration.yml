@@ -12,11 +12,23 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Install Worker dependencies
+        working-directory: experiments/050-cloudflare-neon
+        run: npm install --no-audit --no-fund
+      - name: Unit test Worker query contracts
+        working-directory: experiments/050-cloudflare-neon
+        run: npm test
+      - name: Typecheck Worker
+        working-directory: experiments/050-cloudflare-neon
+        run: npm run typecheck
+      - name: Wrangler dry-run bundle
+        working-directory: experiments/050-cloudflare-neon
+        run: npm run build
       - name: Validate Cloudflare → Neon → 050 render contract
         run: node experiments/050-asaichi-db-integration/validate-integration.mjs
