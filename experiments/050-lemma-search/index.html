@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>050｜創世記32:4 lemma検索実験</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap" id="app">
+  <span class="test-badge">050 / Ver.2 開発実験</span>
+  <h1>創世記32:4</h1>
+  <div class="sub">ヴァイシュラハ｜第1アリヤー（このページでは32:4のみ）</div>
+
+  <div id="translation" class="translation"></div>
+
+  <div class="versebox">
+    <div id="verse" class="verse" aria-label="Genesis 32:4"></div>
+    <div class="howto">単語にマウスを重ねるとlemma・品詞・形態を表示。右クリックすると同じlemmaを検索します。</div>
+  </div>
+
+  <div class="section">
+    <h2>簡易な説明</h2>
+    <p id="shortCommentary"></p>
+  </div>
+
+  <details class="exegesis">
+    <summary>詳しい解説</summary>
+    <div class="section"><p id="detailText"></p></div>
+  </details>
+
+  <section id="resultsPanel" class="results" hidden>
+    <div class="results-head">
+      <h2 id="resultsTitle">lemma検索</h2>
+      <button id="closeResults" class="close" type="button">閉じる</button>
+    </div>
+    <div id="resultsBody"></div>
+  </section>
+
+  <div id="hoverPopup" class="popup" role="dialog" aria-live="polite"></div>
+  <div id="contextMenu" class="context-menu" role="menu"></div>
+</div>
+<script src="./lemma-search.js"></script>
+</body>
+</html>
