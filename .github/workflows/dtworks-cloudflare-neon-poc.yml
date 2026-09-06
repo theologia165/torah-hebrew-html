@@ -1,0 +1,42 @@
+name: DTWorks Cloudflare Neon POC
+
+on:
+  push:
+    branches:
+      - dtworks-cloudflare-neon-poc
+    paths:
+      - "experiments/050-cloudflare-neon/**"
+      - ".github/workflows/dtworks-cloudflare-neon-poc.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  worker-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: experiments/050-cloudflare-neon
+
+    steps:
+      - name: Checkout POC branch
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Worker dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Test search contract and SQL parameter binding
+        run: npm test
+
+      - name: Typecheck Worker
+        run: npm run typecheck
+
+      - name: Build Worker with Wrangler without deploying
+        run: npm run build
