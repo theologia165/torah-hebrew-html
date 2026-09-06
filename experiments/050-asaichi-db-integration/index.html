@@ -3,63 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>050｜創世記32:4 朝一トーラーDB統合実験</title>
+<title>創世記32:4｜対話型ヘブライ語</title>
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <main class="wrap">
-  <header>
-    <span class="badge">050 / Ver.2 DB統合実験</span>
-    <h1>創世記32:4</h1>
-    <p class="lead">/passage由来の本文情報 + 朝一トーラー editorial JSON + /search を同一画面で統合します。</p>
-  </header>
-
-  <section class="status" aria-live="polite">
-    <span id="passageStatus" class="pill pending">本文DB: 読込中</span>
-    <span id="editorialStatus" class="pill pending">Editorial JSON: 読込中</span>
-    <span id="mappingStatus" class="pill pending">参照対応: 読込中</span>
+  <section class="hebrew-card">
+    <div id="verse" class="verse" dir="rtl" aria-label="創世記32章4節ヘブライ語"></div>
+    <p class="hint">PC：語にマウスを重ねると分解情報を表示。右クリックでGenesis内を検索します。スマホ：タップで分解情報を表示します。</p>
+    <div id="status" class="status">本文を読み込み中…</div>
   </section>
 
-  <section class="card">
-    <h2>私訳</h2>
-    <p id="translation">読み込み中…</p>
-  </section>
-
-  <section class="card">
-    <h2>ヘブライ語本文</h2>
-    <div id="verse" class="verse" dir="rtl"></div>
-    <p class="hint">単語にマウスを重ねるとDB由来の語彙・形態情報を表示します。左クリックでGenesis内をStrong検索します。</p>
-    <div id="hover" class="hover" hidden></div>
-  </section>
-
-  <section class="card">
-    <h2>逐語訳</h2>
-    <div id="literal" class="literal"></div>
-  </section>
-
-  <section class="card">
-    <h2>簡易な説明</h2>
-    <p id="summary"></p>
-  </section>
-
-  <details class="card">
-    <summary>詳しい解説</summary>
-    <div id="commentary"></div>
-  </details>
-
-  <section id="resultsCard" class="card" hidden>
+  <section id="resultsCard" class="results-card" hidden>
     <div class="results-head">
-      <h2 id="resultsTitle">検索結果</h2>
+      <strong id="resultsTitle">検索結果</strong>
       <button id="closeResults" type="button">閉じる</button>
     </div>
     <div id="resultsMeta" class="meta"></div>
     <div id="results"></div>
   </section>
-
-  <footer>
-    <small>本文・形態情報: Neon PostgreSQL → Cloudflare Worker /passage。翻訳・解説: GitHub editorial.json。検索: /search。</small>
-  </footer>
 </main>
+<div id="hover" class="hover" hidden></div>
 <script src="./app.js"></script>
 </body>
 </html>
