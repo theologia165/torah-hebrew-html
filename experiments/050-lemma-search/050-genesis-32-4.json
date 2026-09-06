@@ -1,0 +1,30 @@
+{
+  "experiment": "050-lemma-search",
+  "schema_version": "0.1-experimental",
+  "production_state_affected": false,
+  "reference": "Genesis 32:4",
+  "reference_ja": "創世記32:4",
+  "parasha": "ヴァイシュラハ",
+  "aliyah": "第1アリヤー（実験は32:4のみ）",
+  "data_source": {
+    "text_morphology": "Open Scriptures Hebrew Bible / MorphHB (WLC)",
+    "morphhb_commit": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "license": "CC BY 4.0"
+  },
+  "translation": "ヤコブは自分の前に使者たちを、兄エサウのもと、セイルの地、エドムの野へ遣わした。",
+  "short_commentary": "ヤコブはエサウとの再会を前に、まず使者を先に送ります。直前には「神の使いたち」が現れましたが、ここでは同じ מַלְאָכִים がヤコブの遣わす「使者たち」として用いられます。",
+  "detailed_commentary": "ヘブライ語の וַיִּשְׁלַח は、lemma שׁלח（送る・遣わす）のQal wayyiqtol 3人称男性単数で、物語を前へ進める動詞です。לְפָנָיו は「彼の前に／彼より先に」、אַרְצָה の語末 ה は方向を表し「その地へ」を意味します。מַלְאָכִים は基本的に『使者たち』であり、文脈によって人間の使者にも神的な使者にも用いられます。32:2の『神の使いたち』と32:4のヤコブの『使者たち』の近接は、語彙上の響きを生みます。\n\n**デボーショナルな受けとめ**\nヤコブは恐れを抱えながらも、何もしないのではなく、再会に向けて具体的な働きかけを始めます。信仰は、状況を神に委ねることと、自分にできる準備をすることを対立させません。",
+  "words": [
+    {"surface":"וַיִּשְׁלַ֨ח","separator_after":" ","gloss":"そして遣わした","lemma":"שׁלח","strong":"H7971","pos":"動詞","morph":"Qal・wayyiqtol・3人称男性単数"},
+    {"surface":"יַעֲקֹ֤ב","separator_after":" ","gloss":"ヤコブは","lemma":"יַעֲקֹב","strong":"H3290","pos":"固有名詞","morph":"固有名詞・男性"},
+    {"surface":"מַלְאָכִים֙","separator_after":" ","gloss":"使者たちを","lemma":"מַלְאָךְ","strong":"H4397","pos":"名詞","morph":"男性・複数・絶対形"},
+    {"surface":"לְפָנָ֔יו","separator_after":" ","gloss":"彼より先に","lemma":"פָּנִים","strong":"H6440","pos":"名詞句","morph":"前置詞 לְ + 名詞 + 3人称男性単数接尾辞"},
+    {"surface":"אֶל","separator_after":"־","gloss":"〜のもとへ","lemma":"אֶל","strong":"H0413","pos":"前置詞","morph":"前置詞"},
+    {"surface":"עֵשָׂ֖ו","separator_after":" ","gloss":"エサウ","lemma":"עֵשָׂו","strong":"H6215","pos":"固有名詞","morph":"固有名詞・男性"},
+    {"surface":"אָחִ֑יו","separator_after":" ","gloss":"彼の兄","lemma":"אָח","strong":"H0251","pos":"名詞","morph":"男性・単数 + 3人称男性単数接尾辞"},
+    {"surface":"אַ֥רְצָה","separator_after":" ","gloss":"その地へ","lemma":"אֶרֶץ","strong":"H0776","pos":"名詞","morph":"女性・単数 + 方向の ה"},
+    {"surface":"שֵׂעִ֖יר","separator_after":" ","gloss":"セイル","lemma":"שֵׂעִיר","strong":"H8165","pos":"固有名詞","morph":"地名"},
+    {"surface":"שְׂדֵ֥ה","separator_after":" ","gloss":"野","lemma":"שָׂדֶה","strong":"H7704","pos":"名詞","morph":"男性・単数・連語形"},
+    {"surface":"אֱדֽוֹם","separator_after":"׃","gloss":"エドムの","lemma":"אֱדוֹם","strong":"H0123","pos":"固有名詞","morph":"地名"}
+  ]
+}
