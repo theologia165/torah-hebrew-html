@@ -31,7 +31,7 @@ function fallbackTokens(){
     index:Number(node.dataset.index),
     surface:node.dataset.surface,
     lemma_hebrew:node.dataset.lemma,
-    primary_strong:Number(node.dataset.strong),
+    lexeme_key:node.dataset.lexemeKey||null,
     pos:node.dataset.pos||null,
     stem:node.dataset.stem||null,
     conjugation:node.dataset.conjugation||null,
@@ -48,7 +48,8 @@ function mergeLiveWithSnapshot(liveTokens,snapshot){
     const fallback=byIndex.get(tokenIndex(t))??{};
     return {
       ...t,
-      lemma_hebrew:fallback.lemma_hebrew??null,
+      lemma_hebrew:t?.lexeme?.lemma??t?.lexeme_lemma??t?.lemma_display??fallback.lemma_hebrew??null,
+      lexeme_key:t?.lexeme?.key??t?.lexeme_key??fallback.lexeme_key??null,
       pos:t.pos??t.main_pos_code??fallback.pos??null,
       stem:t.stem??t.main_stem_code??fallback.stem??null,
       conjugation:t.conjugation??t.main_conjugation_code??fallback.conjugation??null,
@@ -61,9 +62,10 @@ function mergeLiveWithSnapshot(liveTokens,snapshot){
 }
 
 function hebrewLemma(t){
-  const candidate=t?.lemma_hebrew||t?.lemma_display||'';
+  const candidate=t?.lexeme?.lemma||t?.lexeme_lemma||t?.lemma_hebrew||t?.lemma_display||'';
   return /[\u0590-\u05FF]/.test(candidate)?candidate:'—';
 }
+function lexemeKey(t){return t?.lexeme?.key??t?.lexeme_key??null}
 function isVerb(t){return (t?.pos??t?.main_pos_code)==='V'||String(t?.morph_raw??'').includes('/V')||String(t?.morph_raw??'').startsWith('HV')}
 function partLabel(segment){
   const s=String(segment||'').replace(/^H/,'');
@@ -162,11 +164,11 @@ function renderLive(tokens,snapshot){
   const snapshotByIndex=new Map(snapshot.map(t=>[tokenIndex(t),t]));
   el('verse').innerHTML=tokens.map(t=>{
     const i=tokenIndex(t),fallback=snapshotByIndex.get(i)??{},ja=gloss.get(i)??fallbackGloss.get(i)??'';
-    return `<button class="token" type="button" data-index="${i}" data-surface="${escapeHtml(t.surface)}" data-lemma="${escapeHtml(t.lemma_hebrew??fallback.lemma_hebrew??'')}" data-strong="${escapeHtml(t.primary_strong??'')}" data-pos="${escapeHtml(t.pos??'')}" data-stem="${escapeHtml(t.stem??'')}" data-conjugation="${escapeHtml(t.conjugation??'')}" data-person="${escapeHtml(t.person??'')}" data-gender="${escapeHtml(t.gender??'')}" data-number="${escapeHtml(t.number??'')}" data-state="${escapeHtml(t.state??'')}"><span class="he">${escapeHtml(t.surface)}</span><span class="gloss">${escapeHtml(ja)}</span></button>`;
+    return `<button class="token" type="button" data-index="${i}" data-surface="${escapeHtml(t.surface)}" data-lemma="${escapeHtml(hebrewLemma(t))}" data-lexeme-key="${escapeHtml(lexemeKey(t)??'')}" data-pos="${escapeHtml(t.pos??'')}" data-stem="${escapeHtml(t.stem??'')}" data-conjugation="${escapeHtml(t.conjugation??'')}" data-person="${escapeHtml(t.person??'')}" data-gender="${escapeHtml(t.gender??'')}" data-number="${escapeHtml(t.number??'')}" data-state="${escapeHtml(t.state??'')}"><span class="he">${escapeHtml(t.surface)}</span><span class="gloss">${escapeHtml(ja)}</span></button>`;
   }).join('');
   el('verse').dataset.fallback='false';
   bindTokens(tokens);
-  el('status').textContent=`DB接続確認済み｜${REF}｜Neon /passage ${tokens.length}語`;
+  el('status').textContent=`DB接続確認済み｜${REF}｜Neon /passage ${tokens.length}語｜OSHB Lexeme`;
   return true;
 }
 
@@ -216,9 +218,9 @@ function buildSearchUrl(){
   if(!searchTokenData)throw new Error('検索対象がありません');
   const p=new URLSearchParams();
   if(searchMode==='lemma'){
-    const strong=searchTokenData.primary_strong??searchTokenData.strong;
-    if(!strong)throw new Error('この語のレーマ検索キーを取得できません');
-    p.set('strong',String(strong));
+    const key=lexemeKey(searchTokenData);
+    if(!key)throw new Error('この語のレーマ検索キーを取得できません');
+    p.set('lexeme',String(key));
   }else{
     if(!searchTokenData.surface)throw new Error('この語のフォームを取得できません');
     p.set('form',searchTokenData.surface);
@@ -264,6 +266,7 @@ async function boot(){
     const liveTokens=Array.isArray(live?.verses?.[0]?.tokens)?live.verses[0].tokens:[];
     if(liveTokens.length!==11)throw new Error(`/passage token count ${liveTokens.length}`);
     const merged=mergeLiveWithSnapshot(liveTokens,snapshot);
+    if(merged.some(t=>!lexemeKey(t)||hebrewLemma(t)==='—'))throw new Error('/passage lexeme data incomplete');
     passage={...live,verses:[{...live.verses[0],tokens:merged}]};renderLive(merged,snapshot);
   }catch(error){
     console.error(error);passage={verses:[{tokens:snapshot}]};bindTokens(snapshot);
