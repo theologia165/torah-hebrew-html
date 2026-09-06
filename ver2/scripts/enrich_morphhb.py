@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, re, sys, urllib.request
+import json, re, subprocess, sys, urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -98,9 +98,29 @@ def extract(xml_bytes,chapter,start,end):
         result[n]=rows
     return result
 
+def run_semantic_handoff_ltr_guard(input_path, src):
+    """Validate ChatGPT-authored prose before any MorphHB/network processing begins."""
+    seq=str(src.get("sequence","")).strip()
+    if not seq:
+        raise SystemExit("FAIL LTR semantic handoff: current.json has no sequence")
+    repo_root=Path(__file__).resolve().parents[2]
+    validator=Path(__file__).with_name("validate_ltr_handoff.py")
+    commentary=repo_root/"ver2"/"content"/f"{seq}-commentary.json"
+    if not validator.is_file():
+        raise SystemExit(f"FAIL LTR semantic handoff: missing validator {validator}")
+    result=subprocess.run(
+        [sys.executable,str(validator),str(Path(input_path).resolve()),str(commentary)],
+        check=False,
+    )
+    if result.returncode!=0:
+        raise SystemExit(result.returncode)
+
 def main():
     if len(sys.argv)!=3:raise SystemExit("usage: enrich_morphhb.py <input-current.json> <output-current.json>")
-    src=json.loads(Path(sys.argv[1]).read_text(encoding="utf-8")); p=src["passage"]
+    src=json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
+    # Semantic handoff gate: mixed Japanese/Hebrew prose must begin LTR before enrichment.
+    run_semantic_handoff_ltr_guard(sys.argv[1],src)
+    p=src["passage"]
     if p["book"]!="Genesis":raise SystemExit("enricher currently supports Genesis only")
     extracted=extract(get(GEN_URL),p["chapter"],p["start_verse"],p["end_verse"]); strongs=strong_dict(get(STRONGS_URL))
     for verse in src["verses"]:
