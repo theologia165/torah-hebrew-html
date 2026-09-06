@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>050｜創世記32:4 lemma検索実験</title>
+<title>050｜創世記32:4 語形・形態検索実験</title>
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 
   <div class="versebox">
     <div id="verse" class="verse" aria-label="Genesis 32:4"></div>
-    <div class="howto">単語にマウスを重ねるとlemma・品詞・形態を表示。右クリックすると同じlemmaを検索します。</div>
+    <div class="howto">単語にマウスを重ねるとlemma・品詞・形態を表示。右クリックすると lemma / Form / 形態条件を組み合わせて検索できます。</div>
   </div>
 
   <div class="section">
@@ -31,10 +31,14 @@
 
   <section id="resultsPanel" class="results" hidden>
     <div class="results-head">
-      <h2 id="resultsTitle">lemma検索</h2>
+      <div>
+        <h2 id="resultsTitle">語形・形態検索</h2>
+        <small id="selectedWordLabel"></small>
+      </div>
       <button id="closeResults" class="close" type="button">閉じる</button>
     </div>
-    <div id="resultsBody"></div>
+    <div id="searchControls"></div>
+    <div id="resultsBody" aria-live="polite"></div>
   </section>
 
   <div id="hoverPopup" class="popup" role="dialog" aria-live="polite"></div>
