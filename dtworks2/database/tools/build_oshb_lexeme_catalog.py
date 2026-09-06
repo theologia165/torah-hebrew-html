@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Build a deterministic OSHB lexeme catalog and idempotent SQL chunks.
+"""Build deterministic OSHB lexeme catalog artifacts.
 
-Source of truth is the pinned Open Scriptures Hebrew Lexicon commit. This script
-never calls ChatGPT and never writes to Neon. GitHub Actions can rebuild the
-catalog artifact, and a controlled database step can apply the generated SQL.
+The full lexical catalog is derived from a pinned Open Scriptures Hebrew Lexicon
+commit. For the current Genesis-only database, SQL chunks are filtered to the
+lexical keys actually observed in the pinned MorphHB Genesis XML. No ChatGPT
+content and no live database access are involved.
 """
 
 from __future__ import annotations
@@ -18,7 +19,9 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 LEXICON_COMMIT = "21c9add13bc727d3a951361778e97e3ff7afd1ce"
-REPO_RAW = f"https://raw.githubusercontent.com/openscriptures/HebrewLexicon/{LEXICON_COMMIT}"
+LEXICON_RAW = f"https://raw.githubusercontent.com/openscriptures/HebrewLexicon/{LEXICON_COMMIT}"
+MORPHHB_COMMIT = "3d15126fb1ef74867fc1434be1942e837932691f"
+MORPHHB_RAW = f"https://raw.githubusercontent.com/openscriptures/morphhb/{MORPHHB_COMMIT}/wlc"
 SOURCE_CODE = "oshb-hebrew-lexicon"
 SOURCE_LICENSE = "CC BY 4.0"
 
@@ -31,9 +34,9 @@ def local_name(tag: str) -> str:
     return tag.rsplit("}", 1)[-1]
 
 
-def fetch_bytes(filename: str) -> bytes:
+def fetch_bytes(url: str) -> bytes:
     req = urllib.request.Request(
-        f"{REPO_RAW}/{filename}",
+        url,
         headers={"User-Agent": "Nishihara-Midrash-Lab-DTWorks2/lexeme-builder"},
     )
     with urllib.request.urlopen(req, timeout=90) as response:
@@ -59,14 +62,33 @@ def lemma_search_key(value: str | None) -> str | None:
     return unicodedata.normalize("NFC", stripped)
 
 
+def normalize_morphhb_lexeme_key(raw: str) -> str | None:
+    value = re.sub(r"\s+", "", raw.strip())
+    value = value[:-1] if value.endswith("+") else value
+    return value if LEADING_DIGITS.match(value) else None
+
+
+def parse_genesis_keys(xml_bytes: bytes) -> set[str]:
+    root = ET.fromstring(xml_bytes)
+    keys: set[str] = set()
+    for element in root.iter():
+        if local_name(element.tag) != "w":
+            continue
+        for component in element.attrib.get("lemma", "").split("/"):
+            key = normalize_morphhb_lexeme_key(component)
+            if key:
+                keys.add(key)
+    return keys
+
+
 def parse_lexical_index(xml_bytes: bytes) -> dict[str, dict]:
     root = ET.fromstring(xml_bytes)
     entries: dict[str, dict] = {}
-
     for part in root.iter():
         if local_name(part.tag) != "part":
             continue
-        language_code = LANGUAGE_CODES.get(part.attrib.get(XML_LANG, ""), part.attrib.get(XML_LANG, "und"))
+        xml_language = part.attrib.get(XML_LANG, "")
+        language_code = LANGUAGE_CODES.get(xml_language, xml_language or "und")
         for entry in part:
             if local_name(entry.tag) != "entry":
                 continue
@@ -110,14 +132,9 @@ def sql_literal(value: object | None) -> str:
 
 def row_sql(row: dict) -> str:
     fields = [
-        row["source_lexeme_key"],
-        row["source_entry_id"],
-        row["language_code"],
-        row["lemma_text"],
-        row["lemma_search"],
-        row["transliteration"],
-        row["strong_number"],
-        row["pos_code"],
+        row["source_lexeme_key"], row["source_entry_id"], row["language_code"],
+        row["lemma_text"], row["lemma_search"], row["transliteration"],
+        row["strong_number"], row["pos_code"],
     ]
     return "(" + ",".join(sql_literal(v) for v in fields) + ")"
 
@@ -127,40 +144,33 @@ def write_sql_chunks(rows: list[dict], output_dir: Path, chunk_size: int) -> lis
     for number, start in enumerate(range(0, len(rows), chunk_size), start=1):
         chunk = rows[start : start + chunk_size]
         values = ",\n".join(row_sql(row) for row in chunk)
-        sql = f"""-- Generated from Open Scriptures Hebrew Lexicon {LEXICON_COMMIT}\nWITH src AS (\n    SELECT id FROM core.lexicon_sources WHERE code = '{SOURCE_CODE}'\n), data(\n    source_lexeme_key, source_entry_id, language_code, lemma_text, lemma_search,\n    transliteration, strong_number, pos_code\n) AS (\n    VALUES\n{values}\n)\nINSERT INTO core.lexemes (\n    lexicon_source_id, source_lexeme_key, source_entry_id, language_code,\n    lemma_text, lemma_search, transliteration, strong_number, pos_code\n)\nSELECT\n    src.id, data.source_lexeme_key, data.source_entry_id, data.language_code,\n    data.lemma_text, data.lemma_search, data.transliteration,\n    data.strong_number, data.pos_code\nFROM src CROSS JOIN data\nON CONFLICT (lexicon_source_id, source_lexeme_key) DO UPDATE SET\n    source_entry_id = EXCLUDED.source_entry_id,\n    language_code = EXCLUDED.language_code,\n    lemma_text = EXCLUDED.lemma_text,\n    lemma_search = EXCLUDED.lemma_search,\n    transliteration = EXCLUDED.transliteration,\n    strong_number = EXCLUDED.strong_number,\n    pos_code = EXCLUDED.pos_code,\n    updated_at = now();\n"""
-        filename = f"oshb-lexemes-{number:03d}.sql"
+        sql = f"""-- Generated Genesis lexeme rows from pinned OSHB sources\nWITH src AS (\n    SELECT id FROM core.lexicon_sources WHERE code = '{SOURCE_CODE}'\n), data(\n    source_lexeme_key, source_entry_id, language_code, lemma_text, lemma_search,\n    transliteration, strong_number, pos_code\n) AS (\n    VALUES\n{values}\n)\nINSERT INTO core.lexemes (\n    lexicon_source_id, source_lexeme_key, source_entry_id, language_code,\n    lemma_text, lemma_search, transliteration, strong_number, pos_code\n)\nSELECT\n    src.id, data.source_lexeme_key, data.source_entry_id, data.language_code,\n    data.lemma_text, data.lemma_search, data.transliteration,\n    data.strong_number, data.pos_code\nFROM src CROSS JOIN data\nON CONFLICT (lexicon_source_id, source_lexeme_key) DO UPDATE SET\n    source_entry_id = EXCLUDED.source_entry_id,\n    language_code = EXCLUDED.language_code,\n    lemma_text = EXCLUDED.lemma_text,\n    lemma_search = EXCLUDED.lemma_search,\n    transliteration = EXCLUDED.transliteration,\n    strong_number = EXCLUDED.strong_number,\n    pos_code = EXCLUDED.pos_code,\n    updated_at = now();\n"""
+        filename = f"genesis-lexemes-{number:03d}.sql"
         path = output_dir / filename
         path.write_text(sql, encoding="utf-8")
-        chunks.append({
-            "file": filename,
-            "rows": len(chunk),
-            "sha256": hashlib.sha256(sql.encode("utf-8")).hexdigest(),
-        })
+        chunks.append({"file": filename, "rows": len(chunk), "sha256": hashlib.sha256(sql.encode()).hexdigest()})
     return chunks
 
 
 def build(output_dir: Path, chunk_size: int) -> dict:
     output_dir.mkdir(parents=True, exist_ok=True)
-    aug_bytes = fetch_bytes("AugIndex.xml")
-    lexical_bytes = fetch_bytes("LexicalIndex.xml")
+    aug_bytes = fetch_bytes(f"{LEXICON_RAW}/AugIndex.xml")
+    lexical_bytes = fetch_bytes(f"{LEXICON_RAW}/LexicalIndex.xml")
+    genesis_bytes = fetch_bytes(f"{MORPHHB_RAW}/Gen.xml")
 
     lexical = parse_lexical_index(lexical_bytes)
     aug = parse_aug_index(aug_bytes)
+    genesis_keys = parse_genesis_keys(genesis_bytes)
 
     rows: list[dict] = []
-    missing: list[dict] = []
+    missing_entries: list[dict] = []
     for key, entry_id in aug:
         entry = lexical.get(entry_id)
         if not entry:
-            missing.append({"source_lexeme_key": key, "source_entry_id": entry_id})
+            missing_entries.append({"source_lexeme_key": key, "source_entry_id": entry_id})
             continue
         match = LEADING_DIGITS.match(key)
-        rows.append({
-            "source_lexeme_key": key,
-            **entry,
-            "strong_number": int(match.group(1)) if match else None,
-        })
-
+        rows.append({"source_lexeme_key": key, **entry, "strong_number": int(match.group(1)) if match else None})
     rows.sort(key=lambda row: (row["strong_number"] or 10**9, row["source_lexeme_key"]))
 
     by_key = {row["source_lexeme_key"]: row for row in rows}
@@ -168,22 +178,32 @@ def build(output_dir: Path, chunk_size: int) -> dict:
     if not benchmark or benchmark.get("lemma_text") != "שָׁלַח":
         raise RuntimeError(f"OSHB benchmark 7971 mismatch: {benchmark!r}")
 
-    jsonl_path = output_dir / "oshb-lexemes.jsonl"
-    jsonl = "".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in rows)
-    jsonl_path.write_text(jsonl, encoding="utf-8")
+    genesis_missing = sorted(key for key in genesis_keys if key not in by_key)
+    if genesis_missing:
+        raise RuntimeError(f"Genesis lexical keys missing from AugIndex: {genesis_missing[:20]!r}")
+    genesis_rows = [by_key[key] for key in sorted(genesis_keys, key=lambda k: (int(LEADING_DIGITS.match(k).group(1)), k))]
 
-    chunks = write_sql_chunks(rows, output_dir, chunk_size)
+    full_jsonl = "".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in rows)
+    (output_dir / "oshb-lexemes.jsonl").write_text(full_jsonl, encoding="utf-8")
+    genesis_jsonl = "".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in genesis_rows)
+    (output_dir / "genesis-lexemes.jsonl").write_text(genesis_jsonl, encoding="utf-8")
+
+    chunks = write_sql_chunks(genesis_rows, output_dir, chunk_size)
     manifest = {
-        "schema_version": 1,
+        "schema_version": 2,
         "source": {
             "code": SOURCE_CODE,
-            "commit": LEXICON_COMMIT,
+            "lexicon_commit": LEXICON_COMMIT,
+            "morphhb_commit": MORPHHB_COMMIT,
             "license": SOURCE_LICENSE,
-            "files": ["AugIndex.xml", "LexicalIndex.xml"],
         },
-        "rows": len(rows),
-        "missing_entries": missing,
-        "jsonl_sha256": hashlib.sha256(jsonl.encode("utf-8")).hexdigest(),
+        "catalog_rows": len(rows),
+        "genesis_rows": len(genesis_rows),
+        "genesis_keys": len(genesis_keys),
+        "missing_entries": missing_entries,
+        "genesis_missing": genesis_missing,
+        "full_jsonl_sha256": hashlib.sha256(full_jsonl.encode()).hexdigest(),
+        "genesis_jsonl_sha256": hashlib.sha256(genesis_jsonl.encode()).hexdigest(),
         "sql_chunks": chunks,
         "benchmark": {
             "source_lexeme_key": "7971",
@@ -192,10 +212,7 @@ def build(output_dir: Path, chunk_size: int) -> dict:
             "lemma_search": benchmark["lemma_search"],
         },
     }
-    (output_dir / "manifest.json").write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
-        encoding="utf-8",
-    )
+    (output_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return manifest
 
 
@@ -209,8 +226,8 @@ def main() -> int:
     manifest = build(args.output_dir, args.chunk_size)
     print(json.dumps({
         "ok": True,
-        "rows": manifest["rows"],
-        "missing_entries": len(manifest["missing_entries"]),
+        "catalog_rows": manifest["catalog_rows"],
+        "genesis_rows": manifest["genesis_rows"],
         "chunks": len(manifest["sql_chunks"]),
         "benchmark": manifest["benchmark"],
     }, ensure_ascii=False, indent=2))
