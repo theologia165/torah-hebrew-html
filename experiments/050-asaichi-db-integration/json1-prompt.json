@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source": "morphhb-wlc",
+  "reference_system": "WLC",
+  "ref": "Gen.32.4",
+  "mapped_refs": [{"system":"KJV","ref":"Gen.32.3","relation":"renumbered"}],
+  "tokens": [
+    {"i":1,"surface":"וַיִּשְׁלַ֨ח","strong":7971,"lemma":"c/7971","morph":"HC/Vqw3ms"},
+    {"i":2,"surface":"יַעֲקֹ֤ב","strong":3290,"lemma":"3290","morph":"HNp"},
+    {"i":3,"surface":"מַלְאָכִים֙","strong":4397,"lemma":"4397","morph":"HNcmpa"},
+    {"i":4,"surface":"לְפָנָ֔יו","strong":6440,"lemma":"l/6440","morph":"HR/Ncbpc/Sp3ms"},
+    {"i":5,"surface":"אֶל","strong":413,"lemma":"413","morph":"HR"},
+    {"i":6,"surface":"עֵשָׂ֖ו","strong":6215,"lemma":"6215","morph":"HNp"},
+    {"i":7,"surface":"אָחִ֑יו","strong":251,"lemma":"251","morph":"HNcmsc/Sp3ms"},
+    {"i":8,"surface":"אַ֥רְצָה","strong":776,"lemma":"776","morph":"HNcbsc/Sd"},
+    {"i":9,"surface":"שֵׂעִ֖יר","strong":8165,"lemma":"8165 a","morph":"HNp"},
+    {"i":10,"surface":"שְׂדֵ֥ה","strong":7704,"lemma":"7704 b","morph":"HNcmsc"},
+    {"i":11,"surface":"אֱדֽוֹם","strong":123,"lemma":"123","morph":"HNp"}
+  ]
+}
