@@ -20,7 +20,8 @@ def get(path: str, params: dict | None = None, origin: str | None = None):
     if origin:
         req.add_header("Origin", origin)
     with urllib.request.urlopen(req, timeout=30) as response:
-        return response.status, dict(response.headers), json.loads(response.read().decode("utf-8"))
+        headers = {key.lower(): value for key, value in response.headers.items()}
+        return response.status, headers, json.loads(response.read().decode("utf-8"))
 
 
 status, headers, health = get("/health")
@@ -50,7 +51,7 @@ assert any(
     and row["main_conjugation_code"] == "w"
     for row in data["results"]
 ), data
-assert headers.get("Access-Control-Allow-Origin") == "*", headers
+assert headers.get("access-control-allow-origin") == "*", headers
 print("lemma + Qal + wayyiqtol API search OK: total=15; Gen.32.4 included")
 
 status, _, form_data = get(
