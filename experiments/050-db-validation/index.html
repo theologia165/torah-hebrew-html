@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>050-B｜Genesis DB validation</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main class="wrap">
+  <div class="badge">050-B / Neon DB 検証版</div>
+  <h1>創世記32:4</h1>
+  <p class="lead">既存050-AのMorphHB直接検索と比較するための、Cloudflare Worker → Neon PostgreSQL 検証UIです。</p>
+
+  <section class="card status-card">
+    <div class="row"><strong>API接続</strong><span id="health" class="status">確認中…</span></div>
+    <div class="row"><strong>Genesis tokens</strong><span id="tokenCount">—</span></div>
+    <div class="row"><strong>基準検索</strong><span id="benchmark" class="status">確認中…</span></div>
+    <div class="small">基準：Strong 7971 + Qal + wayyiqtol + Genesis = 15件</div>
+  </section>
+
+  <section class="card">
+    <h2>本文</h2>
+    <div id="verse" class="verse" dir="rtl" lang="he">読み込み中…</div>
+    <p class="small">単語をクリックすると、そのStrong番号でGenesisを検索します。וַיִּשְׁלַח は Strong + Qal + wayyiqtol の複合条件で検索します。</p>
+  </section>
+
+  <section class="card">
+    <div class="results-head">
+      <h2 id="resultsTitle">検索結果</h2>
+      <span id="queryLabel" class="small"></span>
+    </div>
+    <div id="results">上の単語をクリックしてください。</div>
+  </section>
+</main>
+<script src="./db-validation.js"></script>
+</body>
+</html>
