@@ -93,6 +93,41 @@ CREATE TABLE IF NOT EXISTS core.source_passages (
 CREATE INDEX IF NOT EXISTS idx_source_passages_reference
     ON core.source_passages (reference_passage_id);
 
+-- Lexical identity is separate from token morphology and from Strong numbers.
+-- A lexicon source supplies source-specific lexical keys and original-script
+-- lemma labels. Strong is retained only as an optional compatibility key.
+CREATE TABLE IF NOT EXISTS core.lexicon_sources (
+    id              SMALLINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    code            TEXT NOT NULL UNIQUE,
+    label           TEXT NOT NULL,
+    source_version  TEXT,
+    source_uri      TEXT,
+    license         TEXT,
+    metadata        JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE TABLE IF NOT EXISTS core.lexemes (
+    id                  BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    lexicon_source_id   SMALLINT NOT NULL REFERENCES core.lexicon_sources(id) ON DELETE RESTRICT,
+    source_lexeme_key   TEXT NOT NULL,
+    source_entry_id     TEXT,
+    language_code       TEXT NOT NULL,
+    lemma_text          TEXT,
+    lemma_search        TEXT,
+    transliteration     TEXT,
+    strong_number       INTEGER,
+    pos_code            TEXT,
+    metadata            JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at          TIMESTAMPTZ NOT NULL DEFAULT now(),
+    updated_at          TIMESTAMPTZ NOT NULL DEFAULT now(),
+    UNIQUE (lexicon_source_id, source_lexeme_key)
+);
+
+CREATE INDEX IF NOT EXISTS idx_lexemes_strong
+    ON core.lexemes (strong_number)
+    WHERE strong_number IS NOT NULL;
+
 CREATE TABLE IF NOT EXISTS content.documents (
     id                  BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     document_key        TEXT NOT NULL UNIQUE,
