@@ -10,6 +10,7 @@ const BOOK_CODES = new Set([
 
 const GROUPS = new Set(["torah", "former", "latter", "writings"]);
 const VERSIFICATIONS = new Set(["wlc", "kjv"]);
+const LEXICON_SOURCE = "oshb-hebrew-lexicon";
 
 export class ApiInputError extends Error {
   constructor(public readonly status: number, message: string) {
@@ -19,6 +20,8 @@ export class ApiInputError extends Error {
 }
 
 export interface SearchCriteria {
+  lexeme?: string;
+  // Backward-compatible Strong lookup. New UI/search clients should use lexeme.
   strong?: number;
   form?: string;
   stem?: string;
@@ -59,6 +62,17 @@ function readInteger(value: string | null, name: string, minimum: number, maximu
   return parsed;
 }
 
+function readLexeme(value: string | null): string | undefined {
+  if (value === null) return undefined;
+  const trimmed = value.trim();
+  // Source keys are bound SQL parameters. Keep the public contract deliberately
+  // conservative while allowing OSHB augmented keys such as 8165a/7704b.
+  if (!/^[A-Za-z0-9._:-]{1,40}$/.test(trimmed)) {
+    throw new ApiInputError(422, "lexeme must be a valid source lexeme key");
+  }
+  return trimmed;
+}
+
 function readOneLetter(value: string | null, name: string): string | undefined {
   if (value === null) return undefined;
   if (!/^[A-Za-z]$/.test(value)) throw new ApiInputError(422, `${name} must be one ASCII letter`);
@@ -76,6 +90,7 @@ function readBooks(value: string | null): string[] {
 
 export function parseSearchUrl(url: URL): SearchCriteria {
   const p = url.searchParams;
+  const lexeme = readLexeme(p.get("lexeme"));
   const strong = readInteger(p.get("strong"), "strong", 1, 99999);
   const rawForm = p.get("form");
   const form = rawForm === null ? undefined : normalizeForm(rawForm.trim());
@@ -101,11 +116,12 @@ export function parseSearchUrl(url: URL): SearchCriteria {
   const limit = readInteger(p.get("limit"), "limit", 1, 500, 100)!;
   const offset = readInteger(p.get("offset"), "offset", 0, 1000000, 0)!;
 
-  if (strong === undefined && form === undefined && stem === undefined && conjugation === undefined) {
-    throw new ApiInputError(400, "Specify at least one of strong, form, stem, or conjugation.");
+  if (lexeme === undefined && strong === undefined && form === undefined && stem === undefined && conjugation === undefined) {
+    throw new ApiInputError(400, "Specify at least one of lexeme, strong, form, stem, or conjugation.");
   }
 
   return {
+    lexeme,
     strong,
     form,
     stem,
@@ -127,6 +143,14 @@ export function buildSearchPlan(criteria: SearchCriteria): SearchPlan {
     clauses.push(sqlFragment.replace("?", `$${params.length}`));
   };
 
+  if (criteria.lexeme !== undefined) {
+    add(`primary_lexeme_id = (
+      SELECT lx.id
+      FROM core.lexemes lx
+      JOIN core.lexicon_sources lxs ON lxs.id = lx.lexicon_source_id
+      WHERE lxs.code = '${LEXICON_SOURCE}' AND lx.source_lexeme_key = ?
+    )`, criteria.lexeme);
+  }
   if (criteria.strong !== undefined) add("primary_strong = ?", criteria.strong);
   if (criteria.form !== undefined) add("form_search = ?", criteria.form);
   if (criteria.stem !== undefined) add("main_stem_code = ?", criteria.stem);
@@ -153,7 +177,9 @@ export function buildSearchPlan(criteria: SearchCriteria): SearchPlan {
              lemma_raw, primary_strong, lemma_display,
              morph_raw, language_code, main_pos_code,
              main_stem_code, main_conjugation_code,
-             person_code, gender_code, number_code, state_code
+             person_code, gender_code, number_code, state_code,
+             lexeme_key, lexeme_lemma, lexeme_search,
+             lexeme_transliteration, lexeme_pos_code, lexicon_source_code
       FROM dtworks.search_tokens
       WHERE ${where}
       ORDER BY canonical_order, chapter_wlc, verse_wlc, token_index
