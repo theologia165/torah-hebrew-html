@@ -150,109 +150,85 @@ ON CONFLICT (code) DO UPDATE SET
     license = EXCLUDED.license,
     metadata = EXCLUDED.metadata;
 
-CREATE OR REPLACE FUNCTION core.sync_morphhb_references()
-RETURNS TABLE (
-    wlc_reference_count BIGINT,
-    kjv_reference_count BIGINT,
-    source_passage_count BIGINT,
-    mapping_count BIGINT
-)
-LANGUAGE plpgsql
-AS $$
-DECLARE
-    wlc_system_id SMALLINT;
-    kjv_system_id SMALLINT;
-    morphhb_source_id SMALLINT;
-BEGIN
-    SELECT id INTO STRICT wlc_system_id FROM core.reference_systems WHERE code = 'WLC';
-    SELECT id INTO STRICT kjv_system_id FROM core.reference_systems WHERE code = 'KJV';
-    SELECT id INTO STRICT morphhb_source_id FROM core.corpus_sources WHERE code = 'morphhb-wlc';
+-- Project every currently imported MorphHB verse into the generic reference layer.
+INSERT INTO core.reference_passages
+    (reference_system_id, osis_ref, book_osis, chapter, verse)
+SELECT DISTINCT
+    rs.id,
+    v.osis_wlc,
+    b.osis_code,
+    v.chapter_wlc,
+    v.verse_wlc
+FROM dtworks.verses v
+JOIN dtworks.books b ON b.id = v.book_id
+JOIN core.reference_systems rs ON rs.code = 'WLC'
+ON CONFLICT (reference_system_id, osis_ref) DO UPDATE SET
+    book_osis = EXCLUDED.book_osis,
+    chapter = EXCLUDED.chapter,
+    verse = EXCLUDED.verse;
 
-    INSERT INTO core.reference_passages
-        (reference_system_id, osis_ref, book_osis, chapter, verse)
-    SELECT DISTINCT
-        wlc_system_id,
-        v.osis_wlc,
-        b.osis_code,
-        v.chapter_wlc,
-        v.verse_wlc
-    FROM dtworks.verses v
-    JOIN dtworks.books b ON b.id = v.book_id
-    ON CONFLICT (reference_system_id, osis_ref) DO UPDATE SET
-        book_osis = EXCLUDED.book_osis,
-        chapter = EXCLUDED.chapter,
-        verse = EXCLUDED.verse;
+-- MorphHB VerseMap.xml records exceptions. If no KJV exception exists,
+-- the KJV-style reference is treated as identical to the WLC reference.
+INSERT INTO core.reference_passages
+    (reference_system_id, osis_ref, book_osis, chapter, verse)
+SELECT DISTINCT
+    rs.id,
+    COALESCE(v.osis_kjv, v.osis_wlc),
+    split_part(COALESCE(v.osis_kjv, v.osis_wlc), '.', 1),
+    split_part(COALESCE(v.osis_kjv, v.osis_wlc), '.', 2)::INTEGER,
+    split_part(COALESCE(v.osis_kjv, v.osis_wlc), '.', 3)::INTEGER
+FROM dtworks.verses v
+JOIN core.reference_systems rs ON rs.code = 'KJV'
+ON CONFLICT (reference_system_id, osis_ref) DO UPDATE SET
+    book_osis = EXCLUDED.book_osis,
+    chapter = EXCLUDED.chapter,
+    verse = EXCLUDED.verse;
 
-    -- MorphHB VerseMap.xml records exceptions. If no KJV exception exists,
-    -- the KJV-style reference is treated as identical to the WLC reference.
-    INSERT INTO core.reference_passages
-        (reference_system_id, osis_ref, book_osis, chapter, verse)
-    SELECT DISTINCT
-        kjv_system_id,
-        COALESCE(v.osis_kjv, v.osis_wlc),
-        split_part(COALESCE(v.osis_kjv, v.osis_wlc), '.', 1),
-        split_part(COALESCE(v.osis_kjv, v.osis_wlc), '.', 2)::INTEGER,
-        split_part(COALESCE(v.osis_kjv, v.osis_wlc), '.', 3)::INTEGER
-    FROM dtworks.verses v
-    ON CONFLICT (reference_system_id, osis_ref) DO UPDATE SET
-        book_osis = EXCLUDED.book_osis,
-        chapter = EXCLUDED.chapter,
-        verse = EXCLUDED.verse;
+INSERT INTO core.source_passages
+    (corpus_source_id, source_key, reference_passage_id, source_version, metadata)
+SELECT
+    cs.id,
+    v.osis_wlc,
+    rp.id,
+    sv.source_commit,
+    jsonb_build_object('source_name', sv.source_name)
+FROM dtworks.verses v
+JOIN dtworks.source_versions sv ON sv.id = v.source_version_id
+JOIN core.corpus_sources cs ON cs.code = 'morphhb-wlc'
+JOIN core.reference_systems rs ON rs.code = 'WLC' AND rs.id = cs.reference_system_id
+JOIN core.reference_passages rp
+  ON rp.reference_system_id = rs.id
+ AND rp.osis_ref = v.osis_wlc
+ON CONFLICT (corpus_source_id, source_key) DO UPDATE SET
+    reference_passage_id = EXCLUDED.reference_passage_id,
+    source_version = EXCLUDED.source_version,
+    metadata = EXCLUDED.metadata;
 
-    INSERT INTO core.source_passages
-        (corpus_source_id, source_key, reference_passage_id, source_version, metadata)
-    SELECT
-        morphhb_source_id,
-        v.osis_wlc,
-        rp.id,
-        sv.source_commit,
-        jsonb_build_object('source_name', sv.source_name)
-    FROM dtworks.verses v
-    JOIN dtworks.source_versions sv ON sv.id = v.source_version_id
-    JOIN core.reference_passages rp
-      ON rp.reference_system_id = wlc_system_id
-     AND rp.osis_ref = v.osis_wlc
-    ON CONFLICT (corpus_source_id, source_key) DO UPDATE SET
-        reference_passage_id = EXCLUDED.reference_passage_id,
-        source_version = EXCLUDED.source_version,
-        metadata = EXCLUDED.metadata;
-
-    INSERT INTO core.passage_mappings
-        (from_passage_id, to_passage_id, relation_type, authority, notes)
-    SELECT
-        wlc.id,
-        kjv.id,
-        CASE
-            WHEN COALESCE(v.osis_kjv, v.osis_wlc) = v.osis_wlc THEN 'equivalent'
-            ELSE 'renumbered'
-        END,
-        'Open Scriptures Hebrew Bible / MorphHB VerseMap.xml',
-        CASE
-            WHEN v.osis_kjv IS NULL THEN 'No VerseMap exception: numbering treated as identical.'
-            ELSE 'Explicit VerseMap correspondence.'
-        END
-    FROM dtworks.verses v
-    JOIN core.reference_passages wlc
-      ON wlc.reference_system_id = wlc_system_id
-     AND wlc.osis_ref = v.osis_wlc
-    JOIN core.reference_passages kjv
-      ON kjv.reference_system_id = kjv_system_id
-     AND kjv.osis_ref = COALESCE(v.osis_kjv, v.osis_wlc)
-    ON CONFLICT (from_passage_id, to_passage_id, relation_type) DO UPDATE SET
-        authority = EXCLUDED.authority,
-        notes = EXCLUDED.notes;
-
-    RETURN QUERY
-    SELECT
-        (SELECT count(*) FROM core.reference_passages WHERE reference_system_id = wlc_system_id),
-        (SELECT count(*) FROM core.reference_passages WHERE reference_system_id = kjv_system_id),
-        (SELECT count(*) FROM core.source_passages WHERE corpus_source_id = morphhb_source_id),
-        (SELECT count(*) FROM core.passage_mappings pm
-         JOIN core.reference_passages p ON p.id = pm.from_passage_id
-         WHERE p.reference_system_id = wlc_system_id);
-END;
-$$;
-
-SELECT * FROM core.sync_morphhb_references();
+INSERT INTO core.passage_mappings
+    (from_passage_id, to_passage_id, relation_type, authority, notes)
+SELECT
+    wlc.id,
+    kjv.id,
+    CASE
+        WHEN COALESCE(v.osis_kjv, v.osis_wlc) = v.osis_wlc THEN 'equivalent'
+        ELSE 'renumbered'
+    END,
+    'Open Scriptures Hebrew Bible / MorphHB VerseMap.xml',
+    CASE
+        WHEN v.osis_kjv IS NULL THEN 'No VerseMap exception: numbering treated as identical.'
+        ELSE 'Explicit VerseMap correspondence.'
+    END
+FROM dtworks.verses v
+JOIN core.reference_systems wlc_rs ON wlc_rs.code = 'WLC'
+JOIN core.reference_systems kjv_rs ON kjv_rs.code = 'KJV'
+JOIN core.reference_passages wlc
+  ON wlc.reference_system_id = wlc_rs.id
+ AND wlc.osis_ref = v.osis_wlc
+JOIN core.reference_passages kjv
+  ON kjv.reference_system_id = kjv_rs.id
+ AND kjv.osis_ref = COALESCE(v.osis_kjv, v.osis_wlc)
+ON CONFLICT (from_passage_id, to_passage_id, relation_type) DO UPDATE SET
+    authority = EXCLUDED.authority,
+    notes = EXCLUDED.notes;
 
 COMMIT;
