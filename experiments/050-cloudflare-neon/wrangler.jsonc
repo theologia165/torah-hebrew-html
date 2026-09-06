@@ -6,5 +6,12 @@
   "workers_dev": true,
   "vars": {
     "CORS_ORIGINS": "*"
-  }
+  },
+  "secrets_store_secrets": [
+    {
+      "binding": "DATABASE_URL",
+      "store_id": "9fe0e1ddf9d7436ba25995c039781f50",
+      "secret_name": "dtworks-neon-database-url"
+    }
+  ]
 }
