@@ -27,10 +27,11 @@ jobs:
             3d48aa46-08ae-81f3-8052-e333dfaa1cc7 \
             3d48aa46-08ae-8150-b84f-dc67af274d52 \
             '038｜創世記26:13–22'
-      - name: Commit delivery audit
+      - name: Commit delivery audit or failure record
+        if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add ver3/runs/038-20260907-r3/delivery.json
-          git diff --cached --quiet || git commit -m 'Finalize replacement run 038'
+          git add ver3/runs/038-20260907-r3/delivery.json ver3/runs/038-20260907-r3/replacement-finalize-error.json
+          git diff --cached --quiet || git commit -m 'Record replacement finalization 038'
           git push origin HEAD:asaichi-torah-ver3
