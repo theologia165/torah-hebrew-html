@@ -8,7 +8,7 @@
 2. requestをGitHubへコミットし、そのコミットを含むVer.3 Actionsを確認する。GitHubがNeonの本文・形態segment・lexeme・reference mapping・source versionをJSON1としてver3/runs/{run_id}/json1.jsonに取得する。DBに不足する語間記号等はprepare.pyが固定MorphHBと全語照合・容量ゲート通過後に追加専用補助表へ保存し、DBから再取得する。ChatGPTが本文・分解・lemmaを自力生成して穴埋めしてはならない。
 3. GitHubがJSON1から研究に必要な本文、語ID、語順、lemma、形態、本文注、節番号対応を抽出したJSON1.1を同ディレクトリのjson1.1.jsonへコミットする。ChatGPTはActions成功・対象run_id・全対象節の一致を確認してこれを読み取る。GitHubがChatGPTを自動起動するのではなく、この実行中にChatGPTがActions完了を待って取得する。
 4. ChatGPTはJSON1.1を基に全節を研究し、逐語訳・私訳・簡易説明・詳しい解説・表題・青Callout約200字・全体まとめをJSON2として作成する。json1_sha256をJSON1.1から転記し、json1_1_sha256はJSON1.1をprepare.digestと同じ正規化方式（UTF-8、ensure_ascii=False、sort_keys=True、separators=(',',':')）で計算する。全節refs・token_id・語順を維持し、DB列をJSON2で上書きしない。
-5. READMEのJSON2 schemaに従いver3/runs/{run_id}/json2.jsonをGitHubへコミットする。ActionsがJSON1とJSON2を照合し、HTML・節別MP3・添付ルートを確定してjson3.jsonを生成する。GitHub ActionsがそのJSON3からNotionへ直接送信・再取得QAする。ChatGPTがNotionページを代わりに組み立てたり、引用をコメント欄へ投稿してはならない。
+5. READMEのJSON2 schemaに従いver3/runs/{run_id}/json2.jsonをGitHubへコミットする。ActionsがJSON1とJSON2を照合し、HTML・節別MP3・Pages公開URLを確定してjson3.jsonを生成する。GitHub ActionsがそのJSON3からNotionへ直接送信・再取得QAする。ChatGPTがNotionページを代わりに組み立てたり、引用をコメント欄へ投稿してはならない。
 6. Actionsとver3/runs/{run_id}/delivery.jsonを確認し、PASSとpage_url、全節の媒体・本文照合が成立した場合のみNotion工程成功とする。失敗時はGitHubの失敗step/logを読んで同RUNの修復を試み、未実施を成功と表示しない。
 
 【研究と引用】
@@ -18,7 +18,7 @@
 【音声と表示・Ver.2継承】
 GitHubが固定PocketTorahの語位置ラベルをDBの語数と照合し、節専用の物理MP3 r1を作成、実測WPSから0.79306語/秒へ各節別atempoでr2を形成する。r1/r2を保存する。duration・音量・全節存在・共有境界・速度を検査する。連続アリヤーの巨大MP3や再生範囲指定だけの音声を一節へ埋め込まない。MODEL_AUDIO/GPT-Transcribeは通常工程では実行せず、未実施を失敗扱いも聴取済み扱いもしない。
 各節は節見出し→r2音声→私訳→ヘブライ語HTML→簡易な説明→通常閉じた詳しい解説toggleの順。音声はネイティブaudioブロックにし、音声用HTMLや空のHTML領域を追加しない。音声caption「創世記○:○学習用朗読…」を付けない。HTMLの操作説明「PC:語にマウスを…」、技術表示「GitHub JSON統合…」、HTML下部caption「対話型ヘブライ語…」を表示しない。HTMLは内容に応じた自然な高さ・小さな余白にする。Notion外側iframeの高さをAPIで自動制御できると断言しない。
-HTMLは本文・逐語訳・hover/tap用データ・JS/CSSを内包し、原則Notion File Upload APIで添付する。添付失敗節だけGitHub Pagesへ読み込み、成功した添付を維持する。語直下逐語訳、lemma/日本語形態表示、スマホtap、viewport clampを維持する。全タナハ・トーラー・前預言者・後預言者・諸書・任意書、lemma/form、Qal・同活用検索を維持し、lexeme/reference layerと/passage・/search契約は変更しない。WLCとHTMLを二重表示しない。
+HTMLは本文・逐語訳・hover/tap用データ・JS/CSSを内包し、全節をGitHub Pagesへ公開し、Notionには公開URLのembedを置く。HTML添付方式は使わない。公開URLの内容と生成HTMLの一致を確認してからNotionへ送る。Pages公開に失敗したら添付方式へ戻さずエラーを記録する。語直下逐語訳、lemma/日本語形態表示、スマホtap、viewport clampを維持する。全タナハ・トーラー・前預言者・後預言者・諸書・任意書、lemma/form、Qal・同活用検索を維持し、lexeme/reference layerと/passage・/search契約は変更しない。WLCとHTMLを二重表示しない。
 JSON・HTML・音声・Notionの各段階をActionsで検証し、媒体caption空、空ブロックなし、通常段落LTR、各項目末尾の引用リンク、全節の順序と内容一致を合格条件にする。必要な原資料帰属はページ末尾の本文資料欄に置き、操作・実装説明と混同しない。
 
 【IMAGE CONFIG｜三層構造・最優先】画像生成用データを三層に分離する。
