@@ -2,7 +2,8 @@
   "schema_version": "1.0",
   "config_type": "ASAICHI_TORAH_PARASHA_IMAGE_INDEX",
   "profiles": {
-    "ハイェイ・サラ": "ver2/config/parasha-image/chayei-sarah.json"
+    "ハイェイ・サラ": "ver2/config/parasha-image/chayei-sarah.json",
+    "トルドット": "ver2/config/parasha-image/toledot.json"
   },
-  "lookup_rule": "Resolve the exact Japanese parasha name from the current run. Do not guess a slug. If the exact name is absent, image generation is BLOCKED_MISSING_PARASHA_PROFILE while GitHub text/HTML/audio/Notion processing may continue."
+  "lookup_rule": "Resolve the exact Japanese parasha name from the current run. Do not guess a slug. If the exact name is absent, ChatGPT creates a new abstract parasha profile from the GLOBAL IMAGE MASTER before image generation, saves it under ver2/config/parasha-image/, and adds the exact Japanese name here. Existing profiles are not automatically overwritten during production runs."
 }
