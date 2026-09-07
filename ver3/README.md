@@ -8,8 +8,8 @@
 1. ChatGPTが当日NNN・標準年周期アリヤーのWLC範囲を確定し、`ver3/request.json`をコミットする。run_idは`036-20260907-r1`のような一意値。既存RUNを再利用する時は内容を変えない。
 2. GitHub ActionsがNeonから`ver3/runs/{run_id}/json1.json`を取得し、`json1.1.json`を決定論的に抽出して同じブランチへコミットする。JSON1には本文、token ID、全形態segment、lexeme、reference mapping、source versionを保持する。
 3. ChatGPTはActions成功とJSON1.1を確認して研究し、同じディレクトリへ`json2.json`をコミットする。JSON1の本文・形態・lemmaを生成・修正しない。JSON1.1のJSON1ハッシュをそのまま使い、JSON1.1全体をprepare.digestと同じ正規化方式でSHA256計算して記載する。
-4. Actionsが章節・語ID・両ハッシュを確認し、自己完結HTML、節別r1/r2音声を作成・検証する。Notion File Upload APIでHTMLを添付し、失敗節のみPagesへ配置する。ルート確定後にJSON1とJSON2から`json3.json`を生成し、そのchildrenをNotion APIへ送る。
-5. 全ブロックの順序・本文・項目末尾の引用リンク・音声URL・添付HTML内容を再取得して検査し、`delivery.json`を記録する。ChatGPTはこれを最終画像/Gmail工程で参照する。GitHubからChatGPTを自動呼出しする仕組みではなく、スケジュール実行中のChatGPTがActions完了を待ちJSON1.1を読み取る。
+4. Actionsが章節・語ID・両ハッシュを確認し、自己完結HTML、節別r1/r2音声を作成・検証する。全節のHTMLをGitHub Pagesへ配置し、公開URLから取得したバイト列と生成HTMLが一致した後、URL embedへ統一する。添付方式へは戻さない。ルート確定後にJSON1とJSON2から`json3.json`を生成し、そのchildrenをNotion APIへ送る。
+5. 全ブロックの順序・本文・項目末尾の引用リンク・音声URL・Pages埋め込みURLと公開HTML内容を再取得して検査し、`delivery.json`を記録する。ChatGPTはこれを最終画像/Gmail工程で参照する。GitHubからChatGPTを自動呼出しする仕組みではなく、スケジュール実行中のChatGPTがActions完了を待ちJSON1.1を読み取る。
 
 ## JSON request
 
@@ -54,3 +54,6 @@ HTMLはJS/CSS/本文データをすべて内包する。検索のみ既存DTWork
 ## 再実行と進行
 
 JSON1/1.1/HTML/JSON3は不一致上書きを拒否する。Notion作成直後にpage_idを保存し、部分失敗は同じJSON3・同じページから再開する。既存同名ページを複製しない。delivery PASSだけでは番号を進めない。画像とGmailまで成功した後、ChatGPTがver3/state/production.jsonを更新する。開始時にVer.2の036進行・既存ページを照合し、035や実験050から再開しない。
+
+## HTML配信方針（2026-09-07更新）
+全節をGITHUB_PAGES方式とする。publish_pagesがmainのver3-public/{run_id}/だけへHTMLを追加し、Pages build APIを明示的に起動して公開内容を照合する。公開に失敗した場合はNotion投稿前に停止する。完了済みdelivery PASSのRUNは契約検査のみ行い、既存Notionページを再投稿・変更しない。未完了の旧添付RUNは自動移行せず明示的な照合を要求する。既存050の32:4はユーザー確認済みのPages実験で、他の節の一括移行はこの設定変更では行わない。
