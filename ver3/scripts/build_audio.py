@@ -26,6 +26,7 @@ def boundary_meta(candidate,silences):
 def resolve_source(data):
     aliyah=json.loads(get_bytes(ALIYAH_URL).decode('utf-8-sig')); p=data['passage']; start_ch=int(p['chapter']); end_ch=int(p.get('end_chapter',start_ch)); begin,end=f"{start_ch}:{p['start_verse']}",f"{end_ch}:{p['end_verse']}"; matches=[]
     for parsha in aliyah['parshiot']['parsha']:
+        if not parsha.get('_verse','').startswith(p['book']+' '):continue
         for a in parsha.get('fullkriyah',{}).get('aliyah',[]):
             if a.get('_begin')==begin and a.get('_end')==end and a.get('_num')!='M':matches.append((parsha['_id'],a['_num']))
     if len(matches)!=1:fail(f'PocketTorah aliyah mapping expected 1 match for {begin}-{end}, got {matches}')
