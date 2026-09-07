@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "config_type": "ASAICHI_TORAH_PARASHA_IMAGE_PROFILE",
+  "parasha_jp": "トルドット",
+  "parasha_he": "תולדות",
+  "slug": "toledot",
+  "scope": "PARASHA",
+  "design_identity": {
+    "palette": "warm desert ochre, muted clay red, deep indigo, restrained antique gold",
+    "texture": "sun-baked earth, woven tent cloth, weathered stone; subtle and dignified",
+    "lighting": "clear dry-country light with warm directional highlights and natural shadow",
+    "mood": "inheritance, tension between siblings, divine promise carried through an unsettled household",
+    "continuity": "family-centered patriarchal world with restrained drama; visual tension may be present without caricaturing either brother"
+  },
+  "scene_rules": {
+    "world": "ancient Near East appropriate to Genesis, especially pastoral encampments, open field, wells, and the southern Canaan/Gerar environment",
+    "people": "plausible ancient Near Eastern dress and material culture; no later Jewish or Christian costume conventions",
+    "architecture": "tents, simple stone or mud-brick structures, wells and pastoral landscape where supported by the current aliyah",
+    "avoid": [
+      "modern objects or buildings",
+      "medieval European costume",
+      "halos, crosses or later religious symbols",
+      "fantasy spectacle",
+      "visual moral stereotyping of Jacob or Esau",
+      "locking any one aliyah-specific person, meal, birth scene, famine scene, or well scene into the parasha-wide profile"
+    ]
+  },
+  "typographic_accent": {
+    "rule": "retain GLOBAL IMAGE MASTER hierarchy; use antique-gold rules and small clay-red accents sparingly",
+    "parasha_identity": "the palette and material atmosphere should unify all Toledot aliyot while the right-side narrative scene changes strictly with each current passage"
+  },
+  "forbidden_persistence": [
+    "past NNN",
+    "past aliyah-specific scene",
+    "past image",
+    "failed image",
+    "gen_id",
+    "current-run-only people or events"
+  ]
+}

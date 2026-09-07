@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "config_type": "ASAICHI_TORAH_PARASHA_IMAGE_PROFILE",
+  "parasha_jp": "ハイェイ・サラ",
+  "parasha_he": "חיי שרה",
+  "slug": "chayei-sarah",
+  "scope": "PARASHA",
+  "visual_identity": {
+    "palette": {
+      "base": [
+        "warm sandstone",
+        "muted earth brown",
+        "deep indigo"
+      ],
+      "accent": [
+        "restrained antique gold",
+        "soft ivory"
+      ]
+    },
+    "lighting": "warm natural light with restrained contrast; late-afternoon or early-morning warmth when compatible with the current passage",
+    "atmosphere": "dignified, familial, reflective, transitional",
+    "material_language": "stone, woven textile, leather, tent fabric, desert vegetation and ancient Near Eastern domestic materials when supported by the passage",
+    "left_panel_character": "deep indigo-to-earth dark field with subtle antique texture and restrained gold/ivory accents"
+  },
+  "thematic_continuity": [
+    "family memory",
+    "inheritance and succession",
+    "journey and settlement",
+    "life continuing across generations",
+    "promise becoming concrete in people and place"
+  ],
+  "scene_world": {
+    "geographic_register": "Canaan, Negev, northern Mesopotamian journey routes, wells, burial landscape, pastoral settlements and arid transition zones only when the current aliyah supports them",
+    "architecture": "tents, stone structures, wells, burial caves, pastoral encampments or settlements only when passage-specific",
+    "costume": "plain ancient Near Eastern garments with natural fibers and earth-toned textiles",
+    "animals": "camels, sheep, goats or pack animals only when passage-specific",
+    "people": "depict only persons or groups supported by the current aliyah; do not force recurring characters into every image"
+  },
+  "continuity_rules": {
+    "preserve_across_aliyot": [
+      "palette family",
+      "left-panel texture family",
+      "restrained gold/ivory accent language",
+      "warm ancient Near Eastern realism",
+      "dignified, non-fantasy tone"
+    ],
+    "do_not_preserve_mechanically": [
+      "same camera angle",
+      "same number of people",
+      "same landscape",
+      "same props",
+      "same right-side composition"
+    ],
+    "previous_episode_image_reference": false,
+    "previous_episode_gen_id_reference": false
+  },
+  "avoid": [
+    "European medieval visual language",
+    "modern Middle Eastern clothing presented as exact biblical costume",
+    "ornamental religious symbolism not in the passage",
+    "romanticized palace imagery unless textually required",
+    "visual motifs imported from another parasha",
+    "forcing Sarah, Abraham, Isaac, Rebekah, Ishmael or any other named figure into a scene when the current aliyah does not depict them"
+  ],
+  "current_run_override_rule": "The current run image package controls persons, actions, place, time, theme and scene content. This parasha profile controls only visual continuity and may never override passage fidelity."
+}

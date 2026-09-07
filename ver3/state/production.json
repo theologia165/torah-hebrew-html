@@ -1,0 +1,40 @@
+{
+  "mode": "ver3-production",
+  "timezone": "Asia/Tokyo",
+  "first_run_date": "2026-09-06",
+  "next_sequence": "036",
+  "next_passage": {
+    "parasha": "Toledot",
+    "parasha_jp": "トルドット",
+    "aliyah": 1,
+    "book": "Genesis",
+    "chapter": 25,
+    "end_chapter": 26,
+    "start_verse": 19,
+    "end_verse": 5,
+    "display": "トルドット｜第1アリヤー｜創世記25:19–26:5"
+  },
+  "sequence_rule": "Advance by exactly one only after a successful production run. Sequence 036 was explicitly started by the user as a manual production override after the incomplete 035 run. Ignore sequence 050 because it is a Ver.2 development experiment.",
+  "notion_output_rule": {
+    "title": "NNN｜創世記startChapter:startVerse–endChapter:endVerse",
+    "show_development_labels": false,
+    "show_process_specification": false,
+    "show_internal_status_footer": false
+  },
+  "delivery_owner": "GITHUB_ACTIONS",
+  "chatgpt_notion_create_attachment_required": false,
+  "notion_api_version": "2026-03-11",
+  "html_delivery": {
+    "primary": "GITHUB_ACTIONS_TO_NOTION_API",
+    "html_transport": "NOTION_ATTACHMENT_WITH_GITHUB_PAGES_FALLBACK",
+    "pages_source": "main/root",
+    "pages_base_url": "https://theologia165.github.io/torah-hebrew-html",
+    "rule": "GitHub generates, verifies and uploads HTML to Notion; GitHub Pages is fallback only. Existing published files are never overwritten."
+  },
+  "notion_required_github_configuration": [
+    "NOTION_TOKEN",
+    "NOTION_PARENT_PAGE_ID"
+  ],
+  "model_audio_default": false,
+  "handover_status": "RECONCILE_VER2_036_BEFORE_FIRST_RUN"
+}

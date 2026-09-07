@@ -1,0 +1,63 @@
+  <section id="resultsCard" class="results-card" hidden>
+    <div class="results-head">
+      <div>
+        <strong id="resultsTitle">検索</strong>
+        <div id="searchTarget" class="search-target"></div>
+      </div>
+      <button id="closeResults" type="button" class="quiet-button">表示を消す</button>
+    </div>
+
+    <div class="search-controls">
+      <div class="control-group">
+        <span class="control-label">検索方法</span>
+        <div class="segmented" role="group" aria-label="検索方法">
+          <button id="modeLemma" type="button" data-mode="lemma">レーマ検索</button>
+          <button id="modeForm" type="button" data-mode="form">フォーム検索</button>
+        </div>
+      </div>
+
+      <label class="control-group">
+        <span class="control-label">検索の幅</span>
+        <select id="scopeSelect">
+          <option value="current">この書</option>
+          <option value="torah">トーラー</option>
+          <option value="former">前預言者</option>
+          <option value="latter">後預言者</option>
+          <option value="writings">諸書</option>
+          <option value="tanakh">全ヘブライ語聖書</option>
+          <option value="custom">書を個別に選択</option>
+        </select>
+      </label>
+
+      <details id="customBooks" class="custom-books">
+        <summary>検索する書を選択</summary>
+        <div class="book-actions">
+          <button id="selectAllBooks" type="button" class="quiet-button">すべて選択</button>
+          <button id="clearAllBooks" type="button" class="quiet-button">すべて解除</button>
+        </div>
+        <div id="bookChecks" class="book-checks"></div>
+      </details>
+
+      <div class="filter-row">
+        <label><input id="qalOnly" type="checkbox"> Qal形のみ</label>
+        <label><input id="sameConjugation" type="checkbox"> 同じ活用のみ</label>
+      </div>
+
+      <label class="control-group compact-control">
+        <span class="control-label">最大表示件数</span>
+        <select id="limitSelect">
+          <option value="50">50件</option>
+          <option value="100" selected>100件</option>
+          <option value="250">250件</option>
+        </select>
+      </label>
+
+      <div class="search-actions">
+        <button id="runSearch" type="button" class="primary-button">検索を実行</button>
+        <span id="searchCondition" class="condition"></span>
+      </div>
+    </div>
+
+    <div id="resultsMeta" class="meta"></div>
+    <div id="results"></div>
+  </section>
