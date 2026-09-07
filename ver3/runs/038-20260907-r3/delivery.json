@@ -1,7 +1,19 @@
 {
-  "status": "CREATED",
+  "status": "PASS",
   "run_id": "038-20260907-r3",
-  "error": "cannot access local variable 'payload' where it is not associated with a value",
   "page_id": "3d48aa46-08ae-8150-b84f-dc67af274d52",
-  "page_url": "https://app.notion.com/p/038-26-13-22-3d48aa4608ae8150b84fdc67af274d52"
+  "page_url": "https://app.notion.com/p/038-26-13-22-3d48aa4608ae8150b84fdc67af274d52",
+  "frame_upload_id": "3d48aa46-08ae-81fa-99e2-00b270ed575a",
+  "frame_method": "SHARED_DUMMY_THEN_PAGES",
+  "verse_count": 10,
+  "json3_sha256": "bfd7d0bc1b66246406e2ab2e4ab0a2ba2c3e2204f52267285ebeaaf3b29fa85f",
+  "cover": {
+    "status": "PASS",
+    "r2_object_key": "covers/038-20260907-r3/cover.jpg",
+    "sha256": "0365fc378b5c61240703faa4dc45da58503f263e14d911ffef81eed71ac0398b",
+    "byte_size": 370906,
+    "notion_file_upload_id": "3d48aa46-08ae-81a3-ac7b-00b2fed542eb",
+    "notion_cover_type": "file",
+    "r2_retention_days": 14
+  }
 }
