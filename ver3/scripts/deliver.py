@@ -108,7 +108,7 @@ def main():
     try:
         # Page ID is persisted before append; a retry resumes this exact run instead of duplicating it.
         if not state.get('page_id'):
-            wanted=payload['title']
+            wanted=f'{seq}｜{req["passage"]["display"].split("｜")[-1]}{req.get("title_suffix", "")}'
             existing=[b for b in children(parent,token) if b['type']=='child_page' and b['child_page']['title']==wanted]
             target=req.get('update_page_id')
             if target:
