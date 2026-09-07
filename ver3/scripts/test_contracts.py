@@ -34,8 +34,13 @@ def main():
     for s in html:
         assert 'PC：語にマウス' not in s and 'GitHub JSON統合' not in s
         assert 'min-height:800' not in s and 'editorial.json?' not in s
-    routes=[{'ref':v['ref'],'mode':'NOTION_ATTACHMENT','file_upload_id':'00000000-0000-4000-8000-000000000001'} for v in j['verses']]
+    routes=[{'ref':v['ref'],'mode':'GITHUB_PAGES','url':f'https://theologia165.github.io/torah-hebrew-html/ver3-public/{run.name}/{v["ref"]}.html'} for v in j['verses']]
     p=json3(j,c,routes,[f'https://example.test/{i}_r2.mp3' for i in range(len(routes))])
+    assert all('file_upload' not in b['embed'] and b['embed'].get('url','').startswith('https://theologia165.github.io/torah-hebrew-html/ver3-public/') for b in p['children'] if b['type']=='embed')
+    bad_routes=copy.deepcopy(routes); bad_routes[0]['mode']='NOTION_ATTACHMENT'
+    try: json3(j,c,bad_routes,[f'https://example.test/{i}_r2.mp3' for i in range(len(routes))])
+    except AssertionError: pass
+    else: raise AssertionError('Attachment route accepted')
     assert sum(b['type']=='audio' for b in p['children'])==len(routes)
     assert sum(b['type']=='embed' for b in p['children'])==len(routes)
     assert all(not b[b['type']].get('caption') for b in p['children'] if b['type'] in ('audio','embed'))
