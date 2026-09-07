@@ -19,14 +19,21 @@ def validate_request(r):
     assert r['run_id'].startswith(r['sequence']+'-')
     assert r['source'] == 'morphhb-wlc'
     assert r['book'] in ('Gen','Exod','Lev','Num','Deut')
+    assert r['passage']['book']==dict(Gen='Genesis',Exod='Exodus',Lev='Leviticus',Num='Numbers',Deut='Deuteronomy')[r['book']]
     assert r['refs'] and len(r['refs']) == len(set(r['refs']))
     for ref in r['refs']:
         assert re.fullmatch(re.escape(r['book'])+r'\.[1-9][0-9]*\.[1-9][0-9]*',ref)
+    p=r['passage']
+    assert r['refs'][0]==f'{r["book"]}.{p["chapter"]}.{p["start_verse"]}'
+    assert r['refs'][-1]==f'{r["book"]}.{p.get("end_chapter",p["chapter"])}.{p["end_verse"]}'
 
 def source_layout(xml, refs):
     ns='{http://www.bibletechnologies.net/2003/OSIS/namespace}'
+    all_verses=list(ET.fromstring(xml).iter(ns+'verse'))
+    canonical=[v.get('osisID') for v in all_verses]
+    assert canonical[canonical.index(refs[0]):canonical.index(refs[-1])+1]==refs, 'Requested verse coverage/order has gaps'
     result={}
-    for v in ET.fromstring(xml).iter(ns+'verse'):
+    for v in all_verses:
         ref=v.get('osisID')
         if ref not in refs: continue
         words=[]; notes=[]
