@@ -22,7 +22,7 @@ def children(page, token):
 
 def json3(j,c,routes,audio_urls):
     validate(j,c); req=j['request']; r=req['passage']; default_ch=r['chapter']
-    title=f'{req["sequence"]}｜{r["display"].split("｜")[-1]}'
+    title=f'{req["sequence"]}｜{r["display"].split("｜")[-1]}{req.get("title_suffix", "")}'
     blocks=[]; verse_handoff=[]
     for text in (r['display'],c['summary']):
         b=block('callout',text); b['callout']['color']='blue_background'; blocks.append(b)
@@ -108,7 +108,7 @@ def main():
     try:
         # Page ID is persisted before append; a retry resumes this exact run instead of duplicating it.
         if not state.get('page_id'):
-            wanted=f'{seq}｜{req["passage"]["display"].split("｜")[-1]}'
+            wanted=payload['title']
             existing=[b for b in children(parent,token) if b['type']=='child_page' and b['child_page']['title']==wanted]
             target=req.get('update_page_id')
             if target:
