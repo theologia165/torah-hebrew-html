@@ -44,21 +44,24 @@ def ui_token(t):
 
 def render(raw,v,book):
     esc=lambda x:html.escape(str(x),quote=True)
+    display_text=''.join(w['surface']+w['separator_after'] for w in raw['layout']['words'])
     pieces=[]
     for t,w,g in zip(raw['tokens'],raw['layout']['words'],v['glosses']):
-        if not w.get('read_aloud',True): continue
-        pieces.append(f'<button class="token" type="button" data-index="{t["token_index"]}"><span class="he">{esc(t["surface"])}</span><span class="gloss">{esc(g["ja"])}</span></button>')
+        label='ケティーブ' if not w.get('read_aloud',True) else ('ケレー' if w.get('reading_role')=='qere' else '')
+        reading_label=f'<span class="reading-label" dir="ltr">{label}</span>' if label else ''
+        pieces.append(f'<button class="token" type="button" data-index="{t["token_index"]}">{reading_label}<span class="he">{esc(t["surface"])}</span><span class="gloss">{esc(g["ja"])}</span></button>')
         pieces.append(f'<span class="separator" aria-hidden="true">{esc(w["separator_after"])}</span>')
     js=(ROOT/'templates/search.js').read_text().replace('__REF__',json.dumps(raw['ref'])).replace('__BOOK__',json.dumps(book))
     css=(ROOT/'templates/style.css').read_text(); controls=(ROOT/'templates/controls.html').read_text()
     data=json.dumps({'tokens':[ui_token(t) for t in raw['tokens']]},ensure_ascii=False).replace('<','\\u003c')
-    out=f'<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(raw["ref"])}</title><style>{css}</style></head><body><main class="wrap"><section class="hebrew-card"><div id="verse" class="verse" dir="rtl" data-wlc="{esc(raw["layout"]["hebrew"])}">'+''.join(pieces)+f'</div></section>{controls}</main><div id="hover" class="hover" hidden></div><script id="verse-data" type="application/json">{data}</script><script>{js}</script></body></html>'
+    out=f'<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(raw["ref"])}</title><style>{css}</style></head><body><main class="wrap"><section class="hebrew-card"><div id="verse" class="verse" dir="rtl" data-wlc="{esc(raw["layout"]["hebrew"])}" data-display-text="{esc(display_text)}">'+''.join(pieces)+f'</div></section>{controls}</main><div id="hover" class="hover" hidden></div><script id="verse-data" type="application/json">{data}</script><script>{js}</script></body></html>'
     from bs4 import BeautifulSoup
     soup=BeautifulSoup(out,'html.parser')
     verse=soup.select_one('#verse')
     reconstructed=''.join(n.select_one('.he').text if 'token' in n.get('class',[]) else n.text for n in verse.children)
-    assert reconstructed==raw['layout']['hebrew'], 'HTML WLC differs from DB'
-    assert len(soup.select('#verse .token'))==sum(w.get('read_aloud',True) for w in raw['layout']['words'])
+    assert reconstructed==display_text, 'HTML ketiv/qere text differs from DB'
+    assert ''.join(w['surface']+w['separator_after'] for w in raw['layout']['words'] if w.get('read_aloud',True))==raw['layout']['hebrew'], 'Reading text differs from DB'
+    assert len(soup.select('#verse .token'))==len(raw['tokens'])
     assert not soup.select('script[src],link[rel=stylesheet],.hint,.status,.src,audio')
     assert not soup.select('#scopeSelect option[disabled]')
     return out
