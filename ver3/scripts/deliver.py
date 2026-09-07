@@ -4,6 +4,7 @@ from pathlib import Path
 import requests
 from prepare import digest, save
 from compose import validate
+from notion_frames import ensure_upload, creation_blocks, finalize_frames
 from prepare_notion_html import request_json
 
 def rt(text, url=None):
@@ -169,11 +170,21 @@ def main():
             from runner import commit_run
             commit_run(run,'Checkpoint Ver.3 Notion page identity')
         page_id=state['page_id']; got=children(page_id,token)
+        # A previous attempt may have stopped after creating an HTML-backed frame.
+        finalize_frames(payload['children'],got,token)
+        got=children(page_id,token)
         verify(payload['children'][:len(got)],got,token)
         remaining=payload['children'][len(got):]
+        if any(b['type']=='embed' for b in remaining):
+            uid=state.get('frame_upload_id') or ensure_upload(token,run)
+            state.update(frame_upload_id=uid,frame_method='SHARED_DUMMY_THEN_PAGES')
+            checkpoint()
+        else:
+            uid=None
         while remaining:
             chunk,remaining=remaining[:100],remaining[100:]
-            request_json('PATCH',f'/blocks/{page_id}/children',token,json={'children':chunk})
+            request_json('PATCH',f'/blocks/{page_id}/children',token,json={'children':creation_blocks(chunk,uid)})
+            finalize_frames(payload['children'],children(page_id,token),token)
         verify(payload['children'],children(page_id,token),token)
         state.update(status='PASS',verse_count=len(j['verses']),json3_sha256=digest(payload)); checkpoint()
         print('PASS: JSON3 delivered and every Notion block/text/link/media verified')
