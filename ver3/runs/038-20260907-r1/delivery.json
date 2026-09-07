@@ -1,6 +1,11 @@
 {
-  "status": "CREATED",
+  "status": "FAIL",
   "run_id": "038-20260907-r1",
   "page_id": "3d48aa46-08ae-81f3-8052-e333dfaa1cc7",
-  "page_url": "https://app.notion.com/p/038-26-13-22-3d48aa4608ae81f38052e333dfaa1cc7"
+  "page_url": "https://app.notion.com/p/038-26-13-22-3d48aa4608ae81f38052e333dfaa1cc7",
+  "frame_upload_id": "3d48aa46-08ae-81fa-99e2-00b270ed575a",
+  "frame_method": "SHARED_DUMMY_THEN_PAGES",
+  "verse_count": 10,
+  "json3_sha256": "29b1d760fb21a0b7487be0c48e5a423779d76c38bc7c59f3f65beb8ffdc5e83d",
+  "error": "400 Client Error: Bad Request for url: https://api.notion.com/v1/file_uploads/3d48aa46-08ae-81e8-bd9f-00b22636dfa8/send"
 }
