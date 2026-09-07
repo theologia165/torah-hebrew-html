@@ -1,0 +1,39 @@
+name: Notion Cover Test 037
+
+on:
+  push:
+    branches: [cover-test-037-actions]
+    paths:
+      - 'ver3/scripts/test_notion_cover.py'
+      - 'ver3/runs/037-20260907-r1/cover.jpg'
+      - '.github/workflows/notion-cover-test-037.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cover-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install test dependencies
+        run: python -m pip install requests pillow
+      - name: Upload 037 cover and verify Notion page
+        run: >-
+          python ver3/scripts/test_notion_cover.py
+          ver3/runs/037-20260907-r1/cover.jpg
+          /tmp/cover-test-delivery.json
+      - name: Preserve Cover test audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: notion-cover-test-037-${{ github.run_id }}
+          path: /tmp/cover-test-delivery.json
+          retention-days: 14
