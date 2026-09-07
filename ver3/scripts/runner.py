@@ -13,8 +13,9 @@ def commit_run(run,message):
         cmd('git','commit','-m',message)
         cmd('git','push','origin','HEAD:asaichi-torah-ver3')
 
-def publish_fallback(run,routes):
-    pending=[r for r in routes if r['mode']=='GITHUB_PAGES_FALLBACK']
+def publish_pages(run,routes):
+    assert all(r['mode']=='GITHUB_PAGES' for r in routes), 'Ver.3 requires Pages for every verse'
+    pending=routes
     if not pending: return
     import requests
     checkout=Path('/tmp/torah-ver3-pages')
@@ -31,23 +32,37 @@ def publish_fallback(run,routes):
         r['url']=f'https://theologia165.github.io/torah-hebrew-html/ver3-public/{run.name}/{filename}'
     cmd('git','-C',str(checkout),'add','ver3-public')
     if subprocess.run(['git','-C',str(checkout),'diff','--cached','--quiet']).returncode:
-        cmd('git','-C',str(checkout),'commit','-m','Publish only Ver.3 failed attachment fallback')
+        cmd('git','-C',str(checkout),'commit','-m','Publish all Ver.3 verse HTML to GitHub Pages')
         cmd('git','-C',str(checkout),'push','origin','HEAD:main')
+    # GITHUB_TOKEN pushes do not trigger branch-based Pages builds automatically.
+    response=requests.post('https://api.github.com/repos/theologia165/torah-hebrew-html/pages/builds',
+        headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN'],
+                 'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'},timeout=30)
+    response.raise_for_status()
     import time
     for r in pending:
         _,ch,n=r['ref'].split('.')
         expected=(destination/f'{j["request"]["passage"]["book"].lower()}-{ch}-{n}.html').read_bytes()
         for attempt in range(30):
-            response=requests.get(r['url'],timeout=30)
-            if response.ok and response.content==expected: break
+            try:
+                response=requests.get(r['url'],timeout=30)
+                if response.ok and response.content==expected: break
+            except requests.RequestException:
+                pass
             time.sleep(10)
-        else: raise ValueError('Pages fallback not yet published: '+r['ref'])
+        else: raise ValueError('Pages HTML not yet published: '+r['ref'])
     (run/'html-route.json').write_text(json.dumps(routes,ensure_ascii=False,indent=2)+'\n')
 
 def main():
     request=Path('ver3/request.json'); r=json.loads(request.read_text()); validate_request(r)
     assert r['mode'] in ('prepare','publish','acceptance')
     run=Path('ver3/runs')/r['run_id']; run.mkdir(parents=True,exist_ok=True)
+    state_path=run/'delivery.json'
+    if state_path.exists() and json.loads(state_path.read_text()).get('status')=='PASS':
+        # Completed pages can include user-approved edits. Never replay the old JSON3.
+        cmd(sys.executable,'ver3/scripts/test_contracts.py',str(run))
+        print('SKIP_COMPLETED_DELIVERY: contract tests passed; existing Notion page unchanged')
+        return
     try:
         cmd(sys.executable,'ver3/scripts/prepare.py',str(request))
         commit_run(run,'Export Neon JSON1 and ChatGPT JSON1.1')
