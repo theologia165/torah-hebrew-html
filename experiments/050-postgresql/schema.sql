@@ -128,40 +128,49 @@ CREATE INDEX IF NOT EXISTS idx_token_lemmas_strong
 CREATE INDEX IF NOT EXISTS idx_verses_book_reference
     ON dtworks.verses (book_id, chapter_wlc, verse_wlc);
 
--- Stable read surface for FastAPI. UI code should query this view rather than
--- depending on the physical table layout.
-CREATE OR REPLACE VIEW dtworks.search_tokens AS
-SELECT
-    t.id AS token_id,
-    b.osis_code AS book,
-    b.english_name,
-    b.japanese_name,
-    b.tanakh_group,
-    b.canonical_order,
-    v.chapter_wlc,
-    v.verse_wlc,
-    v.osis_wlc,
-    v.chapter_kjv,
-    v.verse_kjv,
-    v.osis_kjv,
-    t.token_index,
-    t.surface,
-    t.form_search,
-    t.form_consonantal,
-    t.lemma_raw,
-    t.primary_strong,
-    t.lemma_display,
-    t.morph_raw,
-    t.language_code,
-    t.main_pos_code,
-    t.main_stem_code,
-    t.main_conjugation_code,
-    t.person_code,
-    t.gender_code,
-    t.number_code,
-    t.state_code
-FROM dtworks.tokens t
-JOIN dtworks.verses v ON v.id = t.verse_id
-JOIN dtworks.books b ON b.id = v.book_id;
+-- Stable read surface for FastAPI. Create the base view only on a fresh
+-- database. Later migrations append lexeme columns; replacing that expanded
+-- production view here would try to drop columns and PostgreSQL rejects it.
+DO $block$
+BEGIN
+    IF to_regclass('dtworks.search_tokens') IS NULL THEN
+        EXECUTE $view$
+            CREATE VIEW dtworks.search_tokens AS
+            SELECT
+                t.id AS token_id,
+                b.osis_code AS book,
+                b.english_name,
+                b.japanese_name,
+                b.tanakh_group,
+                b.canonical_order,
+                v.chapter_wlc,
+                v.verse_wlc,
+                v.osis_wlc,
+                v.chapter_kjv,
+                v.verse_kjv,
+                v.osis_kjv,
+                t.token_index,
+                t.surface,
+                t.form_search,
+                t.form_consonantal,
+                t.lemma_raw,
+                t.primary_strong,
+                t.lemma_display,
+                t.morph_raw,
+                t.language_code,
+                t.main_pos_code,
+                t.main_stem_code,
+                t.main_conjugation_code,
+                t.person_code,
+                t.gender_code,
+                t.number_code,
+                t.state_code
+            FROM dtworks.tokens t
+            JOIN dtworks.verses v ON v.id = t.verse_id
+            JOIN dtworks.books b ON b.id = v.book_id
+        $view$;
+    END IF;
+END
+$block$;
 
 COMMIT;
