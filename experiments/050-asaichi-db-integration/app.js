@@ -1,6 +1,7 @@
 const API = 'https://dtworks-hebrew-search.nishiharat.workers.dev';
 const SOURCE = 'morphhb-wlc';
 const REF = 'Gen.32.4';
+const ASSET_VERSION = 'tanakh39-20260907-2';
 
 const BOOKS = [
   ['Gen','創世記','torah'],['Exod','出エジプト記','torah'],['Lev','レビ記','torah'],['Num','民数記','torah'],['Deut','申命記','torah'],
@@ -277,7 +278,7 @@ async function boot(){
   el('bookChecks').innerHTML=BOOKS.map(([code,name,group])=>`<label><input type="checkbox" value="${code}" data-group="${group}" checked> ${name}</label>`).join('');
   let snapshot=fallback;
   try{
-    const [eRes,nRes]=await Promise.all([fetch('./editorial.json'),fetch('./json1-prompt.json')]);
+    const [eRes,nRes]=await Promise.all([fetch(`./editorial.json?v=${ASSET_VERSION}`),fetch(`./json1-prompt.json?v=${ASSET_VERSION}`)]);
     if(!eRes.ok)throw new Error(`editorial.json ${eRes.status}`);
     if(!nRes.ok)throw new Error(`json1-prompt.json ${nRes.status}`);
     editorial=await eRes.json();

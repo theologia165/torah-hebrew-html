@@ -48,7 +48,8 @@ if(lexemeAttrs.length!==11||lexemeAttrs.some(v=>!v)) fail('lexeme-key fallback i
 if(html.includes('data-strong=')) fail('Strong must not be a UI fallback attribute');
 
 if(!js.includes('レーマ検索')||!js.includes('フォーム検索')) fail('hover search buttons missing');
-if(!js.includes("fetch('./editorial.json')")||!js.includes("fetch('./json1-prompt.json')")) fail('050 must merge ChatGPT and Neon JSON');
+if(!js.includes('editorial.json?v=')||!js.includes('json1-prompt.json?v=')) fail('050 must merge versioned ChatGPT and Neon JSON');
+if(!html.includes('style.css?v=tanakh39-20260907-2')||!html.includes('app.js?v=tanakh39-20260907-2')) fail('versioned asset URLs missing');
 if(js.includes("['Strong'")||js.includes('["Strong"')) fail('Strong must not be rendered in hover');
 if(!js.includes("p.set('lexeme',String(key))")) fail('lemma search must use lexeme key');
 if(js.includes("p.set('strong'")) fail('050 UI must not use Strong search');
