@@ -3,10 +3,11 @@ import hashlib, io, json, os, sys, time
 from pathlib import Path
 
 import boto3
+import requests
 from botocore.config import Config
 from PIL import Image
 
-from prepare_notion_html import request_json
+from prepare_notion_html import API, NOTION_VERSION, request_json
 
 def client():
     return boto3.client('s3', endpoint_url=os.environ['R2_ENDPOINT'],
@@ -34,19 +35,29 @@ def fetch(run_id, wait_seconds=600):
         time.sleep(10)
     raise RuntimeError(f'WAITING_FOR_R2_COVER timed out for {key(run_id)}: {err}')
 
+def upload_to_notion(data, token):
+    """Use the same multipart /send operation that passed the 037 cover test."""
+    up=request_json('POST','/file_uploads',token,json={'mode':'single_part','filename':'cover.jpg','content_type':'image/jpeg'})
+    upload_id=up['id']
+    headers={'Authorization':f'Bearer {token}','Notion-Version':NOTION_VERSION}
+    response=requests.post(API+f'/file_uploads/{upload_id}/send',headers=headers,
+        files={'file':('cover.jpg',io.BytesIO(data),'image/jpeg')},timeout=90)
+    if response.status_code >= 300:
+        raise RuntimeError(f'Notion cover multipart send: {response.status_code} {response.text[:600]}')
+    if response.json().get('status') != 'uploaded':
+        raise RuntimeError(f'Notion cover upload status: {response.json().get("status")}')
+    return upload_id
+
 def apply(run_id, page_id, delivery_path, wait_seconds=600):
     data=fetch(run_id,wait_seconds); token=os.environ['NOTION_TOKEN']
-    up=request_json('POST','/file_uploads',token,json={'mode':'single_part','filename':'cover.jpg','content_type':'image/jpeg'})
-    upload_id=up['id']; put=up.get('upload_url')
-    if put:
-        import requests
-        r=requests.put(put,data=data,headers={'Content-Type':'image/jpeg'},timeout=90); r.raise_for_status()
-    request_json('POST',f'/file_uploads/{upload_id}/send',token)
+    upload_id=upload_to_notion(data,token)
     request_json('PATCH',f'/pages/{page_id}',token,json={'cover':{'type':'file_upload','file_upload':{'id':upload_id}}})
     page=request_json('GET',f'/pages/{page_id}',token)
     assert page.get('cover',{}).get('type')=='file', 'Notion cover readback was not a file'
     state=json.loads(Path(delivery_path).read_text())
+    state.pop('error',None)
     state['cover']={'status':'PASS','r2_object_key':key(run_id),'sha256':hashlib.sha256(data).hexdigest(),'byte_size':len(data),'notion_file_upload_id':upload_id,'notion_cover_type':'file','r2_retention_days':14}
+    state['status']='PASS'
     Path(delivery_path).write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n')
 
 if __name__=='__main__':
