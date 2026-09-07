@@ -31,6 +31,11 @@ def resolve_source(data):
             if a.get('_begin')==begin and a.get('_end')==end and a.get('_num')!='M':matches.append((parsha['_id'],a['_num']))
     if len(matches)!=1:fail(f'PocketTorah aliyah mapping expected 1 match for {begin}-{end}, got {matches}')
     parsha,num=matches[0]; base=f'{parsha}-{num}'; audio_base=re.sub(r"[\s'’]+",'',base); labels_base=base
+    tree=json.loads(get_bytes(f'https://api.github.com/repos/rneiss/PocketTorah/git/trees/{POCKETTORAH_SHA}?recursive=1'))
+    wanted=f'data/torah/labels/{base}.txt'
+    exact=[x['path'] for x in tree['tree'] if x['path'].casefold()==wanted.casefold()]
+    if len(exact)!=1: fail(f'Labels filename resolution expected 1 match for {wanted}, got {exact}')
+    labels_base=Path(exact[0]).stem
     return {'parsha':parsha,'aliyah':num,'base':base,'audio_base':audio_base,'labels_base':labels_base,'audio_url':f"{BASE_RAW}/data/audio/{urllib.parse.quote(audio_base,safe='')}.mp3",'labels_url':f"{BASE_RAW}/data/torah/labels/{urllib.parse.quote(labels_base,safe='')}.txt"}
 def split_mp3(source,start,end,out):run(['ffmpeg','-y','-hide_banner','-loglevel','error','-i',str(source),'-af',f'atrim=start={start:.6f}:end={end:.6f},asetpts=PTS-STARTPTS','-c:a','libmp3lame','-q:a','2',str(out)])
 def atempo_chain(factor):
