@@ -51,20 +51,29 @@ jobs:
               (out/'result.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
           save()
           upload=upload_html(html,token); record['upload_id']=upload
+          index=next(i for i,b in enumerate(before) if b['id']==bid)
+          assert index>0 and before[index-1]['type']=='heading_3'
+          new_id=None
           try:
-              request_json('PATCH',f'/blocks/{bid}',token,json={'embed':{'type':'file_upload','file_upload':{'id':upload},'caption':[]}})
-              attached=request_json('GET',f'/blocks/{bid}',token)
+              created=request_json('PATCH',f'/blocks/{page}/children',token,json={'after':before[index-1]['id'],'children':[{'object':'block','type':'embed','embed':{'type':'file_upload','file_upload':{'id':upload},'caption':[]}}]})
+              assert len(created['results'])==1
+              new_id=created['results'][0]['id']; record['new_block_id']=new_id
+              attached=request_json('GET',f'/blocks/{new_id}',token)
               assert attached['type']=='embed' and attached['embed'].get('url') and attached['embed']['url']!=url
               record['attachment_stage']='PASS'; save()
               time.sleep(2)
-          finally:
-              request_json('PATCH',f'/blocks/{bid}',token,json={'embed':{'url':url,'caption':[]}})
-          after=children()
-          assert [b['id'] for b in before]==[b['id'] for b in after], 'Block order changed'
-          for old,new in zip(before,after):
-              if old['id']==bid:
-                  assert new['embed'].get('url')==url and not new['embed'].get('caption')
-              else: assert stable(old)==stable(new), 'Other block changed: '+old['id']
+              request_json('PATCH',f'/blocks/{new_id}',token,json={'embed':{'url':url,'caption':[]}})
+              final=request_json('GET',f'/blocks/{new_id}',token)
+              assert final['embed'].get('url')==url and not final['embed'].get('caption')
+              request_json('PATCH',f'/blocks/{bid}',token,json={'archived':True})
+              after=children()
+              assert [b['id'] for b in after]==[new_id if b['id']==bid else b['id'] for b in before]
+              for old,new in zip(before,after):
+                  if old['id']!=bid: assert stable(old)==stable(new), 'Other block changed: '+old['id']
+          except Exception:
+              request_json('PATCH',f'/blocks/{bid}',token,json={'archived':False})
+              if new_id:request_json('PATCH',f'/blocks/{new_id}',token,json={'archived':True})
+              raise
           record.update(status='PASS',pages_restored=True,other_blocks_unchanged=True,embed_count=sum(b['type']=='embed' for b in after),audio_count=sum(b['type']=='audio' for b in after))
           save();print(json.dumps(record,ensure_ascii=False))
           
