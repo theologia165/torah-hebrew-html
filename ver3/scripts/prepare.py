@@ -42,6 +42,7 @@ def source_layout(xml, refs):
                 words.append({'surface':''.join(child.itertext()).replace('/',''),
                               'lemma_raw':child.get('lemma',''), 'morph_raw':child.get('morph',''),
                               'separator_after':' '})
+                if child.get('type')=='x-ketiv': words[-1]['read_aloud']=False
             elif child.tag==ns+'seg' and words:
                 marker=''.join(child.itertext())
                 if marker:
@@ -50,8 +51,13 @@ def source_layout(xml, refs):
                     else: words[-1]['separator_after']+=marker+' '
             elif child.tag==ns+'note':
                 notes.append(ET.tostring(child,encoding='unicode'))
+                # The importer retains both ketiv and nested qere tokens in XML order.
+                for w in child.iter(ns+'w'):
+                    words.append({'surface':''.join(w.itertext()).replace('/',''),
+                                  'lemma_raw':w.get('lemma',''),'morph_raw':w.get('morph',''),
+                                  'separator_after':' ','reading_role':'qere'})
         result[ref]={'words':words,'notes_xml':notes,
-                     'hebrew':''.join(w['surface']+w['separator_after'] for w in words)}
+                     'hebrew':''.join(w['surface']+w['separator_after'] for w in words if w.get('read_aloud',True))}
     assert set(result)==set(refs), 'Pinned source has missing verses'
     return result
 
@@ -63,8 +69,10 @@ def compact(j):
                        'tokens':[{'token_id':t['id'],'token_index':t['token_index'],
                                   'surface':t['surface'],'lemma_raw':t['lemma_raw'],
                                   'morph_raw':t['morph_raw'],'lexeme':t['lexeme'],
-                                  'morph_segments':t['morph_segments']}
-                                 for t in v['tokens']]} for v in j['verses']]}
+                                  'morph_segments':t['morph_segments'],
+                                  **({'read_aloud':False} if not v['layout']['words'][i].get('read_aloud',True) else {}),
+                                  **({'reading_role':v['layout']['words'][i]['reading_role']} if 'reading_role' in v['layout']['words'][i] else {})}
+                                 for i,t in enumerate(v['tokens'])]} for v in j['verses']]}
 
 def main():
     import psycopg
