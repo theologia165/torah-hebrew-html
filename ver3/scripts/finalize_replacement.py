@@ -10,8 +10,8 @@ try:
     old=request_json('GET',f'/pages/{old_id}',token)
     new=request_json('GET',f'/pages/{new_id}',token)
     assert new.get('cover',{}).get('type')=='file', 'Replacement cover is not verified'
-    if not old.get('archived'):
-        request_json('PATCH',f'/pages/{old_id}',token,json={'archived':True})
+    if not old.get('in_trash'):
+        request_json('PATCH',f'/pages/{old_id}',token,json={'in_trash':True})
 
     title_key=next((name for name,value in new.get('properties',{}).items()
                     if value.get('type')=='title'), None)
@@ -22,7 +22,7 @@ try:
 
     old_after=request_json('GET',f'/pages/{old_id}',token)
     new_after=request_json('GET',f'/pages/{new_id}',token)
-    assert old_after.get('archived') is True, 'Old page archive readback failed'
+    assert old_after.get('in_trash') is True, 'Old page trash readback failed'
     actual=''.join(x.get('plain_text','') for x in new_after['properties'][title_key]['title'])
     assert actual==title, f'Replacement title mismatch: {actual}'
     p=run/'delivery.json'; state=json.loads(p.read_text())
