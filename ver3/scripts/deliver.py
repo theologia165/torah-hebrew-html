@@ -146,8 +146,10 @@ def main():
             for expected,actual in zip(payload['children'],got):
                 kind=expected['type']
                 if kind in ('audio','embed'):
-                    request_json('PATCH',f'/blocks/{actual["id"]}',token,json={kind:expected[kind]})
+                    update={k:v for k,v in expected[kind].items() if k!='type'}
+                    request_json('PATCH',f'/blocks/{actual["id"]}',token,json={kind:update})
             verify(payload['children'],children(page_id,token),token)
+            state.pop('error',None)
             state.update(status='PASS',verse_count=len(j['verses']),json3_sha256=digest(payload),operation='UPDATE_EXISTING_PAGE'); checkpoint()
             print('PASS: updated existing page; all text, citations and 10 Pages embeds verified')
             return
