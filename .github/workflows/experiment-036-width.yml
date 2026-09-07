@@ -1,0 +1,76 @@
+name: One-off 036 Gen25-19 embed width experiment
+on:
+  push:
+    branches: [asaichi-torah-ver3]
+    paths: ['.github/workflows/experiment-036-width.yml']
+permissions:
+  contents: read
+concurrency:
+  group: asaichi-torah-production
+  cancel-in-progress: false
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests
+      - name: Attach same HTML then restore Pages on Gen25-19 only
+        shell: python
+        run: |
+          import json, os, sys, time, hashlib
+          from pathlib import Path
+          sys.path.insert(0, 'ver3/scripts')
+          from prepare_notion_html import request_json, upload_html
+          token=os.environ['NOTION_TOKEN']
+          page='3d48aa46-08ae-81ae-9391-ede7289a6960'
+          url='https://theologia165.github.io/torah-hebrew-html/ver3-public/036-v3-production-20260907-r1/genesis-25-19.html'
+          html=Path('ver3/runs/036-v3-production-20260907-r1/html/genesis-25-19.html')
+          out=Path('width-experiment'); out.mkdir(exist_ok=True)
+          def children():
+              rows=[]; cursor=''
+              while True:
+                  r=request_json('GET',f'/blocks/{page}/children?page_size=100'+('&start_cursor='+cursor if cursor else ''),token)
+                  rows+=r['results']
+                  if not r['has_more']:return rows
+                  cursor=r['next_cursor']
+          def stable(b):
+              return {k:v for k,v in b.items() if k not in ('last_edited_time','last_edited_by','request_id')}
+          before=children()
+          targets=[b for b in before if b['type']=='embed' and b['embed'].get('url')==url]
+          assert len(targets)==1, 'Expected exactly one Gen.25.19 Pages embed'
+          target=targets[0]; bid=target['id']; original=target['embed']
+          assert original.get('caption',[])==[]
+          record={'page_id':page,'block_id':bid,'ref':'Gen.25.19','original_url':url,'html_sha256':hashlib.sha256(html.read_bytes()).hexdigest(),'status':'STARTED','visual_width_status':'REQUIRES_NOTION_UI_CONFIRMATION'}
+          def save():
+              (out/'result.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
+          save()
+          upload=upload_html(html,token); record['upload_id']=upload
+          try:
+              request_json('PATCH',f'/blocks/{bid}',token,json={'embed':{'type':'file_upload','file_upload':{'id':upload},'caption':[]}})
+              attached=request_json('GET',f'/blocks/{bid}',token)
+              assert attached['type']=='embed' and attached['embed'].get('url') and attached['embed']['url']!=url
+              record['attachment_stage']='PASS'; save()
+              time.sleep(2)
+          finally:
+              request_json('PATCH',f'/blocks/{bid}',token,json={'embed':{'url':url,'caption':[]}})
+          after=children()
+          assert [b['id'] for b in before]==[b['id'] for b in after], 'Block order changed'
+          for old,new in zip(before,after):
+              if old['id']==bid:
+                  assert new['embed'].get('url')==url and not new['embed'].get('caption')
+              else: assert stable(old)==stable(new), 'Other block changed: '+old['id']
+          record.update(status='PASS',pages_restored=True,other_blocks_unchanged=True,embed_count=sum(b['type']=='embed' for b in after),audio_count=sum(b['type']=='audio' for b in after))
+          save();print(json.dumps(record,ensure_ascii=False))
+          
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: experiment-036-width
+          path: width-experiment/
+          retention-days: 14
