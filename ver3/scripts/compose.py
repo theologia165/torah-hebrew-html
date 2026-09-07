@@ -12,6 +12,12 @@ def prose(s):
             raise ValueError('Japanese paragraph must start with ヘブライ語の: '+line[:45])
     return s
 
+def gloss(s, surface):
+    assert isinstance(s,str) and s.strip(), 'Empty Japanese gloss'
+    assert not re.match(r'^[\s*#>0-9.()\-]*[\u0590-\u05ff]', s), 'Gloss must be Japanese, not a Hebrew surface form'
+    assert s.strip()!=surface.strip(), 'Gloss must not repeat the Hebrew surface form'
+    return s
+
 def validate(j,c):
     r=j['request']
     assert c['schema_version']=='3.0-json2' and c['run_id']==r['run_id']
@@ -22,7 +28,7 @@ def validate(j,c):
     seen=set()
     for raw,v in zip(j['verses'],c['verses']):
         assert [x['token_id'] for x in v['glosses']]==[t['id'] for t in raw['tokens']], 'Token IDs/order mismatch'
-        for g in v['glosses']: prose(g['ja'])
+        for raw_t,g in zip(raw['tokens'],v['glosses']): gloss(g['ja'],raw_t['surface'])
         prose(v['translation']); prose(v['short_commentary'])
         headings=[s['heading'] for s in v['sections']]
         assert headings.count('デボーショナルな受けとめ')==1
