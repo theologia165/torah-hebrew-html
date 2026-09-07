@@ -38,3 +38,6 @@ JSON・HTML・音声・Notionの各段階をActionsで検証し、媒体caption�
 
 【最終監査と連番確定】
 GitHubのdelivery.jsonをpage_id/page_urlの正本とする。画像とGmailルールは上記Ver.2継承仕様を使う。TEXT、JSONハッシュ/語ID照合、HTML、AUDIO_DELIVERY、Notion再取得QA、画像、Gmail実送信が必要条件を満たした時だけver3/state/production.jsonを次のNNN・標準アリヤーへ更新する。初回引継ぎの例外はユーザーが明示した036開始だけとし、画像・音声・メールの未実施を勝手に完了へ読み替えない。
+
+【ケティーブ・ケレー】
+ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。
