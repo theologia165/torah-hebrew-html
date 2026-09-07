@@ -46,6 +46,7 @@ def render(raw,v,book):
     esc=lambda x:html.escape(str(x),quote=True)
     pieces=[]
     for t,w,g in zip(raw['tokens'],raw['layout']['words'],v['glosses']):
+        if not w.get('read_aloud',True): continue
         pieces.append(f'<button class="token" type="button" data-index="{t["token_index"]}"><span class="he">{esc(t["surface"])}</span><span class="gloss">{esc(g["ja"])}</span></button>')
         pieces.append(f'<span class="separator" aria-hidden="true">{esc(w["separator_after"])}</span>')
     js=(ROOT/'templates/search.js').read_text().replace('__REF__',json.dumps(raw['ref'])).replace('__BOOK__',json.dumps(book))
@@ -57,7 +58,7 @@ def render(raw,v,book):
     verse=soup.select_one('#verse')
     reconstructed=''.join(n.select_one('.he').text if 'token' in n.get('class',[]) else n.text for n in verse.children)
     assert reconstructed==raw['layout']['hebrew'], 'HTML WLC differs from DB'
-    assert len(soup.select('#verse .token'))==len(raw['tokens'])
+    assert len(soup.select('#verse .token'))==sum(w.get('read_aloud',True) for w in raw['layout']['words'])
     assert not soup.select('script[src],link[rel=stylesheet],.hint,.status,.src,audio')
     assert not soup.select('#scopeSelect option[disabled]')
     return out
@@ -71,7 +72,7 @@ def main():
         rendered=render(raw,v,r['book'])
         if html_path.exists(): assert html_path.read_text()==rendered,'Existing HTML differs'
         html_path.write_text(rendered)
-        out['verses'].append({'chapter':int(ch),'verse':int(n),'words':raw['tokens']})
+        out['verses'].append({'chapter':int(ch),'verse':int(n),'words':[t for t,w in zip(raw['tokens'],raw['layout']['words']) if w.get('read_aloud',True)]})
     save(run/'audio-input.json',out)
     print('PASS: JSON1/JSON1.1/JSON2 hashes, coverage, token identity, commentary, exact HTML WLC')
 
