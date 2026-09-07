@@ -23,7 +23,7 @@ def children(page, token):
 def json3(j,c,routes,audio_urls):
     validate(j,c); req=j['request']; r=req['passage']; default_ch=r['chapter']
     title=f'{req["sequence"]}｜{r["display"].split("｜")[-1]}'
-    blocks=[]
+    blocks=[]; verse_handoff=[]
     for text in (r['display'],c['summary']):
         b=block('callout',text); b['callout']['color']='blue_background'; blocks.append(b)
     blocks.append(block('heading_2',c['title']))
@@ -34,6 +34,7 @@ def json3(j,c,routes,audio_urls):
         assert route['mode']=='GITHUB_PAGES', 'Ver.3 only embeds GitHub Pages URLs'
         assert route['url'].startswith('https://theologia165.github.io/torah-hebrew-html/ver3-public/')
         embed={'object':'block','type':'embed','embed':{'url':route['url'],'caption':[]}}
+        verse_handoff.append({'ref':raw['ref'],'tokens':[{'token_id':t['id'],'token_index':t['token_index'],'surface':t['surface'],'ja':g['ja']} for t,g in zip(raw['tokens'],v['glosses'])]})
         detail=[]
         for section in v['sections']:
             detail.append(block('heading_3',section['heading']))
@@ -58,7 +59,7 @@ def json3(j,c,routes,audio_urls):
     blocks.append(b)
     assert len(routes)==len(audio_urls)==len(j['verses'])
     return {'schema_version':'3.0-json3','run_id':req['run_id'],'json1_sha256':digest(j),
-            'json2_sha256':digest(c),'title':title,'children':blocks}
+            'json2_sha256':digest(c),'title':title,'verses':verse_handoff,'children':blocks}
 
 def plain(b):
     p=b[b['type']]
