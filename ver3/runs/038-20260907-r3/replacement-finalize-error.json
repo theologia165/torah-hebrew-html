@@ -1,0 +1,8 @@
+{
+  "operation": "FINALIZE_VERIFIED_REPLACEMENT",
+  "status": "FAIL",
+  "error_type": "RuntimeError",
+  "message": "Notion PATCH /pages/3d48aa46-08ae-81f3-8052-e333dfaa1cc7: 400 {\"object\":\"error\",\"status\":400,\"code\":\"validation_error\",\"message\":\"body failed validation: body.archived should be not present, instead was `true`.\",\"request_id\":\"2fd1babe-0c5f-43bd-b13d-6c2a29492910\"}",
+  "old_page_id": "3d48aa46-08ae-81f3-8052-e333dfaa1cc7",
+  "new_page_id": "3d48aa46-08ae-8150-b84f-dc67af274d52"
+}
