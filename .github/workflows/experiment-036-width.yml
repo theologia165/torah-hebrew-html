@@ -42,40 +42,31 @@ jobs:
           def stable(b):
               return {k:v for k,v in b.items() if k not in ('last_edited_time','last_edited_by','request_id')}
           before=children()
-          targets=[b for b in before if b['type']=='embed' and b['embed'].get('url')==url]
-          assert len(targets)==1, 'Expected exactly one Gen.25.19 Pages embed'
-          target=targets[0]; bid=target['id']; original=target['embed']
-          assert original.get('caption',[])==[]
-          record={'page_id':page,'block_id':bid,'ref':'Gen.25.19','original_url':url,'html_sha256':hashlib.sha256(html.read_bytes()).hexdigest(),'status':'STARTED','visual_width_status':'REQUIRES_NOTION_UI_CONFIRMATION'}
-          def save():
-              (out/'result.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
-          save()
-          upload=upload_html(html,token); record['upload_id']=upload
-          index=next(i for i,b in enumerate(before) if b['id']==bid)
-          assert index>0 and before[index-1]['type']=='heading_3'
-          new_id=None
+          bid='3d48aa46-08ae-81f7-b51f-e1944afce296'
+          new_id='3d48aa46-08ae-81aa-91ab-e9d8f01f9acb'
+          old=next(b for b in before if b['id']==bid)
+          new=next(b for b in before if b['id']==new_id)
+          assert old['embed'].get('url')==url
+          assert new['type']=='embed' and 'genesis-25-19.html' in new['embed'].get('url','')
+          assert [b['id'] for b in before].index(new_id)+1==[b['id'] for b in before].index(bid)
+          record={'page_id':page,'original_block_id':bid,'new_block_id':new_id,'ref':'Gen.25.19','original_url':url,'attachment_stage':'PASS','visual_width_status':'REQUIRES_NOTION_UI_CONFIRMATION'}
           try:
-              created=request_json('PATCH',f'/blocks/{page}/children',token,json={'position':{'type':'after_block','after_block':{'id':before[index-1]['id']}},'children':[{'object':'block','type':'embed','embed':{'type':'file_upload','file_upload':{'id':upload},'caption':[]}}]})
-              assert len(created['results'])==1
-              new_id=created['results'][0]['id']; record['new_block_id']=new_id
-              attached=request_json('GET',f'/blocks/{new_id}',token)
-              assert attached['type']=='embed' and attached['embed'].get('url') and attached['embed']['url']!=url
-              record['attachment_stage']='PASS'; save()
-              time.sleep(2)
               request_json('PATCH',f'/blocks/{new_id}',token,json={'embed':{'url':url,'caption':[]}})
               final=request_json('GET',f'/blocks/{new_id}',token)
               assert final['embed'].get('url')==url and not final['embed'].get('caption')
               request_json('PATCH',f'/blocks/{bid}',token,json={'in_trash':True})
               after=children()
-              assert [b['id'] for b in after]==[new_id if b['id']==bid else b['id'] for b in before]
-              for old,new in zip(before,after):
-                  if old['id']!=bid: assert stable(old)==stable(new), 'Other block changed: '+old['id']
+              assert [b['id'] for b in after]==[b['id'] for b in before if b['id']!=bid]
+              amap={b['id']:b for b in after}
+              for b in before:
+                  if b['id'] not in (bid,new_id):assert stable(b)==stable(amap[b['id']]), 'Other block changed'
           except Exception:
               request_json('PATCH',f'/blocks/{bid}',token,json={'in_trash':False})
-              if new_id:request_json('PATCH',f'/blocks/{new_id}',token,json={'in_trash':True})
+              request_json('PATCH',f'/blocks/{new_id}',token,json={'in_trash':True})
               raise
           record.update(status='PASS',pages_restored=True,other_blocks_unchanged=True,embed_count=sum(b['type']=='embed' for b in after),audio_count=sum(b['type']=='audio' for b in after))
-          save();print(json.dumps(record,ensure_ascii=False))
+          (out/'result.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps(record,ensure_ascii=False))
           
       - uses: actions/upload-artifact@v4
         if: always()
