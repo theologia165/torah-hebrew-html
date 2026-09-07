@@ -4,7 +4,7 @@ from pathlib import Path
 import requests
 from prepare import digest, save
 from compose import validate
-from prepare_notion_html import request_json, upload_html
+from prepare_notion_html import request_json
 
 def rt(text, url=None):
     return [{'type':'text','text':dict(content=text,**({'link':{'url':url}} if url else {}))}]
@@ -30,10 +30,9 @@ def json3(j,c,routes,audio_urls):
         assert route['ref']==raw['ref']
         _,ch,n=raw['ref'].split('.')
         assert audio.endswith('_r2.mp3'), 'Only physical per-verse study-speed MP3 is deliverable'
-        if route['mode']=='NOTION_ATTACHMENT':
-            embed={'object':'block','type':'embed','embed':{'type':'file_upload','file_upload':{'id':route['file_upload_id']},'caption':[]}}
-        else:
-            embed={'object':'block','type':'embed','embed':{'url':route['url'],'caption':[]}}
+        assert route['mode']=='GITHUB_PAGES', 'Ver.3 only embeds GitHub Pages URLs'
+        assert route['url'].startswith('https://theologia165.github.io/torah-hebrew-html/ver3-public/')
+        embed={'object':'block','type':'embed','embed':{'url':route['url'],'caption':[]}}
         detail=[]
         for section in v['sections']:
             detail.append(block('heading_3',section['heading']))
@@ -98,26 +97,21 @@ def main():
     state_path=run/'delivery.json'
     state=json.loads(state_path.read_text()) if state_path.exists() else {'status':'PENDING','run_id':req['run_id']}
     def checkpoint(): state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n')
+    if state.get('status')=='PASS':
+        print('SKIP_COMPLETED_DELIVERY: existing page preserved'); return
+    if state.get('page_id'):
+        prior_payload=json.loads((run/'json3.json').read_text())
+        assert all('url' in b['embed'] and b['embed']['url'].startswith('https://theologia165.github.io/torah-hebrew-html/ver3-public/')
+                   for b in prior_payload['children'] if b['type']=='embed'), 'LEGACY_PARTIAL_DELIVERY: reconcile attachments explicitly before resume'
     try:
         # Page ID is persisted before append; a retry resumes this exact run instead of duplicating it.
         if not state.get('page_id'):
             wanted=f'{seq}｜{req["passage"]["display"].split("｜")[-1]}'
             existing=[b for b in children(parent,token) if b['type']=='child_page' and b['child_page']['title']==wanted]
             assert not existing, 'SKIP_EXISTING_PAGE: reconcile prior production run; do not duplicate'
-        for v in j['verses']:
-            _,ch,n=v['ref'].split('.')
-            path=run/'html'/f'{req["passage"]["book"].lower()}-{ch}-{n}.html'
-            route={'ref':v['ref']}
-            try:
-                upload=upload_html(path,token); route.update(mode='NOTION_ATTACHMENT',file_upload_id=upload)
-                UPLOAD_HTML[upload]=path.read_bytes()
-            except Exception as e:
-                # Fallback pages are published only for failed attachment verses by the runner.
-                route.update(mode='GITHUB_PAGES_FALLBACK',error=str(e))
-            routes.append(route)
-        (run/'html-route.json').write_text(json.dumps(routes,ensure_ascii=False,indent=2)+'\n')
-        from runner import publish_fallback
-        publish_fallback(run,routes)
+        routes=[{'ref':v['ref'],'mode':'GITHUB_PAGES'} for v in j['verses']]
+        from runner import publish_pages
+        publish_pages(run,routes)
         manifest=json.loads((run/'audio/audio_manifest.json').read_text())
         assert [v['ref'] for v in manifest['verses']]==['.'.join(x.split('.')[1:]).replace('.',':') for x in req['refs']]
         for v in manifest['verses']:
