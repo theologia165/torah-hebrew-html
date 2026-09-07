@@ -1,0 +1,30 @@
+name: R2 Upload Ticket Test
+
+on:
+  push:
+    branches: [cover-test-037-actions]
+    paths: ['ver3/runs/037-20260907-r1/r2-transfer-test-request.json']
+
+permissions:
+  contents: read
+
+jobs:
+  issue-ticket:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install boto3
+      - run: >-
+          python ver3/scripts/r2_transfer_test.py ticket
+          ver3/runs/037-20260907-r1/r2-transfer-test-request.json
+          /tmp/r2-upload-ticket.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: r2-upload-ticket-${{ github.run_id }}
+          path: /tmp/r2-upload-ticket.json
+          retention-days: 1
