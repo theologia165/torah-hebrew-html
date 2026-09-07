@@ -2,17 +2,17 @@
   "mode": "ver3-production",
   "timezone": "Asia/Tokyo",
   "first_run_date": "2026-09-06",
-  "next_sequence": "036",
+  "next_sequence": "037",
   "next_passage": {
     "parasha": "Toledot",
     "parasha_jp": "トルドット",
-    "aliyah": 1,
+    "aliyah": 2,
     "book": "Genesis",
-    "chapter": 25,
+    "chapter": 26,
     "end_chapter": 26,
-    "start_verse": 19,
-    "end_verse": 5,
-    "display": "トルドット｜第1アリヤー｜創世記25:19–26:5"
+    "start_verse": 6,
+    "end_verse": 12,
+    "display": "トルドット｜第2アリヤー｜創世記26:6–12"
   },
   "sequence_rule": "Advance by exactly one only after a successful production run. Sequence 036 was explicitly started by the user as a manual production override after the incomplete 035 run. Ignore sequence 050 because it is a Ver.2 development experiment.",
   "notion_output_rule": {
@@ -26,15 +26,29 @@
   "notion_api_version": "2026-03-11",
   "html_delivery": {
     "primary": "GITHUB_ACTIONS_TO_NOTION_API",
-    "html_transport": "NOTION_ATTACHMENT_WITH_GITHUB_PAGES_FALLBACK",
+    "html_transport": "GITHUB_PAGES_EMBED",
     "pages_source": "main/root",
     "pages_base_url": "https://theologia165.github.io/torah-hebrew-html",
-    "rule": "GitHub generates, verifies and uploads HTML to Notion; GitHub Pages is fallback only. Existing published files are never overwritten."
+    "rule": "GitHub publishes and verifies every verse HTML on GitHub Pages; Notion embeds those URLs. Existing published files are never overwritten."
   },
   "notion_required_github_configuration": [
     "NOTION_TOKEN",
     "NOTION_PARENT_PAGE_ID"
   ],
   "model_audio_default": false,
-  "handover_status": "RECONCILE_VER2_036_BEFORE_FIRST_RUN"
+  "handover_status": "COMPLETE",
+  "last_completed": {
+    "sequence": "036",
+    "run_id": "036-v3-production-20260907-r1",
+    "page_id": "3d48aa46-08ae-81ae-9391-ede7289a6960",
+    "page_url": "https://app.notion.com/p/036-25-19-26-5-3d48aa4608ae81ae9391ede7289a6960",
+    "workflow_run_id": 34092722077,
+    "status": "PASS",
+    "verse_count": 21,
+    "image_status": "PASS",
+    "gmail_message_id": "1a07aa831900bb23",
+    "gmail_sent_verified": true,
+    "completed_at": "2026-09-07T06:58:09.430Z"
+  },
+  "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。"
 }
