@@ -1,8 +1,6 @@
 name: Apply shared dummy frames to all 036 verses
 on:
-  push:
-    branches: [asaichi-torah-ver3]
-    paths: ['.github/workflows/experiment-036-width.yml']
+  workflow_dispatch:
 permissions:
   contents: read
 concurrency:
