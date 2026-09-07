@@ -152,6 +152,8 @@ def main():
             verify(payload['children'],children(page_id,token),token)
             state.pop('error',None)
             state.update(status='PASS',verse_count=len(j['verses']),json3_sha256=digest(payload),operation='UPDATE_EXISTING_PAGE'); checkpoint()
+            from r2_cover import apply as apply_cover
+            apply_cover(req['run_id'],page_id,state_path)
             print('PASS: updated existing page; all text, citations and 10 Pages embeds verified')
             return
         # A resumed page must use its original JSON3 and original attachments.
@@ -187,6 +189,8 @@ def main():
             finalize_frames(payload['children'],children(page_id,token),token)
         verify(payload['children'],children(page_id,token),token)
         state.update(status='PASS',verse_count=len(j['verses']),json3_sha256=digest(payload)); checkpoint()
+        from r2_cover import apply as apply_cover
+        apply_cover(req['run_id'],page_id,state_path)
         print('PASS: JSON3 delivered and every Notion block/text/link/media verified')
     except Exception as e:
         state.update(status='FAIL',error=str(e)); checkpoint(); raise
