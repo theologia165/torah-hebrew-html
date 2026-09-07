@@ -1,15 +1,17 @@
-name: One-off 036 shared dummy HTML experiment
+name: Apply shared dummy frames to all 036 verses
 on:
-  workflow_dispatch:
+  push:
+    branches: [asaichi-torah-ver3]
+    paths: ['.github/workflows/experiment-036-width.yml']
 permissions:
   contents: read
 concurrency:
   group: asaichi-torah-production
   cancel-in-progress: false
 jobs:
-  experiment:
+  update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     env:
       NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
     steps:
@@ -18,20 +20,18 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install requests
-      - name: Reuse one dummy HTML for Gen25-19 and Gen25-20 then switch to Pages
+      - name: Replace remaining19 frames preserving all other content
         shell: python
         run: |
-          import json, os, sys, hashlib
+          import json, os, sys
           from pathlib import Path
-          sys.path.insert(0, 'ver3/scripts')
-          from prepare_notion_html import request_json, upload_html
+          sys.path.insert(0,'ver3/scripts')
+          from prepare_notion_html import request_json
+          from notion_frames import creation_blocks, finalize_frames, ensure_upload
           token=os.environ['NOTION_TOKEN']
           page='3d48aa46-08ae-81ae-9391-ede7289a6960'
-          base='https://theologia165.github.io/torah-hebrew-html/ver3-public/036-v3-production-20260907-r1/'
-          urls=[base+'genesis-25-19.html',base+'genesis-25-20.html']
-          out=Path('dummy-width-experiment');out.mkdir(exist_ok=True)
-          dummy=out/'frame-bootstrap.html'
-          dummy.write_text('<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Frame</title><style>html,body{margin:0;padding:0}</style></head><body></body></html>',encoding='utf-8')
+          run=Path('ver3/runs/036-v3-production-20260907-r1')
+          out=Path('all-036-frame-update');out.mkdir(exist_ok=True)
           def children():
               rows=[];cursor=''
               while True:
@@ -41,60 +41,59 @@ jobs:
                   cursor=d['next_cursor']
           def stable(b):
               return {k:v for k,v in b.items() if k not in ('last_edited_time','last_edited_by','request_id')}
-          before=children();targets=[]
-          for url in urls:
-              found=[b for b in before if b['type']=='embed' and b['embed'].get('url')==url]
-              assert len(found)==1, 'Expected one existing block per target'
-              old=found[0];i=before.index(old)
-              assert i>0 and before[i-1]['type']=='heading_3'
-              targets.append({'old_id':old['id'],'after_id':before[i-1]['id'],'url':url})
-          record={'status':'STARTED','page_id':page,'targets':targets,'dummy_bytes':dummy.stat().st_size,'dummy_sha256':hashlib.sha256(dummy.read_bytes()).hexdigest(),'visual_width_status':'REQUIRES_USER_CONFIRMATION','upload_count':0}
+          before=children()
+          payload=json.loads((run/'json3.json').read_text())
+          expected=payload['children']
+          assert len(before)==len(expected)
+          assert [b['type'] for b in before]==[b['type'] for b in expected]
+          targets=[]
+          for i,(e,b) in enumerate(zip(expected,before)):
+              if b['type']!='embed':continue
+              assert b['embed'].get('url')==e['embed']['url']
+              if b['embed']['url'].endswith(('genesis-25-19.html','genesis-25-20.html')):continue
+              assert before[i-1]['type']=='heading_3'
+              targets.append({'old_id':b['id'],'after_id':before[i-1]['id'],'url':b['embed']['url'],'expected':e})
+          assert len(targets)==19
+          uid=ensure_upload(token,out)
+          assert uid=='3d48aa46-08ae-81fa-99e2-00b270ed575a', 'Expected previously verified shared dummy'
+          record={'page_id':page,'status':'STARTED','file_upload_id':uid,'new_upload_count':0,'targets':targets,'previously_validated_count':2}
           def save():
               (out/'result.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
           save()
-          upload=upload_html(dummy,token)
-          record.update(file_upload_id=upload,upload_count=1);save()
-          new_ids=[];old_trashed=[]
+          new_ids=[];trashed=[]
           try:
-              for target in targets:
-                  ids_before={b['id'] for b in children()}
-                  request_json('PATCH',f'/blocks/{page}/children',token,json={'position':{'type':'after_block','after_block':{'id':target['after_id']}},'children':[{'object':'block','type':'embed','embed':{'type':'file_upload','file_upload':{'id':upload},'caption':[]}}]})
-                  added=[b for b in children() if b['id'] not in ids_before]
+              for t in targets:
+                  ids={b['id'] for b in children()}
+                  request_json('PATCH',f'/blocks/{page}/children',token,json={'position':{'type':'after_block','after_block':{'id':t['after_id']}},'children':creation_blocks([t['expected']],uid)})
+                  added=[b for b in children() if b['id'] not in ids]
                   new_ids.extend(b['id'] for b in added)
                   assert len(added)==1 and added[0]['type']=='embed'
-                  new=added[0]
-                  assert 'frame-bootstrap.html' in new['embed'].get('url',''), 'Dummy attachment not confirmed'
-                  target.update(new_id=new['id'],file_upload_id=upload,attachment_stage='PASS');save()
-              for target in targets:
-                  request_json('PATCH',f'/blocks/{target["new_id"]}',token,json={'embed':{'url':target['url'],'caption':[]}})
-                  b=request_json('GET',f'/blocks/{target["new_id"]}',token)
-                  assert b['embed'].get('url')==target['url'] and not b['embed'].get('caption')
-                  target['pages_stage']='PASS';save()
-              for target in targets:
-                  request_json('PATCH',f'/blocks/{target["old_id"]}',token,json={'in_trash':True})
-                  old_trashed.append(target['old_id'])
-              after=children();replace={t['old_id']:t['new_id'] for t in targets}
-              assert [b['id'] for b in after]==[replace.get(b['id'],b['id']) for b in before], 'Block order changed'
-              for old,new in zip(before,after):
-                  if old['id'] not in replace:assert stable(old)==stable(new), 'Other block changed'
-              assert sum(b['type']=='embed' for b in after)==21
-              assert sum(b['type']=='audio' for b in after)==21
-              info=request_json('GET',f'/file_uploads/{upload}',token)
-              record.update(status='PASS',same_upload_reused=True,other_blocks_unchanged=True,embed_count=21,audio_count=21,file_upload_status=info.get('status'),file_upload_expiry=info.get('expiry_time'));save()
+                  t['new_id']=added[0]['id'];save()
+                  finalize_frames([t['expected']],added,token)
+                  t['pages_stage']='PASS';save()
+                  request_json('PATCH',f'/blocks/{t["old_id"]}',token,json={'in_trash':True})
+                  trashed.append(t['old_id']);save()
+              after=children();mapping={t['old_id']:t['new_id'] for t in targets}
+              assert [b['id'] for b in after]==[mapping.get(b['id'],b['id']) for b in before]
+              for old,new,e in zip(before,after,expected):
+                  if old['id'] not in mapping:assert stable(old)==stable(new), 'Other block changed'
+                  else:
+                      assert new['embed'].get('url')==e['embed']['url'] and not new['embed'].get('caption')
+              record.update(status='PASS',new_frames=19,total_shared_dummy_frames=21,other_blocks_unchanged=True,embed_count=sum(b['type']=='embed' for b in after),audio_count=sum(b['type']=='audio' for b in after));save()
           except Exception as e:
               record.update(status='FAIL',error=str(e),rollback_errors=[])
-              for bid in old_trashed:
+              for bid in trashed:
                   try:request_json('PATCH',f'/blocks/{bid}',token,json={'in_trash':False})
                   except Exception as re:record['rollback_errors'].append(str(re))
               for bid in new_ids:
                   try:request_json('PATCH',f'/blocks/{bid}',token,json={'in_trash':True})
                   except Exception as re:record['rollback_errors'].append(str(re))
               save();raise
-          print(json.dumps(record,ensure_ascii=False))
+          print(json.dumps({k:v for k,v in record.items() if k!='targets'},ensure_ascii=False))
           
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: shared-dummy-html-experiment
-          path: dummy-width-experiment/
+          name: all-036-frame-update
+          path: all-036-frame-update/
           retention-days: 14
