@@ -16,6 +16,7 @@
       "properties": {
         "book": {"type": "string", "minLength": 1},
         "chapter": {"type": "integer", "minimum": 1},
+        "end_chapter": {"type": "integer", "minimum": 1},
         "start_verse": {"type": "integer", "minimum": 1},
         "end_verse": {"type": "integer", "minimum": 1},
         "display": {"type": "string", "minLength": 1}
@@ -29,6 +30,7 @@
         "additionalProperties": false,
         "required": ["verse", "hebrew", "translation", "words", "short_commentary"],
         "properties": {
+          "chapter": {"type": "integer", "minimum": 1},
           "verse": {"type": "integer", "minimum": 1},
           "hebrew": {"type": "string", "minLength": 1},
           "translation": {"type": "string", "minLength": 1},
