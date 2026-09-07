@@ -1,0 +1,36 @@
+name: Finalize verified Torah replacement
+on:
+  push:
+    branches: [asaichi-torah-ver3]
+    paths: ['ver3/runs/038-20260907-r3/finalize-replacement.json', 'ver3/scripts/finalize_replacement.py']
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: asaichi-torah-ver3
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests
+      - name: Archive superseded 038 and restore canonical replacement title
+        run: |
+          python ver3/scripts/finalize_replacement.py \
+            ver3/runs/038-20260907-r3 \
+            3d48aa46-08ae-81f3-8052-e333dfaa1cc7 \
+            3d48aa46-08ae-8150-b84f-dc67af274d52 \
+            '038｜創世記26:13–22'
+      - name: Commit delivery audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add ver3/runs/038-20260907-r3/delivery.json
+          git diff --cached --quiet || git commit -m 'Finalize replacement run 038'
+          git push origin HEAD:asaichi-torah-ver3
