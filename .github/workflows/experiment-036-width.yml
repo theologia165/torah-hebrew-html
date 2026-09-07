@@ -1,6 +1,8 @@
-name: One-off 036 Gen25-19 embed width experiment
+name: One-off 036 shared dummy HTML experiment
 on:
-  workflow_dispatch:
+  push:
+    branches: [asaichi-torah-ver3]
+    paths: ['.github/workflows/experiment-036-width.yml']
 permissions:
   contents: read
 concurrency:
@@ -18,57 +20,83 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install requests
-      - name: Attach same HTML then restore Pages on Gen25-19 only
+      - name: Reuse one dummy HTML for Gen25-19 and Gen25-20 then switch to Pages
         shell: python
         run: |
-          import json, os, sys, time, hashlib
+          import json, os, sys, hashlib
           from pathlib import Path
           sys.path.insert(0, 'ver3/scripts')
           from prepare_notion_html import request_json, upload_html
           token=os.environ['NOTION_TOKEN']
           page='3d48aa46-08ae-81ae-9391-ede7289a6960'
-          url='https://theologia165.github.io/torah-hebrew-html/ver3-public/036-v3-production-20260907-r1/genesis-25-19.html'
-          html=Path('ver3/runs/036-v3-production-20260907-r1/html/genesis-25-19.html')
-          out=Path('width-experiment'); out.mkdir(exist_ok=True)
+          base='https://theologia165.github.io/torah-hebrew-html/ver3-public/036-v3-production-20260907-r1/'
+          urls=[base+'genesis-25-19.html',base+'genesis-25-20.html']
+          out=Path('dummy-width-experiment');out.mkdir(exist_ok=True)
+          dummy=out/'frame-bootstrap.html'
+          dummy.write_text('<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Frame</title><style>html,body{margin:0;padding:0}</style></head><body></body></html>',encoding='utf-8')
           def children():
-              rows=[]; cursor=''
+              rows=[];cursor=''
               while True:
-                  r=request_json('GET',f'/blocks/{page}/children?page_size=100'+('&start_cursor='+cursor if cursor else ''),token)
-                  rows+=r['results']
-                  if not r['has_more']:return rows
-                  cursor=r['next_cursor']
+                  d=request_json('GET',f'/blocks/{page}/children?page_size=100'+('&start_cursor='+cursor if cursor else ''),token)
+                  rows+=d['results']
+                  if not d['has_more']:return rows
+                  cursor=d['next_cursor']
           def stable(b):
               return {k:v for k,v in b.items() if k not in ('last_edited_time','last_edited_by','request_id')}
-          before=children()
-          bid='3d48aa46-08ae-81f7-b51f-e1944afce296'
-          new_id='3d48aa46-08ae-81aa-91ab-e9d8f01f9acb'
-          old=next(b for b in before if b['id']==bid)
-          new=next(b for b in before if b['id']==new_id)
-          assert old['embed'].get('url')==url
-          assert new['type']=='embed' and 'genesis-25-19.html' in new['embed'].get('url','')
-          assert [b['id'] for b in before].index(new_id)+1==[b['id'] for b in before].index(bid)
-          record={'page_id':page,'original_block_id':bid,'new_block_id':new_id,'ref':'Gen.25.19','original_url':url,'attachment_stage':'PASS','visual_width_status':'REQUIRES_NOTION_UI_CONFIRMATION'}
+          before=children();targets=[]
+          for url in urls:
+              found=[b for b in before if b['type']=='embed' and b['embed'].get('url')==url]
+              assert len(found)==1, 'Expected one existing block per target'
+              old=found[0];i=before.index(old)
+              assert i>0 and before[i-1]['type']=='heading_3'
+              targets.append({'old_id':old['id'],'after_id':before[i-1]['id'],'url':url})
+          record={'status':'STARTED','page_id':page,'targets':targets,'dummy_bytes':dummy.stat().st_size,'dummy_sha256':hashlib.sha256(dummy.read_bytes()).hexdigest(),'visual_width_status':'REQUIRES_USER_CONFIRMATION','upload_count':0}
+          def save():
+              (out/'result.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
+          save()
+          upload=upload_html(dummy,token)
+          record.update(file_upload_id=upload,upload_count=1);save()
+          new_ids=[];old_trashed=[]
           try:
-              request_json('PATCH',f'/blocks/{new_id}',token,json={'embed':{'url':url,'caption':[]}})
-              final=request_json('GET',f'/blocks/{new_id}',token)
-              assert final['embed'].get('url')==url and not final['embed'].get('caption')
-              request_json('PATCH',f'/blocks/{bid}',token,json={'in_trash':True})
-              after=children()
-              assert [b['id'] for b in after]==[b['id'] for b in before if b['id']!=bid]
-              amap={b['id']:b for b in after}
-              for b in before:
-                  if b['id'] not in (bid,new_id):assert stable(b)==stable(amap[b['id']]), 'Other block changed'
-          except Exception:
-              request_json('PATCH',f'/blocks/{bid}',token,json={'in_trash':False})
-              request_json('PATCH',f'/blocks/{new_id}',token,json={'in_trash':True})
-              raise
-          record.update(status='PASS',pages_restored=True,other_blocks_unchanged=True,embed_count=sum(b['type']=='embed' for b in after),audio_count=sum(b['type']=='audio' for b in after))
-          (out/'result.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
+              for target in targets:
+                  ids_before={b['id'] for b in children()}
+                  request_json('PATCH',f'/blocks/{page}/children',token,json={'position':{'type':'after_block','after_block':{'id':target['after_id']}},'children':[{'object':'block','type':'embed','embed':{'type':'file_upload','file_upload':{'id':upload},'caption':[]}}]})
+                  added=[b for b in children() if b['id'] not in ids_before]
+                  new_ids.extend(b['id'] for b in added)
+                  assert len(added)==1 and added[0]['type']=='embed'
+                  new=added[0]
+                  assert 'frame-bootstrap.html' in new['embed'].get('url',''), 'Dummy attachment not confirmed'
+                  target.update(new_id=new['id'],file_upload_id=upload,attachment_stage='PASS');save()
+              for target in targets:
+                  request_json('PATCH',f'/blocks/{target["new_id"]}',token,json={'embed':{'url':target['url'],'caption':[]}})
+                  b=request_json('GET',f'/blocks/{target["new_id"]}',token)
+                  assert b['embed'].get('url')==target['url'] and not b['embed'].get('caption')
+                  target['pages_stage']='PASS';save()
+              for target in targets:
+                  request_json('PATCH',f'/blocks/{target["old_id"]}',token,json={'in_trash':True})
+                  old_trashed.append(target['old_id'])
+              after=children();replace={t['old_id']:t['new_id'] for t in targets}
+              assert [b['id'] for b in after]==[replace.get(b['id'],b['id']) for b in before], 'Block order changed'
+              for old,new in zip(before,after):
+                  if old['id'] not in replace:assert stable(old)==stable(new), 'Other block changed'
+              assert sum(b['type']=='embed' for b in after)==21
+              assert sum(b['type']=='audio' for b in after)==21
+              info=request_json('GET',f'/file_uploads/{upload}',token)
+              record.update(status='PASS',same_upload_reused=True,other_blocks_unchanged=True,embed_count=21,audio_count=21,file_upload_status=info.get('status'),file_upload_expiry=info.get('expiry_time'));save()
+          except Exception as e:
+              record.update(status='FAIL',error=str(e),rollback_errors=[])
+              for bid in old_trashed:
+                  try:request_json('PATCH',f'/blocks/{bid}',token,json={'in_trash':False})
+                  except Exception as re:record['rollback_errors'].append(str(re))
+              for bid in new_ids:
+                  try:request_json('PATCH',f'/blocks/{bid}',token,json={'in_trash':True})
+                  except Exception as re:record['rollback_errors'].append(str(re))
+              save();raise
           print(json.dumps(record,ensure_ascii=False))
           
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: experiment-036-width
-          path: width-experiment/
+          name: shared-dummy-html-experiment
+          path: dummy-width-experiment/
           retention-days: 14
