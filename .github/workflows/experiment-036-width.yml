@@ -1,8 +1,6 @@
 name: One-off 036 shared dummy HTML experiment
 on:
-  push:
-    branches: [asaichi-torah-ver3]
-    paths: ['.github/workflows/experiment-036-width.yml']
+  workflow_dispatch:
 permissions:
   contents: read
 concurrency:
