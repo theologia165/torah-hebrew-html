@@ -78,13 +78,14 @@ def dec(c):
 
 def morph_ja(code):return "／".join(dec(c) for c in (code[1:] if code.startswith("H") else code).split("/"))
 
-def extract(xml_bytes,chapter,start,end):
+def extract(xml_bytes, wanted_refs):
     root=ET.fromstring(xml_bytes); result={}
     for v in root.findall(".//o:verse",NS):
         oid=v.attrib.get("osisID","")
-        if not oid.startswith(f"Gen.{chapter}."):continue
-        n=int(oid.rsplit(".",1)[1])
-        if not start<=n<=end:continue
+        m=re.fullmatch(r"Gen\.(\d+)\.(\d+)",oid)
+        if not m:continue
+        ref=(int(m.group(1)),int(m.group(2)))
+        if ref not in wanted_refs:continue
         children=list(v); rows=[]
         for i,ch in enumerate(children):
             if ch.tag!="{http://www.bibletechnologies.net/2003/OSIS/namespace}w":continue
@@ -95,41 +96,36 @@ def extract(xml_bytes,chapter,start,end):
                 if typ=="x-sof-pasuq":sep="׃";break
                 j+=1
             rows.append({"surface":(ch.text or "").replace("/",""),"separator_after":sep,"lemma_code":ch.attrib.get("lemma",""),"morph_code":ch.attrib.get("morph","")})
-        result[n]=rows
+        result[ref]=rows
     return result
 
 def run_semantic_handoff_ltr_guard(input_path, src):
-    """Validate ChatGPT-authored prose before any MorphHB/network processing begins."""
     seq=str(src.get("sequence","")).strip()
-    if not seq:
-        raise SystemExit("FAIL LTR semantic handoff: current.json has no sequence")
+    if not seq:raise SystemExit("FAIL LTR semantic handoff: current.json has no sequence")
     repo_root=Path(__file__).resolve().parents[2]
     validator=Path(__file__).with_name("validate_ltr_handoff.py")
     commentary=repo_root/"ver2"/"content"/f"{seq}-commentary.json"
-    if not validator.is_file():
-        raise SystemExit(f"FAIL LTR semantic handoff: missing validator {validator}")
-    result=subprocess.run(
-        [sys.executable,str(validator),str(Path(input_path).resolve()),str(commentary)],
-        check=False,
-    )
-    if result.returncode!=0:
-        raise SystemExit(result.returncode)
+    if not validator.is_file():raise SystemExit(f"FAIL LTR semantic handoff: missing validator {validator}")
+    result=subprocess.run([sys.executable,str(validator),str(Path(input_path).resolve()),str(commentary)],check=False)
+    if result.returncode!=0:raise SystemExit(result.returncode)
 
 def main():
     if len(sys.argv)!=3:raise SystemExit("usage: enrich_morphhb.py <input-current.json> <output-current.json>")
     src=json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
-    # Semantic handoff gate: mixed Japanese/Hebrew prose must begin LTR before enrichment.
     run_semantic_handoff_ltr_guard(sys.argv[1],src)
     p=src["passage"]
     if p["book"]!="Genesis":raise SystemExit("enricher currently supports Genesis only")
-    extracted=extract(get(GEN_URL),p["chapter"],p["start_verse"],p["end_verse"]); strongs=strong_dict(get(STRONGS_URL))
+    default_ch=int(p["chapter"])
+    wanted_refs={(int(v.get("chapter",default_ch)),int(v["verse"])) for v in src["verses"]}
+    extracted=extract(get(GEN_URL),wanted_refs); strongs=strong_dict(get(STRONGS_URL))
     for verse in src["verses"]:
-        n=verse["verse"]; rows=extracted.get(n); glosses=verse.pop("glosses",None)
-        if rows is None:raise SystemExit(f"missing MorphHB verse {n}")
-        if glosses is None or len(glosses)!=len(rows):raise SystemExit(f"verse {n}: contextual gloss count {0 if glosses is None else len(glosses)} != MorphHB word count {len(rows)}")
+        ch=int(verse.get("chapter",default_ch)); n=int(verse["verse"]); rows=extracted.get((ch,n)); glosses=verse.pop("glosses",None)
+        if rows is None:raise SystemExit(f"missing MorphHB verse {ch}:{n}")
+        if glosses is None or len(glosses)!=len(rows):raise SystemExit(f"verse {ch}:{n}: contextual gloss count {0 if glosses is None else len(glosses)} != MorphHB word count {len(rows)}")
+        verse["chapter"]=ch
         verse["words"]=[{"surface":r["surface"],"separator_after":r["separator_after"],"gloss":g,"lemma":lemma_hebrew(r["lemma_code"],strongs),"pos":pos_ja(r["morph_code"]),"morph":morph_ja(r["morph_code"]),"morph_code":r["morph_code"]} for r,g in zip(rows,glosses)]
         verse["hebrew"]="".join(w["surface"]+w["separator_after"] for w in verse["words"])
     src["summary"]=src.get("summary","")
     Path(sys.argv[2]).parent.mkdir(parents=True,exist_ok=True); Path(sys.argv[2]).write_text(json.dumps(src,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(f"PASS: enriched verses={len(src['verses'])} morphhb={MORPHHB_SHA[:12]} strongs={STRONGS_SHA[:12]}")
+    print(f"PASS: enriched verses={len(src['verses'])} refs={len(wanted_refs)} morphhb={MORPHHB_SHA[:12]} strongs={STRONGS_SHA[:12]}")
 if __name__=="__main__":main()
