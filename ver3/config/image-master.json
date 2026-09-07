@@ -135,6 +135,14 @@
     "store_image_audit_json": false,
     "store_current_run_image_package": false,
     "failure_details_destination": "Gmail incomplete-run report",
-    "approved_image_destination": "Gmail attachment only; do not insert into Notion"
+    "approved_image_destination": "Gmail attachment and Notion page cover only. Work streams the accepted JPEG directly to a short-lived R2 PUT URL; GitHub Actions alone reads it from R2 and sets the Notion cover.",
+    "r2_relay": {
+      "bucket": "asaichi-torah-images",
+      "object_key": "covers/{run_id}/cover.jpg",
+      "upload_ticket_ttl_seconds": 600,
+      "object_retention_days": 14,
+      "never_commit_image_binary_to_github": true,
+      "never_persist_current_run_image_package": true
+    }
   }
 }
