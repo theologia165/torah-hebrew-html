@@ -1,6 +1,7 @@
 {
-  "status": "UPDATING",
+  "status": "FAIL",
   "run_id": "050-v3-pages-20260907-r2",
   "page_id": "3d48aa46-08ae-81f7-aa65-c6eb3b875da3",
-  "page_url": "https://app.notion.com/p/050-32-4-13-3d48aa4608ae81f7aa65c6eb3b875da3"
+  "page_url": "https://app.notion.com/p/050-32-4-13-3d48aa4608ae81f7aa65c6eb3b875da3",
+  "error": "Notion PATCH /blocks/3d48aa46-08ae-81c9-9e6a-e61d68277910: 400 {\"object\":\"error\",\"status\":400,\"code\":\"validation_error\",\"message\":\"body failed validation: body.audio.type should be not present, instead was `\\\"external\\\"`.\",\"request_id\":\"34d6e797-0927-4949-a55d-f1df973b3f83\"}"
 }
