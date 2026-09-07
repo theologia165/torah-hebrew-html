@@ -108,7 +108,11 @@ def main():
         if not state.get('page_id'):
             wanted=f'{seq}｜{req["passage"]["display"].split("｜")[-1]}'
             existing=[b for b in children(parent,token) if b['type']=='child_page' and b['child_page']['title']==wanted]
-            assert not existing, 'SKIP_EXISTING_PAGE: reconcile prior production run; do not duplicate'
+            target=req.get('update_page_id')
+            if target:
+                assert len(existing)==1 and existing[0]['id'].replace('-','')==target.replace('-',''), 'UPDATE_TARGET_MISMATCH'
+            else:
+                assert not existing, 'SKIP_EXISTING_PAGE: reconcile prior production run; do not duplicate'
         routes=[{'ref':v['ref'],'mode':'GITHUB_PAGES'} for v in j['verses']]
         from runner import publish_pages
         publish_pages(run,routes)
@@ -120,6 +124,33 @@ def main():
             assert response.content==(run/'audio'/v['r2']).read_bytes(), 'Published audio differs'
             audio_urls.append(url)
         payload=json3(j,c,routes,audio_urls)
+        if req.get('update_page_id'):
+            # Explicit update: preserve the page and all non-media blocks.
+            page_id=req['update_page_id']
+            page=request_json('GET',f'/pages/{page_id}',token)
+            assert page['parent'].get('page_id','').replace('-','')==parent.replace('-',''), 'Wrong update parent'
+            assert ''.join(t.get('plain_text',t.get('text',{}).get('content','')) for t in page['properties']['title']['title'])==payload['title'], 'Wrong update title'
+            got=children(page_id,token)
+            assert len(got)==len(payload['children']), 'Existing page structure differs'
+            for expected,actual in zip(payload['children'],got):
+                assert expected['type']==actual['type'], 'Existing block type differs'
+                if expected['type'] not in ('audio','embed'):
+                    verify([expected],[actual],token)
+            save(run/'json3.json',payload); save(run/'original-routes.json',routes)
+            snapshot=run/'previous-media.json'
+            if not snapshot.exists():
+                save(snapshot,{'page_id':page_id,'blocks':[{'id':b['id'],'type':b['type'],b['type']:b[b['type']]} for b in got if b['type'] in ('audio','embed')]})
+            state.update(page_id=page_id,page_url=page['url'],status='UPDATING'); checkpoint()
+            from runner import commit_run
+            commit_run(run,'Checkpoint authorized 050 media update before Notion writes')
+            for expected,actual in zip(payload['children'],got):
+                kind=expected['type']
+                if kind in ('audio','embed'):
+                    request_json('PATCH',f'/blocks/{actual["id"]}',token,json={kind:expected[kind]})
+            verify(payload['children'],children(page_id,token),token)
+            state.update(status='PASS',verse_count=len(j['verses']),json3_sha256=digest(payload),operation='UPDATE_EXISTING_PAGE'); checkpoint()
+            print('PASS: updated existing page; all text, citations and 10 Pages embeds verified')
+            return
         # A resumed page must use its original JSON3 and original attachments.
         if state.get('page_id'):
             payload=json.loads((run/'json3.json').read_text())
