@@ -71,7 +71,7 @@ def main():
             # Full-aliyah source -> independent per-verse MP3, using DB token counts.
             j=json.loads((run/'json1.json').read_text())
             audio_input={'sequence':r['sequence'],'passage':r['passage'],'verses':[
-              {'chapter':int(v['ref'].split('.')[1]),'verse':int(v['ref'].split('.')[2]),'words':v['tokens']} for v in j['verses']]}
+              {'chapter':int(v['ref'].split('.')[1]),'verse':int(v['ref'].split('.')[2]),'words':[t for t,w in zip(v['tokens'],v['layout']['words']) if w.get('read_aloud',True)]} for v in j['verses']]}
             tmp=Path('/tmp/ver3-audio-input.json'); tmp.write_text(json.dumps(audio_input))
             cmd(sys.executable,'ver3/scripts/build_audio.py',str(tmp),'/tmp/ver3-audio')
             cmd(sys.executable,'ver3/scripts/verify_audio.py','/tmp/ver3-audio')
