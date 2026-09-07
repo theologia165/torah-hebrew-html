@@ -47,11 +47,24 @@
       <label class="control-group">
         <span class="control-label">検索の幅</span>
         <select id="scopeSelect">
-          <option value="Gen">Genesis 全体</option>
-          <option value="torah" disabled>トーラー全体（全書DB化後）</option>
-          <option value="tanakh" disabled>タナハ全体（全書DB化後）</option>
+          <option value="Gen">この書（創世記）</option>
+          <option value="torah">トーラー</option>
+          <option value="former">前預言者</option>
+          <option value="latter">後預言者</option>
+          <option value="writings">諸書</option>
+          <option value="tanakh">全ヘブライ語聖書</option>
+          <option value="custom">書を個別に選択</option>
         </select>
       </label>
+
+      <details id="customBooks" class="custom-books">
+        <summary>検索する書を選択</summary>
+        <div class="book-actions">
+          <button id="selectAllBooks" type="button" class="quiet-button">すべて選択</button>
+          <button id="clearAllBooks" type="button" class="quiet-button">すべて解除</button>
+        </div>
+        <div id="bookChecks" class="book-checks"></div>
+      </details>
 
       <div class="filter-row">
         <label><input id="qalOnly" type="checkbox"> Qal形のみ</label>

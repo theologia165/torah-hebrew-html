@@ -24,10 +24,11 @@ Live Worker:
 
 `https://dtworks-hebrew-search.nishiharat.workers.dev`
 
-Genesis is currently the only imported biblical corpus:
+The complete MorphHB Tanakh corpus is loaded:
 
-- 1,533 WLC verses
-- 20,629 MorphHB word tokens
+- 39 books
+- 23,213 WLC verses
+- 306,785 MorphHB word tokens
 - pinned MorphHB commit `3d15126fb1ef74867fc1434be1942e837932691f`
 - WLC/KJV reference mappings loaded into the common `core.*` reference layer
 
@@ -67,7 +68,7 @@ GET /search?strong=7971&stem=q&conjugation=w&books=Gen&limit=100
 
 ### `GET /passage`
 
-`/passage` is source-aware from its first version even though only Genesis in MorphHB/WLC is currently loaded.
+`/passage` is source-aware and supports all 39 MorphHB/WLC books.
 
 Single verse:
 

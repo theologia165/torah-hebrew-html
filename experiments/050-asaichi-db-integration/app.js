@@ -2,6 +2,14 @@ const API = 'https://dtworks-hebrew-search.nishiharat.workers.dev';
 const SOURCE = 'morphhb-wlc';
 const REF = 'Gen.32.4';
 
+const BOOKS = [
+  ['Gen','創世記','torah'],['Exod','出エジプト記','torah'],['Lev','レビ記','torah'],['Num','民数記','torah'],['Deut','申命記','torah'],
+  ['Josh','ヨシュア記','former'],['Judg','士師記','former'],['1Sam','サムエル記第一','former'],['2Sam','サムエル記第二','former'],['1Kgs','列王記第一','former'],['2Kgs','列王記第二','former'],
+  ['Isa','イザヤ書','latter'],['Jer','エレミヤ書','latter'],['Ezek','エゼキエル書','latter'],['Hos','ホセア書','latter'],['Joel','ヨエル書','latter'],['Amos','アモス書','latter'],['Obad','オバデヤ書','latter'],['Jonah','ヨナ書','latter'],['Mic','ミカ書','latter'],['Nah','ナホム書','latter'],['Hab','ハバクク書','latter'],['Zeph','ゼパニヤ書','latter'],['Hag','ハガイ書','latter'],['Zech','ゼカリヤ書','latter'],['Mal','マラキ書','latter'],
+  ['Ps','詩篇','writings'],['Job','ヨブ記','writings'],['Prov','箴言','writings'],['Ruth','ルツ記','writings'],['Song','雅歌','writings'],['Eccl','伝道者の書','writings'],['Lam','哀歌','writings'],['Esth','エステル記','writings'],['Dan','ダニエル書','writings'],['Ezra','エズラ記','writings'],['Neh','ネヘミヤ記','writings'],['1Chr','歴代誌第一','writings'],['2Chr','歴代誌第二','writings']
+];
+const SCOPE_LABEL={Gen:'この書（創世記）',torah:'トーラー',former:'前預言者',latter:'後預言者',writings:'諸書',tanakh:'全ヘブライ語聖書',custom:'個別選択'};
+
 const el = (id) => document.getElementById(id);
 let passage = null;
 let editorial = null;
@@ -191,7 +199,8 @@ function updateConditionAvailability(){
 }
 function conditionText(){
   if(!searchTokenData)return '';
-  const bits=['Genesis全体',searchMode==='lemma'?'レーマ':'フォーム'];
+  const scope=el('scopeSelect').value;
+  const bits=[SCOPE_LABEL[scope]??scope,searchMode==='lemma'?'レーマ':'フォーム'];
   if(el('qalOnly').checked)bits.push('Qalのみ');
   if(el('sameConjugation').checked){
     const c=searchTokenData.conjugation??searchTokenData.main_conjugation_code;
@@ -225,7 +234,14 @@ function buildSearchUrl(){
     if(!searchTokenData.surface)throw new Error('この語のフォームを取得できません');
     p.set('form',searchTokenData.surface);
   }
-  p.set('books','Gen');
+  const scope=el('scopeSelect').value;
+  if(scope==='Gen')p.set('books','Gen');
+  else if(['torah','former','latter','writings'].includes(scope))p.set('group',scope);
+  else if(scope==='custom'){
+    const books=[...document.querySelectorAll('#bookChecks input:checked')].map(input=>input.value);
+    if(!books.length)throw new Error('検索する書を1冊以上選んでください');
+    p.set('books',books.join(','));
+  }
   p.set('limit',el('limitSelect').value);
   if(el('qalOnly').checked)p.set('stem','q');
   if(el('sameConjugation').checked){
@@ -244,8 +260,8 @@ async function runSearch(){
     el('resultsMeta').textContent=`${conditionText()}｜${data.total}件`;
     const rows=data.results??[];
     el('results').innerHTML=rows.length?rows.map(r=>{
-      const morph=r.morph_raw?`<span class="rmorph">${escapeHtml(r.morph_raw)}</span>`:'';
-      return `<div class="result"><b>${escapeHtml(r.display_ref??r.osis_wlc)}</b>　<span class="rhe" dir="rtl">${escapeHtml(r.surface)}</span>${morph}</div>`;
+      const morph=morphologyJa(r);const morphology=morph==='—'?'':`<span class="rmorph">${escapeHtml(morph)}</span>`;
+      return `<div class="result"><b>${escapeHtml(r.display_ref??r.osis_wlc)}</b>　<span class="rhe" dir="rtl">${escapeHtml(r.surface)}</span>${morphology}</div>`;
     }).join(''):'<div class="results-empty">該当する語はありません。</div>';
   }catch(error){
     el('resultsMeta').textContent=`検索APIエラー: ${error.message}`;el('results').innerHTML='';
@@ -256,9 +272,26 @@ async function runSearch(){
 function closeSearch(){el('resultsCard').hidden=true;searchTokenData=null;searchHasRun=false}
 
 async function boot(){
-  const snapshot=fallbackTokens();
-  passage={verses:[{tokens:snapshot}]};bindTokens(snapshot);
-  try{const eRes=await fetch('./editorial.json');if(eRes.ok)editorial=await eRes.json();}catch(e){console.warn('editorial unavailable',e)}
+  const fallback=fallbackTokens();
+  passage={verses:[{tokens:fallback}]};bindTokens(fallback);
+  el('bookChecks').innerHTML=BOOKS.map(([code,name,group])=>`<label><input type="checkbox" value="${code}" data-group="${group}" checked> ${name}</label>`).join('');
+  let snapshot=fallback;
+  try{
+    const [eRes,nRes]=await Promise.all([fetch('./editorial.json'),fetch('./json1-prompt.json')]);
+    if(!eRes.ok)throw new Error(`editorial.json ${eRes.status}`);
+    if(!nRes.ok)throw new Error(`json1-prompt.json ${nRes.status}`);
+    editorial=await eRes.json();
+    const neon=await nRes.json();
+    if(neon.ref!==REF||!Array.isArray(neon.tokens)||neon.tokens.length!==11)throw new Error('Neon JSON contract mismatch');
+    snapshot=mergeLiveWithSnapshot(neon.tokens,fallback);
+    if(snapshot.some(t=>!lexemeKey(t)||hebrewLemma(t)==='—'))throw new Error('Neon JSON lexeme data incomplete');
+    passage={source:neon.source,verses:[{reference:{system:neon.reference_system,osis:neon.ref},mappings:neon.mapped_refs,tokens:snapshot}]};
+    renderLive(snapshot,fallback);
+    el('status').textContent=`GitHub JSON統合済み｜ChatGPT editorial + Neon ${REF} ${snapshot.length}語`;
+  }catch(error){
+    console.error(error);editorial=null;passage={verses:[{tokens:fallback}]};bindTokens(fallback);
+    el('status').textContent=`検証済みHTML表示｜JSON確認失敗: ${error.message}`;
+  }
   try{
     const pRes=await fetch(`${API}/passage?source=${encodeURIComponent(SOURCE)}&ref=${encodeURIComponent(REF)}`);
     if(!pRes.ok)throw new Error(`/passage ${pRes.status}`);
@@ -268,9 +301,10 @@ async function boot(){
     const merged=mergeLiveWithSnapshot(liveTokens,snapshot);
     if(merged.some(t=>!lexemeKey(t)||hebrewLemma(t)==='—'))throw new Error('/passage lexeme data incomplete');
     passage={...live,verses:[{...live.verses[0],tokens:merged}]};renderLive(merged,snapshot);
+    el('status').textContent=`GitHub JSON統合・Neon照合済み｜${REF}｜${merged.length}語｜全39書検索対応`;
   }catch(error){
     console.error(error);passage={verses:[{tokens:snapshot}]};bindTokens(snapshot);
-    el('status').textContent=`検証済みスナップショット表示｜live API確認失敗: ${error.message}`;
+    el('status').textContent=`GitHub JSON統合済み｜live API確認失敗: ${error.message}`;
   }
 }
 
@@ -284,7 +318,13 @@ el('modeLemma').addEventListener('click',()=>setMode('lemma'));
 el('modeForm').addEventListener('click',()=>setMode('form'));
 el('qalOnly').addEventListener('change',updateConditionLabel);
 el('sameConjugation').addEventListener('change',updateConditionLabel);
-el('scopeSelect').addEventListener('change',updateConditionLabel);
+el('scopeSelect').addEventListener('change',()=>{
+  el('customBooks').open=el('scopeSelect').value==='custom';
+  updateConditionLabel();
+});
+el('bookChecks').addEventListener('change',updateConditionLabel);
+el('selectAllBooks').addEventListener('click',()=>{document.querySelectorAll('#bookChecks input').forEach(input=>input.checked=true);updateConditionLabel()});
+el('clearAllBooks').addEventListener('click',()=>{document.querySelectorAll('#bookChecks input').forEach(input=>input.checked=false);updateConditionLabel()});
 el('limitSelect').addEventListener('change',updateConditionLabel);
 el('runSearch').addEventListener('click',runSearch);
 el('closeResults').addEventListener('click',closeSearch);

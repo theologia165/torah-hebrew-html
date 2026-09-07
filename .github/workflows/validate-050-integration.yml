@@ -30,5 +30,18 @@ jobs:
       - name: Wrangler dry-run bundle
         working-directory: experiments/050-cloudflare-neon
         run: npm run build
+      - name: Fetch Genesis 32:4 JSON from Neon through the DTWorks API
+        run: |
+          mkdir -p build
+          node experiments/050-asaichi-db-integration/build_prompt_input.mjs \
+            morphhb-wlc Gen.32.4 build/json1-neon.json
       - name: Validate Cloudflare → Neon → 050 render contract
+        env:
+          NEON_SNAPSHOT: build/json1-neon.json
         run: node experiments/050-asaichi-db-integration/validate-integration.mjs
+      - name: Upload verified non-secret Neon JSON
+        uses: actions/upload-artifact@v4
+        with:
+          name: 050-genesis-32-4-neon-json
+          path: build/json1-neon.json
+          if-no-files-found: error

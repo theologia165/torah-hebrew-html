@@ -1,20 +1,23 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "generated_by": "github-actions-via-dtworks-api",
   "source": "morphhb-wlc",
+  "source_version": "3d15126fb1ef74867fc1434be1942e837932691f",
+  "lexicon": {"code": "oshb-hebrew-lexicon", "version": "21c9add13bc727d3a951361778e97e3ff7afd1ce"},
   "reference_system": "WLC",
   "ref": "Gen.32.4",
-  "mapped_refs": [{"system":"KJV","ref":"Gen.32.3","relation":"renumbered"}],
+  "mapped_refs": [{"system": "KJV", "ref": "Gen.32.3", "relation": "renumbered"}],
   "tokens": [
-    {"i":1,"surface":"וַיִּשְׁלַ֨ח","strong":7971,"lemma":"c/7971","morph":"HC/Vqw3ms"},
-    {"i":2,"surface":"יַעֲקֹ֤ב","strong":3290,"lemma":"3290","morph":"HNp"},
-    {"i":3,"surface":"מַלְאָכִים֙","strong":4397,"lemma":"4397","morph":"HNcmpa"},
-    {"i":4,"surface":"לְפָנָ֔יו","strong":6440,"lemma":"l/6440","morph":"HR/Ncbpc/Sp3ms"},
-    {"i":5,"surface":"אֶל","strong":413,"lemma":"413","morph":"HR"},
-    {"i":6,"surface":"עֵשָׂ֖ו","strong":6215,"lemma":"6215","morph":"HNp"},
-    {"i":7,"surface":"אָחִ֑יו","strong":251,"lemma":"251","morph":"HNcmsc/Sp3ms"},
-    {"i":8,"surface":"אַ֥רְצָה","strong":776,"lemma":"776","morph":"HNcbsc/Sd"},
-    {"i":9,"surface":"שֵׂעִ֖יר","strong":8165,"lemma":"8165 a","morph":"HNp"},
-    {"i":10,"surface":"שְׂדֵ֥ה","strong":7704,"lemma":"7704 b","morph":"HNcmsc"},
-    {"i":11,"surface":"אֱדֽוֹם","strong":123,"lemma":"123","morph":"HNp"}
+    {"i": 1, "surface": "וַיִּשְׁלַ֨ח", "form_search": "וַיִּשְׁלַח", "form_consonantal": "וישלח", "lemma_raw": "c/7971", "morph_raw": "HC/Vqw3ms", "language_code": "H", "pos": "V", "stem": "q", "conjugation": "w", "person": "3", "gender": "m", "number": "s", "state": null, "lexeme": {"key": "7971", "lemma": "שָׁלַח", "search": "שלח", "transliteration": "šālaḥ", "pos": "V", "source": "oshb-hebrew-lexicon"}},
+    {"i": 2, "surface": "יַעֲקֹ֤ב", "form_search": "יַעֲקֹב", "form_consonantal": "יעקב", "lemma_raw": "3290", "morph_raw": "HNp", "language_code": "H", "pos": "N", "stem": null, "conjugation": null, "person": null, "gender": null, "number": null, "state": null, "lexeme": {"key": "3290", "lemma": "יַעֲקֹב", "search": "יעקב", "transliteration": "yaʿăqōb", "pos": "Np", "source": "oshb-hebrew-lexicon"}},
+    {"i": 3, "surface": "מַלְאָכִים֙", "form_search": "מַלְאָכִים", "form_consonantal": "מלאכים", "lemma_raw": "4397", "morph_raw": "HNcmpa", "language_code": "H", "pos": "N", "stem": null, "conjugation": null, "person": null, "gender": "m", "number": "p", "state": "a", "lexeme": {"key": "4397", "lemma": "מַלְאָךְ", "search": "מלאך", "transliteration": "malʾāk", "pos": "N", "source": "oshb-hebrew-lexicon"}},
+    {"i": 4, "surface": "לְפָנָ֔יו", "form_search": "לְפָנָיו", "form_consonantal": "לפניו", "lemma_raw": "l/6440", "morph_raw": "HR/Ncbpc/Sp3ms", "language_code": "H", "pos": "N", "stem": null, "conjugation": null, "person": null, "gender": "b", "number": "p", "state": "c", "lexeme": {"key": "6440", "lemma": "פָּנֶה", "search": "פנה", "transliteration": "pāneh", "pos": "N", "source": "oshb-hebrew-lexicon"}},
+    {"i": 5, "surface": "אֶל", "form_search": "אֶל", "form_consonantal": "אל", "lemma_raw": "413", "morph_raw": "HR", "language_code": "H", "pos": "R", "stem": null, "conjugation": null, "person": null, "gender": null, "number": null, "state": null, "lexeme": {"key": "413", "lemma": "אֶל", "search": "אל", "transliteration": "ʾel", "pos": "R", "source": "oshb-hebrew-lexicon"}},
+    {"i": 6, "surface": "עֵשָׂ֖ו", "form_search": "עֵשָׂו", "form_consonantal": "עשו", "lemma_raw": "6215", "morph_raw": "HNp", "language_code": "H", "pos": "N", "stem": null, "conjugation": null, "person": null, "gender": null, "number": null, "state": null, "lexeme": {"key": "6215", "lemma": "עֵשָׂו", "search": "עשו", "transliteration": "ʿēśāw", "pos": "Np", "source": "oshb-hebrew-lexicon"}},
+    {"i": 7, "surface": "אָחִ֑יו", "form_search": "אָחִיו", "form_consonantal": "אחיו", "lemma_raw": "251", "morph_raw": "HNcmsc/Sp3ms", "language_code": "H", "pos": "N", "stem": null, "conjugation": null, "person": null, "gender": "m", "number": "s", "state": "c", "lexeme": {"key": "251", "lemma": "אָח", "search": "אח", "transliteration": "ʾāḥ", "pos": "N", "source": "oshb-hebrew-lexicon"}},
+    {"i": 8, "surface": "אַ֥רְצָה", "form_search": "אַרְצָה", "form_consonantal": "ארצה", "lemma_raw": "776", "morph_raw": "HNcbsc/Sd", "language_code": "H", "pos": "N", "stem": null, "conjugation": null, "person": null, "gender": "b", "number": "s", "state": "c", "lexeme": {"key": "776", "lemma": "אֶ֫רֶץ", "search": "ארץ", "transliteration": "ʾereṣ", "pos": "N", "source": "oshb-hebrew-lexicon"}},
+    {"i": 9, "surface": "שֵׂעִ֖יר", "form_search": "שֵׂעִיר", "form_consonantal": "שעיר", "lemma_raw": "8165 a", "morph_raw": "HNp", "language_code": "H", "pos": "N", "stem": null, "conjugation": null, "person": null, "gender": null, "number": null, "state": null, "lexeme": {"key": "8165a", "lemma": "שֵׂעִיר", "search": "שעיר", "transliteration": "śēʿîr", "pos": "Np", "source": "oshb-hebrew-lexicon"}},
+    {"i": 10, "surface": "שְׂדֵ֥ה", "form_search": "שְׂדֵה", "form_consonantal": "שדה", "lemma_raw": "7704 b", "morph_raw": "HNcmsc", "language_code": "H", "pos": "N", "stem": null, "conjugation": null, "person": null, "gender": "m", "number": "s", "state": "c", "lexeme": {"key": "7704b", "lemma": "שָׂדֶה", "search": "שדה", "transliteration": "śādeh", "pos": "N", "source": "oshb-hebrew-lexicon"}},
+    {"i": 11, "surface": "אֱדֽוֹם", "form_search": "אֱדוֹם", "form_consonantal": "אדום", "lemma_raw": "123", "morph_raw": "HNp", "language_code": "H", "pos": "N", "stem": null, "conjugation": null, "person": null, "gender": null, "number": null, "state": null, "lexeme": {"key": "123", "lemma": "אֱדוֹם", "search": "אדום", "transliteration": "ʾĕdôm", "pos": "Np", "source": "oshb-hebrew-lexicon"}}
   ]
 }
