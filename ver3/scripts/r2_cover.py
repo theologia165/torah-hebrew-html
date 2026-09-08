@@ -1,6 +1,7 @@
 """Cloudflare R2 cover relay: issue a short PUT ticket and set a Notion cover."""
 import hashlib, io, json, os, sys, time
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 
 import boto3
 import requests
@@ -9,8 +10,20 @@ from PIL import Image
 
 from prepare_notion_html import API, NOTION_VERSION, request_json
 
+def endpoint_url():
+    """Use R2's account endpoint even when a legacy secret includes /<bucket>."""
+    raw=os.environ['R2_ENDPOINT'].rstrip('/')
+    parsed=urlsplit(raw)
+    bucket=os.environ['R2_BUCKET']
+    parts=[p for p in parsed.path.split('/') if p]
+    if parts == [bucket]:
+        parsed=parsed._replace(path='')
+    elif parts:
+        raise ValueError('R2_ENDPOINT must be the account endpoint, without a bucket path')
+    return urlunsplit(parsed)
+
 def client():
-    return boto3.client('s3', endpoint_url=os.environ['R2_ENDPOINT'],
+    return boto3.client('s3', endpoint_url=endpoint_url(),
       aws_access_key_id=os.environ['R2_ACCESS_KEY_ID'], aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'],
       region_name='auto', config=Config(signature_version='s3v4'))
 
@@ -19,7 +32,15 @@ def key(run_id): return f'covers/{run_id}/cover.jpg'
 def ticket(run_id, path):
     c=client(); object_key=key(run_id)
     url=c.generate_presigned_url('put_object', Params={'Bucket':os.environ['R2_BUCKET'],'Key':object_key,'ContentType':'image/jpeg'}, ExpiresIn=600, HttpMethod='PUT')
-    Path(path).write_text(json.dumps({'run_id':run_id,'object_key':object_key,'content_type':'image/jpeg','expires_in_seconds':600,'put_url':url},ensure_ascii=False,indent=2)+'\n')
+    issued_at=int(time.time())
+    Path(path).write_text(json.dumps({'schema_version':'1.0-r2-cover-ticket','run_id':run_id,'object_key':object_key,'content_type':'image/jpeg','expires_in_seconds':600,'issued_at_epoch':issued_at,'expires_at_epoch':issued_at+600,'put_url':url},ensure_ascii=False,indent=2)+'\n')
+
+def ticket_is_current(path):
+    try:
+        data=json.loads(Path(path).read_text())
+        return data['content_type']=='image/jpeg' and data['object_key']==key(data['run_id']) and int(data['expires_at_epoch']) > time.time()+30
+    except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+        return False
 
 def fetch(run_id, wait_seconds=600):
     c=client(); deadline=time.time()+wait_seconds; err=None
