@@ -91,10 +91,10 @@ def main():
         commit_run(run,'Build verified Ver.3 HTML and per-verse audio')
         if r['mode']=='publish':
             # Work receives only this short-lived presigned URL; it uploads no image binary to GitHub.
-            from r2_cover import ticket
+            from r2_cover import ticket, ticket_is_current
             cover_ticket=run/'cover-upload.json'
             cover_ready=run/'cover-ready.json'
-            if not cover_ticket.exists():
+            if not cover_ready.exists() and not ticket_is_current(cover_ticket):
                 ticket(r['run_id'],cover_ticket)
                 commit_run(run,'Issue short-lived R2 cover upload ticket')
                 print('WAITING_FOR_R2_COVER_UPLOAD: Work must PUT the QA-passed JPEG and commit cover-ready.json'); return
