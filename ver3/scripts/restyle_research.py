@@ -4,7 +4,7 @@ from pathlib import Path
 
 from compose import validate
 from deliver import children, plain, verify
-from prepare import digest, save
+from prepare import digest
 from prepare_notion_html import request_json
 
 def color(block, value='blue_background'):
@@ -55,10 +55,12 @@ def main():
 
     actual=children(page_id,token)
     verify(payload['children'],actual,token)
-    save(run/'json3.json',payload)
-    state['research_display']={'status':'PASS','chunk_style':'blue_background_blocks',
-        'aliyah_style':'blue_background_blocks','operation':'DISPLAY_ONLY_RESTYLE'}
-    state['json3_sha256']=digest(payload)
+    # JSON3 is an immutable content artifact. Record this presentation-only change separately.
+    audit={'status':'PASS','operation':'DISPLAY_ONLY_RESTYLE',
+           'chunk_style':'blue_background_blocks','aliyah_style':'blue_background_blocks',
+           'json3_sha256':digest(payload)}
+    (run/'research-display.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\\n')
+    state['research_display']=audit
     state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\\n')
     print('PASS: research backgrounds restyled; verse text, embeds, audio and cover preserved')
 
