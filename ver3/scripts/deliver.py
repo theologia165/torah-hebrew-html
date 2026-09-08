@@ -12,6 +12,12 @@ def rt(text, url=None):
 def block(kind,text):
     return {'object':'block','type':kind,kind:{'rich_text':rt(text)}}
 def paragraph(text): return block('paragraph',text)
+def source_block(sources):
+    references=rt('参照：')
+    for i,source in enumerate(sources):
+        if i: references+=rt(' ／ ')
+        references+=rt(source['label'],source['url'])
+    return {'object':'block','type':'paragraph','paragraph':{'rich_text':references}}
 def children(page, token):
     out=[]; cursor=''
     while True:
@@ -27,6 +33,7 @@ def json3(j,c,routes,audio_urls):
     for text in (r['display'],c['summary']):
         b=block('callout',text); b['callout']['color']='blue_background'; blocks.append(b)
     blocks.append(block('heading_2',c['title']))
+    chunks_by_after={chunk['after_ref']:chunk for chunk in c['chunks']}
     for raw,v,route,audio in zip(j['verses'],c['verses'],routes,audio_urls):
         assert route['ref']==raw['ref']
         _,ch,n=raw['ref'].split('.')
@@ -41,18 +48,25 @@ def json3(j,c,routes,audio_urls):
             for p in section['body'].split('\n\n'):
                 detail.append(paragraph(p))
             if section['sources']:
-                references=rt('参照：')
-                for i,s in enumerate(section['sources']):
-                    if i: references+=rt(' ／ ')
-                    references+=rt(s['label'],s['url'])
-                detail.append({'object':'block','type':'paragraph','paragraph':{'rich_text':references}})
+                detail.append(source_block(section['sources']))
         assert len(detail)<=100, 'Notion toggle children limit exceeded'
         blocks += [block('heading_2',f'{req["book_jp"]} {ch}:{n}'),
                    {'object':'block','type':'audio','audio':{'type':'external','external':{'url':audio},'caption':[]}},
                    paragraph('私訳：'+v['translation']),block('heading_3','ヘブライ語'),embed,
                    paragraph('簡易な説明：'+v['short_commentary']),
                    {'object':'block','type':'toggle','toggle':{'rich_text':rt('詳しい解説'),'children':detail}}]
+        if raw['ref'] in chunks_by_after:
+            chunk=chunks_by_after[raw['ref']]
+            blocks += [block('heading_2',chunk['heading'])]
+            blocks += [paragraph(p) for p in chunk['body'].split('\n\n')]
+            if chunk['sources']: blocks.append(source_block(chunk['sources']))
     blocks += [block('heading_2','まとめ'),paragraph(c['conclusion'])]
+    blocks.append(block('heading_2','このアリヤーをさらに学ぶ'))
+    for note in c['aliyah_research']:
+        detail=[paragraph(p) for p in note['body'].split('\n\n')]
+        if note['sources']: detail.append(source_block(note['sources']))
+        assert len(detail)<=100, 'Notion aliyah research toggle children limit exceeded'
+        blocks.append({'object':'block','type':'toggle','toggle':{'rich_text':rt(note['heading']),'children':detail}})
     # Required source attribution lives in a compact reference section, never in the HTML footer.
     b=paragraph('本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0')
     b['paragraph']['rich_text']=rt('本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0','https://github.com/openscriptures/morphhb')
