@@ -13,7 +13,9 @@ def color(block, value='blue_background'):
 
 def patch_color(block, token):
     kind=block['type']
-    request_json('PATCH', f'/blocks/{block["id"]}', token, json={kind:{'color':'blue_background'}})
+    # Notion requires rich_text whenever a heading, paragraph, or toggle is updated.
+    update={'rich_text':block[kind].get('rich_text',[]),'color':'blue_background'}
+    request_json('PATCH', f'/blocks/{block["id"]}', token, json={kind:update})
 
 def find_index(blocks, kind, text):
     for i, item in enumerate(blocks):
