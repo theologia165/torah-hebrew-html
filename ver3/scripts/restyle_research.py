@@ -11,8 +11,8 @@ def archive(block_id, token):
     request_json('PATCH', f'/blocks/{block_id}', token, json={'archived': True})
 
 def append_after(page_id, after_id, child, token):
-    request_json('PATCH', f'/blocks/{page_id}/children', token,
-                 json={'after': after_id, 'children': [child]})
+    request_json('PATCH', f'/blocks/{page_id}/children?after={after_id}', token,
+                 json={'children': [child]})
 
 def find_index(blocks, kind, text):
     for i, item in enumerate(blocks):
