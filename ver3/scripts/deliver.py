@@ -57,16 +57,20 @@ def json3(j,c,routes,audio_urls):
                    {'object':'block','type':'toggle','toggle':{'rich_text':rt('詳しい解説'),'children':detail}}]
         if raw['ref'] in chunks_by_after:
             chunk=chunks_by_after[raw['ref']]
-            blocks += [block('heading_2',chunk['heading'])]
-            blocks += [paragraph(p) for p in chunk['body'].split('\n\n')]
-            if chunk['sources']: blocks.append(source_block(chunk['sources']))
+            note_children=[paragraph(p) for p in chunk['body'].split('\n\n')]
+            if chunk['sources']: note_children.append(source_block(chunk['sources']))
+            blocks.append({'object':'block','type':'callout','callout':{
+                'rich_text':rt(chunk['heading']),'color':'blue_background','children':note_children}})
     blocks += [block('heading_2','まとめ'),paragraph(c['conclusion'])]
     blocks.append(block('heading_2','このアリヤーをさらに学ぶ'))
+    research_children=[]
     for note in c['aliyah_research']:
         detail=[paragraph(p) for p in note['body'].split('\n\n')]
         if note['sources']: detail.append(source_block(note['sources']))
         assert len(detail)<=100, 'Notion aliyah research toggle children limit exceeded'
-        blocks.append({'object':'block','type':'toggle','toggle':{'rich_text':rt(note['heading']),'children':detail}})
+        research_children.append({'object':'block','type':'toggle','toggle':{'rich_text':rt(note['heading']),'children':detail}})
+    blocks.append({'object':'block','type':'callout','callout':{
+        'rich_text':rt('研究の窓'),'color':'blue_background','children':research_children}})
     # Required source attribution lives in a compact reference section, never in the HTML footer.
     b=paragraph('本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0')
     b['paragraph']['rich_text']=rt('本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0','https://github.com/openscriptures/morphhb')
@@ -88,7 +92,8 @@ def verify(expected,actual,token):
             expected_links=[x['text'].get('link') for x in e[t].get('rich_text',[]) if x.get('text',{}).get('link')]
             actual_links=[x['text'].get('link') for x in a[t].get('rich_text',[]) if x.get('text',{}).get('link')]
             assert expected_links==actual_links, 'Citation links differ'
-        if t=='toggle': verify(e[t]['children'],children(a['id'],token),token)
+        if t in ('toggle','callout') and e[t].get('children'):
+            verify(e[t]['children'],children(a['id'],token),token)
         if t in ('audio','embed'):
             assert not a[t].get('caption'), 'Unexpected media caption'
         if t=='audio': assert e[t]['external']['url']==a[t].get('external',{}).get('url')
