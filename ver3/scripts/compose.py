@@ -13,14 +13,20 @@ def prose(s):
     return s
 
 def gloss(s, surface):
+    """A gloss is Japanese token data, not an explanatory paragraph."""
     assert isinstance(s,str) and s.strip(), 'Empty Japanese gloss'
-    assert not re.match(r'^[\s*#>0-9.()\-]*[\u0590-\u05ff]', s), 'Gloss must be Japanese, not a Hebrew surface form'
-    assert s.strip()!=surface.strip(), 'Gloss must not repeat the Hebrew surface form'
+    assert not re.search(r'[\u0590-\u05ff]',s), 'Gloss must be Japanese, not Hebrew surface text'
+    assert re.sub(r'\s+','',s)!=re.sub(r'\s+','',surface), 'Gloss repeats Hebrew surface text'
     return s
+
+def sources(items):
+    assert isinstance(items,list)
+    for source in items:
+        prose(source['label']); assert source['url'].startswith('https://')
 
 def validate(j,c):
     r=j['request']
-    assert c['schema_version']=='3.0-json2' and c['run_id']==r['run_id']
+    assert c['schema_version']=='3.1-json2' and c['run_id']==r['run_id']
     assert c['json1_sha256']==digest(j), 'JSON2 was written from a different JSON1'
     assert c['json1_1_sha256']==digest(compact(j)), 'JSON1.1 handoff mismatch'
     prose(c['title']); prose(c['summary']); prose(c['conclusion'])
@@ -39,9 +45,25 @@ def validate(j,c):
             normalized=re.sub(r'\s+','',s['body'])
             assert normalized not in seen, 'Repeated commentary across verses'
             seen.add(normalized)
-            assert isinstance(s['sources'],list)
-            for source in s['sources']:
-                prose(source['label']); assert source['url'].startswith('https://')
+            sources(s['sources'])
+    chunks=c.get('chunks')
+    assert isinstance(chunks,list) and chunks, 'At least one chunk research note is required'
+    request_refs=r['refs']; after=set()
+    for chunk in chunks:
+        prose(chunk['id']); prose(chunk['heading']); prose(chunk['body']); sources(chunk['sources'])
+        refs=chunk['refs']; assert isinstance(refs,list) and refs
+        positions=[request_refs.index(ref) for ref in refs]
+        assert positions==list(range(positions[0],positions[0]+len(positions))), 'Chunk refs must be contiguous and ordered'
+        assert chunk['after_ref']==refs[-1], 'Chunk belongs after its final reference'
+        assert chunk['after_ref'] not in after, 'Only one chunk may follow a verse'
+        after.add(chunk['after_ref'])
+    research=c.get('aliyah_research')
+    assert isinstance(research,list) and research, 'Aliyah-wide research is required'
+    headings=set()
+    for note in research:
+        prose(note['heading']); prose(note['body']); sources(note['sources'])
+        assert note['heading'] not in headings, 'Aliyah research headings must be distinct'
+        headings.add(note['heading'])
     return True
 
 def ui_token(t):
@@ -83,6 +105,6 @@ def main():
         html_path.write_text(rendered)
         out['verses'].append({'chapter':int(ch),'verse':int(n),'words':[t for t,w in zip(raw['tokens'],raw['layout']['words']) if w.get('read_aloud',True)]})
     save(run/'audio-input.json',out)
-    print('PASS: JSON1/JSON1.1/JSON2 hashes, coverage, token identity, commentary, exact HTML WLC')
+    print('PASS: JSON1/JSON1.1/JSON2 hashes, coverage, token identity, verse/chunk/aliyah research, exact HTML WLC')
 
 if __name__=='__main__': main()
