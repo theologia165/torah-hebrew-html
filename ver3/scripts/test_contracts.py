@@ -6,7 +6,8 @@ from compose import validate,render
 from deliver import json3
 
 def fixture(j):
-    return {'schema_version':'3.0-json2','run_id':j['request']['run_id'],
+    refs=j['request']['refs']
+    return {'schema_version':'3.1-json2','run_id':j['request']['run_id'],
       'json1_sha256':digest(j),'json1_1_sha256':digest(compact(j)),
       'title':'受入検査専用','summary':'受入検査専用の文章です。','conclusion':'検証終了。',
       'verses':[{'ref':v['ref'],'translation':f'{v["ref"]} の検証訳。',
@@ -15,13 +16,19 @@ def fixture(j):
         'sections':[{'heading':'本文と文法','body':f'{v["ref"]} の文法検証。',
                      'sources':[{'label':'MorphHB source','url':'https://github.com/openscriptures/morphhb'}]},
                     {'heading':'デボーショナルな受けとめ','body':f'{v["ref"]} の受入検査専用本文。','sources':[]}]}
-        for v in j['verses']]}
+        for v in j['verses']],
+      'chunks':[{'id':'acceptance-chunk','heading':'受入検査のまとまり','refs':refs,
+                 'after_ref':refs[-1],'body':'受入検査用のチャンク研究。',
+                 'sources':[{'label':'MorphHB source','url':'https://github.com/openscriptures/morphhb'}]}],
+      'aliyah_research':[{'heading':'受入検査の全体研究','body':'受入検査用の全体研究。',
+                          'sources':[{'label':'MorphHB source','url':'https://github.com/openscriptures/morphhb'}]}]}
 
 def main():
     run=Path(sys.argv[1]); j=json.loads((run/'json1.json').read_text()); c=fixture(j); assert validate(j,c)
     mutations=[lambda x:x.update(json1_sha256='wrong'),
       lambda x:x['verses'].pop(),
       lambda x:x['verses'][0]['glosses'][0].update(token_id=-1),
+      lambda x:x['verses'][0]['glosses'][0].update(ja=j['verses'][0]['tokens'][0]['surface']),
       lambda x:x['verses'][0].update(translation='וַיֹּאמֶר は言った。'),
       lambda x:x['verses'][0]['sections'].pop(),
       lambda x:x['verses'][1]['sections'][0].update(body=x['verses'][0]['sections'][0]['body'])]
