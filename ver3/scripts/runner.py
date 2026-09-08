@@ -89,7 +89,18 @@ def main():
             for p in audio.glob('*_source.mp3'): p.unlink()
         cmd(sys.executable,'ver3/scripts/verify_audio.py',str(audio))
         commit_run(run,'Build verified Ver.3 HTML and per-verse audio')
-        if r['mode']=='publish': cmd(sys.executable,'ver3/scripts/deliver.py',str(run))
+        if r['mode']=='publish':
+            # Work receives only this short-lived presigned URL; it uploads no image binary to GitHub.
+            from r2_cover import ticket
+            cover_ticket=run/'cover-upload.json'
+            cover_ready=run/'cover-ready.json'
+            if not cover_ticket.exists():
+                ticket(r['run_id'],cover_ticket)
+                commit_run(run,'Issue short-lived R2 cover upload ticket')
+                print('WAITING_FOR_R2_COVER_UPLOAD: Work must PUT the QA-passed JPEG and commit cover-ready.json'); return
+            if not cover_ready.exists():
+                print('WAITING_FOR_R2_COVER_READY: R2 upload completed but Work has not committed readiness'); return
+            cmd(sys.executable,'ver3/scripts/deliver.py',str(run))
     finally:
         commit_run(run,'Record Ver.3 handoff and delivery audit')
 
