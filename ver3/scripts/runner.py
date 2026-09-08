@@ -59,6 +59,15 @@ def main():
     run=Path('ver3/runs')/r['run_id']; run.mkdir(parents=True,exist_ok=True)
     state_path=run/'delivery.json'
     if state_path.exists() and json.loads(state_path.read_text()).get('status')=='PASS':
+        # A separately requested display-only research restyle is the sole permitted post-PASS mutation.
+        restyle_request=run/'research-style-refresh.json'
+        restyle_done=run/'research-style-refresh.done.json'
+        if restyle_request.exists() and not restyle_done.exists():
+            cmd(sys.executable,'ver3/scripts/restyle_research.py',str(run))
+            restyle_done.write_text(json.dumps({'status':'PASS','operation':'DISPLAY_ONLY_RESTYLE'})+'\\n')
+            commit_run(run,'Restyle research callouts on existing Notion page')
+            print('PASS: display-only research restyle completed')
+            return
         # Completed pages can include user-approved edits. Never replay the old JSON3.
         cmd(sys.executable,'ver3/scripts/test_contracts.py',str(run))
         print('SKIP_COMPLETED_DELIVERY: contract tests passed; existing Notion page unchanged')
