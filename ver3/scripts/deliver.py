@@ -57,20 +57,23 @@ def json3(j,c,routes,audio_urls):
                    {'object':'block','type':'toggle','toggle':{'rich_text':rt('詳しい解説'),'children':detail}}]
         if raw['ref'] in chunks_by_after:
             chunk=chunks_by_after[raw['ref']]
-            note_children=[paragraph(p) for p in chunk['body'].split('\n\n')]
-            if chunk['sources']: note_children.append(source_block(chunk['sources']))
-            blocks.append({'object':'block','type':'callout','callout':{
-                'rich_text':rt(chunk['heading']),'color':'blue_background','children':note_children}})
+            note_blocks=[block('heading_2',chunk['heading'])]
+            note_blocks[0]['heading_2']['color']='blue_background'
+            for p in chunk['body'].split('\n\n'):
+                b=paragraph(p); b['paragraph']['color']='blue_background'; note_blocks.append(b)
+            if chunk['sources']:
+                b=source_block(chunk['sources']); b['paragraph']['color']='blue_background'; note_blocks.append(b)
+            blocks += note_blocks
     blocks += [block('heading_2','まとめ'),paragraph(c['conclusion'])]
-    blocks.append(block('heading_2','このアリヤーをさらに学ぶ'))
-    research_children=[]
+    research_heading=block('heading_2','このアリヤーをさらに学ぶ')
+    research_heading['heading_2']['color']='blue_background'
+    blocks.append(research_heading)
     for note in c['aliyah_research']:
         detail=[paragraph(p) for p in note['body'].split('\n\n')]
         if note['sources']: detail.append(source_block(note['sources']))
         assert len(detail)<=100, 'Notion aliyah research toggle children limit exceeded'
-        research_children.append({'object':'block','type':'toggle','toggle':{'rich_text':rt(note['heading']),'children':detail}})
-    blocks.append({'object':'block','type':'callout','callout':{
-        'rich_text':rt('研究の窓'),'color':'blue_background','children':research_children}})
+        toggle={'object':'block','type':'toggle','toggle':{'rich_text':rt(note['heading']),'children':detail,'color':'blue_background'}}
+        blocks.append(toggle)
     # Required source attribution lives in a compact reference section, never in the HTML footer.
     b=paragraph('本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0')
     b['paragraph']['rich_text']=rt('本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0','https://github.com/openscriptures/morphhb')
@@ -92,6 +95,8 @@ def verify(expected,actual,token):
             expected_links=[x['text'].get('link') for x in e[t].get('rich_text',[]) if x.get('text',{}).get('link')]
             actual_links=[x['text'].get('link') for x in a[t].get('rich_text',[]) if x.get('text',{}).get('link')]
             assert expected_links==actual_links, 'Citation links differ'
+        if e[t].get('color') is not None:
+            assert e[t]['color']==a[t].get('color'), f'Notion color differs: {plain(e)[:60]}'
         if t in ('toggle','callout') and e[t].get('children'):
             verify(e[t]['children'],children(a['id'],token),token)
         if t in ('audio','embed'):
