@@ -33,6 +33,9 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add ver3/runs/039-20260908-r2/delivery.json ver3/runs/039-20260908-r2/replacement-finalize-error.json
+          git add ver3/runs/039-20260908-r2/delivery.json
+          if [ -f ver3/runs/039-20260908-r2/replacement-finalize-error.json ]; then
+            git add ver3/runs/039-20260908-r2/replacement-finalize-error.json
+          fi
           git diff --cached --quiet || git commit -m 'Finalize corrected 039 replacement'
           git push origin HEAD:asaichi-torah-ver3
