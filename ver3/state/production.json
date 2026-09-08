@@ -2,17 +2,17 @@
   "mode": "ver3-production",
   "timezone": "Asia/Tokyo",
   "first_run_date": "2026-09-06",
-  "next_sequence": "038",
+  "next_sequence": "039",
   "next_passage": {
     "parasha": "Toledot",
     "parasha_jp": "トルドット",
-    "aliyah": 3,
+    "aliyah": 4,
     "book": "Genesis",
     "chapter": 26,
     "end_chapter": 26,
-    "start_verse": 13,
-    "end_verse": 22,
-    "display": "トルドット｜第3アリヤー｜創世記26:13–22"
+    "start_verse": 23,
+    "end_verse": 29,
+    "display": "トルドット｜第4アリヤー｜創世記26:23–29"
   },
   "sequence_rule": "Advance by exactly one only after a successful production run. Sequence 036 was explicitly started by the user as a manual production override after the incomplete 035 run. Ignore sequence 050 because it is a Ver.2 development experiment.",
   "notion_output_rule": {
@@ -39,23 +39,16 @@
   "handover_status": "COMPLETE",
   "last_completed": {
     "sequence": "038",
-    "run_id": "038-20260907-r3",
-    "page_id": "3d48aa46-08ae-8150-b84f-dc67af274d52",
-    "page_url": "https://app.notion.com/p/038-26-13-22-3d48aa4608ae8150b84fdc67af274d52",
-    "workflow_run_id": 34131420875,
+    "run_id": "038-20260908-r6",
+    "page_id": "3d58aa46-08ae-81bd-9c38-ea9d4734c2f8",
+    "page_url": "https://app.notion.com/p/038-26-13-22-3d58aa4608ae81bd9c38ea9d4734c2f8",
     "status": "PASS",
     "verse_count": 10,
     "image_status": "PASS",
     "cover_status": "PASS",
-    "gmail_message_id": "1a07c43e44b10993",
+    "gmail_message_id": "1a07f15f36b1734c",
     "gmail_sent_verified": true,
-    "replaced_page_id": "3d48aa46-08ae-81f3-8052-e333dfaa1cc7",
-    "completed_at": "2026-09-07T14:27:53Z"
+    "completed_at": "2026-09-08T03:35:40Z"
   },
-  "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。",
-  "manual_replacement": {
-    "sequence": "038",
-    "reason": "User deleted the prior 038 and explicitly authorized a zero-from-scratch replacement after strengthening the ChatGPT JSON2 research protocol.",
-    "replaces_run_id": "038-20260907-r3"
-  }
+  "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。"
 }
