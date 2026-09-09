@@ -52,6 +52,14 @@ def main():
     word_counts=[len(v['words']) for v in data['verses']]; total_words=sum(word_counts)
     if len(labels) not in (total_words,total_words+1):fail(f'MAPPING: label count {len(labels)} incompatible with word count {total_words}')
     source_duration=duration(source)
+    # Every word onset must exist inside the physical recording.  Some legacy
+    # PocketTorah label sets extend beyond a truncated MP3; treating the MP3
+    # end as the final verse boundary would create a tiny fragment and an
+    # absurd atempo value while hiding the actual source defect.
+    outside=[(i+1,t) for i,t in enumerate(labels[:total_words]) if t>source_duration+0.25]
+    if outside:
+        first_i,first_t=outside[0]
+        fail(f'MAPPING: PocketTorah source truncated: label word {first_i}/{total_words} onset={first_t:.6f}s exceeds audio duration={source_duration:.6f}s; out_of_audio_labels={len(outside)}')
     if len(labels)==total_words+1 and labels[-1]<=source_duration+0.25:word_onsets,explicit_end=labels[:-1],labels[-1]
     else:word_onsets,explicit_end=labels[:total_words],source_duration
     if len(word_onsets)!=total_words:fail('MAPPING: could not normalize PocketTorah label count')
