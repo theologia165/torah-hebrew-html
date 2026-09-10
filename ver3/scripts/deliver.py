@@ -26,7 +26,7 @@ def children(page, token):
         if not d['has_more']: return out
         cursor=d['next_cursor']
 
-def json3(j,c,routes,audio_urls):
+def json3(j,c,routes,audio_by_ref,media_status=None):
     validate(j,c); req=j['request']; r=req['passage']; default_ch=r['chapter']
     title=f'{req["sequence"]}｜{r["display"].split("｜")[-1]}{req.get("title_suffix", "")}'
     blocks=[]; verse_handoff=[]
@@ -34,10 +34,11 @@ def json3(j,c,routes,audio_urls):
         b=block('callout',text); b['callout']['color']='blue_background'; blocks.append(b)
     blocks.append(block('heading_2',c['title']))
     chunks_by_after={chunk['after_ref']:chunk for chunk in c['chunks']}
-    for raw,v,route,audio in zip(j['verses'],c['verses'],routes,audio_urls):
+    for raw,v,route in zip(j['verses'],c['verses'],routes):
         assert route['ref']==raw['ref']
         _,ch,n=raw['ref'].split('.')
-        assert audio.endswith('_r2.mp3'), 'Only physical per-verse study-speed MP3 is deliverable'
+        audio=audio_by_ref.get(raw['ref'])
+        if audio: assert audio.endswith('_r2.mp3'), 'Only physical per-verse study-speed MP3 is deliverable'
         assert route['mode']=='GITHUB_PAGES', 'Ver.3 only embeds GitHub Pages URLs'
         assert route['url'].startswith('https://theologia165.github.io/torah-hebrew-html/ver3-public/')
         embed={'object':'block','type':'embed','embed':{'url':route['url'],'caption':[]}}
@@ -50,9 +51,9 @@ def json3(j,c,routes,audio_urls):
             if section['sources']:
                 detail.append(source_block(section['sources']))
         assert len(detail)<=100, 'Notion toggle children limit exceeded'
-        blocks += [block('heading_2',f'{req["book_jp"]} {ch}:{n}'),
-                   {'object':'block','type':'audio','audio':{'type':'external','external':{'url':audio},'caption':[]}},
-                   paragraph('私訳：'+v['translation']),block('heading_3','ヘブライ語'),embed,
+        verse_blocks=[block('heading_2',f'{req["book_jp"]} {ch}:{n}')]
+        if audio: verse_blocks.append({'object':'block','type':'audio','audio':{'type':'external','external':{'url':audio},'caption':[]}})
+        blocks += verse_blocks+[paragraph('私訳：'+v['translation']),block('heading_3','ヘブライ語'),embed,
                    paragraph('簡易な説明：'+v['short_commentary']),
                    {'object':'block','type':'toggle','toggle':{'rich_text':rt('詳しい解説'),'children':detail}}]
         if raw['ref'] in chunks_by_after:
@@ -78,9 +79,9 @@ def json3(j,c,routes,audio_urls):
     b=paragraph('本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0')
     b['paragraph']['rich_text']=rt('本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0','https://github.com/openscriptures/morphhb')
     blocks.append(b)
-    assert len(routes)==len(audio_urls)==len(j['verses'])
+    assert len(routes)==len(j['verses'])
     return {'schema_version':'3.0-json3','run_id':req['run_id'],'json1_sha256':digest(j),
-            'json2_sha256':digest(c),'title':title,'verses':verse_handoff,'children':blocks}
+            'json2_sha256':digest(c),'title':title,'verses':verse_handoff,'media_status':media_status or {},'children':blocks}
 
 def plain(b):
     p=b[b['type']]
@@ -119,7 +120,7 @@ UPLOAD_HTML={}
 def main():
     run=Path(sys.argv[1]); token=os.environ['NOTION_TOKEN']; parent=os.environ['NOTION_PARENT_PAGE_ID']
     j=json.loads((run/'json1.json').read_text()); c=json.loads((run/'json2.json').read_text()); validate(j,c)
-    req=j['request']; seq=req['sequence']; routes=[]; audio_urls=[]
+    req=j['request']; seq=req['sequence']; routes=[]; audio_by_ref={}
     state_path=run/'delivery.json'
     state=json.loads(state_path.read_text()) if state_path.exists() else {'status':'PENDING','run_id':req['run_id']}
     def checkpoint(): state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n')
@@ -143,13 +144,19 @@ def main():
         from runner import publish_pages
         publish_pages(run,routes)
         manifest=json.loads((run/'audio/audio_manifest.json').read_text())
-        assert [v['ref'] for v in manifest['verses']]==['.'.join(x.split('.')[1:]).replace('.',':') for x in req['refs']]
+        prefix=req['refs'][0].split('.')[0]
         for v in manifest['verses']:
             url=f'https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/{run.as_posix()}/audio/{v["r2"]}'
             response=requests.get(url,timeout=45); response.raise_for_status()
             assert response.content==(run/'audio'/v['r2']).read_bytes(), 'Published audio differs'
-            audio_urls.append(url)
-        payload=json3(j,c,routes,audio_urls)
+            audio_by_ref[f'{prefix}.{v["chapter"]}.{v["verse"]}']=url
+        missing_audio_refs=[f'{prefix}.{v["chapter"]}.{v["verse"]}' for v in manifest.get('failed_verses',[])]
+        assert set(audio_by_ref)|set(missing_audio_refs)==set(req['refs']), 'Audio PASS/FAILED refs do not cover request'
+        media_status={'audio_status':manifest.get('status','PASS'),'audio_implemented_count':len(audio_by_ref),
+          'audio_expected_count':len(req['refs']),'missing_audio_refs':missing_audio_refs,
+          'audio_failures':manifest.get('failed_verses',[]),'html_status':'PASS','html_implemented_count':len(routes),
+          'missing_html_refs':[],'pages_status':'PASS'}
+        payload=json3(j,c,routes,audio_by_ref,media_status)
         if req.get('update_page_id'):
             # Explicit update: preserve the page and all non-media blocks.
             page_id=req['update_page_id']
@@ -176,7 +183,10 @@ def main():
                     request_json('PATCH',f'/blocks/{actual["id"]}',token,json={kind:update})
             verify(payload['children'],children(page_id,token),token)
             state.pop('error',None)
-            state.update(status='PASS',verse_count=len(j['verses']),json3_sha256=digest(payload),operation='UPDATE_EXISTING_PAGE'); checkpoint()
+            delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
+            state.update(status=delivery_status,verse_count=len(j['verses']),json3_sha256=digest(payload),operation='UPDATE_EXISTING_PAGE',
+              NOTION_PAGE_CREATED=True,TEXT_DELIVERED=True,HTML_IMPLEMENTED_COUNT=len(routes),AUDIO_IMPLEMENTED_COUNT=len(audio_by_ref),
+              missing_audio_refs=missing_audio_refs,missing_html_refs=[],failure_details=manifest.get('failed_verses',[])); checkpoint()
             from r2_cover import apply as apply_cover
             apply_cover(req['run_id'],page_id,state_path)
             print('PASS: updated existing page; all text, citations and 10 Pages embeds verified')
@@ -213,10 +223,13 @@ def main():
             request_json('PATCH',f'/blocks/{page_id}/children',token,json={'children':creation_blocks(chunk,uid)})
             finalize_frames(payload['children'],children(page_id,token),token)
         verify(payload['children'],children(page_id,token),token)
-        state.update(status='PASS',verse_count=len(j['verses']),json3_sha256=digest(payload)); checkpoint()
+        delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
+        state.update(status=delivery_status,verse_count=len(j['verses']),json3_sha256=digest(payload),
+          NOTION_PAGE_CREATED=True,TEXT_DELIVERED=True,HTML_IMPLEMENTED_COUNT=len(routes),AUDIO_IMPLEMENTED_COUNT=len(audio_by_ref),
+          missing_audio_refs=missing_audio_refs,missing_html_refs=[],failure_details=manifest.get('failed_verses',[])); checkpoint()
         from r2_cover import apply as apply_cover
         apply_cover(req['run_id'],page_id,state_path)
-        print('PASS: JSON3 delivered and every Notion block/text/link/media verified')
+        print(f'{delivery_status}: JSON3 delivered and every available Notion block/text/link/media verified; missing_audio={missing_audio_refs}')
     except Exception as e:
         state.update(status='FAIL',error=str(e)); checkpoint(); raise
 

@@ -75,10 +75,10 @@ def apply(run_id, page_id, delivery_path, wait_seconds=600):
     request_json('PATCH',f'/pages/{page_id}',token,json={'cover':{'type':'file_upload','file_upload':{'id':upload_id}}})
     page=request_json('GET',f'/pages/{page_id}',token)
     assert page.get('cover',{}).get('type')=='file', 'Notion cover readback was not a file'
-    state=json.loads(Path(delivery_path).read_text())
+    state=json.loads(Path(delivery_path).read_text()); prior_status=state.get('status')
     state.pop('error',None)
     state['cover']={'status':'PASS','r2_object_key':key(run_id),'sha256':hashlib.sha256(data).hexdigest(),'byte_size':len(data),'notion_file_upload_id':upload_id,'notion_cover_type':'file','r2_retention_days':14}
-    state['status']='PASS'
+    if prior_status not in ('PARTIAL','FAIL'): state['status']='PASS'
     Path(delivery_path).write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n')
 
 if __name__=='__main__':

@@ -11,14 +11,16 @@ def main():
     if len(sys.argv)!=2:fail('usage: verify_audio.py <audio-output-dir>')
     out=Path(sys.argv[1]); mp=out/'audio_manifest.json'
     if not mp.exists():fail('audio_manifest.json missing')
-    m=json.loads(mp.read_text(encoding='utf-8')); qa=m.get('qa',{})
-    if qa.get('MAPPING_CONFIRMED') is not True:fail('MAPPING_CONFIRMED is not true')
-    if qa.get('SIGNAL_CHECKED') is not True:fail('SIGNAL_CHECKED is not true')
+    m=json.loads(mp.read_text(encoding='utf-8')); qa=m.get('qa',{}); status=m.get('status','PASS')
+    if status not in ('PASS','PARTIAL'):fail(f'unsupported audio status: {status}')
+    if status=='PASS' and qa.get('MAPPING_CONFIRMED') is not True:fail('MAPPING_CONFIRMED is not true')
+    if status=='PASS' and qa.get('SIGNAL_CHECKED') is not True:fail('SIGNAL_CHECKED is not true')
     if qa.get('MODEL_AUDIO_CHECKED') is not False:fail('MODEL_AUDIO_CHECKED must remain false until model/listening QA exists')
-    verses=m.get('verses',[]); p=m['passage']; default_ch=int(p['chapter']); end_ch=int(p.get('end_chapter',default_ch)); actual=[(int(v.get('chapter',default_ch)),int(v['verse'])) for v in verses]
-    if not actual or actual[0]!=(default_ch,int(p['start_verse'])) or actual[-1]!=(end_ch,int(p['end_verse'])):fail(f'audio range endpoints mismatch: {actual}')
-    for a,b in zip(actual,actual[1:]):
-        if b[0]<a[0] or (b[0]==a[0] and b[1]!=a[1]+1) or b[0]>a[0]+1 or (b[0]==a[0]+1 and b[1]!=1):fail(f'audio verse coverage is non-contiguous: {a}->{b}')
+    verses=m.get('verses',[]); failed=m.get('failed_verses',[]); p=m['passage']; default_ch=int(p['chapter']); end_ch=int(p.get('end_chapter',default_ch)); actual=[(int(v.get('chapter',default_ch)),int(v['verse'])) for v in verses]
+    expected=m.get('expected_refs') or [v['ref'] for v in verses]
+    union={v['ref'] for v in verses}|{v['ref'] for v in failed}
+    if union!=set(expected):fail(f'audio PASS/FAILED coverage mismatch: expected={expected} actual={sorted(union)}')
+    if status=='PASS' and (not actual or actual[0]!=(default_ch,int(p['start_verse'])) or actual[-1]!=(end_ch,int(p['end_verse']))):fail(f'audio range endpoints mismatch: {actual}')
     previous_end=None
     for v in verses:
         ch=int(v.get('chapter',default_ch)); n=int(v['verse']); ref=f'{ch}:{n}'
@@ -35,5 +37,5 @@ def main():
         if previous_end is not None and abs(v['boundary_start']-previous_end)>0.001:fail(f'verse {ref}: non-shared adjacent boundary')
         if v['boundary_end']<=v['boundary_start']:fail(f'verse {ref}: invalid boundary order')
         previous_end=v['boundary_end']
-    print(f"PASS: AUDIO acceptance verses={len(verses)} MAPPING=PASS SIGNAL=PASS SPEED=PASS MODEL_AUDIO=PENDING")
+    print(f"{status}: AUDIO acceptance implemented={len(verses)} failed={len(failed)} MAPPING={'PASS' if status=='PASS' else 'PARTIAL'} SIGNAL={'PASS' if status=='PASS' else 'PARTIAL'} SPEED=PASS_FOR_IMPLEMENTED MODEL_AUDIO=PENDING")
 if __name__=='__main__':main()

@@ -56,10 +56,7 @@ def main():
     # PocketTorah label sets extend beyond a truncated MP3; treating the MP3
     # end as the final verse boundary would create a tiny fragment and an
     # absurd atempo value while hiding the actual source defect.
-    outside=[(i+1,t) for i,t in enumerate(labels[:total_words]) if t>source_duration+0.25]
-    if outside:
-        first_i,first_t=outside[0]
-        fail(f'MAPPING: PocketTorah source truncated: label word {first_i}/{total_words} onset={first_t:.6f}s exceeds audio duration={source_duration:.6f}s; out_of_audio_labels={len(outside)}')
+    outside=[(i+1,t) for i,t in enumerate(labels[:total_words]) if t>source_duration]
     if len(labels)==total_words+1 and labels[-1]<=source_duration+0.25:word_onsets,explicit_end=labels[:-1],labels[-1]
     else:word_onsets,explicit_end=labels[:total_words],source_duration
     if len(word_onsets)!=total_words:fail('MAPPING: could not normalize PocketTorah label count')
@@ -72,15 +69,43 @@ def main():
         else:boundaries.append(boundary_meta(word_onsets[cumulative[i]],silences))
     for i in range(1,len(boundaries)):
         if boundaries[i]['refined']<=boundaries[i-1]['refined']:fail(f'SIGNAL: non-monotonic boundary {i}')
-    seq=data['sequence']; records=[]
+    seq=data['sequence']; records=[]; failed=[]
     for i,verse in enumerate(data['verses']):
         ch=int(verse.get('chapter',default_ch)); n=int(verse['verse']); start,end=boundaries[i]['refined'],boundaries[i+1]['refined']
-        if end-start<0.4:fail(f'SIGNAL: verse {ch}:{n} boundary duration too short')
-        stem=f'{seq}_{ch}_{n}' if cross else f'{seq}_{n}'; r1,r2=out/f'{stem}_r1.mp3',out/f'{stem}_r2.mp3'; split_mp3(source,start,end,r1); d1=duration(r1); source_wps=len(verse['words'])/d1; factor=TARGET_WPS/source_wps
-        if not 0.25<=factor<=4.0:fail(f'SPEED: verse {ch}:{n} unreasonable atempo={factor:.6f}')
+        stem=f'{seq}_{ch}_{n}' if cross else f'{seq}_{n}'; r1,r2=out/f'{stem}_r1.mp3',out/f'{stem}_r2.mp3'
+        word_start,word_end=cumulative[i],cumulative[i+1]
+        verse_outside=[(k+1,labels[k]) for k in range(word_start,word_end) if k<len(labels) and labels[k]>source_duration]
+        reason=None
+        if verse_outside:
+            first_i,first_t=verse_outside[0]
+            reason=f'PocketTorah source truncated: label word {first_i}/{total_words} onset={first_t:.6f}s exceeds audio duration={source_duration:.6f}s; verse_out_of_audio_labels={len(verse_outside)}'
+        elif end-start<0.4: reason=f'boundary duration too short: {end-start:.6f}s'
+        if reason:
+            for path in (r1,r2):
+                if path.exists(): path.unlink()
+            failed.append({'chapter':ch,'verse':n,'ref':f'{ch}:{n}','word_count':len(verse['words']),
+              'MAPPING_STATUS':'FAILED','SIGNAL_STATUS':'NOT_RUN','MODEL_AUDIO_STATUS':'NOT_RUN',
+              'HIGHEST_VERIFIED_STAGE':'NONE','DELIVERY_STATUS':'NOT_IMPLEMENTED_FAILED','LIMITATION_REASON':reason})
+            continue
+        split_mp3(source,start,end,r1); d1=duration(r1); source_wps=len(verse['words'])/d1; factor=TARGET_WPS/source_wps
+        if not 0.25<=factor<=4.0:
+            for path in (r1,r2):
+                if path.exists(): path.unlink()
+            failed.append({'chapter':ch,'verse':n,'ref':f'{ch}:{n}','word_count':len(verse['words']),
+              'MAPPING_STATUS':'PASS','SIGNAL_STATUS':'FAILED','MODEL_AUDIO_STATUS':'NOT_RUN',
+              'HIGHEST_VERIFIED_STAGE':'MAPPING_CONFIRMED','DELIVERY_STATUS':'NOT_IMPLEMENTED_FAILED','LIMITATION_REASON':f'unreasonable atempo={factor:.6f}'})
+            continue
         speed_mp3(r1,factor,r2); d2=duration(r2); theoretical=d1/factor; mean_db=mean_volume_db(r1)
         if mean_db<-55.0:fail(f'SIGNAL: verse {ch}:{n} mean volume too low')
-        records.append({'chapter':ch,'verse':n,'ref':f'{ch}:{n}','word_count':len(verse['words']),'boundary_start':start,'boundary_end':end,'boundary_start_meta':boundaries[i],'boundary_end_meta':boundaries[i+1],'r1':r1.name,'r1_duration':d1,'source_wps':source_wps,'target_wps':TARGET_WPS,'atempo':factor,'r2':r2.name,'r2_duration':d2,'r2_theoretical_duration':theoretical,'r2_duration_error':abs(d2-theoretical),'r2_wps':len(verse['words'])/d2,'mean_volume_db':mean_db})
-    manifest={'schema_version':'audio-1.2','sequence':seq,'passage':p,'source':{**source_meta,'pockettorah_commit':POCKETTORAH_SHA,'source_file':source.name,'source_duration':source_duration,'label_count':len(labels),'word_count':total_words},'qa':{'MAPPING_CONFIRMED':True,'SIGNAL_CHECKED':True,'MODEL_AUDIO_CHECKED':False,'target_wps':TARGET_WPS,'boundary_rule':'PocketTorah next-word onset is the deterministic shared boundary; signal pauses are annotations only until MODEL_AUDIO confirms prior-word completion and no next-verse contamination'},'verses':records}
-    (out/'audio_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); print(f"PASS: AUDIO build verses={len(records)} words={total_words} source={source_meta['base']} target_wps={TARGET_WPS} model_audio=PENDING")
+        records.append({'chapter':ch,'verse':n,'ref':f'{ch}:{n}','word_count':len(verse['words']),'boundary_start':start,'boundary_end':end,'boundary_start_meta':boundaries[i],'boundary_end_meta':boundaries[i+1],'r1':r1.name,'r1_duration':d1,'source_wps':source_wps,'target_wps':TARGET_WPS,'atempo':factor,'r2':r2.name,'r2_duration':d2,'r2_theoretical_duration':theoretical,'r2_duration_error':abs(d2-theoretical),'r2_wps':len(verse['words'])/d2,'mean_volume_db':mean_db,
+          'MAPPING_STATUS':'PASS','SIGNAL_STATUS':'PASS','MODEL_AUDIO_STATUS':'NOT_RUN',
+          'HIGHEST_VERIFIED_STAGE':'SIGNAL_CHECKED','DELIVERY_STATUS':'READY','LIMITATION_REASON':''})
+    expected_refs=[f"{int(v.get('chapter',default_ch))}:{int(v['verse'])}" for v in data['verses']]
+    status='PARTIAL' if failed else 'PASS'
+    manifest={'schema_version':'audio-1.3','status':status,'sequence':seq,'passage':p,'expected_refs':expected_refs,
+      'source':{**source_meta,'pockettorah_commit':POCKETTORAH_SHA,'source_file':source.name,'source_duration':source_duration,'label_count':len(labels),'word_count':total_words,'out_of_audio_label_count':len(outside)},
+      'qa':{'MAPPING_CONFIRMED':not failed,'SIGNAL_CHECKED':not failed,'MODEL_AUDIO_CHECKED':False,'AUDIO_DELIVERY_COMPLETE':not failed,'AUDIO_VERIFICATION_COMPLETE':False,'target_wps':TARGET_WPS,'boundary_rule':'PocketTorah next-word onset is the deterministic shared boundary; signal pauses are annotations only until MODEL_AUDIO confirms prior-word completion and no next-verse contamination'},
+      'verses':records,'failed_verses':failed}
+    (out/'audio_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    print(f"{status}: AUDIO build implemented={len(records)} failed={len(failed)} words={total_words} source={source_meta['base']} target_wps={TARGET_WPS} model_audio=PENDING")
 if __name__=='__main__':main()

@@ -98,6 +98,10 @@ HTMLはJS/CSS/本文データをすべて内包する。検索のみ既存DTWork
 
 JSON1/1.1/HTML/JSON3は不一致上書きを拒否する。Notion作成直後にpage_idを保存し、部分失敗は同じJSON3・同じページから再開する。既存同名ページを複製しない。delivery PASSだけでは番号を進めない。画像とGmailまで成功した後、ChatGPTがver3/state/production.jsonを更新する。開始時にVer.2の036進行・既存ページを照合し、035や実験050から再開しない。
 
+### 媒体別PARTIAL DELIVERY
+
+JSON1／JSON1.1／JSON2の本文・hash・token identityが合格している場合、特定節の音声、HTML、Pagesまたはcoverの独立障害をRUN全体の配信停止へ拡大しない。合格成果物でNotionページを作成し、欠落媒体だけを実装しない。JSON3は全refsと媒体別状態を保持し、delivery.jsonは`PARTIAL`、page_id、page_url、実装数、missing refs、failure detailsを記録する。PARTIALではproduction stateを進めず、後日同じrun_id・同じNotionページへ欠落媒体だけを追加する。不良音声、空media block、別節・過去RUNの代用品は使わない。
+
 ## HTML配信方針（2026-09-07更新）
 全節をGITHUB_PAGES方式とする。publish_pagesがmainのver3-public/{run_id}/だけへHTMLを追加し、Pages build APIを明示的に起動して公開内容を照合する。公開に失敗した場合はNotion投稿前に停止する。完了済みdelivery PASSのRUNは契約検査のみ行い、既存Notionページを再投稿・変更しない。未完了の旧添付RUNは自動移行せず明示的な照合を要求する。既存050の32:4はユーザー確認済みのPages実験で、他の節の一括移行はこの設定変更では行わない。
 

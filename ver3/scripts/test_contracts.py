@@ -42,16 +42,21 @@ def main():
         assert 'PC：語にマウス' not in s and 'GitHub JSON統合' not in s
         assert 'min-height:800' not in s and 'editorial.json?' not in s
     routes=[{'ref':v['ref'],'mode':'GITHUB_PAGES','url':f'https://theologia165.github.io/torah-hebrew-html/ver3-public/{run.name}/{v["ref"]}.html'} for v in j['verses']]
-    p=json3(j,c,routes,[f'https://example.test/{i}_r2.mp3' for i in range(len(routes))])
+    audio={v['ref']:f'https://example.test/{i}_r2.mp3' for i,v in enumerate(j['verses'])}
+    p=json3(j,c,routes,audio)
     assert all('file_upload' not in b['embed'] and b['embed'].get('url','').startswith('https://theologia165.github.io/torah-hebrew-html/ver3-public/') for b in p['children'] if b['type']=='embed')
     bad_routes=copy.deepcopy(routes); bad_routes[0]['mode']='NOTION_ATTACHMENT'
-    try: json3(j,c,bad_routes,[f'https://example.test/{i}_r2.mp3' for i in range(len(routes))])
+    try: json3(j,c,bad_routes,audio)
     except AssertionError: pass
     else: raise AssertionError('Attachment route accepted')
     assert sum(b['type']=='audio' for b in p['children'])==len(routes)
     assert sum(b['type']=='embed' for b in p['children'])==len(routes)
     assert all(not b[b['type']].get('caption') for b in p['children'] if b['type'] in ('audio','embed'))
     assert not any(b['type']=='paragraph' and not b['paragraph']['rich_text'] for b in p['children'])
+    partial_audio=dict(audio); partial_audio.pop(j['verses'][-1]['ref'])
+    partial=json3(j,c,routes,partial_audio,{'audio_status':'PARTIAL','missing_audio_refs':[j['verses'][-1]['ref']]})
+    assert sum(b['type']=='audio' for b in partial['children'])==len(routes)-1
+    assert partial['media_status']['missing_audio_refs']==[j['verses'][-1]['ref']]
     print(f'PASS: {len(html)} exact DB Hebrew renderings, 6 corrupt handoffs rejected, JSON3 order/captions/citations')
 
 if __name__=='__main__': main()
