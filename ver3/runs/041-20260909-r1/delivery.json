@@ -1,6 +1,41 @@
 {
-  "status": "CREATED",
+  "status": "PARTIAL",
   "run_id": "041-20260909-r1",
   "page_id": "3d78aa46-08ae-81c0-9b9b-cf09c723a822",
-  "page_url": "https://app.notion.com/p/041-27-28-28-4-3d78aa4608ae81c09b9bcf09c723a822"
+  "page_url": "https://app.notion.com/p/041-27-28-28-4-3d78aa4608ae81c09b9bcf09c723a822",
+  "frame_upload_id": "3d48aa46-08ae-81fa-99e2-00b270ed575a",
+  "frame_method": "SHARED_DUMMY_THEN_PAGES",
+  "verse_count": 23,
+  "json3_sha256": "f56c6bfc202af99759a84be112bdfb14ff435810933c23f899f474e9d13dc720",
+  "NOTION_PAGE_CREATED": true,
+  "TEXT_DELIVERED": true,
+  "HTML_IMPLEMENTED_COUNT": 23,
+  "AUDIO_IMPLEMENTED_COUNT": 22,
+  "missing_audio_refs": [
+    "Gen.28.4"
+  ],
+  "missing_html_refs": [],
+  "failure_details": [
+    {
+      "chapter": 28,
+      "verse": 4,
+      "ref": "28:4",
+      "word_count": 16,
+      "MAPPING_STATUS": "FAILED",
+      "SIGNAL_STATUS": "NOT_RUN",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "NONE",
+      "DELIVERY_STATUS": "NOT_IMPLEMENTED_FAILED",
+      "LIMITATION_REASON": "PocketTorah source truncated: label word 344/358 onset=325.036269s exceeds audio duration=324.885000s; verse_out_of_audio_labels=15"
+    }
+  ],
+  "cover": {
+    "status": "PASS",
+    "r2_object_key": "covers/041-20260909-r1/cover.jpg",
+    "sha256": "480c088d2dfa2599d6c9fdcabe0a09f226f5c79f4b4d7052e93661f05a9fd959",
+    "byte_size": 446182,
+    "notion_file_upload_id": "3d78aa46-08ae-81dd-aea9-00b274f18d91",
+    "notion_cover_type": "file",
+    "r2_retention_days": 14
+  }
 }
