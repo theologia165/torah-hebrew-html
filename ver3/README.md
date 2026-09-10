@@ -88,9 +88,9 @@ JSON2をGitHubへ渡す前に、ChatGPTは全節を横断して次を自ら完�
 
 現在のNeon語テーブルに不足する語間記号・本文注だけは、DB source_commitと同じ固定MorphHB XMLを全対象語と照合した後、追加専用`dtworks.verse_layout_v3`へ格納する。JSON1はその補助表もDBから再取得する。token/lemma/morph不一致時はトランザクション全体をロールバックする。480MB未満の保守的容量ゲートを設ける。既存語・lexeme/reference・/passage・/searchを変更しない。
 
-音声はVer.2の固定PocketTorahと語位置ラベルを使用し、節専用MP3 r1を切り出して0.79306語/秒のr2へ調整する。全節・共有境界・実測duration・音量・速度を検証する。連続音源をNotionへ埋め込まない。r1/r2は保持し、MODEL_AUDIO未実施を聴取済みとしない。
+音声の第一正本はVer.2の固定PocketTorahと語位置ラベルとし、節専用MP3 r1を切り出して0.79306語/秒のr2へ調整する。全節・共有境界・実測duration・音量・速度を検証する。PocketTorahに物理欠損がある場合は、当該箇所・ライセンス・本文一致を確認済みのOpen.Bible音源を第二正本として用い、それも利用できない場合に限り、ユーザーが明示承認した節だけOpenAI TTSを最終代替とする。OpenAI TTSの入力は当該RUNのJSON1/JSON1.1由来の朗読対象token列から機械的に作り、モデル・voice・token_id・入力hash・速度を監査する。Notionでは「OpenAIによるAI生成音声」と明示する。連続音源をNotionへ埋め込まない。r1/r2は保持し、MODEL_AUDIO未実施を聴取済みとしない。
 
-各節は「節見出し→音声→私訳→ヘブライ語HTML→簡易な説明→閉じた詳しい解説toggle」。音声/HTMLのcaptionは空。音声用HTML・空のHTMLブロック・操作説明・技術ステータス・「対話型ヘブライ語」captionを追加しない。HTMLに固定の大きな高さや上下余白を持たせない。ただしNotionの外側iframeの手動サイズはNotion側の制約であり、自動制御できると断言しない。
+各節は「節見出し→音声→私訳→ヘブライ語HTML→簡易な説明→閉じた詳しい解説toggle」。通常音声とHTMLのcaptionは空とし、OpenAI TTSを用いた節だけ、利用者への開示として短いAI生成音声captionを必須とする。音声用HTML・空のHTMLブロック・操作説明・技術ステータス・「対話型ヘブライ語」captionを追加しない。HTMLに固定の大きな高さや上下余白を持たせない。ただしNotionの外側iframeの手動サイズはNotion側の制約であり、自動制御できると断言しない。
 
 HTMLはJS/CSS/本文データをすべて内包する。検索のみ既存DTWorks APIを呼び出す。全タナハ・トーラー・前預言者・後預言者・諸書・任意書、lemma/form、Qal、同じ活用を維持する。必要な資料帰属はページ末尾の本文資料欄に配置する。
 

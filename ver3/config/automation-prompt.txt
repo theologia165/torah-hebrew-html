@@ -16,10 +16,10 @@
 日本語説明段落がヘブライ語から始まるときは必ず「ヘブライ語の…」で始め、LTRを保つ。これは短い説明・詳説・Callout・表題・まとめすべてに適用する。独立したヘブライ語本文はRTLを保持する。「静かに〜」という言い回しは使用しない。
 
 【音声と表示・Ver.2継承】
-GitHubが固定PocketTorahの語位置ラベルをDBの語数と照合し、節専用の物理MP3 r1を作成、実測WPSから0.79306語/秒へ各節別atempoでr2を形成する。r1/r2を保存する。duration・音量・全節存在・共有境界・速度を検査する。連続アリヤーの巨大MP3や再生範囲指定だけの音声を一節へ埋め込まない。MODEL_AUDIO/GPT-Transcribeは通常工程では実行せず、未実施を失敗扱いも聴取済み扱いもしない。
-各節は節見出し→r2音声→私訳→ヘブライ語HTML→簡易な説明→通常閉じた詳しい解説toggleの順。音声はネイティブaudioブロックにし、音声用HTMLや空のHTML領域を追加しない。音声caption「創世記○:○学習用朗読…」を付けない。HTMLの操作説明「PC:語にマウスを…」、技術表示「GitHub JSON統合…」、HTML下部caption「対話型ヘブライ語…」を表示しない。HTMLは内容に応じた自然な高さ・小さな余白にする。Notion外側iframeの高さをAPIで自動制御できると断言しない。
+GitHubが第一正本である固定PocketTorahの語位置ラベルをDBの語数と照合し、節専用の物理MP3 r1を作成、実測WPSから0.79306語/秒へ各節別atempoでr2を形成する。PocketTorahに物理欠損がある場合は、当該箇所・ライセンス・本文一致を確認済みのOpen.Bible音源を第二正本とし、それも利用できない場合に限り、ユーザーが明示承認した節だけOpenAI TTSを最終代替とする。AI入力は当該RUNのJSON1/JSON1.1由来token列に固定し、モデル・voice・token_id・入力hash・速度を監査する。r1/r2を保存する。duration・音量・全節存在・共有境界・速度を検査する。連続アリヤーの巨大MP3や再生範囲指定だけの音声を一節へ埋め込まない。MODEL_AUDIO/GPT-Transcribeは通常工程では実行せず、未実施を失敗扱いも聴取済み扱いもしない。
+各節は節見出し→r2音声→私訳→ヘブライ語HTML→簡易な説明→通常閉じた詳しい解説toggleの順。音声はネイティブaudioブロックにし、通常音声のcaptionは空とする。OpenAI TTSの節だけ「OpenAIによるAI生成音声」と短く明示する。音声用HTMLや空のHTML領域を追加しない。音声caption「創世記○:○学習用朗読…」を付けない。HTMLの操作説明「PC:語にマウスを…」、技術表示「GitHub JSON統合…」、HTML下部caption「対話型ヘブライ語…」を表示しない。HTMLは内容に応じた自然な高さ・小さな余白にする。Notion外側iframeの高さをAPIで自動制御できると断言しない。
 HTMLは本文・逐語訳・hover/tap用データ・JS/CSSを内包し、全節をGitHub Pagesへ公開し、Notionには公開URLのembedを置く。最終表示にHTML添付方式は使わない。枠の初期作成のみ、後述の共通ダミーHTML方式を使う。公開URLの内容と生成HTMLの一致を確認してからNotionへ送る。Pages公開に失敗したら添付方式へ戻さずエラーを記録する。語直下逐語訳、lemma/日本語形態表示、スマホtap、viewport clampを維持する。全タナハ・トーラー・前預言者・後預言者・諸書・任意書、lemma/form、Qal・同活用検索を維持し、lexeme/reference layerと/passage・/search契約は変更しない。WLCとHTMLを二重表示しない。
-JSON・HTML・音声・Notionの各段階をActionsで検証し、媒体caption空、空ブロックなし、通常段落LTR、各項目末尾の引用リンク、全節の順序と内容一致を合格条件にする。必要な原資料帰属はページ末尾の本文資料欄に置き、操作・実装説明と混同しない。
+JSON・HTML・音声・Notionの各段階をActionsで検証し、通常媒体caption空（OpenAI TTSの開示captionだけ例外）、空ブロックなし、通常段落LTR、各項目末尾の引用リンク、全節の順序と内容一致を合格条件にする。必要な原資料帰属はページ末尾の本文資料欄に置き、操作・実装説明と混同しない。
 
 【IMAGE CONFIG｜三層構造・最優先】画像生成用データを三層に分離する。
 ①GLOBAL IMAGE MASTER：GitHubのver3/config/image-master.json。全回共通の1200×630、左側情報領域＋右側本文場面、文字階層、余白、禁止事項、fresh generation、QA基準等を保持する。

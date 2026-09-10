@@ -96,6 +96,8 @@ def main():
             cmd(sys.executable,'ver3/scripts/build_audio.py',str(run/'audio-input.json'),str(audio))
             # Keep r1 and r2, omit the large continuous source from GitHub artifacts.
             for p in audio.glob('*_source.mp3'): p.unlink()
+        if (run/'ai-audio-request.json').exists():
+            cmd(sys.executable,'ver3/scripts/build_ai_audio.py',str(run))
         cmd(sys.executable,'ver3/scripts/verify_audio.py',str(audio))
         commit_run(run,'Build verified Ver.3 HTML and per-verse audio')
         if r['mode']=='publish':

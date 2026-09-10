@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0-ai-audio-request",
+  "status": "APPROVED_LAST_RESORT",
+  "run_id": "041-20260909-r1",
+  "ref": "Gen.28.4",
+  "reason": "PocketTorah primary audio is physically truncated and no verified Open.Bible replacement is available for this repair.",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "target_wps": 0.79306,
+  "required_disclosure": "OpenAIによるAI生成音声（PocketTorah原音欠損のため）"
+}

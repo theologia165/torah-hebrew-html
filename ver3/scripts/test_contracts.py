@@ -52,6 +52,10 @@ def main():
     assert sum(b['type']=='audio' for b in p['children'])==len(routes)
     assert sum(b['type']=='embed' for b in p['children'])==len(routes)
     assert all(not b[b['type']].get('caption') for b in p['children'] if b['type'] in ('audio','embed'))
+    ai_ref=j['verses'][-1]['ref']
+    with_ai=json3(j,c,routes,audio,audio_meta_by_ref={ai_ref:{'audio_origin':'OPENAI_TTS','ai_disclosure':'OpenAIによるAI生成音声'}})
+    ai_audio=[b for b in with_ai['children'] if b['type']=='audio' and b['audio']['external']['url']==audio[ai_ref]]
+    assert len(ai_audio)==1 and ai_audio[0]['audio']['caption'][0]['text']['content']=='OpenAIによるAI生成音声'
     assert not any(b['type']=='paragraph' and not b['paragraph']['rich_text'] for b in p['children'])
     partial_audio=dict(audio); partial_audio.pop(j['verses'][-1]['ref'])
     partial=json3(j,c,routes,partial_audio,{'audio_status':'PARTIAL','missing_audio_refs':[j['verses'][-1]['ref']]})

@@ -21,7 +21,7 @@ def main():
     union={v['ref'] for v in verses}|{v['ref'] for v in failed}
     if union!=set(expected):fail(f'audio PASS/FAILED coverage mismatch: expected={expected} actual={sorted(union)}')
     if status=='PASS' and (not actual or actual[0]!=(default_ch,int(p['start_verse'])) or actual[-1]!=(end_ch,int(p['end_verse']))):fail(f'audio range endpoints mismatch: {actual}')
-    previous_end=None
+    previous_end=None; previous_scope=None
     for v in verses:
         ch=int(v.get('chapter',default_ch)); n=int(v['verse']); ref=f'{ch}:{n}'
         for key in ('r1','r2'):
@@ -34,8 +34,9 @@ def main():
         if abs(v['r2_wps']-TARGET_WPS)>MAX_WPS_ERROR:fail(f"verse {ref}: r2 WPS {v['r2_wps']:.6f} outside target {TARGET_WPS}")
         if not 0.25<=v['atempo']<=4.0:fail(f'verse {ref}: atempo outside safety range')
         if v['mean_volume_db']<-55.0:fail(f'verse {ref}: mean volume too low')
-        if previous_end is not None and abs(v['boundary_start']-previous_end)>0.001:fail(f'verse {ref}: non-shared adjacent boundary')
+        scope=v.get('boundary_scope','POCKETTORAH_CONTINUOUS')
+        if previous_end is not None and scope==previous_scope=='POCKETTORAH_CONTINUOUS' and abs(v['boundary_start']-previous_end)>0.001:fail(f'verse {ref}: non-shared adjacent boundary')
         if v['boundary_end']<=v['boundary_start']:fail(f'verse {ref}: invalid boundary order')
-        previous_end=v['boundary_end']
+        previous_end=v['boundary_end']; previous_scope=scope
     print(f"{status}: AUDIO acceptance implemented={len(verses)} failed={len(failed)} MAPPING={'PASS' if status=='PASS' else 'PARTIAL'} SIGNAL={'PASS' if status=='PASS' else 'PARTIAL'} SPEED=PASS_FOR_IMPLEMENTED MODEL_AUDIO=PENDING")
 if __name__=='__main__':main()

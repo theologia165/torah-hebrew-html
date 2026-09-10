@@ -26,7 +26,8 @@ def children(page, token):
         if not d['has_more']: return out
         cursor=d['next_cursor']
 
-def json3(j,c,routes,audio_by_ref,media_status=None):
+def json3(j,c,routes,audio_by_ref,media_status=None,audio_meta_by_ref=None):
+    audio_meta_by_ref=audio_meta_by_ref or {}
     validate(j,c); req=j['request']; r=req['passage']; default_ch=r['chapter']
     title=f'{req["sequence"]}｜{r["display"].split("｜")[-1]}{req.get("title_suffix", "")}'
     blocks=[]; verse_handoff=[]
@@ -52,7 +53,10 @@ def json3(j,c,routes,audio_by_ref,media_status=None):
                 detail.append(source_block(section['sources']))
         assert len(detail)<=100, 'Notion toggle children limit exceeded'
         verse_blocks=[block('heading_2',f'{req["book_jp"]} {ch}:{n}')]
-        if audio: verse_blocks.append({'object':'block','type':'audio','audio':{'type':'external','external':{'url':audio},'caption':[]}})
+        if audio:
+            meta=audio_meta_by_ref.get(raw['ref'],{})
+            caption=rt(meta['ai_disclosure']) if meta.get('audio_origin')=='OPENAI_TTS' else []
+            verse_blocks.append({'object':'block','type':'audio','audio':{'type':'external','external':{'url':audio},'caption':caption}})
         blocks += verse_blocks+[paragraph('私訳：'+v['translation']),block('heading_3','ヘブライ語'),embed,
                    paragraph('簡易な説明：'+v['short_commentary']),
                    {'object':'block','type':'toggle','toggle':{'rich_text':rt('詳しい解説'),'children':detail}}]
@@ -100,9 +104,10 @@ def verify(expected,actual,token):
             assert e[t]['color']==a[t].get('color'), f'Notion color differs: {plain(e)[:60]}'
         if t in ('toggle','callout') and e[t].get('children'):
             verify(e[t]['children'],children(a['id'],token),token)
-        if t in ('audio','embed'):
-            assert not a[t].get('caption'), 'Unexpected media caption'
-        if t=='audio': assert e[t]['external']['url']==a[t].get('external',{}).get('url')
+        if t=='embed': assert not a[t].get('caption'), 'Unexpected embed caption'
+        if t=='audio':
+            assert e[t]['external']['url']==a[t].get('external',{}).get('url')
+            assert plain({'type':'paragraph','paragraph':{'rich_text':e[t].get('caption',[])}})==plain({'type':'paragraph','paragraph':{'rich_text':a[t].get('caption',[])}}), 'Audio disclosure caption differs'
         if t=='embed':
             if 'url' in e[t]: assert e[t]['url']==a[t].get('url')
             else:
@@ -120,7 +125,7 @@ UPLOAD_HTML={}
 def main():
     run=Path(sys.argv[1]); token=os.environ['NOTION_TOKEN']; parent=os.environ['NOTION_PARENT_PAGE_ID']
     j=json.loads((run/'json1.json').read_text()); c=json.loads((run/'json2.json').read_text()); validate(j,c)
-    req=j['request']; seq=req['sequence']; routes=[]; audio_by_ref={}
+    req=j['request']; seq=req['sequence']; routes=[]; audio_by_ref={}; audio_meta_by_ref={}
     state_path=run/'delivery.json'
     state=json.loads(state_path.read_text()) if state_path.exists() else {'status':'PENDING','run_id':req['run_id']}
     def checkpoint(): state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n')
@@ -149,14 +154,17 @@ def main():
             url=f'https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/{run.as_posix()}/audio/{v["r2"]}'
             response=requests.get(url,timeout=45); response.raise_for_status()
             assert response.content==(run/'audio'/v['r2']).read_bytes(), 'Published audio differs'
-            audio_by_ref[f'{prefix}.{v["chapter"]}.{v["verse"]}']=url
+            full_ref=f'{prefix}.{v["chapter"]}.{v["verse"]}'
+            audio_by_ref[full_ref]=url
+            audio_meta_by_ref[full_ref]=v
         missing_audio_refs=[f'{prefix}.{v["chapter"]}.{v["verse"]}' for v in manifest.get('failed_verses',[])]
         assert set(audio_by_ref)|set(missing_audio_refs)==set(req['refs']), 'Audio PASS/FAILED refs do not cover request'
         media_status={'audio_status':manifest.get('status','PASS'),'audio_implemented_count':len(audio_by_ref),
           'audio_expected_count':len(req['refs']),'missing_audio_refs':missing_audio_refs,
           'audio_failures':manifest.get('failed_verses',[]),'html_status':'PASS','html_implemented_count':len(routes),
-          'missing_html_refs':[],'pages_status':'PASS'}
-        payload=json3(j,c,routes,audio_by_ref,media_status)
+          'missing_html_refs':[],'pages_status':'PASS',
+          'ai_generated_audio_refs':[ref for ref,v in audio_meta_by_ref.items() if v.get('audio_origin')=='OPENAI_TTS']}
+        payload=json3(j,c,routes,audio_by_ref,media_status,audio_meta_by_ref)
         if req.get('update_page_id'):
             # Explicit update: preserve the page and all non-media blocks.
             page_id=req['update_page_id']
@@ -190,6 +198,34 @@ def main():
             from r2_cover import apply as apply_cover
             apply_cover(req['run_id'],page_id,state_path)
             print('PASS: updated existing page; all text, citations and 10 Pages embeds verified')
+            return
+        # A PARTIAL page may receive only newly repaired media.  Insert the
+        # missing top-level block(s) in place, then verify the full new JSON3.
+        if state.get('page_id') and state.get('status')=='PARTIAL':
+            prior=json.loads((run/'json3.json').read_text())
+            got=children(state['page_id'],token)
+            verify(prior['children'],got,token)
+            old=prior['children']; new=payload['children']; left=0
+            while left<len(old) and left<len(new) and old[left]==new[left]: left+=1
+            right=0
+            while right<len(old)-left and right<len(new)-left and old[-1-right]==new[-1-right]: right+=1
+            old_middle=old[left:len(old)-right if right else len(old)]
+            new_middle=new[left:len(new)-right if right else len(new)]
+            assert not old_middle and new_middle and all(b['type']=='audio' for b in new_middle), 'PARTIAL repair may only insert missing audio blocks'
+            assert left>0, 'Cannot insert repaired media before first page block'
+            request_json('PATCH',f'/blocks/{state["page_id"]}/children',token,
+                         json={'after':got[left-1]['id'],'children':new_middle})
+            verify(new,children(state['page_id'],token),token)
+            save(run/'json3.json',payload)
+            delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
+            state.pop('error',None)
+            state.update(status=delivery_status,verse_count=len(j['verses']),json3_sha256=digest(payload),
+              operation='REPAIR_PARTIAL_AUDIO',NOTION_PAGE_CREATED=True,TEXT_DELIVERED=True,
+              HTML_IMPLEMENTED_COUNT=len(routes),AUDIO_IMPLEMENTED_COUNT=len(audio_by_ref),
+              missing_audio_refs=missing_audio_refs,missing_html_refs=[],failure_details=manifest.get('failed_verses',[]),
+              ai_generated_audio_refs=media_status['ai_generated_audio_refs'])
+            checkpoint()
+            print(f'{delivery_status}: inserted repaired audio into existing Notion page and verified all blocks')
             return
         # A resumed page must use its original JSON3 and original attachments.
         if state.get('page_id'):
