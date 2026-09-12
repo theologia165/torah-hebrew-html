@@ -1,46 +1,15 @@
-朝一トーラーVer.3の本番運用を実行する。GitHub repository theologia165/torah-hebrew-html、実装ブランチ asaichi-torah-ver3、実装仕様 ver3/README.md、Actions .github/workflows/asaichi-torah-ver3.yml を正本とする。最初にREADMEとver3/state/production.jsonを読み、そこで指定された本番NNN・アリヤーを実行する。旧Ver.2は復帰用バックアップとして保持し、asaichi-torah-ver2ブランチと既存035・実験050を変更しない。
+朝一トーラーVer.3を本番実行する。GitHub repository `theologia165/torah-hebrew-html`、branch `asaichi-torah-ver3`、Actions `.github/workflows/asaichi-torah-ver3.yml`を使用する。実装の正本は`ver3/README.md`、Workの通常実行入口は`ver3/spec/work-entry.md`とする。旧Ver.2ブランチ、既存035、実験050は変更しない。
 
-【初回引継ぎ・重複防止】
-初回はVer.2のver2/state/production.json、対象NNNのdelivery audit、進行中Actions、既存Notionページ、当日送信済みメールを読み取り、036の明示開始指示を尊重して完了状況を照合する。036が途中なら勝手に複製せずその未完了事項を引き継ぐかBLOCKED_HANDOVERとして具体的に報告する。036が全工程完了なら037から開始する。035へ戻らない。実験050を本番進行の根拠にしない。標準年周期トーラーのアリヤー順に1ずつ進む。失敗時は連番を進めない。
+最初に`ver3/spec/work-entry.md`と`ver3/state/production.json`を読み、対象NNNのdelivery、実行中Actions、既存Notionページ、当日Sentを照合する。完了済みNNNを複製せず、失敗時は連番を進めない。対象RUNが未作成ならproduction stateの標準アリヤーから固有run_idのpublish requestを作成・コミットし、Ver.3 Actionsを起動する。
 
-【厳守するデータ工程】
-1. 当日範囲をWLC/OSISで確定し、全対象refsを漏れなく順序通り列挙する。ver3/request.jsonをREADMEのschemaに従って作成。通常mode=publish、source=morphhb-wlc、sequenceは3桁、run_idはNNN-YYYYMMDD-r1等の一意値とし、book・book_jp・passageを一致させる。リトライは同じrun_idの不変入力を再利用し、修正時は新しいrun_idで旧成果物を保存する。acceptanceモードは開発検証用なので本番では使わない。
-2. requestをGitHubへコミットし、そのコミットを含むVer.3 Actionsを確認する。GitHubがNeonの本文・形態segment・lexeme・reference mapping・source versionをJSON1としてver3/runs/{run_id}/json1.jsonに取得する。DBに不足する語間記号等はprepare.pyが固定MorphHBと全語照合・容量ゲート通過後に追加専用補助表へ保存し、DBから再取得する。ChatGPTが本文・分解・lemmaを自力生成して穴埋めしてはならない。
-3. GitHubがJSON1から研究に必要な本文、語ID、語順、lemma、形態、本文注、節番号対応を抽出したJSON1.1を同ディレクトリのjson1.1.jsonへコミットする。ChatGPTはActions成功・対象run_id・全対象節の一致を確認してこれを読み取る。GitHubがChatGPTを自動起動するのではなく、この実行中にChatGPTがActions完了を待って取得する。
-4. ChatGPTはJSON1.1を基に全節を研究し、逐語訳・私訳・簡易説明・詳しい解説・表題・青Callout約200字・全体まとめをJSON2として作成する。json1_sha256をJSON1.1から転記し、json1_1_sha256はJSON1.1をprepare.digestと同じ正規化方式（UTF-8、ensure_ascii=False、sort_keys=True、separators=(',',':')）で計算する。全節refs・token_id・語順を維持し、DB列をJSON2で上書きしない。
-5. READMEのJSON2 schemaに従いver3/runs/{run_id}/json2.jsonをGitHubへコミットする。ActionsがJSON1とJSON2を照合し、HTML・節別MP3・Pages公開URLを確定してjson3.jsonを生成する。GitHub ActionsがそのJSON3からNotionへ直接送信・再取得QAする。ChatGPTがNotionページを代わりに組み立てたり、引用をコメント欄へ投稿してはならない。
-6. Actionsとver3/runs/{run_id}/delivery.jsonを確認し、PASSとpage_url、全節の媒体・本文照合が成立した場合のみNotion工程成功とする。失敗時はGitHubの失敗step/logを読んで同RUNの修復を試み、未実施を成功と表示しない。
+RUN作成後は`ver3/runs/{run_id}/handoff.json`を正本とし、そこに指定されたstage specとrequired inputsだけを追加で読む。過去RUNのJSON2／JSON3、Notionページ、画像、メールを研究入力にしない。
 
-【研究と引用】
-詳しい解説は節固有の新しい情報を優先し、固定項目を汎用文で埋めない。本文と文法、本文批評、歴史・地理、物語構成、ラビ・中世等のユダヤ教解釈伝統、教父解釈伝統を必要に応じて分ける。ユダヤ教と教父を一項目へまとめない。peshatとミドラシュ的読解を区別する。各節末尾に必ず「デボーショナルな受けとめ」を1件置き、当該節固有の語・行為・緊張から導く。別節と同文・結論を反復しない。引用先は実際に原資料・研究資料を確認し、各sections.sourcesに著者・書名・章節/頁とURLを記入する。GitHubが当該項目の最後へリンクとしてまとめて表示する。コメント欄に引用先を分離しない。出典、引用文、頁、URLを推測しない。
-日本語説明段落がヘブライ語から始まるときは必ず「ヘブライ語の…」で始め、LTRを保つ。これは短い説明・詳説・Callout・表題・まとめすべてに適用する。独立したヘブライ語本文はRTLを保持する。「静かに〜」という言い回しは使用しない。
+`next_action=CREATE_JSON2`では、当該RUNのJSON1.1と`ver3/spec/json2-quality.md`だけを基に逐語訳、私訳、節・チャンク・アリヤー三層研究、出典、デボーショナルな受けとめを作る。Work自身が意味内容を全件監査し、`WORK_JSON2_QUALITY=PASS`の場合だけJSON2をコミットする。Actionsの構造PASSを意味品質PASSへ読み替えない。
 
-【音声と表示・Ver.2継承】
-音声本文の正本は当該RUNのJSON1/JSON1.1（WLC）、第一正本朗読音源は固定PocketTorahと語位置ラベルとする。GitHubはDB語数と照合し、節専用r1を作成、実測WPSから0.79306語/秒へ節別atempoでr2を形成する。PocketTorah監査が`audio-fallback.json`で承認された物理欠損codeを返した節だけ、①当該OSIS ref・当該RUN朗読本文hash・語数・音声hash・節単位性・ライセンス・帰属を事前確認してallow-list登録したOpen.Bible、②登録済み正確音源がなければ常設承認済みOpenAI TTS、の順に自動代替する。境界・mapping・異常速度・分類不能を物理欠損へ読み替えない。AI入力は当該RUNのaudio-input.jsonにあるJSON1/JSON1.1由来read_aloud token列だけから機械的に作り、自由入力を使わない。複数欠落節に対応し、第一正本error、Open.Bible判定、token_id、入力hash、model、voice、request ID、r1/r2、duration・音量・速度を監査する。Open.Bibleの実行時取得不能だけはAIへ進めるが、登録情報・本文hash・音源hash・ライセンス不一致はPARTIALに残す。フォールバック失敗時も本文・HTML・cover・他節音声で同じNotionページを作り、欠落節だけを後日同run_id・page_idへ挿入する。JSON3実音声ブロック数・media_status・delivery audit一致前にPASSとしない。通常・Open.Bible音声captionは空、AI音声だけ開示captionを付け、Open.Bible帰属はページ末尾へ置く。r1/r2を保存し、duration・音量・全節存在・共有境界・速度を検査する。連続アリヤー音源を一節へ埋め込まない。MODEL_AUDIO/GPT-Transcribe未実施を失敗扱いも聴取済み扱いもしない。
-各節は節見出し→r2音声→私訳→ヘブライ語HTML→簡易な説明→通常閉じた詳しい解説toggleの順。音声はネイティブaudioブロックにし、通常音声のcaptionは空とする。OpenAI TTSの節だけ「OpenAIによるAI生成音声」と短く明示する。音声用HTMLや空のHTML領域を追加しない。音声caption「創世記○:○学習用朗読…」を付けない。HTMLの操作説明「PC:語にマウスを…」、技術表示「GitHub JSON統合…」、HTML下部caption「対話型ヘブライ語…」を表示しない。HTMLは内容に応じた自然な高さ・小さな余白にする。Notion外側iframeの高さをAPIで自動制御できると断言しない。
-HTMLは本文・逐語訳・hover/tap用データ・JS/CSSを内包し、全節をGitHub Pagesへ公開し、Notionには公開URLのembedを置く。最終表示にHTML添付方式は使わない。枠の初期作成のみ、後述の共通ダミーHTML方式を使う。公開URLの内容と生成HTMLの一致を確認してからNotionへ送る。Pages公開に失敗したら添付方式へ戻さずエラーを記録する。語直下逐語訳、lemma/日本語形態表示、スマホtap、viewport clampを維持する。全タナハ・トーラー・前預言者・後預言者・諸書・任意書、lemma/form、Qal・同活用検索を維持し、lexeme/reference layerと/passage・/search契約は変更しない。WLCとHTMLを二重表示しない。
-JSON・HTML・音声・Notionの各段階をActionsで検証し、通常媒体caption空（OpenAI TTSの開示captionだけ例外）、空ブロックなし、通常段落LTR、各項目末尾の引用リンク、全節の順序と内容一致を合格条件にする。必要な原資料帰属はページ末尾の本文資料欄に置き、操作・実装説明と混同しない。
+画像工程では`ver3/spec/image-handoff.md`に従い、当日三層画像入力だけからfresh画像を生成・目視QAし、合格JPEGを短時間PUT URLでR2へ直接送る。画像バイナリをGitHubやWorkの文字コンテキストへ入れない。
 
-【IMAGE CONFIG｜三層構造・最優先】画像生成用データを三層に分離する。
-①GLOBAL IMAGE MASTER：GitHubのver3/config/image-master.json。全回共通の1200×630、左側情報領域＋右側本文場面、文字階層、余白、禁止事項、fresh generation、QA基準等を保持する。
-②PARASHA IMAGE PROFILE：GitHubのver3/config/parasha-image/index.jsonで当日の日本語パラシャー名を完全一致検索し、対応するver3/config/parasha-image/*.jsonを取得する。パラシャー内で統一する配色、質感、光、雰囲気、古代世界の表現原則のみを保持する。過去NNN、過去アリヤー固有場面、過去画像、失敗画像、gen_idは保存しない。既存profileを本番RUN中に自動上書きしない。indexに当該パラシャーがない場合、ChatGPTは画像生成前にGLOBAL IMAGE MASTERを基準として新規PARASHA IMAGE PROFILEを1件作成しGitHubへ保存し、index.jsonへ日本語パラシャー名の完全一致エントリを追加する。新規profileには当日固有人物・出来事を固定情報として入れない。
-③CURRENT RUN IMAGE PACKAGE：ChatGPTが当日の研究JSONをJSON2 handoffする段階で、同じ当日全データから一時的なJSONオブジェクトとして作る。最低限、IMAGE_NNN / IMAGE_PARASHA / IMAGE_ALIYAH / IMAGE_RANGE / IMAGE_CALLOUT2 / IMAGE_THEME / IMAGE_SCENE_SUMMARY / IMAGE_REQUIRED_TEXTを含む。これはGitHubへ画像監査JSONとして恒久保存しない。
+Actionsは本文・HTML・節別音声・Pages・Notionを機械的に生成、検証、配信する。音声方針は`ver3/config/audio-fallback.json`と音声モジュールを正本とし、詳細をWorkが毎回再解釈しない。特定媒体がPARTIALでも正常な成果物の配信を継続し、不良・空・別節・過去RUNの代用品を使わない。
 
-【IMAGE RUN｜ChatGPT担当・Notion非依存】画像生成はJSON2 handoff確定後、Notion完成を待たずにChatGPT側で行う。画像生成の前提としてNotionページを再取得しない。ChatGPTはGitHubから①GLOBAL IMAGE MASTERと②CURRENT PARASHA PROFILEを取得し、③CURRENT RUN IMAGE PACKAGEと統合して画像生成する。この三層以外を画像入力元にしない。過去ページ・過去画像・失敗画像・過去gen_idを入力元にしない。fresh generationのみ。1200×630横長、GLOBAL MASTERの左側情報領域＋右側本文場面、PARASHA PROFILEの統一視覚言語を継承する。画像内必須文字は、朝一トーラー、三桁NNN、パラシャー名、第Xアリヤー、聖書箇所、本文由来の短い主題句。必要な場合のみCALLOUT2由来の短い補助コピー1行を加える。本文にない人物・出来事・象徴を追加しない。PARASHA PROFILEは配色・質感・雰囲気等の統一だけを支配し、当日人物・行為・場所・場面内容はCURRENT RUN IMAGE PACKAGEを優先する。
+最後は`ver3/spec/email-delivery.md`に従い、完全成功でも未完了でもGmailをto: meへ実送信し、Sentを確認する。BLOCKED／PARTIAL時は`ver3/spec/failure-report.md`に従い具体的原因と残作業を記す。WORK_JSON2_QUALITY、TEXT、HTML、音声、Notion、画像、Gmailの全条件PASS時だけproduction stateを次へ一つ進める。
 
-【IMAGE QA】生成後、①NNN完全一致 ②パラシャー名完全一致 ③アリヤー完全一致 ④聖書箇所完全一致 ⑤主題句が当日本文由来 ⑥補助コピーがある場合CALLOUT2と整合 ⑦誤字・文字化け・欠落なし ⑧別回NNN・名称・範囲・場面の混入なし ⑨右側場面が当日本文と整合 ⑩最終サイズ1200×630、の10項目を目視QAする。1項目でも不合格なら失敗画像を編集・参照せずfresh generationで再試行し、最大3試行。合格画像だけを当日メール添付用に保持し、Notionへ挿入しない。画像監査専用JSON、NNN-image-meta.json等は新規作成しない。CURRENT RUN IMAGE PACKAGEも恒久保存しない。
-
-【失敗原因の詳細記録｜必須】どの工程で失敗・BLOCKED・SKIP・PARTIALが発生した場合も、単に「失敗」「ツール利用不可」「送信できず」とだけ書かない。必ず、①失敗工程名、②実行しようとした操作、③実際に返ったエラー種別・status・message（取得できる範囲で原文を短く保持）、④失敗対象（節番号・ファイル・API・ページ・画像・メール添付等）、⑤直前まで成功していた工程、⑥再試行回数と各結果、⑦代替経路を試したか／試さなかった理由、⑧推定原因と確定原因を区別、⑨残作業、をRUN内で保持し、未完了Gmail本文へユーザーが原因追跡できる具体性で記載する。画像生成失敗は少なくともIMAGE_STATUS、GLOBAL MASTER取得可否、PARASHA PROFILE取得・新規作成可否、CURRENT RUN IMAGE PACKAGE確定可否、image generation toolが当該実行環境で利用可能だったか、呼び出し自体が開始できたか、生成後QAで落ちたのかを区別する。Gmail失敗は本文送信自体の失敗か添付ファイル受け渡し失敗か、認証・権限・ファイル参照・サイズ・ツール利用不能のどれかを区別する。Notion/GitHub失敗はHTTP status、API endpointまたはworkflow step、対象節、fallback有無を区別する。原因が確定できない場合は「原因未確定」とし、推測を確定事項として書かない。
-
-【Gmail delivery｜Ver.1準拠・最優先】RUN最後に、途中工程に失敗があっても必ずGmailを実送信する。Gmail自体が技術的に利用不能な場合のみ例外。宛先は接続済みGmail自身（to: me）。送信前に同日・同NNN・同件名のSentを検索し重複を防ぐ。完全成功時は件名をNotionページ名と一致させ、本文に①GitHub delivery auditから取得したNotion page_url ②CALLOUT2 ③完了の旨 ④FANBOX https://nishihara.fanbox.cc/ ⑤Facebook https://www.facebook.com/nishiharat を簡潔に記し、IMAGE_STATUS=PASSの当日画像を添付する。途中失敗時も処理を止めず、最終工程として必ず「【未完了】＋Notionページ名」で送信する。未完了メール本文には①Notion page_url（GitHub delivery auditに存在する場合）②CALLOUT2（確定済みなら）③成功した工程・成果物 ④失敗した工程 ⑤GitHub delivery audit/status ⑥エラー要点と詳細原因 ⑦再試行回数 ⑧残作業 ⑨HTMLならHTML_MODE・missing verse、音声なら全節数・実装数・欠落節・最終版・検証段階、画像ならIMAGE_STATUSと三層画像データのどこまで成立したか、を記す。画像が合格済みなら未完了メールにも当日画像を添付する。画像未生成/FAILなら別回画像を代用しない。MODEL_AUDIO/GPT-Transcribeを通常工程で実行しなかったこと自体は失敗として記載しない。Gmail送信が一時的に失敗した場合はSentに存在しないことを確認して最大2回再試行する。認証・権限・ツール利用不能の場合は同じ失敗操作を連打しない。送信後はSentを再確認し、実送信成功を確認する。途中失敗を理由にメール工程そのものを省略してはならない。
-
-
-
-【最終監査と連番確定】
-GitHubのdelivery.jsonをpage_id/page_urlの正本とする。画像とGmailルールは上記Ver.2継承仕様を使う。TEXT、JSONハッシュ/語ID照合、HTML、AUDIO_DELIVERY、Notion再取得QA、画像、Gmail実送信が必要条件を満たした時だけver3/state/production.jsonを次のNNN・標準アリヤーへ更新する。初回引継ぎの例外はユーザーが明示した036開始だけとし、画像・音声・メールの未実施を勝手に完了へ読み替えない。
-
-【ケティーブ・ケレー】
-ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。
-
-
-【Notionのヘブライ語枠：共通ダミーHTML方式】全節の最終表示はGitHub Pages URL embedとする。新規枠はver3/config/notion-frame.jsonのアップロード済み共通frame-bootstrap.htmlのfile_upload_idを再利用して作成し、同じブロックを各節のPages URLへ更新する。本文HTMLを節ごとにNotionへアップロードしない。共有IDが失効した場合だけ小さなダミーを当該RUNで一度再アップロードする。途中停止した添付枠はダミー内容を照合してPagesへ切り替えてから通常検証を行う。JSON3は最終Pages URLを正本とし、ダミーのまま配信完了としない。
+各handoffに必要な入力・監査結果をコミットし、Ver.3 Actionsを起動して、次のhandoffまたは最終delivery確定まで確認する。

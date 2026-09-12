@@ -1,0 +1,5 @@
+{
+  "schema_version": "1.0-open-bible-source-registry",
+  "description": "Allow-list of manually verified, exact-verse Open.Bible audio sources. Empty means no Open.Bible source is eligible and the resolver may use the approved OpenAI TTS last resort.",
+  "approved_verse_sources": {}
+}

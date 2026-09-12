@@ -3,6 +3,27 @@
 実行ブランチ：`asaichi-torah-ver3`。Actions：`.github/workflows/asaichi-torah-ver3.yml`。
 旧版ブランチと既存035・050は変更しない。Ver.2の画像master/profileをver3/configへ複製して独立運用する。
 
+## 省トークン運用入口と段階別handoff
+
+`ver3/README.md`は人間向けの全体契約、`ver3/spec/work-entry.md`はWorkの通常実行入口とする。定期実行プロンプトは全仕様を複製せず、最初にwork-entryとproduction stateだけを読む。Actionsは各RUNへ小さな`handoff.json`を出力し、Workはそこに記載された`next_action`、`stage_spec`、`required_inputs`だけを追加で読む。通常運用でREADME全体、Actions専用の機械仕様、成功済み媒体を毎回再読しない。
+
+主なhandoffは`CREATE_JSON2`、`GENERATE_QA_AND_UPLOAD_COVER`、`SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE`、`SEND_PARTIAL_EMAIL_KEEP_STATE`、`NONE`である。stage specのSHA256をhandoffへ記録し、どの仕様で作業したかを再現可能にする。handoffは秘密値や画像・音声バイナリを含めない。
+
+Workの段階別仕様は`ver3/spec/`、定型メールは`ver3/templates/`、機械的な方針は`ver3/config/`へ置く。JSON2の意味監査はWorkから外部化しない一方、HTML・音声・Notion・R2の変換と照合はActionsへ置く。
+
+## 音声実装の責任分割
+
+- `ver3/scripts/audio/sources/pockettorah.py`：第一正本音源、語位置ラベル、節別r1切出し
+- `ver3/scripts/audio/sources/open_bible.py`：承認済み第二正本の取得と音声hash照合
+- `ver3/scripts/audio/sources/openai_tts.py`：最終代替のAPI呼出しだけ
+- `ver3/scripts/audio/policy.py`：優先順位、対象failure code、source metadata gate
+- `ver3/scripts/audio/processing.py`：全音源共通のduration、音量、atempo、r2生成
+- `ver3/scripts/audio/manifest.py`：manifestとauditの原子的checkpoint
+- `ver3/scripts/audio/resolver.py`：優先順位の実行とPARTIAL継続
+- `ver3/scripts/verify_audio.py`：音源実装から独立した最終機械検査
+
+`build_audio.py`と`build_ai_audio.py`は既存RUNとの互換入口として残し、本番runnerは一次音源後の代替処理に`resolve_audio.py`を使う。runnerやdeliveryは音源固有の取得処理を持たない。
+
 ## 二段階の受け渡し
 
 1. ChatGPTが当日NNN・標準年周期アリヤーのWLC範囲を確定し、`ver3/request.json`をコミットする。run_idは`036-20260907-r1`のような一意値。既存RUNを再利用する時は内容を変えない。
@@ -92,7 +113,7 @@ JSON2をGitHubへ渡す前に、ChatGPTは全節を横断して次を自ら完�
 
 `ver3/config/audio-fallback.json`を本番の常設フォールバック方針とする。PocketTorahの監査で物理欠損と分類された節だけを対象に、次の順で処理する。境界推定、語数対応、異常な速度等の未解決問題を物理欠損と読み替えて代替音声で隠してはならない。
 
-1. 当該OSIS ref、当該RUNの朗読本文hashと語数、音声ファイルhash、節単位音源、ライセンス、帰属先を事前確認してallow-listへ登録したOpen.Bible音源を第二正本として使う。ライブ検索結果や未確認URLを自動採用しない。
+1. 当該OSIS ref、当該RUNの朗読本文hashと語数、音声ファイルhash、節単位音源、ライセンス、帰属先を事前確認して`ver3/config/open-bible-sources.json`のallow-listへ登録したOpen.Bible音源を第二正本として使う。ライブ検索結果や未確認URLを自動採用しない。
 2. 登録済みの正確なOpen.Bible音源がない場合だけ、常設方針で承認されたOpenAI TTSを最終代替として使う。入力は当該RUNの`audio-input.json`にあるJSON1/JSON1.1由来の朗読対象token列から機械的に作り、自由入力のヘブライ語を受け付けない。ケティーブ・ケレー併存時は朗読対象のケレーだけを用いる。
 
 フォールバックは複数欠落節を処理でき、各節ごとに第一正本の失敗code・原文message、Open.Bible登録判定、選択音源、token_id、入力本文hash、モデル・voice・API request ID、r1/r2、duration・音量・実測速度を`ai-audio-audit.json`と`audio_manifest.json`へ記録する。Open.Bibleの実行時取得不能だけはOpenAI TTSへ進めるが、登録情報・本文hash・音源hash・ライセンスの不一致は整合性障害としてPARTIALに残す。フォールバック自体が失敗しても本文・HTML・cover・他節音声の配信を止めず、欠落節だけを未実装として同じNotionページを作る。後の再実行では同じrun_id・page_idへ欠落音声だけを挿入し、JSON3の実音声ブロック数・media_status・delivery auditが一致した場合に限ってPASSとする。

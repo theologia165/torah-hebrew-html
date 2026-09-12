@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-import json,subprocess,sys
+import json,sys
 from pathlib import Path
-TARGET_WPS=0.79306; MAX_DURATION_ERROR=0.090; MAX_WPS_ERROR=0.020
+
+from audio.processing import TARGET_WPS, duration
+
+MAX_DURATION_ERROR=0.090; MAX_WPS_ERROR=0.020
 def fail(msg):print(f'FAIL: {msg}',file=sys.stderr);raise SystemExit(1)
 def probe(path):
-    p=subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nokey=1:noprint_wrappers=1',str(path)],text=True,capture_output=True)
-    if p.returncode!=0:fail(f'ffprobe failed for {path}: {p.stderr}')
-    return float(p.stdout.strip())
+    try:return duration(path)
+    except Exception as error:fail(f'ffprobe failed for {path}: {error}')
 def main():
     if len(sys.argv)!=2:fail('usage: verify_audio.py <audio-output-dir>')
     out=Path(sys.argv[1]); mp=out/'audio_manifest.json'

@@ -2,6 +2,8 @@
 import json, os, subprocess, sys
 from pathlib import Path
 from prepare import validate_request
+from handoff import (no_action, pipeline_failure, ready_for_email,
+                     waiting_for_cover, waiting_for_json2, write_handoff)
 
 def cmd(*args): subprocess.run(args,check=True)
 def commit_run(run,message):
@@ -57,6 +59,7 @@ def main():
     request=Path('ver3/request.json'); r=json.loads(request.read_text()); validate_request(r)
     assert r['mode'] in ('prepare','publish','acceptance')
     run=Path('ver3/runs')/r['run_id']; run.mkdir(parents=True,exist_ok=True)
+    last_successful_stage='REQUEST_VALIDATED'
     state_path=run/'delivery.json'
     completed_delivery=False
     if state_path.exists() and json.loads(state_path.read_text()).get('status')=='PASS':
@@ -78,15 +81,19 @@ def main():
         if restyle_request.exists() and not restyle_done.exists():
             cmd(sys.executable,'ver3/scripts/restyle_research.py',str(run))
             restyle_done.write_text(json.dumps({'status':'PASS','operation':'DISPLAY_ONLY_RESTYLE'})+'\\n')
+            no_action(run)
             commit_run(run,'Restyle research callouts on existing Notion page')
             print('PASS: display-only research restyle completed')
             return
         # Completed pages can include user-approved edits. Never replay the old JSON3.
         cmd(sys.executable,'ver3/scripts/test_contracts.py',str(run))
+        no_action(run)
+        commit_run(run,'Record completed Ver.3 Work handoff')
         print('SKIP_COMPLETED_DELIVERY: contract tests passed; existing Notion page unchanged')
         return
     try:
         cmd(sys.executable,'ver3/scripts/prepare.py',str(request))
+        last_successful_stage='JSON1_JSON1_1_EXPORTED'
         commit_run(run,'Export Neon JSON1 and ChatGPT JSON1.1')
         if r['mode']=='acceptance':
             cmd(sys.executable,'ver3/scripts/test_contracts.py',str(run))
@@ -99,11 +106,16 @@ def main():
             cmd(sys.executable,'ver3/scripts/verify_audio.py','/tmp/ver3-audio')
             manifest=json.loads(Path('/tmp/ver3-audio/audio_manifest.json').read_text())
             (run/'audio-acceptance.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+            write_handoff(run,phase='ACCEPTANCE',status='PASS',next_action='NONE',
+                stage_spec='ver3/spec/work-entry.md',required_inputs=(run/'audio-acceptance.json',),
+                details={'reason':'Acceptance mode never publishes Notion or Gmail.'})
             print('PASS: acceptance only; no Notion page or email created')
             return
         if not (run/'json2.json').exists():
+            waiting_for_json2(run)
             print('WAITING_FOR_JSON2: ChatGPT must read '+str(run/'json1.1.json')); return
         cmd(sys.executable,'ver3/scripts/compose.py',str(run))
+        last_successful_stage='JSON2_COMPOSED'
         audio=run/'audio'
         if not (audio/'audio_manifest.json').exists():
             cmd(sys.executable,'ver3/scripts/build_audio.py',str(run/'audio-input.json'),str(audio))
@@ -115,7 +127,7 @@ def main():
             # fully audited, but must not suppress delivery of valid text,
             # HTML, cover, or the other verse recordings.
             fallback=subprocess.run(
-                [sys.executable,'ver3/scripts/build_ai_audio.py',str(run)],
+                [sys.executable,'ver3/scripts/resolve_audio.py',str(run)],
                 text=True,capture_output=True)
             if fallback.stdout: print(fallback.stdout,end='')
             if fallback.stderr: print(fallback.stderr,end='',file=sys.stderr)
@@ -134,6 +146,7 @@ def main():
                     json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
                 print('PARTIAL: fallback pipeline failed; continuing media delivery')
         cmd(sys.executable,'ver3/scripts/verify_audio.py',str(audio))
+        last_successful_stage='AUDIO_VERIFIED_FOR_IMPLEMENTED_REFS'
         commit_run(run,'Build verified Ver.3 HTML and per-verse audio')
         if r['mode']=='publish':
             # Work receives only this short-lived presigned URL; it uploads no image binary to GitHub.
@@ -142,11 +155,19 @@ def main():
             cover_ready=run/'cover-ready.json'
             if not cover_ready.exists() and not ticket_is_current(cover_ticket):
                 ticket(r['run_id'],cover_ticket)
+                waiting_for_cover(run,'ISSUED_CURRENT')
                 commit_run(run,'Issue short-lived R2 cover upload ticket')
                 print('WAITING_FOR_R2_COVER_UPLOAD: Work must PUT the QA-passed JPEG and commit cover-ready.json'); return
             if not cover_ready.exists():
+                waiting_for_cover(run,'CURRENT')
                 print('WAITING_FOR_R2_COVER_READY: R2 upload completed but Work has not committed readiness'); return
             cmd(sys.executable,'ver3/scripts/deliver.py',str(run))
+            last_successful_stage='NOTION_DELIVERY_AUDITED'
+            delivery=json.loads(state_path.read_text(encoding='utf-8'))
+            ready_for_email(run,delivery)
+    except Exception as error:
+        pipeline_failure(run,error,last_successful_stage)
+        raise
     finally:
         commit_run(run,'Record Ver.3 handoff and delivery audit')
 

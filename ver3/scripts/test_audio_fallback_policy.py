@@ -10,15 +10,21 @@ import tempfile
 from pathlib import Path
 from unittest.mock import patch
 
-import build_ai_audio as fallback
-from build_ai_audio import (choose_fallback, classify_failure, spoken_text,
-                            validate_policy)
+import build_ai_audio as legacy_fallback
+from audio import resolver as fallback
+from audio.policy import (choose_fallback, classify_failure, load_policy,
+                          validate_open_bible_entry)
+from audio.processing import make_audio_record
+from audio.sources import open_bible as open_bible_source
+from audio.sources import openai_tts as openai_source
+from audio.sources.open_bible import fetch_open_bible
+from audio.text import spoken_text
 
 
 def main():
     root = Path(__file__).resolve().parents[1]
-    policy = validate_policy(json.loads(
-        (root / 'config' / 'audio-fallback.json').read_text(encoding='utf-8')))
+    policy = load_policy(root / 'config' / 'audio-fallback.json')
+    assert legacy_fallback.choose_fallback is choose_fallback
     verse = {'words': [
         {'id': 101, 'surface': 'וַיֹּאמֶר'},
         {'id': 102, 'surface': 'אֵלָיו'},
@@ -101,7 +107,7 @@ def main():
         env = dict(os.environ)
         env.pop('OPENAI_API_KEY', None)
         result = subprocess.run(
-            [sys.executable, str(root / 'scripts' / 'build_ai_audio.py'), str(run)],
+            [sys.executable, str(root / 'scripts' / 'resolve_audio.py'), str(run)],
             text=True, capture_output=True, env=env)
         assert result.returncode == 0, result.stderr
         audited = json.loads((run / 'ai-audio-audit.json').read_text(encoding='utf-8'))
@@ -159,13 +165,11 @@ def main():
 
         prior_key = os.environ.get('OPENAI_API_KEY')
         os.environ['OPENAI_API_KEY'] = 'test-key-never-sent'
-        prior_argv = sys.argv
-        sys.argv = ['build_ai_audio.py', str(run)]
         try:
-            with patch.object(fallback.requests, 'post', return_value=FakeResponse()):
-                fallback.main()
+            with patch.object(
+                    openai_source.requests, 'post', return_value=FakeResponse()):
+                fallback.resolve(run)
         finally:
-            sys.argv = prior_argv
             if prior_key is None:
                 os.environ.pop('OPENAI_API_KEY', None)
             else:
@@ -195,13 +199,14 @@ def main():
             'attribution_url': 'https://open.bible/bibles',
             'verified_on': '2026-09-12',
         }
-        fallback.validate_open_bible_entry(
+        validate_open_bible_entry(
             'Gen.28.4', open_entry, policy,
             open_entry['spoken_text_sha256'], 2)
-        with patch.object(fallback.requests, 'get', return_value=FakeResponse()):
-            open_r1, open_r2, source_meta = fallback.fetch_open_bible(
+        with patch.object(
+                open_bible_source.requests, 'get', return_value=FakeResponse()):
+            open_r1, open_r2, source_meta = fetch_open_bible(
                 'Gen.28.4', open_entry, audio, '998_4_fixture')
-        open_record = fallback.make_audio_record(
+        open_record = make_audio_record(
             'Gen.28.4', verse, open_r1, open_r2, 'OPEN_BIBLE',
             source_meta=source_meta)
         assert open_record['audio_origin'] == 'OPEN_BIBLE'
