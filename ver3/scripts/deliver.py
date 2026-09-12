@@ -122,6 +122,14 @@ def verify(expected,actual,token):
 
 UPLOAD_HTML={}
 
+def assert_audio_audit(payload, expected_count):
+    """Keep delivery counters tied to the media blocks actually in JSON3."""
+    actual=sum(1 for b in payload['children'] if b['type']=='audio')
+    declared=payload.get('media_status',{}).get('audio_implemented_count',actual)
+    assert actual==declared==expected_count, (
+        f'JSON3 audio audit mismatch: blocks={actual} declared={declared} expected={expected_count}')
+    return actual
+
 def main():
     run=Path(sys.argv[1]); token=os.environ['NOTION_TOKEN']; parent=os.environ['NOTION_PARENT_PAGE_ID']
     j=json.loads((run/'json1.json').read_text()); c=json.loads((run/'json2.json').read_text()); validate(j,c)
@@ -130,7 +138,19 @@ def main():
     state=json.loads(state_path.read_text()) if state_path.exists() else {'status':'PENDING','run_id':req['run_id']}
     def checkpoint(): state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n')
     if state.get('status')=='PASS':
-        print('SKIP_COMPLETED_DELIVERY: existing page preserved'); return
+        # A delivery PASS is reusable only when the stored JSON3 itself has
+        # exactly the number of audio blocks recorded in delivery.json.  This
+        # prevents a stale partial JSON3 from turning an audio-manifest PASS
+        # into a false delivery PASS on retry.
+        prior_payload=json.loads((run/'json3.json').read_text())
+        actual_audio=sum(1 for b in prior_payload['children'] if b['type']=='audio')
+        declared_audio=prior_payload.get('media_status',{}).get('audio_implemented_count',actual_audio)
+        audited_audio=state.get('AUDIO_IMPLEMENTED_COUNT',actual_audio)
+        if actual_audio==declared_audio==audited_audio:
+            print('SKIP_COMPLETED_DELIVERY: existing page preserved'); return
+        print(f'REPAIR_FALSE_PASS: JSON3 audio blocks={actual_audio} media_status={declared_audio} delivery={audited_audio}')
+        state.update(status='PARTIAL',operation='REPAIR_FALSE_PASS_AUDIO_AUDIT')
+        checkpoint()
     if state.get('page_id'):
         prior_payload=json.loads((run/'json3.json').read_text())
         assert all('url' in b['embed'] and b['embed']['url'].startswith('https://theologia165.github.io/torah-hebrew-html/ver3-public/')
@@ -165,6 +185,7 @@ def main():
           'missing_html_refs':[],'pages_status':'PASS',
           'ai_generated_audio_refs':[ref for ref,v in audio_meta_by_ref.items() if v.get('audio_origin')=='OPENAI_TTS']}
         payload=json3(j,c,routes,audio_by_ref,media_status,audio_meta_by_ref)
+        assert_audio_audit(payload,len(audio_by_ref))
         if req.get('update_page_id'):
             # Explicit update: preserve the page and all non-media blocks.
             page_id=req['update_page_id']
@@ -201,7 +222,7 @@ def main():
             return
         # A PARTIAL page may receive only newly repaired media.  Insert the
         # missing top-level block(s) in place, then verify the full new JSON3.
-        if state.get('page_id') and state.get('status')=='PARTIAL':
+        if state.get('page_id') and json.loads((run/'json3.json').read_text())['children']!=payload['children']:
             prior=json.loads((run/'json3.json').read_text())
             got=children(state['page_id'],token)
             verify(prior['children'],got,token)
@@ -227,6 +248,7 @@ def main():
             if inserted.status_code>=300:
                 raise RuntimeError(f'Notion positional audio repair: {inserted.status_code} {inserted.text[:600]}')
             verify(new,children(state['page_id'],token),token)
+            assert_audio_audit(payload,len(audio_by_ref))
             save(run/'json3.json',payload)
             delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
             state.pop('error',None)
@@ -270,6 +292,7 @@ def main():
             request_json('PATCH',f'/blocks/{page_id}/children',token,json={'children':creation_blocks(chunk,uid)})
             finalize_frames(payload['children'],children(page_id,token),token)
         verify(payload['children'],children(page_id,token),token)
+        assert_audio_audit(payload,len(audio_by_ref))
         delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
         state.update(status=delivery_status,verse_count=len(j['verses']),json3_sha256=digest(payload),
           NOTION_PAGE_CREATED=True,TEXT_DELIVERED=True,HTML_IMPLEMENTED_COUNT=len(routes),AUDIO_IMPLEMENTED_COUNT=len(audio_by_ref),
