@@ -1,0 +1,3580 @@
+{
+  "schema_version": "3.0-json1.1",
+  "run_id": "042-20260912-r1",
+  "request": {
+    "schema_version": "3.0-request",
+    "run_id": "042-20260912-r1",
+    "sequence": "042",
+    "mode": "publish",
+    "source": "morphhb-wlc",
+    "book": "Gen",
+    "book_jp": "創世記",
+    "refs": [
+      "Gen.28.5",
+      "Gen.28.6",
+      "Gen.28.7",
+      "Gen.28.8",
+      "Gen.28.9"
+    ],
+    "passage": {
+      "parasha": "Toledot",
+      "parasha_jp": "トルドット",
+      "aliyah": 7,
+      "book": "Genesis",
+      "chapter": 28,
+      "end_chapter": 28,
+      "start_verse": 5,
+      "end_verse": 9,
+      "display": "トルドット｜第7アリヤー｜創世記28:5–9"
+    }
+  },
+  "json1_sha256": "7ccd2581b94e79104b51b3b0490d41bb8b94cc8c249a29aa60feed67cb5f3ee2",
+  "source": {
+    "code": "morphhb-wlc",
+    "source_version": "3d15126fb1ef74867fc1434be1942e837932691f",
+    "license": "CC BY 4.0",
+    "morphhb_commit": "3d15126fb1ef74867fc1434be1942e837932691f"
+  },
+  "verses": [
+    {
+      "ref": "Gen.28.5",
+      "hebrew": "וַיִּשְׁלַ֤ח יִצְחָק֙ אֶֽת־יַעֲקֹ֔ב וַיֵּ֖לֶךְ פַּדֶּ֣נָֽה אֲרָ֑ם אֶל־לָבָ֤ן בֶּן־בְּתוּאֵל֙ הָֽאֲרַמִּ֔י אֲחִ֣י רִבְקָ֔ה אֵ֥ם יַעֲקֹ֖ב וְעֵשָֽׂו׃",
+      "textual_notes": [],
+      "mapped_refs": [
+        {
+          "system": "KJV",
+          "ref": "Gen.28.5",
+          "relation": "equivalent"
+        }
+      ],
+      "tokens": [
+        {
+          "token_id": 8169,
+          "token_index": 1,
+          "surface": "וַיִּשְׁלַ֤ח",
+          "lemma_raw": "c/7971",
+          "morph_raw": "HC/Vqw3ms",
+          "lexeme": {
+            "id": 876,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "שָׁלַח",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "שלח",
+            "language_code": "he",
+            "strong_number": 7971,
+            "source_entry_id": "mvu",
+            "transliteration": "šālaḥ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "7971"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8169,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8169,
+              "morph_code": "Vqw3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "w"
+            }
+          ]
+        },
+        {
+          "token_id": 8170,
+          "token_index": 2,
+          "surface": "יִצְחָק֙",
+          "lemma_raw": "3327",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 246,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יִצְחָק",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "יצחק",
+            "language_code": "he",
+            "strong_number": 3327,
+            "source_entry_id": "fgh",
+            "transliteration": "yiṣḥāq",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3327"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8170,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8171,
+          "token_index": 3,
+          "surface": "אֶֽת",
+          "lemma_raw": "853",
+          "morph_raw": "HTo",
+          "lexeme": {
+            "id": 1117,
+            "metadata": {},
+            "pos_code": "T",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֵת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "את",
+            "language_code": "he",
+            "strong_number": 853,
+            "source_entry_id": "bhu",
+            "transliteration": "ʾēt",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "853"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "T",
+              "token_id": 8171,
+              "morph_code": "HTo",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "o",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8172,
+          "token_index": 4,
+          "surface": "יַעֲקֹ֔ב",
+          "lemma_raw": "3290",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1628,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יַעֲקֹב",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "יעקב",
+            "language_code": "he",
+            "strong_number": 3290,
+            "source_entry_id": "feu",
+            "transliteration": "yaʿăqōb",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3290"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8172,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8173,
+          "token_index": 5,
+          "surface": "וַיֵּ֖לֶךְ",
+          "lemma_raw": "c/3212",
+          "morph_raw": "HC/Vqw3ms",
+          "lexeme": {
+            "id": 341,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יָלַךְ",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "ילך",
+            "language_code": "he",
+            "strong_number": 3212,
+            "source_entry_id": "fbo",
+            "transliteration": "yālak",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3212"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8173,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8173,
+              "morph_code": "Vqw3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "w"
+            }
+          ]
+        },
+        {
+          "token_id": 8174,
+          "token_index": 6,
+          "surface": "פַּדֶּ֣נָֽה",
+          "lemma_raw": "6307+",
+          "morph_raw": "HNp/Sd",
+          "lexeme": {
+            "id": 957,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "פַּדָּן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "פדן",
+            "language_code": "he",
+            "strong_number": 6307,
+            "source_entry_id": "kbh",
+            "transliteration": "paddān",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6307"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8174,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8174,
+              "morph_code": "Sd",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "d",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8175,
+          "token_index": 7,
+          "surface": "אֲרָ֑ם",
+          "lemma_raw": "6307",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 957,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "פַּדָּן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "פדן",
+            "language_code": "he",
+            "strong_number": 6307,
+            "source_entry_id": "kbh",
+            "transliteration": "paddān",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6307"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8175,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8176,
+          "token_index": 8,
+          "surface": "אֶל",
+          "lemma_raw": "413",
+          "morph_raw": "HR",
+          "lexeme": {
+            "id": 1683,
+            "metadata": {},
+            "pos_code": "R",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֶל",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אל",
+            "language_code": "he",
+            "strong_number": 413,
+            "source_entry_id": "aqs",
+            "transliteration": "ʾel",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "413"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "R",
+              "token_id": 8176,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8177,
+          "token_index": 9,
+          "surface": "לָבָ֤ן",
+          "lemma_raw": "3837 a",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1315,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "לָבָן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "לבן",
+            "language_code": "he",
+            "strong_number": 3837,
+            "source_entry_id": "gcf",
+            "transliteration": "lābān",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3837a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8177,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8178,
+          "token_index": 10,
+          "surface": "בֶּן",
+          "lemma_raw": "1121 a",
+          "morph_raw": "HNcmsc",
+          "lexeme": {
+            "id": 605,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "בֵּן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "בן",
+            "language_code": "he",
+            "strong_number": 1121,
+            "source_entry_id": "bss",
+            "transliteration": "bēn",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "1121a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8178,
+              "morph_code": "HNcmsc",
+              "state_code": "c",
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8179,
+          "token_index": 11,
+          "surface": "בְּתוּאֵל֙",
+          "lemma_raw": "1328 a",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1243,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "בְּתוּאֵל",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "בתואל",
+            "language_code": "he",
+            "strong_number": 1328,
+            "source_entry_id": "caz",
+            "transliteration": "bĕtûʾēl",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "1328a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8179,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8180,
+          "token_index": 12,
+          "surface": "הָֽאֲרַמִּ֔י",
+          "lemma_raw": "d/761",
+          "morph_raw": "HTd/Ngmsa",
+          "lexeme": {
+            "id": 474,
+            "metadata": {},
+            "pos_code": "Ag",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֲרַמִּי",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "ארמי",
+            "language_code": "he",
+            "strong_number": 761,
+            "source_entry_id": "beb",
+            "transliteration": "ʾărammî",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "761"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "T",
+              "token_id": 8180,
+              "morph_code": "HTd",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "d",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8180,
+              "morph_code": "Ngmsa",
+              "state_code": "a",
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "g",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8181,
+          "token_index": 13,
+          "surface": "אֲחִ֣י",
+          "lemma_raw": "251",
+          "morph_raw": "HNcmsc",
+          "lexeme": {
+            "id": 184,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אָח",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אח",
+            "language_code": "he",
+            "strong_number": 251,
+            "source_entry_id": "akn",
+            "transliteration": "ʾāḥ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "251"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8181,
+              "morph_code": "HNcmsc",
+              "state_code": "c",
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8182,
+          "token_index": 14,
+          "surface": "רִבְקָ֔ה",
+          "lemma_raw": "7259",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1454,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "רִבְקָה",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "רבקה",
+            "language_code": "he",
+            "strong_number": 7259,
+            "source_entry_id": "lrl",
+            "transliteration": "ribqâ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "7259"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8182,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8183,
+          "token_index": 15,
+          "surface": "אֵ֥ם",
+          "lemma_raw": "517",
+          "morph_raw": "HNcfsc",
+          "lexeme": {
+            "id": 1203,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֵם",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אם",
+            "language_code": "he",
+            "strong_number": 517,
+            "source_entry_id": "auw",
+            "transliteration": "ʾēm",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "517"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8183,
+              "morph_code": "HNcfsc",
+              "state_code": "c",
+              "gender_code": "f",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8184,
+          "token_index": 16,
+          "surface": "יַעֲקֹ֖ב",
+          "lemma_raw": "3290",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1628,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יַעֲקֹב",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "יעקב",
+            "language_code": "he",
+            "strong_number": 3290,
+            "source_entry_id": "feu",
+            "transliteration": "yaʿăqōb",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3290"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8184,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8185,
+          "token_index": 17,
+          "surface": "וְעֵשָֽׂו",
+          "lemma_raw": "c/6215",
+          "morph_raw": "HC/Np",
+          "lexeme": {
+            "id": 1621,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "עֵשָׂו",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "עשו",
+            "language_code": "he",
+            "strong_number": 6215,
+            "source_entry_id": "jxm",
+            "transliteration": "ʿēśāw",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6215"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8185,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8185,
+              "morph_code": "Np",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Gen.28.6",
+      "hebrew": "וַיַּ֣רְא עֵשָׂ֗ו כִּֽי־בֵרַ֣ךְ יִצְחָק֮ אֶֽת־יַעֲקֹב֒ וְשִׁלַּ֤ח אֹתוֹ֙ פַּדֶּ֣נָֽה אֲרָ֔ם לָקַֽחַת־ל֥וֹ מִשָּׁ֖ם אִשָּׁ֑ה בְּבָרֲכ֣וֹ אֹת֔וֹ וַיְצַ֤ו עָלָיו֙ לֵאמֹ֔ר לֹֽא־תִקַּ֥ח אִשָּׁ֖ה מִבְּנ֥וֹת כְּנָֽעַן׃",
+      "textual_notes": [],
+      "mapped_refs": [
+        {
+          "system": "KJV",
+          "ref": "Gen.28.6",
+          "relation": "equivalent"
+        }
+      ],
+      "tokens": [
+        {
+          "token_id": 8186,
+          "token_index": 1,
+          "surface": "וַיַּ֣רְא",
+          "lemma_raw": "c/7200",
+          "morph_raw": "HC/Vqw3ms",
+          "lexeme": {
+            "id": 1020,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "רָאָה",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "ראה",
+            "language_code": "he",
+            "strong_number": 7200,
+            "source_entry_id": "lpd",
+            "transliteration": "rāʾâ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "7200"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8186,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8186,
+              "morph_code": "Vqw3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "w"
+            }
+          ]
+        },
+        {
+          "token_id": 8187,
+          "token_index": 2,
+          "surface": "עֵשָׂ֗ו",
+          "lemma_raw": "6215",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1621,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "עֵשָׂו",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "עשו",
+            "language_code": "he",
+            "strong_number": 6215,
+            "source_entry_id": "jxm",
+            "transliteration": "ʿēśāw",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6215"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8187,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8188,
+          "token_index": 3,
+          "surface": "כִּֽי",
+          "lemma_raw": "3588 a",
+          "morph_raw": "HC",
+          "lexeme": {
+            "id": 332,
+            "metadata": {},
+            "pos_code": "C",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "כִּי",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "כי",
+            "language_code": "he",
+            "strong_number": 3588,
+            "source_entry_id": "frf",
+            "transliteration": "kî",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3588a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "C",
+              "token_id": 8188,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8189,
+          "token_index": 4,
+          "surface": "בֵרַ֣ךְ",
+          "lemma_raw": "1288",
+          "morph_raw": "HVpp3ms",
+          "lexeme": {
+            "id": 1684,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "בָּרַךְ",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "ברך",
+            "language_code": "he",
+            "strong_number": 1288,
+            "source_entry_id": "bzi",
+            "transliteration": "bārak",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "1288"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8189,
+              "morph_code": "HVpp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": "p",
+              "verb_conjugation_code": "p"
+            }
+          ]
+        },
+        {
+          "token_id": 8190,
+          "token_index": 5,
+          "surface": "יִצְחָק֮",
+          "lemma_raw": "3327",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 246,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יִצְחָק",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "יצחק",
+            "language_code": "he",
+            "strong_number": 3327,
+            "source_entry_id": "fgh",
+            "transliteration": "yiṣḥāq",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3327"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8190,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8191,
+          "token_index": 6,
+          "surface": "אֶֽת",
+          "lemma_raw": "853",
+          "morph_raw": "HTo",
+          "lexeme": {
+            "id": 1117,
+            "metadata": {},
+            "pos_code": "T",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֵת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "את",
+            "language_code": "he",
+            "strong_number": 853,
+            "source_entry_id": "bhu",
+            "transliteration": "ʾēt",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "853"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "T",
+              "token_id": 8191,
+              "morph_code": "HTo",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "o",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8192,
+          "token_index": 7,
+          "surface": "יַעֲקֹב֒",
+          "lemma_raw": "3290",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1628,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יַעֲקֹב",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "יעקב",
+            "language_code": "he",
+            "strong_number": 3290,
+            "source_entry_id": "feu",
+            "transliteration": "yaʿăqōb",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3290"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8192,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8193,
+          "token_index": 8,
+          "surface": "וְשִׁלַּ֤ח",
+          "lemma_raw": "c/7971",
+          "morph_raw": "HC/Vpp3ms",
+          "lexeme": {
+            "id": 876,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "שָׁלַח",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "שלח",
+            "language_code": "he",
+            "strong_number": 7971,
+            "source_entry_id": "mvu",
+            "transliteration": "šālaḥ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "7971"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8193,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8193,
+              "morph_code": "Vpp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "p",
+              "verb_conjugation_code": "p"
+            }
+          ]
+        },
+        {
+          "token_id": 8194,
+          "token_index": 9,
+          "surface": "אֹתוֹ֙",
+          "lemma_raw": "853",
+          "morph_raw": "HTo/Sp3ms",
+          "lexeme": {
+            "id": 1117,
+            "metadata": {},
+            "pos_code": "T",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֵת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "את",
+            "language_code": "he",
+            "strong_number": 853,
+            "source_entry_id": "bhu",
+            "transliteration": "ʾēt",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "853"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "T",
+              "token_id": 8194,
+              "morph_code": "HTo",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "o",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8194,
+              "morph_code": "Sp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8195,
+          "token_index": 10,
+          "surface": "פַּדֶּ֣נָֽה",
+          "lemma_raw": "6307+",
+          "morph_raw": "HNp/Sd",
+          "lexeme": {
+            "id": 957,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "פַּדָּן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "פדן",
+            "language_code": "he",
+            "strong_number": 6307,
+            "source_entry_id": "kbh",
+            "transliteration": "paddān",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6307"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8195,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8195,
+              "morph_code": "Sd",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "d",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8196,
+          "token_index": 11,
+          "surface": "אֲרָ֔ם",
+          "lemma_raw": "6307",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 957,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "פַּדָּן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "פדן",
+            "language_code": "he",
+            "strong_number": 6307,
+            "source_entry_id": "kbh",
+            "transliteration": "paddān",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6307"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8196,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8197,
+          "token_index": 12,
+          "surface": "לָקַֽחַת",
+          "lemma_raw": "l/3947",
+          "morph_raw": "HR/Vqc",
+          "lexeme": {
+            "id": 1221,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "לָקַח",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "לקח",
+            "language_code": "he",
+            "strong_number": 3947,
+            "source_entry_id": "ggz",
+            "transliteration": "lāqaḥ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3947"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "R",
+              "token_id": 8197,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8197,
+              "morph_code": "Vqc",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "c"
+            }
+          ]
+        },
+        {
+          "token_id": 8198,
+          "token_index": 13,
+          "surface": "ל֥וֹ",
+          "lemma_raw": "l",
+          "morph_raw": "HR/Sp3ms",
+          "lexeme": null,
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "R",
+              "token_id": 8198,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8198,
+              "morph_code": "Sp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8199,
+          "token_index": 14,
+          "surface": "מִשָּׁ֖ם",
+          "lemma_raw": "m/8033",
+          "morph_raw": "HR/D",
+          "lexeme": {
+            "id": 338,
+            "metadata": {},
+            "pos_code": "D",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "שָׁם",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "שם",
+            "language_code": "he",
+            "strong_number": 8033,
+            "source_entry_id": "myh",
+            "transliteration": "šām",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "8033"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "R",
+              "token_id": 8199,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "D",
+              "token_id": 8199,
+              "morph_code": "D",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8200,
+          "token_index": 15,
+          "surface": "אִשָּׁ֑ה",
+          "lemma_raw": "802",
+          "morph_raw": "HNcfsa",
+          "lexeme": {
+            "id": 1092,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אִשָּׁה",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אשה",
+            "language_code": "he",
+            "strong_number": 802,
+            "source_entry_id": "bfn",
+            "transliteration": "ʾiššâ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "802"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8200,
+              "morph_code": "HNcfsa",
+              "state_code": "a",
+              "gender_code": "f",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8201,
+          "token_index": 16,
+          "surface": "בְּבָרֲכ֣וֹ",
+          "lemma_raw": "b/1288",
+          "morph_raw": "HR/Vpc/Sp3ms",
+          "lexeme": {
+            "id": 1684,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "בָּרַךְ",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "ברך",
+            "language_code": "he",
+            "strong_number": 1288,
+            "source_entry_id": "bzi",
+            "transliteration": "bārak",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "1288"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "R",
+              "token_id": 8201,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8201,
+              "morph_code": "Vpc",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "p",
+              "verb_conjugation_code": "c"
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8201,
+              "morph_code": "Sp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 3,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8202,
+          "token_index": 17,
+          "surface": "אֹת֔וֹ",
+          "lemma_raw": "853",
+          "morph_raw": "HTo/Sp3ms",
+          "lexeme": {
+            "id": 1117,
+            "metadata": {},
+            "pos_code": "T",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֵת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "את",
+            "language_code": "he",
+            "strong_number": 853,
+            "source_entry_id": "bhu",
+            "transliteration": "ʾēt",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "853"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "T",
+              "token_id": 8202,
+              "morph_code": "HTo",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "o",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8202,
+              "morph_code": "Sp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8203,
+          "token_index": 18,
+          "surface": "וַיְצַ֤ו",
+          "lemma_raw": "c/6680",
+          "morph_raw": "HC/Vpw3ms",
+          "lexeme": {
+            "id": 1214,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "צָוָה",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "צוה",
+            "language_code": "he",
+            "strong_number": 6680,
+            "source_entry_id": "krd",
+            "transliteration": "ṣāwâ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6680"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8203,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8203,
+              "morph_code": "Vpw3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "p",
+              "verb_conjugation_code": "w"
+            }
+          ]
+        },
+        {
+          "token_id": 8204,
+          "token_index": 19,
+          "surface": "עָלָיו֙",
+          "lemma_raw": "5921 a",
+          "morph_raw": "HR/Sp3ms",
+          "lexeme": {
+            "id": 812,
+            "metadata": {},
+            "pos_code": "R",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "עַל",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "על",
+            "language_code": "arc",
+            "strong_number": 5921,
+            "source_entry_id": "jkq",
+            "transliteration": "ʿal",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "5921a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "R",
+              "token_id": 8204,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8204,
+              "morph_code": "Sp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8205,
+          "token_index": 20,
+          "surface": "לֵאמֹ֔ר",
+          "lemma_raw": "l/559",
+          "morph_raw": "HR/Vqc",
+          "lexeme": {
+            "id": 1666,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אָמַר",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אמר",
+            "language_code": "he",
+            "strong_number": 559,
+            "source_entry_id": "awn",
+            "transliteration": "ʾāmar",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "559"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "R",
+              "token_id": 8205,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8205,
+              "morph_code": "Vqc",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "c"
+            }
+          ]
+        },
+        {
+          "token_id": 8206,
+          "token_index": 21,
+          "surface": "לֹֽא",
+          "lemma_raw": "3808",
+          "morph_raw": "HTn",
+          "lexeme": {
+            "id": 1157,
+            "metadata": {},
+            "pos_code": "D",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "לֹא",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "לא",
+            "language_code": "he",
+            "strong_number": 3808,
+            "source_entry_id": "gav",
+            "transliteration": "lōʾ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3808"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "T",
+              "token_id": 8206,
+              "morph_code": "HTn",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "n",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8207,
+          "token_index": 22,
+          "surface": "תִקַּ֥ח",
+          "lemma_raw": "3947",
+          "morph_raw": "HVqi2ms",
+          "lexeme": {
+            "id": 1221,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "לָקַח",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "לקח",
+            "language_code": "he",
+            "strong_number": 3947,
+            "source_entry_id": "ggz",
+            "transliteration": "lāqaḥ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3947"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8207,
+              "morph_code": "HVqi2ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "2",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "i"
+            }
+          ]
+        },
+        {
+          "token_id": 8208,
+          "token_index": 23,
+          "surface": "אִשָּׁ֖ה",
+          "lemma_raw": "802",
+          "morph_raw": "HNcfsa",
+          "lexeme": {
+            "id": 1092,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אִשָּׁה",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אשה",
+            "language_code": "he",
+            "strong_number": 802,
+            "source_entry_id": "bfn",
+            "transliteration": "ʾiššâ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "802"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8208,
+              "morph_code": "HNcfsa",
+              "state_code": "a",
+              "gender_code": "f",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8209,
+          "token_index": 24,
+          "surface": "מִבְּנ֥וֹת",
+          "lemma_raw": "m/1323",
+          "morph_raw": "HR/Ncfpc",
+          "lexeme": {
+            "id": 1301,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "בַּת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "בת",
+            "language_code": "he",
+            "strong_number": 1323,
+            "source_entry_id": "cav",
+            "transliteration": "bat",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "1323"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "R",
+              "token_id": 8209,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8209,
+              "morph_code": "Ncfpc",
+              "state_code": "c",
+              "gender_code": "f",
+              "number_code": "p",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8210,
+          "token_index": 25,
+          "surface": "כְּנָֽעַן",
+          "lemma_raw": "3667 a",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 351,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "כְּנַ֫עַן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "כנען",
+            "language_code": "he",
+            "strong_number": 3667,
+            "source_entry_id": "fuv",
+            "transliteration": "kĕnaʿan",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3667a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8210,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Gen.28.7",
+      "hebrew": "וַיִּשְׁמַ֣ע יַעֲקֹ֔ב אֶל־אָבִ֖יו וְאֶל־אִמּ֑וֹ וַיֵּ֖לֶךְ פַּדֶּ֥נָֽה אֲרָֽם׃",
+      "textual_notes": [],
+      "mapped_refs": [
+        {
+          "system": "KJV",
+          "ref": "Gen.28.7",
+          "relation": "equivalent"
+        }
+      ],
+      "tokens": [
+        {
+          "token_id": 8211,
+          "token_index": 1,
+          "surface": "וַיִּשְׁמַ֣ע",
+          "lemma_raw": "c/8085",
+          "morph_raw": "HC/Vqw3ms",
+          "lexeme": {
+            "id": 1577,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "שָׁמַע",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "שמע",
+            "language_code": "he",
+            "strong_number": 8085,
+            "source_entry_id": "nam",
+            "transliteration": "šāmaʿ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "8085"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8211,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8211,
+              "morph_code": "Vqw3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "w"
+            }
+          ]
+        },
+        {
+          "token_id": 8212,
+          "token_index": 2,
+          "surface": "יַעֲקֹ֔ב",
+          "lemma_raw": "3290",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1628,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יַעֲקֹב",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "יעקב",
+            "language_code": "he",
+            "strong_number": 3290,
+            "source_entry_id": "feu",
+            "transliteration": "yaʿăqōb",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3290"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8212,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8213,
+          "token_index": 3,
+          "surface": "אֶל",
+          "lemma_raw": "413",
+          "morph_raw": "HR",
+          "lexeme": {
+            "id": 1683,
+            "metadata": {},
+            "pos_code": "R",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֶל",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אל",
+            "language_code": "he",
+            "strong_number": 413,
+            "source_entry_id": "aqs",
+            "transliteration": "ʾel",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "413"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "R",
+              "token_id": 8213,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8214,
+          "token_index": 4,
+          "surface": "אָבִ֖יו",
+          "lemma_raw": "1",
+          "morph_raw": "HNcmsc/Sp3ms",
+          "lexeme": {
+            "id": 457,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אָב",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אב",
+            "language_code": "he",
+            "strong_number": 1,
+            "source_entry_id": "aac",
+            "transliteration": "ʾāb",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "1"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8214,
+              "morph_code": "HNcmsc",
+              "state_code": "c",
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8214,
+              "morph_code": "Sp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8215,
+          "token_index": 5,
+          "surface": "וְאֶל",
+          "lemma_raw": "c/413",
+          "morph_raw": "HC/R",
+          "lexeme": {
+            "id": 1683,
+            "metadata": {},
+            "pos_code": "R",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֶל",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אל",
+            "language_code": "he",
+            "strong_number": 413,
+            "source_entry_id": "aqs",
+            "transliteration": "ʾel",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "413"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8215,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "R",
+              "token_id": 8215,
+              "morph_code": "R",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8216,
+          "token_index": 6,
+          "surface": "אִמּ֑וֹ",
+          "lemma_raw": "517",
+          "morph_raw": "HNcfsc/Sp3ms",
+          "lexeme": {
+            "id": 1203,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֵם",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אם",
+            "language_code": "he",
+            "strong_number": 517,
+            "source_entry_id": "auw",
+            "transliteration": "ʾēm",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "517"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8216,
+              "morph_code": "HNcfsc",
+              "state_code": "c",
+              "gender_code": "f",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8216,
+              "morph_code": "Sp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8217,
+          "token_index": 7,
+          "surface": "וַיֵּ֖לֶךְ",
+          "lemma_raw": "c/3212",
+          "morph_raw": "HC/Vqw3ms",
+          "lexeme": {
+            "id": 341,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יָלַךְ",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "ילך",
+            "language_code": "he",
+            "strong_number": 3212,
+            "source_entry_id": "fbo",
+            "transliteration": "yālak",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3212"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8217,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8217,
+              "morph_code": "Vqw3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "w"
+            }
+          ]
+        },
+        {
+          "token_id": 8218,
+          "token_index": 8,
+          "surface": "פַּדֶּ֥נָֽה",
+          "lemma_raw": "6307+",
+          "morph_raw": "HNp/Sd",
+          "lexeme": {
+            "id": 957,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "פַּדָּן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "פדן",
+            "language_code": "he",
+            "strong_number": 6307,
+            "source_entry_id": "kbh",
+            "transliteration": "paddān",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6307"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8218,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8218,
+              "morph_code": "Sd",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "d",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8219,
+          "token_index": 9,
+          "surface": "אֲרָֽם",
+          "lemma_raw": "6307",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 957,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "פַּדָּן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "פדן",
+            "language_code": "he",
+            "strong_number": 6307,
+            "source_entry_id": "kbh",
+            "transliteration": "paddān",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6307"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8219,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Gen.28.8",
+      "hebrew": "וַיַּ֣רְא עֵשָׂ֔ו כִּ֥י רָע֖וֹת בְּנ֣וֹת כְּנָ֑עַן בְּעֵינֵ֖י יִצְחָ֥ק אָבִֽיו׃",
+      "textual_notes": [],
+      "mapped_refs": [
+        {
+          "system": "KJV",
+          "ref": "Gen.28.8",
+          "relation": "equivalent"
+        }
+      ],
+      "tokens": [
+        {
+          "token_id": 8220,
+          "token_index": 1,
+          "surface": "וַיַּ֣רְא",
+          "lemma_raw": "c/7200",
+          "morph_raw": "HC/Vqw3ms",
+          "lexeme": {
+            "id": 1020,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "רָאָה",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "ראה",
+            "language_code": "he",
+            "strong_number": 7200,
+            "source_entry_id": "lpd",
+            "transliteration": "rāʾâ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "7200"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8220,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8220,
+              "morph_code": "Vqw3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "w"
+            }
+          ]
+        },
+        {
+          "token_id": 8221,
+          "token_index": 2,
+          "surface": "עֵשָׂ֔ו",
+          "lemma_raw": "6215",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1621,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "עֵשָׂו",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "עשו",
+            "language_code": "he",
+            "strong_number": 6215,
+            "source_entry_id": "jxm",
+            "transliteration": "ʿēśāw",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6215"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8221,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8222,
+          "token_index": 3,
+          "surface": "כִּ֥י",
+          "lemma_raw": "3588 a",
+          "morph_raw": "HC",
+          "lexeme": {
+            "id": 332,
+            "metadata": {},
+            "pos_code": "C",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "כִּי",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "כי",
+            "language_code": "he",
+            "strong_number": 3588,
+            "source_entry_id": "frf",
+            "transliteration": "kî",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3588a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "C",
+              "token_id": 8222,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8223,
+          "token_index": 4,
+          "surface": "רָע֖וֹת",
+          "lemma_raw": "7451 a",
+          "morph_raw": "HAafpa",
+          "lexeme": {
+            "id": 393,
+            "metadata": {},
+            "pos_code": "A",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "רַע",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "רע",
+            "language_code": "he",
+            "strong_number": 7451,
+            "source_entry_id": "lzv",
+            "transliteration": "raʿ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "7451a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "A",
+              "token_id": 8223,
+              "morph_code": "HAafpa",
+              "state_code": "a",
+              "gender_code": "f",
+              "number_code": "p",
+              "person_code": null,
+              "subtype_code": "a",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8224,
+          "token_index": 5,
+          "surface": "בְּנ֣וֹת",
+          "lemma_raw": "1323",
+          "morph_raw": "HNcfpc",
+          "lexeme": {
+            "id": 1301,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "בַּת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "בת",
+            "language_code": "he",
+            "strong_number": 1323,
+            "source_entry_id": "cav",
+            "transliteration": "bat",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "1323"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8224,
+              "morph_code": "HNcfpc",
+              "state_code": "c",
+              "gender_code": "f",
+              "number_code": "p",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8225,
+          "token_index": 6,
+          "surface": "כְּנָ֑עַן",
+          "lemma_raw": "3667 a",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 351,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "כְּנַ֫עַן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "כנען",
+            "language_code": "he",
+            "strong_number": 3667,
+            "source_entry_id": "fuv",
+            "transliteration": "kĕnaʿan",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3667a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8225,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8226,
+          "token_index": 7,
+          "surface": "בְּעֵינֵ֖י",
+          "lemma_raw": "b/5869 a",
+          "morph_raw": "HR/Ncbdc",
+          "lexeme": {
+            "id": 1223,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "עַ֫יִן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "עין",
+            "language_code": "he",
+            "strong_number": 5869,
+            "source_entry_id": "jio",
+            "transliteration": "ʿayin",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "5869a"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "R",
+              "token_id": 8226,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8226,
+              "morph_code": "Ncbdc",
+              "state_code": "c",
+              "gender_code": "b",
+              "number_code": "d",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8227,
+          "token_index": 8,
+          "surface": "יִצְחָ֥ק",
+          "lemma_raw": "3327",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 246,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יִצְחָק",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "יצחק",
+            "language_code": "he",
+            "strong_number": 3327,
+            "source_entry_id": "fgh",
+            "transliteration": "yiṣḥāq",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3327"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8227,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8228,
+          "token_index": 9,
+          "surface": "אָבִֽיו",
+          "lemma_raw": "1",
+          "morph_raw": "HNcmsc/Sp3ms",
+          "lexeme": {
+            "id": 457,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אָב",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אב",
+            "language_code": "he",
+            "strong_number": 1,
+            "source_entry_id": "aac",
+            "transliteration": "ʾāb",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "1"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8228,
+              "morph_code": "HNcmsc",
+              "state_code": "c",
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8228,
+              "morph_code": "Sp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Gen.28.9",
+      "hebrew": "וַיֵּ֥לֶךְ עֵשָׂ֖ו אֶל־יִשְׁמָעֵ֑אל וַיִּקַּ֡ח אֶֽת־מָחֲלַ֣ת ׀ בַּת־יִשְׁמָעֵ֨אל בֶּן־אַבְרָהָ֜ם אֲח֧וֹת נְבָי֛וֹת עַל־נָשָׁ֖יו ל֥וֹ לְאִשָּֽׁה׃ס ",
+      "textual_notes": [],
+      "mapped_refs": [
+        {
+          "system": "KJV",
+          "ref": "Gen.28.9",
+          "relation": "equivalent"
+        }
+      ],
+      "tokens": [
+        {
+          "token_id": 8229,
+          "token_index": 1,
+          "surface": "וַיֵּ֥לֶךְ",
+          "lemma_raw": "c/3212",
+          "morph_raw": "HC/Vqw3ms",
+          "lexeme": {
+            "id": 341,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יָלַךְ",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "ילך",
+            "language_code": "he",
+            "strong_number": 3212,
+            "source_entry_id": "fbo",
+            "transliteration": "yālak",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3212"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8229,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8229,
+              "morph_code": "Vqw3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "w"
+            }
+          ]
+        },
+        {
+          "token_id": 8230,
+          "token_index": 2,
+          "surface": "עֵשָׂ֖ו",
+          "lemma_raw": "6215",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1621,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "עֵשָׂו",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "עשו",
+            "language_code": "he",
+            "strong_number": 6215,
+            "source_entry_id": "jxm",
+            "transliteration": "ʿēśāw",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "6215"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8230,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8231,
+          "token_index": 3,
+          "surface": "אֶל",
+          "lemma_raw": "413",
+          "morph_raw": "HR",
+          "lexeme": {
+            "id": 1683,
+            "metadata": {},
+            "pos_code": "R",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֶל",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אל",
+            "language_code": "he",
+            "strong_number": 413,
+            "source_entry_id": "aqs",
+            "transliteration": "ʾel",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "413"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "R",
+              "token_id": 8231,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8232,
+          "token_index": 4,
+          "surface": "יִשְׁמָעֵ֑אל",
+          "lemma_raw": "3458",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 745,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יִשְׁמָעֵאל",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "ישמעאל",
+            "language_code": "he",
+            "strong_number": 3458,
+            "source_entry_id": "flk",
+            "transliteration": "yišmāʿēʾl",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3458"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8232,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8233,
+          "token_index": 5,
+          "surface": "וַיִּקַּ֡ח",
+          "lemma_raw": "c/3947",
+          "morph_raw": "HC/Vqw3ms",
+          "lexeme": {
+            "id": 1221,
+            "metadata": {},
+            "pos_code": "V",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "לָקַח",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "לקח",
+            "language_code": "he",
+            "strong_number": 3947,
+            "source_entry_id": "ggz",
+            "transliteration": "lāqaḥ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3947"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "C",
+              "token_id": 8233,
+              "morph_code": "HC",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "V",
+              "token_id": 8233,
+              "morph_code": "Vqw3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": "q",
+              "verb_conjugation_code": "w"
+            }
+          ]
+        },
+        {
+          "token_id": 8234,
+          "token_index": 6,
+          "surface": "אֶֽת",
+          "lemma_raw": "853",
+          "morph_raw": "HTo",
+          "lexeme": {
+            "id": 1117,
+            "metadata": {},
+            "pos_code": "T",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אֵת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "את",
+            "language_code": "he",
+            "strong_number": 853,
+            "source_entry_id": "bhu",
+            "transliteration": "ʾēt",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "853"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "T",
+              "token_id": 8234,
+              "morph_code": "HTo",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "o",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8235,
+          "token_index": 7,
+          "surface": "מָחֲלַ֣ת",
+          "lemma_raw": "4258",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1662,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "מַחֲלַת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "מחלת",
+            "language_code": "he",
+            "strong_number": 4258,
+            "source_entry_id": "gto",
+            "transliteration": "maḥălat",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "4258"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8235,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8236,
+          "token_index": 8,
+          "surface": "בַּת",
+          "lemma_raw": "1323",
+          "morph_raw": "HNcfsc",
+          "lexeme": {
+            "id": 1301,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "בַּת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "בת",
+            "language_code": "he",
+            "strong_number": 1323,
+            "source_entry_id": "cav",
+            "transliteration": "bat",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "1323"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8236,
+              "morph_code": "HNcfsc",
+              "state_code": "c",
+              "gender_code": "f",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8237,
+          "token_index": 9,
+          "surface": "יִשְׁמָעֵ֨אל",
+          "lemma_raw": "3458",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 745,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "יִשְׁמָעֵאל",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "ישמעאל",
+            "language_code": "he",
+            "strong_number": 3458,
+            "source_entry_id": "flk",
+            "transliteration": "yišmāʿēʾl",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "3458"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8237,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8238,
+          "token_index": 10,
+          "surface": "בֶּן",
+          "lemma_raw": "1121 a",
+          "morph_raw": "HNcmsc",
+          "lexeme": {
+            "id": 605,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "בֵּן",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "בן",
+            "language_code": "he",
+            "strong_number": 1121,
+            "source_entry_id": "bss",
+            "transliteration": "bēn",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "1121a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8238,
+              "morph_code": "HNcmsc",
+              "state_code": "c",
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8239,
+          "token_index": 11,
+          "surface": "אַבְרָהָ֜ם",
+          "lemma_raw": "85",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 978,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אַבְרָהָם",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אברהם",
+            "language_code": "he",
+            "strong_number": 85,
+            "source_entry_id": "adk",
+            "transliteration": "ʾabrāhām",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "85"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8239,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8240,
+          "token_index": 12,
+          "surface": "אֲח֧וֹת",
+          "lemma_raw": "269",
+          "morph_raw": "HNcfsc",
+          "lexeme": {
+            "id": 1390,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אָחוֹת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אחות",
+            "language_code": "he",
+            "strong_number": 269,
+            "source_entry_id": "ald",
+            "transliteration": "ʾāḥôt",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "269"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8240,
+              "morph_code": "HNcfsc",
+              "state_code": "c",
+              "gender_code": "f",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8241,
+          "token_index": 13,
+          "surface": "נְבָי֛וֹת",
+          "lemma_raw": "5032",
+          "morph_raw": "HNp",
+          "lexeme": {
+            "id": 1689,
+            "metadata": {},
+            "pos_code": "Np",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "נְבָיוֹת",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "נביות",
+            "language_code": "he",
+            "strong_number": 5032,
+            "source_entry_id": "hyt",
+            "transliteration": "nĕbāyôt",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "5032"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8241,
+              "morph_code": "HNp",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8242,
+          "token_index": 14,
+          "surface": "עַל",
+          "lemma_raw": "5921 a",
+          "morph_raw": "HR",
+          "lexeme": {
+            "id": 812,
+            "metadata": {},
+            "pos_code": "R",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "עַל",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "על",
+            "language_code": "arc",
+            "strong_number": 5921,
+            "source_entry_id": "jkq",
+            "transliteration": "ʿal",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "5921a"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "R",
+              "token_id": 8242,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8243,
+          "token_index": 15,
+          "surface": "נָשָׁ֖יו",
+          "lemma_raw": "802",
+          "morph_raw": "HNcfpc/Sp3ms",
+          "lexeme": {
+            "id": 1092,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אִשָּׁה",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אשה",
+            "language_code": "he",
+            "strong_number": 802,
+            "source_entry_id": "bfn",
+            "transliteration": "ʾiššâ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "802"
+          },
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8243,
+              "morph_code": "HNcfpc",
+              "state_code": "c",
+              "gender_code": "f",
+              "number_code": "p",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8243,
+              "morph_code": "Sp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8244,
+          "token_index": 16,
+          "surface": "ל֥וֹ",
+          "lemma_raw": "l",
+          "morph_raw": "HR/Sp3ms",
+          "lexeme": null,
+          "morph_segments": [
+            {
+              "is_main": true,
+              "pos_code": "R",
+              "token_id": 8244,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": false,
+              "pos_code": "S",
+              "token_id": 8244,
+              "morph_code": "Sp3ms",
+              "state_code": null,
+              "gender_code": "m",
+              "number_code": "s",
+              "person_code": "3",
+              "subtype_code": "p",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        },
+        {
+          "token_id": 8245,
+          "token_index": 17,
+          "surface": "לְאִשָּֽׁה",
+          "lemma_raw": "l/802",
+          "morph_raw": "HR/Ncfsa",
+          "lexeme": {
+            "id": 1092,
+            "metadata": {},
+            "pos_code": "N",
+            "created_at": "2026-09-06T15:42:43.249572+00:00",
+            "lemma_text": "אִשָּׁה",
+            "updated_at": "2026-09-07T00:10:21.028195+00:00",
+            "lemma_search": "אשה",
+            "language_code": "he",
+            "strong_number": 802,
+            "source_entry_id": "bfn",
+            "transliteration": "ʾiššâ",
+            "lexicon_source_id": 1,
+            "source_lexeme_key": "802"
+          },
+          "morph_segments": [
+            {
+              "is_main": false,
+              "pos_code": "R",
+              "token_id": 8245,
+              "morph_code": "HR",
+              "state_code": null,
+              "gender_code": null,
+              "number_code": null,
+              "person_code": null,
+              "subtype_code": null,
+              "language_code": "H",
+              "segment_index": 1,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            },
+            {
+              "is_main": true,
+              "pos_code": "N",
+              "token_id": 8245,
+              "morph_code": "Ncfsa",
+              "state_code": "a",
+              "gender_code": "f",
+              "number_code": "s",
+              "person_code": null,
+              "subtype_code": "c",
+              "language_code": "H",
+              "segment_index": 2,
+              "verb_stem_code": null,
+              "verb_conjugation_code": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
