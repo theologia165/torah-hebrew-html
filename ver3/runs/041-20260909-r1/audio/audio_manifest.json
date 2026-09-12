@@ -1,6 +1,6 @@
 {
   "schema_version": "audio-1.3",
-  "status": "PARTIAL",
+  "status": "PASS",
   "sequence": "041",
   "passage": {
     "parasha": "Toledot",
@@ -54,13 +54,17 @@
     "out_of_audio_label_count": 15
   },
   "qa": {
-    "MAPPING_CONFIRMED": false,
-    "SIGNAL_CHECKED": false,
+    "MAPPING_CONFIRMED": true,
+    "SIGNAL_CHECKED": true,
     "MODEL_AUDIO_CHECKED": false,
-    "AUDIO_DELIVERY_COMPLETE": false,
+    "AUDIO_DELIVERY_COMPLETE": true,
     "AUDIO_VERIFICATION_COMPLETE": false,
     "target_wps": 0.79306,
-    "boundary_rule": "PocketTorah next-word onset is the deterministic shared boundary; signal pauses are annotations only until MODEL_AUDIO confirms prior-word completion and no next-verse contamination"
+    "boundary_rule": "PocketTorah next-word onset is the deterministic shared boundary; signal pauses are annotations only until MODEL_AUDIO confirms prior-word completion and no next-verse contamination",
+    "AI_FALLBACK_REFS": [
+      "Gen.28.4"
+    ],
+    "AI_DISCLOSURE_REQUIRED": true
   },
   "verses": [
     {
@@ -1042,20 +1046,55 @@
       "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
       "DELIVERY_STATUS": "READY",
       "LIMITATION_REASON": ""
-    }
-  ],
-  "failed_verses": [
+    },
     {
       "chapter": 28,
       "verse": 4,
       "ref": "28:4",
       "word_count": 16,
-      "MAPPING_STATUS": "FAILED",
-      "SIGNAL_STATUS": "NOT_RUN",
+      "boundary_start": 0.0,
+      "boundary_end": 12.0,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ai_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 12.0,
+        "refined": 12.0,
+        "method": "standalone_ai_source_end"
+      },
+      "boundary_scope": "STANDALONE_SYNTHETIC",
+      "r1": "041_28_4_ai_r1.mp3",
+      "r1_duration": 12.0,
+      "source_wps": 1.3333333333333333,
+      "target_wps": 0.79306,
+      "atempo": 0.5947950000000001,
+      "r2": "041_28_4_ai_r2.mp3",
+      "r2_duration": 20.208,
+      "r2_theoretical_duration": 20.175018283610317,
+      "r2_duration_error": 0.03298171638968128,
+      "r2_wps": 0.7917656373713381,
+      "mean_volume_db": -22.8,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
       "MODEL_AUDIO_STATUS": "NOT_RUN",
-      "HIGHEST_VERIFIED_STAGE": "NONE",
-      "DELIVERY_STATUS": "NOT_IMPLEMENTED_FAILED",
-      "LIMITATION_REASON": "PocketTorah source truncated: label word 344/358 onset=325.036269s exceeds audio duration=324.885000s; verse_out_of_audio_labels=15"
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OPENAI_TTS",
+      "ai_disclosure": "OpenAIによるAI生成音声（PocketTorah原音欠損のため）"
+    }
+  ],
+  "failed_verses": [],
+  "fallback_sources": [
+    {
+      "ref": "Gen.28.4",
+      "type": "OPENAI_TTS",
+      "model": "gpt-4o-mini-tts",
+      "voice": "cedar",
+      "reason": "PocketTorah source truncated: label word 344/358 onset=325.036269s exceeds audio duration=324.885000s; verse_out_of_audio_labels=15",
+      "disclosure": "OpenAIによるAI生成音声（PocketTorah原音欠損のため）"
     }
   ]
 }
