@@ -2,17 +2,17 @@
   "mode": "ver3-production",
   "timezone": "Asia/Tokyo",
   "first_run_date": "2026-09-06",
-  "next_sequence": "041",
+  "next_sequence": "042",
   "next_passage": {
     "parasha": "Toledot",
     "parasha_jp": "トルドット",
-    "aliyah": 6,
+    "aliyah": 7,
     "book": "Genesis",
-    "chapter": 27,
+    "chapter": 28,
     "end_chapter": 28,
-    "start_verse": 28,
-    "end_verse": 4,
-    "display": "トルドット｜第6アリヤー｜創世記27:28–28:4"
+    "start_verse": 5,
+    "end_verse": 9,
+    "display": "トルドット｜第7アリヤー｜創世記28:5–9"
   },
   "sequence_rule": "Advance by exactly one only after a successful production run. Sequence 036 was explicitly started by the user as a manual production override after the incomplete 035 run. Ignore sequence 050 because it is a Ver.2 development experiment.",
   "notion_output_rule": {
@@ -38,17 +38,17 @@
   "model_audio_default": false,
   "handover_status": "COMPLETE",
   "last_completed": {
-    "sequence": "040",
-    "run_id": "040-20260908-r1",
-    "page_id": "3d58aa46-08ae-818a-b6ca-ecaf81d1b4f6",
-    "page_url": "https://app.notion.com/p/040-26-30-27-27-3d58aa4608ae818ab6caecaf81d1b4f6",
+    "sequence": "041",
+    "run_id": "041-20260909-r1",
+    "page_id": "3d78aa46-08ae-81c0-9b9b-cf09c723a822",
+    "page_url": "https://app.notion.com/p/041-27-28-28-4-3d78aa4608ae81c09b9bcf09c723a822",
     "status": "PASS",
-    "verse_count": 33,
+    "verse_count": 23,
     "image_status": "PASS",
     "cover_status": "PASS",
-    "gmail_message_id": "1a0801aa1adf3270",
+    "gmail_message_id": "1a09600243d10b9d",
     "gmail_sent_verified": true,
-    "completed_at": "2026-09-08T08:21:20Z"
+    "completed_at": "2026-09-12T14:23:31Z"
   },
   "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。"
 }
