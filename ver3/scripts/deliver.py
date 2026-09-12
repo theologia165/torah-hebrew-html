@@ -213,8 +213,19 @@ def main():
             new_middle=new[left:len(new)-right if right else len(new)]
             assert not old_middle and new_middle and all(b['type']=='audio' for b in new_middle), 'PARTIAL repair may only insert missing audio blocks'
             assert left>0, 'Cannot insert repaired media before first page block'
-            request_json('PATCH',f'/blocks/{state["page_id"]}/children',token,
-                         json={'after':got[left-1]['id'],'children':new_middle})
+            # Notion API 2026-03-11 rejects the legacy top-level `after`
+            # field.  This narrow media-repair operation uses the stable
+            # 2022-06-28 append-children contract, which supports positional
+            # insertion without rebuilding or deleting any existing block.
+            insert_url=f'https://api.notion.com/v1/blocks/{state["page_id"]}/children'
+            insert_headers={'Authorization':f'Bearer {token}','Notion-Version':'2022-06-28','Content-Type':'application/json'}
+            insert_body={'after':got[left-1]['id'],'children':new_middle}
+            inserted=requests.patch(insert_url,headers=insert_headers,json=insert_body,timeout=45)
+            if inserted.status_code==429:
+                time.sleep(min(float(inserted.headers.get('Retry-After','2')),4.0))
+                inserted=requests.patch(insert_url,headers=insert_headers,json=insert_body,timeout=45)
+            if inserted.status_code>=300:
+                raise RuntimeError(f'Notion positional audio repair: {inserted.status_code} {inserted.text[:600]}')
             verify(new,children(state['page_id'],token),token)
             save(run/'json3.json',payload)
             delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
