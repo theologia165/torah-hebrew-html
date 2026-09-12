@@ -225,7 +225,6 @@ def main():
         if state.get('page_id') and json.loads((run/'json3.json').read_text())['children']!=payload['children']:
             prior=json.loads((run/'json3.json').read_text())
             got=children(state['page_id'],token)
-            verify(prior['children'],got,token)
             old=prior['children']; new=payload['children']; left=0
             while left<len(old) and left<len(new) and old[left]==new[left]: left+=1
             right=0
@@ -234,22 +233,35 @@ def main():
             new_middle=new[left:len(new)-right if right else len(new)]
             assert not old_middle and new_middle and all(b['type']=='audio' for b in new_middle), 'PARTIAL repair may only insert missing audio blocks'
             assert left>0, 'Cannot insert repaired media before first page block'
-            # Notion API 2026-03-11 rejects the legacy top-level `after`
-            # field.  This narrow media-repair operation uses the stable
-            # 2022-06-28 append-children contract, which supports positional
-            # insertion without rebuilding or deleting any existing block.
-            insert_url=f'https://api.notion.com/v1/blocks/{state["page_id"]}/children'
-            insert_headers={'Authorization':f'Bearer {token}','Notion-Version':'2022-06-28','Content-Type':'application/json'}
-            insert_body={'after':got[left-1]['id'],'children':new_middle}
-            inserted=requests.patch(insert_url,headers=insert_headers,json=insert_body,timeout=45)
-            if inserted.status_code==429:
-                time.sleep(min(float(inserted.headers.get('Retry-After','2')),4.0))
+            if len(got)==len(new):
+                # The prior attempt may have reached Notion and failed only
+                # while checkpointing JSON3. Accept that state after a full
+                # comparison instead of inserting the audio a second time.
+                verify(new,got,token)
+                print('RESUME_AUDIO_ALREADY_INSERTED: Notion matches repaired JSON3')
+            else:
+                verify(old,got,token)
+                # Notion API 2026-03-11 rejects the legacy top-level `after`
+                # field.  This narrow media-repair operation uses the stable
+                # 2022-06-28 append-children contract, which supports positional
+                # insertion without rebuilding or deleting any existing block.
+                insert_url=f'https://api.notion.com/v1/blocks/{state["page_id"]}/children'
+                insert_headers={'Authorization':f'Bearer {token}','Notion-Version':'2022-06-28','Content-Type':'application/json'}
+                insert_body={'after':got[left-1]['id'],'children':new_middle}
                 inserted=requests.patch(insert_url,headers=insert_headers,json=insert_body,timeout=45)
-            if inserted.status_code>=300:
-                raise RuntimeError(f'Notion positional audio repair: {inserted.status_code} {inserted.text[:600]}')
+                if inserted.status_code==429:
+                    time.sleep(min(float(inserted.headers.get('Retry-After','2')),4.0))
+                    inserted=requests.patch(insert_url,headers=insert_headers,json=insert_body,timeout=45)
+                if inserted.status_code>=300:
+                    raise RuntimeError(f'Notion positional audio repair: {inserted.status_code} {inserted.text[:600]}')
             verify(new,children(state['page_id'],token),token)
             assert_audio_audit(payload,len(audio_by_ref))
-            save(run/'json3.json',payload)
+            # JSON3 is a delivery artifact and legitimately changes when a
+            # PARTIAL page receives repaired media. Preserve the old snapshot,
+            # then replace only the canonical delivery payload.
+            snapshot=run/'json3.partial-before-audio-repair.json'
+            if not snapshot.exists(): save(snapshot,prior)
+            (run/'json3.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
             delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
             state.pop('error',None)
             state.update(status=delivery_status,verse_count=len(j['verses']),json3_sha256=digest(payload),
