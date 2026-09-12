@@ -58,7 +58,20 @@ def main():
     assert r['mode'] in ('prepare','publish','acceptance')
     run=Path('ver3/runs')/r['run_id']; run.mkdir(parents=True,exist_ok=True)
     state_path=run/'delivery.json'
+    completed_delivery=False
     if state_path.exists() and json.loads(state_path.read_text()).get('status')=='PASS':
+        delivery=json.loads(state_path.read_text())
+        payload=json.loads((run/'json3.json').read_text())
+        actual_audio=sum(1 for b in payload['children'] if b['type']=='audio')
+        declared_audio=payload.get('media_status',{}).get('audio_implemented_count',actual_audio)
+        audited_audio=delivery.get('AUDIO_IMPLEMENTED_COUNT',actual_audio)
+        if actual_audio!=declared_audio or actual_audio!=audited_audio:
+            print(f'REOPEN_FALSE_PASS: JSON3 audio blocks={actual_audio} media_status={declared_audio} delivery={audited_audio}')
+            delivery.update(status='PARTIAL',operation='REOPEN_FALSE_PASS_AUDIO_AUDIT')
+            state_path.write_text(json.dumps(delivery,ensure_ascii=False,indent=2)+'\n')
+        else:
+            completed_delivery=True
+    if completed_delivery:
         # A separately requested display-only research restyle is the sole permitted post-PASS mutation.
         restyle_request=run/'research-style-refresh.json'
         restyle_done=run/'research-style-refresh.done.json'
