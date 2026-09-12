@@ -56,6 +56,14 @@ def main():
     with_ai=json3(j,c,routes,audio,audio_meta_by_ref={ai_ref:{'audio_origin':'OPENAI_TTS','ai_disclosure':'OpenAIによるAI生成音声'}})
     ai_audio=[b for b in with_ai['children'] if b['type']=='audio' and b['audio']['external']['url']==audio[ai_ref]]
     assert len(ai_audio)==1 and ai_audio[0]['audio']['caption'][0]['text']['content']=='OpenAIによるAI生成音声'
+    open_ref=j['verses'][0]['ref']
+    open_meta={open_ref:{'audio_origin':'OPEN_BIBLE',
+      'source_attribution_label':'Open.Bible verified fixture','source_license':'CC BY',
+      'source_attribution_url':'https://open.bible/bibles'}}
+    with_open=json3(j,c,routes,audio,audio_meta_by_ref=open_meta)
+    open_audio=[b for b in with_open['children'] if b['type']=='audio' and b['audio']['external']['url']==audio[open_ref]]
+    assert len(open_audio)==1 and not open_audio[0]['audio']['caption']
+    assert any(b['type']=='paragraph' and b['paragraph']['rich_text'][0]['text'].get('link',{}).get('url')=='https://open.bible/bibles' for b in with_open['children'])
     assert not any(b['type']=='paragraph' and not b['paragraph']['rich_text'] for b in p['children'])
     partial_audio=dict(audio); partial_audio.pop(j['verses'][-1]['ref'])
     partial=json3(j,c,routes,partial_audio,{'audio_status':'PARTIAL','missing_audio_refs':[j['verses'][-1]['ref']]})

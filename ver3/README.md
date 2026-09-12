@@ -88,9 +88,18 @@ JSON2をGitHubへ渡す前に、ChatGPTは全節を横断して次を自ら完�
 
 現在のNeon語テーブルに不足する語間記号・本文注だけは、DB source_commitと同じ固定MorphHB XMLを全対象語と照合した後、追加専用`dtworks.verse_layout_v3`へ格納する。JSON1はその補助表もDBから再取得する。token/lemma/morph不一致時はトランザクション全体をロールバックする。480MB未満の保守的容量ゲートを設ける。既存語・lexeme/reference・/passage・/searchを変更しない。
 
-音声の第一正本はVer.2の固定PocketTorahと語位置ラベルとし、節専用MP3 r1を切り出して0.79306語/秒のr2へ調整する。全節・共有境界・実測duration・音量・速度を検証する。PocketTorahに物理欠損がある場合は、当該箇所・ライセンス・本文一致を確認済みのOpen.Bible音源を第二正本として用い、それも利用できない場合に限り、ユーザーが明示承認した節だけOpenAI TTSを最終代替とする。OpenAI TTSの入力は当該RUNのJSON1/JSON1.1由来の朗読対象token列から機械的に作り、モデル・voice・token_id・入力hash・速度を監査する。Notionでは「OpenAIによるAI生成音声」と明示する。連続音源をNotionへ埋め込まない。r1/r2は保持し、MODEL_AUDIO未実施を聴取済みとしない。
+音声の本文正本は当該RUNのJSON1/JSON1.1（WLC）であり、第一正本朗読音源は固定PocketTorahと語位置ラベルとする。節専用MP3 r1を切り出し、0.79306語/秒のr2へ調整して、全節・共有境界・実測duration・音量・速度を検証する。
 
-各節は「節見出し→音声→私訳→ヘブライ語HTML→簡易な説明→閉じた詳しい解説toggle」。通常音声とHTMLのcaptionは空とし、OpenAI TTSを用いた節だけ、利用者への開示として短いAI生成音声captionを必須とする。音声用HTML・空のHTMLブロック・操作説明・技術ステータス・「対話型ヘブライ語」captionを追加しない。HTMLに固定の大きな高さや上下余白を持たせない。ただしNotionの外側iframeの手動サイズはNotion側の制約であり、自動制御できると断言しない。
+`ver3/config/audio-fallback.json`を本番の常設フォールバック方針とする。PocketTorahの監査で物理欠損と分類された節だけを対象に、次の順で処理する。境界推定、語数対応、異常な速度等の未解決問題を物理欠損と読み替えて代替音声で隠してはならない。
+
+1. 当該OSIS ref、当該RUNの朗読本文hashと語数、音声ファイルhash、節単位音源、ライセンス、帰属先を事前確認してallow-listへ登録したOpen.Bible音源を第二正本として使う。ライブ検索結果や未確認URLを自動採用しない。
+2. 登録済みの正確なOpen.Bible音源がない場合だけ、常設方針で承認されたOpenAI TTSを最終代替として使う。入力は当該RUNの`audio-input.json`にあるJSON1/JSON1.1由来の朗読対象token列から機械的に作り、自由入力のヘブライ語を受け付けない。ケティーブ・ケレー併存時は朗読対象のケレーだけを用いる。
+
+フォールバックは複数欠落節を処理でき、各節ごとに第一正本の失敗code・原文message、Open.Bible登録判定、選択音源、token_id、入力本文hash、モデル・voice・API request ID、r1/r2、duration・音量・実測速度を`ai-audio-audit.json`と`audio_manifest.json`へ記録する。Open.Bibleの実行時取得不能だけはOpenAI TTSへ進めるが、登録情報・本文hash・音源hash・ライセンスの不一致は整合性障害としてPARTIALに残す。フォールバック自体が失敗しても本文・HTML・cover・他節音声の配信を止めず、欠落節だけを未実装として同じNotionページを作る。後の再実行では同じrun_id・page_idへ欠落音声だけを挿入し、JSON3の実音声ブロック数・media_status・delivery auditが一致した場合に限ってPASSとする。
+
+連続音源をNotionへ埋め込まない。r1/r2は保持し、MODEL_AUDIO未実施を聴取済みとしない。
+
+各節は「節見出し→音声→私訳→ヘブライ語HTML→簡易な説明→閉じた詳しい解説toggle」。通常音声とOpen.Bible音声、HTMLのcaptionは空とし、OpenAI TTSを用いた節だけ、利用者への開示として短いAI生成音声captionを必須とする。Open.Bibleの必要な帰属・ライセンス表示はページ末尾の音声資料欄へ置く。音声用HTML・空のHTMLブロック・操作説明・技術ステータス・「対話型ヘブライ語」captionを追加しない。HTMLに固定の大きな高さや上下余白を持たせない。ただしNotionの外側iframeの手動サイズはNotion側の制約であり、自動制御できると断言しない。
 
 HTMLはJS/CSS/本文データをすべて内包する。検索のみ既存DTWorks APIを呼び出す。全タナハ・トーラー・前預言者・後預言者・諸書・任意書、lemma/form、Qal、同じ活用を維持する。必要な資料帰属はページ末尾の本文資料欄に配置する。
 

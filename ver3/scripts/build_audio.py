@@ -79,13 +79,17 @@ def main():
         if verse_outside:
             first_i,first_t=verse_outside[0]
             reason=f'PocketTorah source truncated: label word {first_i}/{total_words} onset={first_t:.6f}s exceeds audio duration={source_duration:.6f}s; verse_out_of_audio_labels={len(verse_outside)}'
-        elif end-start<0.4: reason=f'boundary duration too short: {end-start:.6f}s'
+            failure_code='POCKETTORAH_SOURCE_TRUNCATED'
+        elif end-start<0.4:
+            reason=f'boundary duration too short: {end-start:.6f}s'
+            failure_code='POCKETTORAH_BOUNDARY_TOO_SHORT'
         if reason:
             for path in (r1,r2):
                 if path.exists(): path.unlink()
             failed.append({'chapter':ch,'verse':n,'ref':f'{ch}:{n}','word_count':len(verse['words']),
               'MAPPING_STATUS':'FAILED','SIGNAL_STATUS':'NOT_RUN','MODEL_AUDIO_STATUS':'NOT_RUN',
-              'HIGHEST_VERIFIED_STAGE':'NONE','DELIVERY_STATUS':'NOT_IMPLEMENTED_FAILED','LIMITATION_REASON':reason})
+              'HIGHEST_VERIFIED_STAGE':'NONE','DELIVERY_STATUS':'NOT_IMPLEMENTED_FAILED',
+              'FAILURE_CODE':failure_code,'LIMITATION_REASON':reason})
             continue
         split_mp3(source,start,end,r1); d1=duration(r1); source_wps=len(verse['words'])/d1; factor=TARGET_WPS/source_wps
         if not 0.25<=factor<=4.0:
@@ -93,13 +97,15 @@ def main():
                 if path.exists(): path.unlink()
             failed.append({'chapter':ch,'verse':n,'ref':f'{ch}:{n}','word_count':len(verse['words']),
               'MAPPING_STATUS':'PASS','SIGNAL_STATUS':'FAILED','MODEL_AUDIO_STATUS':'NOT_RUN',
-              'HIGHEST_VERIFIED_STAGE':'MAPPING_CONFIRMED','DELIVERY_STATUS':'NOT_IMPLEMENTED_FAILED','LIMITATION_REASON':f'unreasonable atempo={factor:.6f}'})
+              'HIGHEST_VERIFIED_STAGE':'MAPPING_CONFIRMED','DELIVERY_STATUS':'NOT_IMPLEMENTED_FAILED',
+              'FAILURE_CODE':'POCKETTORAH_ATEMPO_OUT_OF_RANGE','LIMITATION_REASON':f'unreasonable atempo={factor:.6f}'})
             continue
         speed_mp3(r1,factor,r2); d2=duration(r2); theoretical=d1/factor; mean_db=mean_volume_db(r1)
         if mean_db<-55.0:fail(f'SIGNAL: verse {ch}:{n} mean volume too low')
         records.append({'chapter':ch,'verse':n,'ref':f'{ch}:{n}','word_count':len(verse['words']),'boundary_start':start,'boundary_end':end,'boundary_start_meta':boundaries[i],'boundary_end_meta':boundaries[i+1],'r1':r1.name,'r1_duration':d1,'source_wps':source_wps,'target_wps':TARGET_WPS,'atempo':factor,'r2':r2.name,'r2_duration':d2,'r2_theoretical_duration':theoretical,'r2_duration_error':abs(d2-theoretical),'r2_wps':len(verse['words'])/d2,'mean_volume_db':mean_db,
           'MAPPING_STATUS':'PASS','SIGNAL_STATUS':'PASS','MODEL_AUDIO_STATUS':'NOT_RUN',
-          'HIGHEST_VERIFIED_STAGE':'SIGNAL_CHECKED','DELIVERY_STATUS':'READY','LIMITATION_REASON':''})
+          'HIGHEST_VERIFIED_STAGE':'SIGNAL_CHECKED','DELIVERY_STATUS':'READY','LIMITATION_REASON':'',
+          'audio_origin':'POCKETTORAH'})
     expected_refs=[f"{int(v.get('chapter',default_ch))}:{int(v['verse'])}" for v in data['verses']]
     status='PARTIAL' if failed else 'PASS'
     manifest={'schema_version':'audio-1.3','status':status,'sequence':seq,'passage':p,'expected_refs':expected_refs,

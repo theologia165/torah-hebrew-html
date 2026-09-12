@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0-audio-fallback-policy",
+  "status": "APPROVED_PRODUCTION_POLICY",
+  "priority": [
+    "POCKETTORAH",
+    "OPEN_BIBLE",
+    "OPENAI_TTS"
+  ],
+  "target_wps": 0.79306,
+  "eligible_pockettorah_failure_codes": [
+    "POCKETTORAH_SOURCE_TRUNCATED",
+    "POCKETTORAH_SOURCE_MISSING_VERIFIED",
+    "POCKETTORAH_SOURCE_CORRUPT_VERIFIED"
+  ],
+  "open_bible": {
+    "catalog_url": "https://open.bible/bibles",
+    "approved_verse_sources": {},
+    "allowed_licenses": [
+      "CC0",
+      "CC BY",
+      "CC BY-SA",
+      "Public Domain"
+    ],
+    "requirements": {
+      "exact_osis_ref": true,
+      "current_run_spoken_text_sha256": true,
+      "audio_sha256": true,
+      "verse_separated_audio": true,
+      "attribution": true
+    }
+  },
+  "openai_tts": {
+    "enabled": true,
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "required_disclosure": "OpenAIによるAI生成音声（利用可能な正本朗読音源がないため）",
+    "instructions": "Read only the supplied Hebrew text once. Use a clear, reverent male voice and careful standard Israeli pronunciation suitable for studying Biblical Hebrew. Preserve every word and its order. Do not add a verse number, translation, introduction, explanation, or closing words."
+  }
+}

@@ -79,6 +79,17 @@ def json3(j,c,routes,audio_by_ref,media_status=None,audio_meta_by_ref=None):
         assert len(detail)<=100, 'Notion aliyah research toggle children limit exceeded'
         toggle={'object':'block','type':'toggle','toggle':{'rich_text':rt(note['heading']),'children':detail,'color':'blue_background'}}
         blocks.append(toggle)
+    open_bible_audio=[(ref,meta) for ref,meta in audio_meta_by_ref.items()
+                      if meta.get('audio_origin')=='OPEN_BIBLE']
+    if open_bible_audio:
+        blocks.append(block('heading_3','音声資料'))
+        for ref,meta in open_bible_audio:
+            _,ch,n=ref.split('.')
+            label=(f'音声資料（{req["book_jp"]} {ch}:{n}）：'
+                   f'{meta["source_attribution_label"]}, {meta["source_license"]}')
+            source=paragraph(label)
+            source['paragraph']['rich_text']=rt(label,meta['source_attribution_url'])
+            blocks.append(source)
     # Required source attribution lives in a compact reference section, never in the HTML footer.
     b=paragraph('本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0')
     b['paragraph']['rich_text']=rt('本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0','https://github.com/openscriptures/morphhb')
@@ -183,7 +194,8 @@ def main():
           'audio_expected_count':len(req['refs']),'missing_audio_refs':missing_audio_refs,
           'audio_failures':manifest.get('failed_verses',[]),'html_status':'PASS','html_implemented_count':len(routes),
           'missing_html_refs':[],'pages_status':'PASS',
-          'ai_generated_audio_refs':[ref for ref,v in audio_meta_by_ref.items() if v.get('audio_origin')=='OPENAI_TTS']}
+          'ai_generated_audio_refs':[ref for ref,v in audio_meta_by_ref.items() if v.get('audio_origin')=='OPENAI_TTS'],
+          'open_bible_audio_refs':[ref for ref,v in audio_meta_by_ref.items() if v.get('audio_origin')=='OPEN_BIBLE']}
         payload=json3(j,c,routes,audio_by_ref,media_status,audio_meta_by_ref)
         assert_audio_audit(payload,len(audio_by_ref))
         if req.get('update_page_id'):
@@ -215,7 +227,9 @@ def main():
             delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
             state.update(status=delivery_status,verse_count=len(j['verses']),json3_sha256=digest(payload),operation='UPDATE_EXISTING_PAGE',
               NOTION_PAGE_CREATED=True,TEXT_DELIVERED=True,HTML_IMPLEMENTED_COUNT=len(routes),AUDIO_IMPLEMENTED_COUNT=len(audio_by_ref),
-              missing_audio_refs=missing_audio_refs,missing_html_refs=[],failure_details=manifest.get('failed_verses',[])); checkpoint()
+              missing_audio_refs=missing_audio_refs,missing_html_refs=[],failure_details=manifest.get('failed_verses',[]),
+              ai_generated_audio_refs=media_status['ai_generated_audio_refs'],
+              open_bible_audio_refs=media_status['open_bible_audio_refs']); checkpoint()
             from r2_cover import apply as apply_cover
             apply_cover(req['run_id'],page_id,state_path)
             print('PASS: updated existing page; all text, citations and 10 Pages embeds verified')
@@ -268,7 +282,8 @@ def main():
               operation='REPAIR_PARTIAL_AUDIO',NOTION_PAGE_CREATED=True,TEXT_DELIVERED=True,
               HTML_IMPLEMENTED_COUNT=len(routes),AUDIO_IMPLEMENTED_COUNT=len(audio_by_ref),
               missing_audio_refs=missing_audio_refs,missing_html_refs=[],failure_details=manifest.get('failed_verses',[]),
-              ai_generated_audio_refs=media_status['ai_generated_audio_refs'])
+              ai_generated_audio_refs=media_status['ai_generated_audio_refs'],
+              open_bible_audio_refs=media_status['open_bible_audio_refs'])
             checkpoint()
             print(f'{delivery_status}: inserted repaired audio into existing Notion page and verified all blocks')
             return
@@ -308,7 +323,9 @@ def main():
         delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
         state.update(status=delivery_status,verse_count=len(j['verses']),json3_sha256=digest(payload),
           NOTION_PAGE_CREATED=True,TEXT_DELIVERED=True,HTML_IMPLEMENTED_COUNT=len(routes),AUDIO_IMPLEMENTED_COUNT=len(audio_by_ref),
-          missing_audio_refs=missing_audio_refs,missing_html_refs=[],failure_details=manifest.get('failed_verses',[])); checkpoint()
+          missing_audio_refs=missing_audio_refs,missing_html_refs=[],failure_details=manifest.get('failed_verses',[]),
+          ai_generated_audio_refs=media_status['ai_generated_audio_refs'],
+          open_bible_audio_refs=media_status['open_bible_audio_refs']); checkpoint()
         from r2_cover import apply as apply_cover
         apply_cover(req['run_id'],page_id,state_path)
         print(f'{delivery_status}: JSON3 delivered and every available Notion block/text/link/media verified; missing_audio={missing_audio_refs}')

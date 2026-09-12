@@ -109,8 +109,30 @@ def main():
             cmd(sys.executable,'ver3/scripts/build_audio.py',str(run/'audio-input.json'),str(audio))
             # Keep r1 and r2, omit the large continuous source from GitHub artifacts.
             for p in audio.glob('*_source.mp3'): p.unlink()
-        if (run/'ai-audio-request.json').exists():
-            cmd(sys.executable,'ver3/scripts/build_ai_audio.py',str(run))
+        manifest=json.loads((audio/'audio_manifest.json').read_text())
+        if manifest.get('failed_verses') or (run/'ai-audio-request.json').exists():
+            # Audio is an independent medium. A fallback failure must remain
+            # fully audited, but must not suppress delivery of valid text,
+            # HTML, cover, or the other verse recordings.
+            fallback=subprocess.run(
+                [sys.executable,'ver3/scripts/build_ai_audio.py',str(run)],
+                text=True,capture_output=True)
+            if fallback.stdout: print(fallback.stdout,end='')
+            if fallback.stderr: print(fallback.stderr,end='',file=sys.stderr)
+            if fallback.returncode:
+                manifest=json.loads((audio/'audio_manifest.json').read_text())
+                error={
+                  'source':'AUDIO_FALLBACK_PIPELINE','status':'FAILED',
+                  'returncode':fallback.returncode,
+                  'message':fallback.stderr[-2000:] or fallback.stdout[-2000:]
+                }
+                manifest['audio_fallback_pipeline_error']=error
+                for failed in manifest.get('failed_verses',[]):
+                    failed['FALLBACK_STATUS']='FAILED'
+                    failed.setdefault('FALLBACK_ATTEMPTS',[]).append(error)
+                (audio/'audio_manifest.json').write_text(
+                    json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+                print('PARTIAL: fallback pipeline failed; continuing media delivery')
         cmd(sys.executable,'ver3/scripts/verify_audio.py',str(audio))
         commit_run(run,'Build verified Ver.3 HTML and per-verse audio')
         if r['mode']=='publish':
