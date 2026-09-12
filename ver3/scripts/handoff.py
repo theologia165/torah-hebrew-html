@@ -97,7 +97,7 @@ def waiting_for_cover(run, ticket_status):
     )
 
 
-def ready_for_email(run, delivery):
+def ready_for_email(run, delivery, completion_gate=None):
     run = Path(run)
     status = delivery.get('status', 'UNKNOWN')
     return write_handoff(
@@ -114,8 +114,8 @@ def ready_for_email(run, delivery):
             run / 'cover-ready.json',
         ),
         expected_outputs=(
-            'ver3/state/production.json' if status == 'PASS'
-            else run / 'completion.md',
+            (run / 'completion.json', 'ver3/state/production.json')
+            if status == 'PASS' else (run / 'completion.md',)
         ),
         details={
             'delivery_status': status,
@@ -123,6 +123,8 @@ def ready_for_email(run, delivery):
             'missing_audio_refs': delivery.get('missing_audio_refs', []),
             'missing_html_refs': delivery.get('missing_html_refs', []),
             'cover_status': delivery.get('cover', {}).get('status'),
+            'completion_gate_reasons': (
+                (completion_gate or {}).get('reasons', [])),
         },
     )
 
@@ -135,8 +137,16 @@ def no_action(run, status='PASS'):
         status=status,
         next_action='NONE',
         stage_spec='ver3/spec/work-entry.md',
-        required_inputs=(run / 'delivery.json',),
-        details={'reason': 'Existing completed delivery is preserved.'},
+        required_inputs=(
+            run / 'delivery.json',
+            run / 'completion.json',
+            'ver3/state/production.json',
+        ),
+        details={
+            'reason': (
+                'Delivery, Gmail Sent receipt, and production advancement '
+                'are all verified.'),
+        },
     )
 
 
@@ -157,4 +167,3 @@ def pipeline_failure(run, error, last_successful_stage):
             'last_successful_stage': last_successful_stage,
         },
     )
-

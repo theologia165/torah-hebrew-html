@@ -10,6 +10,6 @@ RUN作成後は`ver3/runs/{run_id}/handoff.json`を正本とし、そこに指�
 
 Actionsは本文・HTML・節別音声・Pages・Notionを機械的に生成、検証、配信する。音声方針は`ver3/config/audio-fallback.json`と音声モジュールを正本とし、詳細をWorkが毎回再解釈しない。特定媒体がPARTIALでも正常な成果物の配信を継続し、不良・空・別節・過去RUNの代用品を使わない。
 
-最後は`ver3/spec/email-delivery.md`に従い、完全成功でも未完了でもGmailをto: meへ実送信し、Sentを確認する。BLOCKED／PARTIAL時は`ver3/spec/failure-report.md`に従い具体的原因と残作業を記す。WORK_JSON2_QUALITY、TEXT、HTML、音声、Notion、画像、Gmailの全条件PASS時だけproduction stateを次へ一つ進める。
+最後は`ver3/spec/email-delivery.md`に従い、完全成功でも未完了でもGmailをto: meへ実送信し、Sentを確認する。PASS時はGmail証明を`completion.json`へ記録し、同一コミットでproduction stateを次へ一つ進める。`delivery.json=PASS`だけを完了扱いしない。BLOCKED／PARTIAL時は`ver3/spec/failure-report.md`に従い具体的原因と残作業を記す。
 
 各handoffに必要な入力・監査結果をコミットし、Ver.3 Actionsを起動して、次のhandoffまたは最終delivery確定まで確認する。

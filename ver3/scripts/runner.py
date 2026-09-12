@@ -2,6 +2,7 @@
 import json, os, subprocess, sys
 from pathlib import Path
 from prepare import validate_request
+from completion_gate import inspect_completion
 from handoff import (no_action, pipeline_failure, ready_for_email,
                      waiting_for_cover, waiting_for_json2, write_handoff)
 
@@ -62,6 +63,7 @@ def main():
     last_successful_stage='REQUEST_VALIDATED'
     state_path=run/'delivery.json'
     completed_delivery=False
+    completion_gate=None
     if state_path.exists() and json.loads(state_path.read_text()).get('status')=='PASS':
         delivery=json.loads(state_path.read_text())
         payload=json.loads((run/'json3.json').read_text())
@@ -73,7 +75,14 @@ def main():
             delivery.update(status='PARTIAL',operation='REOPEN_FALSE_PASS_AUDIO_AUDIT')
             state_path.write_text(json.dumps(delivery,ensure_ascii=False,indent=2)+'\n')
         else:
-            completed_delivery=True
+            completion_gate=inspect_completion(run)
+            completed_delivery=completion_gate['complete']
+            if not completed_delivery:
+                cmd(sys.executable,'ver3/scripts/test_contracts.py',str(run))
+                ready_for_email(run,delivery,completion_gate)
+                commit_run(run,'Request missing Ver.3 email and state finalization')
+                print('WAITING_FOR_FINALIZATION: '+','.join(completion_gate['reasons']))
+                return
     if completed_delivery:
         # A separately requested display-only research restyle is the sole permitted post-PASS mutation.
         restyle_request=run/'research-style-refresh.json'

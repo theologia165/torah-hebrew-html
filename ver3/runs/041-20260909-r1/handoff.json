@@ -2,19 +2,35 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "041-20260909-r1",
   "sequence": "041",
-  "phase": "COMPLETE",
-  "status": "PASS",
-  "next_action": "NONE",
+  "phase": "EMAIL_AND_STATE",
+  "status": "WAITING_FOR_WORK",
+  "next_action": "SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE",
   "stage_spec": {
-    "path": "ver3/spec/work-entry.md",
-    "sha256": "5e9fefd9012bf54c7e0d0145f0b407ee74ccfbf42e33f105cdbb264814cef389"
+    "path": "ver3/spec/email-delivery.md",
+    "sha256": "b3e761f8e7932354dacfd5a34f4ede49abc11b04de29ed9b3ac83d1513e2e352"
   },
   "required_inputs": [
-    "ver3/runs/041-20260909-r1/delivery.json"
+    "ver3/runs/041-20260909-r1/delivery.json",
+    "ver3/runs/041-20260909-r1/json2.json",
+    "ver3/runs/041-20260909-r1/cover-ready.json"
   ],
-  "expected_outputs": [],
+  "expected_outputs": [
+    "ver3/runs/041-20260909-r1/completion.json",
+    "ver3/state/production.json"
+  ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "reason": "Existing completed delivery is preserved."
+    "delivery_status": "PASS",
+    "page_url": "https://app.notion.com/p/041-27-28-28-4-3d78aa4608ae81c09b9bcf09c723a822",
+    "missing_audio_refs": [],
+    "missing_html_refs": [],
+    "cover_status": "PASS",
+    "completion_gate_reasons": [
+      "COMPLETION_RECEIPT_MISSING",
+      "PRODUCTION_LAST_COMPLETED_MISMATCH",
+      "PRODUCTION_PAGE_ID_MISMATCH",
+      "PRODUCTION_PAGE_URL_MISMATCH",
+      "PRODUCTION_NEXT_SEQUENCE_NOT_ADVANCED"
+    ]
   }
 }
