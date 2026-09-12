@@ -90,11 +90,6 @@ def main():
     if len(matches) != 1:
         fail(f'Expected one audio-input verse for {request["ref"]}, got {len(matches)}')
     verse_data = matches[0]
-    failed = [v for v in manifest.get('failed_verses', [])
-              if int(v['chapter']) == chapter and int(v['verse']) == verse]
-    if len(failed) != 1 or 'PocketTorah source truncated' not in failed[0].get('LIMITATION_REASON', ''):
-        fail('AI fallback is allowed only for the audited PocketTorah truncation')
-
     audio_dir = run_dir / 'audio'
     stem = f'{audio_input["sequence"]}_{chapter}_{verse}_ai'
     r1 = audio_dir / f'{stem}_r1.mp3'
@@ -105,9 +100,22 @@ def main():
     if existing:
         if (existing[0].get('audio_origin') == 'OPENAI_TTS' and r1.exists()
                 and r2.exists() and audit_path.exists()):
-            print(f'SKIP_AI_AUDIO_EXISTS: {request["ref"]}')
+            audit = json.loads(audit_path.read_text(encoding='utf-8'))
+            if audit.get('status') != 'PASS' or audit.get('ref') != request['ref']:
+                fail('Existing AI audio audit does not match the approved request')
+            if abs(float(existing[0].get('r2_wps', 0)) - TARGET_WPS) > 0.01:
+                fail('Existing AI audio no longer passes the target speed gate')
+            print(f'SKIP_AI_AUDIO_EXISTS: verified {request["ref"]}')
             return
         fail('A non-identical audio record already exists for the requested verse')
+
+    # Only a first-time synthesis needs the original failed-source evidence.
+    # A verified retry above must remain idempotent after the repaired manifest
+    # has correctly removed the failure record.
+    failed = [v for v in manifest.get('failed_verses', [])
+              if int(v['chapter']) == chapter and int(v['verse']) == verse]
+    if len(failed) != 1 or 'PocketTorah source truncated' not in failed[0].get('LIMITATION_REASON', ''):
+        fail('AI fallback is allowed only for the audited PocketTorah truncation')
 
     api_key = os.getenv('OPENAI_API_KEY', '').strip()
     if not api_key:
