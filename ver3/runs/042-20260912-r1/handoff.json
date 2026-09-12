@@ -2,24 +2,29 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "042-20260912-r1",
   "sequence": "042",
-  "phase": "IMAGE",
+  "phase": "EMAIL_AND_STATE",
   "status": "WAITING_FOR_WORK",
-  "next_action": "GENERATE_QA_AND_UPLOAD_COVER",
+  "next_action": "SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE",
   "stage_spec": {
-    "path": "ver3/spec/image-handoff.md",
-    "sha256": "bd5040a4ada2c87e68a4986f4d960eebca89c8fb700607b6e6145739afb86e13"
+    "path": "ver3/spec/email-delivery.md",
+    "sha256": "b3e761f8e7932354dacfd5a34f4ede49abc11b04de29ed9b3ac83d1513e2e352"
   },
   "required_inputs": [
+    "ver3/runs/042-20260912-r1/delivery.json",
     "ver3/runs/042-20260912-r1/json2.json",
-    "ver3/config/image-master.json",
-    "ver3/config/parasha-image/index.json",
-    "ver3/runs/042-20260912-r1/cover-upload.json"
+    "ver3/runs/042-20260912-r1/cover-ready.json"
   ],
   "expected_outputs": [
-    "ver3/runs/042-20260912-r1/cover-ready.json"
+    "ver3/runs/042-20260912-r1/completion.json",
+    "ver3/state/production.json"
   ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "cover_ticket_status": "ISSUED_CURRENT"
+    "delivery_status": "PASS",
+    "page_url": "https://app.notion.com/p/042-28-5-9-3d98aa4608ae8134b934c990794313db",
+    "missing_audio_refs": [],
+    "missing_html_refs": [],
+    "cover_status": "PASS",
+    "completion_gate_reasons": []
   }
 }
