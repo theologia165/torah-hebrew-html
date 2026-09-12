@@ -10,6 +10,12 @@ from handoff import (no_action, pipeline_failure, ready_for_email,
 
 
 def main():
+    root = Path(__file__).resolve().parents[2]
+    workflow = (root / '.github/workflows/asaichi-torah-ver3.yml').read_text(
+        encoding='utf-8')
+    assert "'ver3/runs/**/completion.json'" in workflow
+    assert "'ver3/state/production.json'" in workflow
+
     with tempfile.TemporaryDirectory() as directory:
         run = Path(directory) / '999-test-r1'
         run.mkdir()

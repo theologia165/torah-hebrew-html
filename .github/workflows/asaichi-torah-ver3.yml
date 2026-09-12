@@ -2,7 +2,7 @@ name: Asaichi Torah Ver.3
 on:
   push:
     branches: [asaichi-torah-ver3]
-    paths: ['ver3/request.json', 'ver3/runs/**/json2.json', 'ver3/runs/**/cover-ready.json', 'ver3/runs/**/ai-audio-request.json', 'ver3/runs/**/research-style-refresh.json', 'ver3/scripts/**', 'ver3/spec/**', 'ver3/templates/**', 'ver3/config/audio-fallback.json', 'ver3/config/open-bible-sources.json', '.github/workflows/asaichi-torah-ver3.yml']
+    paths: ['ver3/request.json', 'ver3/runs/**/json2.json', 'ver3/runs/**/cover-ready.json', 'ver3/runs/**/completion.json', 'ver3/runs/**/ai-audio-request.json', 'ver3/runs/**/research-style-refresh.json', 'ver3/state/production.json', 'ver3/scripts/**', 'ver3/spec/**', 'ver3/templates/**', 'ver3/config/audio-fallback.json', 'ver3/config/open-bible-sources.json', '.github/workflows/asaichi-torah-ver3.yml']
   workflow_dispatch:
 permissions:
   contents: write

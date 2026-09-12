@@ -7,7 +7,7 @@
 
 `ver3/README.md`は人間向けの全体契約、`ver3/spec/work-entry.md`はWorkの通常実行入口とする。定期実行プロンプトは全仕様を複製せず、最初にwork-entryとproduction stateだけを読む。Actionsは各RUNへ小さな`handoff.json`を出力し、Workはそこに記載された`next_action`、`stage_spec`、`required_inputs`だけを追加で読む。通常運用でREADME全体、Actions専用の機械仕様、成功済み媒体を毎回再読しない。
 
-主なhandoffは`CREATE_JSON2`、`GENERATE_QA_AND_UPLOAD_COVER`、`SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE`、`SEND_PARTIAL_EMAIL_KEEP_STATE`、`NONE`である。stage specのSHA256をhandoffへ記録し、どの仕様で作業したかを再現可能にする。handoffは秘密値や画像・音声バイナリを含めない。`NONE`はdelivery PASSだけでは出さず、Gmail Sent証明を持つ`completion.json`とproduction stateの進行まで一致した時だけ出す。
+主なhandoffは`CREATE_JSON2`、`GENERATE_QA_AND_UPLOAD_COVER`、`SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE`、`SEND_PARTIAL_EMAIL_KEEP_STATE`、`NONE`である。stage specのSHA256をhandoffへ記録し、どの仕様で作業したかを再現可能にする。handoffは秘密値や画像・音声バイナリを含めない。`NONE`はdelivery PASSだけでは出さず、Gmail Sent証明を持つ`completion.json`とproduction stateの進行まで一致した時だけ出す。両ファイルはActionsのpush対象であり、Workの最終化コミット後に完了ゲートを必ず自動実行する。
 
 Workの段階別仕様は`ver3/spec/`、定型メールは`ver3/templates/`、機械的な方針は`ver3/config/`へ置く。JSON2の意味監査はWorkから外部化しない一方、HTML・音声・Notion・R2の変換と照合はActionsへ置く。
 
