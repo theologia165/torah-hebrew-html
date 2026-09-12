@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0-work-handoff",
+  "run_id": "041-20260909-r1",
+  "sequence": "041",
+  "phase": "COMPLETE",
+  "status": "PASS",
+  "next_action": "NONE",
+  "stage_spec": {
+    "path": "ver3/spec/work-entry.md",
+    "sha256": "5e9fefd9012bf54c7e0d0145f0b407ee74ccfbf42e33f105cdbb264814cef389"
+  },
+  "required_inputs": [
+    "ver3/runs/041-20260909-r1/delivery.json"
+  ],
+  "expected_outputs": [],
+  "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
+  "details": {
+    "reason": "Existing completed delivery is preserved."
+  }
+}
