@@ -2,21 +2,24 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "042-20260912-r1",
   "sequence": "042",
-  "phase": "JSON2",
+  "phase": "IMAGE",
   "status": "WAITING_FOR_WORK",
-  "next_action": "CREATE_JSON2",
+  "next_action": "GENERATE_QA_AND_UPLOAD_COVER",
   "stage_spec": {
-    "path": "ver3/spec/json2-quality.md",
-    "sha256": "e69948da845c8755bb9aa8e53fca7d4143cfe0f4cd84612d277c49858af24280"
+    "path": "ver3/spec/image-handoff.md",
+    "sha256": "bd5040a4ada2c87e68a4986f4d960eebca89c8fb700607b6e6145739afb86e13"
   },
   "required_inputs": [
-    "ver3/runs/042-20260912-r1/json1.1.json"
+    "ver3/runs/042-20260912-r1/json2.json",
+    "ver3/config/image-master.json",
+    "ver3/config/parasha-image/index.json",
+    "ver3/runs/042-20260912-r1/cover-upload.json"
   ],
   "expected_outputs": [
-    "ver3/runs/042-20260912-r1/json2.json"
+    "ver3/runs/042-20260912-r1/cover-ready.json"
   ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "quality_gate": "WORK_JSON2_QUALITY=PASS_BEFORE_COMMIT"
+    "cover_ticket_status": "ISSUED_CURRENT"
   }
 }
