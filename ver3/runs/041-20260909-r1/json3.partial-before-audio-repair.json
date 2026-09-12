@@ -2276,18 +2276,30 @@
     }
   ],
   "media_status": {
-    "audio_status": "PASS",
-    "audio_implemented_count": 23,
+    "audio_status": "PARTIAL",
+    "audio_implemented_count": 22,
     "audio_expected_count": 23,
-    "missing_audio_refs": [],
-    "audio_failures": [],
+    "missing_audio_refs": [
+      "Gen.28.4"
+    ],
+    "audio_failures": [
+      {
+        "chapter": 28,
+        "verse": 4,
+        "ref": "28:4",
+        "word_count": 16,
+        "MAPPING_STATUS": "FAILED",
+        "SIGNAL_STATUS": "NOT_RUN",
+        "MODEL_AUDIO_STATUS": "NOT_RUN",
+        "HIGHEST_VERIFIED_STAGE": "NONE",
+        "DELIVERY_STATUS": "NOT_IMPLEMENTED_FAILED",
+        "LIMITATION_REASON": "PocketTorah source truncated: label word 344/358 onset=325.036269s exceeds audio duration=324.885000s; verse_out_of_audio_labels=15"
+      }
+    ],
     "html_status": "PASS",
     "html_implemented_count": 23,
     "missing_html_refs": [],
-    "pages_status": "PASS",
-    "ai_generated_audio_refs": [
-      "Gen.28.4"
-    ]
+    "pages_status": "PASS"
   },
   "children": [
     {
@@ -6440,24 +6452,6 @@
             "type": "text",
             "text": {
               "content": "創世記 28:4"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "object": "block",
-      "type": "audio",
-      "audio": {
-        "type": "external",
-        "external": {
-          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/041-20260909-r1/audio/041_28_4_ai_r2.mp3"
-        },
-        "caption": [
-          {
-            "type": "text",
-            "text": {
-              "content": "OpenAIによるAI生成音声（PocketTorah原音欠損のため）"
             }
           }
         ]
