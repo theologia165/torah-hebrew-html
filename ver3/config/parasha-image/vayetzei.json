@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "config_type": "ASAICHI_TORAH_PARASHA_IMAGE_PROFILE",
+  "parasha_jp": "ヴァイェツェ",
+  "scope": "PARASHA_ABSTRACT_VISUAL_LANGUAGE",
+  "palette": {
+    "primary": [
+      "deep indigo night",
+      "weathered limestone",
+      "warm desert umber"
+    ],
+    "accent": [
+      "restrained amber light",
+      "muted dawn rose"
+    ],
+    "contrast": "legible warm light against cool night and earth tones"
+  },
+  "texture": "subtle weathered stone, woven cloth and fine-grained parchment; natural, tactile and restrained",
+  "light": "journeying from deep night toward guarded dawn; localized amber illumination without fantasy glow",
+  "atmosphere": "pilgrimage, displacement, divine accompaniment, patient formation and eventual return",
+  "ancient_world_principles": [
+    "Use plausible ancient Near Eastern travel landscapes, tents, wells, flocks and household materials only when the current aliyah supports them.",
+    "Keep clothing and objects simple, functional and regionally plausible without claiming archaeological precision.",
+    "Let terrain, distance, night and dawn carry emotional continuity more than decorative symbols.",
+    "Represent divine action indirectly through light, space, weather or the current text's explicit imagery; never invent unrelated sacred symbols."
+  ],
+  "composition_continuity": "calm cinematic depth, modest human scale, generous negative space, restrained drama",
+  "forbid": [
+    "past NNN or aliyah-specific content",
+    "fixed人物・出来事・場所",
+    "previous or failed images",
+    "gen_id",
+    "modern or medieval-fantasy elements"
+  ]
+}
