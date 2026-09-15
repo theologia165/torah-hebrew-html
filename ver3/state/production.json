@@ -1,54 +1,54 @@
 {
-  "mode": "ver3-production",
-  "timezone": "Asia/Tokyo",
+  "chatgpt_notion_create_attachment_required": false,
+  "delivery_owner": "GITHUB_ACTIONS",
   "first_run_date": "2026-09-06",
-  "next_sequence": "045",
+  "handover_status": "COMPLETE",
+  "html_delivery": {
+    "html_transport": "GITHUB_PAGES_EMBED",
+    "pages_base_url": "https://theologia165.github.io/torah-hebrew-html",
+    "pages_source": "main/root",
+    "primary": "GITHUB_ACTIONS_TO_NOTION_API",
+    "rule": "GitHub publishes and verifies every verse HTML on GitHub Pages; Notion embeds those URLs. Existing published files are never overwritten."
+  },
+  "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。",
+  "last_completed": {
+    "sequence": "045",
+    "run_id": "045-20260915-r1",
+    "page_id": "3dc8aa46-08ae-8183-b467-cc4d5686460b",
+    "page_url": "https://app.notion.com/p/045-29-18-30-13-3dc8aa4608ae8183b467cc4d5686460b",
+    "status": "PASS",
+    "verse_count": 31,
+    "WORK_JSON2_QUALITY": "PASS",
+    "image_status": "PASS",
+    "cover_status": "PASS",
+    "gmail_message_id": "1a0a54917e4c2037",
+    "gmail_sent_verified": true,
+    "completed_at": "2026-09-15T13:38:02.706Z"
+  },
+  "mode": "ver3-production",
+  "model_audio_default": false,
   "next_passage": {
     "parasha": "Vayetzei",
     "parasha_jp": "ヴァイェツェ",
-    "aliyah": 3,
+    "aliyah": 4,
     "book": "Genesis",
-    "chapter": 29,
-    "end_chapter": 30,
-    "start_verse": 18,
-    "end_verse": 13,
-    "display": "ヴァイェツェ｜第3アリヤー｜創世記29:18–30:13"
+    "chapter": 30,
+    "start_verse": 14,
+    "end_verse": 27,
+    "display": "ヴァイェツェ｜第4アリヤー｜創世記30:14–27"
   },
-  "sequence_rule": "Advance by exactly one only after a successful production run. Sequence 036 was explicitly started by the user as a manual production override after the incomplete 035 run. Ignore sequence 050 because it is a Ver.2 development experiment.",
-  "notion_output_rule": {
-    "title": "NNN｜創世記startChapter:startVerse–endChapter:endVerse",
-    "show_development_labels": false,
-    "show_process_specification": false,
-    "show_internal_status_footer": false
-  },
-  "delivery_owner": "GITHUB_ACTIONS",
-  "chatgpt_notion_create_attachment_required": false,
+  "next_sequence": "046",
   "notion_api_version": "2026-03-11",
-  "html_delivery": {
-    "primary": "GITHUB_ACTIONS_TO_NOTION_API",
-    "html_transport": "GITHUB_PAGES_EMBED",
-    "pages_source": "main/root",
-    "pages_base_url": "https://theologia165.github.io/torah-hebrew-html",
-    "rule": "GitHub publishes and verifies every verse HTML on GitHub Pages; Notion embeds those URLs. Existing published files are never overwritten."
+  "notion_output_rule": {
+    "show_development_labels": false,
+    "show_internal_status_footer": false,
+    "show_process_specification": false,
+    "title": "NNN｜創世記startChapter:startVerse–endChapter:endVerse"
   },
   "notion_required_github_configuration": [
     "NOTION_TOKEN",
     "NOTION_PARENT_PAGE_ID"
   ],
-  "model_audio_default": false,
-  "handover_status": "COMPLETE",
-  "last_completed": {
-    "sequence": "044",
-    "run_id": "044-20260915-r1",
-    "page_id": "3dc8aa46-08ae-8145-94a1-ef36b28340ff",
-    "page_url": "https://app.notion.com/p/044-29-1-17-3dc8aa4608ae814594a1ef36b28340ff",
-    "status": "PASS",
-    "verse_count": 17,
-    "image_status": "PASS",
-    "cover_status": "PASS",
-    "gmail_message_id": "1a0a4904a09b6703",
-    "gmail_sent_verified": true,
-    "completed_at": "2026-09-15T10:16:02Z"
-  },
-  "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。"
+  "sequence_rule": "Advance by exactly one only after a successful production run. Sequence 036 was explicitly started by the user as a manual production override after the incomplete 035 run. Ignore sequence 050 because it is a Ver.2 development experiment.",
+  "timezone": "Asia/Tokyo"
 }
