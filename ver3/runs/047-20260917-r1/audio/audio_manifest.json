@@ -1,0 +1,1539 @@
+{
+  "schema_version": "audio-1.3",
+  "status": "PASS",
+  "sequence": "047",
+  "passage": {
+    "parasha": "Vayetzei",
+    "parasha_jp": "ヴァイェツェ",
+    "aliyah": 5,
+    "book": "Genesis",
+    "chapter": 30,
+    "end_chapter": 31,
+    "start_verse": 28,
+    "end_verse": 16,
+    "display": "ヴァイェツェ｜第5アリヤー｜創世記30:28–31:16"
+  },
+  "expected_refs": [
+    "30:28",
+    "30:29",
+    "30:30",
+    "30:31",
+    "30:32",
+    "30:33",
+    "30:34",
+    "30:35",
+    "30:36",
+    "30:37",
+    "30:38",
+    "30:39",
+    "30:40",
+    "30:41",
+    "30:42",
+    "30:43",
+    "31:1",
+    "31:2",
+    "31:3",
+    "31:4",
+    "31:5",
+    "31:6",
+    "31:7",
+    "31:8",
+    "31:9",
+    "31:10",
+    "31:11",
+    "31:12",
+    "31:13",
+    "31:14",
+    "31:15",
+    "31:16"
+  ],
+  "source": {
+    "parsha": "Vayetzei",
+    "aliyah": "5",
+    "base": "Vayetzei-5",
+    "audio_base": "Vayetzei-5",
+    "labels_base": "Vayetzei-5",
+    "audio_url": "https://raw.githubusercontent.com/rneiss/PocketTorah/8a23287221dd535966ee9914de9a03e71769a469/data/audio/Vayetzei-5.mp3",
+    "labels_url": "https://raw.githubusercontent.com/rneiss/PocketTorah/8a23287221dd535966ee9914de9a03e71769a469/data/torah/labels/Vayetzei-5.txt",
+    "pockettorah_commit": "8a23287221dd535966ee9914de9a03e71769a469",
+    "source_file": "Vayetzei-5_source.mp3",
+    "source_duration": 709.6425,
+    "label_count": 453,
+    "word_count": 453,
+    "out_of_audio_label_count": 0
+  },
+  "qa": {
+    "MAPPING_CONFIRMED": true,
+    "SIGNAL_CHECKED": true,
+    "MODEL_AUDIO_CHECKED": false,
+    "AUDIO_DELIVERY_COMPLETE": true,
+    "AUDIO_VERIFICATION_COMPLETE": false,
+    "target_wps": 0.79306,
+    "boundary_rule": "PocketTorah next-word onset is the deterministic shared boundary; signal pauses are annotations only until MODEL_AUDIO confirms prior-word completion and no next-verse contamination"
+  },
+  "verses": [
+    {
+      "chapter": 30,
+      "verse": 28,
+      "ref": "30:28",
+      "word_count": 5,
+      "boundary_start": 0.0,
+      "boundary_end": 14.117732,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "first_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 14.117732,
+        "refined": 14.117732,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 13.937,
+          "nearest_silence_end": 14.7465,
+          "distance_to_silence_end": -0.6287679999999991
+        }
+      },
+      "r1": "047_30_28_r1.mp3",
+      "r1_duration": 14.158367,
+      "source_wps": 0.35314807138422105,
+      "target_wps": 0.79306,
+      "atempo": 2.245686906604,
+      "r2": "047_30_28_r2.mp3",
+      "r2_duration": 6.347755,
+      "r2_theoretical_duration": 6.304693213628225,
+      "r2_duration_error": 0.04306178637177549,
+      "r2_wps": 0.7876800538143013,
+      "mean_volume_db": -23.3,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 29,
+      "ref": "30:29",
+      "word_count": 12,
+      "boundary_start": 14.117732,
+      "boundary_end": 31.602358,
+      "boundary_start_meta": {
+        "candidate": 14.117732,
+        "refined": 14.117732,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 13.937,
+          "nearest_silence_end": 14.7465,
+          "distance_to_silence_end": -0.6287679999999991
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 31.602358,
+        "refined": 31.602358,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 31.5477,
+          "nearest_silence_end": 32.3076,
+          "distance_to_silence_end": -0.7052420000000019
+        }
+      },
+      "r1": "047_30_29_r1.mp3",
+      "r1_duration": 17.528163,
+      "source_wps": 0.6846125289912012,
+      "target_wps": 0.79306,
+      "atempo": 1.158407079065,
+      "r2": "047_30_29_r2.mp3",
+      "r2_duration": 15.124898,
+      "r2_theoretical_duration": 15.131263712707739,
+      "r2_duration_error": 0.00636571270773878,
+      "r2_wps": 0.7933937802423527,
+      "mean_volume_db": -26.2,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 30,
+      "ref": "30:30",
+      "word_count": 18,
+      "boundary_start": 31.602358,
+      "boundary_end": 65.483883,
+      "boundary_start_meta": {
+        "candidate": 31.602358,
+        "refined": 31.602358,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 31.5477,
+          "nearest_silence_end": 32.3076,
+          "distance_to_silence_end": -0.7052420000000019
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 65.483883,
+        "refined": 65.483883,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 65.594,
+          "nearest_silence_end": 66.1965,
+          "distance_to_silence_end": -0.7126169999999945
+        }
+      },
+      "r1": "047_30_30_r1.mp3",
+      "r1_duration": 33.933061,
+      "source_wps": 0.5304561236016992,
+      "target_wps": 0.79306,
+      "atempo": 1.4950529642588888,
+      "r2": "047_30_30_r2.mp3",
+      "r2_duration": 22.700408,
+      "r2_theoretical_duration": 22.696895569061613,
+      "r2_duration_error": 0.0035124309383860464,
+      "r2_wps": 0.7929372899376963,
+      "mean_volume_db": -24.4,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 31,
+      "ref": "30:31",
+      "word_count": 19,
+      "boundary_start": 65.483883,
+      "boundary_end": 88.819937,
+      "boundary_start_meta": {
+        "candidate": 65.483883,
+        "refined": 65.483883,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 65.594,
+          "nearest_silence_end": 66.1965,
+          "distance_to_silence_end": -0.7126169999999945
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 88.819937,
+        "refined": 88.819937,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 88.7861,
+          "nearest_silence_end": 89.0892,
+          "distance_to_silence_end": -0.26926300000000936
+        }
+      },
+      "r1": "047_30_31_r1.mp3",
+      "r1_duration": 23.379592,
+      "source_wps": 0.8126745753304848,
+      "target_wps": 0.79306,
+      "atempo": 0.9758641700799999,
+      "r2": "047_30_31_r2.mp3",
+      "r2_duration": 23.954286,
+      "r2_theoretical_duration": 23.957834211787254,
+      "r2_duration_error": 0.003548211787254729,
+      "r2_wps": 0.7931774714554214,
+      "mean_volume_db": -24.1,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 32,
+      "ref": "30:32",
+      "word_count": 19,
+      "boundary_start": 88.819937,
+      "boundary_end": 118.889779,
+      "boundary_start_meta": {
+        "candidate": 88.819937,
+        "refined": 88.819937,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 88.7861,
+          "nearest_silence_end": 89.0892,
+          "distance_to_silence_end": -0.26926300000000936
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 118.889779,
+        "refined": 118.889779,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 118.819,
+          "nearest_silence_end": 119.54,
+          "distance_to_silence_end": -0.6502210000000019
+        }
+      },
+      "r1": "047_30_32_r1.mp3",
+      "r1_duration": 30.119184,
+      "source_wps": 0.6308271831003124,
+      "target_wps": 0.79306,
+      "atempo": 1.25717474016,
+      "r2": "047_30_32_r2.mp3",
+      "r2_duration": 23.954286,
+      "r2_theoretical_duration": 23.957834211787254,
+      "r2_duration_error": 0.003548211787254729,
+      "r2_wps": 0.7931774714554214,
+      "mean_volume_db": -24.6,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 33,
+      "ref": "30:33",
+      "word_count": 21,
+      "boundary_start": 118.889779,
+      "boundary_end": 147.798622,
+      "boundary_start_meta": {
+        "candidate": 118.889779,
+        "refined": 118.889779,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 118.819,
+          "nearest_silence_end": 119.54,
+          "distance_to_silence_end": -0.6502210000000019
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 147.798622,
+        "refined": 147.798622,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 147.724,
+          "nearest_silence_end": 148.358,
+          "distance_to_silence_end": -0.5593780000000095
+        }
+      },
+      "r1": "047_30_33_r1.mp3",
+      "r1_duration": 28.943673,
+      "source_wps": 0.7255471688061153,
+      "target_wps": 0.79306,
+      "atempo": 1.0930509194942857,
+      "r2": "047_30_33_r2.mp3",
+      "r2_duration": 26.488163,
+      "r2_theoretical_duration": 26.479711497238547,
+      "r2_duration_error": 0.0084515027614529,
+      "r2_wps": 0.7928069606034968,
+      "mean_volume_db": -24.3,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 34,
+      "ref": "30:34",
+      "word_count": 6,
+      "boundary_start": 147.798622,
+      "boundary_end": 156.390006,
+      "boundary_start_meta": {
+        "candidate": 147.798622,
+        "refined": 147.798622,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 147.724,
+          "nearest_silence_end": 148.358,
+          "distance_to_silence_end": -0.5593780000000095
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 156.390006,
+        "refined": 156.390006,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 156.336,
+          "nearest_silence_end": 156.43,
+          "distance_to_silence_end": -0.03999400000000719
+        }
+      },
+      "r1": "047_30_34_r1.mp3",
+      "r1_duration": 8.620408,
+      "source_wps": 0.6960227404549761,
+      "target_wps": 0.79306,
+      "atempo": 1.1394167947466667,
+      "r2": "047_30_34_r2.mp3",
+      "r2_duration": 7.601633,
+      "r2_theoretical_duration": 7.565631856353869,
+      "r2_duration_error": 0.036001143646130274,
+      "r2_wps": 0.7893040876874745,
+      "mean_volume_db": -23.9,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 35,
+      "ref": "30:35",
+      "word_count": 22,
+      "boundary_start": 156.390006,
+      "boundary_end": 191.753996,
+      "boundary_start_meta": {
+        "candidate": 156.390006,
+        "refined": 156.390006,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 156.336,
+          "nearest_silence_end": 156.43,
+          "distance_to_silence_end": -0.03999400000000719
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 191.753996,
+        "refined": 191.753996,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 191.777,
+          "nearest_silence_end": 191.872,
+          "distance_to_silence_end": -0.11800400000001332
+        }
+      },
+      "r1": "047_30_35_r1.mp3",
+      "r1_duration": 35.395918,
+      "source_wps": 0.6215405968563945,
+      "target_wps": 0.79306,
+      "atempo": 1.2759584876854546,
+      "r2": "047_30_35_r2.mp3",
+      "r2_duration": 27.768163,
+      "r2_theoretical_duration": 27.74065013996419,
+      "r2_duration_error": 0.02751286003581299,
+      "r2_wps": 0.7922742314642851,
+      "mean_volume_db": -23.8,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 36,
+      "ref": "30:36",
+      "word_count": 13,
+      "boundary_start": 191.753996,
+      "boundary_end": 213.998713,
+      "boundary_start_meta": {
+        "candidate": 191.753996,
+        "refined": 191.753996,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 191.777,
+          "nearest_silence_end": 191.872,
+          "distance_to_silence_end": -0.11800400000001332
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 213.998713,
+        "refined": 213.998713,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 213.822,
+          "nearest_silence_end": 214.417,
+          "distance_to_silence_end": -0.4182869999999923
+        }
+      },
+      "r1": "047_30_36_r1.mp3",
+      "r1_duration": 22.282449,
+      "source_wps": 0.5834188154093835,
+      "target_wps": 0.79306,
+      "atempo": 1.3593322310723075,
+      "r2": "047_30_36_r2.mp3",
+      "r2_duration": 16.404898,
+      "r2_theoretical_duration": 16.392202355433387,
+      "r2_duration_error": 0.01269564456661243,
+      "r2_wps": 0.7924462559901317,
+      "mean_volume_db": -22.5,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 37,
+      "ref": "30:37",
+      "word_count": 17,
+      "boundary_start": 213.998713,
+      "boundary_end": 242.121316,
+      "boundary_start_meta": {
+        "candidate": 213.998713,
+        "refined": 213.998713,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 213.822,
+          "nearest_silence_end": 214.417,
+          "distance_to_silence_end": -0.4182869999999923
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 242.121316,
+        "refined": 242.121316,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 242.015,
+          "nearest_silence_end": 242.679,
+          "distance_to_silence_end": -0.5576839999999947
+        }
+      },
+      "r1": "047_30_37_r1.mp3",
+      "r1_duration": 28.16,
+      "source_wps": 0.6036931818181818,
+      "target_wps": 0.79306,
+      "atempo": 1.3136805647058825,
+      "r2": "047_30_37_r2.mp3",
+      "r2_duration": 21.446531,
+      "r2_theoretical_duration": 21.43595692633596,
+      "r2_duration_error": 0.010574073664038508,
+      "r2_wps": 0.7926689868865039,
+      "mean_volume_db": -23.8,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 38,
+      "ref": "30:38",
+      "word_count": 17,
+      "boundary_start": 242.121316,
+      "boundary_end": 271.934345,
+      "boundary_start_meta": {
+        "candidate": 242.121316,
+        "refined": 242.121316,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 242.015,
+          "nearest_silence_end": 242.679,
+          "distance_to_silence_end": -0.5576839999999947
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 271.934345,
+        "refined": 271.934345,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 272.075,
+          "nearest_silence_end": 272.589,
+          "distance_to_silence_end": -0.6546549999999911
+        }
+      },
+      "r1": "047_30_38_r1.mp3",
+      "r1_duration": 29.857959,
+      "source_wps": 0.5693624269495446,
+      "target_wps": 0.79306,
+      "atempo": 1.3928913508552943,
+      "r2": "047_30_38_r2.mp3",
+      "r2_duration": 21.446531,
+      "r2_theoretical_duration": 21.43595692633596,
+      "r2_duration_error": 0.010574073664038508,
+      "r2_wps": 0.7926689868865039,
+      "mean_volume_db": -23.5,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 39,
+      "ref": "30:39",
+      "word_count": 9,
+      "boundary_start": 271.934345,
+      "boundary_end": 286.985251,
+      "boundary_start_meta": {
+        "candidate": 271.934345,
+        "refined": 271.934345,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 272.075,
+          "nearest_silence_end": 272.589,
+          "distance_to_silence_end": -0.6546549999999911
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 286.985251,
+        "refined": 286.985251,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 286.936,
+          "nearest_silence_end": 287.167,
+          "distance_to_silence_end": -0.18174899999996796
+        }
+      },
+      "r1": "047_30_39_r1.mp3",
+      "r1_duration": 15.098776,
+      "source_wps": 0.5960748076532826,
+      "target_wps": 0.79306,
+      "atempo": 1.3304705882844445,
+      "r2": "047_30_39_r2.mp3",
+      "r2_duration": 11.337143,
+      "r2_theoretical_duration": 11.348447784530805,
+      "r2_duration_error": 0.011304784530805634,
+      "r2_wps": 0.7938507964484527,
+      "mean_volume_db": -23.4,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 40,
+      "ref": "30:40",
+      "word_count": 21,
+      "boundary_start": 286.985251,
+      "boundary_end": 319.072014,
+      "boundary_start_meta": {
+        "candidate": 286.985251,
+        "refined": 286.985251,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 286.936,
+          "nearest_silence_end": 287.167,
+          "distance_to_silence_end": -0.18174899999996796
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 319.072014,
+        "refined": 319.072014,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 319.163,
+          "nearest_silence_end": 319.711,
+          "distance_to_silence_end": -0.6389859999999885
+        }
+      },
+      "r1": "047_30_40_r1.mp3",
+      "r1_duration": 32.130612,
+      "source_wps": 0.6535823220547433,
+      "target_wps": 0.79306,
+      "atempo": 1.2134049120342856,
+      "r2": "047_30_40_r2.mp3",
+      "r2_duration": 26.488163,
+      "r2_theoretical_duration": 26.479711497238547,
+      "r2_duration_error": 0.0084515027614529,
+      "r2_wps": 0.7928069606034968,
+      "mean_volume_db": -22.5,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 41,
+      "ref": "30:41",
+      "word_count": 14,
+      "boundary_start": 319.072014,
+      "boundary_end": 345.885829,
+      "boundary_start_meta": {
+        "candidate": 319.072014,
+        "refined": 319.072014,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 319.163,
+          "nearest_silence_end": 319.711,
+          "distance_to_silence_end": -0.6389859999999885
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 345.885829,
+        "refined": 345.885829,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 345.921,
+          "nearest_silence_end": 346.03,
+          "distance_to_silence_end": -0.14417099999997163
+        }
+      },
+      "r1": "047_30_41_r1.mp3",
+      "r1_duration": 26.853878,
+      "source_wps": 0.5213399718282774,
+      "target_wps": 0.79306,
+      "atempo": 1.521195463334286,
+      "r2": "047_30_41_r2.mp3",
+      "r2_duration": 17.684898,
+      "r2_theoretical_duration": 17.653140998159028,
+      "r2_duration_error": 0.03175700184097252,
+      "r2_wps": 0.7916358918213721,
+      "mean_volume_db": -22.5,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 42,
+      "ref": "30:42",
+      "word_count": 9,
+      "boundary_start": 345.885829,
+      "boundary_end": 361.830972,
+      "boundary_start_meta": {
+        "candidate": 345.885829,
+        "refined": 345.885829,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 345.921,
+          "nearest_silence_end": 346.03,
+          "distance_to_silence_end": -0.14417099999997163
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 361.830972,
+        "refined": 361.830972,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 361.788,
+          "nearest_silence_end": 362.438,
+          "distance_to_silence_end": -0.6070280000000139
+        }
+      },
+      "r1": "047_30_42_r1.mp3",
+      "r1_duration": 15.986939,
+      "source_wps": 0.5629595509184091,
+      "target_wps": 0.79306,
+      "atempo": 1.4087335381488888,
+      "r2": "047_30_42_r2.mp3",
+      "r2_duration": 11.363265,
+      "r2_theoretical_duration": 11.348447784530805,
+      "r2_duration_error": 0.014817215469195233,
+      "r2_wps": 0.7920258834058697,
+      "mean_volume_db": -23.3,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 30,
+      "verse": 43,
+      "ref": "30:43",
+      "word_count": 12,
+      "boundary_start": 361.830972,
+      "boundary_end": 379.765601,
+      "boundary_start_meta": {
+        "candidate": 361.830972,
+        "refined": 361.830972,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 361.788,
+          "nearest_silence_end": 362.438,
+          "distance_to_silence_end": -0.6070280000000139
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 379.765601,
+        "refined": 379.765601,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 379.98,
+          "nearest_silence_end": 380.178,
+          "distance_to_silence_end": -0.4123989999999935
+        }
+      },
+      "r1": "047_30_43_r1.mp3",
+      "r1_duration": 17.972245,
+      "source_wps": 0.6676962171392611,
+      "target_wps": 0.79306,
+      "atempo": 1.1877557183083334,
+      "r2": "047_30_43_r2.mp3",
+      "r2_duration": 15.15102,
+      "r2_theoretical_duration": 15.13126371270774,
+      "r2_duration_error": 0.01975628729226031,
+      "r2_wps": 0.7920258834058697,
+      "mean_volume_db": -22.1,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 1,
+      "ref": "31:1",
+      "word_count": 19,
+      "boundary_start": 379.765601,
+      "boundary_end": 408.554629,
+      "boundary_start_meta": {
+        "candidate": 379.765601,
+        "refined": 379.765601,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 379.98,
+          "nearest_silence_end": 380.178,
+          "distance_to_silence_end": -0.4123989999999935
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 408.554629,
+        "refined": 408.554629,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 408.571,
+          "nearest_silence_end": 408.888,
+          "distance_to_silence_end": -0.33337099999999964
+        }
+      },
+      "r1": "047_31_1_r1.mp3",
+      "r1_duration": 28.839184,
+      "source_wps": 0.6588258530477146,
+      "target_wps": 0.79306,
+      "atempo": 1.20374754016,
+      "r2": "047_31_1_r2.mp3",
+      "r2_duration": 23.954286,
+      "r2_theoretical_duration": 23.957834211787254,
+      "r2_duration_error": 0.003548211787254729,
+      "r2_wps": 0.7931774714554214,
+      "mean_volume_db": -21.6,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 2,
+      "ref": "31:2",
+      "word_count": 10,
+      "boundary_start": 408.554629,
+      "boundary_end": 422.598058,
+      "boundary_start_meta": {
+        "candidate": 408.554629,
+        "refined": 408.554629,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 408.571,
+          "nearest_silence_end": 408.888,
+          "distance_to_silence_end": -0.33337099999999964
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 422.598058,
+        "refined": 422.598058,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 422.74,
+          "nearest_silence_end": 422.918,
+          "distance_to_silence_end": -0.31994200000002593
+        }
+      },
+      "r1": "047_31_2_r1.mp3",
+      "r1_duration": 14.08,
+      "source_wps": 0.7102272727272727,
+      "target_wps": 0.79306,
+      "atempo": 1.11662848,
+      "r2": "047_31_2_r2.mp3",
+      "r2_duration": 12.617143,
+      "r2_theoretical_duration": 12.609386427256451,
+      "r2_duration_error": 0.007756572743549128,
+      "r2_wps": 0.792572454794243,
+      "mean_volume_db": -23.3,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 3,
+      "ref": "31:3",
+      "word_count": 11,
+      "boundary_start": 422.598058,
+      "boundary_end": 439.596458,
+      "boundary_start_meta": {
+        "candidate": 422.598058,
+        "refined": 422.598058,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 422.74,
+          "nearest_silence_end": 422.918,
+          "distance_to_silence_end": -0.31994200000002593
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 439.596458,
+        "refined": 439.596458,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 439.473,
+          "nearest_silence_end": 440.225,
+          "distance_to_silence_end": -0.6285420000000386
+        }
+      },
+      "r1": "047_31_3_r1.mp3",
+      "r1_duration": 17.031837,
+      "source_wps": 0.6458492997555109,
+      "target_wps": 0.79306,
+      "atempo": 1.2279335137472727,
+      "r2": "047_31_3_r2.mp3",
+      "r2_duration": 13.897143,
+      "r2_theoretical_duration": 13.870325069982094,
+      "r2_duration_error": 0.026817930017905667,
+      "r2_wps": 0.7915295971265461,
+      "mean_volume_db": -22.0,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 4,
+      "ref": "31:4",
+      "word_count": 8,
+      "boundary_start": 439.596458,
+      "boundary_end": 452.732915,
+      "boundary_start_meta": {
+        "candidate": 439.596458,
+        "refined": 439.596458,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 439.473,
+          "nearest_silence_end": 440.225,
+          "distance_to_silence_end": -0.6285420000000386
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 452.732915,
+        "refined": 452.732915,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 452.801,
+          "nearest_silence_end": 453.416,
+          "distance_to_silence_end": -0.6830850000000055
+        }
+      },
+      "r1": "047_31_4_r1.mp3",
+      "r1_duration": 13.165714,
+      "source_wps": 0.607638902075497,
+      "target_wps": 0.79306,
+      "atempo": 1.305150143105,
+      "r2": "047_31_4_r2.mp3",
+      "r2_duration": 10.109388,
+      "r2_theoretical_duration": 10.087509141805159,
+      "r2_duration_error": 0.02187885819484059,
+      "r2_wps": 0.7913436500804995,
+      "mean_volume_db": -21.9,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 5,
+      "ref": "31:5",
+      "word_count": 16,
+      "boundary_start": 452.732915,
+      "boundary_end": 476.197144,
+      "boundary_start_meta": {
+        "candidate": 452.732915,
+        "refined": 452.732915,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 452.801,
+          "nearest_silence_end": 453.416,
+          "distance_to_silence_end": -0.6830850000000055
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 476.197144,
+        "refined": 476.197144,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 476.388,
+          "nearest_silence_end": 477.088,
+          "distance_to_silence_end": -0.8908560000000421
+        }
+      },
+      "r1": "047_31_5_r1.mp3",
+      "r1_duration": 23.510204,
+      "source_wps": 0.6805555579185957,
+      "target_wps": 0.79306,
+      "atempo": 1.165312649015,
+      "r2": "047_31_5_r2.mp3",
+      "r2_duration": 20.166531,
+      "r2_theoretical_duration": 20.17501828361032,
+      "r2_duration_error": 0.008487283610321583,
+      "r2_wps": 0.7933937671283178,
+      "mean_volume_db": -21.5,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 6,
+      "ref": "31:6",
+      "word_count": 8,
+      "boundary_start": 476.197144,
+      "boundary_end": 487.145086,
+      "boundary_start_meta": {
+        "candidate": 476.197144,
+        "refined": 476.197144,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 476.388,
+          "nearest_silence_end": 477.088,
+          "distance_to_silence_end": -0.8908560000000421
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 487.145086,
+        "refined": 487.145086,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 487.2,
+          "nearest_silence_end": 488.224,
+          "distance_to_silence_end": -1.0789139999999975
+        }
+      },
+      "r1": "047_31_6_r1.mp3",
+      "r1_duration": 10.997551,
+      "source_wps": 0.727434680684818,
+      "target_wps": 0.79306,
+      "atempo": 1.0902147245074998,
+      "r2": "047_31_6_r2.mp3",
+      "r2_duration": 10.083265,
+      "r2_theoretical_duration": 10.087509141805162,
+      "r2_duration_error": 0.004244141805161306,
+      "r2_wps": 0.7933938064704239,
+      "mean_volume_db": -23.2,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 7,
+      "ref": "31:7",
+      "word_count": 13,
+      "boundary_start": 487.145086,
+      "boundary_end": 506.220743,
+      "boundary_start_meta": {
+        "candidate": 487.145086,
+        "refined": 487.145086,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 487.2,
+          "nearest_silence_end": 488.224,
+          "distance_to_silence_end": -1.0789139999999975
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 506.220743,
+        "refined": 506.220743,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 506.299,
+          "nearest_silence_end": 507.022,
+          "distance_to_silence_end": -0.8012569999999641
+        }
+      },
+      "r1": "047_31_7_r1.mp3",
+      "r1_duration": 19.121633,
+      "source_wps": 0.6798582526921211,
+      "target_wps": 0.79306,
+      "atempo": 1.1665078666907691,
+      "r2": "047_31_7_r2.mp3",
+      "r2_duration": 16.404898,
+      "r2_theoretical_duration": 16.392202355433387,
+      "r2_duration_error": 0.01269564456661243,
+      "r2_wps": 0.7924462559901317,
+      "mean_volume_db": -23.1,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 8,
+      "ref": "31:8",
+      "word_count": 20,
+      "boundary_start": 506.220743,
+      "boundary_end": 535.858228,
+      "boundary_start_meta": {
+        "candidate": 506.220743,
+        "refined": 506.220743,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 506.299,
+          "nearest_silence_end": 507.022,
+          "distance_to_silence_end": -0.8012569999999641
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 535.858228,
+        "refined": 535.858228,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 535.805,
+          "nearest_silence_end": 535.893,
+          "distance_to_silence_end": -0.03477199999997538
+        }
+      },
+      "r1": "047_31_8_r1.mp3",
+      "r1_duration": 29.675102,
+      "source_wps": 0.673965669941084,
+      "target_wps": 0.79306,
+      "atempo": 1.176706819606,
+      "r2": "047_31_8_r2.mp3",
+      "r2_duration": 25.234286,
+      "r2_theoretical_duration": 25.2187728545129,
+      "r2_duration_error": 0.01551314548710181,
+      "r2_wps": 0.792572454794243,
+      "mean_volume_db": -22.6,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 9,
+      "ref": "31:9",
+      "word_count": 7,
+      "boundary_start": 535.858228,
+      "boundary_end": 546.917428,
+      "boundary_start_meta": {
+        "candidate": 535.858228,
+        "refined": 535.858228,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 535.805,
+          "nearest_silence_end": 535.893,
+          "distance_to_silence_end": -0.03477199999997538
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 546.917428,
+        "refined": 546.917428,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 546.72,
+          "nearest_silence_end": 547.485,
+          "distance_to_silence_end": -0.567572000000041
+        }
+      },
+      "r1": "047_31_9_r1.mp3",
+      "r1_duration": 11.102041,
+      "source_wps": 0.6305146954510437,
+      "target_wps": 0.79306,
+      "atempo": 1.2577978050657141,
+      "r2": "047_31_9_r2.mp3",
+      "r2_duration": 8.829388,
+      "r2_theoretical_duration": 8.826570499079516,
+      "r2_duration_error": 0.0028175009204840507,
+      "r2_wps": 0.7928069306728847,
+      "mean_volume_db": -23.6,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 10,
+      "ref": "31:10",
+      "word_count": 16,
+      "boundary_start": 546.917428,
+      "boundary_end": 573.980286,
+      "boundary_start_meta": {
+        "candidate": 546.917428,
+        "refined": 546.917428,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 546.72,
+          "nearest_silence_end": 547.485,
+          "distance_to_silence_end": -0.567572000000041
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 573.980286,
+        "refined": 573.980286,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 573.782,
+          "nearest_silence_end": 574.37,
+          "distance_to_silence_end": -0.3897140000000263
+        }
+      },
+      "r1": "047_31_10_r1.mp3",
+      "r1_duration": 27.08898,
+      "source_wps": 0.5906460856038138,
+      "target_wps": 0.79306,
+      "atempo": 1.342699154925,
+      "r2": "047_31_10_r2.mp3",
+      "r2_duration": 20.192653,
+      "r2_theoretical_duration": 20.175018283610317,
+      "r2_duration_error": 0.017634716389682836,
+      "r2_wps": 0.7923674021437401,
+      "mean_volume_db": -23.0,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 11,
+      "ref": "31:11",
+      "word_count": 8,
+      "boundary_start": 573.980286,
+      "boundary_end": 587.409314,
+      "boundary_start_meta": {
+        "candidate": 573.980286,
+        "refined": 573.980286,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 573.782,
+          "nearest_silence_end": 574.37,
+          "distance_to_silence_end": -0.3897140000000263
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 587.409314,
+        "refined": 587.409314,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 587.51,
+          "nearest_silence_end": 587.864,
+          "distance_to_silence_end": -0.4546860000000379
+        }
+      },
+      "r1": "047_31_11_r1.mp3",
+      "r1_duration": 13.479184,
+      "source_wps": 0.5935077375603746,
+      "target_wps": 0.79306,
+      "atempo": 1.33622520788,
+      "r2": "047_31_11_r2.mp3",
+      "r2_duration": 10.083265,
+      "r2_theoretical_duration": 10.087509141805159,
+      "r2_duration_error": 0.004244141805157753,
+      "r2_wps": 0.7933938064704239,
+      "mean_volume_db": -20.6,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 12,
+      "ref": "31:12",
+      "word_count": 21,
+      "boundary_start": 587.409314,
+      "boundary_end": 614.852514,
+      "boundary_start_meta": {
+        "candidate": 587.409314,
+        "refined": 587.409314,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 587.51,
+          "nearest_silence_end": 587.864,
+          "distance_to_silence_end": -0.4546860000000379
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 614.852514,
+        "refined": 614.852514,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 614.792,
+          "nearest_silence_end": 615.284,
+          "distance_to_silence_end": -0.43148599999994985
+        }
+      },
+      "r1": "047_31_12_r1.mp3",
+      "r1_duration": 27.480816,
+      "source_wps": 0.7641694482434582,
+      "target_wps": 0.79306,
+      "atempo": 1.0378064731885714,
+      "r2": "047_31_12_r2.mp3",
+      "r2_duration": 26.488163,
+      "r2_theoretical_duration": 26.479711497238544,
+      "r2_duration_error": 0.008451502761456453,
+      "r2_wps": 0.7928069606034968,
+      "mean_volume_db": -22.0,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 13,
+      "ref": "31:13",
+      "word_count": 23,
+      "boundary_start": 614.852514,
+      "boundary_end": 644.841086,
+      "boundary_start_meta": {
+        "candidate": 614.852514,
+        "refined": 614.852514,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 614.792,
+          "nearest_silence_end": 615.284,
+          "distance_to_silence_end": -0.43148599999994985
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 644.841086,
+        "refined": 644.841086,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 644.615,
+          "nearest_silence_end": 645.406,
+          "distance_to_silence_end": -0.5649139999999306
+        }
+      },
+      "r1": "047_31_13_r1.mp3",
+      "r1_duration": 30.014694,
+      "source_wps": 0.766291337169721,
+      "target_wps": 0.79306,
+      "atempo": 1.034932748853913,
+      "r2": "047_31_13_r2.mp3",
+      "r2_duration": 29.022041,
+      "r2_theoretical_duration": 29.001588782689833,
+      "r2_duration_error": 0.020452217310168663,
+      "r2_wps": 0.7925011200969635,
+      "mean_volume_db": -21.9,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 14,
+      "ref": "31:14",
+      "word_count": 11,
+      "boundary_start": 644.841086,
+      "boundary_end": 660.0548,
+      "boundary_start_meta": {
+        "candidate": 644.841086,
+        "refined": 644.841086,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 644.615,
+          "nearest_silence_end": 645.406,
+          "distance_to_silence_end": -0.5649139999999306
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 660.0548,
+        "refined": 660.0548,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 660.148,
+          "nearest_silence_end": 660.421,
+          "distance_to_silence_end": -0.36620000000004893
+        }
+      },
+      "r1": "047_31_14_r1.mp3",
+      "r1_duration": 15.25551,
+      "source_wps": 0.7210509514267305,
+      "target_wps": 0.79306,
+      "atempo": 1.0998667964181816,
+      "r2": "047_31_14_r2.mp3",
+      "r2_duration": 13.87102,
+      "r2_theoretical_duration": 13.870325069982096,
+      "r2_duration_error": 0.0006949300179037721,
+      "r2_wps": 0.7930202681561991,
+      "mean_volume_db": -23.1,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 15,
+      "ref": "31:15",
+      "word_count": 11,
+      "boundary_start": 660.0548,
+      "boundary_end": 676.292514,
+      "boundary_start_meta": {
+        "candidate": 660.0548,
+        "refined": 660.0548,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 660.148,
+          "nearest_silence_end": 660.421,
+          "distance_to_silence_end": -0.36620000000004893
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 676.292514,
+        "refined": 676.292514,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 676.357,
+          "nearest_silence_end": 677.0,
+          "distance_to_silence_end": -0.7074860000000172
+        }
+      },
+      "r1": "047_31_15_r1.mp3",
+      "r1_duration": 16.274286,
+      "source_wps": 0.6759129094818661,
+      "target_wps": 0.79306,
+      "atempo": 1.1733168413781816,
+      "r2": "047_31_15_r2.mp3",
+      "r2_duration": 13.87102,
+      "r2_theoretical_duration": 13.870325069982098,
+      "r2_duration_error": 0.0006949300179019957,
+      "r2_wps": 0.7930202681561991,
+      "mean_volume_db": -23.2,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    },
+    {
+      "chapter": 31,
+      "verse": 16,
+      "ref": "31:16",
+      "word_count": 17,
+      "boundary_start": 676.292514,
+      "boundary_end": 709.6425,
+      "boundary_start_meta": {
+        "candidate": 676.292514,
+        "refined": 676.292514,
+        "method": "label_onset_model_pending",
+        "signal": {
+          "nearest_silence_start": 676.357,
+          "nearest_silence_end": 677.0,
+          "distance_to_silence_end": -0.7074860000000172
+        }
+      },
+      "boundary_end_meta": {
+        "candidate": 709.6425,
+        "refined": 709.6425,
+        "method": "source_end"
+      },
+      "r1": "047_31_16_r1.mp3",
+      "r1_duration": 33.38449,
+      "source_wps": 0.5092185023644213,
+      "target_wps": 0.79306,
+      "atempo": 1.557406096435294,
+      "r2": "047_31_16_r2.mp3",
+      "r2_duration": 21.446531,
+      "r2_theoretical_duration": 21.435956926335965,
+      "r2_duration_error": 0.010574073664034955,
+      "r2_wps": 0.7926689868865039,
+      "mean_volume_db": -21.7,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "NOT_RUN",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "POCKETTORAH"
+    }
+  ],
+  "failed_verses": []
+}
