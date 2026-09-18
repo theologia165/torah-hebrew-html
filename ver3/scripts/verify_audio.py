@@ -2,7 +2,7 @@
 import json,sys
 from pathlib import Path
 
-from audio.processing import TARGET_WPS, duration
+from audio.processing import MAX_ATEMPO, TARGET_WPS, duration
 
 MAX_DURATION_ERROR=0.090; MAX_WPS_ERROR=0.020
 def fail(msg):print(f'FAIL: {msg}',file=sys.stderr);raise SystemExit(1)
@@ -18,6 +18,8 @@ def main():
     if status=='PASS' and qa.get('MAPPING_CONFIRMED') is not True:fail('MAPPING_CONFIRMED is not true')
     if status=='PASS' and qa.get('SIGNAL_CHECKED') is not True:fail('SIGNAL_CHECKED is not true')
     if qa.get('MODEL_AUDIO_CHECKED') is not False:fail('MODEL_AUDIO_CHECKED must remain false until model/listening QA exists')
+    if m.get('qa',{}).get('speed_policy') not in (None, 'SLOWDOWN_ONLY_NO_ACCELERATION'):
+        fail('unsupported audio speed policy')
     verses=m.get('verses',[]); failed=m.get('failed_verses',[]); p=m['passage']; default_ch=int(p['chapter']); end_ch=int(p.get('end_chapter',default_ch)); actual=[(int(v.get('chapter',default_ch)),int(v['verse'])) for v in verses]
     expected=m.get('expected_refs') or [v['ref'] for v in verses]
     implemented_refs=[v['ref'] for v in verses]; failed_refs=[v['ref'] for v in failed]
@@ -49,8 +51,10 @@ def main():
         if abs(d1-v['r1_duration'])>0.01:fail(f'verse {ref}: r1 manifest duration drift')
         if abs(d2-v['r2_duration'])>0.01:fail(f'verse {ref}: r2 manifest duration drift')
         if v['r2_duration_error']>MAX_DURATION_ERROR:fail(f"verse {ref}: corrected duration error {v['r2_duration_error']:.6f}s > {MAX_DURATION_ERROR}")
-        if abs(v['r2_wps']-TARGET_WPS)>MAX_WPS_ERROR:fail(f"verse {ref}: r2 WPS {v['r2_wps']:.6f} outside target {TARGET_WPS}")
-        if not 0.25<=v['atempo']<=4.0:fail(f'verse {ref}: atempo outside safety range')
+        # The target is now an upper bound: slow source verses remain at
+        # natural speed; only faster verses may be slowed down.
+        if v['r2_wps'] > TARGET_WPS + MAX_WPS_ERROR:fail(f"verse {ref}: r2 WPS {v['r2_wps']:.6f} exceeds target ceiling {TARGET_WPS}")
+        if not 0.25<=v['atempo']<=MAX_ATEMPO:fail(f'verse {ref}: atempo outside slowdown-only range')
         if v['mean_volume_db']<-55.0:fail(f'verse {ref}: mean volume too low')
         scope=v.get('boundary_scope','POCKETTORAH_CONTINUOUS')
         if previous_end is not None and scope==previous_scope=='POCKETTORAH_CONTINUOUS' and abs(v['boundary_start']-previous_end)>0.001:fail(f'verse {ref}: non-shared adjacent boundary')
