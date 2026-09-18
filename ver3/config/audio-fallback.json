@@ -35,5 +35,7 @@
     "voice": "cedar",
     "required_disclosure": "OpenAIによるAI生成音声（利用可能な正本朗読音源がないため）",
     "instructions": "Read only the supplied Hebrew text once. Use a clear, reverent male voice and careful standard Israeli pronunciation suitable for studying Biblical Hebrew. Preserve every word and its order. Do not add a verse number, translation, introduction, explanation, or closing words."
-  }
+  },
+  "max_atempo": 1,
+  "speed_policy": "SLOWDOWN_ONLY_NO_ACCELERATION"
 }
