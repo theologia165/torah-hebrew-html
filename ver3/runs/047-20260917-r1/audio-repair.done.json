@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "operation": "AUDIO_ONLY_REPLACE",
+  "run_id": "047-20260917-r1",
+  "page_id": "3de8aa46-08ae-818f-ab36-c76f4e6fb2cb",
+  "action_run_id": 35329163421,
+  "audio_implemented_count": 32,
+  "audio_expected_count": 32,
+  "speed_policy": "SLOWDOWN_ONLY_NO_ACCELERATION",
+  "max_atempo": 1,
+  "boundary_policy": "NEXT_WORD_ONSET_REFINED_TO_SILENCE_END",
+  "notion_audio_blocks_replaced": true,
+  "text_html_pages_cover_email_unchanged": true,
+  "audit_note": "Notion update PASS; final Actions push encountered a commit_refs conflict after the update, then delivery audit was finalized via Contents API."
+}
