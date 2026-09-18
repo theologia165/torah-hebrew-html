@@ -59,7 +59,8 @@ def classify_failure(item):
         return 'POCKETTORAH_SOURCE_TRUNCATED'
     if 'boundary duration too short' in reason:
         return 'POCKETTORAH_BOUNDARY_TOO_SHORT'
-    if 'unreasonable atempo=' in reason:
+    if ('unreasonable atempo=' in reason
+            or 'unreasonable slowdown factor=' in reason):
         return 'POCKETTORAH_ATEMPO_OUT_OF_RANGE'
     return 'UNCLASSIFIED_AUDIO_FAILURE'
 
