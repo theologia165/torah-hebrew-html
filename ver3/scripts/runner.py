@@ -108,6 +108,9 @@ def main():
             shutil.copytree(repair_dir,run/'audio')
             for source in (run/'audio').glob('*_source.mp3'):
                 source.unlink()
+            # Publish the regenerated binaries before deliver.py compares the
+            # public raw URLs; otherwise it would still fetch the old MP3s.
+            commit_run(run,'Commit regenerated 047 audio before Notion replacement')
             cmd(sys.executable,'ver3/scripts/deliver.py',str(run),str(audio_repair_request))
             repaired=json.loads(state_path.read_text(encoding='utf-8'))
             assert repaired.get('status')=='PASS', 'Audio-only Notion update did not PASS'
