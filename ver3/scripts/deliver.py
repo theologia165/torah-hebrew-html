@@ -144,11 +144,15 @@ def assert_audio_audit(payload, expected_count):
 def main():
     run=Path(sys.argv[1]); token=os.environ['NOTION_TOKEN']; parent=os.environ['NOTION_PARENT_PAGE_ID']
     j=json.loads((run/'json1.json').read_text()); c=json.loads((run/'json2.json').read_text()); validate(j,c)
-    req=j['request']; seq=req['sequence']; routes=[]; audio_by_ref={}; audio_meta_by_ref={}
+    req=dict(j['request']);
+    if len(sys.argv)>2:
+        repair=json.loads(Path(sys.argv[2]).read_text(encoding='utf-8'))
+        req.update(repair)
+    seq=req['sequence']; routes=[]; audio_by_ref={}; audio_meta_by_ref={}
     state_path=run/'delivery.json'
     state=json.loads(state_path.read_text()) if state_path.exists() else {'status':'PENDING','run_id':req['run_id']}
     def checkpoint(): state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n')
-    if state.get('status')=='PASS':
+    if state.get('status')=='PASS' and not req.get('audio_only_repair'):
         # A delivery PASS is reusable only when the stored JSON3 itself has
         # exactly the number of audio blocks recorded in delivery.json.  This
         # prevents a stale partial JSON3 from turning an audio-manifest PASS
@@ -225,13 +229,14 @@ def main():
             verify(payload['children'],children(page_id,token),token)
             state.pop('error',None)
             delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
-            state.update(status=delivery_status,verse_count=len(j['verses']),json3_sha256=digest(payload),operation='UPDATE_EXISTING_PAGE',
+            state.update(status=delivery_status,verse_count=len(j['verses']),json3_sha256=digest(payload),operation=req.get('operation','UPDATE_EXISTING_PAGE'),
               NOTION_PAGE_CREATED=True,TEXT_DELIVERED=True,HTML_IMPLEMENTED_COUNT=len(routes),AUDIO_IMPLEMENTED_COUNT=len(audio_by_ref),
               missing_audio_refs=missing_audio_refs,missing_html_refs=[],failure_details=manifest.get('failed_verses',[]),
               ai_generated_audio_refs=media_status['ai_generated_audio_refs'],
               open_bible_audio_refs=media_status['open_bible_audio_refs']); checkpoint()
-            from r2_cover import apply as apply_cover
-            apply_cover(req['run_id'],page_id,state_path)
+            if not req.get('audio_only_repair'):
+                from r2_cover import apply as apply_cover
+                apply_cover(req['run_id'],page_id,state_path)
             print('PASS: updated existing page; all text, citations and 10 Pages embeds verified')
             return
         # A PARTIAL page may receive only newly repaired media.  Insert the
