@@ -7,9 +7,17 @@ from pathlib import Path
 from unittest.mock import patch
 
 from audio.sources import pockettorah
+from audio.processing import normalized_atempo
 
 
 def main():
+    factor, capped = normalized_atempo(0.35)
+    assert factor == 1.0 and capped is True
+    factor, capped = normalized_atempo(1.0)
+    assert factor < 1.0 and capped is False
+    refined = pockettorah.boundary_meta(1.0, [(0.8, 1.2)])
+    assert refined['refined'] == 1.2
+    assert refined['method'] == 'next_word_onset_refined_to_silence_end'
     with tempfile.TemporaryDirectory() as directory:
         root = Path(directory)
         tone = root / 'source.mp3'
