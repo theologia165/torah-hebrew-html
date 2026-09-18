@@ -2,21 +2,24 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "048-20260918-r1",
   "sequence": "048",
-  "phase": "JSON2",
-  "status": "WAITING_FOR_WORK",
-  "next_action": "CREATE_JSON2",
+  "phase": "FAILURE_REPORT",
+  "status": "BLOCKED",
+  "next_action": "SEND_PARTIAL_EMAIL_KEEP_STATE",
   "stage_spec": {
-    "path": "ver3/spec/json2-quality.md",
-    "sha256": "e69948da845c8755bb9aa8e53fca7d4143cfe0f4cd84612d277c49858af24280"
+    "path": "ver3/spec/failure-report.md",
+    "sha256": "49aa630c17d16e2376c459440d2353b14d55949e464b7d981e6999d742671bd9"
   },
   "required_inputs": [
-    "ver3/runs/048-20260918-r1/json1.1.json"
+    "ver3/runs/048-20260918-r1/delivery.json"
   ],
   "expected_outputs": [
-    "ver3/runs/048-20260918-r1/json2.json"
+    "ver3/runs/048-20260918-r1/completion.md"
   ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "quality_gate": "WORK_JSON2_QUALITY=PASS_BEFORE_COMMIT"
+    "failed_operation": "GITHUB_ACTIONS_PIPELINE",
+    "error_type": "CalledProcessError",
+    "error_message": "Command '('/opt/hostedtoolcache/Python/3.12.14/x64/bin/python', 'ver3/scripts/compose.py', 'ver3/runs/048-20260918-r1')' returned non-zero exit status 1.",
+    "last_successful_stage": "JSON1_JSON1_1_EXPORTED"
   }
 }
