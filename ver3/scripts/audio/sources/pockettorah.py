@@ -7,8 +7,10 @@ import urllib.request
 from pathlib import Path
 
 from audio.processing import (
+    MAX_ATEMPO,
     TARGET_WPS,
     duration,
+    normalized_atempo,
     mean_volume_db,
     speed_mp3,
     split_mp3,
@@ -64,7 +66,7 @@ def boundary_meta(candidate, silences):
     record = {
         'candidate': candidate,
         'refined': candidate,
-        'method': 'label_onset_model_pending',
+        'method': 'next_word_onset',
     }
     if nearby:
         _, start, end = min(nearby, key=lambda item: item[0])
@@ -73,6 +75,13 @@ def boundary_meta(candidate, silences):
             'nearest_silence_end': end,
             'distance_to_silence_end': candidate - end,
         }
+        # Labels mark the next word's onset, but the preceding verse should
+        # retain the complete inter-verse pause. When the onset falls inside
+        # a detected silence interval, assign that pause to the preceding
+        # verse and begin the next verse at the silence end.
+        if start <= candidate <= end:
+            record['refined'] = end
+            record['method'] = 'next_word_onset_refined_to_silence_end'
     return record
 
 
@@ -247,14 +256,14 @@ def build(data, output):
         split_mp3(source, start, end, r1)
         r1_duration = duration(r1)
         source_wps = len(verse_data['words']) / r1_duration
-        factor = TARGET_WPS / source_wps
-        if not 0.25 <= factor <= 4.0:
+        factor, speed_cap_applied = normalized_atempo(source_wps)
+        if not 0.25 <= factor <= MAX_ATEMPO:
             for path in (r1, r2):
                 path.unlink(missing_ok=True)
             failed.append(_failed_record(
                 chapter, verse, len(verse_data['words']), 'PASS', 'FAILED',
                 'MAPPING_CONFIRMED', 'POCKETTORAH_ATEMPO_OUT_OF_RANGE',
-                f'unreasonable atempo={factor:.6f}'))
+                f'unreasonable slowdown factor={factor:.6f}'))
             continue
         speed_mp3(r1, factor, r2)
         r2_duration = duration(r2)
@@ -275,7 +284,10 @@ def build(data, output):
             'r1_duration': r1_duration,
             'source_wps': source_wps,
             'target_wps': TARGET_WPS,
+            'max_atempo': MAX_ATEMPO,
+            'requested_atempo': TARGET_WPS / source_wps,
             'atempo': factor,
+            'speed_cap_applied': speed_cap_applied,
             'r2': r2.name,
             'r2_duration': r2_duration,
             'r2_theoretical_duration': theoretical,
@@ -319,10 +331,10 @@ def build(data, output):
             'AUDIO_VERIFICATION_COMPLETE': False,
             'target_wps': TARGET_WPS,
             'boundary_rule': (
-                'PocketTorah next-word onset is the deterministic shared '
-                'boundary; signal pauses are annotations only until '
-                'MODEL_AUDIO confirms prior-word completion and no next-verse '
-                'contamination'),
+                'PocketTorah next-word onset is refined to the end of a '
+                'detected inter-verse silence when the onset falls inside '
+                'that interval; otherwise the onset remains the boundary. '
+                'Audio speed is slowdown-only with max_atempo=1.0.'),
         },
         'verses': records,
         'failed_verses': failed,
