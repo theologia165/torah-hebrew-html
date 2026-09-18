@@ -1,5 +1,5 @@
 {
-  "status": "UPDATING",
+  "status": "PASS",
   "run_id": "047-20260917-r1",
   "page_id": "3de8aa46-08ae-818f-ab36-c76f4e6fb2cb",
   "page_url": "https://app.notion.com/p/047-30-28-31-16-3de8aa4608ae818fab36c76f4e6fb2cb",
@@ -24,5 +24,20 @@
     "notion_file_upload_id": "3de8aa46-08ae-81fc-9d20-00b20f425c46",
     "notion_cover_type": "file",
     "r2_retention_days": 14
+  },
+  "operation": "AUDIO_ONLY_REPLACE",
+  "audio_repair": {
+    "status": "PASS",
+    "operation": "AUDIO_ONLY_REPLACE",
+    "action_run_id": 35329163421,
+    "action_url": "https://github.com/theologia165/torah-hebrew-html/actions/runs/35329163421",
+    "audio_implemented_count": 32,
+    "audio_expected_count": 32,
+    "speed_policy": "SLOWDOWN_ONLY_NO_ACCELERATION",
+    "max_atempo": 1,
+    "boundary_policy": "NEXT_WORD_ONSET_REFINED_TO_SILENCE_END",
+    "notion_page_updated": true,
+    "text_html_pages_cover_email_unchanged": true,
+    "final_audit_push": "PARTIAL_PUSH_CONFLICT_RECORDED"
   }
 }
