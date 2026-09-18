@@ -1,5 +1,5 @@
 """Two-phase Actions entry point. The ChatGPT handoff is a committed JSON1.1."""
-import json, os, subprocess, sys
+import json, os, shutil, subprocess, sys
 from pathlib import Path
 from prepare import validate_request
 from completion_gate import inspect_completion
@@ -84,6 +84,44 @@ def main():
                 print('WAITING_FOR_FINALIZATION: '+','.join(completion_gate['reasons']))
                 return
     if completed_delivery:
+        # Explicit media-only repair: regenerate per-verse audio and update only
+        # existing Notion audio blocks. Text, HTML embeds, cover, email, and
+        # production state remain unchanged.
+        audio_repair_request=run/'audio-repair.json'
+        audio_repair_done=run/'audio-repair.done.json'
+        if audio_repair_request.exists() and not audio_repair_done.exists():
+            repair=json.loads(audio_repair_request.read_text(encoding='utf-8'))
+            assert repair.get('operation')=='AUDIO_ONLY_REPLACE', 'Invalid audio repair operation'
+            assert repair.get('run_id')==r['run_id'], 'Audio repair run_id mismatch'
+            delivery=json.loads(state_path.read_text(encoding='utf-8'))
+            assert repair.get('page_id')==delivery.get('page_id'), 'Audio repair page_id mismatch'
+            repair_dir=Path('/tmp/ver3-audio-repair')/run.name
+            if repair_dir.exists():
+                shutil.rmtree(repair_dir)
+            cmd(sys.executable,'ver3/scripts/build_audio.py',str(run/'audio-input.json'),str(repair_dir))
+            cmd(sys.executable,'ver3/scripts/verify_audio.py',str(repair_dir))
+            old_manifest=run/'audio/audio_manifest.json'
+            if old_manifest.exists():
+                shutil.copyfile(old_manifest,run/'audio-manifest-before-repair.json')
+            if (run/'audio').exists():
+                shutil.rmtree(run/'audio')
+            shutil.copytree(repair_dir,run/'audio')
+            for source in (run/'audio').glob('*_source.mp3'):
+                source.unlink()
+            cmd(sys.executable,'ver3/scripts/deliver.py',str(run),str(audio_repair_request))
+            repaired=json.loads(state_path.read_text(encoding='utf-8'))
+            assert repaired.get('status')=='PASS', 'Audio-only Notion update did not PASS'
+            assert repaired.get('operation')=='AUDIO_ONLY_REPLACE', 'Unexpected repair operation'
+            audio_repair_done.write_text(json.dumps({
+                'status':'PASS','operation':'AUDIO_ONLY_REPLACE',
+                'run_id':r['run_id'],'page_id':repair['page_id'],
+                'audio_implemented_count':repaired.get('AUDIO_IMPLEMENTED_COUNT'),
+                'speed_policy':'SLOWDOWN_ONLY_NO_ACCELERATION',
+                'max_atempo':1.0
+            },ensure_ascii=False,indent=2)+'\\n')
+            commit_run(run,'Replace existing 047 Notion audio blocks only')
+            print('PASS: audio-only repair completed; text, HTML, cover, email and production state preserved')
+            return
         # A separately requested display-only research restyle is the sole permitted post-PASS mutation.
         restyle_request=run/'research-style-refresh.json'
         restyle_done=run/'research-style-refresh.done.json'
