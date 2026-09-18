@@ -52,6 +52,8 @@ def update_manifest(manifest, record, failure, decision):
         'AI_FALLBACK_REFS': ai_refs,
         'OPEN_BIBLE_FALLBACK_REFS': open_refs,
         'AI_DISCLOSURE_REQUIRED': bool(ai_refs),
+        'speed_policy': 'SLOWDOWN_ONLY_NO_ACCELERATION',
+        'max_atempo': 1.0,
     })
     sources = [
         item for item in manifest.get('fallback_sources', [])
