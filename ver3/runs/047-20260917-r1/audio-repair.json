@@ -1,0 +1,20 @@
+{
+  "operation": "AUDIO_ONLY_REPLACE",
+  "run_id": "047-20260917-r1",
+  "page_id": "3de8aa46-08ae-818f-ab36-c76f4e6fb2cb",
+  "reason": "Regenerate 047 per-verse audio with slowdown-only atempo cap 1.0 and silence-end boundary refinement",
+  "requested_at": "2026-09-18",
+  "preserve": [
+    "json1.json",
+    "json1.1.json",
+    "json2.json",
+    "html",
+    "Pages embeds",
+    "Notion text blocks",
+    "cover",
+    "email",
+    "production state"
+  ],
+  "speed_policy": "SLOWDOWN_ONLY_NO_ACCELERATION",
+  "max_atempo": 1
+}
