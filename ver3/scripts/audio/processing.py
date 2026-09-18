@@ -4,6 +4,15 @@ import subprocess
 
 
 TARGET_WPS = 0.79306
+MAX_ATEMPO = 1.0
+
+
+def normalized_atempo(source_wps):
+    """Return a slowdown-only factor and whether acceleration was suppressed."""
+    if source_wps <= 0:
+        raise AudioProcessingError(f'invalid source_wps={source_wps}')
+    requested = TARGET_WPS / source_wps
+    return min(MAX_ATEMPO, requested), requested > MAX_ATEMPO
 
 
 class AudioProcessingError(RuntimeError):
@@ -73,8 +82,8 @@ def make_audio_record(ref, verse_data, r1, r2, origin, disclosure='',
     d1 = duration(r1)
     word_count = len(verse_data['words'])
     source_wps = word_count / d1
-    factor = TARGET_WPS / source_wps
-    if not 0.25 <= factor <= 4.0:
+    factor, speed_cap_applied = normalized_atempo(source_wps)
+    if not 0.25 <= factor <= MAX_ATEMPO:
         raise AudioProcessingError(
             f'{origin} produced unreasonable atempo={factor:.6f}')
     speed_mp3(r1, factor, r2)
@@ -107,7 +116,10 @@ def make_audio_record(ref, verse_data, r1, r2, origin, disclosure='',
         'r1_duration': d1,
         'source_wps': source_wps,
         'target_wps': TARGET_WPS,
+        'max_atempo': MAX_ATEMPO,
+        'requested_atempo': TARGET_WPS / source_wps,
         'atempo': factor,
+        'speed_cap_applied': speed_cap_applied,
         'r2': r2.name,
         'r2_duration': d2,
         'r2_theoretical_duration': theoretical,
