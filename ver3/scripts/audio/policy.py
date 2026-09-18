@@ -39,6 +39,10 @@ def validate_policy(policy):
             'Audio fallback priority must be PocketTorah → Open.Bible → OpenAI TTS')
     if abs(float(policy.get('target_wps', 0)) - 0.79306) > 1e-9:
         raise RuntimeError('Audio fallback policy target_wps mismatch')
+    if abs(float(policy.get('max_atempo', 0)) - 1.0) > 1e-9:
+        raise RuntimeError('Audio fallback policy max_atempo must be 1.0')
+    if policy.get('speed_policy') != 'SLOWDOWN_ONLY_NO_ACCELERATION':
+        raise RuntimeError('Audio fallback policy must prohibit acceleration')
     open_bible = policy.setdefault('open_bible', {})
     open_bible.setdefault('approved_verse_sources', {})
     if not isinstance(open_bible['approved_verse_sources'], dict):
