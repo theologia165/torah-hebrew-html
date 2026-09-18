@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0-r2-cover-ready",
+  "run_id": "048-20260918-r1",
+  "status": "PASS",
+  "object_key": "covers/048-20260918-r1/cover.jpg",
+  "content_type": "image/jpeg",
+  "width": 1200,
+  "height": 630,
+  "byte_size": 252168,
+  "sha256": "d6f54bb3e969be88d4b9c70acda2677be9b4151c6c0c632a3f0df5ebd29d5968",
+  "qa": {
+    "nnn_exact": true,
+    "parasha_exact": true,
+    "aliyah_exact": true,
+    "scripture_range_exact": true,
+    "theme_text_derived": true,
+    "callout_consistent": true,
+    "text_legible_no_corruption": true,
+    "no_past_run_contamination": true,
+    "scene_text_consistent": true,
+    "dimensions_exact": true
+  },
+  "source_layers": {
+    "global_master": "ver3/config/image-master.json",
+    "parasha_profile": "ver3/config/parasha-image/vayetzei.json",
+    "current_run_package": "048-20260918-r1 JSON2 handoff (transient)"
+  },
+  "generation": "fresh",
+  "attempts": 1
+}
