@@ -330,6 +330,8 @@ def build(data, output):
             'AUDIO_DELIVERY_COMPLETE': not failed,
             'AUDIO_VERIFICATION_COMPLETE': False,
             'target_wps': TARGET_WPS,
+            'max_atempo': MAX_ATEMPO,
+            'speed_policy': 'SLOWDOWN_ONLY_NO_ACCELERATION',
             'boundary_rule': (
                 'PocketTorah next-word onset is refined to the end of a '
                 'detected inter-verse silence when the onset falls inside '
