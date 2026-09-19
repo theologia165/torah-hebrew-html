@@ -18,6 +18,12 @@ def main():
     refined = pockettorah.boundary_meta(1.0, [(0.8, 1.2)])
     assert refined['refined'] == 1.2
     assert refined['method'] == 'next_word_onset_refined_to_silence_end'
+    refined_before = pockettorah.boundary_meta(0.6, [(0.8, 1.2)])
+    assert refined_before['refined'] == 1.2
+    assert refined_before['method'] == 'next_word_onset_refined_to_silence_end'
+    unchanged_after = pockettorah.boundary_meta(1.3, [(0.8, 1.2)])
+    assert unchanged_after['refined'] == 1.3
+    assert unchanged_after['method'] == 'next_word_onset'
     with tempfile.TemporaryDirectory() as directory:
         root = Path(directory)
         tone = root / 'source.mp3'
