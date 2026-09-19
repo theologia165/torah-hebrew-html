@@ -1,6 +1,28 @@
 {
-  "status": "CREATED",
+  "status": "PASS",
   "run_id": "049-20260919-r2",
   "page_id": "3e08aa46-08ae-81d8-824c-d603f823f19a",
-  "page_url": "https://app.notion.com/p/049-31-43-32-3-3e08aa4608ae81d8824cd603f823f19a"
+  "page_url": "https://app.notion.com/p/049-31-43-32-3-3e08aa4608ae81d8824cd603f823f19a",
+  "frame_upload_id": "3d48aa46-08ae-81fa-99e2-00b270ed575a",
+  "frame_method": "SHARED_DUMMY_THEN_PAGES",
+  "verse_count": 15,
+  "json3_sha256": "4942d166b6f4331bac0889b68c1fd8442bc5cf30b23d7bb26ed1f6cc190427fd",
+  "NOTION_PAGE_CREATED": true,
+  "TEXT_DELIVERED": true,
+  "HTML_IMPLEMENTED_COUNT": 15,
+  "AUDIO_IMPLEMENTED_COUNT": 15,
+  "missing_audio_refs": [],
+  "missing_html_refs": [],
+  "failure_details": [],
+  "ai_generated_audio_refs": [],
+  "open_bible_audio_refs": [],
+  "cover": {
+    "status": "PASS",
+    "r2_object_key": "covers/049-20260919-r2/cover.jpg",
+    "sha256": "56d9cff4ae48d6143a540ede95462c8f20b1e1b929c9d37198beb49e5338ac49",
+    "byte_size": 353040,
+    "notion_file_upload_id": "3e08aa46-08ae-8141-9f4c-00b262bb75dc",
+    "notion_cover_type": "file",
+    "r2_retention_days": 14
+  }
 }
