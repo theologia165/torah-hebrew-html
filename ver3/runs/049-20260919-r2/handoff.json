@@ -19,7 +19,7 @@
   "details": {
     "failed_operation": "GITHUB_ACTIONS_PIPELINE",
     "error_type": "CalledProcessError",
-    "error_message": "Command '('/opt/hostedtoolcache/Python/3.12.14/x64/bin/python', 'ver3/scripts/compose.py', 'ver3/runs/049-20260919-r2')' returned non-zero exit status 1.",
-    "last_successful_stage": "JSON1_JSON1_1_EXPORTED"
+    "error_message": "Command '('/opt/hostedtoolcache/Python/3.12.14/x64/bin/python', 'ver3/scripts/build_audio.py', 'ver3/runs/049-20260919-r2/audio-input.json', 'ver3/runs/049-20260919-r2/audio')' returned non-zero exit status 1.",
+    "last_successful_stage": "JSON2_COMPOSED"
   }
 }
