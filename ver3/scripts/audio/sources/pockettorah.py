@@ -76,10 +76,11 @@ def boundary_meta(candidate, silences):
             'distance_to_silence_end': candidate - end,
         }
         # Labels mark the next word's onset, but the preceding verse should
-        # retain the complete inter-verse pause. When the onset falls inside
-        # a detected silence interval, assign that pause to the preceding
-        # verse and begin the next verse at the silence end.
-        if start <= candidate <= end:
+        # retain the complete inter-verse pause. Alignment can place the
+        # onset slightly before the detected silence, or inside it. In both
+        # cases assign the complete pause to the preceding verse and begin
+        # the next verse at the silence end.
+        if start - SIGNAL_WINDOW <= candidate <= end:
             record['refined'] = end
             record['method'] = 'next_word_onset_refined_to_silence_end'
     return record
@@ -334,8 +335,9 @@ def build(data, output):
             'speed_policy': 'SLOWDOWN_ONLY_NO_ACCELERATION',
             'boundary_rule': (
                 'PocketTorah next-word onset is refined to the end of a '
-                'detected inter-verse silence when the onset falls inside '
-                'that interval; otherwise the onset remains the boundary. '
+                'detected inter-verse silence when the onset is inside the '
+                'interval or within the alignment window immediately before '
+                'silence; otherwise the onset remains the boundary. '
                 'Audio speed is slowdown-only with max_atempo=1.0.'),
         },
         'verses': records,
