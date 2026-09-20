@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0-cover-ready",
+  "run_id": "050-20260920-r1",
+  "object_key": "covers/050-20260920-r1/cover.jpg",
+  "content_type": "image/jpeg",
+  "image_status": "PASS",
+  "width": 1200,
+  "height": 630,
+  "byte_size": 347508,
+  "sha256": "4c59be5c3a22a4a53913a257ee561b3784341a8d9b1bd926f1a1fa86bc87bf51",
+  "qa": {
+    "nnn_exact": true,
+    "parasha_exact": true,
+    "aliyah_exact": true,
+    "range_exact": true,
+    "theme_from_current_passage": true,
+    "optional_subcopy_consistent": true,
+    "no_typo_garbling_or_omission": true,
+    "no_cross_run_contamination": true,
+    "scene_matches_current_passage": true,
+    "final_size_1200x630": true
+  }
+}
