@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "config_type": "ASAICHI_TORAH_PARASHA_IMAGE_PROFILE",
+  "parasha_jp": "ヴァイシュラハ",
+  "parasha_en": "Vayishlach",
+  "scope": "PARASHA_VISUAL_CONTINUITY",
+  "palette": {
+    "primary": "deep indigo and muted desert umber",
+    "secondary": "weathered sandstone, dusty rose, and subdued olive",
+    "accent": "restrained pre-dawn amber"
+  },
+  "texture": "fine parchment grain blended with weathered desert stone; tactile but quiet",
+  "light": "low raking dawn or late-evening light, with soft haze and controlled highlights",
+  "atmosphere": "watchful, unsettled, prayerful, and gradually reconciliatory; tension without spectacle",
+  "ancient_world_principles": [
+    "Genesis-era pastoral landscapes, tents, staffs, herds, travel gear, and plausible ancient Near Eastern garments",
+    "human scale and relational distance should carry emotion more than theatrical gestures",
+    "desert ridges, river crossings, encampments, and open sky may unify the parasha without fixing a single aliyah scene",
+    "avoid anachronistic military uniforms, royal architecture, and later religious iconography"
+  ],
+  "composition_continuity": "Use earthbound foregrounds, distant ridgelines, and directional light to suggest journey, encounter, and changed identity.",
+  "exclusions": [
+    "past or future NNN numbers",
+    "aliyah-specific events or named figures as permanent profile data",
+    "prior images or generation identifiers",
+    "fantasy combat or supernatural spectacle"
+  ]
+}
