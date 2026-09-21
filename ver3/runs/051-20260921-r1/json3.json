@@ -1,0 +1,5431 @@
+{
+  "schema_version": "3.0-json3",
+  "run_id": "051-20260921-r1",
+  "json1_sha256": "ac027e977e493369be7162139e01bbab37f2ec27d5f31c420e823575e175d633",
+  "json2_sha256": "c4529c194a17bfae15532dcaea28663f59f25c4183a5ca3602df24d314ec6bc4",
+  "title": "051｜創世記32:14–30",
+  "verses": [
+    {
+      "ref": "Gen.32.14",
+      "tokens": [
+        {
+          "token_id": 10471,
+          "token_index": 1,
+          "surface": "וַיָּ֥לֶן",
+          "ja": "そして彼は泊まった"
+        },
+        {
+          "token_id": 10472,
+          "token_index": 2,
+          "surface": "שָׁ֖ם",
+          "ja": "そこで"
+        },
+        {
+          "token_id": 10473,
+          "token_index": 3,
+          "surface": "בַּלַּ֣יְלָה",
+          "ja": "その夜に"
+        },
+        {
+          "token_id": 10474,
+          "token_index": 4,
+          "surface": "הַה֑וּא",
+          "ja": "その"
+        },
+        {
+          "token_id": 10475,
+          "token_index": 5,
+          "surface": "וַיִּקַּ֞ח",
+          "ja": "そして彼は取った"
+        },
+        {
+          "token_id": 10476,
+          "token_index": 6,
+          "surface": "מִן",
+          "ja": "～から"
+        },
+        {
+          "token_id": 10477,
+          "token_index": 7,
+          "surface": "הַבָּ֧א",
+          "ja": "手元に来ていたもの"
+        },
+        {
+          "token_id": 10478,
+          "token_index": 8,
+          "surface": "בְיָד֛וֹ",
+          "ja": "彼の手のうちに"
+        },
+        {
+          "token_id": 10479,
+          "token_index": 9,
+          "surface": "מִנְחָ֖ה",
+          "ja": "贈り物を"
+        },
+        {
+          "token_id": 10480,
+          "token_index": 10,
+          "surface": "לְעֵשָׂ֥ו",
+          "ja": "エサウのために"
+        },
+        {
+          "token_id": 10481,
+          "token_index": 11,
+          "surface": "אָחִֽיו",
+          "ja": "彼の兄弟である"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.15",
+      "tokens": [
+        {
+          "token_id": 10482,
+          "token_index": 1,
+          "surface": "עִזִּ֣ים",
+          "ja": "雌山羊"
+        },
+        {
+          "token_id": 10483,
+          "token_index": 2,
+          "surface": "מָאתַ֔יִם",
+          "ja": "二百頭"
+        },
+        {
+          "token_id": 10484,
+          "token_index": 3,
+          "surface": "וּתְיָשִׁ֖ים",
+          "ja": "そして雄山羊"
+        },
+        {
+          "token_id": 10485,
+          "token_index": 4,
+          "surface": "עֶשְׂרִ֑ים",
+          "ja": "二十頭"
+        },
+        {
+          "token_id": 10486,
+          "token_index": 5,
+          "surface": "רְחֵלִ֥ים",
+          "ja": "雌羊"
+        },
+        {
+          "token_id": 10487,
+          "token_index": 6,
+          "surface": "מָאתַ֖יִם",
+          "ja": "二百頭"
+        },
+        {
+          "token_id": 10488,
+          "token_index": 7,
+          "surface": "וְאֵילִ֥ים",
+          "ja": "そして雄羊"
+        },
+        {
+          "token_id": 10489,
+          "token_index": 8,
+          "surface": "עֶשְׂרִֽים",
+          "ja": "二十頭"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.16",
+      "tokens": [
+        {
+          "token_id": 10490,
+          "token_index": 1,
+          "surface": "גְּמַלִּ֧ים",
+          "ja": "らくだ"
+        },
+        {
+          "token_id": 10491,
+          "token_index": 2,
+          "surface": "מֵינִיק֛וֹת",
+          "ja": "乳を飲ませている"
+        },
+        {
+          "token_id": 10492,
+          "token_index": 3,
+          "surface": "וּבְנֵיהֶ֖ם",
+          "ja": "そしてその子ら"
+        },
+        {
+          "token_id": 10493,
+          "token_index": 4,
+          "surface": "שְׁלֹשִׁ֑ים",
+          "ja": "三十頭"
+        },
+        {
+          "token_id": 10494,
+          "token_index": 5,
+          "surface": "פָּר֤וֹת",
+          "ja": "雌牛"
+        },
+        {
+          "token_id": 10495,
+          "token_index": 6,
+          "surface": "אַרְבָּעִים֙",
+          "ja": "四十頭"
+        },
+        {
+          "token_id": 10496,
+          "token_index": 7,
+          "surface": "וּפָרִ֣ים",
+          "ja": "そして雄牛"
+        },
+        {
+          "token_id": 10497,
+          "token_index": 8,
+          "surface": "עֲשָׂרָ֔ה",
+          "ja": "十頭"
+        },
+        {
+          "token_id": 10498,
+          "token_index": 9,
+          "surface": "אֲתֹנֹ֣ת",
+          "ja": "雌ろば"
+        },
+        {
+          "token_id": 10499,
+          "token_index": 10,
+          "surface": "עֶשְׂרִ֔ים",
+          "ja": "二十頭"
+        },
+        {
+          "token_id": 10500,
+          "token_index": 11,
+          "surface": "וַעְיָרִ֖ם",
+          "ja": "そして若い雄ろば"
+        },
+        {
+          "token_id": 10501,
+          "token_index": 12,
+          "surface": "עֲשָׂרָֽה",
+          "ja": "十頭"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.17",
+      "tokens": [
+        {
+          "token_id": 10502,
+          "token_index": 1,
+          "surface": "וַיִּתֵּן֙",
+          "ja": "そして彼は渡した"
+        },
+        {
+          "token_id": 10503,
+          "token_index": 2,
+          "surface": "בְּיַד",
+          "ja": "～の手に"
+        },
+        {
+          "token_id": 10504,
+          "token_index": 3,
+          "surface": "עֲבָדָ֔יו",
+          "ja": "彼の僕たち"
+        },
+        {
+          "token_id": 10505,
+          "token_index": 4,
+          "surface": "עֵ֥דֶר",
+          "ja": "群れを"
+        },
+        {
+          "token_id": 10506,
+          "token_index": 5,
+          "surface": "עֵ֖דֶר",
+          "ja": "群れごとに"
+        },
+        {
+          "token_id": 10507,
+          "token_index": 6,
+          "surface": "לְבַדּ֑וֹ",
+          "ja": "それだけで"
+        },
+        {
+          "token_id": 10508,
+          "token_index": 7,
+          "surface": "וַ֤יֹּאמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 10509,
+          "token_index": 8,
+          "surface": "אֶל",
+          "ja": "～に"
+        },
+        {
+          "token_id": 10510,
+          "token_index": 9,
+          "surface": "עֲבָדָיו֙",
+          "ja": "彼の僕たち"
+        },
+        {
+          "token_id": 10511,
+          "token_index": 10,
+          "surface": "עִבְר֣וּ",
+          "ja": "先へ進め"
+        },
+        {
+          "token_id": 10512,
+          "token_index": 11,
+          "surface": "לְפָנַ֔י",
+          "ja": "私の前を"
+        },
+        {
+          "token_id": 10513,
+          "token_index": 12,
+          "surface": "וְרֶ֣וַח",
+          "ja": "そして間隔を"
+        },
+        {
+          "token_id": 10514,
+          "token_index": 13,
+          "surface": "תָּשִׂ֔ימוּ",
+          "ja": "あなたがたは置け"
+        },
+        {
+          "token_id": 10515,
+          "token_index": 14,
+          "surface": "בֵּ֥ין",
+          "ja": "～の間に"
+        },
+        {
+          "token_id": 10516,
+          "token_index": 15,
+          "surface": "עֵ֖דֶר",
+          "ja": "群れ"
+        },
+        {
+          "token_id": 10517,
+          "token_index": 16,
+          "surface": "וּבֵ֥ין",
+          "ja": "そして～の間に"
+        },
+        {
+          "token_id": 10518,
+          "token_index": 17,
+          "surface": "עֵֽדֶר",
+          "ja": "群れ"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.18",
+      "tokens": [
+        {
+          "token_id": 10519,
+          "token_index": 1,
+          "surface": "וַיְצַ֥ו",
+          "ja": "そして彼は命じた"
+        },
+        {
+          "token_id": 10520,
+          "token_index": 2,
+          "surface": "אֶת",
+          "ja": "（～を）"
+        },
+        {
+          "token_id": 10521,
+          "token_index": 3,
+          "surface": "הָרִאשׁ֖וֹן",
+          "ja": "最初の者に"
+        },
+        {
+          "token_id": 10522,
+          "token_index": 4,
+          "surface": "לֵאמֹ֑ר",
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 10523,
+          "token_index": 5,
+          "surface": "כִּ֣י",
+          "ja": "もし"
+        },
+        {
+          "token_id": 10524,
+          "token_index": 6,
+          "surface": "יִֽפְגָּשְׁךָ֞",
+          "ja": "彼があなたに会うなら"
+        },
+        {
+          "token_id": 10525,
+          "token_index": 7,
+          "surface": "עֵשָׂ֣ו",
+          "ja": "エサウが"
+        },
+        {
+          "token_id": 10526,
+          "token_index": 8,
+          "surface": "אָחִ֗י",
+          "ja": "私の兄弟"
+        },
+        {
+          "token_id": 10527,
+          "token_index": 9,
+          "surface": "וִשְׁאֵֽלְךָ֙",
+          "ja": "そして彼があなたに尋ねるなら"
+        },
+        {
+          "token_id": 10528,
+          "token_index": 10,
+          "surface": "לֵאמֹ֔ר",
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 10529,
+          "token_index": 11,
+          "surface": "לְמִי",
+          "ja": "だれの者か"
+        },
+        {
+          "token_id": 10530,
+          "token_index": 12,
+          "surface": "אַ֨תָּה֙",
+          "ja": "あなたは"
+        },
+        {
+          "token_id": 10531,
+          "token_index": 13,
+          "surface": "וְאָ֣נָה",
+          "ja": "そしてどこへ"
+        },
+        {
+          "token_id": 10532,
+          "token_index": 14,
+          "surface": "תֵלֵ֔ךְ",
+          "ja": "あなたは行くのか"
+        },
+        {
+          "token_id": 10533,
+          "token_index": 15,
+          "surface": "וּלְמִ֖י",
+          "ja": "そしてだれのものか"
+        },
+        {
+          "token_id": 10534,
+          "token_index": 16,
+          "surface": "אֵ֥לֶּה",
+          "ja": "これらは"
+        },
+        {
+          "token_id": 10535,
+          "token_index": 17,
+          "surface": "לְפָנֶֽיךָ",
+          "ja": "あなたの前にある"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.19",
+      "tokens": [
+        {
+          "token_id": 10536,
+          "token_index": 1,
+          "surface": "וְאָֽמַרְתָּ֙",
+          "ja": "そしてあなたは言え"
+        },
+        {
+          "token_id": 10537,
+          "token_index": 2,
+          "surface": "לְעַבְדְּךָ֣",
+          "ja": "あなたの僕のもの"
+        },
+        {
+          "token_id": 10538,
+          "token_index": 3,
+          "surface": "לְיַעֲקֹ֔ב",
+          "ja": "ヤコブの"
+        },
+        {
+          "token_id": 10539,
+          "token_index": 4,
+          "surface": "מִנְחָ֥ה",
+          "ja": "贈り物です"
+        },
+        {
+          "token_id": 10540,
+          "token_index": 5,
+          "surface": "הִוא֙",
+          "ja": "これは"
+        },
+        {
+          "token_id": 10541,
+          "token_index": 6,
+          "surface": "שְׁלוּחָ֔ה",
+          "ja": "送られたもの"
+        },
+        {
+          "token_id": 10542,
+          "token_index": 7,
+          "surface": "לַֽאדֹנִ֖י",
+          "ja": "私の主人へ"
+        },
+        {
+          "token_id": 10543,
+          "token_index": 8,
+          "surface": "לְעֵשָׂ֑ו",
+          "ja": "エサウへ"
+        },
+        {
+          "token_id": 10544,
+          "token_index": 9,
+          "surface": "וְהִנֵּ֥ה",
+          "ja": "そしてご覧ください"
+        },
+        {
+          "token_id": 10545,
+          "token_index": 10,
+          "surface": "גַם",
+          "ja": "また"
+        },
+        {
+          "token_id": 10546,
+          "token_index": 11,
+          "surface": "ה֖וּא",
+          "ja": "彼も"
+        },
+        {
+          "token_id": 10547,
+          "token_index": 12,
+          "surface": "אַחֲרֵֽינוּ",
+          "ja": "私たちの後ろにいます"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.20",
+      "tokens": [
+        {
+          "token_id": 10555,
+          "token_index": 1,
+          "surface": "וַיְצַ֞ו",
+          "ja": "そして彼は命じた"
+        },
+        {
+          "token_id": 10556,
+          "token_index": 2,
+          "surface": "גַּ֣ם",
+          "ja": "また"
+        },
+        {
+          "token_id": 10557,
+          "token_index": 3,
+          "surface": "אֶת",
+          "ja": "（～を）"
+        },
+        {
+          "token_id": 10558,
+          "token_index": 4,
+          "surface": "הַשֵּׁנִ֗י",
+          "ja": "第二の者に"
+        },
+        {
+          "token_id": 10559,
+          "token_index": 5,
+          "surface": "גַּ֚ם",
+          "ja": "また"
+        },
+        {
+          "token_id": 10560,
+          "token_index": 6,
+          "surface": "אֶת",
+          "ja": "（～を）"
+        },
+        {
+          "token_id": 10561,
+          "token_index": 7,
+          "surface": "הַשְּׁלִישִׁ֔י",
+          "ja": "第三の者に"
+        },
+        {
+          "token_id": 10562,
+          "token_index": 8,
+          "surface": "גַּ֚ם",
+          "ja": "また"
+        },
+        {
+          "token_id": 10563,
+          "token_index": 9,
+          "surface": "אֶת",
+          "ja": "（～を）"
+        },
+        {
+          "token_id": 10564,
+          "token_index": 10,
+          "surface": "כָּל",
+          "ja": "すべての者に"
+        },
+        {
+          "token_id": 10565,
+          "token_index": 11,
+          "surface": "הַהֹ֣לְכִ֔ים",
+          "ja": "進んでいる"
+        },
+        {
+          "token_id": 10566,
+          "token_index": 12,
+          "surface": "אַחֲרֵ֥י",
+          "ja": "～の後を"
+        },
+        {
+          "token_id": 10567,
+          "token_index": 13,
+          "surface": "הָעֲדָרִ֖ים",
+          "ja": "その群れの"
+        },
+        {
+          "token_id": 10568,
+          "token_index": 14,
+          "surface": "לֵאמֹ֑ר",
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 10569,
+          "token_index": 15,
+          "surface": "כַּדָּבָ֤ר",
+          "ja": "この言葉のとおりに"
+        },
+        {
+          "token_id": 10570,
+          "token_index": 16,
+          "surface": "הַזֶּה֙",
+          "ja": "この"
+        },
+        {
+          "token_id": 10571,
+          "token_index": 17,
+          "surface": "תְּדַבְּר֣וּן",
+          "ja": "あなたがたは語れ"
+        },
+        {
+          "token_id": 10572,
+          "token_index": 18,
+          "surface": "אֶל",
+          "ja": "～に"
+        },
+        {
+          "token_id": 10573,
+          "token_index": 19,
+          "surface": "עֵשָׂ֔ו",
+          "ja": "エサウ"
+        },
+        {
+          "token_id": 10574,
+          "token_index": 20,
+          "surface": "בְּמֹצַאֲכֶ֖ם",
+          "ja": "あなたがたが会うとき"
+        },
+        {
+          "token_id": 10575,
+          "token_index": 21,
+          "surface": "אֹתֽוֹ",
+          "ja": "彼に"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.21",
+      "tokens": [
+        {
+          "token_id": 10576,
+          "token_index": 1,
+          "surface": "וַאֲמַרְתֶּ֕ם",
+          "ja": "そしてあなたがたは言え"
+        },
+        {
+          "token_id": 10577,
+          "token_index": 2,
+          "surface": "גַּ֗ם",
+          "ja": "また"
+        },
+        {
+          "token_id": 10578,
+          "token_index": 3,
+          "surface": "הִנֵּ֛ה",
+          "ja": "ご覧ください"
+        },
+        {
+          "token_id": 10579,
+          "token_index": 4,
+          "surface": "עַבְדְּךָ֥",
+          "ja": "あなたの僕"
+        },
+        {
+          "token_id": 10580,
+          "token_index": 5,
+          "surface": "יַעֲקֹ֖ב",
+          "ja": "ヤコブが"
+        },
+        {
+          "token_id": 10581,
+          "token_index": 6,
+          "surface": "אַחֲרֵ֑ינוּ",
+          "ja": "私たちの後ろにいます"
+        },
+        {
+          "token_id": 10582,
+          "token_index": 7,
+          "surface": "כִּֽי",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 10583,
+          "token_index": 8,
+          "surface": "אָמַ֞ר",
+          "ja": "彼は言った"
+        },
+        {
+          "token_id": 10584,
+          "token_index": 9,
+          "surface": "אֲכַפְּרָ֣ה",
+          "ja": "どうか私は和らげよう"
+        },
+        {
+          "token_id": 10585,
+          "token_index": 10,
+          "surface": "פָנָ֗יו",
+          "ja": "彼の顔を"
+        },
+        {
+          "token_id": 10586,
+          "token_index": 11,
+          "surface": "בַּמִּנְחָה֙",
+          "ja": "その贈り物で"
+        },
+        {
+          "token_id": 10587,
+          "token_index": 12,
+          "surface": "הַהֹלֶ֣כֶת",
+          "ja": "進んでいる"
+        },
+        {
+          "token_id": 10588,
+          "token_index": 13,
+          "surface": "לְפָנָ֔י",
+          "ja": "私の前を"
+        },
+        {
+          "token_id": 10589,
+          "token_index": 14,
+          "surface": "וְאַחֲרֵי",
+          "ja": "そしてその後で"
+        },
+        {
+          "token_id": 10590,
+          "token_index": 15,
+          "surface": "כֵן֙",
+          "ja": "そのようにして"
+        },
+        {
+          "token_id": 10591,
+          "token_index": 16,
+          "surface": "אֶרְאֶ֣ה",
+          "ja": "私は見よう"
+        },
+        {
+          "token_id": 10592,
+          "token_index": 17,
+          "surface": "פָנָ֔יו",
+          "ja": "彼の顔を"
+        },
+        {
+          "token_id": 10593,
+          "token_index": 18,
+          "surface": "אוּלַ֖י",
+          "ja": "おそらく"
+        },
+        {
+          "token_id": 10594,
+          "token_index": 19,
+          "surface": "יִשָּׂ֥א",
+          "ja": "彼は上げてくれるだろう"
+        },
+        {
+          "token_id": 10595,
+          "token_index": 20,
+          "surface": "פָנָֽי",
+          "ja": "私の顔を"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.22",
+      "tokens": [
+        {
+          "token_id": 10596,
+          "token_index": 1,
+          "surface": "וַתַּעֲבֹ֥ר",
+          "ja": "そして先に渡った"
+        },
+        {
+          "token_id": 10597,
+          "token_index": 2,
+          "surface": "הַמִּנְחָ֖ה",
+          "ja": "その贈り物が"
+        },
+        {
+          "token_id": 10598,
+          "token_index": 3,
+          "surface": "עַל",
+          "ja": "～の前を"
+        },
+        {
+          "token_id": 10599,
+          "token_index": 4,
+          "surface": "פָּנָ֑יו",
+          "ja": "彼の"
+        },
+        {
+          "token_id": 10600,
+          "token_index": 5,
+          "surface": "וְה֛וּא",
+          "ja": "しかし彼は"
+        },
+        {
+          "token_id": 10601,
+          "token_index": 6,
+          "surface": "לָ֥ן",
+          "ja": "泊まった"
+        },
+        {
+          "token_id": 10602,
+          "token_index": 7,
+          "surface": "בַּלַּֽיְלָה",
+          "ja": "その夜に"
+        },
+        {
+          "token_id": 10603,
+          "token_index": 8,
+          "surface": "הַה֖וּא",
+          "ja": "その"
+        },
+        {
+          "token_id": 10604,
+          "token_index": 9,
+          "surface": "בַּֽמַּחֲנֶֽה",
+          "ja": "宿営で"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.23",
+      "tokens": [
+        {
+          "token_id": 10605,
+          "token_index": 1,
+          "surface": "וַיָּ֣קָם",
+          "ja": "そして彼は起きた"
+        },
+        {
+          "token_id": 10606,
+          "token_index": 2,
+          "surface": "בַּלַּ֣יְלָה",
+          "ja": "その夜に"
+        },
+        {
+          "token_id": 10607,
+          "token_index": 3,
+          "surface": "ה֗וּא",
+          "ja": "その"
+        },
+        {
+          "token_id": 10608,
+          "token_index": 4,
+          "surface": "וַיִּקַּ֞ח",
+          "ja": "そして彼は連れた"
+        },
+        {
+          "token_id": 10609,
+          "token_index": 5,
+          "surface": "אֶת",
+          "ja": "（～を）"
+        },
+        {
+          "token_id": 10610,
+          "token_index": 6,
+          "surface": "שְׁתֵּ֤י",
+          "ja": "二人の"
+        },
+        {
+          "token_id": 10611,
+          "token_index": 7,
+          "surface": "נָשָׁיו֙",
+          "ja": "彼の妻たち"
+        },
+        {
+          "token_id": 10612,
+          "token_index": 8,
+          "surface": "וְאֶת",
+          "ja": "そして（～を）"
+        },
+        {
+          "token_id": 10613,
+          "token_index": 9,
+          "surface": "שְׁתֵּ֣י",
+          "ja": "二人の"
+        },
+        {
+          "token_id": 10614,
+          "token_index": 10,
+          "surface": "שִׁפְחֹתָ֔יו",
+          "ja": "彼の女奴隷たち"
+        },
+        {
+          "token_id": 10615,
+          "token_index": 11,
+          "surface": "וְאֶת",
+          "ja": "そして（～を）"
+        },
+        {
+          "token_id": 10616,
+          "token_index": 12,
+          "surface": "אַחַ֥ד",
+          "ja": "一"
+        },
+        {
+          "token_id": 10617,
+          "token_index": 13,
+          "surface": "עָשָׂ֖ר",
+          "ja": "十"
+        },
+        {
+          "token_id": 10618,
+          "token_index": 14,
+          "surface": "יְלָדָ֑יו",
+          "ja": "彼の子どもたち"
+        },
+        {
+          "token_id": 10619,
+          "token_index": 15,
+          "surface": "וַֽיַּעֲבֹ֔ר",
+          "ja": "そして彼は渡った"
+        },
+        {
+          "token_id": 10620,
+          "token_index": 16,
+          "surface": "אֵ֖ת",
+          "ja": "（～を）"
+        },
+        {
+          "token_id": 10621,
+          "token_index": 17,
+          "surface": "מַעֲבַ֥ר",
+          "ja": "渡し場を"
+        },
+        {
+          "token_id": 10622,
+          "token_index": 18,
+          "surface": "יַבֹּֽק",
+          "ja": "ヤボクの"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.24",
+      "tokens": [
+        {
+          "token_id": 10623,
+          "token_index": 1,
+          "surface": "וַיִּקָּחֵ֔ם",
+          "ja": "そして彼は彼らを連れ"
+        },
+        {
+          "token_id": 10624,
+          "token_index": 2,
+          "surface": "וַיַּֽעֲבִרֵ֖ם",
+          "ja": "そして彼らを渡らせた"
+        },
+        {
+          "token_id": 10625,
+          "token_index": 3,
+          "surface": "אֶת",
+          "ja": "（～を）"
+        },
+        {
+          "token_id": 10626,
+          "token_index": 4,
+          "surface": "הַנָּ֑חַל",
+          "ja": "その川に"
+        },
+        {
+          "token_id": 10627,
+          "token_index": 5,
+          "surface": "וַֽיַּעֲבֵ֖ר",
+          "ja": "そして渡らせた"
+        },
+        {
+          "token_id": 10628,
+          "token_index": 6,
+          "surface": "אֶת",
+          "ja": "（～を）"
+        },
+        {
+          "token_id": 10629,
+          "token_index": 7,
+          "surface": "אֲשֶׁר",
+          "ja": "～するものすべてを"
+        },
+        {
+          "token_id": 10630,
+          "token_index": 8,
+          "surface": "לוֹ",
+          "ja": "彼に属する"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.25",
+      "tokens": [
+        {
+          "token_id": 10631,
+          "token_index": 1,
+          "surface": "וַיִּוָּתֵ֥ר",
+          "ja": "そして取り残された"
+        },
+        {
+          "token_id": 10632,
+          "token_index": 2,
+          "surface": "יַעֲקֹ֖ב",
+          "ja": "ヤコブが"
+        },
+        {
+          "token_id": 10633,
+          "token_index": 3,
+          "surface": "לְבַדּ֑וֹ",
+          "ja": "ただ一人で"
+        },
+        {
+          "token_id": 10634,
+          "token_index": 4,
+          "surface": "וַיֵּאָבֵ֥ק",
+          "ja": "そして格闘した"
+        },
+        {
+          "token_id": 10635,
+          "token_index": 5,
+          "surface": "אִישׁ֙",
+          "ja": "ある男が"
+        },
+        {
+          "token_id": 10636,
+          "token_index": 6,
+          "surface": "עִמּ֔וֹ",
+          "ja": "彼と"
+        },
+        {
+          "token_id": 10637,
+          "token_index": 7,
+          "surface": "עַ֖ד",
+          "ja": "～まで"
+        },
+        {
+          "token_id": 10638,
+          "token_index": 8,
+          "surface": "עֲל֥וֹת",
+          "ja": "上ること"
+        },
+        {
+          "token_id": 10639,
+          "token_index": 9,
+          "surface": "הַשָּֽׁחַר",
+          "ja": "夜明けが"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.26",
+      "tokens": [
+        {
+          "token_id": 10640,
+          "token_index": 1,
+          "surface": "וַיַּ֗רְא",
+          "ja": "そして彼は見た"
+        },
+        {
+          "token_id": 10641,
+          "token_index": 2,
+          "surface": "כִּ֣י",
+          "ja": "～ことを"
+        },
+        {
+          "token_id": 10642,
+          "token_index": 3,
+          "surface": "לֹ֤א",
+          "ja": "ない"
+        },
+        {
+          "token_id": 10643,
+          "token_index": 4,
+          "surface": "יָכֹל֙",
+          "ja": "彼は勝て"
+        },
+        {
+          "token_id": 10644,
+          "token_index": 5,
+          "surface": "ל֔וֹ",
+          "ja": "彼に"
+        },
+        {
+          "token_id": 10645,
+          "token_index": 6,
+          "surface": "וַיִּגַּ֖ע",
+          "ja": "そこで彼は触れた"
+        },
+        {
+          "token_id": 10646,
+          "token_index": 7,
+          "surface": "בְּכַף",
+          "ja": "～のくぼみに"
+        },
+        {
+          "token_id": 10647,
+          "token_index": 8,
+          "surface": "יְרֵכ֑וֹ",
+          "ja": "彼の腿の"
+        },
+        {
+          "token_id": 10648,
+          "token_index": 9,
+          "surface": "וַתֵּ֨קַע֙",
+          "ja": "そして外れた"
+        },
+        {
+          "token_id": 10649,
+          "token_index": 10,
+          "surface": "כַּף",
+          "ja": "くぼみが"
+        },
+        {
+          "token_id": 10650,
+          "token_index": 11,
+          "surface": "יֶ֣רֶךְ",
+          "ja": "腿の"
+        },
+        {
+          "token_id": 10651,
+          "token_index": 12,
+          "surface": "יַעֲקֹ֔ב",
+          "ja": "ヤコブの"
+        },
+        {
+          "token_id": 10652,
+          "token_index": 13,
+          "surface": "בְּהֵֽאָבְק֖וֹ",
+          "ja": "彼が格闘したとき"
+        },
+        {
+          "token_id": 10653,
+          "token_index": 14,
+          "surface": "עִמּֽוֹ",
+          "ja": "彼と"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.27",
+      "tokens": [
+        {
+          "token_id": 10654,
+          "token_index": 1,
+          "surface": "וַיֹּ֣אמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 10655,
+          "token_index": 2,
+          "surface": "שַׁלְּחֵ֔נִי",
+          "ja": "私を去らせよ"
+        },
+        {
+          "token_id": 10656,
+          "token_index": 3,
+          "surface": "כִּ֥י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 10657,
+          "token_index": 4,
+          "surface": "עָלָ֖ה",
+          "ja": "上った"
+        },
+        {
+          "token_id": 10658,
+          "token_index": 5,
+          "surface": "הַשָּׁ֑חַר",
+          "ja": "夜明けが"
+        },
+        {
+          "token_id": 10659,
+          "token_index": 6,
+          "surface": "וַיֹּ֨אמֶר֙",
+          "ja": "しかし彼は言った"
+        },
+        {
+          "token_id": 10660,
+          "token_index": 7,
+          "surface": "לֹ֣א",
+          "ja": "しない"
+        },
+        {
+          "token_id": 10661,
+          "token_index": 8,
+          "surface": "אֲשַֽׁלֵּחֲךָ֔",
+          "ja": "私はあなたを去らせ"
+        },
+        {
+          "token_id": 10662,
+          "token_index": 9,
+          "surface": "כִּ֖י",
+          "ja": "～でなければ"
+        },
+        {
+          "token_id": 10663,
+          "token_index": 10,
+          "surface": "אִם",
+          "ja": "もし"
+        },
+        {
+          "token_id": 10664,
+          "token_index": 11,
+          "surface": "בֵּרַכְתָּֽנִי",
+          "ja": "あなたが私を祝福してくれ"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.28",
+      "tokens": [
+        {
+          "token_id": 10665,
+          "token_index": 1,
+          "surface": "וַיֹּ֥אמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 10666,
+          "token_index": 2,
+          "surface": "אֵלָ֖יו",
+          "ja": "彼に"
+        },
+        {
+          "token_id": 10667,
+          "token_index": 3,
+          "surface": "מַה",
+          "ja": "何か"
+        },
+        {
+          "token_id": 10668,
+          "token_index": 4,
+          "surface": "שְּׁמֶ֑ךָ",
+          "ja": "あなたの名は"
+        },
+        {
+          "token_id": 10669,
+          "token_index": 5,
+          "surface": "וַיֹּ֖אמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 10670,
+          "token_index": 6,
+          "surface": "יַעֲקֹֽב",
+          "ja": "ヤコブです"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.29",
+      "tokens": [
+        {
+          "token_id": 10671,
+          "token_index": 1,
+          "surface": "וַיֹּ֗אמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 10672,
+          "token_index": 2,
+          "surface": "לֹ֤א",
+          "ja": "～ではない"
+        },
+        {
+          "token_id": 10673,
+          "token_index": 3,
+          "surface": "יַעֲקֹב֙",
+          "ja": "ヤコブと"
+        },
+        {
+          "token_id": 10674,
+          "token_index": 4,
+          "surface": "יֵאָמֵ֥ר",
+          "ja": "呼ばれる"
+        },
+        {
+          "token_id": 10675,
+          "token_index": 5,
+          "surface": "עוֹד֙",
+          "ja": "もはや"
+        },
+        {
+          "token_id": 10676,
+          "token_index": 6,
+          "surface": "שִׁמְךָ֔",
+          "ja": "あなたの名は"
+        },
+        {
+          "token_id": 10677,
+          "token_index": 7,
+          "surface": "כִּ֖י",
+          "ja": "～では"
+        },
+        {
+          "token_id": 10678,
+          "token_index": 8,
+          "surface": "אִם",
+          "ja": "なく"
+        },
+        {
+          "token_id": 10679,
+          "token_index": 9,
+          "surface": "יִשְׂרָאֵ֑ל",
+          "ja": "イスラエルと"
+        },
+        {
+          "token_id": 10680,
+          "token_index": 10,
+          "surface": "כִּֽי",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 10681,
+          "token_index": 11,
+          "surface": "שָׂרִ֧יתָ",
+          "ja": "あなたは争った"
+        },
+        {
+          "token_id": 10682,
+          "token_index": 12,
+          "surface": "עִם",
+          "ja": "～と"
+        },
+        {
+          "token_id": 10683,
+          "token_index": 13,
+          "surface": "אֱלֹהִ֛ים",
+          "ja": "神と"
+        },
+        {
+          "token_id": 10684,
+          "token_index": 14,
+          "surface": "וְעִם",
+          "ja": "そして～と"
+        },
+        {
+          "token_id": 10685,
+          "token_index": 15,
+          "surface": "אֲנָשִׁ֖ים",
+          "ja": "人々"
+        },
+        {
+          "token_id": 10686,
+          "token_index": 16,
+          "surface": "וַתּוּכָֽל",
+          "ja": "そしてあなたは耐え抜いた"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.32.30",
+      "tokens": [
+        {
+          "token_id": 10699,
+          "token_index": 1,
+          "surface": "וַיִּשְׁאַ֣ל",
+          "ja": "そして尋ねた"
+        },
+        {
+          "token_id": 10700,
+          "token_index": 2,
+          "surface": "יַעֲקֹ֗ב",
+          "ja": "ヤコブが"
+        },
+        {
+          "token_id": 10701,
+          "token_index": 3,
+          "surface": "וַיֹּ֨אמֶר֙",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 10702,
+          "token_index": 4,
+          "surface": "הַגִּֽידָה",
+          "ja": "どうか告げてください"
+        },
+        {
+          "token_id": 10703,
+          "token_index": 5,
+          "surface": "נָּ֣א",
+          "ja": "どうか"
+        },
+        {
+          "token_id": 10704,
+          "token_index": 6,
+          "surface": "שְׁמֶ֔ךָ",
+          "ja": "あなたの名を"
+        },
+        {
+          "token_id": 10705,
+          "token_index": 7,
+          "surface": "וַיֹּ֕אמֶר",
+          "ja": "すると彼は言った"
+        },
+        {
+          "token_id": 10706,
+          "token_index": 8,
+          "surface": "לָ֥מָּה",
+          "ja": "なぜ"
+        },
+        {
+          "token_id": 10707,
+          "token_index": 9,
+          "surface": "זֶּ֖ה",
+          "ja": "それを"
+        },
+        {
+          "token_id": 10708,
+          "token_index": 10,
+          "surface": "תִּשְׁאַ֣ל",
+          "ja": "あなたは尋ねるのか"
+        },
+        {
+          "token_id": 10709,
+          "token_index": 11,
+          "surface": "לִשְׁמִ֑י",
+          "ja": "私の名について"
+        },
+        {
+          "token_id": 10710,
+          "token_index": 12,
+          "surface": "וַיְבָ֥רֶךְ",
+          "ja": "そして彼は祝福した"
+        },
+        {
+          "token_id": 10711,
+          "token_index": 13,
+          "surface": "אֹת֖וֹ",
+          "ja": "彼を"
+        },
+        {
+          "token_id": 10712,
+          "token_index": 14,
+          "surface": "שָֽׁם",
+          "ja": "そこで"
+        }
+      ]
+    }
+  ],
+  "media_status": {
+    "audio_status": "PASS",
+    "audio_implemented_count": 17,
+    "audio_expected_count": 17,
+    "missing_audio_refs": [],
+    "audio_failures": [],
+    "html_status": "PASS",
+    "html_implemented_count": 17,
+    "missing_html_refs": [],
+    "pages_status": "PASS",
+    "ai_generated_audio_refs": [],
+    "open_bible_audio_refs": []
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヴァイシュラハ｜第2アリヤー｜創世記32:14–30"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヤコブは兄エサウを恐れ、五百五十頭もの家畜を幾つもの群れに分け、言葉と間隔まで整えて先に送ります。しかし、和解へ向かう最後の夜、彼はヤボクの岸でただ一人となり、名のない相手と夜明けまで格闘します。腿を傷めながら祝福を離さず求めたヤコブは、「イスラエル」という新しい名を受けます。信仰の勝利は、無傷の強さではなく、神と人に向き合い、傷を負っても祝福へ取りすがる歩みに現れます。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "顔を求め、傷を負って名を受ける"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:14"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_14_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヤコブはその夜そこで泊まり、手元にあったものから、兄エサウへの贈り物を選び取った。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-14.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：祈ったヤコブは、待つだけでなく手元の財産から具体的な贈り物を整えます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「手元に来ていたもの」と贈り物"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「手元に来ていたもの」は、偶然に拾った品ではなく、いま彼の支配下にある家畜から選んだことを表します。ミンハーは日常の贈答にも、目上へ差し出す貢ぎにも、礼拝の供え物にも用いられる語です。ここでは恐れる弟が兄へ送る外交的な贈り物であり、祈りの直後に置かれた実務的な行動でもあります。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Biblia Hebraica Stuttgartensia系WLC本文：創世記32:14–30",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.32.14-30?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "祈った後にヤコブが「手元にあるもの」を取り分けたように、信頼は行動を不要にしません。和解のために今日自分の手から差し出せるものを、恐れの言い訳に隠さず見つめたいのです。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:15"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_15_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：雌山羊二百頭と雄山羊二十頭、雌羊二百頭と雄羊二十頭。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-15.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：贈り物の列挙は、ヤコブの富と、和解のために払う代価の大きさを数字で示します。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "雌雄を組にした家畜の列挙"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "雌山羊・雄山羊、雌羊・雄羊という順序は、群れを継続して増やせる構成です。合計四百四十頭という量は単なる象徴ではなく、エサウの前へ段階的に送り出せる実質的な財産です。物語は「大きな贈り物」と要約せず、損失の重さを頭数で読者に経験させます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "和解を望むと言いながら、自分の側には何の負担も生じてほしくないと思うことがあります。具体的な頭数を数えるこの節は、関係を回復する願いがときに現実の代価を伴うことを忘れさせません。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:16"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_16_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：乳を飲ませているらくだとその子三十組、雌牛四十頭と雄牛十頭、雌ろば二十頭と若い雄ろば十頭。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-16.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：乳飲み子を伴うらくだまで含む贈り物は、経済価値だけでなく、移動に配慮した群れの具体性を伝えます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "繁殖力を含む贈与"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「乳を飲ませているらくだとその子ら」は、親子を切り離さず一組として数えた表現です。牛とろばも雌雄を含み、贈与は即時の食料や労働力だけでなく、将来増える群れまでエサウへ移すものになります。十五節と合わせれば五百五十頭に達し、ヤコブの富と恐れの双方が数量化されています。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヤコブは余り物だけでなく、将来を生み出す家畜まで差し出します。人との平和のために、自分の可能性を守り切ろうとする手をどこまで開けるか、この細かな家畜表は問いかけます。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:17"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_17_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：彼は群れを一群ずつ別々に僕たちの手へ渡して言った。「私の前を進み、群れと群れとの間に間隔を置け。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-17.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：群れの間隔は、贈り物を一度で終わらせず、繰り返し届かせる交渉の設計です。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "間隔を置く戦略"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「群れ、群れ」と反復し、さらに「間」を二度述べる構文が、分割された隊列を耳にも見える形にします。間隔は家畜の混乱を防ぐだけでなく、エサウが贈り物を受け取る経験を何度も重ねる時間を作ります。ヤコブは接近の順序そのものを交渉の道具にしています。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "急いで一度に説明し尽くすより、相手が受け取れる間を置くほうが誠実な場合があります。ヤコブの「間隔」は、和解にも相手の時間を尊重する知恵が要ることを教えます。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "32:14–17を深める｜五百五十頭の贈り物と「間隔」"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "二つの家畜表は合計五百五十頭に達し、雌雄と親子を含むため、一時的な食料以上の生産力を移す贈与になります。それを一群ずつ分け「間隔」を置くことで、エサウは一度ではなく何度もヤコブの敬意に出会います。これは恐怖に駆られた浪費という側面を持ちながら、相手が受け取る時間まで設計した古代の交渉行為でもあります。祈り、財産、使者、時間が一つの和解準備へ組み合わされています。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+              "link": {
+                "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+              "link": {
+                "url": "https://zondervanacademic.com/products/genesis-16-50"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:18"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_18_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：彼は最初の者に命じた。「もし私の兄エサウがあなたに会い、『あなたはだれの者で、どこへ行くのか。あなたの前のこれらはだれのものか』と尋ねたなら、」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-18.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ヤコブはエサウの問いを予想し、僕が動揺せず答えられるよう会話まで準備します。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "三つの問いを先取りする"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "エサウの想定問答は、所属、行き先、家畜の所有者という三点を確かめます。ヤコブは物だけでなく説明の言葉も送り、贈り物が略奪品や無関係な群れと誤解されないようにします。「私の兄」と呼ぶ語り手の立場と、次節の「あなたの僕」という自己紹介の落差も重要です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Biblia Hebraica Stuttgartensia系WLC本文：創世記32:14–30",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.32.14-30?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "不安の中では、相手の反応を恐れるだけで言葉を失いがちです。この節のヤコブは、尋ねられることを考え、僕に答えを託します。難しい対話に備えて真実な言葉を用意することも、平和への務めです。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:19"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_19_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：「『あなたの僕ヤコブのものです。私の主人エサウへ送られた贈り物です。ご覧ください、彼も私たちの後ろにいます』と言え。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-19.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ヤコブは「僕」と「主人」という関係語を選び、贈り物だけを盾にせず自分も後から来ると告げます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "身分語が作る接近の姿勢"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "命令された答えは、所有者を「あなたの僕ヤコブ」、受取人を「私の主人エサウ」と呼びます。長子権をめぐる過去を持つ兄弟が、接近の場面では意図的に上下を逆転させた敬称を用います。ただし「彼も後ろにいる」と告げ、ヤコブ自身が贈り物の陰に永遠に隠れないことも示します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "贈り物や代理人だけで関係を処理せず、「私も後ろにいる」と自分の到来を告げることが必要です。謝意を品物に任せきらず、最後には自分が相手の前に立つ覚悟を持ちたいのです。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:20"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_20_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：彼は第二、第三、さらに群れの後を進むすべての者にも命じた。「あなたがたがエサウに会うとき、この同じ言葉を彼に語れ。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-20.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：同じ文言を各隊列に反復させ、偶然ではなく一貫した意思として贈り物を届けます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "反復されるメッセージ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「また」が三度、「～を」を伴う列挙が三度続き、第二・第三・全員へ同じ命令が拡張されます。複数の群れが別々でも、語る内容は「この言葉のとおり」に統一されます。分散した行動を一つの意図へ結ぶのは、反復される同じ言葉です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Biblia Hebraica Stuttgartensia系WLC本文：創世記32:14–30",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.32.14-30?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "態度が場面ごとに変われば、相手は本心を信じられません。ヤコブが全員に同じ言葉を託したように、和解を求める姿勢は一度の美しい発言ではなく、一貫した言葉と行動で示されます。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:21"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_21_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：「さらに『ご覧ください、あなたの僕ヤコブも私たちの後ろにいます』と言え。」彼は「私の前を行く贈り物で彼の顔を和らげ、その後で彼の顔を見よう。もしかすると、彼は私の顔を受け入れてくれるだろう」と考えたのである。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-21.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：「顔」を繰り返す言葉遊びの中で、ヤコブは贈り物が怒りを和らげ、対面を可能にすることを願います。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "顔を覆い、顔を見、顔を上げてもらう"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "一節に「顔」が四回現れます。「彼の顔を和らげる」は直訳すれば贈り物で顔を覆う、「私の顔を上げる」は相手を好意的に受け入れる慣用表現です。供犠用語にもなるキッペルはここでは対人関係の「なだめる」の意で、贈り物、対面、受容が同じ「顔」に結ばれます。ラシーとランバンもこの重層的な表現を扱います。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi, Commentary on Genesis 32:21",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.32.21?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Ramban, Commentary on Genesis 32:21",
+                    "link": {
+                      "url": "https://www.sefaria.org/Ramban_on_Genesis.32.21?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヤコブが望んだのは、品物を受け取らせることだけでなく、ついに兄の顔を見ることでした。問題を処理するだけで満足せず、互いの顔を上げて会える関係まで願うことが、和解の深さです。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:22"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_22_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：こうして贈り物は彼の前を渡って行ったが、彼自身はその夜、宿営に泊まった。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-22.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：贈り物だけが先へ進み、ヤコブは夜の宿営に残されます。行動と逡巡が同じ一節に並びます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "先へ渡る贈り物、残る送り主"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "主語はまず「贈り物」で、それがヤコブの「前を」渡ります。続く接続は彼自身が宿営に泊まったことを対照させます。二十一節の「私の前を行く贈り物」が現実に動き出す一方、本人はなお夜の側に残り、次の渡河と孤独への緊張が作られます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Biblia Hebraica Stuttgartensia系WLC本文：創世記32:14–30",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.32.14-30?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "自分の言葉や贈り物を先に送りながら、本人は一歩を越えられない夜があります。ヤコブが宿営に残った事実は、遅れを隠さず、それでも次の一歩へ備える人を責めずに映します。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "32:18–22を深める｜同じ言葉と四つの「顔」"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "各使者は同じ問いに同じ答えを返し、「僕ヤコブ」「主人エサウ」と関係を言い直します。その頂点で二十一節は「顔」を四回重ね、贈り物で相手の顔を和らげ、顔を見、自分の顔を上げてもらうと語ります。ヤコブが求めるのは安全な通過だけでなく、拒絶されていた顔が再び受け入れられることです。ところが贈り物だけが先に渡り、本人は夜の宿営に残ります。巧みな準備と、本人が越えねばならない恐れの距離が同時に見えます。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Rashi, Commentary on Genesis 32:21",
+              "link": {
+                "url": "https://www.sefaria.org/Rashi_on_Genesis.32.21?lang=bi"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Ramban, Commentary on Genesis 32:21",
+              "link": {
+                "url": "https://www.sefaria.org/Ramban_on_Genesis.32.21?lang=bi"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+              "link": {
+                "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:23"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_23_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：その夜、彼は起き、二人の妻、二人の女奴隷、十一人の子どもを連れ、ヤボクの渡し場を渡った。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-23.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：家族を数え上げてヤボクを渡す動きは、帰郷がいよいよ後戻りできない境界へ達したことを示します。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "夜の渡河と家族の列挙"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「その夜」が反復され、ヤコブは妻二人、女奴隷二人、子ども十一人を具体的に連れます。ディナを含む「子どもたち」を男性形で総称し、当時生まれていた家族全体を指します。ヤボクの「渡し場」を「渡る」という同根音の重なりは、地理的境界を越える動きを強調します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "境界を越える決断は本人だけでなく、共に生きる者を連れて行く責任を伴います。ヤコブが家族を一人ずつ数えるように連れた姿は、決断の影響を受ける人を忘れないよう促します。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:24"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_24_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：彼は彼らを連れて川を渡らせ、自分に属するものすべても渡らせた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-24.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：人も所有物も向こう岸へ送り、ヤコブは自分を守ってきたものから切り離されていきます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "使役形が示す徹底した移動"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「彼らを渡らせた」「所有するものを渡らせた」は、どちらもヤコブが主体となって向こう岸へ移した使役形です。「彼に属するものすべて」は、直前の家族に続いて残る財産まで含みます。次節の「ただ一人」は偶然ではなく、この徹底した移送の結果です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Biblia Hebraica Stuttgartensia系WLC本文：創世記32:14–30",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.32.14-30?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヤコブは自分を支えてきた人と物を先へ渡らせ、最後に一人になります。所有を手放すことが目的ではありませんが、支えを絶対視せず、自分自身が神の前に残る時を避けないことが求められます。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "32:23–24を深める｜ヤボクを越え、ただ一人になる"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "「渡る」「渡らせる」「渡し場」が密集し、ヤボクという地名の響きも重なって、物語は境界通過の運動を強く刻みます。ヤコブは家族だけでなく「彼に属するものすべて」を向こう岸へ送ります。したがって次節の孤独は偶発的な置き去りではなく、所有と役割を一つずつ先へ移した結果です。兄との対面を前に、家長・富者・交渉者という防具を外された一人のヤコブが残ります。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+              "link": {
+                "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+              "link": {
+                "url": "https://zondervanacademic.com/products/genesis-16-50"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:25"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_25_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヤコブだけが取り残された。すると、ある男が夜明けの上る時まで彼と格闘した。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-25.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：「ただ一人」のヤコブに名のない男が現れ、正体を説明しないまま夜明けまで格闘が続きます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "孤独と正体を伏せた格闘"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "受動形「取り残された」に続き、「ある男」が主語となって格闘します。本文はこの時点で相手を天使とも神とも名づけず、読者をヤコブと同じ不確かさの中に置きます。「ヤコブ、ヤボク、格闘する」は語源的同一性ではありませんが、似た子音の響きが場面を緊密に結びます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシーとミドラシュの読み"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシーは「ただ一人」を、小さな器を取りに戻ったという伝承と結び、格闘相手をエサウの守護天使として読む伝統を伝えます。これは本文の平明な叙述が直接説明する内容ではなく、ヤコブの執着と兄弟対立の霊的次元を展開するミドラシュ的読解です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi, Commentary on Genesis 32:25",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.32.25?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Bereshit Rabbah 77（ヤコブの格闘物語）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Bereshit_Rabbah.77.1?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "人も物も渡した後で、ヤコブは説明のつかない相手と一人で格闘します。信仰には、すぐ意味づけできない夜を逃げずに耐え、夜明けまで神に向き合う時間があります。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:26"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_26_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：その男は自分がヤコブに勝てないと見て、彼の腿の関節のくぼみに触れた。すると、格闘している間にヤコブの腿の関節が外れた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-26.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：勝てない相手がただ触れると関節が外れます。ヤコブの粘り強さと、相手の超越的な力が同時に示されます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "勝利と負傷の逆説"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「勝てない」と「触れた」が並ぶため、相手が無力だったとは読めません。長い格闘で制圧できない一方、ひと触れでヤコブを負傷させます。物語の「勝利」は無傷の優越ではなく、相手に取りすがりながら傷を負う持続です。ラシーはこの相手をエサウの守護天使とする伝統をここにも適用します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi, Commentary on Genesis 32:26",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.32.26?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヤコブは退かなかったのに、歩みを変える傷を負いました。信仰の勝利を、何も失わず強くなることだけと考えず、神との出会いに触れられて古い歩き方を変えられることとして受け取りたいのです。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:27"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_27_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：その男は「私を去らせよ。夜明けが上ったから」と言った。しかしヤコブは「私を祝福してくださらなければ、あなたを去らせません」と答えた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-27.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：傷を負ったヤコブは相手を支配するのでなく、離さず祝福を求めます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "夜明けと祝福の要求"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "相手の「去らせよ」とヤコブの「去らせない」は同じ動詞を反復します。負傷したヤコブの力は、相手を倒す力ではなく、祝福が与えられるまで手放さない粘りへ変わっています。夜明けは格闘の期限であると同時に、名と祝福が語られる転換点です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヤコブは痛みを負ったまま「祝福なしには離さない」と求めました。苦しみを美化せず、それでもその経験を空しい傷だけで終わらせず、神から新しい意味を受け取るまで祈り続ける姿があります。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:28"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_28_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：その男は彼に「あなたの名は何か」と尋ねた。彼は「ヤコブです」と答えた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-28.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：相手が知らないからではなく、ヤコブ自身が古い名を口にするための問いとして物語が進みます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "名を答える告白"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "聖書物語で名は人物の記憶や評判と結びつきます。ヤコブが「ヤコブ」と答える短いやり取りは、兄のかかとを取った者、祝福をめぐって争ってきた者としての自分を口にする場面です。次節の改名は、古い名を否認せず言い表した後に与えられます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "変わりたいと願うとき、まず「私はヤコブです」と自分の名を答える必要があります。神の前で過去を飾らず、いまの自分を名乗る正直さが、新しい呼び名を受ける入口になります。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:29"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_29_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：その男は言った。「あなたの名は、もはやヤコブではなくイスラエルと呼ばれる。あなたは神と人々と争い、耐え抜いたからだ。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-29.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：新しい名は、勝ち誇る無傷の英雄ではなく、神と人に向き合い、傷つきながら耐えた者に与えられます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "イスラエルという物語的な名"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文はイスラエルを「あなたは争った」という動詞サーリターに結びつけます。これは単純な辞書語源の説明以上に、格闘を新しい名へ刻む物語的語源です。最後の「あなたは勝った」は、関節を外された文脈では「耐え抜いた」と読む余地があり、勝利と負傷を同時に保持します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシーとランバンの改名理解"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシーは、新名によって祝福が策略で奪われたのではなく、正当に認められると読みます。ランバンは神的な相手との格闘と、イスラエルという名が担う将来を広く考察します。どちらも平明な語義だけでなく、兄との対面と民の歴史へ改名を開くユダヤ教解釈です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi, Commentary on Genesis 32:29",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.32.29?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Ramban, Commentary on Genesis 32:29",
+                    "link": {
+                      "url": "https://www.sefaria.org/Ramban_on_Genesis.32.29?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "神はヤコブの傷を消してから名を与えたのではありません。弱さを抱えながら神と人に向き合った歩みそのものが新しい名に刻まれます。完全になってからでなく、格闘の中で召しを受け取れるのです。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 32:30"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/051-20260921-r1/audio/051_30_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヤコブは尋ねて言った。「どうか、あなたの名を教えてください。」その男は「なぜ私の名を尋ねるのか」と答え、そこで彼を祝福した。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/051-20260921-r1/genesis-32-30.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：相手の名は明かされませんが、祝福は実際に与えられます。神秘は残り、関係の実りは残ります。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "明かされない名と与えられる祝福"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヤコブは相手の名を求めますが、問い返しによって拒まれます。相手を名で把握し支配する道は閉ざされても、祝福そのものは「そこで」与えられます。ラシーは、天使の名は使命に応じて変わるため固定的な名を答えないという伝承を伝えます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi, Commentary on Genesis 32:30",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.32.30?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "すべての説明を得なければ祝福を受け取れないわけではありません。名が明かされないままでも、ヤコブは祝福されたのです。理解できない余白を残しつつ、与えられた恵みを確かに受け取れます。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "32:25–30を深める｜格闘、傷、祝福、新しい名"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "名のない「男」はヤコブを制圧できない一方、ひと触れで腿を外します。この非対称性は、勝敗を単純な腕力競争から外します。負傷したヤコブは相手を倒すのでなく、祝福を求めて離しません。「ヤコブ」と古い名を答えた後、「イスラエル」と呼ばれますが、相手の名は与えられません。ヤコブは相手を把握できないまま、傷と祝福と名を受け取ります。物語が評価するのは無傷の支配ではなく、神秘の前から逃げず耐え抜くことです。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+              "link": {
+                "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+              "link": {
+                "url": "https://zondervanacademic.com/products/genesis-16-50"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ホセア12:4–5（ヤコブの格闘の預言者的再読）",
+              "link": {
+                "url": "https://www.sefaria.org/Hosea.12.4-5?lang=bi"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "まとめ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーは、周到に贈り物を整えるヤコブと、何も持たず一人で格闘するヤコブを同じ人物として描きます。彼は兄の「顔」を和らげ、自分の顔を受け入れてもらおうとしますが、その対面の前に、名を問われ、傷を負い、新しい名を受けます。和解は技術だけでは完成せず、自分の古い名を引き受け、神から与えられる新しい生き方へ変えられることを必要とします。イスラエルとは、傷を隠す勝者の名ではなく、神と人に向き合って耐え抜いた者の名です。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーをさらに学ぶ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "文学研究｜贈り物から格闘へ、「顔」と「渡る」の連鎖"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "前半ではミンハー（贈り物）がヤコブより先に「渡り」、後半では家族と所有物が川を「渡り」、最後にヤコブ自身だけが残ります。また二十一節の「顔」の反復は、次の場面で神的な相手との対面へ進む準備になります。社会的な対面を制御しようとする交渉者が、制御できない神秘的な対面へ導かれる構成です。ヤコブ／ヤボク／格闘という似た音、夜から夜明けへの時間、古い名から新しい名への変化が、地理・身体・人格の境界通過を一つに束ねています。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Victor P. Hamilton, The Book of Genesis, Chapters 18–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://www.eerdmans.com/9780802823095/the-book-of-genesis-chapters-18-50/"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Gordon J. Wenham, Genesis 16–50, 創世記32:14–30",
+                    "link": {
+                      "url": "https://zondervanacademic.com/products/genesis-16-50"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Biblia Hebraica Stuttgartensia系WLC本文：創世記32:14–30",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.32.14-30?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダヤ教解釈伝統｜エサウの守護天使と、正当に認められる祝福"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "創世記本文は相手を最初「男」とだけ呼びますが、ホセア12章はこの出来事を神および御使いとの格闘として再読します。ラシーはミドラシュに従い、相手をエサウの守護天使とし、「ただ一人」を小さな器を取りに戻った場面として展開します。また改名を、ヤコブの祝福が策略で奪ったものではなく、公に認められる転換として読みます。ランバンも格闘をヤコブとその子孫が対抗勢力に傷つけられながら滅ぼされない歴史へ広げます。これらは本文のpeshatそのものではなく、兄弟対立とイスラエルの歴史を接続するユダヤ教的受容です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ホセア12:4–5（ヤコブの格闘の預言者的再読）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Hosea.12.4-5?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi, Commentary on Genesis 32:25",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.32.25?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi, Commentary on Genesis 32:29",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.32.29?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Ramban, Commentary on Genesis 32:25",
+                    "link": {
+                      "url": "https://www.sefaria.org/Ramban_on_Genesis.32.25?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Ramban, Commentary on Genesis 32:29",
+                    "link": {
+                      "url": "https://www.sefaria.org/Ramban_on_Genesis.32.29?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Bereshit Rabbah 77（ヤコブの格闘物語）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Bereshit_Rabbah.77.1?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "キリスト教受容史｜祝福され、同時に足を引くヤコブ"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "アウグスティヌスは『神の国』16巻39章で、ヤコブと格闘した者をキリストの予型として読み、ヤコブが同時に「祝福され、足を引く者」となった点を教会史的象徴へ展開します。これは創世記の平明な物語説明ではなく、キリストとイスラエルの関係を読む後代の類型論です。現代の読解でその反ユダヤ的含意を無批判に反復することはできませんが、勝利と負傷が分離されない本文の逆説を、古代教会がどのように神学化したかを示す重要な受容史資料です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Augustine, The City of God 16.39",
+                    "link": {
+                      "url": "https://www.newadvent.org/fathers/120116.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0",
+              "link": {
+                "url": "https://github.com/openscriptures/morphhb"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
