@@ -2,24 +2,24 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "056-20260926-r1",
   "sequence": "056",
-  "phase": "FAILURE_REPORT",
-  "status": "BLOCKED",
-  "next_action": "SEND_PARTIAL_EMAIL_KEEP_STATE",
+  "phase": "IMAGE",
+  "status": "WAITING_FOR_WORK",
+  "next_action": "GENERATE_QA_AND_UPLOAD_COVER",
   "stage_spec": {
-    "path": "ver3/spec/failure-report.md",
-    "sha256": "49aa630c17d16e2376c459440d2353b14d55949e464b7d981e6999d742671bd9"
+    "path": "ver3/spec/image-handoff.md",
+    "sha256": "bd5040a4ada2c87e68a4986f4d960eebca89c8fb700607b6e6145739afb86e13"
   },
   "required_inputs": [
-    "ver3/runs/056-20260926-r1/delivery.json"
+    "ver3/runs/056-20260926-r1/json2.json",
+    "ver3/config/image-master.json",
+    "ver3/config/parasha-image/index.json",
+    "ver3/runs/056-20260926-r1/cover-upload.json"
   ],
   "expected_outputs": [
-    "ver3/runs/056-20260926-r1/completion.md"
+    "ver3/runs/056-20260926-r1/cover-ready.json"
   ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "failed_operation": "GITHUB_ACTIONS_PIPELINE",
-    "error_type": "CalledProcessError",
-    "error_message": "Command '('/opt/hostedtoolcache/Python/3.12.14/x64/bin/python', 'ver3/scripts/compose.py', 'ver3/runs/056-20260926-r1')' returned non-zero exit status 1.",
-    "last_successful_stage": "JSON1_JSON1_1_EXPORTED"
+    "cover_ticket_status": "ISSUED_CURRENT"
   }
 }
