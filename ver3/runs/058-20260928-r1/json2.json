@@ -1,0 +1,1134 @@
+{
+  "schema_version": "3.1-json2",
+  "run_id": "058-20260928-r1",
+  "json1_sha256": "360092ed08b274320777fa9184cdc6e3513261dbece09d3ab1b9dc7a0b4d2098",
+  "json1_1_sha256": "e93f26f988b197f2691b2ff2d428d169e6ac0ae5278d59dafc388ebbf97e6b16",
+  "title": "兄弟の平安を求めて――遠くから始まる危機",
+  "summary": "父はヨセフを、兄弟と群れの無事を確かめるために遣わします。道に迷っても兄弟を捜し続けるヨセフに対し、兄弟たちは彼が近づく前から殺害を企てます。けれどもルベンが「血を流してはならない」と割って入り、命を守る細い道を開きます。平安を求める旅と、遠くから相手を決めつける視線との対照を読みます。",
+  "conclusion": "このアリヤーは、「兄弟たちを捜す」ヨセフと、彼を遠くから見て排除する兄弟たちを対置します。父の求めたシャロームはすぐには実現せず、むしろ家族の敵意が露わになります。それでも名もない男の案内とルベンの介入によって、命が完全に閉ざされるのを防ぐ道が残されます。相手の無事を求め、近づいて聞き、危険な合意に境界線を引くことが、この箇所から受け取る具体的な召しです。",
+  "verses": [
+    {
+      "ref": "Gen.37.12",
+      "translation": "彼の兄弟たちは、父の羊の群れを牧するためにシェケムへ行った。",
+      "short_commentary": "物語は兄弟たちの移動から再開する。シェケムは家畜の放牧地であると同時に、前章までの家族史では暴力の記憶を帯びた場所でもある。",
+      "glosses": [
+        {
+          "token_id": 12440,
+          "ja": "そして彼らは行った"
+        },
+        {
+          "token_id": 12441,
+          "ja": "彼の兄弟たちは"
+        },
+        {
+          "token_id": 12442,
+          "ja": "牧するために"
+        },
+        {
+          "token_id": 12443,
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 12444,
+          "ja": "羊の群れを"
+        },
+        {
+          "token_id": 12445,
+          "ja": "彼らの父の"
+        },
+        {
+          "token_id": 12446,
+          "ja": "シェケムで"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "本文と文法",
+          "body": "ヘブライ語の冒頭は物語を進めるワウ連続形「そして彼らは行った」である。目的語標識に付された特別な点はWLCにも保存されており、本文伝承がこの小さな語を通常とは異なるものとして読者に示す。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            }
+          ]
+        },
+        {
+          "heading": "ユダヤ教解釈",
+          "body": "ラシーは創世記ラッバー84:13を引き、点の付いた目的語標識を「羊を養う」よりも「自分たちを養う」方へ兄弟たちの関心が傾いたしるしとして読む。これは字義そのものではなく、書写上の異常を倫理的に展開するミドラシュ的読解である。",
+          "sources": [
+            {
+              "label": "ラシー『創世記注解』37:12（創世記ラッバー84:13を引用）",
+              "url": "https://www.sefaria.org/Rashi_on_Genesis.37.12"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "任された群れを世話するとき、務めがいつの間にか自分を満たす手段へ変わっていないかを問い直したい。外からは同じ働きに見えても、向いている心の方向は異なり得る。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.37.13",
+      "translation": "イスラエルはヨセフに言った。「あなたの兄弟たちはシェケムで牧しているではないか。さあ、彼らのもとへあなたを遣わそう。」ヨセフは彼に、「ここにおります」と答えた。",
+      "short_commentary": "父は「イスラエル」と呼ばれ、ヨセフを兄弟たちのもとへ遣わす。ヨセフの短い返事は、危険を知らない軽さというより、父の呼びかけに応じる即応を表す。",
+      "glosses": [
+        {
+          "token_id": 12447,
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 12448,
+          "ja": "イスラエルは"
+        },
+        {
+          "token_id": 12449,
+          "ja": "～に"
+        },
+        {
+          "token_id": 12450,
+          "ja": "ヨセフ"
+        },
+        {
+          "token_id": 12451,
+          "ja": "～ではないか"
+        },
+        {
+          "token_id": 12452,
+          "ja": "あなたの兄弟たちは"
+        },
+        {
+          "token_id": 12453,
+          "ja": "牧している"
+        },
+        {
+          "token_id": 12454,
+          "ja": "シェケムで"
+        },
+        {
+          "token_id": 12455,
+          "ja": "さあ行きなさい"
+        },
+        {
+          "token_id": 12456,
+          "ja": "そして私はあなたを遣わそう"
+        },
+        {
+          "token_id": 12457,
+          "ja": "彼らのもとへ"
+        },
+        {
+          "token_id": 12458,
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 12459,
+          "ja": "彼に"
+        },
+        {
+          "token_id": 12460,
+          "ja": "ここにおります"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "応答の構文",
+          "body": "ヘブライ語の「ヒネニ」は「見よ、私を」という形で、単なる所在確認ではなく、呼びかけを受けて自分を差し出す定型的な応答である。父の派遣命令と息子の応答が一往復で結ばれ、以後の長い旅路を起動する。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            },
+            {
+              "label": "Chabad, Vayeshev Torah Reading, Second Portion (Genesis 37:12–22)",
+              "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492529/p/2/jewish/Vayeshev-Torah-Reading.htm"
+            }
+          ]
+        },
+        {
+          "heading": "物語の緊張",
+          "body": "読者は前節までに兄弟たちの憎しみを知っているが、父とヨセフの会話にはその危険への言及がない。この情報差が、従順な返事に不安を重ねる物語的アイロニーを生む。",
+          "sources": [
+            {
+              "label": "Moshe Greenberger, “A Matter of Words and Assumptions in the Household of Jacob,” Jewish Bible Quarterly",
+              "url": "https://www.jewishbible.org/articles/a-matter-of-words-and-assumptions-in-jacobs-household/"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "「ここにおります」と答えることは、先のすべてを理解したという宣言ではない。分からない道の入口でも、託した方に向かって自分を差し出す応答から務めは始まる。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.37.14",
+      "translation": "彼はヨセフに言った。「どうか行って、あなたの兄弟たちの無事と羊の群れの無事を見て、私に知らせを持ち帰りなさい。」こうして彼はヨセフをヘブロンの谷から遣わし、ヨセフはシェケムへ来た。",
+      "short_commentary": "父の目的は兄弟と群れの「シャローム」を確かめることにある。しかし平安を求めて出発した使者は、家族の敵意が露わになる場所へ近づいていく。",
+      "glosses": [
+        {
+          "token_id": 12461,
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 12462,
+          "ja": "彼に"
+        },
+        {
+          "token_id": 12463,
+          "ja": "行きなさい"
+        },
+        {
+          "token_id": 12464,
+          "ja": "どうか"
+        },
+        {
+          "token_id": 12465,
+          "ja": "見てきなさい"
+        },
+        {
+          "token_id": 12466,
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 12467,
+          "ja": "無事を"
+        },
+        {
+          "token_id": 12468,
+          "ja": "あなたの兄弟たちの"
+        },
+        {
+          "token_id": 12469,
+          "ja": "そして～を（目的語標識）"
+        },
+        {
+          "token_id": 12470,
+          "ja": "無事を"
+        },
+        {
+          "token_id": 12471,
+          "ja": "その羊の群れの"
+        },
+        {
+          "token_id": 12472,
+          "ja": "そして私に持ち帰りなさい"
+        },
+        {
+          "token_id": 12473,
+          "ja": "知らせを"
+        },
+        {
+          "token_id": 12474,
+          "ja": "そして彼は彼を遣わした"
+        },
+        {
+          "token_id": 12475,
+          "ja": "谷から"
+        },
+        {
+          "token_id": 12476,
+          "ja": "ヘブロンの"
+        },
+        {
+          "token_id": 12477,
+          "ja": "そして彼は来た"
+        },
+        {
+          "token_id": 12478,
+          "ja": "シェケムへ"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "二度の「無事」",
+          "body": "ヘブライ語の「シャローム」が兄弟と群れについて二度反復される。ここでは抽象的な平和より、健在・安全・繁栄を含む全体的な無事を指す。父の関心は家族と財産の双方に及び、ヨセフには報告を持ち帰る使命が与えられる。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            },
+            {
+              "label": "Chabad, Vayeshev Torah Reading, Second Portion (Genesis 37:12–22)",
+              "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492529/p/2/jewish/Vayeshev-Torah-Reading.htm"
+            }
+          ]
+        },
+        {
+          "heading": "「ヘブロンの谷」の解釈",
+          "body": "ラシーは山地のヘブロンを「谷」と呼ぶ難しさから、語を「深い計画」へ展開し、アブラハムへの寄留の予告が実現へ向かうと読む。一方、地理的な字義では、ヨセフが父のもとから遠く離れていく距離そのものが兄弟の行動を可能にする。ミドラシュ的な救済史読解と物語上の距離は区別して受け取る必要がある。",
+          "sources": [
+            {
+              "label": "ラシー『創世記注解』37:14",
+              "url": "https://www.sefaria.org/Rashi_on_Genesis.37.14"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "父が求めたのは勝敗の報告ではなく、兄弟と群れの無事だった。人間関係がこじれるときこそ、「相手は無事か」という最初の問いを失わずにいたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.37.15",
+      "translation": "一人の男がヨセフを見つけた。見ると、彼は野でさまよっていた。その男は彼に尋ねた。「何を捜しているのか。」",
+      "short_commentary": "シェケムに着いても旅は終わらない。目的地を失ったヨセフに、名もない男が「何を捜しているのか」と問い、物語を再び動かす。",
+      "glosses": [
+        {
+          "token_id": 12479,
+          "ja": "そして彼を見つけた"
+        },
+        {
+          "token_id": 12480,
+          "ja": "一人の男が"
+        },
+        {
+          "token_id": 12481,
+          "ja": "すると見よ"
+        },
+        {
+          "token_id": 12482,
+          "ja": "さまよっている"
+        },
+        {
+          "token_id": 12483,
+          "ja": "野で"
+        },
+        {
+          "token_id": 12484,
+          "ja": "そして彼に尋ねた"
+        },
+        {
+          "token_id": 12485,
+          "ja": "その男は"
+        },
+        {
+          "token_id": 12486,
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 12487,
+          "ja": "何を"
+        },
+        {
+          "token_id": 12488,
+          "ja": "あなたは捜しているのか"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "見つける者と迷う者",
+          "body": "ヘブライ語の構文は「男が彼を見つけた」を先に置き、その後でヨセフが野で迷っていたことを明かす。捜す側のヨセフが先に見つけられるという反転により、偶然に見える出会いが旅の決定的な転機となる。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            },
+            {
+              "label": "André Wénin, “Le temps dans l’histoire de Joseph (Gn 37–50),” Biblica 83 (2002), pp. 28–53",
+              "url": "https://www.bsw.org/biblica/vol-83-2002/le-temps-dans-l-histoire-de-joseph-gn-37-50-reperes-temporels-pour-une-analyse-narrative/220/"
+            }
+          ]
+        },
+        {
+          "heading": "ラシーの使者理解",
+          "body": "ラシーは創世記ラッバー84:14に従い、この「一人の男」を天使ガブリエルと同定する。字義では名のない土地の人で十分に読めるが、ミドラシュは、道を失ったヨセフを決定的な出会いへ導く神的な使者としてこの人物を読む。",
+          "sources": [
+            {
+              "label": "ラシー『創世記注解』37:15（創世記ラッバー84:14を引用）",
+              "url": "https://www.sefaria.org/Rashi_on_Genesis.37.15"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "迷っている事実を隠すより、「何を捜しているのか」という問いを受け入れる方が前へ進める。目的を言葉にすることが、途切れた道を結び直すことがある。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.37.16",
+      "translation": "ヨセフは言った。「私は兄弟たちを捜しています。どうか、彼らがどこで牧しているのか教えてください。」",
+      "short_commentary": "ヨセフの答えは目的を一文に絞る。「兄弟たち」を目的語の先頭に出し、彼の捜索が場所や羊ではなく、人へ向けられていることを強調する。",
+      "glosses": [
+        {
+          "token_id": 12489,
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 12490,
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 12491,
+          "ja": "私の兄弟たちを"
+        },
+        {
+          "token_id": 12492,
+          "ja": "私は"
+        },
+        {
+          "token_id": 12493,
+          "ja": "捜しています"
+        },
+        {
+          "token_id": 12494,
+          "ja": "どうか教えてください"
+        },
+        {
+          "token_id": 12495,
+          "ja": "どうか"
+        },
+        {
+          "token_id": 12496,
+          "ja": "私に"
+        },
+        {
+          "token_id": 12497,
+          "ja": "どこで"
+        },
+        {
+          "token_id": 12498,
+          "ja": "彼らは"
+        },
+        {
+          "token_id": 12499,
+          "ja": "牧しているのですか"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "前置された目的語",
+          "body": "ヘブライ語の語順では「私の兄弟たちを」が「私は捜している」より先に置かれる。文脈上の焦点が兄弟たちに当たり、37:14の父の命令をヨセフ自身の探求の言葉へ変える。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            }
+          ]
+        },
+        {
+          "heading": "「捜す」の対話",
+          "body": "前節の男の問い「あなたは何を捜すのか」と、ヨセフの「私は捜している」は同じ語根を反復する。問いと答えが正確にかみ合うことで、偶然の会話が兄弟の居場所へ向かう案内となる。",
+          "sources": [
+            {
+              "label": "André Wénin, “Le temps dans l’histoire de Joseph (Gn 37–50),” Biblica 83 (2002), pp. 28–53",
+              "url": "https://www.bsw.org/biblica/vol-83-2002/le-temps-dans-l-histoire-de-joseph-gn-37-50-reperes-temporels-pour-une-analyse-narrative/220/"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "ヨセフは「道を知っています」とは言わず、「兄弟たちを捜しています」と言った。目的が明確なら、知らないことを認めて助けを求めることは弱さではない。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.37.17",
+      "translation": "その男は言った。「彼らはここから移動した。『ドタンへ行こう』と言っているのを聞いたからだ。」ヨセフは兄弟たちの後を追い、ドタンで彼らを見つけた。",
+      "short_commentary": "「捜す」は「見つける」に到達するが、それは和解の到着ではない。ヨセフはさらに北のドタンまで兄弟を追い、逃れられたはずの危険へ自ら近づく。",
+      "glosses": [
+        {
+          "token_id": 12500,
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 12501,
+          "ja": "その男は"
+        },
+        {
+          "token_id": 12502,
+          "ja": "彼らは移動した"
+        },
+        {
+          "token_id": 12503,
+          "ja": "ここから"
+        },
+        {
+          "token_id": 12504,
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 12505,
+          "ja": "私は聞いた"
+        },
+        {
+          "token_id": 12506,
+          "ja": "彼らが言うのを"
+        },
+        {
+          "token_id": 12507,
+          "ja": "ドタンへ行こう"
+        },
+        {
+          "token_id": 12508,
+          "ja": "ドタンへ"
+        },
+        {
+          "token_id": 12509,
+          "ja": "そして行った"
+        },
+        {
+          "token_id": 12510,
+          "ja": "ヨセフは"
+        },
+        {
+          "token_id": 12511,
+          "ja": "後を追って"
+        },
+        {
+          "token_id": 12512,
+          "ja": "彼の兄弟たちの"
+        },
+        {
+          "token_id": 12513,
+          "ja": "そして彼らを見つけた"
+        },
+        {
+          "token_id": 12514,
+          "ja": "ドタンで"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "シェケムからドタンへ",
+          "body": "ドタンはシェケムの北約22キロに位置し、地域間の通路と牧草地が交わる谷にある。本文の「移動した」「後を追った」は、ヨセフが当初の目的地を越えて相当な追加行程を選んだことを示す。",
+          "sources": [
+            {
+              "label": "John M. Monson, “Regional Settlement: Dothan in the Northern Arena,” in Dothan I (2005), pp. 7–14",
+              "url": "https://www.jstor.org/stable/10.5325/j.ctv1bxh359.7"
+            }
+          ]
+        },
+        {
+          "heading": "「見つけた」の到達点",
+          "body": "37:15では男がヨセフを「見つけ」、ここではヨセフが兄弟を「見つける」。同じ動詞が案内の始点と捜索の終点を囲むが、見つけること自体は安全を保証せず、次節の「遠くから見た」へ直結する。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            },
+            {
+              "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+              "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "ヨセフは最初の不在を口実に引き返さず、さらに進んだ。愛する相手を捜す務めには、予定した距離を越える忍耐が要ることがある。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.37.18",
+      "translation": "兄弟たちは遠くから彼を見た。そして彼が彼らのもとへ近づく前に、彼を殺そうと悪だくみした。",
+      "short_commentary": "見ることが認識や共感へ進まず、殺害計画へ直結する。ヨセフにはまだ言葉を発する機会さえなく、兄弟たちは遠距離から彼の意図を決めつける。",
+      "glosses": [
+        {
+          "token_id": 12515,
+          "ja": "そして彼らは見た"
+        },
+        {
+          "token_id": 12516,
+          "ja": "彼を"
+        },
+        {
+          "token_id": 12517,
+          "ja": "遠くから"
+        },
+        {
+          "token_id": 12518,
+          "ja": "そしてまだ～ないうちに"
+        },
+        {
+          "token_id": 12519,
+          "ja": "彼が近づく"
+        },
+        {
+          "token_id": 12520,
+          "ja": "彼らのもとへ"
+        },
+        {
+          "token_id": 12521,
+          "ja": "そして彼らは彼に悪だくみした"
+        },
+        {
+          "token_id": 12522,
+          "ja": "彼を"
+        },
+        {
+          "token_id": 12523,
+          "ja": "殺すために"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "接近より先に成立する計画",
+          "body": "ヘブライ語の「まだ近づかないうちに」が、対話以前に陰謀が完成したことを強調する。「悪だくみした」は再帰的な強意語幹で、衝動的な反応より、互いに策をめぐらせた計画性を表す。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            },
+            {
+              "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+              "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+            }
+          ]
+        },
+        {
+          "heading": "視線と情報の非対称",
+          "body": "ヨセフは兄弟を捜して近づくが、兄弟は彼を遠くから見て敵として処理する。家族内で言葉が交わされないまま推測が行動へ変わることを、物語は距離の描写で可視化している。",
+          "sources": [
+            {
+              "label": "Moshe Greenberger, “A Matter of Words and Assumptions in the Household of Jacob,” Jewish Bible Quarterly",
+              "url": "https://www.jewishbible.org/articles/a-matter-of-words-and-assumptions-in-jacobs-household/"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "遠くから見た相手について、近づく前に結論を作ってしまう危険がある。対話の前に固めた物語をいったん手放し、近くで聞く余地を残したい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.37.19",
+      "translation": "彼らは互いに言った。「見ろ、あの夢々の持ち主が来ている。」",
+      "short_commentary": "兄弟たちはヨセフを名で呼ばず、「夢々の持ち主」と呼ぶ。軽蔑的な呼称によって、生身の弟は自分たちを脅かす夢の象徴へ縮減される。",
+      "glosses": [
+        {
+          "token_id": 12524,
+          "ja": "そして彼らは言った"
+        },
+        {
+          "token_id": 12525,
+          "ja": "互いに"
+        },
+        {
+          "token_id": 12526,
+          "ja": "～に"
+        },
+        {
+          "token_id": 12527,
+          "ja": "その兄弟"
+        },
+        {
+          "token_id": 12528,
+          "ja": "見よ"
+        },
+        {
+          "token_id": 12529,
+          "ja": "持ち主が"
+        },
+        {
+          "token_id": 12530,
+          "ja": "数々の夢の"
+        },
+        {
+          "token_id": 12531,
+          "ja": "あの者が"
+        },
+        {
+          "token_id": 12532,
+          "ja": "来ている"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "「夢々の持ち主」",
+          "body": "ヘブライ語の直訳は「夢々の主人／所有者」である。複数形の「夢々」は37:5–11の二つの夢をまとめ、兄弟たちの呼称は、夢を語ったヨセフと夢の支配要求とを一体化する皮肉なあだ名として働く。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            },
+            {
+              "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+              "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+            }
+          ]
+        },
+        {
+          "heading": "名を奪う言葉",
+          "body": "会話の形は「人がその兄弟に」、すなわち互いに語る集団内部の言葉である。本人に語りかけず、集団内の呼称で相手を定義することが、次節の暴力を心理的に容易にする。",
+          "sources": [
+            {
+              "label": "Moshe Greenberger, “A Matter of Words and Assumptions in the Household of Jacob,” Jewish Bible Quarterly",
+              "url": "https://www.jewishbible.org/articles/a-matter-of-words-and-assumptions-in-jacobs-household/"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "相手を一つの特徴や過去の言葉だけで呼ぶと、その人全体が見えなくなる。名前で呼び直すことは、暴力へ向かう言葉を止める小さな第一歩になり得る。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.37.20",
+      "translation": "「それでは今、さあ彼を殺し、穴の一つへ投げ込もう。そして『悪い野の獣が彼を食い尽くした』と言おう。そうすれば、彼の夢々がどうなるか見ものだ。」",
+      "short_commentary": "殺害、遺棄、偽装が一続きの提案になる。最後の「見よう」は夢を反証する企てだが、読者にはむしろ夢の実現を促す皮肉として響く。",
+      "glosses": [
+        {
+          "token_id": 12563,
+          "ja": "それでは今"
+        },
+        {
+          "token_id": 12564,
+          "ja": "さあ"
+        },
+        {
+          "token_id": 12565,
+          "ja": "そして彼を殺そう"
+        },
+        {
+          "token_id": 12566,
+          "ja": "そして彼を投げ込もう"
+        },
+        {
+          "token_id": 12567,
+          "ja": "一つへ"
+        },
+        {
+          "token_id": 12568,
+          "ja": "その穴々のうちの"
+        },
+        {
+          "token_id": 12569,
+          "ja": "そして言おう"
+        },
+        {
+          "token_id": 12570,
+          "ja": "野の獣が"
+        },
+        {
+          "token_id": 12571,
+          "ja": "悪い"
+        },
+        {
+          "token_id": 12572,
+          "ja": "彼を食い尽くしたと"
+        },
+        {
+          "token_id": 12573,
+          "ja": "そして見よう"
+        },
+        {
+          "token_id": 12574,
+          "ja": "何に"
+        },
+        {
+          "token_id": 12575,
+          "ja": "なるのか"
+        },
+        {
+          "token_id": 12576,
+          "ja": "彼の夢々が"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "一人称複数の連鎖",
+          "body": "ヘブライ語の「殺そう」「投げ込もう」「言おう」「見よう」はすべて一人称複数で連なる。責任を集団の「私たち」に溶かし込みながら、暴力と虚偽を共同計画へ変える修辞である。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            },
+            {
+              "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+              "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+            }
+          ]
+        },
+        {
+          "heading": "夢を試す言葉の皮肉",
+          "body": "兄弟たちはヨセフを殺せば夢も無効になると考える。しかし物語全体では、この企てがヨセフをエジプトへ移し、夢の成就へ向かわせる。ここでの「見よう」は人間が未来を支配できるという自己確信を露呈する。",
+          "sources": [
+            {
+              "label": "André Wénin, “Le temps dans l’histoire de Joseph (Gn 37–50),” Biblica 83 (2002), pp. 28–53",
+              "url": "https://www.bsw.org/biblica/vol-83-2002/le-temps-dans-l-histoire-de-joseph-gn-37-50-reperes-temporels-pour-une-analyse-narrative/220/"
+            },
+            {
+              "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+              "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "集団の勢いの中では、「私たちが決めれば未来も消せる」という錯覚が生まれる。自分たちの計画で神の働きを裁定しようとしていないか、言葉が加速する前に立ち止まりたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.37.21",
+      "translation": "ルベンはこれを聞き、ヨセフを彼らの手から救い出した。そして言った。「命を奪うほど彼を打つのはやめよう。」",
+      "short_commentary": "集団の提案を「聞いた」ルベンが、初めて異議を差し挟む。語り手は計画がまだ完了していない段階で「彼を救い出した」と先取りして、介入の方向を示す。",
+      "glosses": [
+        {
+          "token_id": 12577,
+          "ja": "そして聞いた"
+        },
+        {
+          "token_id": 12578,
+          "ja": "ルベンは"
+        },
+        {
+          "token_id": 12579,
+          "ja": "そして彼を救い出した"
+        },
+        {
+          "token_id": 12580,
+          "ja": "彼らの手から"
+        },
+        {
+          "token_id": 12581,
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 12582,
+          "ja": "～しないようにしよう"
+        },
+        {
+          "token_id": 12583,
+          "ja": "彼を打つ"
+        },
+        {
+          "token_id": 12584,
+          "ja": "命を奪うまで"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "「聞く」から介入へ",
+          "body": "ヘブライ語の連続形は「ルベンは聞いた、そして彼を救い出した」と直結する。語り手は具体策が次節で語られる前に救出を宣言し、受動的な聴取と実際の介入を分離しない。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            },
+            {
+              "label": "André Wénin, “Le temps dans l’histoire de Joseph (Gn 37–50),” Biblica 83 (2002), pp. 28–53",
+              "url": "https://www.bsw.org/biblica/vol-83-2002/le-temps-dans-l-histoire-de-joseph-gn-37-50-reperes-temporels-pour-une-analyse-narrative/220/"
+            }
+          ]
+        },
+        {
+          "heading": "ルベンの位置",
+          "body": "ルベンは長子として兄弟集団の中にいながら、殺害の合意を崩す役を担う。後のユダの発言と並ぶため、研究史では別資料の痕跡とも、二人の兄の異なる責任を描く文学的配置とも論じられてきた。",
+          "sources": [
+            {
+              "label": "Judah Kraut, “The Literary Roles of Reuben and Judah in Genesis Narratives,” Journal for the Study of the Old Testament 43.2 (2018), pp. 205–227",
+              "url": "https://journals.sagepub.com/doi/10.1177/0309089217711029"
+            },
+            {
+              "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+              "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "危険な相談を聞いたとき、心の中で反対するだけでは命を守れない。ルベンの「聞いた、そして救った」という連続は、良心を具体的な介入へ移すよう促す。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.37.22",
+      "translation": "ルベンは彼らに言った。「血を流してはならない。彼を荒れ野にあるこの穴へ投げ込みなさい。しかし彼に手を伸ばしてはならない。」これは、ヨセフを彼らの手から救い出し、父のもとへ帰すためであった。",
+      "short_commentary": "ルベンは殺害を直接禁止し、穴への遺棄に置き換える。語り手だけが、彼の秘めた目的がヨセフを父へ返すことだったと明かす。",
+      "glosses": [
+        {
+          "token_id": 12585,
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 12586,
+          "ja": "彼らに"
+        },
+        {
+          "token_id": 12587,
+          "ja": "ルベンは"
+        },
+        {
+          "token_id": 12588,
+          "ja": "～してはならない"
+        },
+        {
+          "token_id": 12589,
+          "ja": "あなたがたは流す"
+        },
+        {
+          "token_id": 12590,
+          "ja": "血を"
+        },
+        {
+          "token_id": 12591,
+          "ja": "あなたがたは投げ込みなさい"
+        },
+        {
+          "token_id": 12592,
+          "ja": "彼を"
+        },
+        {
+          "token_id": 12593,
+          "ja": "～へ"
+        },
+        {
+          "token_id": 12594,
+          "ja": "その穴"
+        },
+        {
+          "token_id": 12595,
+          "ja": "この"
+        },
+        {
+          "token_id": 12596,
+          "ja": "～であるところの"
+        },
+        {
+          "token_id": 12597,
+          "ja": "荒れ野にある"
+        },
+        {
+          "token_id": 12598,
+          "ja": "そして手を"
+        },
+        {
+          "token_id": 12599,
+          "ja": "～してはならない"
+        },
+        {
+          "token_id": 12600,
+          "ja": "あなたがたは伸ばす"
+        },
+        {
+          "token_id": 12601,
+          "ja": "彼に対して"
+        },
+        {
+          "token_id": 12602,
+          "ja": "～するために"
+        },
+        {
+          "token_id": 12603,
+          "ja": "救い出す"
+        },
+        {
+          "token_id": 12604,
+          "ja": "彼を"
+        },
+        {
+          "token_id": 12605,
+          "ja": "彼らの手から"
+        },
+        {
+          "token_id": 12606,
+          "ja": "彼を帰すために"
+        },
+        {
+          "token_id": 12607,
+          "ja": "～へ"
+        },
+        {
+          "token_id": 12608,
+          "ja": "彼の父"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "二つの禁止と一つの命令",
+          "body": "ヘブライ語の「血を流すな」「手を伸ばすな」が殺害を挟み込む一方、「この穴へ投げ込め」は妥協案として命令される。完全な正義ではないが、差し迫った死を遅らせる現実的な介入になっている。",
+          "sources": [
+            {
+              "label": "Open Scriptures, MorphHB（創世記37:12–22の本文・形態情報）",
+              "url": "https://github.com/openscriptures/morphhb"
+            },
+            {
+              "label": "Chabad, Vayeshev Torah Reading, Second Portion (Genesis 37:12–22)",
+              "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492529/p/2/jewish/Vayeshev-Torah-Reading.htm"
+            }
+          ]
+        },
+        {
+          "heading": "語り手が示す内心",
+          "body": "「救い出し、父へ帰すため」は兄弟への発言ではなく、語り手による目的説明である。公の提案は曖昧でも、読者にはルベンの意図が知らされ、次の展開でその計画が成功するかという緊張が生まれる。",
+          "sources": [
+            {
+              "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+              "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+            },
+            {
+              "label": "Judah Kraut, “The Literary Roles of Reuben and Judah in Genesis Narratives,” Journal for the Study of the Old Testament 43.2 (2018), pp. 205–227",
+              "url": "https://journals.sagepub.com/doi/10.1177/0309089217711029"
+            }
+          ]
+        },
+        {
+          "heading": "デボーショナルな受けとめ",
+          "body": "理想的な解決を一度に実現できなくても、まず「血を流してはならない」と境界線を引くことはできる。命を守るための不完全な一歩も、先送りせず踏み出したい。",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "id": "searching-for-brothers",
+      "heading": "捜す者が見つけられ、さらに捜し続ける",
+      "refs": [
+        "Gen.37.12",
+        "Gen.37.13",
+        "Gen.37.14",
+        "Gen.37.15",
+        "Gen.37.16",
+        "Gen.37.17"
+      ],
+      "after_ref": "Gen.37.17",
+      "body": "37:12–17は「行く」「遣わす」「捜す」「見つける」を重ね、ヘブロンからシェケム、さらにドタンへとヨセフを運ぶ。父の目的は二度反復される「無事」の確認だが、兄弟は予定地を離れている。ヨセフが男に見つけられ、その案内で兄弟を見つける二重の「見つける」は、偶然らしい出会いを通して旅が危機の地点へ導かれる構成を作る。ドタンがシェケムの北約22キロにあることは、彼が簡単に引き返さず追加の距離を進んだことを具体化する。",
+      "sources": [
+        {
+          "label": "John M. Monson, “Regional Settlement: Dothan in the Northern Arena,” in Dothan I (2005), pp. 7–14",
+          "url": "https://www.jstor.org/stable/10.5325/j.ctv1bxh359.7"
+        },
+        {
+          "label": "André Wénin, “Le temps dans l’histoire de Joseph (Gn 37–50),” Biblica 83 (2002), pp. 28–53",
+          "url": "https://www.bsw.org/biblica/vol-83-2002/le-temps-dans-l-histoire-de-joseph-gn-37-50-reperes-temporels-pour-une-analyse-narrative/220/"
+        },
+        {
+          "label": "Moshe Greenberger, “A Matter of Words and Assumptions in the Household of Jacob,” Jewish Bible Quarterly",
+          "url": "https://www.jewishbible.org/articles/a-matter-of-words-and-assumptions-in-jacobs-household/"
+        },
+        {
+          "label": "ラシー『創世記注解』37:15（創世記ラッバー84:14を引用）",
+          "url": "https://www.sefaria.org/Rashi_on_Genesis.37.15"
+        }
+      ]
+    },
+    {
+      "id": "dreams-put-on-trial",
+      "heading": "対話より先に組み上がる殺害計画",
+      "refs": [
+        "Gen.37.18",
+        "Gen.37.19",
+        "Gen.37.20"
+      ],
+      "after_ref": "Gen.37.20",
+      "body": "37:18–20では、兄弟たちはヨセフが近づく前に彼を見て、名ではなく「夢々の持ち主」と呼び、殺害・遺棄・虚偽を一人称複数の計画へまとめる。「彼の夢々がどうなるか見よう」という挑戦は、夢の真偽を暴力で決めようとする企てである。しかし物語全体を知る読者には、この企てこそ夢の実現へ至る道を開くという劇的アイロニーが生じる。",
+      "sources": [
+        {
+          "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+          "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+        },
+        {
+          "label": "Moshe Greenberger, “A Matter of Words and Assumptions in the Household of Jacob,” Jewish Bible Quarterly",
+          "url": "https://www.jewishbible.org/articles/a-matter-of-words-and-assumptions-in-jacobs-household/"
+        }
+      ]
+    },
+    {
+      "id": "reubens-intervention",
+      "heading": "集団の「私たち」に差し込まれるルベンの禁止",
+      "refs": [
+        "Gen.37.21",
+        "Gen.37.22"
+      ],
+      "after_ref": "Gen.37.22",
+      "body": "37:21–22でルベンは計画を「聞き」、直ちに救出へ動く。「血を流すな」「手を伸ばすな」という二つの禁止は、集団の勢いに明確な限界を置く。一方で穴への投棄を提案するため、介入は道徳的に完全ではない。語り手が父へ帰す意図を明かすことで、ルベンの公的な妥協と私的な救出計画のずれが読者に知らされる。",
+      "sources": [
+        {
+          "label": "Judah Kraut, “The Literary Roles of Reuben and Judah in Genesis Narratives,” Journal for the Study of the Old Testament 43.2 (2018), pp. 205–227",
+          "url": "https://journals.sagepub.com/doi/10.1177/0309089217711029"
+        },
+        {
+          "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+          "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+        },
+        {
+          "label": "André Wénin, “Le temps dans l’histoire de Joseph (Gn 37–50),” Biblica 83 (2002), pp. 28–53",
+          "url": "https://www.bsw.org/biblica/vol-83-2002/le-temps-dans-l-histoire-de-joseph-gn-37-50-reperes-temporels-pour-une-analyse-narrative/220/"
+        }
+      ]
+    }
+  ],
+  "aliyah_research": [
+    {
+      "heading": "移動・視線・発話がつくる物語の推進力",
+      "body": "このアリヤーでは、ヨセフ側の動詞は「行く」「捜す」「見つける」と前進し、兄弟側は「遠くから見る」「悪だくみする」「互いに言う」と閉じた集団へ向かう。父が求めた「兄弟の無事」と、兄弟たちが作る「殺そう」という共同発話の落差が中心的緊張である。近年の創世記37章研究には資料分解を重視する議論と、資料境界を越える反復や語彙的連結から現形の結束性を評価する議論があり、ここでは最終形の語の連鎖をまず読む立場を採った。",
+      "sources": [
+        {
+          "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+          "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+        },
+        {
+          "label": "Moshe Greenberger, “A Matter of Words and Assumptions in the Household of Jacob,” Jewish Bible Quarterly",
+          "url": "https://www.jewishbible.org/articles/a-matter-of-words-and-assumptions-in-jacobs-household/"
+        },
+        {
+          "label": "André Wénin, “Le temps dans l’histoire de Joseph (Gn 37–50),” Biblica 83 (2002), pp. 28–53",
+          "url": "https://www.bsw.org/biblica/vol-83-2002/le-temps-dans-l-histoire-de-joseph-gn-37-50-reperes-temporels-pour-une-analyse-narrative/220/"
+        }
+      ]
+    },
+    {
+      "heading": "ユダヤ教解釈――書写上の点、深い計画、名もない男",
+      "body": "ユダヤ教解釈は本文の小さな異常や余白を三つの方向へ展開する。ラシーは37:12の目的語標識上の点を兄弟たちの自己志向として読み、37:14の「ヘブロンの谷」をアブラハムへの予告へつながる「深い計画」とし、37:15の男をガブリエルと同定する。これらは地理・文法上の字義を置き換える説明ではなく、写本上の印、語呂、匿名人物が開く意味を救済史と倫理へ展開するミドラシュ的読解として区別して提示した。",
+      "sources": [
+        {
+          "label": "ラシー『創世記注解』37:12（創世記ラッバー84:13を引用）",
+          "url": "https://www.sefaria.org/Rashi_on_Genesis.37.12"
+        },
+        {
+          "label": "ラシー『創世記注解』37:14",
+          "url": "https://www.sefaria.org/Rashi_on_Genesis.37.14"
+        },
+        {
+          "label": "ラシー『創世記注解』37:15（創世記ラッバー84:14を引用）",
+          "url": "https://www.sefaria.org/Rashi_on_Genesis.37.15"
+        }
+      ]
+    },
+    {
+      "heading": "ルベンとユダをめぐる文学・編集研究",
+      "body": "37章にはルベンの救出案と、続く箇所のユダの売却案が並ぶため、古典的資料批評は競合する伝承の結合と見てきた。他方、近年は両者を、長子ルベンとユダの責任・失敗・変化を物語全体で対照させる文学的配置としても読む。今回の範囲はユダの発言直前で終わるため、ルベンの行為を最終評価せず、「殺害を止めたが穴への投棄を認めた」という限定された救出として保持した。",
+      "sources": [
+        {
+          "label": "Judah Kraut, “The Literary Roles of Reuben and Judah in Genesis Narratives,” Journal for the Study of the Old Testament 43.2 (2018), pp. 205–227",
+          "url": "https://journals.sagepub.com/doi/10.1177/0309089217711029"
+        },
+        {
+          "label": "Matthew McAffee, “The Sale of Joseph in Genesis 37:18–26,” Journal of Hebrew Scriptures 24 (2024/2025), pp. 1–30",
+          "url": "https://jhsonline.org/index.php/jhs/article/view/29634"
+        }
+      ]
+    },
+    {
+      "heading": "教父的受容――父から遣わされた愛する子",
+      "body": "アンブロシウスは『ヨセフについて』で、父から兄弟のもとへ遣わされ、拒絶されるヨセフをキリストの型として読む。この受容史は、本文の字義的な家族葛藤やルベンの不完全な介入とは別の層に置く必要がある。類型的読解の価値は、ヨセフと兄弟の相違を消すことではなく、「遣わされた愛する子が同胞から拒まれる」という物語形がキリスト教共同体でどう再読されたかを示す点にある。",
+      "sources": [
+        {
+          "label": "Ambrosius Mediolanensis, De Ioseph Patriarcha, chs. 2–3（ラテン語本文）",
+          "url": "https://la.wikisource.org/wiki/De_Ioseph_Patriarcha"
+        },
+        {
+          "label": "BiblIndex, Ambrose of Milan, De Ioseph（作品・校訂／英訳書誌）",
+          "url": "https://www.biblindex.org/en/work-editions/de-ioseph-patriarcha-/corpus-scriptorum-ecclesiasticorum-latinorum-32-2"
+        }
+      ]
+    }
+  ]
+}
