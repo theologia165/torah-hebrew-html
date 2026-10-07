@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0-r2-cover-ready",
+  "run_id": "067-20261007-r1",
+  "status": "PASS",
+  "object_key": "covers/067-20261007-r1/cover.jpg",
+  "content_type": "image/jpeg",
+  "width": 1200,
+  "height": 630,
+  "sha256": "1a72846d9fc601553554bf0b98a48014aa572188170e04defc6f1745c9931610",
+  "qa": {
+    "status": "PASS",
+    "generation_attempt": 1,
+    "checks": {
+      "series_title": "PASS",
+      "sequence": "PASS",
+      "parasha": "PASS",
+      "aliyah": "PASS",
+      "range": "PASS",
+      "theme": "PASS",
+      "text_accuracy": "PASS",
+      "cross_run_contamination": "PASS",
+      "passage_scene": "PASS",
+      "dimensions": "PASS"
+    }
+  }
+}
