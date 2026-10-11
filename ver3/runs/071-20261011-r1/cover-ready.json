@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0-r2-cover-ready",
+  "run_id": "071-20261011-r1",
+  "status": "QA_PASS_UPLOADED",
+  "object_key": "covers/071-20261011-r1/cover.jpg",
+  "content_type": "image/jpeg",
+  "width": 1200,
+  "height": 630,
+  "byte_size": 247533,
+  "sha256": "35a565a3429e76ff235c5b9b3e824cc033bbdebb76ff95e8bea295a6fd2e92d5",
+  "qa": {
+    "attempt": 1,
+    "result": "PASS",
+    "checks": [
+      "NNN exact",
+      "parasha exact",
+      "aliyah exact",
+      "range exact",
+      "theme derived from current passage",
+      "no typo, garbling or omission",
+      "no cross-run contamination",
+      "scene consistent with Genesis 44:18-30",
+      "1200x630 JPEG"
+    ]
+  }
+}
