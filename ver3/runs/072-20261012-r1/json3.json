@@ -1,0 +1,3332 @@
+{
+  "schema_version": "3.0-json3",
+  "run_id": "072-20261012-r1",
+  "json1_sha256": "aae4373b0eb4c9215ceb1a8b093fa83530c2686145dbfa4145f29d12b23adc61",
+  "json2_sha256": "a00b558babf954cde472765fd55c31b30510c48a8ab7f13cd5b09874e45dbac5",
+  "title": "072｜創世記44:31–45:7",
+  "verses": [
+    {
+      "ref": "Gen.44.31",
+      "tokens": [
+        {
+          "token_id": 16410,
+          "token_index": 1,
+          "surface": "וְהָיָ֗ה",
+          "ja": "そして、〜となる"
+        },
+        {
+          "token_id": 16411,
+          "token_index": 2,
+          "surface": "כִּרְאוֹת֛וֹ",
+          "ja": "彼が見る時"
+        },
+        {
+          "token_id": 16412,
+          "token_index": 3,
+          "surface": "כִּי",
+          "ja": "〜ということを"
+        },
+        {
+          "token_id": 16413,
+          "token_index": 4,
+          "surface": "אֵ֥ין",
+          "ja": "いない"
+        },
+        {
+          "token_id": 16414,
+          "token_index": 5,
+          "surface": "הַנַּ֖עַר",
+          "ja": "その若い者が"
+        },
+        {
+          "token_id": 16415,
+          "token_index": 6,
+          "surface": "וָמֵ֑ת",
+          "ja": "彼は死ぬ"
+        },
+        {
+          "token_id": 16416,
+          "token_index": 7,
+          "surface": "וְהוֹרִ֨ידוּ",
+          "ja": "そして彼らは下らせる"
+        },
+        {
+          "token_id": 16417,
+          "token_index": 8,
+          "surface": "עֲבָדֶ֜יךָ",
+          "ja": "あなたの僕たちは"
+        },
+        {
+          "token_id": 16418,
+          "token_index": 9,
+          "surface": "אֶת",
+          "ja": "〜を"
+        },
+        {
+          "token_id": 16419,
+          "token_index": 10,
+          "surface": "שֵׂיבַ֨ת",
+          "ja": "白髪を"
+        },
+        {
+          "token_id": 16420,
+          "token_index": 11,
+          "surface": "עַבְדְּךָ֥",
+          "ja": "あなたの僕の"
+        },
+        {
+          "token_id": 16421,
+          "token_index": 12,
+          "surface": "אָבִ֛ינוּ",
+          "ja": "私たちの父の"
+        },
+        {
+          "token_id": 16422,
+          "token_index": 13,
+          "surface": "בְּיָג֖וֹן",
+          "ja": "悲しみのうちに"
+        },
+        {
+          "token_id": 16423,
+          "token_index": 14,
+          "surface": "שְׁאֹֽלָה",
+          "ja": "シェオルへ"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.44.32",
+      "tokens": [
+        {
+          "token_id": 16424,
+          "token_index": 1,
+          "surface": "כִּ֤י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 16425,
+          "token_index": 2,
+          "surface": "עַבְדְּךָ֙",
+          "ja": "あなたの僕は"
+        },
+        {
+          "token_id": 16426,
+          "token_index": 3,
+          "surface": "עָרַ֣ב",
+          "ja": "保証人となった"
+        },
+        {
+          "token_id": 16427,
+          "token_index": 4,
+          "surface": "אֶת",
+          "ja": "〜を"
+        },
+        {
+          "token_id": 16428,
+          "token_index": 5,
+          "surface": "הַנַּ֔עַר",
+          "ja": "その若い者の"
+        },
+        {
+          "token_id": 16429,
+          "token_index": 6,
+          "surface": "מֵעִ֥ם",
+          "ja": "〜のもとから"
+        },
+        {
+          "token_id": 16430,
+          "token_index": 7,
+          "surface": "אָבִ֖י",
+          "ja": "私の父の"
+        },
+        {
+          "token_id": 16431,
+          "token_index": 8,
+          "surface": "לֵאמֹ֑ר",
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 16432,
+          "token_index": 9,
+          "surface": "אִם",
+          "ja": "もし"
+        },
+        {
+          "token_id": 16433,
+          "token_index": 10,
+          "surface": "לֹ֤א",
+          "ja": "〜ない"
+        },
+        {
+          "token_id": 16434,
+          "token_index": 11,
+          "surface": "אֲבִיאֶ֨נּוּ֙",
+          "ja": "私が彼を連れ帰る"
+        },
+        {
+          "token_id": 16435,
+          "token_index": 12,
+          "surface": "אֵלֶ֔יךָ",
+          "ja": "あなたのもとへ"
+        },
+        {
+          "token_id": 16436,
+          "token_index": 13,
+          "surface": "וְחָטָ֥אתִי",
+          "ja": "その時、私は罪を負う"
+        },
+        {
+          "token_id": 16437,
+          "token_index": 14,
+          "surface": "לְאָבִ֖י",
+          "ja": "私の父に対して"
+        },
+        {
+          "token_id": 16438,
+          "token_index": 15,
+          "surface": "כָּל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 16439,
+          "token_index": 16,
+          "surface": "הַיָּמִֽים",
+          "ja": "日々を通して"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.44.33",
+      "tokens": [
+        {
+          "token_id": 16440,
+          "token_index": 1,
+          "surface": "וְעַתָּ֗ה",
+          "ja": "ですから今"
+        },
+        {
+          "token_id": 16441,
+          "token_index": 2,
+          "surface": "יֵֽשֶׁב",
+          "ja": "留まりますように"
+        },
+        {
+          "token_id": 16442,
+          "token_index": 3,
+          "surface": "נָ֤א",
+          "ja": "どうか"
+        },
+        {
+          "token_id": 16443,
+          "token_index": 4,
+          "surface": "עַבְדְּךָ֙",
+          "ja": "あなたの僕が"
+        },
+        {
+          "token_id": 16444,
+          "token_index": 5,
+          "surface": "תַּ֣חַת",
+          "ja": "〜の代わりに"
+        },
+        {
+          "token_id": 16445,
+          "token_index": 6,
+          "surface": "הַנַּ֔עַר",
+          "ja": "その若い者の"
+        },
+        {
+          "token_id": 16446,
+          "token_index": 7,
+          "surface": "עֶ֖בֶד",
+          "ja": "奴隷として"
+        },
+        {
+          "token_id": 16447,
+          "token_index": 8,
+          "surface": "לַֽאדֹנִ֑י",
+          "ja": "私の主に"
+        },
+        {
+          "token_id": 16448,
+          "token_index": 9,
+          "surface": "וְהַנַּ֖עַר",
+          "ja": "そしてその若い者は"
+        },
+        {
+          "token_id": 16449,
+          "token_index": 10,
+          "surface": "יַ֥עַל",
+          "ja": "上って行きますように"
+        },
+        {
+          "token_id": 16450,
+          "token_index": 11,
+          "surface": "עִם",
+          "ja": "〜と共に"
+        },
+        {
+          "token_id": 16451,
+          "token_index": 12,
+          "surface": "אֶחָֽיו",
+          "ja": "彼の兄たち"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.44.34",
+      "tokens": [
+        {
+          "token_id": 16452,
+          "token_index": 1,
+          "surface": "כִּי",
+          "ja": "いったい"
+        },
+        {
+          "token_id": 16453,
+          "token_index": 2,
+          "surface": "אֵיךְ֙",
+          "ja": "どうして"
+        },
+        {
+          "token_id": 16454,
+          "token_index": 3,
+          "surface": "אֶֽעֱלֶ֣ה",
+          "ja": "私は上って行けるでしょう"
+        },
+        {
+          "token_id": 16455,
+          "token_index": 4,
+          "surface": "אֶל",
+          "ja": "〜へ"
+        },
+        {
+          "token_id": 16456,
+          "token_index": 5,
+          "surface": "אָבִ֔י",
+          "ja": "私の父"
+        },
+        {
+          "token_id": 16457,
+          "token_index": 6,
+          "surface": "וְהַנַּ֖עַר",
+          "ja": "それなのにその若い者は"
+        },
+        {
+          "token_id": 16458,
+          "token_index": 7,
+          "surface": "אֵינֶ֣נּוּ",
+          "ja": "彼はいない"
+        },
+        {
+          "token_id": 16459,
+          "token_index": 8,
+          "surface": "אִתִּ֑י",
+          "ja": "私と一緒に"
+        },
+        {
+          "token_id": 16460,
+          "token_index": 9,
+          "surface": "פֶּ֚ן",
+          "ja": "〜してはならない"
+        },
+        {
+          "token_id": 16461,
+          "token_index": 10,
+          "surface": "אֶרְאֶ֣ה",
+          "ja": "私が見る"
+        },
+        {
+          "token_id": 16462,
+          "token_index": 11,
+          "surface": "בָרָ֔ע",
+          "ja": "その災いを"
+        },
+        {
+          "token_id": 16463,
+          "token_index": 12,
+          "surface": "אֲשֶׁ֥ר",
+          "ja": "それが"
+        },
+        {
+          "token_id": 16464,
+          "token_index": 13,
+          "surface": "יִמְצָ֖א",
+          "ja": "降りかかる"
+        },
+        {
+          "token_id": 16465,
+          "token_index": 14,
+          "surface": "אֶת",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 16466,
+          "token_index": 15,
+          "surface": "אָבִֽי",
+          "ja": "私の父"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.45.1",
+      "tokens": [
+        {
+          "token_id": 16548,
+          "token_index": 1,
+          "surface": "וְלֹֽא",
+          "ja": "そして〜なかった"
+        },
+        {
+          "token_id": 16549,
+          "token_index": 2,
+          "surface": "יָכֹ֨ל",
+          "ja": "できた"
+        },
+        {
+          "token_id": 16550,
+          "token_index": 3,
+          "surface": "יוֹסֵ֜ף",
+          "ja": "ヨセフは"
+        },
+        {
+          "token_id": 16551,
+          "token_index": 4,
+          "surface": "לְהִתְאַפֵּ֗ק",
+          "ja": "自分を抑えることが"
+        },
+        {
+          "token_id": 16552,
+          "token_index": 5,
+          "surface": "לְכֹ֤ל",
+          "ja": "すべての者の前で"
+        },
+        {
+          "token_id": 16553,
+          "token_index": 6,
+          "surface": "הַנִּצָּבִים֙",
+          "ja": "立っている者たち"
+        },
+        {
+          "token_id": 16554,
+          "token_index": 7,
+          "surface": "עָלָ֔יו",
+          "ja": "彼のそばに"
+        },
+        {
+          "token_id": 16555,
+          "token_index": 8,
+          "surface": "וַיִּקְרָ֕א",
+          "ja": "そこで彼は叫んだ"
+        },
+        {
+          "token_id": 16556,
+          "token_index": 9,
+          "surface": "הוֹצִ֥יאוּ",
+          "ja": "連れ出せ"
+        },
+        {
+          "token_id": 16557,
+          "token_index": 10,
+          "surface": "כָל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 16558,
+          "token_index": 11,
+          "surface": "אִ֖ישׁ",
+          "ja": "人を"
+        },
+        {
+          "token_id": 16559,
+          "token_index": 12,
+          "surface": "מֵעָלָ֑י",
+          "ja": "私のそばから"
+        },
+        {
+          "token_id": 16560,
+          "token_index": 13,
+          "surface": "וְלֹא",
+          "ja": "そして〜なかった"
+        },
+        {
+          "token_id": 16561,
+          "token_index": 14,
+          "surface": "עָ֤מַד",
+          "ja": "立っていた"
+        },
+        {
+          "token_id": 16562,
+          "token_index": 15,
+          "surface": "אִישׁ֙",
+          "ja": "誰も"
+        },
+        {
+          "token_id": 16563,
+          "token_index": 16,
+          "surface": "אִתּ֔וֹ",
+          "ja": "彼と共に"
+        },
+        {
+          "token_id": 16564,
+          "token_index": 17,
+          "surface": "בְּהִתְוַדַּ֥ע",
+          "ja": "彼が自分を知らせた時"
+        },
+        {
+          "token_id": 16565,
+          "token_index": 18,
+          "surface": "יוֹסֵ֖ף",
+          "ja": "ヨセフが"
+        },
+        {
+          "token_id": 16566,
+          "token_index": 19,
+          "surface": "אֶל",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 16567,
+          "token_index": 20,
+          "surface": "אֶחָֽיו",
+          "ja": "彼の兄弟たち"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.45.2",
+      "tokens": [
+        {
+          "token_id": 16704,
+          "token_index": 1,
+          "surface": "וַיִּתֵּ֥ן",
+          "ja": "そして彼はあげた"
+        },
+        {
+          "token_id": 16705,
+          "token_index": 2,
+          "surface": "אֶת",
+          "ja": "〜を"
+        },
+        {
+          "token_id": 16706,
+          "token_index": 3,
+          "surface": "קֹל֖וֹ",
+          "ja": "彼の声を"
+        },
+        {
+          "token_id": 16707,
+          "token_index": 4,
+          "surface": "בִּבְכִ֑י",
+          "ja": "泣きながら"
+        },
+        {
+          "token_id": 16708,
+          "token_index": 5,
+          "surface": "וַיִּשְׁמְע֣וּ",
+          "ja": "そして聞いた"
+        },
+        {
+          "token_id": 16709,
+          "token_index": 6,
+          "surface": "מִצְרַ֔יִם",
+          "ja": "エジプト人たちは"
+        },
+        {
+          "token_id": 16710,
+          "token_index": 7,
+          "surface": "וַיִּשְׁמַ֖ע",
+          "ja": "そして聞いた"
+        },
+        {
+          "token_id": 16711,
+          "token_index": 8,
+          "surface": "בֵּ֥ית",
+          "ja": "家も"
+        },
+        {
+          "token_id": 16712,
+          "token_index": 9,
+          "surface": "פַּרְעֹֽה",
+          "ja": "ファラオの"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.45.3",
+      "tokens": [
+        {
+          "token_id": 16836,
+          "token_index": 1,
+          "surface": "וַיֹּ֨אמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 16837,
+          "token_index": 2,
+          "surface": "יוֹסֵ֤ף",
+          "ja": "ヨセフは"
+        },
+        {
+          "token_id": 16838,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 16839,
+          "token_index": 4,
+          "surface": "אֶחָיו֙",
+          "ja": "彼の兄弟たち"
+        },
+        {
+          "token_id": 16840,
+          "token_index": 5,
+          "surface": "אֲנִ֣י",
+          "ja": "私は"
+        },
+        {
+          "token_id": 16841,
+          "token_index": 6,
+          "surface": "יוֹסֵ֔ף",
+          "ja": "ヨセフです"
+        },
+        {
+          "token_id": 16842,
+          "token_index": 7,
+          "surface": "הַע֥וֹד",
+          "ja": "まだ〜か"
+        },
+        {
+          "token_id": 16843,
+          "token_index": 8,
+          "surface": "אָבִ֖י",
+          "ja": "私の父は"
+        },
+        {
+          "token_id": 16844,
+          "token_index": 9,
+          "surface": "חָ֑י",
+          "ja": "生きている"
+        },
+        {
+          "token_id": 16845,
+          "token_index": 10,
+          "surface": "וְלֹֽא",
+          "ja": "しかし〜なかった"
+        },
+        {
+          "token_id": 16846,
+          "token_index": 11,
+          "surface": "יָכְל֤וּ",
+          "ja": "できた"
+        },
+        {
+          "token_id": 16847,
+          "token_index": 12,
+          "surface": "אֶחָיו֙",
+          "ja": "彼の兄弟たちは"
+        },
+        {
+          "token_id": 16848,
+          "token_index": 13,
+          "surface": "לַעֲנ֣וֹת",
+          "ja": "答えることが"
+        },
+        {
+          "token_id": 16849,
+          "token_index": 14,
+          "surface": "אֹת֔וֹ",
+          "ja": "彼に"
+        },
+        {
+          "token_id": 16850,
+          "token_index": 15,
+          "surface": "כִּ֥י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 16851,
+          "token_index": 16,
+          "surface": "נִבְהֲל֖וּ",
+          "ja": "彼らは恐れ惑った"
+        },
+        {
+          "token_id": 16852,
+          "token_index": 17,
+          "surface": "מִפָּנָֽיו",
+          "ja": "彼の前で"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.45.4",
+      "tokens": [
+        {
+          "token_id": 16853,
+          "token_index": 1,
+          "surface": "וַיֹּ֨אמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 16854,
+          "token_index": 2,
+          "surface": "יוֹסֵ֧ף",
+          "ja": "ヨセフは"
+        },
+        {
+          "token_id": 16855,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 16856,
+          "token_index": 4,
+          "surface": "אֶחָ֛יו",
+          "ja": "彼の兄弟たち"
+        },
+        {
+          "token_id": 16857,
+          "token_index": 5,
+          "surface": "גְּשׁוּ",
+          "ja": "近づいてください"
+        },
+        {
+          "token_id": 16858,
+          "token_index": 6,
+          "surface": "נָ֥א",
+          "ja": "どうか"
+        },
+        {
+          "token_id": 16859,
+          "token_index": 7,
+          "surface": "אֵלַ֖י",
+          "ja": "私のもとへ"
+        },
+        {
+          "token_id": 16860,
+          "token_index": 8,
+          "surface": "וַיִּגָּ֑שׁוּ",
+          "ja": "そこで彼らは近づいた"
+        },
+        {
+          "token_id": 16861,
+          "token_index": 9,
+          "surface": "וַיֹּ֗אמֶר",
+          "ja": "すると彼は言った"
+        },
+        {
+          "token_id": 16862,
+          "token_index": 10,
+          "surface": "אֲנִי֙",
+          "ja": "私は"
+        },
+        {
+          "token_id": 16863,
+          "token_index": 11,
+          "surface": "יוֹסֵ֣ף",
+          "ja": "ヨセフです"
+        },
+        {
+          "token_id": 16864,
+          "token_index": 12,
+          "surface": "אֲחִיכֶ֔ם",
+          "ja": "あなたがたの兄弟"
+        },
+        {
+          "token_id": 16865,
+          "token_index": 13,
+          "surface": "אֲשֶׁר",
+          "ja": "〜であるところの"
+        },
+        {
+          "token_id": 16866,
+          "token_index": 14,
+          "surface": "מְכַרְתֶּ֥ם",
+          "ja": "あなたがたは売った"
+        },
+        {
+          "token_id": 16867,
+          "token_index": 15,
+          "surface": "אֹתִ֖י",
+          "ja": "私を"
+        },
+        {
+          "token_id": 16868,
+          "token_index": 16,
+          "surface": "מִצְרָֽיְמָה",
+          "ja": "エジプトへ"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.45.5",
+      "tokens": [
+        {
+          "token_id": 16869,
+          "token_index": 1,
+          "surface": "וְעַתָּ֣ה",
+          "ja": "しかし今"
+        },
+        {
+          "token_id": 16870,
+          "token_index": 2,
+          "surface": "אַל",
+          "ja": "〜してはならない"
+        },
+        {
+          "token_id": 16871,
+          "token_index": 3,
+          "surface": "תֵּעָ֣צְב֗וּ",
+          "ja": "悲しんで"
+        },
+        {
+          "token_id": 16872,
+          "token_index": 4,
+          "surface": "וְאַל",
+          "ja": "また〜してはならない"
+        },
+        {
+          "token_id": 16873,
+          "token_index": 5,
+          "surface": "יִ֨חַר֙",
+          "ja": "怒りが燃える"
+        },
+        {
+          "token_id": 16874,
+          "token_index": 6,
+          "surface": "בְּעֵ֣ינֵיכֶ֔ם",
+          "ja": "あなたがた自身の目に"
+        },
+        {
+          "token_id": 16875,
+          "token_index": 7,
+          "surface": "כִּֽי",
+          "ja": "〜ということで"
+        },
+        {
+          "token_id": 16876,
+          "token_index": 8,
+          "surface": "מְכַרְתֶּ֥ם",
+          "ja": "あなたがたが売った"
+        },
+        {
+          "token_id": 16877,
+          "token_index": 9,
+          "surface": "אֹתִ֖י",
+          "ja": "私を"
+        },
+        {
+          "token_id": 16878,
+          "token_index": 10,
+          "surface": "הֵ֑נָּה",
+          "ja": "ここへ"
+        },
+        {
+          "token_id": 16879,
+          "token_index": 11,
+          "surface": "כִּ֣י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 16880,
+          "token_index": 12,
+          "surface": "לְמִֽחְיָ֔ה",
+          "ja": "命を保つために"
+        },
+        {
+          "token_id": 16881,
+          "token_index": 13,
+          "surface": "שְׁלָחַ֥נִי",
+          "ja": "彼が私を遣わした"
+        },
+        {
+          "token_id": 16882,
+          "token_index": 14,
+          "surface": "אֱלֹהִ֖ים",
+          "ja": "神が"
+        },
+        {
+          "token_id": 16883,
+          "token_index": 15,
+          "surface": "לִפְנֵיכֶֽם",
+          "ja": "あなたがたより先に"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.45.6",
+      "tokens": [
+        {
+          "token_id": 16884,
+          "token_index": 1,
+          "surface": "כִּי",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 16885,
+          "token_index": 2,
+          "surface": "זֶ֛ה",
+          "ja": "この"
+        },
+        {
+          "token_id": 16886,
+          "token_index": 3,
+          "surface": "שְׁנָתַ֥יִם",
+          "ja": "二年間"
+        },
+        {
+          "token_id": 16887,
+          "token_index": 4,
+          "surface": "הָרָעָ֖ב",
+          "ja": "その飢饉が"
+        },
+        {
+          "token_id": 16888,
+          "token_index": 5,
+          "surface": "בְּקֶ֣רֶב",
+          "ja": "〜のただ中に"
+        },
+        {
+          "token_id": 16889,
+          "token_index": 6,
+          "surface": "הָאָ֑רֶץ",
+          "ja": "その地の"
+        },
+        {
+          "token_id": 16890,
+          "token_index": 7,
+          "surface": "וְעוֹד֙",
+          "ja": "そしてなお"
+        },
+        {
+          "token_id": 16891,
+          "token_index": 8,
+          "surface": "חָמֵ֣שׁ",
+          "ja": "五"
+        },
+        {
+          "token_id": 16892,
+          "token_index": 9,
+          "surface": "שָׁנִ֔ים",
+          "ja": "年が"
+        },
+        {
+          "token_id": 16893,
+          "token_index": 10,
+          "surface": "אֲשֶׁ֥ר",
+          "ja": "その間"
+        },
+        {
+          "token_id": 16894,
+          "token_index": 11,
+          "surface": "אֵין",
+          "ja": "ない"
+        },
+        {
+          "token_id": 16895,
+          "token_index": 12,
+          "surface": "חָרִ֖ישׁ",
+          "ja": "耕すことも"
+        },
+        {
+          "token_id": 16896,
+          "token_index": 13,
+          "surface": "וְקָצִּֽיר",
+          "ja": "また刈り入れることも"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.45.7",
+      "tokens": [
+        {
+          "token_id": 16897,
+          "token_index": 1,
+          "surface": "וַיִּשְׁלָחֵ֤נִי",
+          "ja": "そして彼が私を遣わした"
+        },
+        {
+          "token_id": 16898,
+          "token_index": 2,
+          "surface": "אֱלֹהִים֙",
+          "ja": "神が"
+        },
+        {
+          "token_id": 16899,
+          "token_index": 3,
+          "surface": "לִפְנֵיכֶ֔ם",
+          "ja": "あなたがたより先に"
+        },
+        {
+          "token_id": 16900,
+          "token_index": 4,
+          "surface": "לָשׂ֥וּם",
+          "ja": "置くために"
+        },
+        {
+          "token_id": 16901,
+          "token_index": 5,
+          "surface": "לָכֶ֛ם",
+          "ja": "あなたがたのために"
+        },
+        {
+          "token_id": 16902,
+          "token_index": 6,
+          "surface": "שְׁאֵרִ֖ית",
+          "ja": "残りの者を"
+        },
+        {
+          "token_id": 16903,
+          "token_index": 7,
+          "surface": "בָּאָ֑רֶץ",
+          "ja": "その地に"
+        },
+        {
+          "token_id": 16904,
+          "token_index": 8,
+          "surface": "וּלְהַחֲי֣וֹת",
+          "ja": "また生かしておくために"
+        },
+        {
+          "token_id": 16905,
+          "token_index": 9,
+          "surface": "לָכֶ֔ם",
+          "ja": "あなたがたを"
+        },
+        {
+          "token_id": 16906,
+          "token_index": 10,
+          "surface": "לִפְלֵיטָ֖ה",
+          "ja": "救われた者として"
+        },
+        {
+          "token_id": 16907,
+          "token_index": 11,
+          "surface": "גְּדֹלָֽה",
+          "ja": "大いなる"
+        }
+      ]
+    }
+  ],
+  "media_status": {
+    "audio_status": "PASS",
+    "audio_implemented_count": 11,
+    "audio_expected_count": 11,
+    "missing_audio_refs": [],
+    "audio_failures": [],
+    "html_status": "PASS",
+    "html_implemented_count": 11,
+    "missing_html_refs": [],
+    "pages_status": "PASS",
+    "ai_generated_audio_refs": [],
+    "open_bible_audio_refs": []
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヴァイガシュ｜第2アリヤー｜創世記44:31–45:7"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダは父の痛みを自分の責任として引き受け、ベニヤミンの代わりに奴隷となることを申し出ます。その言葉にヨセフの抑制は破れ、涙のうちに兄弟へ名を明かします。「あなたがたが売った」という責任を消さず、「神が遣わした」と命の保存を語る本文から、真実を伴う和解と、傷を救いへ転じる神の働きを読みます。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "身代わりの申し出から、命を残す神の物語へ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 44:31"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_44_31_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：そして、彼が若い者がいないのを見るなら、彼は死んでしまいます。そうすれば、あなたの僕どもは、あなたの僕、私たちの父の白髪を悲しみのうちにシェオルへ下らせることになります。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-44-31.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ユダはベニヤミンの不在を、父の死と自分たちの責任に直結させる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "父の命を見据える言葉"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「見るなら」「死ぬ」「下らせる」と動詞が連なり、ベニヤミンを失う出来事がヤコブの死へ及ぶ因果を描きます。ユダは単に父の感情を説明するのでなく、「私たちの父」と呼び、父の白髪をシェオルへ下らせる主体に自分たちを含めています。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Fabrizio Ficco, ‘Jacob, my father’: The character of Judah in the Joseph Novella (Gen. 37–50), Journal for the Study of the Old Testament 49/3 (2025), pp. 265–286",
+                    "link": {
+                      "url": "https://doi.org/10.1177/03090892241304412"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "責任とは、目の前の選択が弱っている人の命にどこまで届くかを見届けることです。ユダの「私たちの父」という言葉は、他者の痛みを自分の責任の外へ置かないよう私たちを促します。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 44:32"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_44_32_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：なぜなら、あなたの僕は父に対して若い者の保証人となり、『もし私が彼をあなたのもとへ連れ帰らなければ、私は生涯、父に罪を負います』と申したからです。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-44-32.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：父への約束が、ユダの申し出を単なる交渉から自己拘束的な責任へ変える。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "保証と罪責"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「保証人となった」はユダが自分をベニヤミンの帰還に結びつけたことを示します。「罪を負う」と「すべての日々」が続くため、失敗は一時的な不名誉ではなく、生涯父に対して負う責任として語られています。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Fabrizio Ficco, ‘Jacob, my father’: The character of Judah in the Joseph Novella (Gen. 37–50), Journal for the Study of the Old Testament 49/3 (2025), pp. 265–286",
+                    "link": {
+                      "url": "https://doi.org/10.1177/03090892241304412"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "約束は、都合が悪くなった時にこそ重さを現します。ユダは「保証人となった」という過去の言葉を現在の行動へ移し、自分の発言に身をもって応えようとします。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 44:33"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_44_33_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ですから今、どうかあなたの僕を若い者の代わりにわが主の奴隷として残らせ、若い者は兄たちと一緒に上って行かせてください。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-44-33.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ユダは「代わりに」という一語を、実際の身代わりの申し出へ具体化する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「代わりに」の具体性"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "命令・願望形の「残らせてください」と「上って行かせてください」が対をなし、ユダとベニヤミンの行き先を入れ替えます。「代わりに」は感情表現に留まらず、自分が奴隷となり、弟を父へ返すという具体的な交換です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Fabrizio Ficco, ‘Jacob, my father’: The character of Judah in the Joseph Novella (Gen. 37–50), Journal for the Study of the Old Testament 49/3 (2025), pp. 265–286",
+                    "link": {
+                      "url": "https://doi.org/10.1177/03090892241304412"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "愛が「代わりに」という形を取る時、それは相手の重荷を眺めるだけでなく、自分の自由や予定を差し出す決断になります。ユダの願いは、代償を自分で引き受ける責任を示します。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 44:34"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_44_34_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：若い者が私と一緒でないのに、どうして私は父のもとへ上って行けるでしょう。父に降りかかる災いを見ることになってはなりません。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-44-34.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ユダの長い弁明は、自分が父の災いを見ることへの拒絶で閉じる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "問いで閉じる弁明"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「どうして私は上って行けるでしょう」は答えを求める質問ではなく、ベニヤミン抜きの帰還は不可能だという告白です。最後の「私の父」は、父との関係を繰り返した弁明の焦点を凝縮し、ユダの変化を物語上の頂点へ運びます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Fabrizio Ficco, ‘Jacob, my father’: The character of Judah in the Joseph Novella (Gen. 37–50), Journal for the Study of the Old Testament 49/3 (2025), pp. 265–286",
+                    "link": {
+                      "url": "https://doi.org/10.1177/03090892241304412"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ユダは災いを見てしまうことより、災いを避けるために自分を差し出す道を選びます。「どうして帰れよう」という問いは、同じまま帰ることを拒む悔い改めの声として響きます。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "44:31–34　保証が身代わりになる"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダの弁明は、父が死ぬという予測、父への保証、身代わりの申し出、父の災いを見られないという問いへ進みます。「父」と「若い者」の反復は、かつて兄弟を売ったユダが、父の偏愛を理由に新たな弟を切り捨てるのではなく、自分の自由を差し出す者へ変わったことを示します。Ficcoは、この「私の父」の反復と自己提供をユダの人物変化の中心として論じています。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Fabrizio Ficco, ‘Jacob, my father’: The character of Judah in the Joseph Novella (Gen. 37–50), Journal for the Study of the Old Testament 49/3 (2025), pp. 265–286",
+              "link": {
+                "url": "https://doi.org/10.1177/03090892241304412"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 45:1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_45_1_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヨセフはそばに立つすべての者の前で、もはや自分を抑えることができず、『皆を私のところから退出させよ』と叫んだ。ヨセフが兄弟たちに自分を明かした時、彼と共に立つ者は誰もいなかった。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-45-1.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ユダの言葉を受け、ヨセフの抑制は破れ、公開の法廷は家族だけの自己開示の場へ変わる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "抑制から自己開示へ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "再帰的な「自分を抑えること」と「自分を知らせること」が一節の中で向き合います。ヨセフは支配者として周囲を退出させますが、その権力行使の目的は兄弟を公開の場で辱めることではなく、誰もいない所で自分を明かすことでした。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "真実を明かす時には、何を語るかだけでなく、誰の前で語るかへの配慮も要ります。ヨセフが人々を退出させた行為は、兄弟の罪を見世物にせず関係の回復へ向かう空間を整えます。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 45:2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_45_2_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：彼は声をあげて泣いた。エジプト人たちはそれを聞き、ファラオの家も聞いた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-45-2.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：秘密の部屋で始まった涙は壁を越え、エジプト社会にまで聞こえる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "隠せない泣き声"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "直訳すればヨセフは「彼の声を泣きに与え」ます。人々を退出させても声は抑えられず、「エジプト人たち」「ファラオの家」へ聞こえます。私的な和解が公的な世界から完全に切り離されてはいないことを、音の広がりが示します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Bereshit Rabbah 93:9",
+                    "link": {
+                      "url": "https://www.sefaria.org/Bereshit_Rabbah.93.9"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヨセフの涙は弱さの失敗ではなく、長く抑えてきた関係が動き始めたしるしです。言葉より先に聞こえた泣き声が、失われた兄弟関係の入口を開きます。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 45:3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_45_3_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヨセフは兄弟たちに言った。『私はヨセフです。父はまだ生きていますか。』しかし兄弟たちは彼に答えることができなかった。彼の前で恐れ惑ったからである。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-45-3.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ヨセフの自己宣言は、兄弟たちから言葉を奪うほど過去と現在を衝突させる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「私はヨセフです」の衝撃"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「私は」「ヨセフです」と主語と名が並ぶ短い宣言に続き、父の生存が問われます。兄弟たちは「答えることができなかった」。恐れ惑いは、エジプトの支配者が売った弟だったという認識と、父に関する自分たちの過去に同時に直面した反応です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "真実が突然現れると、弁明の言葉は出なくなることがあります。兄弟たちの沈黙は、すぐに答えを作らず、まず自分たちが誰の前に立っているかを受け止める時間になっています。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 45:4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_45_4_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヨセフは兄弟たちに言った。『どうか私に近づいてください。』彼らが近づくと、彼は言った。『私は、あなたがたがエジプトへ売った、あなたがたの弟ヨセフです。』"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-45-4.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ヨセフは恐れで立ち尽くす兄弟を近くへ招き、罪を隠さず兄弟関係を名乗る。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "罪の告知と兄弟の名"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「近づいてください」と「彼らは近づいた」が応答を作ります。その近さの中でヨセフは「あなたがたが売った」と行為を特定しながら、同時に自分を「あなたがたの兄弟」と呼びます。和解は過去を消すことでも、関係を捨てることでもありません。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヨセフの「近づいてください」は、責任を曖昧にする招きではありません。傷を名指しできる距離まで相手を迎えることが、真実を伴う和解の第一歩になります。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "45:1–4　涙、沈黙、そして近づくこと"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダの言葉の後、ヨセフは抑制できず、人々を退出させ、泣き、名を明かします。しかし自己開示だけで兄弟たちは語れるようにならず、恐れ惑って沈黙します。そこでヨセフは「近づいてください」と命じます。『創世記ラッバー』93:9はヨセフの涙を、兄弟を宥める働きとして受け取ります。これは本文の出来事を救済の涙へ広げるミドラシュ的読解であり、本文のpeshatそのものとは区別されます。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Bereshit Rabbah 93:9",
+              "link": {
+                "url": "https://www.sefaria.org/Bereshit_Rabbah.93.9"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 45:5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_45_5_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：しかし今、私をここへ売ったことで、悲しんだり自分を責めて怒ったりしないでください。命を保つために、神があなたがたより先に私を遣わされたのです。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-45-5.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ヨセフは売却の事実を否定せず、その歴史の中で命を保った神の目的を語る。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「売った」と「遣わした」"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "同じ一節で主語は「あなたがた」から「神」へ移ります。兄弟がヨセフを売ったという人間の行為は明言されたままです。その上で「命を保つため」という目的が示され、ヨセフは苦難の歴史を、神が命を支えるため先に遣わした歩みとして読み直します。ラシーも「命を保つため」を、ヨセフが彼らのために命を保つ者となることと説明します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi on Genesis 45:5:1",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.45.5.1"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "‘It Was Not You Who Sent Me Here, but God’ (Gen 45:8): Moses, Joseph, and the Prophetic Tradition, Religions 16/12 (2025), article 1479",
+                    "link": {
+                      "url": "https://doi.org/10.3390/rel16121479"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "神の導きを語ることは、人の加害を無かったことにすることではありません。ヨセフは「あなたがたが売った」と言い切ったうえで、傷だけが物語の最後の言葉にならない可能性を語ります。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 45:6"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_45_6_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：この二年、飢饉が地のただ中にあります。耕すことも刈り入れることもない年が、なお五年あります。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-45-6.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：和解の言葉は、二年と五年という飢饉の具体的な時間に置かれている。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "救いを必要とする時間"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「二年間」と「なお五年」が、危機の現在地と残りの長さを示します。「耕すことも、刈り入れることもない」は生活基盤そのものが止まる事態です。ヨセフの説明は抽象的な運命論ではなく、家族が生き延びるための切迫した時間認識に根ざしています。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "希望は危機を短く見積もることではありません。ヨセフは残る五年を直視し、その現実に備える場所へ家族を招こうとします。信頼は、数字にできる困難を正確に数えることとも両立します。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 45:7"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/072-20261012-r1/audio/072_45_7_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：神はあなたがたより先に私を遣わし、あなたがたのために地に残りの者を置き、あなたがたを大いなる救いによって生かしておくようにされたのです。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/072-20261012-r1/genesis-45-7.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：神の先行する働きは、家族を残し、生かし、大いなる救いへ導く目的で説明される。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "残りの者と大いなる救い"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "目的を表す「置くため」「生かしておくため」が重なります。「あなたがたのために」も二度現れ、ヨセフの地位が自己保存ではなく家族の存続へ向けられたことを強調します。「残りの者」と「大いなる救い」は、飢饉の中で共同体が断絶せず生き残ることを語ります。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "‘It Was Not You Who Sent Me Here, but God’ (Gen 45:8): Moses, Joseph, and the Prophetic Tradition, Religions 16/12 (2025), article 1479",
+                    "link": {
+                      "url": "https://doi.org/10.3390/rel16121479"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "先に遣わされた者の実りは、自分だけが助かることではなく、他者のために「残り」を置き「生かす」ことに現れます。与えられた立場を、誰かの命を支える方向へ用いるよう招かれています。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "45:5–7　人が売ったことと、神が遣わしたこと"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヨセフは兄弟の行為を「あなたがたが売った」と名指し、それを「神が遣わした」という説明で置き換えません。二つの主語を並べたうえで、神の目的を「命を保つ」「残りの者を置く」「生かしておく」と三段階で述べます。飢饉の二年と残り五年が、その目的を現実の歴史に結びつけます。摂理は責任を消す説明ではなく、加害の結果を命のために転じる神の働きを告白する言葉です。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Rashi on Genesis 45:5:1",
+              "link": {
+                "url": "https://www.sefaria.org/Rashi_on_Genesis.45.5.1"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "‘It Was Not You Who Sent Me Here, but God’ (Gen 45:8): Moses, Joseph, and the Prophetic Tradition, Religions 16/12 (2025), article 1479",
+              "link": {
+                "url": "https://doi.org/10.3390/rel16121479"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "まとめ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダの保証は身代わりの行為となり、ヨセフの沈黙を破りました。ヨセフは兄弟の罪を隠さず、近くへ招き、飢饉の現実の中で家族を生かす神の目的を語ります。和解とは過去を消すことではなく、責任を言葉にしながら、与えられた命と立場を他者の保存へ差し出すことです。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーをさらに学ぶ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "文学研究――ユダの変化が自己開示を引き起こす"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "このアリヤーはユダの弁明の結末とヨセフの自己開示を直接つなぎます。ユダは父の痛みを反復して語り、ベニヤミンの代わりに奴隷となることを申し出ます。その直後にヨセフが「もはや自分を抑えることができない」となる配置は、自己犠牲を伴うユダの変化が場面転換を引き起こしたことを示します。Ficcoの人物研究も、44章の発言を罪責の認識、父との和解、兄弟のための自己提供が交差する転換点として扱います。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Fabrizio Ficco, ‘Jacob, my father’: The character of Judah in the Joseph Novella (Gen. 37–50), Journal for the Study of the Old Testament 49/3 (2025), pp. 265–286",
+                    "link": {
+                      "url": "https://doi.org/10.1177/03090892241304412"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダヤ教解釈伝統――命を保つ者と、和解へ向かう涙"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシーは45:5の「命を保つため」を、ヨセフが兄弟たちのために命を保つ者となることと簡潔に説明します。『創世記ラッバー』93:9は、ヨセフが兄弟を宥めたのは涙によってだったと読み、エレミヤ31:9の贖いの涙へ接続します。前者は語句の意味を明らかにする中世のpeshat的注解、後者はヨセフの涙をイスラエルの贖いへ広げるミドラシュ的受容であり、同じ種類の説明として混同しません。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi on Genesis 45:5:1",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.45.5.1"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Bereshit Rabbah 93:9",
+                    "link": {
+                      "url": "https://www.sefaria.org/Bereshit_Rabbah.93.9"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "摂理と人間の責任――二つの因果を保持する"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "45:4–7は、兄弟がヨセフを売ったという人間の因果と、神がヨセフを先に遣わしたという神的因果を同時に保持します。2025年の研究は、45章の「遣わす」を、苦難の経験が命の保存に仕える使命として再解釈される語として論じます。ただし本文は兄弟の行為を取り消していません。摂理を語ることは、被害を神意として正当化することではなく、責任を名指した後にも神が命を生み出し得るとの告白です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "‘It Was Not You Who Sent Me Here, but God’ (Gen 45:8): Moses, Joseph, and the Prophetic Tradition, Religions 16/12 (2025), article 1479",
+                    "link": {
+                      "url": "https://doi.org/10.3390/rel16121479"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "キリスト教受容史――ヨセフの自己開示をキリスト像として読む"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Cornelius a Lapideの創世記45章注解は、Ambrose『ヨセフについて』第12章を引き、ヨセフの「私はヨセフです」という自己開示を、後代のキリスト教的類型読解の中でキリストの自己啓示と結びつけます。これは創世記45章の語義や物語上のpeshatではなく、ヨセフの赦しと命の保存をキリストへ重ねた教父的受容です。ここではLapideが伝える引用として扱い、ユダヤ教の注解伝統とも本文の一次的意味とも区別します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Cornelius a Lapide, Commentary on Genesis 45（Ambrose, On Joseph, ch. 12の引用を含む）",
+                    "link": {
+                      "url": "https://sanctaclarapress.com/read/genesis/45/commentary"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0",
+              "link": {
+                "url": "https://github.com/openscriptures/morphhb"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
