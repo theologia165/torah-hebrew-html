@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0-cover-ready",
+  "run_id": "074-20261014-r1",
+  "sequence": "074",
+  "status": "PASS",
+  "object_key": "covers/074-20261014-r1/cover.jpg",
+  "content_type": "image/jpeg",
+  "width": 1200,
+  "height": 630,
+  "byte_size": 399475,
+  "sha256": "ad785c1b014b8e2543b2d61f7eed88c106d2e0fcfe4bdcde0448e6929758c92f",
+  "qa": {
+    "fresh_generation": true,
+    "attempt": 1,
+    "exact_text": true,
+    "current_passage_scene": true,
+    "cross_run_contamination": false,
+    "result": "PASS"
+  }
+}
