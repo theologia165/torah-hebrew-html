@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0-cover-ready",
+  "run_id": "076-20261016-r1",
+  "sequence": "076",
+  "status": "PASS",
+  "object_key": "covers/076-20261016-r1/cover.jpg",
+  "content_type": "image/jpeg",
+  "width": 1200,
+  "height": 630,
+  "sha256": "46a2e3a8260354089d998b17888163a6ab9b899138cac3bf31c1fc91f82c0181",
+  "generated_fresh": true,
+  "qa": {
+    "status": "PASS",
+    "checks": {
+      "nnn_exact": "PASS",
+      "parasha_exact": "PASS",
+      "aliyah_exact": "PASS",
+      "range_exact": "PASS",
+      "theme_from_current_passage": "PASS",
+      "optional_subcopy_consistent": "PASS",
+      "text_integrity": "PASS",
+      "no_cross_run_contamination": "PASS",
+      "scene_matches_current_passage": "PASS",
+      "dimensions_exact": "PASS"
+    }
+  },
+  "upload": {
+    "status": "PASS",
+    "http_status": 200,
+    "etag": "8d1a401c4c337b2e1c3b983a95230015",
+    "uploaded_at": "2026-10-16T13:18:11Z"
+  }
+}
