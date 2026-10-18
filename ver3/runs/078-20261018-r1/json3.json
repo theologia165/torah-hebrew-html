@@ -1,0 +1,4788 @@
+{
+  "schema_version": "3.0-json3",
+  "run_id": "078-20261018-r1",
+  "json1_sha256": "e5b0dc95990db6117f33816fa1d4fa55fb1577e3582fa226dd025763a8d66367",
+  "json2_sha256": "7a573f78db8b524cfa20e914ae04cd7750131cf68307c764fa46f692d46c7efe",
+  "title": "078｜創世記47:28–48:9",
+  "verses": [
+    {
+      "ref": "Gen.47.28",
+      "tokens": [
+        {
+          "token_id": 17687,
+          "token_index": 1,
+          "surface": "וַיְחִ֤י",
+          "ja": "そして生きた"
+        },
+        {
+          "token_id": 17688,
+          "token_index": 2,
+          "surface": "יַעֲקֹב֙",
+          "ja": "ヤコブは"
+        },
+        {
+          "token_id": 17689,
+          "token_index": 3,
+          "surface": "בְּאֶ֣רֶץ",
+          "ja": "地で"
+        },
+        {
+          "token_id": 17690,
+          "token_index": 4,
+          "surface": "מִצְרַ֔יִם",
+          "ja": "エジプトの"
+        },
+        {
+          "token_id": 17691,
+          "token_index": 5,
+          "surface": "שְׁבַ֥ע",
+          "ja": "七"
+        },
+        {
+          "token_id": 17692,
+          "token_index": 6,
+          "surface": "עֶשְׂרֵ֖ה",
+          "ja": "十"
+        },
+        {
+          "token_id": 17693,
+          "token_index": 7,
+          "surface": "שָׁנָ֑ה",
+          "ja": "年"
+        },
+        {
+          "token_id": 17694,
+          "token_index": 8,
+          "surface": "וַיְהִ֤י",
+          "ja": "そしてなった"
+        },
+        {
+          "token_id": 17695,
+          "token_index": 9,
+          "surface": "יְמֵֽי",
+          "ja": "日々は"
+        },
+        {
+          "token_id": 17696,
+          "token_index": 10,
+          "surface": "יַעֲקֹב֙",
+          "ja": "ヤコブの"
+        },
+        {
+          "token_id": 17697,
+          "token_index": 11,
+          "surface": "שְׁנֵ֣י",
+          "ja": "年数"
+        },
+        {
+          "token_id": 17698,
+          "token_index": 12,
+          "surface": "חַיָּ֔יו",
+          "ja": "彼の生涯の"
+        },
+        {
+          "token_id": 17699,
+          "token_index": 13,
+          "surface": "שֶׁ֣בַע",
+          "ja": "七"
+        },
+        {
+          "token_id": 17700,
+          "token_index": 14,
+          "surface": "שָׁנִ֔ים",
+          "ja": "年"
+        },
+        {
+          "token_id": 17701,
+          "token_index": 15,
+          "surface": "וְאַרְבָּעִ֥ים",
+          "ja": "そして四十"
+        },
+        {
+          "token_id": 17702,
+          "token_index": 16,
+          "surface": "וּמְאַ֖ת",
+          "ja": "そして百"
+        },
+        {
+          "token_id": 17703,
+          "token_index": 17,
+          "surface": "שָׁנָֽה",
+          "ja": "年"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.47.29",
+      "tokens": [
+        {
+          "token_id": 17704,
+          "token_index": 1,
+          "surface": "וַיִּקְרְב֣וּ",
+          "ja": "そして近づいた"
+        },
+        {
+          "token_id": 17705,
+          "token_index": 2,
+          "surface": "יְמֵֽי",
+          "ja": "日々が"
+        },
+        {
+          "token_id": 17706,
+          "token_index": 3,
+          "surface": "יִשְׂרָאֵ֘ל",
+          "ja": "イスラエルの"
+        },
+        {
+          "token_id": 17707,
+          "token_index": 4,
+          "surface": "לָמוּת֒",
+          "ja": "死ぬための"
+        },
+        {
+          "token_id": 17708,
+          "token_index": 5,
+          "surface": "וַיִּקְרָ֣א",
+          "ja": "そして彼は呼んだ"
+        },
+        {
+          "token_id": 17709,
+          "token_index": 6,
+          "surface": "לִבְנ֣וֹ",
+          "ja": "彼の息子を"
+        },
+        {
+          "token_id": 17710,
+          "token_index": 7,
+          "surface": "לְיוֹסֵ֗ף",
+          "ja": "ヨセフを"
+        },
+        {
+          "token_id": 17711,
+          "token_index": 8,
+          "surface": "וַיֹּ֤אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 17712,
+          "token_index": 9,
+          "surface": "לוֹ֙",
+          "ja": "彼に"
+        },
+        {
+          "token_id": 17713,
+          "token_index": 10,
+          "surface": "אִם",
+          "ja": "もし"
+        },
+        {
+          "token_id": 17714,
+          "token_index": 11,
+          "surface": "נָ֨א",
+          "ja": "どうか"
+        },
+        {
+          "token_id": 17715,
+          "token_index": 12,
+          "surface": "מָצָ֤אתִי",
+          "ja": "私が得たなら"
+        },
+        {
+          "token_id": 17716,
+          "token_index": 13,
+          "surface": "חֵן֙",
+          "ja": "好意を"
+        },
+        {
+          "token_id": 17717,
+          "token_index": 14,
+          "surface": "בְּעֵינֶ֔יךָ",
+          "ja": "あなたの目に"
+        },
+        {
+          "token_id": 17718,
+          "token_index": 15,
+          "surface": "שִֽׂים",
+          "ja": "置け"
+        },
+        {
+          "token_id": 17719,
+          "token_index": 16,
+          "surface": "נָ֥א",
+          "ja": "どうか"
+        },
+        {
+          "token_id": 17720,
+          "token_index": 17,
+          "surface": "יָדְךָ֖",
+          "ja": "あなたの手を"
+        },
+        {
+          "token_id": 17721,
+          "token_index": 18,
+          "surface": "תַּ֣חַת",
+          "ja": "下に"
+        },
+        {
+          "token_id": 17722,
+          "token_index": 19,
+          "surface": "יְרֵכִ֑י",
+          "ja": "私の腿の"
+        },
+        {
+          "token_id": 17723,
+          "token_index": 20,
+          "surface": "וְעָשִׂ֤יתָ",
+          "ja": "そして行え"
+        },
+        {
+          "token_id": 17724,
+          "token_index": 21,
+          "surface": "עִמָּדִי֙",
+          "ja": "私と"
+        },
+        {
+          "token_id": 17725,
+          "token_index": 22,
+          "surface": "חֶ֣סֶד",
+          "ja": "慈しみを"
+        },
+        {
+          "token_id": 17726,
+          "token_index": 23,
+          "surface": "וֶאֱמֶ֔ת",
+          "ja": "そして真実を"
+        },
+        {
+          "token_id": 17727,
+          "token_index": 24,
+          "surface": "אַל",
+          "ja": "決して～ない"
+        },
+        {
+          "token_id": 17728,
+          "token_index": 25,
+          "surface": "נָ֥א",
+          "ja": "どうか"
+        },
+        {
+          "token_id": 17729,
+          "token_index": 26,
+          "surface": "תִקְבְּרֵ֖נִי",
+          "ja": "私を葬る"
+        },
+        {
+          "token_id": 17730,
+          "token_index": 27,
+          "surface": "בְּמִצְרָֽיִם",
+          "ja": "エジプトに"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.47.30",
+      "tokens": [
+        {
+          "token_id": 17747,
+          "token_index": 1,
+          "surface": "וְשָֽׁכַבְתִּי֙",
+          "ja": "そして私が横たわるとき"
+        },
+        {
+          "token_id": 17748,
+          "token_index": 2,
+          "surface": "עִם",
+          "ja": "共に"
+        },
+        {
+          "token_id": 17749,
+          "token_index": 3,
+          "surface": "אֲבֹתַ֔י",
+          "ja": "私の父祖たちと"
+        },
+        {
+          "token_id": 17750,
+          "token_index": 4,
+          "surface": "וּנְשָׂאתַ֨נִי֙",
+          "ja": "あなたは私を運び出し"
+        },
+        {
+          "token_id": 17751,
+          "token_index": 5,
+          "surface": "מִמִּצְרַ֔יִם",
+          "ja": "エジプトから"
+        },
+        {
+          "token_id": 17752,
+          "token_index": 6,
+          "surface": "וּקְבַרְתַּ֖נִי",
+          "ja": "そして私を葬り"
+        },
+        {
+          "token_id": 17753,
+          "token_index": 7,
+          "surface": "בִּקְבֻרָתָ֑ם",
+          "ja": "彼らの墓に"
+        },
+        {
+          "token_id": 17754,
+          "token_index": 8,
+          "surface": "וַיֹּאמַ֕ר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 17755,
+          "token_index": 9,
+          "surface": "אָנֹכִ֖י",
+          "ja": "私は"
+        },
+        {
+          "token_id": 17756,
+          "token_index": 10,
+          "surface": "אֶֽעֱשֶׂ֥ה",
+          "ja": "行います"
+        },
+        {
+          "token_id": 17757,
+          "token_index": 11,
+          "surface": "כִדְבָרֶֽךָ",
+          "ja": "あなたの言葉どおりに"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.47.31",
+      "tokens": [
+        {
+          "token_id": 17758,
+          "token_index": 1,
+          "surface": "וַיֹּ֗אמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 17759,
+          "token_index": 2,
+          "surface": "הִשָּֽׁבְעָה֙",
+          "ja": "誓え"
+        },
+        {
+          "token_id": 17760,
+          "token_index": 3,
+          "surface": "לִ֔י",
+          "ja": "私に"
+        },
+        {
+          "token_id": 17761,
+          "token_index": 4,
+          "surface": "וַיִּשָּׁבַ֖ע",
+          "ja": "そして彼は誓った"
+        },
+        {
+          "token_id": 17762,
+          "token_index": 5,
+          "surface": "ל֑וֹ",
+          "ja": "彼に"
+        },
+        {
+          "token_id": 17763,
+          "token_index": 6,
+          "surface": "וַיִּשְׁתַּ֥חוּ",
+          "ja": "そしてひれ伏した"
+        },
+        {
+          "token_id": 17764,
+          "token_index": 7,
+          "surface": "יִשְׂרָאֵ֖ל",
+          "ja": "イスラエルは"
+        },
+        {
+          "token_id": 17765,
+          "token_index": 8,
+          "surface": "עַל",
+          "ja": "上に"
+        },
+        {
+          "token_id": 17766,
+          "token_index": 9,
+          "surface": "רֹ֥אשׁ",
+          "ja": "頭"
+        },
+        {
+          "token_id": 17767,
+          "token_index": 10,
+          "surface": "הַמִּטָּֽה",
+          "ja": "その寝台の"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.1",
+      "tokens": [
+        {
+          "token_id": 17871,
+          "token_index": 1,
+          "surface": "וַיְהִ֗י",
+          "ja": "そして起こった"
+        },
+        {
+          "token_id": 17872,
+          "token_index": 2,
+          "surface": "אַחֲרֵי֙",
+          "ja": "後に"
+        },
+        {
+          "token_id": 17873,
+          "token_index": 3,
+          "surface": "הַדְּבָרִ֣ים",
+          "ja": "事柄の"
+        },
+        {
+          "token_id": 17874,
+          "token_index": 4,
+          "surface": "הָאֵ֔לֶּה",
+          "ja": "これらの"
+        },
+        {
+          "token_id": 17875,
+          "token_index": 5,
+          "surface": "וַיֹּ֣אמֶר",
+          "ja": "そして人が言った"
+        },
+        {
+          "token_id": 17876,
+          "token_index": 6,
+          "surface": "לְיוֹסֵ֔ף",
+          "ja": "ヨセフに"
+        },
+        {
+          "token_id": 17877,
+          "token_index": 7,
+          "surface": "הִנֵּ֥ה",
+          "ja": "見よ"
+        },
+        {
+          "token_id": 17878,
+          "token_index": 8,
+          "surface": "אָבִ֖יךָ",
+          "ja": "あなたの父は"
+        },
+        {
+          "token_id": 17879,
+          "token_index": 9,
+          "surface": "חֹלֶ֑ה",
+          "ja": "病んでいる"
+        },
+        {
+          "token_id": 17880,
+          "token_index": 10,
+          "surface": "וַיִּקַּ֞ח",
+          "ja": "そこで彼は連れて行った"
+        },
+        {
+          "token_id": 17881,
+          "token_index": 11,
+          "surface": "אֶת",
+          "ja": "目的語標識"
+        },
+        {
+          "token_id": 17882,
+          "token_index": 12,
+          "surface": "שְׁנֵ֤י",
+          "ja": "二人の"
+        },
+        {
+          "token_id": 17883,
+          "token_index": 13,
+          "surface": "בָנָיו֙",
+          "ja": "彼の息子たちを"
+        },
+        {
+          "token_id": 17884,
+          "token_index": 14,
+          "surface": "עִמּ֔וֹ",
+          "ja": "彼と共に"
+        },
+        {
+          "token_id": 17885,
+          "token_index": 15,
+          "surface": "אֶת",
+          "ja": "目的語標識"
+        },
+        {
+          "token_id": 17886,
+          "token_index": 16,
+          "surface": "מְנַשֶּׁ֖ה",
+          "ja": "マナセを"
+        },
+        {
+          "token_id": 17887,
+          "token_index": 17,
+          "surface": "וְאֶת",
+          "ja": "そして目的語標識"
+        },
+        {
+          "token_id": 17888,
+          "token_index": 18,
+          "surface": "אֶפְרָֽיִם",
+          "ja": "エフライムを"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.2",
+      "tokens": [
+        {
+          "token_id": 18059,
+          "token_index": 1,
+          "surface": "וַיַּגֵּ֣ד",
+          "ja": "そして告げられた"
+        },
+        {
+          "token_id": 18060,
+          "token_index": 2,
+          "surface": "לְיַעֲקֹ֔ב",
+          "ja": "ヤコブに"
+        },
+        {
+          "token_id": 18061,
+          "token_index": 3,
+          "surface": "וַיֹּ֕אמֶר",
+          "ja": "そして言われた"
+        },
+        {
+          "token_id": 18062,
+          "token_index": 4,
+          "surface": "הִנֵּ֛ה",
+          "ja": "見よ"
+        },
+        {
+          "token_id": 18063,
+          "token_index": 5,
+          "surface": "בִּנְךָ֥",
+          "ja": "あなたの息子"
+        },
+        {
+          "token_id": 18064,
+          "token_index": 6,
+          "surface": "יוֹסֵ֖ף",
+          "ja": "ヨセフが"
+        },
+        {
+          "token_id": 18065,
+          "token_index": 7,
+          "surface": "בָּ֣א",
+          "ja": "来ている"
+        },
+        {
+          "token_id": 18066,
+          "token_index": 8,
+          "surface": "אֵלֶ֑יךָ",
+          "ja": "あなたのもとへ"
+        },
+        {
+          "token_id": 18067,
+          "token_index": 9,
+          "surface": "וַיִּתְחַזֵּק֙",
+          "ja": "そこで奮い立った"
+        },
+        {
+          "token_id": 18068,
+          "token_index": 10,
+          "surface": "יִשְׂרָאֵ֔ל",
+          "ja": "イスラエルは"
+        },
+        {
+          "token_id": 18069,
+          "token_index": 11,
+          "surface": "וַיֵּ֖שֶׁב",
+          "ja": "そして座った"
+        },
+        {
+          "token_id": 18070,
+          "token_index": 12,
+          "surface": "עַל",
+          "ja": "上に"
+        },
+        {
+          "token_id": 18071,
+          "token_index": 13,
+          "surface": "הַמִּטָּֽה",
+          "ja": "その寝台の"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.3",
+      "tokens": [
+        {
+          "token_id": 18117,
+          "token_index": 1,
+          "surface": "וַיֹּ֤אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 18118,
+          "token_index": 2,
+          "surface": "יַעֲקֹב֙",
+          "ja": "ヤコブは"
+        },
+        {
+          "token_id": 18119,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "～に"
+        },
+        {
+          "token_id": 18120,
+          "token_index": 4,
+          "surface": "יוֹסֵ֔ף",
+          "ja": "ヨセフ"
+        },
+        {
+          "token_id": 18121,
+          "token_index": 5,
+          "surface": "אֵ֥ל",
+          "ja": "神"
+        },
+        {
+          "token_id": 18122,
+          "token_index": 6,
+          "surface": "שַׁדַּ֛י",
+          "ja": "全能者が"
+        },
+        {
+          "token_id": 18123,
+          "token_index": 7,
+          "surface": "נִרְאָֽה",
+          "ja": "現れた"
+        },
+        {
+          "token_id": 18124,
+          "token_index": 8,
+          "surface": "אֵלַ֥י",
+          "ja": "私に"
+        },
+        {
+          "token_id": 18125,
+          "token_index": 9,
+          "surface": "בְּל֖וּז",
+          "ja": "ルズで"
+        },
+        {
+          "token_id": 18126,
+          "token_index": 10,
+          "surface": "בְּאֶ֣רֶץ",
+          "ja": "地の"
+        },
+        {
+          "token_id": 18127,
+          "token_index": 11,
+          "surface": "כְּנָ֑עַן",
+          "ja": "カナンの"
+        },
+        {
+          "token_id": 18128,
+          "token_index": 12,
+          "surface": "וַיְבָ֖רֶךְ",
+          "ja": "そして祝福した"
+        },
+        {
+          "token_id": 18129,
+          "token_index": 13,
+          "surface": "אֹתִֽי",
+          "ja": "私を"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.4",
+      "tokens": [
+        {
+          "token_id": 18130,
+          "token_index": 1,
+          "surface": "וַיֹּ֣אמֶר",
+          "ja": "そして言われた"
+        },
+        {
+          "token_id": 18131,
+          "token_index": 2,
+          "surface": "אֵלַ֗י",
+          "ja": "私に"
+        },
+        {
+          "token_id": 18132,
+          "token_index": 3,
+          "surface": "הִנְנִ֤י",
+          "ja": "見よ私は"
+        },
+        {
+          "token_id": 18133,
+          "token_index": 4,
+          "surface": "מַפְרְךָ֙",
+          "ja": "あなたを実らせる"
+        },
+        {
+          "token_id": 18134,
+          "token_index": 5,
+          "surface": "וְהִרְבִּיתִ֔ךָ",
+          "ja": "そしてあなたを増やす"
+        },
+        {
+          "token_id": 18135,
+          "token_index": 6,
+          "surface": "וּנְתַתִּ֖יךָ",
+          "ja": "そしてあなたをする"
+        },
+        {
+          "token_id": 18136,
+          "token_index": 7,
+          "surface": "לִקְהַ֣ל",
+          "ja": "集まりに"
+        },
+        {
+          "token_id": 18137,
+          "token_index": 8,
+          "surface": "עַמִּ֑ים",
+          "ja": "諸民族の"
+        },
+        {
+          "token_id": 18138,
+          "token_index": 9,
+          "surface": "וְנָ֨תַתִּ֜י",
+          "ja": "そして私は与える"
+        },
+        {
+          "token_id": 18139,
+          "token_index": 10,
+          "surface": "אֶת",
+          "ja": "目的語標識"
+        },
+        {
+          "token_id": 18140,
+          "token_index": 11,
+          "surface": "הָאָ֧רֶץ",
+          "ja": "その地を"
+        },
+        {
+          "token_id": 18141,
+          "token_index": 12,
+          "surface": "הַזֹּ֛את",
+          "ja": "この"
+        },
+        {
+          "token_id": 18142,
+          "token_index": 13,
+          "surface": "לְזַרְעֲךָ֥",
+          "ja": "あなたの子孫に"
+        },
+        {
+          "token_id": 18143,
+          "token_index": 14,
+          "surface": "אַחֲרֶ֖יךָ",
+          "ja": "あなたの後の"
+        },
+        {
+          "token_id": 18144,
+          "token_index": 15,
+          "surface": "אֲחֻזַּ֥ת",
+          "ja": "所有地として"
+        },
+        {
+          "token_id": 18145,
+          "token_index": 16,
+          "surface": "עוֹלָֽם",
+          "ja": "永遠の"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.5",
+      "tokens": [
+        {
+          "token_id": 18146,
+          "token_index": 1,
+          "surface": "וְעַתָּ֡ה",
+          "ja": "そして今"
+        },
+        {
+          "token_id": 18147,
+          "token_index": 2,
+          "surface": "שְׁנֵֽי",
+          "ja": "二人の"
+        },
+        {
+          "token_id": 18148,
+          "token_index": 3,
+          "surface": "בָנֶיךָ֩",
+          "ja": "あなたの息子たちは"
+        },
+        {
+          "token_id": 18149,
+          "token_index": 4,
+          "surface": "הַנּוֹלָדִ֨ים",
+          "ja": "生まれた者たち"
+        },
+        {
+          "token_id": 18150,
+          "token_index": 5,
+          "surface": "לְךָ֜",
+          "ja": "あなたに"
+        },
+        {
+          "token_id": 18151,
+          "token_index": 6,
+          "surface": "בְּאֶ֣רֶץ",
+          "ja": "地で"
+        },
+        {
+          "token_id": 18152,
+          "token_index": 7,
+          "surface": "מִצְרַ֗יִם",
+          "ja": "エジプトの"
+        },
+        {
+          "token_id": 18153,
+          "token_index": 8,
+          "surface": "עַד",
+          "ja": "以前に"
+        },
+        {
+          "token_id": 18154,
+          "token_index": 9,
+          "surface": "בֹּאִ֥י",
+          "ja": "私が来る"
+        },
+        {
+          "token_id": 18155,
+          "token_index": 10,
+          "surface": "אֵלֶ֛יךָ",
+          "ja": "あなたのもとへ"
+        },
+        {
+          "token_id": 18156,
+          "token_index": 11,
+          "surface": "מִצְרַ֖יְמָה",
+          "ja": "エジプトへ"
+        },
+        {
+          "token_id": 18157,
+          "token_index": 12,
+          "surface": "לִי",
+          "ja": "私のもの"
+        },
+        {
+          "token_id": 18158,
+          "token_index": 13,
+          "surface": "הֵ֑ם",
+          "ja": "彼らは"
+        },
+        {
+          "token_id": 18159,
+          "token_index": 14,
+          "surface": "אֶפְרַ֨יִם֙",
+          "ja": "エフライムと"
+        },
+        {
+          "token_id": 18160,
+          "token_index": 15,
+          "surface": "וּמְנַשֶּׁ֔ה",
+          "ja": "そしてマナセは"
+        },
+        {
+          "token_id": 18161,
+          "token_index": 16,
+          "surface": "כִּרְאוּבֵ֥ן",
+          "ja": "ルベンのように"
+        },
+        {
+          "token_id": 18162,
+          "token_index": 17,
+          "surface": "וְשִׁמְע֖וֹן",
+          "ja": "そしてシメオンのように"
+        },
+        {
+          "token_id": 18163,
+          "token_index": 18,
+          "surface": "יִֽהְיוּ",
+          "ja": "なる"
+        },
+        {
+          "token_id": 18164,
+          "token_index": 19,
+          "surface": "לִֽי",
+          "ja": "私のものに"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.6",
+      "tokens": [
+        {
+          "token_id": 18165,
+          "token_index": 1,
+          "surface": "וּמוֹלַדְתְּךָ֛",
+          "ja": "そしてあなたの子孫は"
+        },
+        {
+          "token_id": 18166,
+          "token_index": 2,
+          "surface": "אֲשֶׁר",
+          "ja": "～するところの"
+        },
+        {
+          "token_id": 18167,
+          "token_index": 3,
+          "surface": "הוֹלַ֥דְתָּ",
+          "ja": "あなたが生む"
+        },
+        {
+          "token_id": 18168,
+          "token_index": 4,
+          "surface": "אַחֲרֵיהֶ֖ם",
+          "ja": "彼らの後に"
+        },
+        {
+          "token_id": 18169,
+          "token_index": 5,
+          "surface": "לְךָ֣",
+          "ja": "あなたのもの"
+        },
+        {
+          "token_id": 18170,
+          "token_index": 6,
+          "surface": "יִהְי֑וּ",
+          "ja": "彼らはなる"
+        },
+        {
+          "token_id": 18171,
+          "token_index": 7,
+          "surface": "עַ֣ל",
+          "ja": "～に従って"
+        },
+        {
+          "token_id": 18172,
+          "token_index": 8,
+          "surface": "שֵׁ֧ם",
+          "ja": "名"
+        },
+        {
+          "token_id": 18173,
+          "token_index": 9,
+          "surface": "אֲחֵיהֶ֛ם",
+          "ja": "彼らの兄弟たちの"
+        },
+        {
+          "token_id": 18174,
+          "token_index": 10,
+          "surface": "יִקָּרְא֖וּ",
+          "ja": "彼らは呼ばれる"
+        },
+        {
+          "token_id": 18175,
+          "token_index": 11,
+          "surface": "בְּנַחֲלָתָֽם",
+          "ja": "彼らの相続地において"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.7",
+      "tokens": [
+        {
+          "token_id": 18176,
+          "token_index": 1,
+          "surface": "וַאֲנִ֣י",
+          "ja": "さて私は"
+        },
+        {
+          "token_id": 18177,
+          "token_index": 2,
+          "surface": "בְּבֹאִ֣י",
+          "ja": "私が来たとき"
+        },
+        {
+          "token_id": 18178,
+          "token_index": 3,
+          "surface": "מִפַּדָּ֗ן",
+          "ja": "パダンから"
+        },
+        {
+          "token_id": 18179,
+          "token_index": 4,
+          "surface": "מֵ֩תָה֩",
+          "ja": "死んだ"
+        },
+        {
+          "token_id": 18180,
+          "token_index": 5,
+          "surface": "עָלַ֨י",
+          "ja": "私のかたわらで"
+        },
+        {
+          "token_id": 18181,
+          "token_index": 6,
+          "surface": "רָחֵ֜ל",
+          "ja": "ラケルが"
+        },
+        {
+          "token_id": 18182,
+          "token_index": 7,
+          "surface": "בְּאֶ֤רֶץ",
+          "ja": "地で"
+        },
+        {
+          "token_id": 18183,
+          "token_index": 8,
+          "surface": "כְּנַ֨עַן֙",
+          "ja": "カナンの"
+        },
+        {
+          "token_id": 18184,
+          "token_index": 9,
+          "surface": "בַּדֶּ֔רֶךְ",
+          "ja": "道中で"
+        },
+        {
+          "token_id": 18185,
+          "token_index": 10,
+          "surface": "בְּע֥וֹד",
+          "ja": "まだ"
+        },
+        {
+          "token_id": 18186,
+          "token_index": 11,
+          "surface": "כִּבְרַת",
+          "ja": "一キブラトの"
+        },
+        {
+          "token_id": 18187,
+          "token_index": 12,
+          "surface": "אֶ֖רֶץ",
+          "ja": "土地ほど"
+        },
+        {
+          "token_id": 18188,
+          "token_index": 13,
+          "surface": "לָבֹ֣א",
+          "ja": "行くまでに"
+        },
+        {
+          "token_id": 18189,
+          "token_index": 14,
+          "surface": "אֶפְרָ֑תָה",
+          "ja": "エフラタへ"
+        },
+        {
+          "token_id": 18190,
+          "token_index": 15,
+          "surface": "וָאֶקְבְּרֶ֤הָ",
+          "ja": "そこで私は彼女を葬った"
+        },
+        {
+          "token_id": 18191,
+          "token_index": 16,
+          "surface": "שָּׁם֙",
+          "ja": "そこに"
+        },
+        {
+          "token_id": 18192,
+          "token_index": 17,
+          "surface": "בְּדֶ֣רֶךְ",
+          "ja": "道のそばに"
+        },
+        {
+          "token_id": 18193,
+          "token_index": 18,
+          "surface": "אֶפְרָ֔ת",
+          "ja": "エフラトへの"
+        },
+        {
+          "token_id": 18194,
+          "token_index": 19,
+          "surface": "הִ֖וא",
+          "ja": "それは"
+        },
+        {
+          "token_id": 18195,
+          "token_index": 20,
+          "surface": "בֵּ֥ית",
+          "ja": "ベト"
+        },
+        {
+          "token_id": 18196,
+          "token_index": 21,
+          "surface": "לָֽחֶם",
+          "ja": "レヘム"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.8",
+      "tokens": [
+        {
+          "token_id": 18197,
+          "token_index": 1,
+          "surface": "וַיַּ֥רְא",
+          "ja": "そして見た"
+        },
+        {
+          "token_id": 18198,
+          "token_index": 2,
+          "surface": "יִשְׂרָאֵ֖ל",
+          "ja": "イスラエルは"
+        },
+        {
+          "token_id": 18199,
+          "token_index": 3,
+          "surface": "אֶת",
+          "ja": "目的語標識"
+        },
+        {
+          "token_id": 18200,
+          "token_index": 4,
+          "surface": "בְּנֵ֣י",
+          "ja": "息子たちを"
+        },
+        {
+          "token_id": 18201,
+          "token_index": 5,
+          "surface": "יוֹסֵ֑ף",
+          "ja": "ヨセフの"
+        },
+        {
+          "token_id": 18202,
+          "token_index": 6,
+          "surface": "וַיֹּ֖אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 18203,
+          "token_index": 7,
+          "surface": "מִי",
+          "ja": "誰か"
+        },
+        {
+          "token_id": 18204,
+          "token_index": 8,
+          "surface": "אֵֽלֶּה",
+          "ja": "これらは"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.9",
+      "tokens": [
+        {
+          "token_id": 18205,
+          "token_index": 1,
+          "surface": "וַיֹּ֤אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 18206,
+          "token_index": 2,
+          "surface": "יוֹסֵף֙",
+          "ja": "ヨセフは"
+        },
+        {
+          "token_id": 18207,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "～に"
+        },
+        {
+          "token_id": 18208,
+          "token_index": 4,
+          "surface": "אָבִ֔יו",
+          "ja": "彼の父"
+        },
+        {
+          "token_id": 18209,
+          "token_index": 5,
+          "surface": "בָּנַ֣י",
+          "ja": "私の息子たち"
+        },
+        {
+          "token_id": 18210,
+          "token_index": 6,
+          "surface": "הֵ֔ם",
+          "ja": "彼らは"
+        },
+        {
+          "token_id": 18211,
+          "token_index": 7,
+          "surface": "אֲשֶׁר",
+          "ja": "～するところの"
+        },
+        {
+          "token_id": 18212,
+          "token_index": 8,
+          "surface": "נָֽתַן",
+          "ja": "与えた"
+        },
+        {
+          "token_id": 18213,
+          "token_index": 9,
+          "surface": "לִ֥י",
+          "ja": "私に"
+        },
+        {
+          "token_id": 18214,
+          "token_index": 10,
+          "surface": "אֱלֹהִ֖ים",
+          "ja": "神が"
+        },
+        {
+          "token_id": 18215,
+          "token_index": 11,
+          "surface": "בָּזֶ֑ה",
+          "ja": "ここで"
+        },
+        {
+          "token_id": 18216,
+          "token_index": 12,
+          "surface": "וַיֹּאמַ֕ר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 18217,
+          "token_index": 13,
+          "surface": "קָֽחֶם",
+          "ja": "連れて来い彼らを"
+        },
+        {
+          "token_id": 18218,
+          "token_index": 14,
+          "surface": "נָ֥א",
+          "ja": "どうか"
+        },
+        {
+          "token_id": 18219,
+          "token_index": 15,
+          "surface": "אֵלַ֖י",
+          "ja": "私のもとへ"
+        },
+        {
+          "token_id": 18220,
+          "token_index": 16,
+          "surface": "וַאֲבָרֲכֵֽם",
+          "ja": "そうすれば私は彼らを祝福しよう"
+        }
+      ]
+    }
+  ],
+  "media_status": {
+    "audio_status": "PASS",
+    "audio_implemented_count": 13,
+    "audio_expected_count": 13,
+    "missing_audio_refs": [],
+    "audio_failures": [],
+    "html_status": "PASS",
+    "html_implemented_count": 13,
+    "missing_html_refs": [],
+    "pages_status": "PASS",
+    "ai_generated_audio_refs": [],
+    "open_bible_audio_refs": []
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヴァイェヒ｜第1アリヤー｜創世記47:28–48:9"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヤコブの生涯が終わりに近づくと、彼はまずヨセフにエジプトではなく父祖の墓へ葬るよう誓わせます。病床では、ルズで受けた「実り、増え、地を継ぐ」という神の約束を思い起こし、エジプト生まれのエフライムとマナセを自分の息子として迎えます。ラケルの死という痛みを語りながらも、ヤコブは異郷で神が与えた次世代を近くに招き、祝福へ向かいます。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "死を前に、約束を次世代へ渡す"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 47:28"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_47_28_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヤコブはエジプトの地で十七年生きた。ヤコブの生涯の日々、その年数は百四十七年であった。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-47-28.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：エジプトでの十七年と生涯百四十七年を記し、物語はヤコブの死と継承の準備へ入ります。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と数の構成"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文は「七・十・年」で十七年を表し、生涯の総数を「七年、四十、百年」と積み上げます。「日々」と「年数」を重ねる言い方は、単なる年齢情報をヤコブの生涯全体の総括へ広げています。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "段落の入口"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "この節は週課ヴァイェヒの冒頭であり、エジプト移住後の安定した時間を一文で圧縮します。その直後に死の接近が語られるため、十七年は終幕の背景であると同時に、家族と共に過ごした与えられた時間として響きます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Chabad「Vayechi Torah Reading, First Portion」",
+                    "link": {
+                      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "人生の長さだけでなく、与えられた場所で誰と生き、何を手渡したかが問われます。終わりを恐れる前に、今日の一日を祝福の継承に用いたいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 47:29"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_47_29_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：イスラエルの死ぬ日が近づいたので、彼は息子ヨセフを呼んで言った。「もし私があなたの目に好意を得ているなら、どうかあなたの手を私の腿の下に置き、私に慈しみと真実を行ってほしい。どうか私をエジプトに葬らないでほしい。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-47-29.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ヤコブは最も実行力のあるヨセフに誓約を求め、埋葬をカナンの家族墓へ結びつけます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "死期と依頼の構文"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「日々が死ぬために近づいた」という表現は、死がいつ来るかを断定せず、残された時間が少ないことを示します。依頼は「もし好意を得ているなら」という丁寧な条件から始まり、手を腿の下に置く誓約行為へ進みます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "慈しみと真実"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシは「慈しみと真実」を、見返りを受けられない死者に対する真実な慈しみとして読みます。これは語の唯一の辞書的意味ではなくユダヤ教解釈伝統ですが、ヤコブの願いが利益交換ではなく忠実な履行を求めることを鋭く捉えます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Chabad「Vayechi Torah Reading, First Portion」",
+                    "link": {
+                      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "相手から返礼を期待できない時にも約束を守ることが、真実な慈しみです。自分の都合より、託された願いに忠実である者になりたいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 47:30"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_47_30_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：「私が父祖たちと共に横たわるとき、あなたは私をエジプトから運び出し、彼らの墓に葬ってほしい。」ヨセフは言った。「私はあなたの言葉どおりにします。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-47-30.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：死そのものと埋葬を区別し、ヤコブは自分の身体を父祖の墓へ運ぶ具体的な務めをヨセフに託します。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "父祖と共に横たわる"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "前半の「父祖たちと共に横たわる」は死を表し、その後に運搬と埋葬が続きます。したがって、ここでは死と墓への埋葬が同一時点の一行為ではなく、順序をもつ別の出来事として語られています。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Chabad「Vayechi Torah Reading, First Portion」",
+                    "link": {
+                      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "短い応答の重み"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヨセフの返答は「あなたの言葉どおりに行います」と簡潔です。長い説明を加えず、依頼の内容をそのまま引き受ける応答が、次節の正式な誓いへつながります。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "誠実さは大きな言葉より、託されたことを具体的に引き受ける返事に現れます。「そのとおりに行います」と言った責任を最後まで果たしたいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 47:31"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_47_31_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヤコブは言った。「私に誓ってほしい。」ヨセフは彼に誓った。するとイスラエルは寝台の頭の上でひれ伏した。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-47-31.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：口頭の承諾は誓いによって確証され、イスラエルは寝台の頭で礼拝の姿勢を取ります。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "誓いと礼拝"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "命令形の「誓え」に対して、同じ動詞の物語形「彼は誓った」が直ちに応答します。続く「ひれ伏した」は、依頼が確かに受け取られたことへの安堵と礼拝を一つの身体動作で示します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "寝台と杖の本文異読"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "マソラ本文は子音列を「寝台」と読む一方、七十人訳は母音の異なる「杖」に相当する語として訳し、ヘブライ人への手紙11章21節もその系統を受け継ぎます。どちらかを混ぜて一つの情景にせず、伝承された本文形の違いとして区別する必要があります。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Constantin Răchită, “The Translation and Interpretation of Genesis 47,31” (Hermeneia 17, 2016)",
+                    "link": {
+                      "url": "https://hermeneia.ro/wp-content/uploads/2016/12/10_Rachita-C.pdf"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "弱った身体でも、約束が確かにされた時に礼拝することはできます。自分の力が尽きる場面でも、神の真実に身を委ねる姿勢を失わないでいたいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "死と埋葬の誓い――エジプトで終わらせない希望"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "最初のまとまりは、百四十七年の生涯、死期の接近、埋葬依頼、誓い、礼拝という順に進みます。ヤコブはエジプトで死ぬ現実を否定しませんが、遺体の最終的な場所を父祖の墓に定めます。したがって、この誓いはエジプトへの敵意というより、家族の物語と神の土地の約束に自分の死を接続する行為です。ヨセフの簡潔な承諾は正式な誓いとなり、イスラエルの礼拝で閉じられます。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Sefaria「Genesis 47:28–48:9」",
+              "link": {
+                "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Chabad「Vayechi Torah Reading, First Portion」",
+              "link": {
+                "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_48_1_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：これらの出来事の後、ある者がヨセフに「見よ、あなたの父は病んでいます」と告げた。そこでヨセフは二人の息子、マナセとエフライムを連れて行った。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-48-1.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：知らせを受けたヨセフは、父の病床へ一人ではなく二人の息子を連れて向かいます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "無名の知らせ手"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「言った」の主語は本文に明示されません。ラシは伝承としてエフライムを想定しますが、平易な本文の水準では、病気の知らせがヨセフに届いたことだけが確定しています。解釈伝統と本文の明示事項を分けて読むことが大切です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Chabad「Vayechi Torah Reading, First Portion」",
+                    "link": {
+                      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "息子たちを伴う行動"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヨセフは病状確認だけでなく、マナセとエフライムを伴って訪ねます。この選択によって、父子の別れの場面は次世代への祝福と相続の場面へ変わっていきます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "大切な人の弱りを知った時、先延ばしせず近づくことが愛の第一歩です。同時に、次の世代を祝福の場へ連れて行く責任も覚えたいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_48_2_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヤコブに「見よ、あなたの息子ヨセフがあなたのもとへ来ています」と告げられた。イスラエルは力を奮い起こし、寝台の上に座った。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-48-2.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：病床のヤコブはヨセフの来訪を聞き、残る力を集めて座り直します。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "再帰形が描く力"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「奮い立った」は再帰的な動詞形で、イスラエルが自分を強めたことを表します。病が消えたのではなく、弱さの中で語るための姿勢を整えたという描写です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "寝台上の転換"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "前節まで礼拝の場所だった寝台が、ここでは遺言と祝福を語る座になります。ラシはヨセフの王としての地位への敬意を読むものの、本文自体は父が息子を迎えるために身体を起こした事実を簡潔に伝えます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Chabad「Vayechi Torah Reading, First Portion」",
+                    "link": {
+                      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "弱さは使命の消滅を意味しません。今日残されている力を集め、語るべき感謝や祝福を次の世代に伝える勇気を求めたいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_48_3_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヤコブはヨセフに言った。「全能の神がカナンの地のルズで私に現れ、私を祝福された。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-48-3.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ヤコブは病気や家族事情からではなく、ルズで受けた神の顕現と祝福から話を始めます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "記憶の起点"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヤコブは「全能の神」がルズで現れた出来事を第一に置きます。現在地はエジプトですが、彼の最終判断を支える基準は、カナンで受けた神の祝福です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "過去の回想と将来"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ユダヤ聖書研究では、この章の回想が単なる懐古ではなく、ヨセフの息子たちの地位と将来を説明するために選び取られた記憶として論じられています。ヤコブは過去を固定保存するのでなく、次世代へ向け直します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Jewish Bible Quarterly「A Patriarch Reviews the Past to Impact the Future」",
+                    "link": {
+                      "url": "https://www.jewishbible.org/articles/a-patriarch-reviews-the-past/"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "危機の時に、恐れだけを出発点にせず、神がこれまで現れ祝福してくださった記憶から語り始めたいと思います。恵みの記憶は未来を支える証しになります。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_48_4_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：「神は私に言われた。『見よ、私はあなたを実らせ、あなたを増やし、あなたを諸民族の集まりとする。そしてこの地を、あなたの後の子孫に永遠の所有地として与える。』」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-48-4.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：多産・増加・共同体・土地という約束が、続く養子宣言の神学的根拠になります。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "約束の四つの動き"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "神の言葉は「実らせる」「増やす」「諸民族の集まりとする」「地を与える」と展開します。人の増加と土地の継承が結ばれており、次節で誰を子孫の正規の担い手とするかが具体化されます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "約束から制度へ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "この節の約束は抽象的な慰めに留まりません。ヤコブは神から受けた増加と土地の言葉を、エジプト生まれの孫たちに相続上の地位を与える行為へ結びつけます。約束が家族の制度を作り替える点が重要です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Soon-Gil Chang, “A socio-historical study of the adoption imagery in Galatians” (HTS 77/4, 2021)",
+                    "link": {
+                      "url": "https://hts.org.za/index.php/hts/article/view/6292/17512"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "神の約束を信じることは、将来を語るだけでなく、今ここで誰を迎え入れ、何を分かち合うかを決めることです。恵みを具体的な受容と分与に変えたいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "病床で想起されるルズの約束"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "病気の知らせ、ヨセフの訪問、イスラエルの奮起、ルズの顕現という流れによって、病床は過去と未来が結ばれる場所になります。ヤコブが引用する約束は、多産、増加、諸民族の集まり、土地の所有です。次の養子宣言は個人的なひいきとして突然現れるのではなく、この約束を次世代の家族秩序へ具体化する判断として置かれています。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Sefaria「Genesis 47:28–48:9」",
+              "link": {
+                "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Jewish Bible Quarterly「A Patriarch Reviews the Past to Impact the Future」",
+              "link": {
+                "url": "https://www.jewishbible.org/articles/a-patriarch-reviews-the-past/"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_48_5_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：「それで今、私がエジプトのあなたのもとへ来る前にエジプトの地であなたに生まれた二人の息子は、私のものとする。エフライムとマナセは、ルベンとシメオンのように私のものとなる。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-48-5.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ヤコブはヨセフの二人の息子を自分の息子と宣言し、長子たちと同列の相続単位に置きます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「私のもの」という宣言"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「私のもの」と二度述べ、エフライムとマナセをルベンとシメオンに並べます。これは愛情表現だけでなく、後の部族編成と土地相続に関わる公的な身分変更として機能します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "古代近東の養子文言との比較"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "メンデルソーンは「あなたの二人の息子は私のもの」「ルベンとシメオンのように」という宣言を、古代バビロニア法やウガリト文書に見られる家族内養子の文言と比較しました。比較資料はこの行為の法的輪郭を照らしますが、創世記本文の神学的意図を外部資料だけで決めるものではありません。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "I. Mendelsohn, “A Ugaritic Parallel to the Adoption of Ephraim and Manasseh” (Israel Exploration Journal 9/3, 1959)",
+                    "link": {
+                      "url": "https://s3.amazonaws.com/wit-resources/A-Ugaritic-Parallel-to-the-Adoption-of-Ephraim-and-Manasseh1.pdf"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "神の家族に迎える言葉は、好意的に扱う以上に、場所と名と将来を共に分ける約束です。周縁にいる人へ、実質を伴う「あなたは私たちの一員だ」と語りたいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:6"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_48_6_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：「彼らの後にあなたがもうける子どもたちは、あなたのものとなる。彼らは相続地において、その兄弟たちの名によって呼ばれる。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-48-6.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：後に生まれる子らはヨセフの家に属し、相続ではエフライムかマナセの部族名に組み込まれます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "身分と相続の境界"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "この節はすべての子を直接ヤコブの息子とするのではなく、特別に取り上げる二人と、その後のヨセフの子孫を区別します。後者は兄たちの部族名のもとで相続を受けるため、家族関係が土地配分の構造に変換されます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "名によって呼ばれる"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "古代近東の養子文書では、名を与え、相続権を定めることが家族への編入と結びつきます。ここでも「兄弟たちの名」が、単なる呼称ではなく、どの共同体と相続に属するかを示します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "I. Mendelsohn, “A Ugaritic Parallel to the Adoption of Ephraim and Manasseh” (Israel Exploration Journal 9/3, 1959)",
+                    "link": {
+                      "url": "https://s3.amazonaws.com/wit-resources/A-Ugaritic-Parallel-to-the-Adoption-of-Ephraim-and-Manasseh1.pdf"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "所属には秩序と責任が伴います。自分だけの名を大きくするより、受け継いだ共同体の中で互いの場所を守り、次の世代が恵みを受け取れるよう整えたいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:7"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_48_7_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：「私について言えば、私がパダンから来たとき、ラケルはカナンの地で、エフラタまでなお道のりを残した道中、私のかたわらで死んだ。私は彼女をそこ、エフラタ、すなわちベツレヘムへの道のそばに葬った。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-48-7.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：養子と相続の宣言の途中で、ヤコブはヨセフの母ラケルの死と道端の埋葬を語ります。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「私のかたわらで」の痛み"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "前置詞を含む語は直訳的に「私の上で／私のかたわらで」と読め、文脈ではヤコブ自身が経験した喪失の重さを帯びます。ラケルの死は地名と距離を伴って具体的に記憶されています。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "なぜ今ラケルを語るのか"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシは、マクペラに葬らなかったことをヤコブがヨセフに弁明する伝承を紹介します。本文はその動機を明言しませんが、父祖の墓を求めたヤコブが、ヨセフの母は道中に葬ったという緊張を隠さず語る位置にあります。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Chabad「Vayechi Torah Reading, First Portion」",
+                    "link": {
+                      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "祝福を手渡す時、成功だけでなく癒えきらない喪失も正直に語れます。痛みを消したふりをせず、それでも次世代を祝福する道を選びたいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "エジプト生まれの孫を息子として迎える"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "エフライムとマナセを「私のもの」とし、ルベンとシメオンに並べる宣言は、二人を独立した部族的相続単位へ高めます。古代近東の家族内養子文書との類似は、この言葉が感情以上の身分・相続効果をもつことを理解する助けになります。その直後のラケルの回想は、ヨセフの家を高くする判断が、失われた妻とその子への愛、そして未解決の痛みとも結びついていることを示唆します。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "I. Mendelsohn, “A Ugaritic Parallel to the Adoption of Ephraim and Manasseh” (Israel Exploration Journal 9/3, 1959)",
+              "link": {
+                "url": "https://s3.amazonaws.com/wit-resources/A-Ugaritic-Parallel-to-the-Adoption-of-Ephraim-and-Manasseh1.pdf"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Soon-Gil Chang, “A socio-historical study of the adoption imagery in Galatians” (HTS 77/4, 2021)",
+              "link": {
+                "url": "https://hts.org.za/index.php/hts/article/view/6292/17512"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Jewish Bible Quarterly「A Patriarch Reviews the Past to Impact the Future」",
+              "link": {
+                "url": "https://www.jewishbible.org/articles/a-patriarch-reviews-the-past/"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:8"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_48_8_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：イスラエルはヨセフの息子たちを見て、「この者たちは誰か」と言った。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-48-8.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：すでに名を挙げた二人を前に、イスラエルは改めて身元を問い、祝福の言葉に備えます。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "問いの働き"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "前の宣言でエフライムとマナセを知っているため、「誰か」は初めて存在を知る質問とは限りません。次節でヨセフが父として二人の身元と神の賜物であることを告白するための、公的な確認として読むことができます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文とミドラシュの区別"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシは将来の好ましくない子孫を見たため神の臨在が退いたというミドラシュを紹介します。これは問いの霊的意味を掘り下げる後代の解釈であり、本文が直接述べる理由とは区別して受け取る必要があります。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Chabad「Vayechi Torah Reading, First Portion」",
+                    "link": {
+                      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "祝福を急いで一般化せず、目の前の人を「誰か」と確かめ、固有の存在として受け止めたいと思います。名と物語を知ることから、本当の祝福が始まります。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/078-20261018-r1/audio/078_48_9_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヨセフは父に言った。「彼らは、神がここで私に与えてくださった私の息子たちです。」するとイスラエルは言った。「どうか彼らを私のもとへ連れて来てほしい。彼らを祝福しよう。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/078-20261018-r1/genesis-48-9.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ヨセフは息子たちをエジプトで受けた神の賜物と告白し、ヤコブは二人を近づけて祝福しようとします。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「ここで」与えられた子ら"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「ここで」は、約束の地の外であるエジプトを指します。ヨセフは異郷で生まれた二人を偶然の成果でなく、神が与えた息子たちと告白します。場所の隔たりは神の賜物を妨げません。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "近づける命令と祝福"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「連れて来い」に続く「祝福しよう」は、身元確認の目的を明らかにします。ヤコブは二人を遠くから一括して扱わず、自分のもとへ近づけ、身体を伴う祝福の場へ迎えます。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Chabad「Vayechi Torah Reading, First Portion」",
+                    "link": {
+                      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「ここでは恵みがない」と決めつけず、神がこの場所で与えてくださった人と務めを数えたいと思います。そして与えられた者を近くに迎え、具体的な言葉で祝福したいと思います。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "「ここで」与えられた子らを祝福へ近づける"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "「この者たちは誰か」という問いに、ヨセフは父として、また信仰者として答えます。二人は「神がここで私に与えた」息子たちです。エジプトという異郷は、神の賜物と約束の継承から排除されません。ヤコブが「私のもとへ連れて来てほしい」と求めることで、身元の確認は距離を縮め、次節以降の抱擁と按手を伴う祝福へ移っていきます。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Sefaria「Genesis 47:28–48:9」",
+              "link": {
+                "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Chabad「Vayechi Torah Reading, First Portion」",
+              "link": {
+                "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "まとめ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "この箇所で死への備えは、過去を閉じる作業ではありません。ヤコブは自分の墓を約束の地に結び、神の約束を思い出し、家族の境界と相続を整え、次世代を祝福の場へ近づけます。信仰の継承とは、痛みを隠さず、受けた約束を具体的な所属・責任・祝福として次の人に手渡すことです。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーをさらに学ぶ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "文学的な流れ――墓から祝福へ"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "アリヤー全体は「どこに葬られるか」から「誰が祝福を継ぐか」へ進みます。47章末でヤコブは自分の身体の帰属先を父祖の墓に定め、48章ではエジプト生まれの孫たちの帰属先をイスラエルの家と相続に定めます。死と病が物語を止めるのではなく、墓・土地・名・子・祝福を結び直す契機になる構成です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria「Genesis 47:28–48:9」",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.47.28-48.9?aliyot=1&lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダヤ教解釈伝統――本文とミドラシュを重ねすぎない"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシは、週課冒頭の閉じた段落、見返りを求めない「真実な慈しみ」、ラケル埋葬への弁明、二人の子をめぐる霊的洞察など、複数のミドラシュ的伝承を紹介します。これらは本文の余白を信仰共同体がどう受け止めたかを示します。一方、無名の知らせ手や「この者たちは誰か」の直接の理由など、本文が明示しない事項を歴史的事実として固定せず、平易な本文と受容史を区別して読む必要があります。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Chabad「Vayechi Torah Reading, First Portion」",
+                    "link": {
+                      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492596/p/1/jewish/Vayechi-Haftorah-Hebrew-and-English.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本文とキリスト教受容――「寝台」と「杖」"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "創世記47章31節の子音列は、マソラ本文では「寝台」と発音されますが、七十人訳では「杖」と理解され、ヘブライ人への手紙11章21節は七十人訳の読みを引用します。古代教父はこの杖を十字架や支配の象徴として読むことがありました。受容史としては豊かですが、現行のマソラ本文による翻訳に「杖」を混入させず、異なる本文伝承とその後の解釈として提示するのが適切です。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Constantin Răchită, “The Translation and Interpretation of Genesis 47,31” (Hermeneia 17, 2016)",
+                    "link": {
+                      "url": "https://hermeneia.ro/wp-content/uploads/2016/12/10_Rachita-C.pdf"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "家族内養子と相続――外に生まれた者が内に名を得る"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "創世記48章5–6節は、祖父が孫を息子として宣言し、相続上の地位を再配置する家族内養子の場面として広く研究されています。メンデルソーンは古代バビロニアの養子文言と、ウガリトに残る祖父による孫の養子契約を比較しました。後代の『ヨベル書』が創世記48章をそのまま再話せず、レビとユダの祝福場面へ要素を移したことも、ヨセフの息子たちに与えられた高い地位が解釈上の重要問題だったことを示します。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "I. Mendelsohn, “A Ugaritic Parallel to the Adoption of Ephraim and Manasseh” (Israel Exploration Journal 9/3, 1959)",
+                    "link": {
+                      "url": "https://s3.amazonaws.com/wit-resources/A-Ugaritic-Parallel-to-the-Adoption-of-Ephraim-and-Manasseh1.pdf"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Pauline P. Buisch, “The Absence and Influence of Genesis 48 … in the Book of Jubilees” (JSP 26/4, 2017)",
+                    "link": {
+                      "url": "https://journals.sagepub.com/doi/10.1177/0951820717718420"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0",
+              "link": {
+                "url": "https://github.com/openscriptures/morphhb"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
