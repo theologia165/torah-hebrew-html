@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "config_type": "ASAICHI_TORAH_PARASHA_IMAGE_PROFILE",
+  "parasha_jp": "ヴァイェヒ",
+  "slug": "vayechi",
+  "visual_identity": {
+    "core_mood": "dignified final blessing, gathered memory, continuity beyond death",
+    "palette": [
+      "deep indigo",
+      "warm aged parchment",
+      "muted desert gold",
+      "soft lamp amber"
+    ],
+    "materials": [
+      "ancient Near Eastern woven textiles",
+      "weathered limestone",
+      "carved wood",
+      "unadorned clay oil lamps"
+    ],
+    "light": "low warm interior light balanced by restrained dawn or dusk light",
+    "spatial_character": "intimate household interiors opening subtly toward the remembered land",
+    "human_tone": "tender, solemn, intergenerational, never theatrical"
+  },
+  "continuity_rules": [
+    "Favor scenes of blessing, testimony, family gathering, and faithful preparation near the end of life.",
+    "Keep age, frailty, and dignity visible without morbidity or sentimental exaggeration.",
+    "Use hands, attentive faces, woven bedding, and restrained gestures to express transmission between generations.",
+    "When land or journey imagery is appropriate, keep it secondary to the human act supported by the current aliyah.",
+    "Maintain plausible ancient Near Eastern clothing and interiors without claiming a precise archaeological reconstruction."
+  ],
+  "forbid": [
+    "royal Egyptian spectacle unsupported by the current aliyah",
+    "mummification imagery unless the current passage explicitly reaches it",
+    "Christian symbols, halos, crosses, or churches",
+    "modern hospital objects or furniture",
+    "fantasy visions or supernatural light effects not stated in the passage",
+    "fixed people or scenes from a previous aliyah"
+  ]
+}
