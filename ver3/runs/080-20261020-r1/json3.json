@@ -1,0 +1,2429 @@
+{
+  "schema_version": "3.0-json3",
+  "run_id": "080-20261020-r1",
+  "json1_sha256": "5a1e0056a721a020fad537090c8abf9fe34f068873056f56f1be59692334f7bc",
+  "json2_sha256": "a59316a5af8d577f400805fee635c5854c5335590c03f63ec6884c165d02c55b",
+  "title": "080｜創世記48:17–22",
+  "verses": [
+    {
+      "ref": "Gen.48.17",
+      "tokens": [
+        {
+          "token_id": 18000,
+          "token_index": 1,
+          "surface": "וַיַּ֣רְא",
+          "ja": "そして彼は見た"
+        },
+        {
+          "token_id": 18001,
+          "token_index": 2,
+          "surface": "יוֹסֵ֗ף",
+          "ja": "ヨセフは"
+        },
+        {
+          "token_id": 18002,
+          "token_index": 3,
+          "surface": "כִּי",
+          "ja": "〜ということを"
+        },
+        {
+          "token_id": 18003,
+          "token_index": 4,
+          "surface": "יָשִׁ֨ית",
+          "ja": "彼が置いている"
+        },
+        {
+          "token_id": 18004,
+          "token_index": 5,
+          "surface": "אָבִ֧יו",
+          "ja": "彼の父が"
+        },
+        {
+          "token_id": 18005,
+          "token_index": 6,
+          "surface": "יַד",
+          "ja": "手を"
+        },
+        {
+          "token_id": 18006,
+          "token_index": 7,
+          "surface": "יְמִינ֛וֹ",
+          "ja": "彼の右の"
+        },
+        {
+          "token_id": 18007,
+          "token_index": 8,
+          "surface": "עַל",
+          "ja": "〜の上に"
+        },
+        {
+          "token_id": 18008,
+          "token_index": 9,
+          "surface": "רֹ֥אשׁ",
+          "ja": "頭"
+        },
+        {
+          "token_id": 18009,
+          "token_index": 10,
+          "surface": "אֶפְרַ֖יִם",
+          "ja": "エフライムの"
+        },
+        {
+          "token_id": 18010,
+          "token_index": 11,
+          "surface": "וַיֵּ֣רַע",
+          "ja": "そして悪かった"
+        },
+        {
+          "token_id": 18011,
+          "token_index": 12,
+          "surface": "בְּעֵינָ֑יו",
+          "ja": "彼の目に"
+        },
+        {
+          "token_id": 18012,
+          "token_index": 13,
+          "surface": "וַיִּתְמֹ֣ךְ",
+          "ja": "そして彼はつかんだ"
+        },
+        {
+          "token_id": 18013,
+          "token_index": 14,
+          "surface": "יַד",
+          "ja": "手を"
+        },
+        {
+          "token_id": 18014,
+          "token_index": 15,
+          "surface": "אָבִ֗יו",
+          "ja": "彼の父の"
+        },
+        {
+          "token_id": 18015,
+          "token_index": 16,
+          "surface": "לְהָסִ֥יר",
+          "ja": "取り去るために"
+        },
+        {
+          "token_id": 18016,
+          "token_index": 17,
+          "surface": "אֹתָ֛הּ",
+          "ja": "それを"
+        },
+        {
+          "token_id": 18017,
+          "token_index": 18,
+          "surface": "מֵעַ֥ל",
+          "ja": "〜の上から"
+        },
+        {
+          "token_id": 18018,
+          "token_index": 19,
+          "surface": "רֹאשׁ",
+          "ja": "頭"
+        },
+        {
+          "token_id": 18019,
+          "token_index": 20,
+          "surface": "אֶפְרַ֖יִם",
+          "ja": "エフライムの"
+        },
+        {
+          "token_id": 18020,
+          "token_index": 21,
+          "surface": "עַל",
+          "ja": "〜の上へ"
+        },
+        {
+          "token_id": 18021,
+          "token_index": 22,
+          "surface": "רֹ֥אשׁ",
+          "ja": "頭"
+        },
+        {
+          "token_id": 18022,
+          "token_index": 23,
+          "surface": "מְנַשֶּֽׁה",
+          "ja": "マナセの"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.18",
+      "tokens": [
+        {
+          "token_id": 18023,
+          "token_index": 1,
+          "surface": "וַיֹּ֧אמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 18024,
+          "token_index": 2,
+          "surface": "יוֹסֵ֛ף",
+          "ja": "ヨセフは"
+        },
+        {
+          "token_id": 18025,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 18026,
+          "token_index": 4,
+          "surface": "אָבִ֖יו",
+          "ja": "彼の父"
+        },
+        {
+          "token_id": 18027,
+          "token_index": 5,
+          "surface": "לֹא",
+          "ja": "〜ではない"
+        },
+        {
+          "token_id": 18028,
+          "token_index": 6,
+          "surface": "כֵ֣ן",
+          "ja": "そのように"
+        },
+        {
+          "token_id": 18029,
+          "token_index": 7,
+          "surface": "אָבִ֑י",
+          "ja": "私の父よ"
+        },
+        {
+          "token_id": 18030,
+          "token_index": 8,
+          "surface": "כִּי",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 18031,
+          "token_index": 9,
+          "surface": "זֶ֣ה",
+          "ja": "こちらが"
+        },
+        {
+          "token_id": 18032,
+          "token_index": 10,
+          "surface": "הַבְּכֹ֔ר",
+          "ja": "その長子"
+        },
+        {
+          "token_id": 18033,
+          "token_index": 11,
+          "surface": "שִׂ֥ים",
+          "ja": "置いてください"
+        },
+        {
+          "token_id": 18034,
+          "token_index": 12,
+          "surface": "יְמִינְךָ֖",
+          "ja": "あなたの右手を"
+        },
+        {
+          "token_id": 18035,
+          "token_index": 13,
+          "surface": "עַל",
+          "ja": "〜の上に"
+        },
+        {
+          "token_id": 18036,
+          "token_index": 14,
+          "surface": "רֹאשֽׁוֹ",
+          "ja": "彼の頭"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.19",
+      "tokens": [
+        {
+          "token_id": 18037,
+          "token_index": 1,
+          "surface": "וַיְמָאֵ֣ן",
+          "ja": "そして彼は拒んだ"
+        },
+        {
+          "token_id": 18038,
+          "token_index": 2,
+          "surface": "אָבִ֗יו",
+          "ja": "彼の父は"
+        },
+        {
+          "token_id": 18039,
+          "token_index": 3,
+          "surface": "וַיֹּ֨אמֶר֙",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 18040,
+          "token_index": 4,
+          "surface": "יָדַ֤עְתִּֽי",
+          "ja": "私は知っている"
+        },
+        {
+          "token_id": 18041,
+          "token_index": 5,
+          "surface": "בְנִי֙",
+          "ja": "私の子よ"
+        },
+        {
+          "token_id": 18042,
+          "token_index": 6,
+          "surface": "יָדַ֔עְתִּי",
+          "ja": "私は知っている"
+        },
+        {
+          "token_id": 18043,
+          "token_index": 7,
+          "surface": "גַּם",
+          "ja": "また"
+        },
+        {
+          "token_id": 18044,
+          "token_index": 8,
+          "surface": "ה֥וּא",
+          "ja": "彼も"
+        },
+        {
+          "token_id": 18045,
+          "token_index": 9,
+          "surface": "יִֽהְיֶה",
+          "ja": "なるだろう"
+        },
+        {
+          "token_id": 18046,
+          "token_index": 10,
+          "surface": "לְּעָ֖ם",
+          "ja": "一つの民に"
+        },
+        {
+          "token_id": 18047,
+          "token_index": 11,
+          "surface": "וְגַם",
+          "ja": "そしてまた"
+        },
+        {
+          "token_id": 18048,
+          "token_index": 12,
+          "surface": "ה֣וּא",
+          "ja": "彼も"
+        },
+        {
+          "token_id": 18049,
+          "token_index": 13,
+          "surface": "יִגְדָּ֑ל",
+          "ja": "大きくなるだろう"
+        },
+        {
+          "token_id": 18050,
+          "token_index": 14,
+          "surface": "וְאוּלָ֗ם",
+          "ja": "しかし確かに"
+        },
+        {
+          "token_id": 18051,
+          "token_index": 15,
+          "surface": "אָחִ֤יו",
+          "ja": "彼の兄弟"
+        },
+        {
+          "token_id": 18052,
+          "token_index": 16,
+          "surface": "הַקָּטֹן֙",
+          "ja": "その年下の"
+        },
+        {
+          "token_id": 18053,
+          "token_index": 17,
+          "surface": "יִגְדַּ֣ל",
+          "ja": "大きくなるだろう"
+        },
+        {
+          "token_id": 18054,
+          "token_index": 18,
+          "surface": "מִמֶּ֔נּוּ",
+          "ja": "彼よりも"
+        },
+        {
+          "token_id": 18055,
+          "token_index": 19,
+          "surface": "וְזַרְע֖וֹ",
+          "ja": "そして彼の子孫は"
+        },
+        {
+          "token_id": 18056,
+          "token_index": 20,
+          "surface": "יִהְיֶ֥ה",
+          "ja": "なるだろう"
+        },
+        {
+          "token_id": 18057,
+          "token_index": 21,
+          "surface": "מְלֹֽא",
+          "ja": "満ちるもの"
+        },
+        {
+          "token_id": 18058,
+          "token_index": 22,
+          "surface": "הַגּוֹיִֽם",
+          "ja": "諸国民の"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.20",
+      "tokens": [
+        {
+          "token_id": 18072,
+          "token_index": 1,
+          "surface": "וַיְבָ֨רֲכֵ֜ם",
+          "ja": "そして彼は彼らを祝福した"
+        },
+        {
+          "token_id": 18073,
+          "token_index": 2,
+          "surface": "בַּיּ֣וֹם",
+          "ja": "その日に"
+        },
+        {
+          "token_id": 18074,
+          "token_index": 3,
+          "surface": "הַהוּא֮",
+          "ja": "その"
+        },
+        {
+          "token_id": 18075,
+          "token_index": 4,
+          "surface": "לֵאמוֹר֒",
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 18076,
+          "token_index": 5,
+          "surface": "בְּךָ֗",
+          "ja": "あなたによって"
+        },
+        {
+          "token_id": 18077,
+          "token_index": 6,
+          "surface": "יְבָרֵ֤ךְ",
+          "ja": "祝福するだろう"
+        },
+        {
+          "token_id": 18078,
+          "token_index": 7,
+          "surface": "יִשְׂרָאֵל֙",
+          "ja": "イスラエルは"
+        },
+        {
+          "token_id": 18079,
+          "token_index": 8,
+          "surface": "לֵאמֹ֔ר",
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 18080,
+          "token_index": 9,
+          "surface": "יְשִֽׂמְךָ֣",
+          "ja": "あなたを置かれますように"
+        },
+        {
+          "token_id": 18081,
+          "token_index": 10,
+          "surface": "אֱלֹהִ֔ים",
+          "ja": "神が"
+        },
+        {
+          "token_id": 18082,
+          "token_index": 11,
+          "surface": "כְּאֶפְרַ֖יִם",
+          "ja": "エフライムのように"
+        },
+        {
+          "token_id": 18083,
+          "token_index": 12,
+          "surface": "וְכִמְנַשֶּׁ֑ה",
+          "ja": "そしてマナセのように"
+        },
+        {
+          "token_id": 18084,
+          "token_index": 13,
+          "surface": "וַיָּ֥שֶׂם",
+          "ja": "そして彼は置いた"
+        },
+        {
+          "token_id": 18085,
+          "token_index": 14,
+          "surface": "אֶת",
+          "ja": "〜を"
+        },
+        {
+          "token_id": 18086,
+          "token_index": 15,
+          "surface": "אֶפְרַ֖יִם",
+          "ja": "エフライムを"
+        },
+        {
+          "token_id": 18087,
+          "token_index": 16,
+          "surface": "לִפְנֵ֥י",
+          "ja": "〜の前に"
+        },
+        {
+          "token_id": 18088,
+          "token_index": 17,
+          "surface": "מְנַשֶּֽׁה",
+          "ja": "マナセの"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.21",
+      "tokens": [
+        {
+          "token_id": 18089,
+          "token_index": 1,
+          "surface": "וַיֹּ֤אמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 18090,
+          "token_index": 2,
+          "surface": "יִשְׂרָאֵל֙",
+          "ja": "イスラエルは"
+        },
+        {
+          "token_id": 18091,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 18092,
+          "token_index": 4,
+          "surface": "יוֹסֵ֔ף",
+          "ja": "ヨセフ"
+        },
+        {
+          "token_id": 18093,
+          "token_index": 5,
+          "surface": "הִנֵּ֥ה",
+          "ja": "見よ"
+        },
+        {
+          "token_id": 18094,
+          "token_index": 6,
+          "surface": "אָנֹכִ֖י",
+          "ja": "私は"
+        },
+        {
+          "token_id": 18095,
+          "token_index": 7,
+          "surface": "מֵ֑ת",
+          "ja": "死にゆく"
+        },
+        {
+          "token_id": 18096,
+          "token_index": 8,
+          "surface": "וְהָיָ֤ה",
+          "ja": "しかし〜であろう"
+        },
+        {
+          "token_id": 18097,
+          "token_index": 9,
+          "surface": "אֱלֹהִים֙",
+          "ja": "神が"
+        },
+        {
+          "token_id": 18098,
+          "token_index": 10,
+          "surface": "עִמָּכֶ֔ם",
+          "ja": "あなたがたと"
+        },
+        {
+          "token_id": 18099,
+          "token_index": 11,
+          "surface": "וְהֵשִׁ֣יב",
+          "ja": "そして彼は連れ戻す"
+        },
+        {
+          "token_id": 18100,
+          "token_index": 12,
+          "surface": "אֶתְכֶ֔ם",
+          "ja": "あなたがたを"
+        },
+        {
+          "token_id": 18101,
+          "token_index": 13,
+          "surface": "אֶל",
+          "ja": "〜へ"
+        },
+        {
+          "token_id": 18102,
+          "token_index": 14,
+          "surface": "אֶ֖רֶץ",
+          "ja": "地"
+        },
+        {
+          "token_id": 18103,
+          "token_index": 15,
+          "surface": "אֲבֹתֵיכֶֽם",
+          "ja": "あなたがたの父祖の"
+        }
+      ]
+    },
+    {
+      "ref": "Gen.48.22",
+      "tokens": [
+        {
+          "token_id": 18104,
+          "token_index": 1,
+          "surface": "וַאֲנִ֞י",
+          "ja": "そして私は"
+        },
+        {
+          "token_id": 18105,
+          "token_index": 2,
+          "surface": "נָתַ֧תִּֽי",
+          "ja": "与えた"
+        },
+        {
+          "token_id": 18106,
+          "token_index": 3,
+          "surface": "לְךָ֛",
+          "ja": "あなたに"
+        },
+        {
+          "token_id": 18107,
+          "token_index": 4,
+          "surface": "שְׁכֶ֥ם",
+          "ja": "シェケムを〔肩・分け前〕"
+        },
+        {
+          "token_id": 18108,
+          "token_index": 5,
+          "surface": "אַחַ֖ד",
+          "ja": "一つ"
+        },
+        {
+          "token_id": 18109,
+          "token_index": 6,
+          "surface": "עַל",
+          "ja": "〜より上に"
+        },
+        {
+          "token_id": 18110,
+          "token_index": 7,
+          "surface": "אַחֶ֑יךָ",
+          "ja": "あなたの兄弟たち"
+        },
+        {
+          "token_id": 18111,
+          "token_index": 8,
+          "surface": "אֲשֶׁ֤ר",
+          "ja": "それを"
+        },
+        {
+          "token_id": 18112,
+          "token_index": 9,
+          "surface": "לָקַ֨חְתִּי֙",
+          "ja": "私は取った"
+        },
+        {
+          "token_id": 18113,
+          "token_index": 10,
+          "surface": "מִיַּ֣ד",
+          "ja": "手から"
+        },
+        {
+          "token_id": 18114,
+          "token_index": 11,
+          "surface": "הָֽאֱמֹרִ֔י",
+          "ja": "そのアモリ人の"
+        },
+        {
+          "token_id": 18115,
+          "token_index": 12,
+          "surface": "בְּחַרְבִּ֖י",
+          "ja": "私の剣によって"
+        },
+        {
+          "token_id": 18116,
+          "token_index": 13,
+          "surface": "וּבְקַשְׁתִּֽי",
+          "ja": "そして私の弓によって"
+        }
+      ]
+    }
+  ],
+  "media_status": {
+    "audio_status": "PASS",
+    "audio_implemented_count": 6,
+    "audio_expected_count": 6,
+    "missing_audio_refs": [],
+    "audio_failures": [],
+    "html_status": "PASS",
+    "html_implemented_count": 6,
+    "missing_html_refs": [],
+    "pages_status": "PASS",
+    "ai_generated_audio_refs": [],
+    "open_bible_audio_refs": []
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヴァイェヒ｜第3アリヤー｜創世記48:17–22"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヨセフは長子マナセに右手を戻そうとするが、ヤコブは十分に知ったうえでエフライムを先に置く。二人への祝福はイスラエルが子らを祝福する定型となり、死にゆく族長の言葉は神の同伴、父祖の地への帰還、ヨセフへの追加の分け前へ進む。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "右手を越えて定められる祝福"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:17"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/080-20261020-r1/audio/080_17_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヨセフは、父が右手をエフライムの頭に置いているのを見て、不快に思った。それで彼は父の手をつかみ、エフライムの頭の上からマナセの頭の上へ移そうとした。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/080-20261020-r1/genesis-48-17.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：「悪かった、彼の目に」と「手をつかんだ」が、ヨセフの判断を内面の反発から身体的な修正へ進ませる。彼は父の右手が担う序列を守ろうとするが、その行動自体が祝福する者の意志と衝突する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "目に悪いことと手の介入"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の『彼の目に悪かった』は、ヨセフが父の動作を誤りと評価したことを明示する。続く動詞は父の手を『支える・つかむ』行為を表し、祝福の場面が礼儀正しい進言ではなく、右手を実際に移そうとする緊迫した場面であったことを示す。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria, Genesis 48:17–22（Revised JPS 2023）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.48.17-22?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "自分が守るべきだと思う秩序が、神の祝福の仕方と食い違うことがある。正しさへの熱心さを保ちながらも、目の前の出来事をただの誤りと決めつけていないか問い直したい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:18"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/080-20261020-r1/audio/080_18_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヨセフは父に言った。「父上、そうではありません。こちらが長子です。この子の頭にあなたの右手を置いてください。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/080-20261020-r1/genesis-48-18.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：否定句「そうではない」に続いて、指示詞「こちら」と定冠詞付きの「長子」が理由として置かれる。ヨセフの訴えは感情論ではなく、長子であるマナセに右手を置くべきだという明確な秩序の主張である。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "長子を根拠とする訂正"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の『こちらがその長子です』は、指示詞と定冠詞によってマナセを特定する。命令形『置いてください』は、ヨセフが父の意図を尋ねるのではなく、長子権に沿う配置へ直すよう求めたことを際立たせる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria, Genesis 48:17–22（Revised JPS 2023）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.48.17-22?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "慣習や経験に基づく判断は大切だが、それを絶対視すると、神が新しく示していることを訂正すべき間違いとして扱ってしまう。願いを率直に語りつつ、最終的な主導権を手放す備えを持ちたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "右手をめぐる父子の緊張"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "17–18節は『見る』『悪いとする』『つかむ』『言う』『置く』という一連の動作で進む。ヨセフは盲目に近い父を補助しているつもりだが、物語は彼の視力とヤコブの識別を逆転させる。長子制度を守ろうとする息子の手と、祝福の順序を定める父の手が同じ場でぶつかる。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Sefaria, Genesis 48:17–22（Revised JPS 2023）",
+              "link": {
+                "url": "https://www.sefaria.org/Genesis.48.17-22?lang=bi"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Horst Seebass, “The Joseph Story, Genesis 48 and the Canonical Process,” JSOT 35 (1986), pp. 29–43",
+              "link": {
+                "url": "https://journals.sagepub.com/doi/10.1177/030908928601103502"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:19"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/080-20261020-r1/audio/080_19_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：しかし父は拒んで言った。「分かっている、わが子よ。分かっている。彼も一つの民となり、彼も大きくなる。だが、彼の年下の兄弟は彼よりも大きくなり、その子孫は諸国民を満たすほどになる。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/080-20261020-r1/genesis-48-19.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：父は拒み、「私は知っている」を二度反復する。これは取り違えではないことを確定しつつ、マナセの将来を否定せず、エフライムにいっそう大きな将来を語る二重の応答である。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "二度の『知っている』"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の『私は知っている、わが子よ、私は知っている』は、父が長子を見誤っていないことを反復で保証する。同時に『彼も』が二度用いられ、マナセも民となり大きくなると認められるので、選びは一方の祝福を消去する宣告ではない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria, Genesis 48:17–22（Revised JPS 2023）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.48.17-22?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "後代を読むラシの解釈"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシは年下の兄弟の大きさを、エフライムからヨシュアが出て土地を継がせ、律法を教えることと結びつける。これは本文の将来予告を後代史から具体化するミドラシュ的読解であり、節の文法的意味そのものとは区別して受け取る必要がある。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi on Genesis 48:19（Midrash Tanchumaを引用）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.48.19?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "神の異なる賜物を比べると、片方の大きさがもう片方の価値を奪うように感じる。しかしこの節は、二人とも民となり大きくなると語る。比較の中でも、他者に与えられた確かな祝福を認めたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:20"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/080-20261020-r1/audio/080_20_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：その日、彼は二人を祝福して言った。「イスラエルはあなたによって祝福し、『神があなたをエフライムのように、またマナセのようにしてくださるように』と言うであろう。」こうして彼はエフライムをマナセより前に置いた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/080-20261020-r1/genesis-48-20.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：「あなたによって祝福する」という宣言が、二人への一回的な祝福をイスラエルが繰り返す定型へ変える。結語は名の順序そのものによって、エフライムの先行を固定する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "祝福を生む祝福"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の前置詞付き『あなたによって』は、エフライムとマナセが後代の祝福の模範となることを示す。祝福の内容だけでなく、『エフライム、そしてマナセ』という語順までが結語で確定され、先に置かれた年下の者の名が共同体の記憶に刻まれる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria, Genesis 48:17–22（Revised JPS 2023）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.48.17-22?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi on Genesis 48:20",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.48.20?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "受けた恵みは自分の成功だけで終わらず、後の世代が互いを祝福する言葉になり得る。今日語る言葉が、誰かを競争へ追い込むのでなく、神の善を願う型になるよう整えたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "知って選ぶことから共同体の祝福へ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "19節の二重の『知っている』は意図性を確定し、20節の二重の『こう言って』はその決定を引用可能な祝福へ移す。エフライムの先行はマナセの排除ではなく、二人の名を共に唱える定型の内部に刻まれる。後代のユダヤ教解釈では、この語順が家族の祝福実践として受け継がれてきた。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Rashi on Genesis 48:19（Midrash Tanchumaを引用）",
+              "link": {
+                "url": "https://www.sefaria.org/Rashi_on_Genesis.48.19?lang=bi"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Rashi on Genesis 48:20",
+              "link": {
+                "url": "https://www.sefaria.org/Rashi_on_Genesis.48.20?lang=bi"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:21"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/080-20261020-r1/audio/080_21_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：イスラエルはヨセフに言った。「見よ、私は死にゆく。しかし神はあなたがたと共におられ、あなたがたを父祖たちの地へ連れ戻してくださる。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/080-20261020-r1/genesis-48-21.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：「私は死にゆく」と「神はあなたがたと共におられる」が正面から対置される。族長の死は約束の終わりではなく、複数形の『あなたがた』を父祖の地へ戻す神の同伴へ視線を移す。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "死ぬ族長と共にいる神"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の『見よ、私は死にゆく』に対し、接続詞の後には『神はあなたがたと共におられる』が置かれる。ヨセフ個人への呼びかけから複数形へ移り、帰還の約束が息子たちとその後裔を含む共同体へ広がる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria, Genesis 48:17–22（Revised JPS 2023）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.48.17-22?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "帰還を起こす使役形"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『連れ戻す』はシューブのヒフィル形で、帰還を実現する主体が神であることを表す。父祖の地は死にゆくヤコブの所有物としてではなく、神が次世代を導き戻す約束の目的地として語られる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Sefaria, Genesis 48:17–22（Revised JPS 2023）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Genesis.48.17-22?lang=bi"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "人の支えには終わりが来るが、神の同伴は世代の境を越える。別れの現実を否定せず、それでも『神があなたがたと共におられる』と次の世代へ託せる信頼を育てたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "創世記 48:22"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/080-20261020-r1/audio/080_22_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：そして私は、あなたの兄弟たちに勝る一つのシェケム〔肩、すなわち分け前〕をあなたに与える。これは私が剣と弓によってアモリ人の手から取ったものである。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/080-20261020-r1/genesis-48-22.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：「シェケム」は肩・地名・分け前の響きを帯び、「兄弟たちより上に」と結ばれてヨセフの追加相続を示す。剣と弓の過去形は創世記本文内の既知の出来事と容易に一致せず、土地取得をめぐる解釈の緊張を残す。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "シェケムという多義語"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語のシェケムは『肩・山の斜面・分け前』を指し得る一方、地名シェケムとも同形である。『一つ』『兄弟たちより上に』という語の並びは追加の分け前を示すが、地名への響きを消さない訳が節の含みを保つ。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Zev Farber, “Jacob the Conqueror of Shechem” (2015)",
+                    "link": {
+                      "url": "https://www.thetorah.com/article/jacob-the-conqueror-of-shechem"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Horst Seebass, “The Joseph Story, Genesis 48 and the Canonical Process,” JSOT 35 (1986), pp. 29–43",
+                    "link": {
+                      "url": "https://journals.sagepub.com/doi/10.1177/030908928601103502"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "剣と弓をめぐる解釈"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文はヤコブがアモリ人から剣と弓で取ったと語るが、創世記の既述場面にはそのまま対応する戦闘がない。オンケロスはこれを祈りと願いとして訳し、別の解釈伝統は失われた軍事伝承や将来の土地取得を想定する。逐語的な武器と解釈史上の比喩を混同しないことが重要である。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Onkelos Genesis 48:22",
+                    "link": {
+                      "url": "https://www.sefaria.org/Onkelos_Genesis.48.22?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Zev Farber, “Jacob the Conqueror of Shechem” (2015)",
+                    "link": {
+                      "url": "https://www.thetorah.com/article/jacob-the-conqueror-of-shechem"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "約束として受け取るものにも、意味を一つに決め切れない言葉や知られない歴史が残る。理解できる部分を忠実に受け取りつつ、説明し切れない緊張を無理に消さない謙遜を持ちたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "死を越える帰還と相続"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "21–22節は、死の告知、神の同伴、地への帰還、分け前の授与を一続きにする。ヤコブ個人の死を越えて共同体が土地へ戻るという約束に、ヨセフへの特別な相続が接続される。ただし最後のシェケムと剣・弓は解釈を閉じず、相続の法的・地理的・物語的な層を重ねたまま残す。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Horst Seebass, “The Joseph Story, Genesis 48 and the Canonical Process,” JSOT 35 (1986), pp. 29–43",
+              "link": {
+                "url": "https://journals.sagepub.com/doi/10.1177/030908928601103502"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Zev Farber, “Jacob the Conqueror of Shechem” (2015)",
+              "link": {
+                "url": "https://www.thetorah.com/article/jacob-the-conqueror-of-shechem"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "まとめ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "人が当然と思う順序を越えて祝福が定められても、その選びは他者への祝福を無効にしない。ヤコブの死が迫るなかでも、神の同伴と帰還の約束は次世代へ渡され、受けた祝福はさらに人を祝福する言葉となる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーをさらに学ぶ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "年少者の優先と部族史の記憶"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "創世記48章は、長子マナセよりエフライムが先に置かれる理由をヤコブの意図的な祝福として物語る。後代史でエフライムが北王国を代表する名となる事実を背景に読む研究は、この場面を部族関係の由来を語るテクストとして扱う。一方、最終形はマナセにも民と大きさを約束するため、単純な勝者と敗者の図式には還元できない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Horst Seebass, “The Joseph Story, Genesis 48 and the Canonical Process,” JSOT 35 (1986), pp. 29–43",
+                    "link": {
+                      "url": "https://journals.sagepub.com/doi/10.1177/030908928601103502"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Federico Giuntoli, “Ephraim, Manasseh, and Post-Exilic Israel,” in The Post-Priestly Pentateuch (2015)",
+                    "link": {
+                      "url": "https://www.mohrsiebeck.com/en/book/the-post-priestly-pentateuch-9783161531217/"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "祝福場面の受容と再構成"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "20節は祝福の文言そのものを本文中に保存し、エフライムとマナセを後代の祝福の模範にする。ラシはこれを親が息子を祝福するときの定型と明言する。また、第二神殿期の『ヨベル書』31章が別の祝福場面を構成する際に創世記48章の型を利用したとする研究は、この場面の影響が家庭的慣習だけでなく文学的再創作にも及んだことを示す。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rashi on Genesis 48:20",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Genesis.48.20?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Pauline Buisch, “The Absence and Influence of Genesis 48,” Journal for the Study of the Pseudepigrapha 26/4 (2017)",
+                    "link": {
+                      "url": "https://journals.sagepub.com/doi/10.1177/0951820717718420"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "シェケムと武器の三つの読みの水準"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "22節の解釈では、第一にシェケムを『一つの分け前』と読む文脈上の意味、第二に実在の地名シェケムへの語呂、第三に剣と弓を祈りと願いへ移すアラム語訳の受容史を区別すべきである。歴史的な戦闘を想定する読みもあるが、現存する創世記本文に対応する戦闘記事がないため、失われた伝承という仮説と本文内で確認できる事実を混同しない慎重さが求められる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Zev Farber, “Jacob the Conqueror of Shechem” (2015)",
+                    "link": {
+                      "url": "https://www.thetorah.com/article/jacob-the-conqueror-of-shechem"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Onkelos Genesis 48:22",
+                    "link": {
+                      "url": "https://www.sefaria.org/Onkelos_Genesis.48.22?lang=bi"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Horst Seebass, “The Joseph Story, Genesis 48 and the Canonical Process,” JSOT 35 (1986), pp. 29–43",
+                    "link": {
+                      "url": "https://journals.sagepub.com/doi/10.1177/030908928601103502"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0",
+              "link": {
+                "url": "https://github.com/openscriptures/morphhb"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
