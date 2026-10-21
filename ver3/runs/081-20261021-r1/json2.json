@@ -1,0 +1,1983 @@
+{
+  "schema_version": "3.0-json2",
+  "run_id": "081-20261021-r1",
+  "json1_sha256": "038f17fc8b5017f64316f5e185eda0a5c0b3c655cc63a392609f207fd8236406",
+  "json1_1_sha256": "44f9fa98585fc4c147e8554d5891318d2206e846aab64cd036a895723bef6278",
+  "WORK_JSON2_QUALITY": "PASS",
+  "verses": [
+    {
+      "ref": "Gen.49.1",
+      "literal_ja": "そしてヤコブは彼の息子たちを呼び、言った。『集まりなさい。そうすれば、日々の終わりにあなたがたに起こることを、私はあなたがたに告げよう。』",
+      "translation_ja": "ヤコブは息子たちを呼び寄せて言った。『集まりなさい。後の日々にあなたがたの身に起こることを告げよう。』",
+      "glosses": [
+        {
+          "token_id": 18221,
+          "surface": "וַיִּקְרָ֥א",
+          "lemma": "c/7121",
+          "morphology": "HC/Vqw3ms",
+          "ja": "そして彼は呼んだ"
+        },
+        {
+          "token_id": 18222,
+          "surface": "יַעֲקֹ֖ב",
+          "lemma": "3290",
+          "morphology": "HNp",
+          "ja": "ヤコブは"
+        },
+        {
+          "token_id": 18223,
+          "surface": "אֶל",
+          "lemma": "413",
+          "morphology": "HR",
+          "ja": "〜のもとへ"
+        },
+        {
+          "token_id": 18224,
+          "surface": "בָּנָ֑יו",
+          "lemma": "1121 a",
+          "morphology": "HNcmpc/Sp3ms",
+          "ja": "彼の息子たちの"
+        },
+        {
+          "token_id": 18225,
+          "surface": "וַיֹּ֗אמֶר",
+          "lemma": "c/559",
+          "morphology": "HC/Vqw3ms",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 18226,
+          "surface": "הֵאָֽסְפוּ֙",
+          "lemma": "622",
+          "morphology": "HVNv2mp",
+          "ja": "集まりなさい"
+        },
+        {
+          "token_id": 18227,
+          "surface": "וְאַגִּ֣ידָה",
+          "lemma": "c/5046",
+          "morphology": "HC/Vhi1cs",
+          "ja": "そうすれば私は告げよう"
+        },
+        {
+          "token_id": 18228,
+          "surface": "לָכֶ֔ם",
+          "lemma": "l",
+          "morphology": "HR/Sp2mp",
+          "ja": "あなたがたに"
+        },
+        {
+          "token_id": 18229,
+          "surface": "אֵ֛ת",
+          "lemma": "853",
+          "morphology": "HTo",
+          "ja": "〜を"
+        },
+        {
+          "token_id": 18230,
+          "surface": "אֲשֶׁר",
+          "lemma": "834 a",
+          "morphology": "HTr",
+          "ja": "〜するところの"
+        },
+        {
+          "token_id": 18231,
+          "surface": "יִקְרָ֥א",
+          "lemma": "7122",
+          "morphology": "HVqi3ms",
+          "ja": "起こるであろう"
+        },
+        {
+          "token_id": 18232,
+          "surface": "אֶתְכֶ֖ם",
+          "lemma": "853",
+          "morphology": "HTo/Sp2mp",
+          "ja": "あなたがたに"
+        },
+        {
+          "token_id": 18233,
+          "surface": "בְּאַחֲרִ֥ית",
+          "lemma": "b/319",
+          "morphology": "HR/Ncfsc",
+          "ja": "終わりに／後の時に"
+        },
+        {
+          "token_id": 18234,
+          "surface": "הַיָּמִֽים",
+          "lemma": "d/3117",
+          "morphology": "HTd/Ncmpa",
+          "ja": "その日々の"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "動詞『呼ぶ』に続いて命令形『集まりなさい』と目的を示す一人称ヒフィル『告げよう』が置かれる。『日々の終わり』はこの発話を家族の現状だけでなく、子らから生じる集団の将来へ開く。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "将来を知ることより先に、家族が同じ声の前へ集められる。私たちも先行きへの不安を、互いに離れる理由ではなく、神の言葉を共に聞く契機としたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.2",
+      "literal_ja": "集まり、聞きなさい、ヤコブの息子たちよ。あなたがたの父イスラエルに聞きなさい。",
+      "translation_ja": "ヤコブの息子たちよ、集まって聞け。父イスラエルの言葉に耳を傾けよ。",
+      "glosses": [
+        {
+          "token_id": 18329,
+          "surface": "הִקָּבְצ֥וּ",
+          "lemma": "6908",
+          "morphology": "HVNv2mp",
+          "ja": "集まりなさい"
+        },
+        {
+          "token_id": 18330,
+          "surface": "וְשִׁמְע֖וּ",
+          "lemma": "c/8085",
+          "morphology": "HC/Vqv2mp",
+          "ja": "そして聞きなさい"
+        },
+        {
+          "token_id": 18331,
+          "surface": "בְּנֵ֣י",
+          "lemma": "1121 a",
+          "morphology": "HNcmpc",
+          "ja": "息子たちよ"
+        },
+        {
+          "token_id": 18332,
+          "surface": "יַעֲקֹ֑ב",
+          "lemma": "3290",
+          "morphology": "HNp",
+          "ja": "ヤコブの"
+        },
+        {
+          "token_id": 18333,
+          "surface": "וְשִׁמְע֖וּ",
+          "lemma": "c/8085",
+          "morphology": "HC/Vqv2mp",
+          "ja": "そして聞きなさい"
+        },
+        {
+          "token_id": 18334,
+          "surface": "אֶל",
+          "lemma": "413",
+          "morphology": "HR",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 18335,
+          "surface": "יִשְׂרָאֵ֥ל",
+          "lemma": "3478",
+          "morphology": "HNp",
+          "ja": "イスラエルに"
+        },
+        {
+          "token_id": 18336,
+          "surface": "אֲבִיכֶֽם",
+          "lemma": "1",
+          "morphology": "HNcmsc/Sp2mp",
+          "ja": "あなたがたの父である"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "『集まれ／聞け』が反復され、聞き手は『ヤコブの息子たち』であると同時に『イスラエルの子ら』として呼び直される。父の二つの名が家族史と共同体の将来を重ねる。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "『聞け』の反復は、近さが聞く姿勢を保証しないことを教える。慣れた声にも、今日あらためて心を向けたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.3",
+      "literal_ja": "ルベンよ、あなたは私の長子、私の力、私の活力の初め。威厳における卓越、力における卓越。",
+      "translation_ja": "ルベンよ。お前は私の長子、私の力、生命力の初穂であり、威厳と力で最も高い座にあった。",
+      "glosses": [
+        {
+          "token_id": 18456,
+          "surface": "רְאוּבֵן֙",
+          "lemma": "7205",
+          "morphology": "HNp",
+          "ja": "ルベンよ"
+        },
+        {
+          "token_id": 18457,
+          "surface": "בְּכֹ֣רִי",
+          "lemma": "1060",
+          "morphology": "HNcmsc/Sp1cs",
+          "ja": "私の長子"
+        },
+        {
+          "token_id": 18458,
+          "surface": "אַ֔תָּה",
+          "lemma": "859 a",
+          "morphology": "HPp2ms",
+          "ja": "あなたは"
+        },
+        {
+          "token_id": 18459,
+          "surface": "כֹּחִ֖י",
+          "lemma": "3581 b",
+          "morphology": "HNcmsc/Sp1cs",
+          "ja": "私の力"
+        },
+        {
+          "token_id": 18460,
+          "surface": "וְרֵאשִׁ֣ית",
+          "lemma": "c/7225",
+          "morphology": "HC/Ncfsc",
+          "ja": "そして初め"
+        },
+        {
+          "token_id": 18461,
+          "surface": "אוֹנִ֑י",
+          "lemma": "202",
+          "morphology": "HNcmsc/Sp1cs",
+          "ja": "私の活力の"
+        },
+        {
+          "token_id": 18462,
+          "surface": "יֶ֥תֶר",
+          "lemma": "3499 a",
+          "morphology": "HNcmsc",
+          "ja": "卓越"
+        },
+        {
+          "token_id": 18463,
+          "surface": "שְׂאֵ֖ת",
+          "lemma": "7613",
+          "morphology": "HNcfsa",
+          "ja": "威厳における"
+        },
+        {
+          "token_id": 18464,
+          "surface": "וְיֶ֥תֶר",
+          "lemma": "c/3499 a",
+          "morphology": "HC/Ncmsc",
+          "ja": "そして卓越"
+        },
+        {
+          "token_id": 18465,
+          "surface": "עָֽז",
+          "lemma": "5794",
+          "morphology": "HNcmsa",
+          "ja": "力における"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "『私の』という一人称接尾辞が長子・力・活力に連続し、ルベンに与えられていた優位を最大限に確認する。二度の『卓越』は、次節の喪失を際立たせる。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "与えられた力や地位は、所有ではなく委ねられた賜物である。始まりの恵みを誇りに変えず、忠実さへ返したい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.4",
+      "literal_ja": "水のような奔放さ。あなたは卓越してはならない。あなたは父の寝床に上ったからだ。その時あなたは私の寝台を汚した。彼は上った。",
+      "translation_ja": "だが水のように制御を失ったお前は、もはや抜きん出ることがない。父の床に上り、私の寝台を汚したからだ。",
+      "glosses": [
+        {
+          "token_id": 18525,
+          "surface": "פַּ֤חַז",
+          "lemma": "6349",
+          "morphology": "HNcmsa",
+          "ja": "奔放さ／沸騰"
+        },
+        {
+          "token_id": 18526,
+          "surface": "כַּמַּ֨יִם֙",
+          "lemma": "k/4325",
+          "morphology": "HRd/Ncmpa",
+          "ja": "水のような"
+        },
+        {
+          "token_id": 18527,
+          "surface": "אַל",
+          "lemma": "408",
+          "morphology": "HTn",
+          "ja": "〜してはならない"
+        },
+        {
+          "token_id": 18528,
+          "surface": "תּוֹתַ֔ר",
+          "lemma": "3498",
+          "morphology": "HVhj2ms",
+          "ja": "卓越する"
+        },
+        {
+          "token_id": 18529,
+          "surface": "כִּ֥י",
+          "lemma": "3588 a",
+          "morphology": "HC",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 18530,
+          "surface": "עָלִ֖יתָ",
+          "lemma": "5927",
+          "morphology": "HVqp2ms",
+          "ja": "あなたは上った"
+        },
+        {
+          "token_id": 18531,
+          "surface": "מִשְׁכְּבֵ֣י",
+          "lemma": "4904",
+          "morphology": "HNcmpc",
+          "ja": "寝床に"
+        },
+        {
+          "token_id": 18532,
+          "surface": "אָבִ֑יךָ",
+          "lemma": "1",
+          "morphology": "HNcmsc/Sp2ms",
+          "ja": "あなたの父の"
+        },
+        {
+          "token_id": 18533,
+          "surface": "אָ֥ז",
+          "lemma": "227 a",
+          "morphology": "HD",
+          "ja": "その時"
+        },
+        {
+          "token_id": 18534,
+          "surface": "חִלַּ֖לְתָּ",
+          "lemma": "2490 c",
+          "morphology": "HVpp2ms",
+          "ja": "あなたは汚した"
+        },
+        {
+          "token_id": 18535,
+          "surface": "יְצוּעִ֥י",
+          "lemma": "3326 a",
+          "morphology": "HNcmsc/Sp1cs",
+          "ja": "私の寝台を"
+        },
+        {
+          "token_id": 18536,
+          "surface": "עָלָֽה",
+          "lemma": "5927",
+          "morphology": "HVqp3ms",
+          "ja": "彼は上った"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "『水のような奔放さ』は固定しない勢いを描き、『卓越してはならない』へ直結する。『上った』の反復は創世記35:22の行為を短く再演し、地位喪失の理由を明示する。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "一度の衝動が長い影を落とすことがある。だからこそ、勢いのまま進む前に立ち止まり、関係と境界を尊びたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.5",
+      "literal_ja": "シメオンとレビは兄弟。暴虐の器具は彼らの武器。",
+      "translation_ja": "シメオンとレビは似た者どうし。その武器は暴力の道具だ。",
+      "glosses": [
+        {
+          "token_id": 18537,
+          "surface": "שִׁמְע֥וֹן",
+          "lemma": "8095",
+          "morphology": "HNp",
+          "ja": "シメオン"
+        },
+        {
+          "token_id": 18538,
+          "surface": "וְלֵוִ֖י",
+          "lemma": "c/3878",
+          "morphology": "HC/Np",
+          "ja": "そしてレビ"
+        },
+        {
+          "token_id": 18539,
+          "surface": "אַחִ֑ים",
+          "lemma": "251",
+          "morphology": "HNcmpa",
+          "ja": "兄弟である"
+        },
+        {
+          "token_id": 18540,
+          "surface": "כְּלֵ֥י",
+          "lemma": "3627",
+          "morphology": "HNcmpc",
+          "ja": "器具は"
+        },
+        {
+          "token_id": 18541,
+          "surface": "חָמָ֖ס",
+          "lemma": "2555",
+          "morphology": "HNcmsa",
+          "ja": "暴虐の"
+        },
+        {
+          "token_id": 18542,
+          "surface": "מְכֵרֹתֵיהֶֽם",
+          "lemma": "4380",
+          "morphology": "HNcfpc/Sp3mp",
+          "ja": "彼らの武器である"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "二人は『兄弟』と一括され、武器が『暴虐の器具』と評価される。血縁上の結束そのものではなく、共有された暴力の仕方が問題にされる。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "結束は、それだけで善ではない。仲間との強い連帯が弱い者を傷つける道具になっていないかを吟味したい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.6",
+      "literal_ja": "彼らの密議に私の魂は入ってはならない。彼らの集会に私の誉れは一つになってはならない。彼らは怒りのうちに人を殺し、意のままに雄牛の腱を切ったからだ。",
+      "translation_ja": "私自身よ、彼らの相談に加わるな。私の誉れよ、彼らの集まりと結ばれるな。怒りに任せて人を殺し、気ままに雄牛の腱まで切った者たちだからだ。",
+      "glosses": [
+        {
+          "token_id": 18543,
+          "surface": "בְּסֹדָם֙",
+          "lemma": "b/5475",
+          "morphology": "HR/Ncmsc/Sp3mp",
+          "ja": "彼らの密議に"
+        },
+        {
+          "token_id": 18544,
+          "surface": "אַל",
+          "lemma": "408",
+          "morphology": "HTn",
+          "ja": "〜してはならない"
+        },
+        {
+          "token_id": 18545,
+          "surface": "תָּבֹ֣א",
+          "lemma": "935",
+          "morphology": "HVqj3fs",
+          "ja": "入る"
+        },
+        {
+          "token_id": 18546,
+          "surface": "נַפְשִׁ֔י",
+          "lemma": "5315",
+          "morphology": "HNcbsc/Sp1cs",
+          "ja": "私の魂は"
+        },
+        {
+          "token_id": 18547,
+          "surface": "בִּקְהָלָ֖ם",
+          "lemma": "b/6951",
+          "morphology": "HR/Ncmsc/Sp3mp",
+          "ja": "彼らの集会に"
+        },
+        {
+          "token_id": 18548,
+          "surface": "אַל",
+          "lemma": "408",
+          "morphology": "HTn",
+          "ja": "〜してはならない"
+        },
+        {
+          "token_id": 18549,
+          "surface": "תֵּחַ֣ד",
+          "lemma": "3161",
+          "morphology": "HVqj3fs",
+          "ja": "一つになる"
+        },
+        {
+          "token_id": 18550,
+          "surface": "כְּבֹדִ֑י",
+          "lemma": "3519",
+          "morphology": "HNcbsc/Sp1cs",
+          "ja": "私の誉れは"
+        },
+        {
+          "token_id": 18551,
+          "surface": "כִּ֤י",
+          "lemma": "3588 a",
+          "morphology": "HC",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 18552,
+          "surface": "בְאַפָּם֙",
+          "lemma": "b/639",
+          "morphology": "HR/Ncmsc/Sp3mp",
+          "ja": "彼らの怒りのうちに"
+        },
+        {
+          "token_id": 18553,
+          "surface": "הָ֣רְגוּ",
+          "lemma": "2026",
+          "morphology": "HVqp3cp",
+          "ja": "彼らは殺した"
+        },
+        {
+          "token_id": 18554,
+          "surface": "אִ֔ישׁ",
+          "lemma": "376",
+          "morphology": "HNcmsa",
+          "ja": "人を"
+        },
+        {
+          "token_id": 18555,
+          "surface": "וּבִרְצֹנָ֖ם",
+          "lemma": "c/b/7522",
+          "morphology": "HC/R/Ncmsc/Sp3mp",
+          "ja": "そして彼らの意のままに"
+        },
+        {
+          "token_id": 18556,
+          "surface": "עִקְּרוּ",
+          "lemma": "6131 b",
+          "morphology": "HVpp3cp",
+          "ja": "彼らは腱を切った"
+        },
+        {
+          "token_id": 18557,
+          "surface": "שֽׁוֹר",
+          "lemma": "7794",
+          "morphology": "HNcmsa",
+          "ja": "雄牛を"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "『私の魂』『私の誉れ』への二重の禁止は、語り手が彼らの密議と集会から自らを切り離す強い並行法である。人の殺害と雄牛への加害は怒りと恣意の広がりを示す。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "悪い企てから距離を取ることも信仰の行為である。沈黙の同意を避け、魂と誉れを暴力へ預けない勇気を求めたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.7",
+      "literal_ja": "呪われよ、彼らの怒りは激しいから。彼らの憤りは苛酷だから。私は彼らをヤコブの中で分け、イスラエルの中で散らす。",
+      "translation_ja": "激しすぎる怒りも、残酷な憤りも呪われよ。私は二人をヤコブのうちで分け、イスラエルの中に散らす。",
+      "glosses": [
+        {
+          "token_id": 18558,
+          "surface": "אָר֤וּר",
+          "lemma": "779",
+          "morphology": "HVqsmsa",
+          "ja": "呪われよ"
+        },
+        {
+          "token_id": 18559,
+          "surface": "אַפָּם֙",
+          "lemma": "639",
+          "morphology": "HNcmsc/Sp3mp",
+          "ja": "彼らの怒りは"
+        },
+        {
+          "token_id": 18560,
+          "surface": "כִּ֣י",
+          "lemma": "3588 a",
+          "morphology": "HC",
+          "ja": "それが"
+        },
+        {
+          "token_id": 18561,
+          "surface": "עָ֔ז",
+          "lemma": "5794",
+          "morphology": "HAamsa",
+          "ja": "激しいから"
+        },
+        {
+          "token_id": 18562,
+          "surface": "וְעֶבְרָתָ֖ם",
+          "lemma": "c/5678",
+          "morphology": "HC/Ncfsc/Sp3mp",
+          "ja": "そして彼らの憤りは"
+        },
+        {
+          "token_id": 18563,
+          "surface": "כִּ֣י",
+          "lemma": "3588 a",
+          "morphology": "HC",
+          "ja": "それが"
+        },
+        {
+          "token_id": 18564,
+          "surface": "קָשָׁ֑תָה",
+          "lemma": "7185",
+          "morphology": "HVqp3fs",
+          "ja": "苛酷だから"
+        },
+        {
+          "token_id": 18565,
+          "surface": "אֲחַלְּקֵ֣ם",
+          "lemma": "2505 a",
+          "morphology": "HVpi1cs/Sp3mp",
+          "ja": "私は彼らを分ける"
+        },
+        {
+          "token_id": 18566,
+          "surface": "בְּיַעֲקֹ֔ב",
+          "lemma": "b/3290",
+          "morphology": "HR/Np",
+          "ja": "ヤコブの中で"
+        },
+        {
+          "token_id": 18567,
+          "surface": "וַאֲפִיצֵ֖ם",
+          "lemma": "c/6327 a",
+          "morphology": "HC/Vhi1cs/Sp3mp",
+          "ja": "そして彼らを散らす"
+        },
+        {
+          "token_id": 18568,
+          "surface": "בְּיִשְׂרָאֵֽל",
+          "lemma": "b/3478",
+          "morphology": "HR/Np",
+          "ja": "イスラエルの中で"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "呪いの対象は二人そのものより『怒り』『憤り』である。結末の二つの一人称動詞『分ける／散らす』は、制御されない力に共同体的な限界が置かれることを告げる。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "人を呪うのではなく、私たちを支配する怒りを退ける言葉がここにある。怒りを正義と取り違えず、力に境界を置きたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.8",
+      "literal_ja": "ユダよ、あなたを兄弟たちはほめる。あなたの手は敵たちのうなじにあり、あなたの父の息子たちはあなたに身をかがめる。",
+      "translation_ja": "ユダよ、兄弟たちはお前をたたえる。お前は敵のうなじを押さえ、父の子らはお前の前にひれ伏す。",
+      "glosses": [
+        {
+          "token_id": 18569,
+          "surface": "יְהוּדָ֗ה",
+          "lemma": "3063",
+          "morphology": "HNp",
+          "ja": "ユダよ"
+        },
+        {
+          "token_id": 18570,
+          "surface": "אַתָּה֙",
+          "lemma": "859 a",
+          "morphology": "HPp2ms",
+          "ja": "あなたを"
+        },
+        {
+          "token_id": 18571,
+          "surface": "יוֹד֣וּךָ",
+          "lemma": "3034",
+          "morphology": "HVhi3mp/Sp2ms",
+          "ja": "彼らはほめる"
+        },
+        {
+          "token_id": 18572,
+          "surface": "אַחֶ֔יךָ",
+          "lemma": "251",
+          "morphology": "HNcmpc/Sp2ms",
+          "ja": "あなたの兄弟たちは"
+        },
+        {
+          "token_id": 18573,
+          "surface": "יָדְךָ֖",
+          "lemma": "3027",
+          "morphology": "HNcbsc/Sp2ms",
+          "ja": "あなたの手は"
+        },
+        {
+          "token_id": 18574,
+          "surface": "בְּעֹ֣רֶף",
+          "lemma": "b/6203",
+          "morphology": "HR/Ncmsc",
+          "ja": "うなじに"
+        },
+        {
+          "token_id": 18575,
+          "surface": "אֹיְבֶ֑יךָ",
+          "lemma": "341",
+          "morphology": "HVqrmpc/Sp2ms",
+          "ja": "あなたの敵たちの"
+        },
+        {
+          "token_id": 18576,
+          "surface": "יִשְׁתַּחֲוּ֥וּ",
+          "lemma": "7812",
+          "morphology": "HVvi3mp",
+          "ja": "彼らは身をかがめる"
+        },
+        {
+          "token_id": 18577,
+          "surface": "לְךָ֖",
+          "lemma": "l",
+          "morphology": "HR/Sp2ms",
+          "ja": "あなたに"
+        },
+        {
+          "token_id": 18578,
+          "surface": "בְּנֵ֥י",
+          "lemma": "1121 a",
+          "morphology": "HNcmpc",
+          "ja": "息子たちは"
+        },
+        {
+          "token_id": 18579,
+          "surface": "אָבִֽיךָ",
+          "lemma": "1",
+          "morphology": "HNcmsc/Sp2ms",
+          "ja": "あなたの父の"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "ユダの名と『ほめる』の音の響きが冒頭に立ち、兄弟の称賛・敵への勝利・父の子らの服従が三段で描かれる。手、うなじ、身をかがめる動作が具体的な権威像を作る。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "真の権威は、兄弟の称賛と敵への勝利の両方で試される。人を屈服させることではなく、委ねられた力を守りに用いたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.9",
+      "literal_ja": "獅子の子はユダ。獲物から、私の息子よ、あなたは上った。彼は身をかがめ、獅子のように、雌獅子のように伏した。誰が彼を起こせようか。",
+      "translation_ja": "ユダは若獅子。息子よ、お前は獲物を仕留めて上って来た。獅子のように身を伏せた彼を、誰があえて起こせるだろう。",
+      "glosses": [
+        {
+          "token_id": 18580,
+          "surface": "גּ֤וּר",
+          "lemma": "1482",
+          "morphology": "HNcmsc",
+          "ja": "子は"
+        },
+        {
+          "token_id": 18581,
+          "surface": "אַרְיֵה֙",
+          "lemma": "738 b",
+          "morphology": "HNcmsa",
+          "ja": "獅子の"
+        },
+        {
+          "token_id": 18582,
+          "surface": "יְהוּדָ֔ה",
+          "lemma": "3063",
+          "morphology": "HNp",
+          "ja": "ユダは"
+        },
+        {
+          "token_id": 18583,
+          "surface": "מִטֶּ֖רֶף",
+          "lemma": "m/2964",
+          "morphology": "HR/Ncmsa",
+          "ja": "獲物から"
+        },
+        {
+          "token_id": 18584,
+          "surface": "בְּנִ֣י",
+          "lemma": "1121 a",
+          "morphology": "HNcmsc/Sp1cs",
+          "ja": "私の息子よ"
+        },
+        {
+          "token_id": 18585,
+          "surface": "עָלִ֑יתָ",
+          "lemma": "5927",
+          "morphology": "HVqp2ms",
+          "ja": "あなたは上った"
+        },
+        {
+          "token_id": 18586,
+          "surface": "כָּרַ֨ע",
+          "lemma": "3766",
+          "morphology": "HVqp3ms",
+          "ja": "彼は身をかがめた"
+        },
+        {
+          "token_id": 18587,
+          "surface": "רָבַ֧ץ",
+          "lemma": "7257",
+          "morphology": "HVqp3ms",
+          "ja": "彼は伏した"
+        },
+        {
+          "token_id": 18588,
+          "surface": "כְּאַרְיֵ֛ה",
+          "lemma": "k/738 b",
+          "morphology": "HR/Ncmsa",
+          "ja": "獅子のように"
+        },
+        {
+          "token_id": 18589,
+          "surface": "וּכְלָבִ֖יא",
+          "lemma": "c/k/3833 c",
+          "morphology": "HC/R/Ncbsa",
+          "ja": "そして雌獅子のように"
+        },
+        {
+          "token_id": 18590,
+          "surface": "מִ֥י",
+          "lemma": "4310",
+          "morphology": "HTi",
+          "ja": "誰が"
+        },
+        {
+          "token_id": 18591,
+          "surface": "יְקִימֶֽנּוּ",
+          "lemma": "6965 b",
+          "morphology": "HVhi3ms/Sp3ms",
+          "ja": "彼を起こせようか"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "『獅子の子』から伏す成獣へ比喩が展開し、獲物から上る動きと、誰も起こせない安定が組み合わされる。力は無秩序な暴力でなく、勝利後に保たれる威厳として語られる。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "獅子の強さは絶えず吠えることではなく、勝利の後に落ち着いて伏すことにも現れる。成果の後に誇示せず、節度ある平安を選びたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.10",
+      "literal_ja": "王笏はユダから離れず、統治者の杖は彼の足の間から離れない。シロが来る時まで。そして彼に諸民族の服従がある。",
+      "translation_ja": "王権のしるしはユダを離れず、支配者の杖はその足もとから消えない。『シロ』が来る時まで、諸国の民は彼に従う。",
+      "glosses": [
+        {
+          "token_id": 18235,
+          "surface": "לֹֽא",
+          "lemma": "3808",
+          "morphology": "HTn",
+          "ja": "〜ない"
+        },
+        {
+          "token_id": 18236,
+          "surface": "יָס֥וּר",
+          "lemma": "5493",
+          "morphology": "HVqi3ms",
+          "ja": "離れるであろう"
+        },
+        {
+          "token_id": 18237,
+          "surface": "שֵׁ֨בֶט֙",
+          "lemma": "7626",
+          "morphology": "HNcmsa",
+          "ja": "杖／王笏は"
+        },
+        {
+          "token_id": 18238,
+          "surface": "מִֽיהוּדָ֔ה",
+          "lemma": "m/3063",
+          "morphology": "HR/Np",
+          "ja": "ユダから"
+        },
+        {
+          "token_id": 18239,
+          "surface": "וּמְחֹקֵ֖ק",
+          "lemma": "c/2710",
+          "morphology": "HC/Vmrmsa",
+          "ja": "そして統治者の杖は"
+        },
+        {
+          "token_id": 18240,
+          "surface": "מִבֵּ֣ין",
+          "lemma": "m/996",
+          "morphology": "HR/R",
+          "ja": "間から"
+        },
+        {
+          "token_id": 18241,
+          "surface": "רַגְלָ֑יו",
+          "lemma": "7272",
+          "morphology": "HNcfdc/Sp3ms",
+          "ja": "彼の足の"
+        },
+        {
+          "token_id": 18242,
+          "surface": "עַ֚ד",
+          "lemma": "5704",
+          "morphology": "HR",
+          "ja": "〜まで"
+        },
+        {
+          "token_id": 18243,
+          "surface": "כִּֽי",
+          "lemma": "3588 a",
+          "morphology": "HC",
+          "ja": "〜の時"
+        },
+        {
+          "token_id": 18244,
+          "surface": "יָבֹ֣א",
+          "lemma": "935",
+          "morphology": "HVqi3ms",
+          "ja": "彼が来る"
+        },
+        {
+          "token_id": 18245,
+          "surface": "שילה",
+          "lemma": "7886",
+          "morphology": "HNp",
+          "ja": "シロ（ケティーブ）"
+        },
+        {
+          "token_id": 18246,
+          "surface": "שִׁיל֔וֹ",
+          "lemma": "7886",
+          "morphology": "HNp",
+          "ja": "シロ（ケレー）"
+        },
+        {
+          "token_id": 18247,
+          "surface": "וְל֖וֹ",
+          "lemma": "c/l",
+          "morphology": "HC/R/Sp3ms",
+          "ja": "そして彼に"
+        },
+        {
+          "token_id": 18248,
+          "surface": "יִקְּהַ֥ת",
+          "lemma": "3349",
+          "morphology": "HNcfsc",
+          "ja": "服従は"
+        },
+        {
+          "token_id": 18249,
+          "surface": "עַמִּֽים",
+          "lemma": "5971 a",
+          "morphology": "HNcmpa",
+          "ja": "諸民族の"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "『王笏』『統治者の杖』はユダの統治を表す一方、『シロ』と『服従』の語は本文上・語義上に難しさを残す。ケティーブとケレーを併記し、一つのメシア的読みだけで不確定性を消さないことが重要である。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "解き切れない言葉の前で、性急に一つの答えへ閉じないことも敬虔さである。約束を握りつつ、本文の奥行きに耳を澄ませたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.11",
+      "literal_ja": "彼はその子ろばをぶどうの木につなぎ、その雌ろばの子を極上のぶどうの木につなぐ。彼は衣をぶどう酒で、上着をぶどうの実の血で洗った。",
+      "translation_ja": "子ろばをぶどうの木に結べるほど実りは豊かで、衣をぶどう酒で洗えるほど葡萄が満ちる。",
+      "glosses": [
+        {
+          "token_id": 18250,
+          "surface": "אֹסְרִ֤י",
+          "lemma": "631",
+          "morphology": "HVqrmsc",
+          "ja": "つなぐ者"
+        },
+        {
+          "token_id": 18251,
+          "surface": "לַגֶּ֨פֶן֙",
+          "lemma": "l/1612",
+          "morphology": "HRd/Ncbsa",
+          "ja": "ぶどうの木に"
+        },
+        {
+          "token_id": 18252,
+          "surface": "עירה",
+          "lemma": "5895",
+          "morphology": "HNcmsc/Sp3ms",
+          "ja": "彼の子ろば（ケティーブ）"
+        },
+        {
+          "token_id": 18253,
+          "surface": "עִיר֔וֹ",
+          "lemma": "5895",
+          "morphology": "HNcmsc/Sp3ms",
+          "ja": "彼の子ろば（ケレー）"
+        },
+        {
+          "token_id": 18254,
+          "surface": "וְלַשֹּׂרֵקָ֖ה",
+          "lemma": "c/l/8321 b",
+          "morphology": "HC/Rd/Ncfsa",
+          "ja": "そして極上のぶどうの木に"
+        },
+        {
+          "token_id": 18255,
+          "surface": "בְּנִ֣י",
+          "lemma": "1121 a",
+          "morphology": "HNcmsc",
+          "ja": "子を"
+        },
+        {
+          "token_id": 18256,
+          "surface": "אֲתֹנ֑וֹ",
+          "lemma": "860",
+          "morphology": "HNcfsc/Sp3ms",
+          "ja": "彼の雌ろばの"
+        },
+        {
+          "token_id": 18257,
+          "surface": "כִּבֵּ֤ס",
+          "lemma": "3526",
+          "morphology": "HVpp3ms",
+          "ja": "彼は洗った"
+        },
+        {
+          "token_id": 18258,
+          "surface": "בַּיַּ֨יִן֙",
+          "lemma": "b/3196",
+          "morphology": "HRd/Ncmsa",
+          "ja": "ぶどう酒で"
+        },
+        {
+          "token_id": 18259,
+          "surface": "לְבֻשׁ֔וֹ",
+          "lemma": "3830",
+          "morphology": "HNcmsc/Sp3ms",
+          "ja": "彼の衣を"
+        },
+        {
+          "token_id": 18260,
+          "surface": "וּבְדַם",
+          "lemma": "c/b/1818",
+          "morphology": "HC/R/Ncmsc",
+          "ja": "そして血で"
+        },
+        {
+          "token_id": 18261,
+          "surface": "עֲנָבִ֖ים",
+          "lemma": "6025",
+          "morphology": "HNcmpa",
+          "ja": "ぶどうの実の"
+        },
+        {
+          "token_id": 18262,
+          "surface": "סותה",
+          "lemma": "5497",
+          "morphology": "HNcmsc/Sp3ms",
+          "ja": "彼の上着（ケティーブ）"
+        },
+        {
+          "token_id": 18263,
+          "surface": "סוּתֽוֹ",
+          "lemma": "5497",
+          "morphology": "HNcmsc/Sp3ms",
+          "ja": "彼の上着（ケレー）"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "子ろばと雌ろばの子、ぶどうの木と極上のぶどうの木、衣と上着が並行する。葡萄酒で洗うという誇張表現は、支配の後に続く土地の圧倒的な豊穣を描く。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "豊かさは不足への恐れを和らげ、分かち合う余裕を生む。恵みを蓄えるだけでなく、他者を潤す実りとして受け取りたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.12",
+      "literal_ja": "彼の両目はぶどう酒によって暗く輝き、両歯は乳によって白い。",
+      "translation_ja": "その目は葡萄酒の色に輝き、その歯は乳のように白い。",
+      "glosses": [
+        {
+          "token_id": 18264,
+          "surface": "חַכְלִילִ֥י",
+          "lemma": "2447",
+          "morphology": "HAamsc",
+          "ja": "暗く輝く／赤みを帯びる"
+        },
+        {
+          "token_id": 18265,
+          "surface": "עֵינַ֖יִם",
+          "lemma": "5869 a",
+          "morphology": "HNcbda",
+          "ja": "両目は"
+        },
+        {
+          "token_id": 18266,
+          "surface": "מִיָּ֑יִן",
+          "lemma": "m/3196",
+          "morphology": "HR/Ncmsa",
+          "ja": "ぶどう酒によって"
+        },
+        {
+          "token_id": 18267,
+          "surface": "וּלְבֶן",
+          "lemma": "c/3836",
+          "morphology": "HC/Aamsc",
+          "ja": "そして白い"
+        },
+        {
+          "token_id": 18268,
+          "surface": "שִׁנַּ֖יִם",
+          "lemma": "8127",
+          "morphology": "HNcbda",
+          "ja": "両歯は"
+        },
+        {
+          "token_id": 18269,
+          "surface": "מֵחָלָֽב",
+          "lemma": "m/2461",
+          "morphology": "HR/Ncmsa",
+          "ja": "乳によって"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "両目と両歯、葡萄酒と乳、暗い輝きと白さが対をなす。身体描写を通して前節の豊穣が人の健康と美しさにまで及ぶ。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "神の祝福は抽象的な成功だけでなく、食べ、飲み、生きる身体にも届く。日々の養いを当然とせず感謝したい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.13",
+      "literal_ja": "ゼブルンは海々の岸辺に住む。彼は船々の岸辺におり、その側面はシドンに向かう。",
+      "translation_ja": "ゼブルンは海辺に住み、船の港となる。その境はシドンの方へ延びる。",
+      "glosses": [
+        {
+          "token_id": 18270,
+          "surface": "זְבוּלֻ֕ן",
+          "lemma": "2074",
+          "morphology": "HNp",
+          "ja": "ゼブルンは"
+        },
+        {
+          "token_id": 18271,
+          "surface": "לְח֥וֹף",
+          "lemma": "l/2348",
+          "morphology": "HR/Ncmsc",
+          "ja": "岸辺に"
+        },
+        {
+          "token_id": 18272,
+          "surface": "יַמִּ֖ים",
+          "lemma": "3220",
+          "morphology": "HNcmpa",
+          "ja": "海々の"
+        },
+        {
+          "token_id": 18273,
+          "surface": "יִשְׁכֹּ֑ן",
+          "lemma": "7931",
+          "morphology": "HVqi3ms",
+          "ja": "住むであろう"
+        },
+        {
+          "token_id": 18274,
+          "surface": "וְהוּא֙",
+          "lemma": "c/1931",
+          "morphology": "HC/Pp3ms",
+          "ja": "そして彼は"
+        },
+        {
+          "token_id": 18275,
+          "surface": "לְח֣וֹף",
+          "lemma": "l/2348",
+          "morphology": "HR/Ncmsc",
+          "ja": "岸辺に"
+        },
+        {
+          "token_id": 18276,
+          "surface": "אֳנִיּ֔וֹת",
+          "lemma": "591",
+          "morphology": "HNcfpa",
+          "ja": "船々の"
+        },
+        {
+          "token_id": 18277,
+          "surface": "וְיַרְכָת֖וֹ",
+          "lemma": "c/3411",
+          "morphology": "HC/Ncfsc/Sp3ms",
+          "ja": "そして彼の側面は"
+        },
+        {
+          "token_id": 18278,
+          "surface": "עַל",
+          "lemma": "5921 a",
+          "morphology": "HR",
+          "ja": "〜に向かって"
+        },
+        {
+          "token_id": 18279,
+          "surface": "צִידֹֽן",
+          "lemma": "6721",
+          "morphology": "HNp",
+          "ja": "シドン"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "『岸辺』が二度反復され、海・船・シドンがゼブルンを交易の開かれた空間へ配置する。ただし後代の領土図と単純に一致させず、詩的・地理的志向として読む必要がある。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "海辺は危険と交流の両方へ開かれた場所である。境界に立つ務めを恐れず、人と世界を結ぶ港となりたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.14",
+      "literal_ja": "イッサカルは骨太のろば、二つの荷籠の間に伏している。",
+      "translation_ja": "イッサカルはたくましいろば。荷籠の間に身を伏せている。",
+      "glosses": [
+        {
+          "token_id": 18280,
+          "surface": "יִשָּׂשכָ֖ר",
+          "lemma": "3485",
+          "morphology": "HNp",
+          "ja": "イッサカルは"
+        },
+        {
+          "token_id": 18281,
+          "surface": "חֲמֹ֣ר",
+          "lemma": "2543",
+          "morphology": "HNcbsc",
+          "ja": "ろば"
+        },
+        {
+          "token_id": 18282,
+          "surface": "גָּ֑רֶם",
+          "lemma": "1634",
+          "morphology": "HNcmsa",
+          "ja": "骨太の／強い"
+        },
+        {
+          "token_id": 18283,
+          "surface": "רֹבֵ֖ץ",
+          "lemma": "7257",
+          "morphology": "HVqrmsa",
+          "ja": "伏している"
+        },
+        {
+          "token_id": 18284,
+          "surface": "בֵּ֥ין",
+          "lemma": "996",
+          "morphology": "HR",
+          "ja": "間に"
+        },
+        {
+          "token_id": 18285,
+          "surface": "הַֽמִּשְׁפְּתָֽיִם",
+          "lemma": "d/4942",
+          "morphology": "HTd/Ncmda",
+          "ja": "二つの荷籠／囲いの"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "イッサカルは『骨太のろば』に喩えられ、伏す姿は強さと休息を同時に表す。動物比喩だけでは怠惰と断定できず、次節の選択と負担へ続く像として読むべきである。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "休むことと担うことは敵ではない。良い憩いを受け取り、その力で負うべき荷を負いたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.15",
+      "literal_ja": "彼は憩い場が良いこと、その地が心地よいことを見た。彼は肩を傾けて担ぎ、賦役に属する働く者となった。",
+      "translation_ja": "安らかな場所と美しい土地を見て、彼は荷に肩を入れ、労役を担う者となった。",
+      "glosses": [
+        {
+          "token_id": 18286,
+          "surface": "וַיַּ֤רְא",
+          "lemma": "c/7200",
+          "morphology": "HC/Vqw3ms",
+          "ja": "そして彼は見た"
+        },
+        {
+          "token_id": 18287,
+          "surface": "מְנֻחָה֙",
+          "lemma": "4496",
+          "morphology": "HNcbsa",
+          "ja": "憩い場を"
+        },
+        {
+          "token_id": 18288,
+          "surface": "כִּ֣י",
+          "lemma": "3588 a",
+          "morphology": "HC",
+          "ja": "それが"
+        },
+        {
+          "token_id": 18289,
+          "surface": "ט֔וֹב",
+          "lemma": "2896 a",
+          "morphology": "HAamsa",
+          "ja": "良いことを"
+        },
+        {
+          "token_id": 18290,
+          "surface": "וְאֶת",
+          "lemma": "c/853",
+          "morphology": "HC/To",
+          "ja": "そして〜を"
+        },
+        {
+          "token_id": 18291,
+          "surface": "הָאָ֖רֶץ",
+          "lemma": "d/776",
+          "morphology": "HTd/Ncbsa",
+          "ja": "その地を"
+        },
+        {
+          "token_id": 18292,
+          "surface": "כִּ֣י",
+          "lemma": "3588 a",
+          "morphology": "HC",
+          "ja": "それが"
+        },
+        {
+          "token_id": 18293,
+          "surface": "נָעֵ֑מָה",
+          "lemma": "5276",
+          "morphology": "HVqp3fs",
+          "ja": "心地よいことを"
+        },
+        {
+          "token_id": 18294,
+          "surface": "וַיֵּ֤ט",
+          "lemma": "c/5186",
+          "morphology": "HC/Vqw3ms",
+          "ja": "そして彼は傾けた"
+        },
+        {
+          "token_id": 18295,
+          "surface": "שִׁכְמוֹ֙",
+          "lemma": "7926",
+          "morphology": "HNcmsc/Sp3ms",
+          "ja": "彼の肩を"
+        },
+        {
+          "token_id": 18296,
+          "surface": "לִסְבֹּ֔ל",
+          "lemma": "l/5445",
+          "morphology": "HR/Vqc",
+          "ja": "担ぐために"
+        },
+        {
+          "token_id": 18297,
+          "surface": "וַיְהִ֖י",
+          "lemma": "c/1961",
+          "morphology": "HC/Vqw3ms",
+          "ja": "そして彼はなった"
+        },
+        {
+          "token_id": 18298,
+          "surface": "לְמַס",
+          "lemma": "l/4522",
+          "morphology": "HR/Ncmsc",
+          "ja": "賦役に属する"
+        },
+        {
+          "token_id": 18299,
+          "surface": "עֹבֵֽד",
+          "lemma": "5647",
+          "morphology": "HVqrmsa",
+          "ja": "働く者に"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "『良い』『心地よい』という土地評価から、『肩を傾ける』『担ぐ』『賦役』へ転じる。安住への選好が労働を拒むのではなく、重い奉仕を引き受ける結果へつながる。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "心地よい土地を見た者が肩を差し出す。恵まれた環境を自己保存に閉じず、奉仕へ向け直したい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.16",
+      "literal_ja": "ダンはイスラエルの部族の一つとして、彼の民を裁く。",
+      "translation_ja": "ダンはイスラエルの一部族として、自らの民を治める。",
+      "glosses": [
+        {
+          "token_id": 18300,
+          "surface": "דָּ֖ן",
+          "lemma": "1835",
+          "morphology": "HNp",
+          "ja": "ダンは"
+        },
+        {
+          "token_id": 18301,
+          "surface": "יָדִ֣ין",
+          "lemma": "1777",
+          "morphology": "HVqi3ms",
+          "ja": "裁くであろう"
+        },
+        {
+          "token_id": 18302,
+          "surface": "עַמּ֑וֹ",
+          "lemma": "5971 a",
+          "morphology": "HNcmsc/Sp3ms",
+          "ja": "彼の民を"
+        },
+        {
+          "token_id": 18303,
+          "surface": "כְּאַחַ֖ד",
+          "lemma": "k/259",
+          "morphology": "HR/Acmsc",
+          "ja": "一つのものとして"
+        },
+        {
+          "token_id": 18304,
+          "surface": "שִׁבְטֵ֥י",
+          "lemma": "7626",
+          "morphology": "HNcmpc",
+          "ja": "部族の"
+        },
+        {
+          "token_id": 18305,
+          "surface": "יִשְׂרָאֵֽל",
+          "lemma": "3478",
+          "morphology": "HNp",
+          "ja": "イスラエルの"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "部族名ダンと動詞『裁く』が語呂をなし、小さな一部族にもイスラエルの中で司法・統治の役割があることを示す。『一つとして』は所属の平等を強調する。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "目立たない一部にも、民を支える役割が与えられる。大きさではなく、正しく裁き仕える忠実さを求めたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.17",
+      "literal_ja": "ダンは道の上の蛇、小道の上の毒蛇であれ。馬のかかとをかみ、その騎手を後ろへ倒すものとなれ。",
+      "translation_ja": "ダンは道端に潜む蛇、馬のかかとにかみつき、乗り手を後ろへ落とす毒蛇のようになる。",
+      "glosses": [
+        {
+          "token_id": 18306,
+          "surface": "יְהִי",
+          "lemma": "1961",
+          "morphology": "HVqi3ms",
+          "ja": "〜であれ"
+        },
+        {
+          "token_id": 18307,
+          "surface": "דָן֙",
+          "lemma": "1835",
+          "morphology": "HNp",
+          "ja": "ダンは"
+        },
+        {
+          "token_id": 18308,
+          "surface": "נָחָ֣שׁ",
+          "lemma": "5175",
+          "morphology": "HNcmsa",
+          "ja": "蛇に"
+        },
+        {
+          "token_id": 18309,
+          "surface": "עֲלֵי",
+          "lemma": "5921 a",
+          "morphology": "HR",
+          "ja": "〜の上の"
+        },
+        {
+          "token_id": 18310,
+          "surface": "דֶ֔רֶךְ",
+          "lemma": "1870",
+          "morphology": "HNcbsa",
+          "ja": "道"
+        },
+        {
+          "token_id": 18311,
+          "surface": "שְׁפִיפֹ֖ן",
+          "lemma": "8207",
+          "morphology": "HNcmsa",
+          "ja": "角ある蛇／毒蛇に"
+        },
+        {
+          "token_id": 18312,
+          "surface": "עֲלֵי",
+          "lemma": "5921 a",
+          "morphology": "HR",
+          "ja": "〜の上の"
+        },
+        {
+          "token_id": 18313,
+          "surface": "אֹ֑רַח",
+          "lemma": "734",
+          "morphology": "HNcbsa",
+          "ja": "小道"
+        },
+        {
+          "token_id": 18314,
+          "surface": "הַנֹּשֵׁךְ֙",
+          "lemma": "d/5391 a",
+          "morphology": "HTd/Vqrmsa",
+          "ja": "かむもの"
+        },
+        {
+          "token_id": 18315,
+          "surface": "עִקְּבֵי",
+          "lemma": "6119",
+          "morphology": "HNcmpc",
+          "ja": "かかとを"
+        },
+        {
+          "token_id": 18316,
+          "surface": "ס֔וּס",
+          "lemma": "5483 b",
+          "morphology": "HNcmsa",
+          "ja": "馬の"
+        },
+        {
+          "token_id": 18317,
+          "surface": "וַיִּפֹּ֥ל",
+          "lemma": "c/5307",
+          "morphology": "HC/Vqw3ms",
+          "ja": "すると倒れる"
+        },
+        {
+          "token_id": 18318,
+          "surface": "רֹכְב֖וֹ",
+          "lemma": "7392",
+          "morphology": "HVqrmsc/Sp3ms",
+          "ja": "その騎手は"
+        },
+        {
+          "token_id": 18319,
+          "surface": "אָחֽוֹר",
+          "lemma": "268",
+          "morphology": "HNcmsa",
+          "ja": "後ろへ"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "蛇は正面からの大力ではなく、道端から馬のかかとを狙う戦術を表す。小さな存在が騎手を倒す逆転は、ダンの裁きが機敏で非対称的な力として働くことを示す。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "弱く見える者にも、状況を変える知恵がある。ただし技巧を救いそのものとせず、力の用い方を神の前で問いたい。",
+          "sources": []
+        }
+      ]
+    },
+    {
+      "ref": "Gen.49.18",
+      "literal_ja": "あなたの救いを私は待ち望んだ、主よ。",
+      "translation_ja": "主よ、私はあなたの救いを待ち望みます。",
+      "glosses": [
+        {
+          "token_id": 18320,
+          "surface": "לִֽישׁוּעָתְךָ֖",
+          "lemma": "l/3444",
+          "morphology": "HR/Ncfsc/Sp2ms",
+          "ja": "あなたの救いを"
+        },
+        {
+          "token_id": 18321,
+          "surface": "קִוִּ֥יתִי",
+          "lemma": "6960 a",
+          "morphology": "HVpp1cs",
+          "ja": "私は待ち望んだ"
+        },
+        {
+          "token_id": 18322,
+          "surface": "יְהוָֽה",
+          "lemma": "3068",
+          "morphology": "HNp",
+          "ja": "主よ"
+        }
+      ],
+      "sections": [
+        {
+          "title": "語句・構文と節の動き",
+          "body": "短い第一人称の祈りが部族への三人称発話を中断する。救いはダンの策略そのものではなく主に属し、『待ち望んだ』という完了形が長く保たれた信頼を告白する。",
+          "sources": [
+            {
+              "author": "Sefaria",
+              "title": "Genesis 49 with classical commentaries",
+              "locator": "Genesis 49",
+              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+            }
+          ]
+        },
+        {
+          "title": "デボーショナルな受けとめ",
+          "body": "策略と力の語りのただ中で、祈りが主へ向かう。自分の手段を尽くしながらも、最終的な救いを神に待ち望みたい。",
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": "081-c1",
+      "title": "集めて聞かせる遺言とルベンの転落",
+      "refs": [
+        "Gen.49.1",
+        "Gen.49.2",
+        "Gen.49.3",
+        "Gen.49.4"
+      ],
+      "after_ref": "Gen.49.4",
+      "body": "1–2節の二重の集合命令は章全体を共同聴取の場として枠づける。3節は長子ルベンの本来の卓越を積み上げるが、4節は水の比喩と『上る』の反復によってその地位を反転させる。祝福集は単なる未来予報ではなく、過去の行為を部族の将来へ接続する父の評価として始まる。",
+      "sources": [
+        {
+          "author": "Sefaria",
+          "title": "Genesis 49 with classical commentaries",
+          "locator": "Genesis 49",
+          "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+        }
+      ]
+    },
+    {
+      "chunk_id": "081-c2",
+      "title": "シメオンとレビ—暴力への距離と分散",
+      "refs": [
+        "Gen.49.5",
+        "Gen.49.6",
+        "Gen.49.7"
+      ],
+      "after_ref": "Gen.49.7",
+      "body": "5–7節は兄弟の結束を暴力の共有として批判する。『魂／誉れ』『密議／集会』『怒り／憤り』『分ける／散らす』という並行は、私的感情が共同体の破壊へ変わる過程を描く。呪いが人物より怒りへ向けられる点は、人格と破壊的衝動を区別する読解を可能にする。",
+      "sources": [
+        {
+          "author": "J. H. Han",
+          "title": "Deconstruction of Violence in Jacob's Testament (Genesis 49)",
+          "locator": "pp. 1–22",
+          "url": "https://icu.repo.nii.ac.jp/record/1392/files/KJ00004933583.pdf"
+        },
+        {
+          "author": "Sefaria",
+          "title": "Genesis 49 with classical commentaries",
+          "locator": "Genesis 49",
+          "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+        }
+      ]
+    },
+    {
+      "chunk_id": "081-c3",
+      "title": "ユダ—獅子、王権、葡萄酒の豊穣",
+      "refs": [
+        "Gen.49.8",
+        "Gen.49.9",
+        "Gen.49.10",
+        "Gen.49.11",
+        "Gen.49.12"
+      ],
+      "after_ref": "Gen.49.12",
+      "body": "称賛、敵への勝利、兄弟の服従から始まり、獅子の比喩、王笏、諸民族の服従へと権威の像が拡大する。その後の葡萄酒と乳の誇張は、統治の目的を豊かな生活へ結びつける。10節の『シロ』はケティーブ／ケレーを含む難句であり、場所名、人物、あるいは異なる分節に基づく読みを区別し、後代のメシア的受容を本文の唯一の確定訳にしない。",
+      "sources": [
+        {
+          "author": "Richard C. Steiner",
+          "title": "Four Inner-Biblical Interpretations of Genesis 49:10",
+          "locator": "Genesis 49:10",
+          "url": "https://repository.yu.edu/bitstreams/21d957be-b7ba-4af2-95f4-03c6ef398195/download"
+        },
+        {
+          "author": "Rashi",
+          "title": "Commentary on Genesis",
+          "locator": "Genesis 49:10–12",
+          "url": "https://www.sefaria.org/Rashi_on_Genesis.49.10.1-12.2?lang=bi"
+        },
+        {
+          "author": "Sefaria",
+          "title": "Genesis 49 with classical commentaries",
+          "locator": "Genesis 49",
+          "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+        }
+      ]
+    },
+    {
+      "chunk_id": "081-c4",
+      "title": "ゼブルンとイッサカル—開かれた岸辺と担う肩",
+      "refs": [
+        "Gen.49.13",
+        "Gen.49.14",
+        "Gen.49.15"
+      ],
+      "after_ref": "Gen.49.15",
+      "body": "ゼブルンは海・船・シドンへ開かれ、イッサカルは土地の良さを見て肩を傾ける。港の移動性と、荷を担う定住性が隣り合い、共同体には異なる経済的・社会的役割があることを示す。ラシの受容ではイッサカルの良い土地が実りやトーラーの学びへ結びつくが、ペシャットでは賦役の重さも消せない。",
+      "sources": [
+        {
+          "author": "Rashi",
+          "title": "Commentary on Genesis",
+          "locator": "Genesis 49:15",
+          "url": "https://www.sefaria.org/Rashi_on_Genesis.49.15.1?lang=bi"
+        },
+        {
+          "author": "Sefaria",
+          "title": "Genesis 49 with classical commentaries",
+          "locator": "Genesis 49",
+          "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+        }
+      ]
+    },
+    {
+      "chunk_id": "081-c5",
+      "title": "ダンの逆転と主の救い",
+      "refs": [
+        "Gen.49.16",
+        "Gen.49.17",
+        "Gen.49.18"
+      ],
+      "after_ref": "Gen.49.18",
+      "body": "名ダンと『裁く』の語呂は部族の役割を示し、蛇の比喩は小さな者が騎手を倒す非対称の力を描く。しかし18節は発話を突然主への祈りへ変え、人間の巧みさと神の救いを区別する。イブン・エズラは18節を蛇に反撃される危険への応答として読み、文脈的な連続を重視する。",
+      "sources": [
+        {
+          "author": "Abraham ibn Ezra",
+          "title": "Commentary on the Torah",
+          "locator": "Genesis 49:18",
+          "url": "https://www.sefaria.org/Ibn_Ezra_on_Genesis.49.18.1?lang=bi"
+        },
+        {
+          "author": "Sefaria",
+          "title": "Genesis 49 with classical commentaries",
+          "locator": "Genesis 49",
+          "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+        }
+      ]
+    }
+  ],
+  "aliyah_research": [
+    {
+      "title": "部族語録としての多様性と章の構造的統一",
+      "body": "本段落は、長子の失墜、暴力への裁き、ユダの統治、ゼブルンとイッサカルの生業、ダンの裁きという異質な語録を連ねる。Olojedeは創世記49章を単なる寄せ集めとせず、動物比喩を含む軍事・統治の共通主題から構造的統一を論じる。1–18節だけでも、制御されない力（ルベン、シメオン、レビ）から、統御された権威（ユダ）、役割分担（ゼブルン、イッサカル、ダン）へ重心が移る。",
+      "sources": [
+        {
+          "author": "Funlola Olojede",
+          "title": "Genesis 49: The foundation of Israelite monarchy and priesthood",
+          "locator": "Journal for the Study of the Old Testament 43.4 (2019), pp. 612–631",
+          "url": "https://journals.sagepub.com/doi/10.1177/0309089217720625"
+        }
+      ]
+    },
+    {
+      "title": "ユダの優位と『シロ』の多義性",
+      "body": "8–12節は兄弟の称賛から諸民族の服従までを描き、ルベンらの失墜後にユダを前景化する。ただし10節は綴り、分節、語源の問題を抱えるため、王朝的・メシア的受容の歴史と、ペシャット上の不確定性を分けて扱う必要がある。ラシは王権の継続とダビデ系統を読む一方、現代研究は内的聖書解釈や地名理解を含む複数案を比較する。",
+      "sources": [
+        {
+          "author": "Richard C. Steiner",
+          "title": "Four Inner-Biblical Interpretations of Genesis 49:10",
+          "locator": "pp. 33–60",
+          "url": "https://repository.yu.edu/bitstreams/21d957be-b7ba-4af2-95f4-03c6ef398195/download"
+        },
+        {
+          "author": "Rashi",
+          "title": "Commentary on Genesis",
+          "locator": "Genesis 49:10",
+          "url": "https://www.sefaria.org/Rashi_on_Genesis.49.10.1?lang=bi"
+        }
+      ]
+    },
+    {
+      "title": "暴力の記憶、分散、そして救いの待望",
+      "body": "シメオンとレビの物語では、怒りが共同体を裂く力として記憶され、分散がその帰結となる。ダンの蛇は弱者の戦術的な力を肯定するように見えるが、直後の『あなたの救いを待ち望む』が救いの根拠を主へ戻す。この配置は、暴力を英雄化せず、人間の力を裁きと祈りのもとに置く。キリスト教受容では49:10がキリスト論的に読まれてきたが、本アリヤーではその受容史をペシャットやユダヤ注解と混同せず、本文の多声性を保つ。",
+      "sources": [
+        {
+          "author": "J. H. Han",
+          "title": "Deconstruction of Violence in Jacob's Testament (Genesis 49)",
+          "locator": "pp. 1–22",
+          "url": "https://icu.repo.nii.ac.jp/record/1392/files/KJ00004933583.pdf"
+        },
+        {
+          "author": "Abraham ibn Ezra",
+          "title": "Commentary on the Torah",
+          "locator": "Genesis 49:18",
+          "url": "https://www.sefaria.org/Ibn_Ezra_on_Genesis.49.18.1?lang=bi"
+        }
+      ]
+    }
+  ],
+  "research_notes": [
+    "本アリヤーの中心は父祖の遺言詩、部族評価、ユダの王権、ダンの救済待望であるため、関連の薄い後代の数秘術・星占術的伝統は扱わない。",
+    "ラビ的・中世ユダヤ注解と現代文学研究を区別し、キリスト教的メシア解釈は受容史として位置づけ、ペシャットの唯一解として用いない。"
+  ],
+  "quality_audit": {
+    "token_count": 187,
+    "verse_count": 18,
+    "all_tokens_mapped": true,
+    "lookup_miss_count": 0,
+    "blank_gloss_count": 0,
+    "hebrew_fallback_count": 0,
+    "private_translation_aligned": true,
+    "verse_specific_sections": true,
+    "devotional_sources_empty": true,
+    "sources_verified": true,
+    "WORK_JSON2_QUALITY": "PASS"
+  }
+}
