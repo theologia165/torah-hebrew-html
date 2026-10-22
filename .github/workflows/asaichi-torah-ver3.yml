@@ -35,8 +35,16 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install 'psycopg[binary]==3.2.9' requests beautifulsoup4 boto3 pillow
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
+          # Avoid the stalled HTTP Azure mirror seen during production 082.
+          for apt_source in /etc/apt/apt-mirrors.txt /etc/apt/sources.list /etc/apt/sources.list.d/ubuntu.sources; do
+            if [ -f "$apt_source" ]; then
+              sudo sed -i -e 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' -e 's|http://archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' "$apt_source"
+            fi
+          done
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 update
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends ffmpeg
+          ffmpeg -version
+          ffprobe -version
       - name: Validate Python and browser script syntax
         run: |
           python -m compileall -q ver3/scripts
