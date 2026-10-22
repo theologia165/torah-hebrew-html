@@ -1,4 +1,16 @@
-# 081-20261021-r1｜BLOCKED
+# 081-20261021-r1｜PASS
+
+2026-10-22T11:30:04Z：同じRUNの修復・配信を完了。
+
+- 修正コミット：0507d9bed65ab8cab22433d6c74ac5b947cb1f41
+- JSON2 3.1形式、必須項目、正規化hash、出典を訂正し、本番compose.validateを通過。
+- HTML 18/18、音声 18/18、Notion本文・freshカバー：PASS。
+- Notion：https://app.notion.com/p/081-49-1-18-4018aa4608ae81fd8955dada8023a34d
+- Gmail：081｜創世記49:1–18／message_id 1a1635f85a9a33a9／Sent確認済み／合格JPEG添付。
+- completion.jsonとproduction stateの081→082更新を同一コミットに記録。
+- 以下のBLOCKED記載は初回失敗時の履歴であり、現在の状態ではない。
+
+# 初回障害記録（修復前の履歴）
 
 - status: `BLOCKED`
 - production_state: `KEPT_AT_081`
