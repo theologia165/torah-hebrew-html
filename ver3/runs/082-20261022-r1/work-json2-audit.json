@@ -1,0 +1,28 @@
+{
+  "run_id": "082-20261022-r1",
+  "WORK_JSON2_QUALITY": "PASS",
+  "schema_version": "3.1-json2",
+  "verse_count": 8,
+  "token_count": 80,
+  "json1_sha256": "a287ee42c56c01456005249c06fe9e72ccb158498c0557040f9266775139c58d",
+  "json1_1_sha256": "923ed265c81ad00ce68c9d8bb5ac4af9788d72c4fae69d045e7edc899fb2d642",
+  "checks": {
+    "token_surface_lemma_morphology_gloss_correspondence": "PASS",
+    "translation_alignment": "PASS",
+    "verse_specific_commentary": "PASS",
+    "distinct_chunk_and_aliyah_topics": "PASS",
+    "sources_read_and_attribution_verified": "PASS",
+    "devotionals_distinct_and_empty_sources": "PASS",
+    "ltr_and_no_forbidden_phrase": "PASS",
+    "no_placeholders_or_lookup_misses": "PASS"
+  },
+  "translation_decisions": [
+    "49:21 女性単数の雌鹿と男性単数の与える者を区別",
+    "49:22 子・娘たちを保存し植物の比喩として私訳。数の不一致と異説を明記",
+    "49:24 ミッシャームの母音を保存。補足語は角括弧",
+    "49:25 エートは前置詞854。シャダイの語源を断定しない",
+    "49:26 ホーライの本文を保存し山々への修正と区別。ナジル人の誓願を推定しない"
+  ],
+  "research_scope": "当該RUNのJSON1.1から研究。Rashi、NET翻訳者の訳注、Hippolytusの実読箇所を参照。取得不能の論文は使用せず、成立年代の確証を仮作しない。",
+  "unresolved_glosses": []
+}
