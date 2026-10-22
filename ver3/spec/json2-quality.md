@@ -6,6 +6,27 @@ JSON2は朝一トーラーの知的・牧会的価値を担う中核成果物で
 
 最初に実データで各tokenの`token_id`、`token_index`、`surface`、`lemma_raw`、`morph_raw`、`lexeme`、`morph_segments`の存在・型を確認する。Strong Numberを使う場合は実際の`token.lexeme.strong_number`を確認し、別のキーや`H7200`形式を仮定しない。本文、lemma、形態、語IDをWorkが生成・補完・上書きしてはならない。
 
+## 構造契約とコミット前の実検証
+
+JSON1.1の`schema_version`とJSON2の版番号は独立している。JSON2は必ず`3.1-json2`とし、次のキー名を使う。
+
+- 最上位：`run_id`, `json1_sha256`, `json1_1_sha256`, `title`, `summary`, `conclusion`, `verses`, `chunks`, `aliyah_research`
+- 各節：`ref`, `glosses`（`token_id`, `ja`）, `translation`, `short_commentary`, `sections`
+- 各section：`heading`, `body`, `sources`
+- 各chunk：`id`, `heading`, `refs`, `after_ref`, `body`, `sources`
+- 各aliyah research：`heading`, `body`, `sources`
+- 各source：`label`, `url`。著者・著作・章節／頁は`label`に記す。
+
+`json1_1_sha256`はファイルのバイト列ではなく、読み込んだJSON1.1を`prepare.digest`で計算する（UTF-8、`ensure_ascii=False`, `sort_keys=True`, `separators=(',', ':')`）。
+
+コミット前に、作成した実JSON2に対して以下を実行し、成功を確認する。仮fixtureだけのテストや独自の抜粋検査は代わりにならない。
+
+```sh
+python ver3/scripts/validate_json2.py ver3/runs/{run_id}
+```
+
+これは`compose.validate`と同じ本番契約の読み取り専用検査であり、意味品質PASSを保証しない。以下の意味監査も別に全件実施する。
+
 ## 逐語訳
 
 全tokenをtoken_id順に扱い、同一tokenのsurface、lemma、morph_segmentsと節全体の構文を合わせて一語ずつ日本語化する。接続詞、前置詞、定冠詞、接尾辞人称、動詞語幹・活用を表層形の意味へ反映する。辞書対応表は補助に限り、JSON1.1より優先しない。空欄、ヘブライ語転記、「機能語」「未詳」「文脈をつなぐ語」等のfallbackで穴埋めしない。一語でも確定できなければコミットせず、ref、token_id、surface、lemma、morph、未解決理由を記録する。

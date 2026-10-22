@@ -1,14 +1,13 @@
 {
-  "schema_version": "3.0-json2",
+  "schema_version": "3.1-json2",
   "run_id": "081-20261021-r1",
   "json1_sha256": "038f17fc8b5017f64316f5e185eda0a5c0b3c655cc63a392609f207fd8236406",
-  "json1_1_sha256": "44f9fa98585fc4c147e8554d5891318d2206e846aab64cd036a895723bef6278",
+  "json1_1_sha256": "684ff749825a7bbfbeaf727dc8dedc4f5921dfc35e785bcc52fe54acfb7e4639",
   "WORK_JSON2_QUALITY": "PASS",
   "verses": [
     {
       "ref": "Gen.49.1",
       "literal_ja": "そしてヤコブは彼の息子たちを呼び、言った。『集まりなさい。そうすれば、日々の終わりにあなたがたに起こることを、私はあなたがたに告げよう。』",
-      "translation_ja": "ヤコブは息子たちを呼び寄せて言った。『集まりなさい。後の日々にあなたがたの身に起こることを告げよう。』",
       "glosses": [
         {
           "token_id": 18221,
@@ -111,28 +110,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "動詞『呼ぶ』に続いて命令形『集まりなさい』と目的を示す一人称ヒフィル『告げよう』が置かれる。『日々の終わり』はこの発話を家族の現状だけでなく、子らから生じる集団の将来へ開く。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.1（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "将来を知ることより先に、家族が同じ声の前へ集められる。私たちも先行きへの不安を、互いに離れる理由ではなく、神の言葉を共に聞く契機としたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "ヤコブは息子たちを呼び寄せて言った。『集まりなさい。後の日々にあなたがたの身に起こることを告げよう。』",
+      "short_commentary": "動詞『呼ぶ』に続いて命令形『集まりなさい』と目的を示す一人称ヒフィル『告げよう』が置かれる。『日々の終わり』はこの発話を家族の現状だけでなく、子らから生じる集団の将来へ開く。"
     },
     {
       "ref": "Gen.49.2",
       "literal_ja": "集まり、聞きなさい、ヤコブの息子たちよ。あなたがたの父イスラエルに聞きなさい。",
-      "translation_ja": "ヤコブの息子たちよ、集まって聞け。父イスラエルの言葉に耳を傾けよ。",
       "glosses": [
         {
           "token_id": 18329,
@@ -193,28 +191,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "『集まれ／聞け』が反復され、聞き手は『ヤコブの息子たち』であると同時に『イスラエルの子ら』として呼び直される。父の二つの名が家族史と共同体の将来を重ねる。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.2（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "『聞け』の反復は、近さが聞く姿勢を保証しないことを教える。慣れた声にも、今日あらためて心を向けたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "ヤコブの息子たちよ、集まって聞け。父イスラエルの言葉に耳を傾けよ。",
+      "short_commentary": "『集まれ／聞け』が反復され、聞き手は『ヤコブの息子たち』であると同時に『イスラエルの子ら』として呼び直される。父の二つの名が家族史と共同体の将来を重ねる。"
     },
     {
       "ref": "Gen.49.3",
       "literal_ja": "ルベンよ、あなたは私の長子、私の力、私の活力の初め。威厳における卓越、力における卓越。",
-      "translation_ja": "ルベンよ。お前は私の長子、私の力、生命力の初穂であり、威厳と力で最も高い座にあった。",
       "glosses": [
         {
           "token_id": 18456,
@@ -289,28 +286,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "『私の』という一人称接尾辞が長子・力・活力に連続し、ルベンに与えられていた優位を最大限に確認する。二度の『卓越』は、次節の喪失を際立たせる。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.3（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "与えられた力や地位は、所有ではなく委ねられた賜物である。始まりの恵みを誇りに変えず、忠実さへ返したい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "ルベンよ。お前は私の長子、私の力、生命力の初穂であり、威厳と力で最も高い座にあった。",
+      "short_commentary": "『私の』という一人称接尾辞が長子・力・活力に連続し、ルベンに与えられていた優位を最大限に確認する。二度の『卓越』は、次節の喪失を際立たせる。"
     },
     {
       "ref": "Gen.49.4",
       "literal_ja": "水のような奔放さ。あなたは卓越してはならない。あなたは父の寝床に上ったからだ。その時あなたは私の寝台を汚した。彼は上った。",
-      "translation_ja": "だが水のように制御を失ったお前は、もはや抜きん出ることがない。父の床に上り、私の寝台を汚したからだ。",
       "glosses": [
         {
           "token_id": 18525,
@@ -399,28 +395,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "『水のような奔放さ』は固定しない勢いを描き、『卓越してはならない』へ直結する。『上った』の反復は創世記35:22の行為を短く再演し、地位喪失の理由を明示する。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.4（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "一度の衝動が長い影を落とすことがある。だからこそ、勢いのまま進む前に立ち止まり、関係と境界を尊びたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "だが水のように制御を失ったお前は、もはや抜きん出ることがない。父の床に上り、私の寝台を汚したからだ。",
+      "short_commentary": "『水のような奔放さ』は固定しない勢いを描き、『卓越してはならない』へ直結する。『上った』の反復は創世記35:22の行為を短く再演し、地位喪失の理由を明示する。"
     },
     {
       "ref": "Gen.49.5",
       "literal_ja": "シメオンとレビは兄弟。暴虐の器具は彼らの武器。",
-      "translation_ja": "シメオンとレビは似た者どうし。その武器は暴力の道具だ。",
       "glosses": [
         {
           "token_id": 18537,
@@ -467,28 +462,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
-          "body": "二人は『兄弟』と一括され、武器が『暴虐の器具』と評価される。血縁上の結束そのものではなく、共有された暴力の仕方が問題にされる。",
+          "body": "二人は『兄弟』と一括され、武器が『暴虐の器具』と評価される。血縁上の結束そのものではなく、共有された暴力の仕方が問題にされる。末尾の語メケローテーヘムは解釈の難しい語であり、ここでは「彼らの武器」を採るが、語義が一意に確定したという意味ではない。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.5（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "結束は、それだけで善ではない。仲間との強い連帯が弱い者を傷つける道具になっていないかを吟味したい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "シメオンとレビは似た者どうし。その武器は暴力の道具だ。",
+      "short_commentary": "二人は『兄弟』と一括され、武器が『暴虐の器具』と評価される。血縁上の結束そのものではなく、共有された暴力の仕方が問題にされる。"
     },
     {
       "ref": "Gen.49.6",
       "literal_ja": "彼らの密議に私の魂は入ってはならない。彼らの集会に私の誉れは一つになってはならない。彼らは怒りのうちに人を殺し、意のままに雄牛の腱を切ったからだ。",
-      "translation_ja": "私自身よ、彼らの相談に加わるな。私の誉れよ、彼らの集まりと結ばれるな。怒りに任せて人を殺し、気ままに雄牛の腱まで切った者たちだからだ。",
       "glosses": [
         {
           "token_id": 18543,
@@ -598,28 +592,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "『私の魂』『私の誉れ』への二重の禁止は、語り手が彼らの密議と集会から自らを切り離す強い並行法である。人の殺害と雄牛への加害は怒りと恣意の広がりを示す。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.6（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "悪い企てから距離を取ることも信仰の行為である。沈黙の同意を避け、魂と誉れを暴力へ預けない勇気を求めたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "私自身よ、彼らの相談に加わるな。私の誉れよ、彼らの集まりと結ばれるな。怒りに任せて人を殺し、気ままに雄牛の腱まで切った者たちだからだ。",
+      "short_commentary": "『私の魂』『私の誉れ』への二重の禁止は、語り手が彼らの密議と集会から自らを切り離す強い並行法である。人の殺害と雄牛への加害は怒りと恣意の広がりを示す。"
     },
     {
       "ref": "Gen.49.7",
       "literal_ja": "呪われよ、彼らの怒りは激しいから。彼らの憤りは苛酷だから。私は彼らをヤコブの中で分け、イスラエルの中で散らす。",
-      "translation_ja": "激しすぎる怒りも、残酷な憤りも呪われよ。私は二人をヤコブのうちで分け、イスラエルの中に散らす。",
       "glosses": [
         {
           "token_id": 18558,
@@ -701,28 +694,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "呪いの対象は二人そのものより『怒り』『憤り』である。結末の二つの一人称動詞『分ける／散らす』は、制御されない力に共同体的な限界が置かれることを告げる。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.7（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "人を呪うのではなく、私たちを支配する怒りを退ける言葉がここにある。怒りを正義と取り違えず、力に境界を置きたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "激しすぎる怒りも、残酷な憤りも呪われよ。私は二人をヤコブのうちで分け、イスラエルの中に散らす。",
+      "short_commentary": "呪いの対象は二人そのものより『怒り』『憤り』である。結末の二つの一人称動詞『分ける／散らす』は、制御されない力に共同体的な限界が置かれることを告げる。"
     },
     {
       "ref": "Gen.49.8",
       "literal_ja": "ユダよ、あなたを兄弟たちはほめる。あなたの手は敵たちのうなじにあり、あなたの父の息子たちはあなたに身をかがめる。",
-      "translation_ja": "ユダよ、兄弟たちはお前をたたえる。お前は敵のうなじを押さえ、父の子らはお前の前にひれ伏す。",
       "glosses": [
         {
           "token_id": 18569,
@@ -804,28 +796,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "ユダの名と『ほめる』の音の響きが冒頭に立ち、兄弟の称賛・敵への勝利・父の子らの服従が三段で描かれる。手、うなじ、身をかがめる動作が具体的な権威像を作る。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.8（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "真の権威は、兄弟の称賛と敵への勝利の両方で試される。人を屈服させることではなく、委ねられた力を守りに用いたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "ユダよ、兄弟たちはお前をたたえる。お前は敵のうなじを押さえ、父の子らはお前の前にひれ伏す。",
+      "short_commentary": "ユダの名と『ほめる』の音の響きが冒頭に立ち、兄弟の称賛・敵への勝利・父の子らの服従が三段で描かれる。手、うなじ、身をかがめる動作が具体的な権威像を作る。"
     },
     {
       "ref": "Gen.49.9",
       "literal_ja": "獅子の子はユダ。獲物から、私の息子よ、あなたは上った。彼は身をかがめ、獅子のように、雌獅子のように伏した。誰が彼を起こせようか。",
-      "translation_ja": "ユダは若獅子。息子よ、お前は獲物を仕留めて上って来た。獅子のように身を伏せた彼を、誰があえて起こせるだろう。",
       "glosses": [
         {
           "token_id": 18580,
@@ -914,28 +905,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "『獅子の子』から伏す成獣へ比喩が展開し、獲物から上る動きと、誰も起こせない安定が組み合わされる。力は無秩序な暴力でなく、勝利後に保たれる威厳として語られる。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.9（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "獅子の強さは絶えず吠えることではなく、勝利の後に落ち着いて伏すことにも現れる。成果の後に誇示せず、節度ある平安を選びたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "ユダは若獅子。息子よ、お前は獲物を仕留めて上って来た。獅子のように身を伏せた彼を、誰があえて起こせるだろう。",
+      "short_commentary": "『獅子の子』から伏す成獣へ比喩が展開し、獲物から上る動きと、誰も起こせない安定が組み合わされる。力は無秩序な暴力でなく、勝利後に保たれる威厳として語られる。"
     },
     {
       "ref": "Gen.49.10",
       "literal_ja": "王笏はユダから離れず、統治者の杖は彼の足の間から離れない。シロが来る時まで。そして彼に諸民族の服従がある。",
-      "translation_ja": "王権のしるしはユダを離れず、支配者の杖はその足もとから消えない。『シロ』が来る時まで、諸国の民は彼に従う。",
       "glosses": [
         {
           "token_id": 18235,
@@ -1045,28 +1035,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "『王笏』『統治者の杖』はユダの統治を表す一方、『シロ』と『服従』の語は本文上・語義上に難しさを残す。ケティーブとケレーを併記し、一つのメシア的読みだけで不確定性を消さないことが重要である。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.10（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "解き切れない言葉の前で、性急に一つの答えへ閉じないことも敬虔さである。約束を握りつつ、本文の奥行きに耳を澄ませたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "王権のしるしはユダを離れず、支配者の杖はその足もとから消えない。『シロ』が来る時まで、諸国の民は彼に従う。",
+      "short_commentary": "『王笏』『統治者の杖』はユダの統治を表す一方、『シロ』と『服従』の語は本文上・語義上に難しさを残す。ケティーブとケレーを併記し、一つのメシア的読みだけで不確定性を消さないことが重要である。"
     },
     {
       "ref": "Gen.49.11",
       "literal_ja": "彼はその子ろばをぶどうの木につなぎ、その雌ろばの子を極上のぶどうの木につなぐ。彼は衣をぶどう酒で、上着をぶどうの実の血で洗った。",
-      "translation_ja": "子ろばをぶどうの木に結べるほど実りは豊かで、衣をぶどう酒で洗えるほど葡萄が満ちる。",
       "glosses": [
         {
           "token_id": 18250,
@@ -1169,28 +1158,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "子ろばと雌ろばの子、ぶどうの木と極上のぶどうの木、衣と上着が並行する。葡萄酒で洗うという誇張表現は、支配の後に続く土地の圧倒的な豊穣を描く。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.11（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "豊かさは不足への恐れを和らげ、分かち合う余裕を生む。恵みを蓄えるだけでなく、他者を潤す実りとして受け取りたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "子ろばをぶどうの木に結べるほど実りは豊かで、衣をぶどう酒で洗えるほど葡萄が満ちる。",
+      "short_commentary": "子ろばと雌ろばの子、ぶどうの木と極上のぶどうの木、衣と上着が並行する。葡萄酒で洗うという誇張表現は、支配の後に続く土地の圧倒的な豊穣を描く。"
     },
     {
       "ref": "Gen.49.12",
       "literal_ja": "彼の両目はぶどう酒によって暗く輝き、両歯は乳によって白い。",
-      "translation_ja": "その目は葡萄酒の色に輝き、その歯は乳のように白い。",
       "glosses": [
         {
           "token_id": 18264,
@@ -1237,28 +1225,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
-          "body": "両目と両歯、葡萄酒と乳、暗い輝きと白さが対をなす。身体描写を通して前節の豊穣が人の健康と美しさにまで及ぶ。",
+          "body": "両目と両歯、葡萄酒と乳、暗い輝きと白さが対をなす。身体描写を通して前節の豊穣が人の健康と美しさにまで及ぶ。前置詞ミンを原因の「〜によって」と採るか、比較の「〜より」と採るかで訳が変わり得る。ここでは葡萄酒と乳による豊かな養いの像として読む。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.12（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "神の祝福は抽象的な成功だけでなく、食べ、飲み、生きる身体にも届く。日々の養いを当然とせず感謝したい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "その目は葡萄酒の色に輝き、その歯は乳のように白い。",
+      "short_commentary": "両目と両歯、葡萄酒と乳、暗い輝きと白さが対をなす。身体描写を通して前節の豊穣が人の健康と美しさにまで及ぶ。"
     },
     {
       "ref": "Gen.49.13",
       "literal_ja": "ゼブルンは海々の岸辺に住む。彼は船々の岸辺におり、その側面はシドンに向かう。",
-      "translation_ja": "ゼブルンは海辺に住み、船の港となる。その境はシドンの方へ延びる。",
       "glosses": [
         {
           "token_id": 18270,
@@ -1333,28 +1320,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "『岸辺』が二度反復され、海・船・シドンがゼブルンを交易の開かれた空間へ配置する。ただし後代の領土図と単純に一致させず、詩的・地理的志向として読む必要がある。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.13（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "海辺は危険と交流の両方へ開かれた場所である。境界に立つ務めを恐れず、人と世界を結ぶ港となりたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "ゼブルンは海辺に住み、船の港となる。その境はシドンの方へ延びる。",
+      "short_commentary": "『岸辺』が二度反復され、海・船・シドンがゼブルンを交易の開かれた空間へ配置する。ただし後代の領土図と単純に一致させず、詩的・地理的志向として読む必要がある。"
     },
     {
       "ref": "Gen.49.14",
       "literal_ja": "イッサカルは骨太のろば、二つの荷籠の間に伏している。",
-      "translation_ja": "イッサカルはたくましいろば。荷籠の間に身を伏せている。",
       "glosses": [
         {
           "token_id": 18280,
@@ -1401,28 +1387,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "イッサカルは『骨太のろば』に喩えられ、伏す姿は強さと休息を同時に表す。動物比喩だけでは怠惰と断定できず、次節の選択と負担へ続く像として読むべきである。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.14（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "休むことと担うことは敵ではない。良い憩いを受け取り、その力で負うべき荷を負いたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "イッサカルはたくましいろば。荷籠の間に身を伏せている。",
+      "short_commentary": "イッサカルは『骨太のろば』に喩えられ、伏す姿は強さと休息を同時に表す。動物比喩だけでは怠惰と断定できず、次節の選択と負担へ続く像として読むべきである。"
     },
     {
       "ref": "Gen.49.15",
       "literal_ja": "彼は憩い場が良いこと、その地が心地よいことを見た。彼は肩を傾けて担ぎ、賦役に属する働く者となった。",
-      "translation_ja": "安らかな場所と美しい土地を見て、彼は荷に肩を入れ、労役を担う者となった。",
       "glosses": [
         {
           "token_id": 18286,
@@ -1525,28 +1510,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
-          "body": "『良い』『心地よい』という土地評価から、『肩を傾ける』『担ぐ』『賦役』へ転じる。安住への選好が労働を拒むのではなく、重い奉仕を引き受ける結果へつながる。",
+          "body": "「良い」「心地よい」という土地評価から、「肩を傾ける」「担ぐ」「賦役」へ転じる。定住の利点と、その代償となる従属労働が並ぶ。これを自発的奉仕への単純な賛美にも、怠惰への一律の非難にも還元しない。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.15（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "心地よい土地を見た者が肩を差し出す。恵まれた環境を自己保存に閉じず、奉仕へ向け直したい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "安らかな場所と美しい土地を見て、彼は荷に肩を入れ、労役を担う者となった。",
+      "short_commentary": "良い土地への安住は、賦役を担う従属状態とも隣り合わせです。土地の恵みと、そのために負う重荷の両方が描かれます。"
     },
     {
       "ref": "Gen.49.16",
       "literal_ja": "ダンはイスラエルの部族の一つとして、彼の民を裁く。",
-      "translation_ja": "ダンはイスラエルの一部族として、自らの民を治める。",
       "glosses": [
         {
           "token_id": 18300,
@@ -1593,28 +1577,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "部族名ダンと動詞『裁く』が語呂をなし、小さな一部族にもイスラエルの中で司法・統治の役割があることを示す。『一つとして』は所属の平等を強調する。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.16（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "目立たない一部にも、民を支える役割が与えられる。大きさではなく、正しく裁き仕える忠実さを求めたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "ダンはイスラエルの一部族として、自らの民を治める。",
+      "short_commentary": "部族名ダンと動詞『裁く』が語呂をなし、小さな一部族にもイスラエルの中で司法・統治の役割があることを示す。『一つとして』は所属の平等を強調する。"
     },
     {
       "ref": "Gen.49.17",
       "literal_ja": "ダンは道の上の蛇、小道の上の毒蛇であれ。馬のかかとをかみ、その騎手を後ろへ倒すものとなれ。",
-      "translation_ja": "ダンは道端に潜む蛇、馬のかかとにかみつき、乗り手を後ろへ落とす毒蛇のようになる。",
       "glosses": [
         {
           "token_id": 18306,
@@ -1717,28 +1700,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
           "body": "蛇は正面からの大力ではなく、道端から馬のかかとを狙う戦術を表す。小さな存在が騎手を倒す逆転は、ダンの裁きが機敏で非対称的な力として働くことを示す。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.17（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "弱く見える者にも、状況を変える知恵がある。ただし技巧を救いそのものとせず、力の用い方を神の前で問いたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "ダンは道端に潜む蛇、馬のかかとにかみつき、乗り手を後ろへ落とす毒蛇のようになる。",
+      "short_commentary": "蛇は正面からの大力ではなく、道端から馬のかかとを狙う戦術を表す。小さな存在が騎手を倒す逆転は、ダンの裁きが機敏で非対称的な力として働くことを示す。"
     },
     {
       "ref": "Gen.49.18",
       "literal_ja": "あなたの救いを私は待ち望んだ、主よ。",
-      "translation_ja": "主よ、私はあなたの救いを待ち望みます。",
       "glosses": [
         {
           "token_id": 18320,
@@ -1764,29 +1746,27 @@
       ],
       "sections": [
         {
-          "title": "語句・構文と節の動き",
-          "body": "短い第一人称の祈りが部族への三人称発話を中断する。救いはダンの策略そのものではなく主に属し、『待ち望んだ』という完了形が長く保たれた信頼を告白する。",
+          "body": "短い第一人称の祈りが、部族についての発話を中断する。救いは主に属し、「待ち望んだ／待ち望んできた」というピエル完了形が語り手の信頼を表す。完了形だけから具体的な待機期間を決めることはできない。",
           "sources": [
             {
-              "author": "Sefaria",
-              "title": "Genesis 49 with classical commentaries",
-              "locator": "Genesis 49",
-              "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+              "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.18（当該RUNのJSON1.1で本文・形態を確認した筆者の釈義）",
+              "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
             }
-          ]
+          ],
+          "heading": "語句・構文と節の動き"
         },
         {
-          "title": "デボーショナルな受けとめ",
           "body": "策略と力の語りのただ中で、祈りが主へ向かう。自分の手段を尽くしながらも、最終的な救いを神に待ち望みたい。",
-          "sources": []
+          "sources": [],
+          "heading": "デボーショナルな受けとめ"
         }
-      ]
+      ],
+      "translation": "主よ、私はあなたの救いを待ち望みます。",
+      "short_commentary": "部族の力を語る言葉が、ここで主への祈りに変わります。語り手は救いを自分の力ではなく主に求めています。"
     }
   ],
   "chunks": [
     {
-      "chunk_id": "081-c1",
-      "title": "集めて聞かせる遺言とルベンの転落",
       "refs": [
         "Gen.49.1",
         "Gen.49.2",
@@ -1797,41 +1777,35 @@
       "body": "1–2節の二重の集合命令は章全体を共同聴取の場として枠づける。3節は長子ルベンの本来の卓越を積み上げるが、4節は水の比喩と『上る』の反復によってその地位を反転させる。祝福集は単なる未来予報ではなく、過去の行為を部族の将来へ接続する父の評価として始まる。",
       "sources": [
         {
-          "author": "Sefaria",
-          "title": "Genesis 49 with classical commentaries",
-          "locator": "Genesis 49",
-          "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+          "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.1–Gen.49.4（当該RUN本文の釈義）",
+          "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
         }
-      ]
+      ],
+      "id": "081-c1",
+      "heading": "集めて聞かせる遺言とルベンの転落"
     },
     {
-      "chunk_id": "081-c2",
-      "title": "シメオンとレビ—暴力への距離と分散",
       "refs": [
         "Gen.49.5",
         "Gen.49.6",
         "Gen.49.7"
       ],
       "after_ref": "Gen.49.7",
-      "body": "5–7節は兄弟の結束を暴力の共有として批判する。『魂／誉れ』『密議／集会』『怒り／憤り』『分ける／散らす』という並行は、私的感情が共同体の破壊へ変わる過程を描く。呪いが人物より怒りへ向けられる点は、人格と破壊的衝動を区別する読解を可能にする。",
+      "body": "5–7節は兄弟の結束を暴力の共有として批判する。「魂／誉れ」「密議／集会」「怒り／憤り」「分ける／散らす」という並行法が連なり、ヤコブは二人の行動から距離を置く。ラシも7節で、呪いが二人そのものではなく怒りへ向けられる点に注目する。人の尊厳を否定せずに、破壊的な行為と衝動を裁くという区別が大切である。",
       "sources": [
         {
-          "author": "J. H. Han",
-          "title": "Deconstruction of Violence in Jacob's Testament (Genesis 49)",
-          "locator": "pp. 1–22",
-          "url": "https://icu.repo.nii.ac.jp/record/1392/files/KJ00004933583.pdf"
+          "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.5–Gen.49.7（当該RUN本文の釈義）",
+          "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
         },
         {
-          "author": "Sefaria",
-          "title": "Genesis 49 with classical commentaries",
-          "locator": "Genesis 49",
-          "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+          "label": "ラシ『創世記注解』49:7",
+          "url": "https://www.chabad.org/library/bible_cdo/aid/8244/jewish/Chapter-49.htm"
         }
-      ]
+      ],
+      "id": "081-c2",
+      "heading": "シメオンとレビ—暴力への距離と分散"
     },
     {
-      "chunk_id": "081-c3",
-      "title": "ユダ—獅子、王権、葡萄酒の豊穣",
       "refs": [
         "Gen.49.8",
         "Gen.49.9",
@@ -1840,132 +1814,110 @@
         "Gen.49.12"
       ],
       "after_ref": "Gen.49.12",
-      "body": "称賛、敵への勝利、兄弟の服従から始まり、獅子の比喩、王笏、諸民族の服従へと権威の像が拡大する。その後の葡萄酒と乳の誇張は、統治の目的を豊かな生活へ結びつける。10節の『シロ』はケティーブ／ケレーを含む難句であり、場所名、人物、あるいは異なる分節に基づく読みを区別し、後代のメシア的受容を本文の唯一の確定訳にしない。",
+      "body": "兄弟の称賛と敵への勝利から、獅子、王笏、葡萄酒と乳へと像が展開する。統治の威厳と土地の豊穣が同じ詩に置かれる。10節の「シロ」は難語であり、本文の綴りの問題と、その後のメシア的解釈は区別すべきである。さらにシュタイナーは「アド」の語義と統語の多義性を検討し、「〜まで」が王権の終わりを意味するのか、成就の頂点を意味するのかも研究上の論点とする。",
       "sources": [
         {
-          "author": "Richard C. Steiner",
-          "title": "Four Inner-Biblical Interpretations of Genesis 49:10",
-          "locator": "Genesis 49:10",
-          "url": "https://repository.yu.edu/bitstreams/21d957be-b7ba-4af2-95f4-03c6ef398195/download"
+          "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.8–Gen.49.12（当該RUN本文の釈義）",
+          "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
         },
         {
-          "author": "Rashi",
-          "title": "Commentary on Genesis",
-          "locator": "Genesis 49:10–12",
-          "url": "https://www.sefaria.org/Rashi_on_Genesis.49.10.1-12.2?lang=bi"
-        },
-        {
-          "author": "Sefaria",
-          "title": "Genesis 49 with classical commentaries",
-          "locator": "Genesis 49",
-          "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+          "label": "Richard C. Steiner, “Four Inner-Biblical Interpretations of Genesis 49:10,” JBL 132.1 (2013), pp. 33–35（論点の導入）",
+          "url": "https://media.alhatorah.org/1Bereshit/49/Inner-Biblical%20-%20Richard%20Steiner%20-%20JBL%20132.pdf"
         }
-      ]
+      ],
+      "id": "081-c3",
+      "heading": "ユダ—獅子、王権、葡萄酒の豊穣"
     },
     {
-      "chunk_id": "081-c4",
-      "title": "ゼブルンとイッサカル—開かれた岸辺と担う肩",
       "refs": [
         "Gen.49.13",
         "Gen.49.14",
         "Gen.49.15"
       ],
       "after_ref": "Gen.49.15",
-      "body": "ゼブルンは海・船・シドンへ開かれ、イッサカルは土地の良さを見て肩を傾ける。港の移動性と、荷を担う定住性が隣り合い、共同体には異なる経済的・社会的役割があることを示す。ラシの受容ではイッサカルの良い土地が実りやトーラーの学びへ結びつくが、ペシャットでは賦役の重さも消せない。",
+      "body": "ゼブルンは海と船へ向かい、イッサカルは土地に身を置いて荷を担う。移動と定住、交易と労働という対照が生まれる。ラシは13–15節を交易による学びの支援とトーラーの重荷へ結びつけるが、これは伝統的な受容の展開である。本文の「賦役」が含む従属の緊張を、その読みだけで消してはならない。",
       "sources": [
         {
-          "author": "Rashi",
-          "title": "Commentary on Genesis",
-          "locator": "Genesis 49:15",
-          "url": "https://www.sefaria.org/Rashi_on_Genesis.49.15.1?lang=bi"
+          "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.13–Gen.49.15（当該RUN本文の釈義）",
+          "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
         },
         {
-          "author": "Sefaria",
-          "title": "Genesis 49 with classical commentaries",
-          "locator": "Genesis 49",
-          "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+          "label": "ラシ『創世記注解』49:13–15",
+          "url": "https://www.chabad.org/library/bible_cdo/aid/8244/jewish/Chapter-49.htm"
         }
-      ]
+      ],
+      "id": "081-c4",
+      "heading": "ゼブルンとイッサカル—開かれた岸辺と担う肩"
     },
     {
-      "chunk_id": "081-c5",
-      "title": "ダンの逆転と主の救い",
       "refs": [
         "Gen.49.16",
         "Gen.49.17",
         "Gen.49.18"
       ],
       "after_ref": "Gen.49.18",
-      "body": "名ダンと『裁く』の語呂は部族の役割を示し、蛇の比喩は小さな者が騎手を倒す非対称の力を描く。しかし18節は発話を突然主への祈りへ変え、人間の巧みさと神の救いを区別する。イブン・エズラは18節を蛇に反撃される危険への応答として読み、文脈的な連続を重視する。",
+      "body": "ダンと「裁く」の語呂は部族の役割を示し、蛇の比喩は小さな者が騎手を倒す逆転を描く。18節では主への第一人称の祈りへ転じる。これを人の戦術と神の救いの区別として読むことができる。一方、ラシはサムソンの晩年の祈りとの連関を読む。これは後の物語を重ねる伝統的読解であり、本文がサムソンを名指しているわけではない。",
       "sources": [
         {
-          "author": "Abraham ibn Ezra",
-          "title": "Commentary on the Torah",
-          "locator": "Genesis 49:18",
-          "url": "https://www.sefaria.org/Ibn_Ezra_on_Genesis.49.18.1?lang=bi"
+          "label": "Open Scriptures Hebrew Bible / MorphHB, WLC, Gen.49.16–Gen.49.18（当該RUN本文の釈義）",
+          "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Gen.xml"
         },
         {
-          "author": "Sefaria",
-          "title": "Genesis 49 with classical commentaries",
-          "locator": "Genesis 49",
-          "url": "https://www.sefaria.org/Genesis.49.1?lang=bi&with=Commentary"
+          "label": "ラシ『創世記注解』49:18",
+          "url": "https://www.chabad.org/library/bible_cdo/aid/8244/jewish/Chapter-49.htm"
         }
-      ]
+      ],
+      "id": "081-c5",
+      "heading": "ダンの逆転と主の救い"
     }
   ],
   "aliyah_research": [
     {
-      "title": "部族語録としての多様性と章の構造的統一",
-      "body": "本段落は、長子の失墜、暴力への裁き、ユダの統治、ゼブルンとイッサカルの生業、ダンの裁きという異質な語録を連ねる。Olojedeは創世記49章を単なる寄せ集めとせず、動物比喩を含む軍事・統治の共通主題から構造的統一を論じる。1–18節だけでも、制御されない力（ルベン、シメオン、レビ）から、統御された権威（ユダ）、役割分担（ゼブルン、イッサカル、ダン）へ重心が移る。",
+      "heading": "文学研究—多様な部族語録をどう一つに読むか",
+      "body": "ルベンの優位の喪失、シメオンとレビへの裁き、ユダの統治、ゼブルンとイッサカルの生活、ダンの戦いは、同じ種類の祝辞ではない。トゥワースキーは公開要旨で、動物比喩の軍事的方向と長子の権能の配分に着目し、王権と祭司職を二つの系列として章の統一性を読む仮説を示す。ここでは要旨で確認できた範囲に限って紹介する。本アリヤーの結末にある18節の祈りを転換点として読むのもその提案に属する。各部族の性格を固定的な民族評価にするのではなく、役割と権力の配置を問う視点である。",
       "sources": [
         {
-          "author": "Funlola Olojede",
-          "title": "Genesis 49: The foundation of Israelite monarchy and priesthood",
-          "locator": "Journal for the Study of the Old Testament 43.4 (2019), pp. 612–631",
+          "label": "Geula Twersky, “Genesis 49: The foundation of Israelite monarchy and priesthood,” JSOT 43.3 (2019), pp. 317–333（公開要旨を確認）",
           "url": "https://journals.sagepub.com/doi/10.1177/0309089217720625"
         }
       ]
     },
     {
-      "title": "ユダの優位と『シロ』の多義性",
-      "body": "8–12節は兄弟の称賛から諸民族の服従までを描き、ルベンらの失墜後にユダを前景化する。ただし10節は綴り、分節、語源の問題を抱えるため、王朝的・メシア的受容の歴史と、ペシャット上の不確定性を分けて扱う必要がある。ラシは王権の継続とダビデ系統を読む一方、現代研究は内的聖書解釈や地名理解を含む複数案を比較する。",
+      "heading": "文献学—「シロ」だけでなく「〜まで」も問う",
+      "body": "49:10の難しさは固有名らしい語シロだけにない。シュタイナーはアドの語義と周囲の語との結びつきを検討し、王権の継続、期限、頂点をめぐる複数の読みを区別する。そしてナタン、アヒヤ、エゼキエル、ゼカリヤの預言にこの句の内的聖書解釈を見いだす仮説を論じる。これは王朝の盛衰に応じた受容を追う研究であり、現代の一つの日本語訳を唯一解とする根拠ではない。私訳では難語を「シロ」と残し、解説で不確定性を明示する。",
       "sources": [
         {
-          "author": "Richard C. Steiner",
-          "title": "Four Inner-Biblical Interpretations of Genesis 49:10",
-          "locator": "pp. 33–60",
-          "url": "https://repository.yu.edu/bitstreams/21d957be-b7ba-4af2-95f4-03c6ef398195/download"
-        },
-        {
-          "author": "Rashi",
-          "title": "Commentary on Genesis",
-          "locator": "Genesis 49:10",
-          "url": "https://www.sefaria.org/Rashi_on_Genesis.49.10.1?lang=bi"
+          "label": "Richard C. Steiner, “Four Inner-Biblical Interpretations of Genesis 49:10,” JBL 132.1 (2013), pp. 33–35（論点の導入）",
+          "url": "https://media.alhatorah.org/1Bereshit/49/Inner-Biblical%20-%20Richard%20Steiner%20-%20JBL%20132.pdf"
         }
       ]
     },
     {
-      "title": "暴力の記憶、分散、そして救いの待望",
-      "body": "シメオンとレビの物語では、怒りが共同体を裂く力として記憶され、分散がその帰結となる。ダンの蛇は弱者の戦術的な力を肯定するように見えるが、直後の『あなたの救いを待ち望む』が救いの根拠を主へ戻す。この配置は、暴力を英雄化せず、人間の力を裁きと祈りのもとに置く。キリスト教受容では49:10がキリスト論的に読まれてきたが、本アリヤーではその受容史をペシャットやユダヤ注解と混同せず、本文の多声性を保つ。",
+      "heading": "ユダヤ教解釈伝統—本文の像とミドラシュの展開",
+      "body": "ラシは、ヤコブが終わりを明かそうとしたが神の臨在が退いたという伝承を1節に重ねる。また7節では人と怒りを区別し、13–15節では交易とトーラーの学びの相互扶助を読む。これらは同じ方法の説明ではなく、語句の観察と後代の伝承による展開が併存する注解である。本文の語義から導く釈義と、伝承が共同体へ与える意味を区別して受け取る必要がある。",
       "sources": [
         {
-          "author": "J. H. Han",
-          "title": "Deconstruction of Violence in Jacob's Testament (Genesis 49)",
-          "locator": "pp. 1–22",
-          "url": "https://icu.repo.nii.ac.jp/record/1392/files/KJ00004933583.pdf"
-        },
+          "label": "ラシ『創世記注解』49:1, 7, 13–15",
+          "url": "https://www.chabad.org/library/bible_cdo/aid/8244/jewish/Chapter-49.htm"
+        }
+      ]
+    },
+    {
+      "heading": "キリスト教受容史—ユスティノスのキリスト論的読解",
+      "body": "ユスティノスは『トリュフォンとの対話』52章で49:8–12を引用してキリストの来臨を論じ、53章では子ろばをエルサレム入城と諸民族の信仰に結びつける。これは二世紀のキリスト教が本詩をどう再読したかを示す一次資料である。ユダヤ人との論争的主張も含むため、その論争を歴史的事実の判定として無批判に採用しない。またギリシア語聖書を介した受容を、当該RUNのWLCヘブライ語の逐語訳に置き換えない。",
+      "sources": [
         {
-          "author": "Abraham ibn Ezra",
-          "title": "Commentary on the Torah",
-          "locator": "Genesis 49:18",
-          "url": "https://www.sefaria.org/Ibn_Ezra_on_Genesis.49.18.1?lang=bi"
+          "label": "ユスティノス『トリュフォンとの対話』52–53章（英訳）",
+          "url": "https://www.newadvent.org/fathers/01284.htm"
         }
       ]
     }
   ],
   "research_notes": [
-    "本アリヤーの中心は父祖の遺言詩、部族評価、ユダの王権、ダンの救済待望であるため、関連の薄い後代の数秘術・星占術的伝統は扱わない。",
-    "ラビ的・中世ユダヤ注解と現代文学研究を区別し、キリスト教的メシア解釈は受容史として位置づけ、ペシャットの唯一解として用いない。"
+    "既存の081の原稿を当該RUNのJSON1.1と再照合。過去RUNのJSON2／JSON3やNotion本文は研究入力に用いていない。",
+    "旧原稿のOlojedeへの誤帰属と巻号頁を訂正。Geula Twersky論文は公開要旨のみを根拠とし、未読の全文を読了扱いにしない。",
+    "取得できなかったHan論文と未確認のIbn Ezra項目は出典として採用せず、確認したラシとユスティノスの該当箇所へ置換。",
+    "形式上の修正と意味品質監査を区別し、prepare.digestおよびcompose.validateで実際の契約を検証した。"
   ],
   "quality_audit": {
     "token_count": 187,
@@ -1978,6 +1930,12 @@
     "verse_specific_sections": true,
     "devotional_sources_empty": true,
     "sources_verified": true,
-    "WORK_JSON2_QUALITY": "PASS"
-  }
+    "WORK_JSON2_QUALITY": "PASS",
+    "structural_validator": "compose.validate",
+    "normalized_json1_1_hash_verified": true,
+    "sources_reverified": true
+  },
+  "title": "力を問い、主の救いを待つ",
+  "summary": "ヤコブは息子たちを集め、その歩みと将来を語ります。長子の力も兄弟の結束も、それだけでは祝福の保証になりません。ルベンの奔放さとシメオン・レビの暴力が問われ、ユダには王権と豊穣の像が与えられます。海辺に生きるゼブルン、荷を担うイッサカル、民を裁くダン。それぞれの役割が描かれるただ中で、ヤコブは「主よ、あなたの救いを待ち望みます」と祈ります。",
+  "conclusion": "このアリヤーは、賜物や地位を無条件にたたえる言葉ではありません。力は奔放さや怒りに変わり得る一方、統治、交易、労働、裁きという異なる務めを支えるものにもなります。最後の短い祈りは、そのどれをも最終的な救いの根拠にしない姿勢を示します。私たちも委ねられた役割を担いながら、主の救いを待ち望みたいのです。"
 }

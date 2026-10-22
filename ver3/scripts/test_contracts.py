@@ -25,7 +25,13 @@ def fixture(j):
 
 def main():
     run=Path(sys.argv[1]); j=json.loads((run/'json1.json').read_text()); c=fixture(j); assert validate(j,c)
-    mutations=[lambda x:x.update(json1_sha256='wrong'),
+    mutations=[lambda x:x.update(schema_version='3.0-json2'),
+      lambda x:x.update(json1_1_sha256='file-bytes-instead-of-normalized-JSON'),
+      lambda x:x.pop('title'),
+      lambda x:x['verses'][0].update(translation_ja=x['verses'][0].pop('translation')),
+      lambda x:x['verses'][0]['sections'][0].update(title=x['verses'][0]['sections'][0].pop('heading')),
+      lambda x:x['verses'][0]['sections'][0]['sources'][0].pop('label'),
+      lambda x:x.update(json1_sha256='wrong'),
       lambda x:x['verses'].pop(),
       lambda x:x['verses'][0]['glosses'][0].update(token_id=-1),
       lambda x:x['verses'][0]['glosses'][0].update(ja=j['verses'][0]['tokens'][0]['surface']),
@@ -35,7 +41,7 @@ def main():
     for mutate in mutations:
         bad=copy.deepcopy(c); mutate(bad)
         try: validate(j,bad)
-        except (AssertionError,ValueError): pass
+        except (AssertionError,ValueError,KeyError): pass
         else: raise AssertionError('Invalid handoff accepted')
     html=[render(a,b,j['request']['book']) for a,b in zip(j['verses'],c['verses'])]
     for s in html:
@@ -69,6 +75,6 @@ def main():
     partial=json3(j,c,routes,partial_audio,{'audio_status':'PARTIAL','missing_audio_refs':[j['verses'][-1]['ref']]})
     assert sum(b['type']=='audio' for b in partial['children'])==len(routes)-1
     assert partial['media_status']['missing_audio_refs']==[j['verses'][-1]['ref']]
-    print(f'PASS: {len(html)} exact DB Hebrew renderings, 6 corrupt handoffs rejected, JSON3 order/captions/citations')
+    print(f'PASS: {len(html)} exact DB Hebrew renderings, {len(mutations)} corrupt handoffs rejected, JSON3 order/captions/citations')
 
 if __name__=='__main__': main()
