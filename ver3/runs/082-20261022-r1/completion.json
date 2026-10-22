@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "082-20261022-r1",
+  "sequence": "082",
+  "delivery_status": "PASS",
+  "page_id": "4018aa46-08ae-810f-8846-c7bee7528e49",
+  "page_url": "https://app.notion.com/p/082-49-19-26-4018aa4608ae810f8846c7bee7528e49",
+  "gmail": {
+    "message_id": "1a163f2985889fd3",
+    "subject": "082｜創世記49:19–26",
+    "sent_verified": true,
+    "has_attachment": true,
+    "attachment_filename": "asaichi-torah-082-20261022.jpg",
+    "attachment_size": 451874,
+    "recipient": "me"
+  },
+  "completed_at": "2026-10-22T14:10:22Z",
+  "operational_recovery": {
+    "initial_handoff_push_failure": {
+      "actions_run_id": 39782811276,
+      "recovery_commit": "bb96cdb25c81adae6ce3aa143f9dce89f5200973"
+    },
+    "dependency_download_timeout": {
+      "actions_run_id": 39786950074,
+      "failed_stage": "Install dependencies",
+      "reason": "HTTP Azure Ubuntu mirror downloads exceeded the 30 minute job limit before pipeline execution",
+      "fix_commit": "f4a96af0a46eda3e6bc3eb21fe6fc39853104b76",
+      "verified_recovery_actions_run_id": 39791762287,
+      "verification": "Official HTTPS archive fetched 62.8 MB in 9s; all syntax/audio/handoff tests and 8-verse processing passed"
+    },
+    "delivery_actions_run_id": 39792421963
+  }
+}
