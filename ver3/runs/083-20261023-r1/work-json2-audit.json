@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0-work-json2-audit",
+  "run_id": "083-20261023-r1",
+  "WORK_JSON2_QUALITY": "PASS",
+  "status": "PASS",
+  "verse_count": 27,
+  "token_count": 394,
+  "json1_sha256": "c5a2c365f954203a36fe63e80095b7110f651763dcb747572dcb1632a3e5d8e7",
+  "json1_1_sha256": "c2d866bffdecb7ef06027d2f2a0c5e30c7b8d8371f7004ac02e328a72fca4761",
+  "research_input": "ver3/runs/083-20261023-r1/json1.1.json",
+  "stage_spec": "ver3/spec/json2-quality.md",
+  "review_method": "Work reviewed all 27 verses and all 394 token surface/lemma/morphology/gloss correspondences, then separately ran the production structural validator and local composer. Structural PASS was not used as a substitute for semantic review.",
+  "checks": {
+    "all_token_correspondences_reviewed": "PASS",
+    "unresolved_lookup_or_placeholder_or_fallback_count_zero": "PASS",
+    "translations_consistent_with_hebrew_syntax": "PASS",
+    "every_verse_exposition_begins_from_verse_specific_evidence": "PASS",
+    "distinct_literary_lexical_reception_and_source_critical_questions": "PASS",
+    "sources_read_and_claims_supported": "PASS",
+    "27_distinct_devotional_sections_with_empty_sources": "PASS",
+    "japanese_LTR_and_prohibited_phrase_guard": "PASS",
+    "source_hashes_verified": "PASS"
+  },
+  "source_data_decisions": [
+    "Eight preposition/person-suffix tokens have lexeme=null but explicit surface and morphology. Their meanings were resolved individually; no lexeme or morphology was added to source data.",
+    "Gen.49.32 token 18504 miqneh was translated as purchased possession in the field/cave purchase context rather than mechanically using livestock; source lemma 4735 remains unchanged.",
+    "Gen.50.5 token 19272 kariti was rendered as preparing a grave. Rashi distinguishes literal digging from the midrashic purchase reading; these levels are explicitly distinguished.",
+    "Gen.50.10 token 18969 has abbreviated source morphology HTd; the attested surface and lexeme identify the Atad place-name. Metadata was preserved, not repaired or invented.",
+    "Gen.50.11 al-ken and Abel-Mitzrayim are each explained across their actual component token IDs; no compound token was invented.",
+    "Gen.50.15 emphatic infinitive plus finite verb, and Gen.50.20 repeated planning verb, subject contrast, feminine suffix and life-preserving purpose were individually checked.",
+    "Nested quotations in Gen.50.4-5 were corrected during review. The divine-good/human-evil contrast in 50.20 does not excuse the brothers' harm or impose forgiveness on victims."
+  ],
+  "research_record": [
+    "MorphHB/WLC current-run source: fixed commit 3d15126fb1ef74867fc1434be1942e837932691f, all supplied verses and tokens read.",
+    "Rashi on Genesis 50:5 and 50:16, Chabad chapter text read; peshat, midrash and reported speech distinguished. Talmudic references are attributed through Rashi, not falsely presented as separately read tractate text.",
+    "NET official translators' notes on Genesis 50:5, 50:15 and 50:20 read for commands, emphatic repayment and planning contrast.",
+    "Reyburn and Fry, A Handbook on Genesis (UBS, 1997), Genesis 50:20 excerpt on TIPs read; no unverified page number supplied.",
+    "David Ben-Gad HaCohen, Mourning for Jacob at Goren ha-Atad (2014), source-critical solution section read; J/P funeral reconstruction is identified as a hypothesis, not consensus or textual fact.",
+    "Hippolytus-attributed exegetical fragment on Benjamin's wolf read in New Advent. Its Paul reading is identified as Christian typological reception, not the Hebrew verse's explicit referent. The site's incorrect heading Genesis 44:27 was not copied as the verse locator.",
+    "Unrelated Augustine material was not used as filler; Christian reception was included only where a directly relevant fragment was verified. No previous-run JSON2, JSON3, Notion, image or mail was a research input."
+  ],
+  "validation": {
+    "command": "python ver3/scripts/validate_json2.py ver3/runs/083-20261023-r1",
+    "result": "STRUCTURE_PASS",
+    "composer": "PASS after installing missing local beautifulsoup4 dependency",
+    "unresolved_items": []
+  }
+}
