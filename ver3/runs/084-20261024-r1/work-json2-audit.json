@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0-work-json2-audit",
+  "run_id": "084-20261024-r1",
+  "WORK_JSON2_QUALITY": "PASS",
+  "status": "PASS",
+  "verse_count": 6,
+  "token_count": 85,
+  "json1_sha256": "a9e7e494d5b60de384f4e03005abe2fa67b5bac0eff835f19ec44e62fed933ac",
+  "json1_1_sha256": "4c0f9551bf3b045775145488c4e6b5303cb239bdfb64ccb98b6049709417c12a",
+  "checks": [
+    "All 85 token ID/surface/lemma/morphology/gloss correspondences individually reviewed.",
+    "No unresolved lookup, empty gloss, Hebrew substitution, fallback or repeated prose.",
+    "All six translations reviewed against syntax.",
+    "All six expositions and applications are verse-specific; devotional sources are empty.",
+    "Two consecutive chunks and four aliyah studies cover literary, translation, reception and pastoral questions.",
+    "Rashi Gen50:21,23 read in Chabad; Reyburn/Fry UBS1997 Gen50:23-26 excerpts read in TIPs; Chrysostom Homily26 on Hebrews section2 read in New Advent; claims distinguish text, interpretation and reception.",
+    "Japanese LTR prose and prohibited phrase guard passed.",
+    "JSON1 hash copied and normalized JSON1.1 digest verified.",
+    "Production validate_json2 command STRUCTURE_PASS, separate from semantic PASS; local composer PASS."
+  ],
+  "source_data_notes": [
+    "All 85 lexeme objects and all morphology segments inspected. No source data was generated or changed.",
+    "Gen50:22 token19168 and50:26 token19224 carry irregular Acfsa segment parsing; surface, lemma6235 and raw morphology identify the numeral ten; no parser metadata rewritten.",
+    "Gen50:26 token19228 raw morphology is HVqw3ms; its attested pointed surface and impersonal placement idiom are translated as 納められた, as supported by UBS commentary. The original metadata is preserved.",
+    "Gen50:23 third-generation ambiguity preserved; knees are not asserted to prove a precise birth posture or legal adoption ritual.",
+    "Church reception uses the directly relevant Chrysostom passage through Hebrews11:22. Unrelated patristic traditions were not added as filler.",
+    "No previous-run JSON2/JSON3, Notion, images or email used as research input."
+  ],
+  "unresolved_items": []
+}
