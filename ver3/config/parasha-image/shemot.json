@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "config_type": "ASAICHI_TORAH_PARASHA_IMAGE_PROFILE",
+  "parasha_jp": "シェモット",
+  "slug": "shemot",
+  "visual_identity": {
+    "core_mood": "human dignity under oppressive power, vulnerable life protected, restrained hope",
+    "palette": [
+      "Nile blue",
+      "warm limestone",
+      "earth ochre",
+      "muted copper",
+      "soft dawn gold"
+    ],
+    "materials": [
+      "ancient Egyptian mudbrick",
+      "plain linen",
+      "reed mats",
+      "unadorned clay vessels",
+      "weathered wood"
+    ],
+    "light": "natural household and courtyard light, restrained shadows, no invented supernatural effects",
+    "spatial_character": "human-scale ancient Egyptian and Near Eastern environments; institutions remain secondary to human encounters",
+    "human_tone": "attentive, courageous, vulnerable, dignified; never sensational",
+    "scene_emphasis": "human choices and care grounded in the current passage"
+  },
+  "continuity_rules": [
+    "Use the current aliyah alone to choose people, objects and events.",
+    "Keep environments plausibly ancient without asserting precise archaeological identifications.",
+    "Express power and vulnerability through natural posture, scale and restrained gestures.",
+    "Keep clothing and practical household materials modest and historically plausible.",
+    "Landscape or architectural context must remain secondary to passage-supported human action."
+  ],
+  "forbid": [
+    "past episode numbers or fixed scenes",
+    "events from later aliyot unless explicitly present in the current passage",
+    "modern medical equipment or buildings",
+    "medieval European costume",
+    "unrelated Christian symbols or halos",
+    "fantasy spectacle",
+    "graphic harm or sensationalized suffering"
+  ]
+}
