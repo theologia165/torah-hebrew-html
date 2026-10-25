@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0-work-json2-audit",
+  "run_id": "085-20261025-r1",
+  "WORK_JSON2_QUALITY": "PASS",
+  "status": "PASS",
+  "verse_count": 17,
+  "token_count": 181,
+  "json1_sha256": "78784fa52952a85e05f0077bb0593fcadc382f6898b99d464fba8918b5052ed7",
+  "json1_1_sha256": "fc06073c66feba73df9c541c15b8d0ef96df5549218a03257ccf0b238013bde9",
+  "checks": [
+    "All 181 token IDs, surfaces, raw lemmas, raw morphology and Japanese glosses individually reviewed in verse context.",
+    "All input key types checked. Three null lexemes (20644 l/3ms, 20657 b/1cp, 20708 b/3mp) resolved through attested surface and explicit morphology, with no invented source lexeme.",
+    "No unresolved lookup, empty gloss, Hebrew transcription, generic fallback, uniform unnatural translation or duplicate explanation.",
+    "All 17 translations align with syntax. Collective singular subjects, construct chains, comparison in1:9, nested condition in1:10, feminine plural commands and Piel/Hiphil forms reviewed.",
+    "All verse expositions begin with verse-specific features; all 17 devotional applications are distinct with sources:[].",
+    "Three contiguous chunks and four aliyah studies cover literary structure, modern research, patristic reception and pastoral implications.",
+    "Rashi Exodus1:1,12,15,17 read in Chabad; peshat and midrash separated.",
+    "Moshe Lavee and Shana Strauch-Schick, The Egyptian Midwives (2015), vowel grammar and Genizah sections actually read. WLC vocalization retained; alternate readings described as interpretation/reception, not established ethnicity.",
+    "Osborn/Hatton A Handbook on Exodus (UBS1999),1:10 and1:16 translation excerpts verified via TIPs. Escape reading and birthstool uncertainty distinguished.",
+    "Gregory of Nyssa Life of Moses II.1–5 actually read in UECF English text. Allegory and ancient gender symbolism are distinguished from Hebrew peshat and are not endorsed as contemporary gender evaluation. An initially retrieved CatholicLibrary chunk concerned Balaam and was not used as evidence for this paragraph.",
+    "No previous-run JSON2, JSON3, Notion page, image or email was used as research input.",
+    "LTR Japanese, prohibited-phrase guard and normalized hashes verified."
+  ],
+  "validation": {
+    "validator": "STRUCTURE_PASS on actual JSON2 before commit",
+    "compose": "PASS after installing missing local beautifulsoup4; checked prior to commit",
+    "semantic_review": "Independent Work review, not inferred from structure"
+  },
+  "unresolved_items": []
+}
