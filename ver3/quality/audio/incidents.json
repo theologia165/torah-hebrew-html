@@ -119,7 +119,27 @@
       "failure_code": "POCKETTORAH_LABEL_OFFSET_085",
       "implementation_status": "SOURCE_SPECIFIC_CORRECTION_IMPLEMENTED_PENDING_REPAIR",
       "verification_status": "OPEN_CONTENT_REVIEW_REQUIRED",
-      "regression": "test_audio_quality.py：既知の誤対応を隔離し、無音なし・機械PASSだけで品質PASSにしない"
+      "regression": "test_audio_quality.py：既知の誤対応を隔離し、無音なし・機械PASSだけで品質PASSにしない",
+      "repair_pipeline_findings": [
+        {
+          "code": "AUDIO_ONLY_JSON3_IMMUTABILITY_CONFLICT",
+          "cause": "通常の不変JSON3保存が音声URLだけの承認済み差し替えも拒否した",
+          "fix": "全フィールドを比較して同一RUNの音声URLだけの差分に限定し、旧JSON3を保存して原子的更新",
+          "regression": "test_audio_only_json3_revision_is_bounded_and_repeatable"
+        },
+        {
+          "code": "AUDIO_REPAIR_RESUME_AFTER_DELIVERY_FAIL",
+          "cause": "差し替え失敗後のdelivery=FAILが通常配信へ戻り、専用修復を再開できなかった",
+          "fix": "完了証明とpage_idに一致する明示修復を先に再開",
+          "regression": "test_failed_delivery_resumes_explicit_completed_run_audio_repair"
+        },
+        {
+          "code": "OPTIONAL_LISTENING_API_UNAVAILABLE",
+          "http_status": 401,
+          "error_code": "expired_secret_key",
+          "resolution": "API聴取成功とは記録せず、規定のASR_WITH_BOUNDARY_REVIEWを使用。認証失敗は反復せず停止。"
+        }
+      ]
     }
   ],
   "excluded_incidents": [

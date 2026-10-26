@@ -62,6 +62,10 @@ def main():
     run=Path('ver3/runs')/r['run_id']; run.mkdir(parents=True,exist_ok=True)
     last_successful_stage='REQUEST_VALIDATED'
     state_path=run/'delivery.json'
+    from audio.repair import resume_allowed, execute as execute_audio_repair
+    if resume_allowed(run):
+        execute_audio_repair(run,commit_run)
+        return
     completed_delivery=False
     completion_gate=None
     if state_path.exists() and json.loads(state_path.read_text()).get('status')=='PASS':

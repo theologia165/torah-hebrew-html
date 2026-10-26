@@ -21,6 +21,19 @@ def pending(run):
     return bool(request.get('repair_id') and done.get('request_sha256') != digest(request))
 
 
+def resume_allowed(run):
+    """A completed RUN's explicit repair must resume even after delivery FAIL."""
+    run=Path(run)
+    request=read(run/'audio-repair.json',{})
+    completion=read(run/'completion.json',{})
+    return (pending(run) and request.get('operation')=='AUDIO_ONLY_REPLACE'
+            and completion.get('run_id')==run.name
+            and completion.get('delivery_status')=='PASS'
+            and completion.get('page_id')==request.get('page_id')
+            and bool(request.get('page_id'))
+            and completion.get('gmail',{}).get('sent_verified') is True)
+
+
 def execute(run, commit_run):
     try:
         return _execute(run, commit_run)

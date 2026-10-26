@@ -13,12 +13,48 @@ from audio.manifest import digest, write_json_atomic
 from audio.processing import make_audio_record
 from audio.quality import (CHECKS, cancel_repair, inspect, quarantine, read,
                            request_repair)
-from audio.repair import execute, pending
+from audio.repair import execute, pending, resume_allowed
 from audio_quality import inspect_audio
-from deliver import non_audio_digest
+from deliver import non_audio_digest, save_audio_only_json3
 
 
 class AudioQualityTest(unittest.TestCase):
+    def test_audio_only_json3_revision_is_bounded_and_repeatable(self):
+        from prepare import save
+        prefix=('https://raw.githubusercontent.com/theologia165/torah-hebrew-html/'
+                f'asaichi-torah-ver3/ver3/runs/{self.run.name}/audio/')
+        old={'run_id':self.run.name,'title':'preserved','children':[
+            {'type':'paragraph','paragraph':{'rich_text':[]}},
+            {'type':'embed','embed':{'url':'https://example.test/original.html'}},
+            {'type':'audio','audio':{'type':'external','external':{'url':prefix+'old_r2.mp3'},'caption':[]}}]}
+        new=copy.deepcopy(old)
+        new['children'][-1]['audio']['external']['url']=prefix+'reviewed_r2.mp3'
+        write_json_atomic(self.run/'json3.json',old)
+        with self.assertRaises(ValueError):
+            save(self.run/'json3.json',new)
+        repair={'repair_id':'revision-test'}
+        save_audio_only_json3(self.run,new,repair)
+        save_audio_only_json3(self.run,new,repair)
+        self.assertEqual(read(self.run/'json3.json'),new)
+        self.assertEqual(read(self.run/'audio-repairs/revision-test/json3-before.json'),old)
+        bad=copy.deepcopy(new);bad['title']='unauthorized change'
+        with self.assertRaises(AssertionError):
+            save_audio_only_json3(self.run,bad,repair)
+        bad=copy.deepcopy(new);bad['children'][1]['embed']['url']='https://example.test/other.html'
+        with self.assertRaises(AssertionError):
+            save_audio_only_json3(self.run,bad,repair)
+
+    def test_failed_delivery_resumes_explicit_completed_run_audio_repair(self):
+        request_repair(self.run,'resume-test','fixture',['AUDIO-085-LABEL-OFFSET'])
+        write_json_atomic(self.run/'delivery.json',{'status':'FAIL','page_id':'same-page'})
+        receipt={'run_id':self.run.name,'delivery_status':'PASS','page_id':'same-page',
+                 'gmail':{'sent_verified':True}}
+        write_json_atomic(self.run/'completion.json',receipt)
+        self.assertTrue(resume_allowed(self.run))
+        receipt['page_id']='other-page'
+        write_json_atomic(self.run/'completion.json',receipt)
+        self.assertFalse(resume_allowed(self.run))
+
     def test_unavailable_listening_api_never_logs_raw_credential_error(self):
         import os
         from audio.model_review import collect

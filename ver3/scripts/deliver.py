@@ -106,6 +106,34 @@ def non_audio_digest(blocks):
     return digest([{'id':b['id'],'type':b['type'],'payload':b[b['type']]}
                    for b in blocks if b['type']!='audio'])
 
+def save_audio_only_json3(run, payload, repair):
+    """Permit only current-RUN audio URL changes, retaining the old JSON3."""
+    import copy
+    import re
+    from audio.manifest import write_json_atomic
+    run=Path(run)
+    path=run/'json3.json'
+    prior=json.loads(path.read_text(encoding='utf-8'))
+    if prior==payload:
+        return
+    old,new=copy.deepcopy(prior),copy.deepcopy(payload)
+    prefix=('https://raw.githubusercontent.com/theologia165/torah-hebrew-html/'
+            f'asaichi-torah-ver3/ver3/runs/{run.name}/audio/')
+    for value in (old,new):
+        assert value.get('run_id')==run.name, 'Audio-only JSON3 run mismatch'
+        for b in value['children']:
+            if b['type']=='audio':
+                url=b['audio']['external']['url']
+                assert url.startswith(prefix) and url.endswith('_r2.mp3'), 'Audio-only JSON3 URL scope mismatch'
+                b['audio']['external']['url']='CURRENT_RUN_AUDIO_URL'
+    assert old==new, 'Audio-only JSON3 update changes non-audio content or metadata'
+    repair_id=repair.get('repair_id') or 'legacy-'+digest(repair)[:12]
+    assert re.fullmatch(r'[a-zA-Z0-9][a-zA-Z0-9_-]{0,63}',repair_id), 'Invalid repair identity'
+    desk=run/'audio-repairs'/repair_id
+    desk.mkdir(parents=True,exist_ok=True)
+    save(desk/'json3-before.json',prior)
+    write_json_atomic(path,payload)
+
 def verify(expected,actual,token):
     assert len(expected)==len(actual), 'Notion block count/order mismatch'
     for e,a in zip(expected,actual):
@@ -184,9 +212,13 @@ def main():
                 assert len(existing)==1 and existing[0]['id'].replace('-','')==target.replace('-',''), 'UPDATE_TARGET_MISMATCH'
             else:
                 assert not existing, 'SKIP_EXISTING_PAGE: reconcile prior production run; do not duplicate'
-        routes=[{'ref':v['ref'],'mode':'GITHUB_PAGES'} for v in j['verses']]
-        from runner import publish_pages
-        publish_pages(run,routes)
+        if req.get('audio_only_repair'):
+            routes=json.loads((run/'original-routes.json').read_text())
+            assert [route['ref'] for route in routes]==req['refs'], 'Existing HTML routes differ'
+        else:
+            routes=[{'ref':v['ref'],'mode':'GITHUB_PAGES'} for v in j['verses']]
+            from runner import publish_pages
+            publish_pages(run,routes)
         manifest=json.loads((run/'audio/audio_manifest.json').read_text())
         prefix=req['refs'][0].split('.')[0]
         for v in manifest['verses']:
@@ -219,7 +251,11 @@ def main():
                 assert expected['type']==actual['type'], 'Existing block type differs'
                 if expected['type'] not in ('audio','embed'):
                     verify([expected],[actual],token)
-            save(run/'json3.json',payload); save(run/'original-routes.json',routes)
+            if req.get('audio_only_repair'):
+                save_audio_only_json3(run,payload,req)
+            else:
+                save(run/'json3.json',payload)
+            save(run/'original-routes.json',routes)
             snapshot=run/'previous-media.json'
             if not snapshot.exists():
                 save(snapshot,{'page_id':page_id,'blocks':[{'id':b['id'],'type':b['type'],b['type']:b[b['type']]} for b in got if b['type'] in ('audio','embed')]})
