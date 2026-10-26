@@ -142,7 +142,8 @@ def verify(expected,actual,token):
             assert plain(e)==plain(a), f'Notion text differs: {plain(e)[:60]}'
             expected_links=[x['text'].get('link') for x in e[t].get('rich_text',[]) if x.get('text',{}).get('link')]
             actual_links=[x['text'].get('link') for x in a[t].get('rich_text',[]) if x.get('text',{}).get('link')]
-            assert expected_links==actual_links, 'Citation links differ'
+            assert expected_links==actual_links, ('Citation links differ: '
+                f'text={plain(e)!r}; expected={expected_links!r}; actual={actual_links!r}')
         if e[t].get('color') is not None:
             assert e[t]['color']==a[t].get('color'), f'Notion color differs: {plain(e)[:60]}'
         if t in ('toggle','callout') and e[t].get('children'):
