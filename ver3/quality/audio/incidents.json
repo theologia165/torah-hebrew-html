@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0-audio-incident-register",
+  "owner": "朝一トーラー 音声品質管理部",
+  "regression_command": "python ver3/scripts/test_audio_quality.py && python ver3/scripts/test_audio_primary_module.py && python ver3/scripts/test_audio_fallback_policy.py",
+  "incidents": [
+    {
+      "id": "AUDIO-027-SPEED-STEP",
+      "sequences": [
+        "027"
+      ],
+      "symptom": "境界修復後に速度補正工程が抜けた",
+      "cause": "境界修復だけで作業を終え、速度評価・r2生成・再検品を省いた",
+      "evidence_level": "HISTORICAL_REPORT",
+      "evidence": [
+        "2026-08-22の会話記録：138語／141.3225秒、atempo=0.812158348"
+      ],
+      "implementation_status": "SHARED_PROCESSING_IMPLEMENTED",
+      "verification_status": "HISTORICAL_REPORT_NOT_RELISTENED",
+      "regression": "既存verify_audio.pyでr1/r2実体、実測duration、WPSを再検査する"
+    },
+    {
+      "id": "AUDIO-032-VERSE-SOURCE-REPLACEMENT",
+      "sequences": [
+        "032"
+      ],
+      "symptom": "創世記24:27の音源を別の正本朗読から節単位で再作成した",
+      "cause": "当時のPocketTorah版が利用不適と判断された。物理欠損か境界障害かの詳細は今回再検証していない",
+      "evidence_level": "HISTORICAL_REPORT",
+      "evidence": [
+        "2026-09-02の会話記録：24:27をAbraham Shmuelof版へ差し替え、24:30を元節音声から再生成"
+      ],
+      "implementation_status": "HISTORICAL_REPLACEMENT_REPORTED",
+      "verification_status": "HISTORICAL_REPORT_NOT_RELISTENED",
+      "regression": "現在はaudio-fallback.jsonの許可・本文hash・音源hash・帰属確認を必須とする。過去の音源名だけで自動採用しない"
+    },
+    {
+      "id": "AUDIO-HISTORIC-SHARED-BOUNDARY",
+      "sequences": [],
+      "symptom": "7:15付近の終端ずれが後続節へ連鎖した",
+      "cause": "前節終点と次節始点を共通の境界として再検証する必要があった。ラベル形式の誤解釈だったかは今回未確定",
+      "evidence_level": "HISTORICAL_REPORT",
+      "evidence": [
+        "2026-09-04の会話記録：7:15の終点128.887→123.978秒。NNNは今回の取得記録から確定できない"
+      ],
+      "implementation_status": "SHARED_BOUNDARY_VALIDATION_IMPLEMENTED",
+      "verification_status": "HISTORICAL_REPORT_NOT_RELISTENED",
+      "regression": "verify_audio.py：連続音源の隣接節で前節終点＝次節始点を要求。ただし共有するだけでは語の正しさは保証しない"
+    },
+    {
+      "id": "AUDIO-041-SOURCE-TRUNCATED",
+      "sequences": [
+        "041"
+      ],
+      "symptom": "音源が終わった後にも14語分のラベルが残った",
+      "cause": "元のPocketTorah音源の物理欠損",
+      "evidence_level": "HISTORICAL_REPORT_AND_CURRENT_CODE",
+      "evidence": [
+        "ver3/scripts/audio/sources/pockettorah.py",
+        "ver3/config/audio-fallback.json",
+        "2026-09-09の会話記録：原音324.885秒"
+      ],
+      "implementation_status": "TRUNCATION_DETECTION_AND_APPROVED_FALLBACK_IMPLEMENTED",
+      "verification_status": "HISTORICAL_REPORT_NOT_RELISTENED",
+      "failure_code": "POCKETTORAH_SOURCE_TRUNCATED",
+      "regression": "test_audio_fallback_policy.py：物理欠損だけ代替可、境界不明は代替不可"
+    },
+    {
+      "id": "AUDIO-047-ACCELERATION",
+      "sequences": [
+        "047"
+      ],
+      "symptom": "通常朗読より速くなる節が生じた",
+      "cause": "目標WPSへ合わせる計算がatempo>1を許した",
+      "evidence_level": "COMMIT_VERIFIED",
+      "evidence": [
+        "https://github.com/theologia165/torah-hebrew-html/commit/9904afdee06a24abdc16c74923ae03d5f96a3f23"
+      ],
+      "implementation_status": "SLOWDOWN_ONLY_IMPLEMENTED",
+      "verification_status": "HISTORICAL_REPORT_NOT_RELISTENED",
+      "regression": "test_audio_primary_module.py：低速原音はatempo=1、加速しない"
+    },
+    {
+      "id": "AUDIO-048-PRE-SILENCE",
+      "sequences": [
+        "048"
+      ],
+      "symptom": "節末の余韻・間が早く切れた",
+      "cause": "ラベルが無音開始の直前にあり、無音区間内だけを補正する条件から外れた",
+      "evidence_level": "COMMIT_VERIFIED",
+      "evidence": [
+        "https://github.com/theologia165/torah-hebrew-html/commit/7fb663a2cc0bb660961eab5f20545aca39e19834"
+      ],
+      "implementation_status": "PRE_SILENCE_WINDOW_IMPLEMENTED",
+      "verification_status": "HISTORICAL_REPORT_NOT_RELISTENED",
+      "regression": "test_audio_primary_module.py：無音開始前1.25秒の補正。test_audio_quality.py：無音補正なしを聴取合格にしない"
+    },
+    {
+      "id": "AUDIO-085-LABEL-OFFSET",
+      "sequences": [
+        "085"
+      ],
+      "symptom": "第1節末から1語分早い切断が続き、最終語も切れた",
+      "cause": "先頭0＋181語の開始時刻を、181語の開始時刻＋音源終端と解釈した",
+      "evidence_level": "CURRENT_SOURCE_MANIFEST_AND_ASR_BOUNDARY_REVIEW",
+      "evidence": [
+        "https://github.com/theologia165/torah-hebrew-html/blob/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/audio_manifest.json",
+        "https://raw.githubusercontent.com/rneiss/PocketTorah/8a23287221dd535966ee9914de9a03e71769a469/data/torah/labels/Shemot-1.txt",
+        "2026-10-26調査：1節境界13.861959秒、最終境界185.046707秒。冒頭・末尾のASR照合は全17節の聴取合格ではない"
+      ],
+      "source_match": {
+        "audio_base": "Shemot-1",
+        "pockettorah_commit": "8a23287221dd535966ee9914de9a03e71769a469"
+      },
+      "required_alignment": "LEADING_ZERO_THEN_WORD_ONSETS",
+      "defective_boundary_values": {
+        "boundary_end": 13.861959
+      },
+      "failure_code": "POCKETTORAH_LABEL_OFFSET_085",
+      "implementation_status": "OPEN_REPAIR_REQUIRED",
+      "verification_status": "OPEN_CONTENT_REVIEW_REQUIRED",
+      "regression": "test_audio_quality.py：既知の誤対応を隔離し、無音なし・機械PASSだけで品質PASSにしない"
+    }
+  ],
+  "excluded_incidents": [
+    {
+      "sequence": "081",
+      "cause": "JSON2 schema_version 3.0/3.1不一致",
+      "owner": "本文データ契約",
+      "reason": "音声生成以前の障害。音声境界障害として集計しない"
+    }
+  ]
+}

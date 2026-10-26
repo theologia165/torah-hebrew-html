@@ -2,8 +2,14 @@ name: Asaichi Torah Ver.3
 on:
   push:
     branches: [asaichi-torah-ver3]
-    paths: ['ver3/request.json', 'ver3/runs/**/json2.json', 'ver3/runs/**/cover-ready.json', 'ver3/runs/**/completion.json', 'ver3/runs/**/ai-audio-request.json', 'ver3/runs/**/research-style-refresh.json', 'ver3/runs/**/audio-repair.json', 'ver3/state/production.json', 'ver3/scripts/**', 'ver3/spec/**', 'ver3/templates/**', 'ver3/config/audio-fallback.json', 'ver3/config/open-bible-sources.json', '.github/workflows/asaichi-torah-ver3.yml']
+    paths: ['ver3/request.json', 'ver3/runs/**/json2.json', 'ver3/runs/**/cover-ready.json', 'ver3/runs/**/completion.json', 'ver3/runs/**/ai-audio-request.json', 'ver3/runs/**/research-style-refresh.json', 'ver3/runs/**/audio-repair.json', 'ver3/runs/**/audio-repairs/**/audio-content-review.json', 'ver3/state/production.json', 'ver3/scripts/**', 'ver3/spec/**', 'ver3/quality/audio/**', 'ver3/templates/**', 'ver3/config/audio-fallback.json', 'ver3/config/open-bible-sources.json', '.github/workflows/asaichi-torah-ver3.yml']
   workflow_dispatch:
+    inputs:
+      audio_quality_run_id:
+        description: '音声品質管理部で修復する既存RUN（空欄は通常実行）'
+        required: false
+        default: ''
+        type: string
 permissions:
   contents: write
   pages: write
@@ -50,10 +56,19 @@ jobs:
           python -m compileall -q ver3/scripts
           python ver3/scripts/test_audio_primary_module.py
           python ver3/scripts/test_audio_fallback_policy.py
+          python ver3/scripts/test_audio_quality.py
           python ver3/scripts/test_handoff_contract.py
           node --check ver3/templates/search.js
       - name: Neon JSON1 → JSON1.1 → ChatGPT JSON2 → Notion JSON3
-        run: python ver3/scripts/runner.py
+        env:
+          AUDIO_QUALITY_RUN_ID: ${{ inputs.audio_quality_run_id }}
+        run: |
+          if [ -n "$AUDIO_QUALITY_RUN_ID" ]; then
+            [[ "$AUDIO_QUALITY_RUN_ID" =~ ^[0-9]{3}-[0-9]{8}-r[0-9]+$ ]] || exit 1
+            python ver3/scripts/audio_quality.py repair "ver3/runs/$AUDIO_QUALITY_RUN_ID"
+          else
+            python ver3/scripts/runner.py
+          fi
       - name: Keep run evidence
         if: always()
         uses: actions/upload-artifact@v4

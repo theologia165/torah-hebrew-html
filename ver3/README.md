@@ -13,6 +13,8 @@ Workの段階別仕様は`ver3/spec/`、定型メールは`ver3/templates/`、�
 
 ## 音声実装の責任分割
 
+音声の障害受付・過去事例・検品・修正・再検品・差し替えの責任は[音声品質管理部](quality/audio/README.md)へ集約する。Workの音声作業入口は[音声品質管理仕様](spec/audio-quality.md)、統一コマンドは`ver3/scripts/audio_quality.py`。通常生成にも`audio-quality.json`を残し、機械PASSと全節の内容PASSを区別する。既完了ページの音声修復は、別置き候補の全節内容検品がPASSになってから同じページへ差し替える。
+
 - `ver3/scripts/audio/sources/pockettorah.py`：第一正本音源、語位置ラベル、節別r1切出し
 - `ver3/scripts/audio/sources/open_bible.py`：承認済み第二正本の取得と音声hash照合
 - `ver3/scripts/audio/sources/openai_tts.py`：最終代替のAPI呼出しだけ

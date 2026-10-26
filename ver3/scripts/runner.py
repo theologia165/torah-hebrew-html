@@ -87,43 +87,9 @@ def main():
         # Explicit media-only repair: regenerate per-verse audio and update only
         # existing Notion audio blocks. Text, HTML embeds, cover, email, and
         # production state remain unchanged.
-        audio_repair_request=run/'audio-repair.json'
-        audio_repair_done=run/'audio-repair.done.json'
-        if audio_repair_request.exists() and not audio_repair_done.exists():
-            repair=json.loads(audio_repair_request.read_text(encoding='utf-8'))
-            assert repair.get('operation')=='AUDIO_ONLY_REPLACE', 'Invalid audio repair operation'
-            assert repair.get('run_id')==r['run_id'], 'Audio repair run_id mismatch'
-            delivery=json.loads(state_path.read_text(encoding='utf-8'))
-            assert repair.get('page_id')==delivery.get('page_id'), 'Audio repair page_id mismatch'
-            repair_dir=Path('/tmp/ver3-audio-repair')/run.name
-            if repair_dir.exists():
-                shutil.rmtree(repair_dir)
-            cmd(sys.executable,'ver3/scripts/build_audio.py',str(run/'audio-input.json'),str(repair_dir))
-            cmd(sys.executable,'ver3/scripts/verify_audio.py',str(repair_dir))
-            old_manifest=run/'audio/audio_manifest.json'
-            if old_manifest.exists():
-                shutil.copyfile(old_manifest,run/'audio-manifest-before-repair.json')
-            if (run/'audio').exists():
-                shutil.rmtree(run/'audio')
-            shutil.copytree(repair_dir,run/'audio')
-            for source in (run/'audio').glob('*_source.mp3'):
-                source.unlink()
-            # Publish the regenerated binaries before deliver.py compares the
-            # public raw URLs; otherwise it would still fetch the old MP3s.
-            commit_run(run,'Commit regenerated 047 audio before Notion replacement')
-            cmd(sys.executable,'ver3/scripts/deliver.py',str(run),str(audio_repair_request))
-            repaired=json.loads(state_path.read_text(encoding='utf-8'))
-            assert repaired.get('status')=='PASS', 'Audio-only Notion update did not PASS'
-            assert repaired.get('operation')=='AUDIO_ONLY_REPLACE', 'Unexpected repair operation'
-            audio_repair_done.write_text(json.dumps({
-                'status':'PASS','operation':'AUDIO_ONLY_REPLACE',
-                'run_id':r['run_id'],'page_id':repair['page_id'],
-                'audio_implemented_count':repaired.get('AUDIO_IMPLEMENTED_COUNT'),
-                'speed_policy':'SLOWDOWN_ONLY_NO_ACCELERATION',
-                'max_atempo':1.0
-            },ensure_ascii=False,indent=2)+'\\n')
-            commit_run(run,'Replace existing 047 Notion audio blocks only')
-            print('PASS: audio-only repair completed; text, HTML, cover, email and production state preserved')
+        from audio.repair import pending as audio_repair_pending, execute as execute_audio_repair
+        if audio_repair_pending(run):
+            execute_audio_repair(run, commit_run)
             return
         # A separately requested display-only research restyle is the sole permitted post-PASS mutation.
         restyle_request=run/'research-style-refresh.json'
@@ -195,7 +161,15 @@ def main():
                 (audio/'audio_manifest.json').write_text(
                     json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
                 print('PARTIAL: fallback pipeline failed; continuing media delivery')
-        cmd(sys.executable,'ver3/scripts/verify_audio.py',str(audio))
+        from audio_quality import inspect_audio
+        from audio.quality import quarantine
+        quality = inspect_audio(run)
+        if quality['machine_status'] != 'PASS':
+            raise RuntimeError('Audio machine inspection failed; see audio-quality.json')
+        if quality['blocking_refs']:
+            quarantine(run, quality)
+            cmd(sys.executable,'ver3/scripts/verify_audio.py',str(audio))
+            quality = inspect_audio(run)
         last_successful_stage='AUDIO_VERIFIED_FOR_IMPLEMENTED_REFS'
         commit_run(run,'Build verified Ver.3 HTML and per-verse audio')
         if r['mode']=='publish':
