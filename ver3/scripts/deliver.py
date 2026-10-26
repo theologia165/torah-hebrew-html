@@ -2,6 +2,7 @@
 import json, os, sys, time
 from pathlib import Path
 import requests
+from urllib.parse import urlsplit, parse_qsl
 from prepare import digest, save
 from compose import validate
 from notion_frames import ensure_upload, creation_blocks, finalize_frames
@@ -134,6 +135,15 @@ def save_audio_only_json3(run, payload, repair):
     save(desk/'json3-before.json',prior)
     write_json_atomic(path,payload)
 
+def citation_link_identity(link):
+    """Notion percent-encodes reserved characters inside query values.
+
+    Keep destination, path, fragment, query pair order and duplicates exact.
+    Split before decoding so encoded data cannot become a URL delimiter.
+    """
+    p=urlsplit(link['url'])
+    return (p.scheme,p.netloc,p.path,tuple(parse_qsl(p.query,keep_blank_values=True)),p.fragment)
+
 def verify(expected,actual,token):
     assert len(expected)==len(actual), 'Notion block count/order mismatch'
     for e,a in zip(expected,actual):
@@ -142,7 +152,7 @@ def verify(expected,actual,token):
             assert plain(e)==plain(a), f'Notion text differs: {plain(e)[:60]}'
             expected_links=[x['text'].get('link') for x in e[t].get('rich_text',[]) if x.get('text',{}).get('link')]
             actual_links=[x['text'].get('link') for x in a[t].get('rich_text',[]) if x.get('text',{}).get('link')]
-            assert expected_links==actual_links, ('Citation links differ: '
+            assert [citation_link_identity(x) for x in expected_links]==[citation_link_identity(x) for x in actual_links], ('Citation links differ: '
                 f'text={plain(e)!r}; expected={expected_links!r}; actual={actual_links!r}')
         if e[t].get('color') is not None:
             assert e[t]['color']==a[t].get('color'), f'Notion color differs: {plain(e)[:60]}'

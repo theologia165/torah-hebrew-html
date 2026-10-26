@@ -58,6 +58,7 @@ jobs:
           python ver3/scripts/test_audio_fallback_policy.py
           python ver3/scripts/test_audio_quality.py
           python ver3/scripts/test_handoff_contract.py
+          python ver3/scripts/test_citation_readback.py
           node --check ver3/templates/search.js
       - name: Neon JSON1 → JSON1.1 → ChatGPT JSON2 → Notion JSON3
         env:

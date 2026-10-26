@@ -1,0 +1,30 @@
+{
+  "run_id": "086-20261026-r1",
+  "failure": "Citation links differ",
+  "failed_operation": "Notion citation URL readback verification",
+  "error_type": "AssertionError",
+  "http_status": null,
+  "target": {
+    "page_id": "4058aa46-08ae-8109-a5f1-fb59563da8c5",
+    "section": "キリスト教受容史",
+    "link": "Gregory Life of Moses II.7–12"
+  },
+  "last_successful_stage": "All verse HTML published, audio machine checks passed, existing Notion page populated",
+  "attempts": [
+    {
+      "actions_run": 40330216239,
+      "result": "FAIL",
+      "detail": "literal link equality"
+    },
+    {
+      "actions_run": 40331109042,
+      "result": "FAIL_DIAGNOSTIC",
+      "detail": "proved docId query slash / became %2F; target and text unchanged"
+    }
+  ],
+  "confirmed_cause": "Notion percent-encodes slash in query values; strict string equality falsely rejected the same citation",
+  "fix": "Compare URL scheme/authority/path/fragment exactly, and parse query pairs while preserving order and duplicates; never decode whole URL",
+  "validation": "3 citation readback tests including real failure and negative destination/delimiter/fragment/missing-link cases; 11 audio-quality regressions and handoff PASS",
+  "retry_plan": "Resume existing run and page with immutable JSON3; no duplicate page",
+  "remaining": "Actions readback, Notion cover, Gmail Sent, completion/state same commit"
+}
