@@ -105,7 +105,8 @@
       "evidence": [
         "https://github.com/theologia165/torah-hebrew-html/blob/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/audio_manifest.json",
         "https://raw.githubusercontent.com/rneiss/PocketTorah/8a23287221dd535966ee9914de9a03e71769a469/data/torah/labels/Shemot-1.txt",
-        "2026-10-26調査：1節境界13.861959秒、最終境界185.046707秒。冒頭・末尾のASR照合は全17節の聴取合格ではない"
+        "2026-10-26調査：1節境界13.861959秒、最終境界185.046707秒。冒頭・末尾のASR照合は全17節の聴取合格ではない",
+        "ver3/quality/audio/source-alignments.json：音源・ラベルの両SHA256を固定して先頭0を除外し、最終語の後は物理終端まで保持"
       ],
       "source_match": {
         "audio_base": "Shemot-1",
@@ -116,7 +117,7 @@
         "boundary_end": 13.861959
       },
       "failure_code": "POCKETTORAH_LABEL_OFFSET_085",
-      "implementation_status": "OPEN_REPAIR_REQUIRED",
+      "implementation_status": "SOURCE_SPECIFIC_CORRECTION_IMPLEMENTED_PENDING_REPAIR",
       "verification_status": "OPEN_CONTENT_REVIEW_REQUIRED",
       "regression": "test_audio_quality.py：既知の誤対応を隔離し、無音なし・機械PASSだけで品質PASSにしない"
     }

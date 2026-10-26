@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0-pockettorah-label-alignments",
+  "profiles": [
+    {
+      "id": "SHEMOT_1_LEADING_ZERO_20261026",
+      "audio_base": "Shemot-1",
+      "pockettorah_commit": "8a23287221dd535966ee9914de9a03e71769a469",
+      "audio_sha256": "2db44fb21930d7f435142f6cbc3c7ad2b161b7ecd3417e3f9168ec49ed07dcba",
+      "labels_sha256": "c67b3ad32dbfd1fef33268f4d270bb1f2968a98a587eebfd2c8e6547a5e4986d",
+      "word_count": 181,
+      "convention": "LEADING_ZERO_THEN_WORD_ONSETS",
+      "incident_id": "AUDIO-085-LABEL-OFFSET",
+      "evidence": "先頭0は余分な基準点。13.861959秒は1節最終語באוの開始付近、14.798218秒が2節先頭ラベル。185.046707秒は最終語הילדיםの開始付近であり、物理終端187.48075秒まで保持する。全節の合格は別途内容検品で判定する。"
+    }
+  ]
+}

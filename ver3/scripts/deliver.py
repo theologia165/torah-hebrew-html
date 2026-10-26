@@ -102,6 +102,10 @@ def plain(b):
     p=b[b['type']]
     return ''.join(x.get('plain_text',x.get('text',{}).get('content','')) for x in p.get('rich_text',[]))
 
+def non_audio_digest(blocks):
+    return digest([{'id':b['id'],'type':b['type'],'payload':b[b['type']]}
+                   for b in blocks if b['type']!='audio'])
+
 def verify(expected,actual,token):
     assert len(expected)==len(actual), 'Notion block count/order mismatch'
     for e,a in zip(expected,actual):
@@ -209,6 +213,7 @@ def main():
             assert page['parent'].get('page_id','').replace('-','')==parent.replace('-',''), 'Wrong update parent'
             assert ''.join(t.get('plain_text',t.get('text',{}).get('content','')) for t in page['properties']['title']['title'])==payload['title'], 'Wrong update title'
             got=children(page_id,token)
+            non_audio_before=non_audio_digest(got)
             assert len(got)==len(payload['children']), 'Existing page structure differs'
             for expected,actual in zip(payload['children'],got):
                 assert expected['type']==actual['type'], 'Existing block type differs'
@@ -220,13 +225,19 @@ def main():
                 save(snapshot,{'page_id':page_id,'blocks':[{'id':b['id'],'type':b['type'],b['type']:b[b['type']]} for b in got if b['type'] in ('audio','embed')]})
             state.update(page_id=page_id,page_url=page['url'],status='UPDATING'); checkpoint()
             from runner import commit_run
-            commit_run(run,'Checkpoint authorized 050 media update before Notion writes')
+            commit_run(run,'Checkpoint authorized existing-page media update before Notion writes')
             for expected,actual in zip(payload['children'],got):
                 kind=expected['type']
-                if kind in ('audio','embed'):
+                if kind == 'audio' or (kind == 'embed' and not req.get('audio_only_repair')):
                     update={k:v for k,v in expected[kind].items() if k!='type'}
                     request_json('PATCH',f'/blocks/{actual["id"]}',token,json={kind:update})
-            verify(payload['children'],children(page_id,token),token)
+            after=children(page_id,token)
+            verify(payload['children'],after,token)
+            if req.get('audio_only_repair'):
+                assert non_audio_digest(after)==non_audio_before, 'Audio-only repair changed a non-audio block'
+                state.update(NON_AUDIO_BLOCKS_UNCHANGED=True,
+                             non_audio_before_sha256=non_audio_before,
+                             non_audio_after_sha256=non_audio_digest(after))
             state.pop('error',None)
             delivery_status='PARTIAL' if missing_audio_refs else 'PASS'
             state.update(status=delivery_status,verse_count=len(j['verses']),json3_sha256=digest(payload),operation=req.get('operation','UPDATE_EXISTING_PAGE'),
@@ -237,7 +248,7 @@ def main():
             if not req.get('audio_only_repair'):
                 from r2_cover import apply as apply_cover
                 apply_cover(req['run_id'],page_id,state_path)
-            print('PASS: updated existing page; all text, citations and 10 Pages embeds verified')
+            print(f'PASS: updated existing page; all text, citations and {len(routes)} Pages embeds verified')
             return
         # A PARTIAL page may receive only newly repaired media.  Insert the
         # missing top-level block(s) in place, then verify the full new JSON3.

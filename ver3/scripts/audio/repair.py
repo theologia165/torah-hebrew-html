@@ -81,6 +81,17 @@ def _execute(run, commit_run):
         finally:
             for path in candidate.glob('*_source.mp3'):
                 path.unlink()
+        # Fresh filenames avoid stale Notion/browser audio caches.
+        manifest = read(candidate / 'audio_manifest.json')
+        for verse in manifest.get('verses', []):
+            for key in ('r1', 'r2'):
+                old = candidate / verse[key]
+                suffix = '_' + key + '.mp3'
+                name = f'{old.name[:-len(suffix)]}_{repair_id}_{file_sha(old)[:12]}{suffix}'
+                old.rename(candidate / name)
+                verse[key] = name
+        manifest['repair_id'] = repair_id
+        write_json_atomic(candidate / 'audio_manifest.json', manifest)
     report_path = desk / 'audio-quality.json'
     review_path = desk / 'audio-content-review.json'
     report = inspect_audio(run, candidate, review_path, report_path)
@@ -96,10 +107,8 @@ def _execute(run, commit_run):
         shutil.copytree(run / 'audio', previous)
         shutil.copyfile(run / 'delivery.json', desk / 'delivery-before.json')
     shutil.copytree(candidate, run / 'audio', dirs_exist_ok=True)
-    # Remove old verse files absent from this candidate; never reuse them.
-    for path in (run / 'audio').glob('*.mp3'):
-        if not (candidate / path.name).exists():
-            path.unlink()
+    # Keep old URLs working until Notion switches. Only candidate records
+    # enter the manifest; historical bytes are never selected as substitutes.
     published_quality = inspect_audio(run, run / 'audio', review_path)
     if published_quality['status'] != 'PASS':
         raise ValueError('Published candidate differs from reviewed audio')
