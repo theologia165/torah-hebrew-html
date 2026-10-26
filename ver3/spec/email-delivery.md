@@ -7,6 +7,8 @@ RUNの最後に、途中失敗があっても接続済みGmail自身（to: me）
 
 一時的送信失敗はSentに存在しないことを確認して最大2回再試行する。認証・権限・ツール不存在では同じ操作を連打しない。
 
+`audio-quality.json`がある場合は音声品質管理部の結果を確認し、機械検査と内容検品を区別して記す。`CONTENT_REVIEW_PENDING`を「全節の音声内容検品PASS」と報告しない。配信整合のPASSと音声品質のPASSは別の証明である。
+
 送信後はSentを再確認する。全条件PASSかつ送信確認済みの場合だけ、次の二つを同一コミットで記録する。
 
 1. `ver3/runs/{run_id}/completion.json`を作成する。`schema_version`は`1.0-work-completion`、`run_id`、3桁`sequence`、`delivery_status: PASS`、deliveryと同じ`page_id`／`page_url`、`gmail.message_id`／`gmail.subject`／`gmail.sent_verified: true`、UTCの`completed_at`を必須とする。

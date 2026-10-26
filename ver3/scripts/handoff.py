@@ -97,9 +97,32 @@ def waiting_for_cover(run, ticket_status):
     )
 
 
+def waiting_for_audio_quality(run, report_path, review_path, report):
+    report_path = Path(report_path)
+    return write_handoff(
+        run, phase='AUDIO_QUALITY', status='WAITING_FOR_WORK',
+        next_action='REVIEW_AND_REPAIR_AUDIO',
+        stage_spec='ver3/spec/audio-quality.md',
+        required_inputs=(
+            Path(run) / 'audio-input.json', report_path,
+            report_path.with_name(report_path.stem + '-review-template.json'),
+            'ver3/quality/audio/incidents.json',
+        ),
+        expected_outputs=(review_path,),
+        details={
+            'quality_status': report['status'],
+            'blocking_refs': report['blocking_refs'],
+            'pending_refs': report['pending_refs'],
+            'published_audio_unchanged': True,
+        },
+    )
+
+
 def ready_for_email(run, delivery, completion_gate=None):
     run = Path(run)
     status = delivery.get('status', 'UNKNOWN')
+    quality_path = run / 'audio-quality.json'
+    quality = json.loads(quality_path.read_text(encoding='utf-8')) if quality_path.exists() else {}
     return write_handoff(
         run,
         phase='EMAIL_AND_STATE',
@@ -112,7 +135,7 @@ def ready_for_email(run, delivery, completion_gate=None):
             run / 'delivery.json',
             run / 'json2.json',
             run / 'cover-ready.json',
-        ),
+        ) + ((quality_path,) if quality else ()),
         expected_outputs=(
             (run / 'completion.json', 'ver3/state/production.json')
             if status == 'PASS' else (run / 'completion.md',)
@@ -123,6 +146,8 @@ def ready_for_email(run, delivery, completion_gate=None):
             'missing_audio_refs': delivery.get('missing_audio_refs', []),
             'missing_html_refs': delivery.get('missing_html_refs', []),
             'cover_status': delivery.get('cover', {}).get('status'),
+            'audio_quality_status': quality.get('status', 'NOT_RECORDED'),
+            'audio_content_verified': quality.get('AUDIO_VERIFICATION_COMPLETE', False),
             'completion_gate_reasons': (
                 (completion_gate or {}).get('reasons', [])),
         },

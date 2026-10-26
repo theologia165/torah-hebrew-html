@@ -16,6 +16,7 @@
 2. 対象RUNが未作成ならproduction stateの範囲から固有run_idの`ver3/request.json`を作り、コミットしてVer.3 Actionsを起動する。
 3. RUN作成後は`ver3/runs/{run_id}/handoff.json`の`next_action`だけを実行する。
 4. `CREATE_JSON2`では`json2-quality.md`、`GENERATE_QA_AND_UPLOAD_COVER`では`image-handoff.md`、メール工程では`email-delivery.md`だけを追加で読む。
+   `REVIEW_AND_REPAIR_AUDIO`および音声不具合の調査・修正は`audio-quality.md`を入口とし、音声品質管理部の台帳・統一検品・候補再検品を使う。機械PASSを内容検品PASSへ読み替えない。
 5. BLOCKED／PARTIALでは`failure-report.md`に従って詳細を残す。同じ失敗操作を根拠なく反復しない。
 6. 必要な入力・監査結果をコミットし、Ver.3 Actionsを起動して次のhandoffまたはdelivery確定まで確認する。
 

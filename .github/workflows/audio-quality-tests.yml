@@ -1,0 +1,26 @@
+name: Audio quality regression
+on:
+  pull_request:
+    branches: [asaichi-torah-ver3]
+    paths: ['ver3/scripts/**', 'ver3/quality/audio/**', 'ver3/spec/audio-quality.md', '.github/workflows/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends ffmpeg
+          python -m pip install requests beautifulsoup4
+      - run: |
+          python -m compileall -q ver3/scripts
+          python ver3/scripts/test_audio_quality.py
+          python ver3/scripts/test_audio_primary_module.py
+          python ver3/scripts/test_audio_fallback_policy.py
+          python ver3/scripts/test_handoff_contract.py
