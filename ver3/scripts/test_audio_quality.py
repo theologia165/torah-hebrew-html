@@ -19,6 +19,30 @@ from deliver import non_audio_digest
 
 
 class AudioQualityTest(unittest.TestCase):
+    def test_audio_model_observations_cannot_create_content_pass(self):
+        import os
+        from audio.model_review import collect
+        desk = self.run / 'model-test'; desk.mkdir()
+        write_json_atomic(desk / 'audio-model-review-request.json', {
+            'run_id': self.run.name, 'input_sha256': digest(self.data),
+            'manifest_sha256': digest(self.manifest), 'model': 'gpt-audio-1.5',
+        })
+        class Response:
+            ok = True
+            headers = {'x-request-id': 'synthetic-test'}
+            def json(self):
+                return {'id': 'synthetic', 'model': 'gpt-audio-1.5',
+                        'choices': [{'message': {'content': '{"claim":"PASS"}'}}]}
+        with patch.dict(os.environ, {'OPENAI_API_KEY': 'synthetic-test-key'}), \
+                patch('audio.model_review.requests.post', return_value=Response()) as post:
+            path = collect(self.run, desk, self.audio)
+            self.assertEqual(post.call_count, 2)
+            self.assertEqual(read(path)['status'], 'OBSERVATIONS_COMPLETE_NOT_A_CONTENT_PASS')
+            collect(self.run, desk, self.audio)
+            self.assertEqual(post.call_count, 2)
+        self.assertFalse((desk / 'audio-content-review.json').exists())
+        self.assertEqual(inspect(self.run, machine_status='PASS')['status'], 'CONTENT_REVIEW_PENDING')
+
     def test_audio_replacement_preserves_text_and_html_identity(self):
         blocks = [
             {'id': 't', 'type': 'paragraph', 'paragraph': {'rich_text': []}},

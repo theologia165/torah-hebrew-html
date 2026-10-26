@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0-audio-model-review-request",
+  "run_id": "085-20261025-r1",
+  "input_sha256": "4f8587dd7ff8530863509956247a62a25533001f5ea0fc7cfdf9b49d10bb91dc",
+  "manifest_sha256": "9a528282d525efe2a5fb60ee7a5fc75183df2fa0aa2eab0b3af2bcd30c2c1343",
+  "model": "gpt-audio-1.5",
+  "reason": "全17節・r1/r2を実音声で追加検査。ASRが固有名詞・反復語を誤認識するため、本文から補完せず聴取観察を残しWorkが最終監査する。"
+}

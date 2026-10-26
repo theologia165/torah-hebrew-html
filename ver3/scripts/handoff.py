@@ -99,6 +99,7 @@ def waiting_for_cover(run, ticket_status):
 
 def waiting_for_audio_quality(run, report_path, review_path, report):
     report_path = Path(report_path)
+    observations = report_path.parent / 'model-audio-observations.json'
     return write_handoff(
         run, phase='AUDIO_QUALITY', status='WAITING_FOR_WORK',
         next_action='REVIEW_AND_REPAIR_AUDIO',
@@ -108,7 +109,7 @@ def waiting_for_audio_quality(run, report_path, review_path, report):
             report_path.with_name(report_path.stem + '-review-template.json'),
             report['manifest_path'],
             'ver3/quality/audio/incidents.json',
-        ),
+        ) + ((observations,) if observations.exists() else ()),
         expected_outputs=(review_path,),
         details={
             'quality_status': report['status'],

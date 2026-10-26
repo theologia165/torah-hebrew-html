@@ -94,6 +94,8 @@ def _execute(run, commit_run):
         write_json_atomic(candidate / 'audio_manifest.json', manifest)
     report_path = desk / 'audio-quality.json'
     review_path = desk / 'audio-content-review.json'
+    from audio.model_review import collect
+    collect(run, desk, candidate)
     report = inspect_audio(run, candidate, review_path, report_path)
     if report['status'] != 'PASS':
         waiting_for_audio_quality(run, report_path, review_path, report)

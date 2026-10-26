@@ -14,6 +14,8 @@ python ver3/scripts/audio_quality.py inspect ver3/runs/{run_id}
 
 全節を聴取するか、ASRと語・境界の実音声照合を行い、テンプレートを元に`audio-content-review.json`へ記録する。`reviewer`、`method`、`reviewed_at`、全節の6項目と節ごとの具体的根拠を必須とする。方法は`HUMAN_LISTENING`、`MODEL_AUDIO_LISTENING`、`ASR_WITH_BOUNDARY_REVIEW`。ASR出力だけ、波形だけ、語数だけでは全項目をPASSにしない。音声を扱う機能が使えない場合はPENDINGのまま理由を残す。
 
+必要な場合は候補ディレクトリにRUN・input hash・manifest hash・モデルを指定した`audio-model-review-request.json`を置き、Actionsがr1/r2の実音声を音声モデルへ渡して`model-audio-observations.json`を記録する。音声バイナリ・APIキーをログや文字コンテキストへ出さない。モデルの観察をそのまま内容合格へ昇格させず、Workが全節の観察・不確実性・音響境界を照合してからreviewを書く。モデル観察の収集は明示された候補に限定し、再実行では同じhashの結果を再利用する。
+
 各節で確認するもの：冒頭語、末尾語、全語の順序、前後節の混入なし、語中・語尾の切断なし、学習用速度。最初と最後だけの抜き取りを全節検品としない。reviewのRUN・本文・manifest・r1/r2 hashは変更せず、対象を生成し直したら再検品する。
 
 ## 2. 原因分類と修正
