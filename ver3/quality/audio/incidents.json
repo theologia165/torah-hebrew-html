@@ -117,8 +117,8 @@
         "boundary_end": 13.861959
       },
       "failure_code": "POCKETTORAH_LABEL_OFFSET_085",
-      "implementation_status": "SOURCE_SPECIFIC_CORRECTION_IMPLEMENTED_PENDING_REPAIR",
-      "verification_status": "OPEN_CONTENT_REVIEW_REQUIRED",
+      "implementation_status": "FIXED_SOURCE_SPECIFIC_PROFILE",
+      "verification_status": "REPAIR_CLOSED_ASR_BOUNDARY_QA",
       "regression": "test_audio_quality.py：既知の誤対応を隔離し、無音なし・機械PASSだけで品質PASSにしない",
       "repair_pipeline_findings": [
         {
@@ -139,7 +139,16 @@
           "error_code": "expired_secret_key",
           "resolution": "API聴取成功とは記録せず、規定のASR_WITH_BOUNDARY_REVIEWを使用。認証失敗は反復せず停止。"
         }
-      ]
+      ],
+      "repair_run_id": "085-20261025-r1",
+      "repair_id": "label-offset-20261026-r1",
+      "closure_path": "ver3/runs/085-20261025-r1/audio-repairs/label-offset-20261026-r1/closed.json",
+      "notion_page_id": "4048aa46-08ae-81d7-a880-fd4f928833d8",
+      "repaired_audio_count": 17,
+      "non_audio_blocks_unchanged": true,
+      "verification_method": "ASR_WITH_BOUNDARY_REVIEW",
+      "optional_api_listening": "UNAVAILABLE_401_EXPIRED_SECRET_KEY",
+      "final_actions_url": "https://github.com/theologia165/torah-hebrew-html/actions/runs/40252975692"
     }
   ],
   "excluded_incidents": [

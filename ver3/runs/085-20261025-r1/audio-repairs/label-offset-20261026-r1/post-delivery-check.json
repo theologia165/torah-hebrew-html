@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0-audio-repair-post-delivery-check",
+  "run_id": "085-20261025-r1",
+  "repair_id": "label-offset-20261026-r1",
+  "page_id": "4048aa46-08ae-81d7-a880-fd4f928833d8",
+  "status": "PASS",
+  "notion_audio_count": 17,
+  "notion_audio_urls_match_reviewed_manifest": true,
+  "notion_audio_urls": [
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_1_label-offset-20261026-r1_e0caee38e950_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_2_label-offset-20261026-r1_c205d697d62f_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_3_label-offset-20261026-r1_a98b0dc05343_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_4_label-offset-20261026-r1_5df4532b834e_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_5_label-offset-20261026-r1_b37aa7b9e024_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_6_label-offset-20261026-r1_5b235d40a3d5_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_7_label-offset-20261026-r1_292f71245441_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_8_label-offset-20261026-r1_0201a74d3558_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_9_label-offset-20261026-r1_96f9ff638b15_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_10_label-offset-20261026-r1_085451023eb6_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_11_label-offset-20261026-r1_d29c22c22101_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_12_label-offset-20261026-r1_2550f12f1b53_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_13_label-offset-20261026-r1_1505c54fcf31_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_14_label-offset-20261026-r1_df250ffda13d_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_15_label-offset-20261026-r1_8e132a64110c_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_16_label-offset-20261026-r1_65c24ae206ff_r2.mp3",
+    "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/085-20261025-r1/audio/085_17_label-offset-20261026-r1_b9fd7da31332_r2.mp3"
+  ],
+  "non_audio_blocks_unchanged": true,
+  "non_audio_before_sha256": "a4f8cfdf6a1fe6cbd0ca1231be80fd71e2f368b47d78e8fac72cc5b3e18db449",
+  "non_audio_after_sha256": "a4f8cfdf6a1fe6cbd0ca1231be80fd71e2f368b47d78e8fac72cc5b3e18db449",
+  "production_next_sequence": "086",
+  "quality_method": "ASR_WITH_BOUNDARY_REVIEW",
+  "optional_api_listening": {
+    "status": "UNAVAILABLE",
+    "http_status": 401,
+    "code": "expired_secret_key"
+  },
+  "actions_url": "https://github.com/theologia165/torah-hebrew-html/actions/runs/40252975692",
+  "production_state_git_blob_sha_unchanged": "fa3fbe4831c23bf4dfbbbb1e3f976c58e15ea4fd"
+}
