@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0-audio-repair-receipt",
+  "status": "PASS",
+  "operation": "AUDIO_ONLY_REPLACE",
+  "run_id": "085-20261025-r1",
+  "repair_id": "label-offset-20261026-r1",
+  "request_sha256": "1425ef2fe78ec0003fb2e6313a4aaa617e912cd3e86078d9f1eec799623c8c22",
+  "page_id": "4048aa46-08ae-81d7-a880-fd4f928833d8",
+  "audio_implemented_count": 17,
+  "quality_report_sha256": "45e3df16d5ae769705540390d566c96b54a9d549667ba570adf65ee3318e7a83",
+  "content_review_sha256": "2b985f4c05020376787f0cb4f5e26548876a07d8f42c18fb8ed22efe61842387",
+  "input_sha256": "4f8587dd7ff8530863509956247a62a25533001f5ea0fc7cfdf9b49d10bb91dc",
+  "manifest_sha256": "9a528282d525efe2a5fb60ee7a5fc75183df2fa0aa2eab0b3af2bcd30c2c1343",
+  "delivery_sha256": "296a7d13c2a2c7e5c5663298f8566493a1b26f70a83ab771fcf1a88fa6ad7219",
+  "audio_sha256": {
+    "1:1": "e0caee38e950b03088c31e072835ca24ddd9b7a0f547f50a9988ac2113cb11c1",
+    "1:2": "c205d697d62f80264ec3323b066120cc91db60c93137535ac64ad975196c8780",
+    "1:3": "a98b0dc053438a9ed67c3f0f64b82101ec58d33bfcc13c0b7fed80d3e8c244d8",
+    "1:4": "5df4532b834e97b4911cd2f5df95336061da70b9d3e7b19848da422d68242442",
+    "1:5": "b37aa7b9e0241ac6fedb8ef5a68f8c4601bcae99086e11d8842b499cb4c2e1e7",
+    "1:6": "5b235d40a3d563d8c5e4901a1af8b03e066871275edc60c5921b7bd258e08ed9",
+    "1:7": "292f71245441c471f5fd9f18228b2673c0575d3c042b21e86d4cf846b8c7a8a0",
+    "1:8": "0201a74d3558756541e8ea132b4c00c4e2841aab228707e636a8d1efbf173b78",
+    "1:9": "96f9ff638b1560d04439521ed2a8b53471351b5775db807cec1b65e6405854e0",
+    "1:10": "085451023eb68855e20a841e6f11a2281d71a91ea5960bfd3a014bec9ff14829",
+    "1:11": "d29c22c221012dff1017425e9e196cc75caa3e90598d031aa1b4148d7baffedc",
+    "1:12": "2550f12f1b53ed8f971912ba66a3c26d6e4a91a21b699b961f39e24914e46777",
+    "1:13": "1505c54fcf31a193459d5d5b963bcd0235d951162c8f18ee0a9f421bec91da1b",
+    "1:14": "df250ffda13ddf4611680dbc28e1dd620d74b3d0f2b15d5fc16290dad19f1c04",
+    "1:15": "8e132a64110c51dbe58414a62e417913b488b0e3a486c08b5139d876facf98a7",
+    "1:16": "65c24ae206ff24af98316f9cb1d3a76a50aa40e0e0713e4c9d4025bb257e02b8",
+    "1:17": "b9fd7da31332c1d784702d7c02ff8354da8f59077fdc16b8e575eac4918fa895"
+  },
+  "public_bytes_and_existing_page_verified_by": "ver3/scripts/deliver.py",
+  "incident_ids": [
+    "AUDIO-085-LABEL-OFFSET"
+  ],
+  "speed_policy": "SLOWDOWN_ONLY_NO_ACCELERATION",
+  "max_atempo": 1.0
+}
