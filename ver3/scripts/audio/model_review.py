@@ -17,6 +17,8 @@ def collect(run, desk, audio_dir):
     request = read(desk / 'audio-model-review-request.json')
     if not request:
         return None
+    if request.get('status') == 'DISABLED_AUTHENTICATION_FAILED':
+        return None
     manifest = read(audio_dir / 'audio_manifest.json')
     audio_input = read(run / 'audio-input.json')
     if (request.get('run_id') != run.name
@@ -77,7 +79,14 @@ def collect(run, desk, audio_dir):
             timeout=180)
         if not response.ok:
             # Never log request bodies or the API key/audio payload.
-            raise RuntimeError(f'Audio listening API {response.status_code}: {response.text[:800]}')
+            try:
+                error = response.json().get('error', {})
+            except ValueError:
+                error = {}
+            raise RuntimeError(
+                f'Audio listening API HTTP={response.status_code} '
+                f'code={error.get("code", "UNKNOWN")} '
+                f'type={error.get("type", "UNKNOWN")}')
         payload = response.json()
         raw = payload['choices'][0]['message'].get('content') or ''
         cleaned = raw.strip()

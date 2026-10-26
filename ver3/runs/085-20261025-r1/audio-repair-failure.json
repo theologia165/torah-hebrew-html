@@ -1,8 +1,10 @@
 {
-  "status": "BLOCKED",
+  "status": "BLOCKED_MODEL_API_ONLY",
   "run_id": "085-20261025-r1",
-  "operation": "AUDIO_QUALITY_REPAIR",
+  "operation": "AUDIO_QUALITY_MODEL_OBSERVATIONS",
   "error_type": "RuntimeError",
-  "message": "Audio listening API 401: {\n  \"error\": {\n    \"message\": \"Your API key has expired. Create a new API key to continue.\",\n    \"type\": \"invalid_request_error\",\n    \"code\": \"expired_secret_key\",\n    \"param\": null\n  },\n  \"status\": 401\n}",
+  "http_status": 401,
+  "error_code": "expired_secret_key",
+  "message": "OpenAI listening API authentication failed. No model listening observations were obtained. Local ASR_WITH_BOUNDARY_REVIEW is being evaluated as the documented alternate.",
   "repair_completed": false
 }

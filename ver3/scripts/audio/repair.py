@@ -139,6 +139,10 @@ def _execute(run, commit_run):
     }
     write_json_atomic(desk / 'closed.json', receipt)
     write_json_atomic(run / 'audio-repair.done.json', receipt)
+    failure = run / 'audio-repair-failure.json'
+    if failure.exists():
+        shutil.copyfile(failure, desk / 'prior-failure.json')
+        failure.unlink()
     from handoff import no_action
     no_action(run)
     commit_run(run, 'Close verified audio repair with byte-bound content and delivery evidence')

@@ -223,7 +223,8 @@ def main():
             snapshot=run/'previous-media.json'
             if not snapshot.exists():
                 save(snapshot,{'page_id':page_id,'blocks':[{'id':b['id'],'type':b['type'],b['type']:b[b['type']]} for b in got if b['type'] in ('audio','embed')]})
-            state.update(page_id=page_id,page_url=page['url'],status='UPDATING'); checkpoint()
+            page_url=state.get('page_url') if req.get('audio_only_repair') else page['url']
+            state.update(page_id=page_id,page_url=page_url,status='UPDATING'); checkpoint()
             from runner import commit_run
             commit_run(run,'Checkpoint authorized existing-page media update before Notion writes')
             for expected,actual in zip(payload['children'],got):

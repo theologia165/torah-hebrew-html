@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0-audio-source-text-correspondence",
+  "run_id": "085-20261025-r1",
+  "input_sha256": "4f8587dd7ff8530863509956247a62a25533001f5ea0fc7cfdf9b49d10bb91dc",
+  "source_text_url": "https://raw.githubusercontent.com/rneiss/PocketTorah/8a23287221dd535966ee9914de9a03e71769a469/data/torah/json/Exodus.json",
+  "source_text_sha256": "b08ae29fe7c7ed7767579d9d402f324ab4e7a40c78f598848e74f09be98097e3",
+  "word_count": 181,
+  "all_token_sequences_match": true,
+  "verses": [
+    {
+      "ref": "1:1",
+      "word_count": 11,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "a50abf216d545e44dd1a516115103e3220cc5cae80da382f6b37febd80caae44",
+      "first_word": "ואלה",
+      "last_word": "באו"
+    },
+    {
+      "ref": "1:2",
+      "word_count": 4,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "9c989bd8207ca0fc663bbbff74ef0a620232e2d4677aba064fa1f0d3b0b0c464",
+      "first_word": "ראובן",
+      "last_word": "ויהודה"
+    },
+    {
+      "ref": "1:3",
+      "word_count": 3,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "5fea0e2422b369371daa11538496e6c2af92222991a12a2d30b9842cd7627452",
+      "first_word": "יששכר",
+      "last_word": "ובנימן"
+    },
+    {
+      "ref": "1:4",
+      "word_count": 4,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "70988b3164f16ebf4037c5ecd8689311cbe9700cd94d9cf65e827099626b9db5",
+      "first_word": "דן",
+      "last_word": "ואשר"
+    },
+    {
+      "ref": "1:5",
+      "word_count": 11,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "ef61c7f21257aade16a0036951aba60d8e7deb7e959454cde401a5440aaae5e5",
+      "first_word": "ויהי",
+      "last_word": "במצרים"
+    },
+    {
+      "ref": "1:6",
+      "word_count": 7,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "4d60f647595172b93f884e951d748620d47289b7ad516ed2c78bb03b9c2fa309",
+      "first_word": "וימת",
+      "last_word": "ההוא"
+    },
+    {
+      "ref": "1:7",
+      "word_count": 11,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "e3e491f8de653ad90c26f4ebeb987f49326f8ef767295b04bcd6c40a82b125db",
+      "first_word": "ובני",
+      "last_word": "אתם"
+    },
+    {
+      "ref": "1:8",
+      "word_count": 10,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "a5168a335d893b7bd76e272d01b8c1a7fdaf9d917c282e2b6e63d60ddf834877",
+      "first_word": "ויקם",
+      "last_word": "יוסף"
+    },
+    {
+      "ref": "1:9",
+      "word_count": 10,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "765c079c12babcee91e37b2f0971e4c67ed4eda7d74eca3fa840ee6e9b431902",
+      "first_word": "ויאמר",
+      "last_word": "ממנו"
+    },
+    {
+      "ref": "1:10",
+      "word_count": 19,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "aa4bae9b255845071de972f956be80e73e228a92cf91b014fc01444926374c31",
+      "first_word": "הבה",
+      "last_word": "הארץ"
+    },
+    {
+      "ref": "1:11",
+      "word_count": 15,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "2e2fd702542d5a9a453f315d823760808a4a82713b9ad4e7b8795eea775e3959",
+      "first_word": "וישימו",
+      "last_word": "רעמסס"
+    },
+    {
+      "ref": "1:12",
+      "word_count": 11,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "cff480e959256e52d547628836706f0464c2e462fd137be5d54ece6e43ac6147",
+      "first_word": "וכאשר",
+      "last_word": "ישראל"
+    },
+    {
+      "ref": "1:13",
+      "word_count": 6,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "a8fcbf3057c3f50fcc79f3c27029cc467b61dcb0930504c33107a822d4933a2d",
+      "first_word": "ויעבדו",
+      "last_word": "בפרך"
+    },
+    {
+      "ref": "1:14",
+      "word_count": 17,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "b696d4972e2f25ad09d4f27d15bf5e8ab12b588a8638c0db2d8ce752057b3daf",
+      "first_word": "וימררו",
+      "last_word": "בפרך"
+    },
+    {
+      "ref": "1:15",
+      "word_count": 12,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "3e8440dfa32bd03bc304b12614829828fb6618ac5dc4a1a5817e165d22512459",
+      "first_word": "ויאמר",
+      "last_word": "פועה"
+    },
+    {
+      "ref": "1:16",
+      "word_count": 16,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "99593f16b28bdce7b7399f1a28af6688248fda4be7ba2c5c6cd13e2e471fc5eb",
+      "first_word": "ויאמר",
+      "last_word": "וחיה"
+    },
+    {
+      "ref": "1:17",
+      "word_count": 14,
+      "canonical_tokens_match": true,
+      "canonical_tokens_sha256": "672fbe662a8b4f9554b7b4ca748f264f1adc8e63efbce425beceac8e19631c85",
+      "first_word": "ותיראן",
+      "last_word": "הילדים"
+    }
+  ],
+  "limitation": "This proves text/label inventory correspondence, not spoken content by itself. Use with ASR, source identity, and acoustic boundary inspection."
+}

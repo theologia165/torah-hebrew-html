@@ -4,5 +4,9 @@
   "input_sha256": "4f8587dd7ff8530863509956247a62a25533001f5ea0fc7cfdf9b49d10bb91dc",
   "manifest_sha256": "9a528282d525efe2a5fb60ee7a5fc75183df2fa0aa2eab0b3af2bcd30c2c1343",
   "model": "gpt-audio-1.5",
-  "reason": "全17節・r1/r2を実音声で追加検査。ASRが固有名詞・反復語を誤認識するため、本文から補完せず聴取観察を残しWorkが最終監査する。"
+  "reason": "全17節・r1/r2を実音声で追加検査。ASRが固有名詞・反復語を誤認識するため、本文から補完せず聴取観察を残しWorkが最終監査する。",
+  "status": "DISABLED_AUTHENTICATION_FAILED",
+  "error_http_status": 401,
+  "error_code": "expired_secret_key",
+  "alternate_review": "ASR_WITH_BOUNDARY_REVIEW using local Hebrew ASR plus original text/label inventory and acoustic boundary audit; no model-listening PASS claimed"
 }
