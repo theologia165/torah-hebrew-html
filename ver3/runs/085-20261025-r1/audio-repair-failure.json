@@ -1,10 +1,8 @@
 {
-  "status": "BLOCKED_MODEL_API_ONLY",
+  "status": "BLOCKED",
   "run_id": "085-20261025-r1",
-  "operation": "AUDIO_QUALITY_MODEL_OBSERVATIONS",
-  "error_type": "RuntimeError",
-  "http_status": 401,
-  "error_code": "expired_secret_key",
-  "message": "OpenAI listening API authentication failed. No model listening observations were obtained. Local ASR_WITH_BOUNDARY_REVIEW is being evaluated as the documented alternate.",
+  "operation": "AUDIO_QUALITY_REPAIR",
+  "error_type": "CalledProcessError",
+  "message": "Command '['/opt/hostedtoolcache/Python/3.12.15/x64/bin/python', 'ver3/scripts/deliver.py', 'ver3/runs/085-20261025-r1', 'ver3/runs/085-20261025-r1/audio-repair.json']' returned non-zero exit status 1.",
   "repair_completed": false
 }

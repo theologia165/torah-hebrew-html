@@ -1,5 +1,5 @@
 {
-  "status": "PASS",
+  "status": "FAIL",
   "run_id": "085-20261025-r1",
   "page_id": "4048aa46-08ae-81d7-a880-fd4f928833d8",
   "page_url": "https://app.notion.com/p/085-1-1-17-4048aa4608ae81d7a880fd4f928833d8",
@@ -24,5 +24,6 @@
     "notion_file_upload_id": "4048aa46-08ae-816a-9700-00b2001d7ed3",
     "notion_cover_type": "file",
     "r2_retention_days": 14
-  }
+  },
+  "error": "Immutable artifact differs: ver3/runs/085-20261025-r1/json3.json; use a new run_id"
 }

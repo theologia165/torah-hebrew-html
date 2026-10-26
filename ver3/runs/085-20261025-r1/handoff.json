@@ -18,8 +18,8 @@
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
     "failed_operation": "GITHUB_ACTIONS_PIPELINE",
-    "error_type": "RuntimeError",
-    "error_message": "Audio listening API 401: {\n  \"error\": {\n    \"message\": \"Your API key has expired. Create a new API key to continue.\",\n    \"type\": \"invalid_request_error\",\n    \"code\": \"expired_secret_key\",\n    \"param\": null\n  },\n  \"status\": 401\n}",
+    "error_type": "CalledProcessError",
+    "error_message": "Command '['/opt/hostedtoolcache/Python/3.12.15/x64/bin/python', 'ver3/scripts/deliver.py', 'ver3/runs/085-20261025-r1', 'ver3/runs/085-20261025-r1/audio-repair.json']' returned non-zero exit status 1.",
     "last_successful_stage": "AUDIO_QUALITY_REPAIR"
   }
 }
