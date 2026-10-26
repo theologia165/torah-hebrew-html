@@ -2,32 +2,21 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "086-20261026-r1",
   "sequence": "086",
-  "phase": "EMAIL_AND_STATE",
-  "status": "WAITING_FOR_WORK",
-  "next_action": "SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE",
+  "phase": "COMPLETE",
+  "status": "PASS",
+  "next_action": "NONE",
   "stage_spec": {
-    "path": "ver3/spec/email-delivery.md",
-    "sha256": "80198d9e3f7822700d5233ca2464ebf3c78ff8cf2c320d8dcf4e42efeecebb36"
+    "path": "ver3/spec/work-entry.md",
+    "sha256": "10b63f6e94b4f60011c2ef4c5ae11de185c87f6bbbbbf7502328ca776d3a769a"
   },
   "required_inputs": [
     "ver3/runs/086-20261026-r1/delivery.json",
-    "ver3/runs/086-20261026-r1/json2.json",
-    "ver3/runs/086-20261026-r1/cover-ready.json",
-    "ver3/runs/086-20261026-r1/audio-quality.json"
-  ],
-  "expected_outputs": [
     "ver3/runs/086-20261026-r1/completion.json",
     "ver3/state/production.json"
   ],
+  "expected_outputs": [],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "delivery_status": "PASS",
-    "page_url": "https://app.notion.com/p/086-1-18-2-10-4058aa4608ae8109a5f1fb59563da8c5",
-    "missing_audio_refs": [],
-    "missing_html_refs": [],
-    "cover_status": "PASS",
-    "audio_quality_status": "CONTENT_REVIEW_PENDING",
-    "audio_content_verified": false,
-    "completion_gate_reasons": []
+    "reason": "Delivery, Gmail Sent receipt, and production advancement are all verified."
   }
 }
