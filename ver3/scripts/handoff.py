@@ -106,6 +106,7 @@ def waiting_for_audio_quality(run, report_path, review_path, report):
         required_inputs=(
             Path(run) / 'audio-input.json', report_path,
             report_path.with_name(report_path.stem + '-review-template.json'),
+            report['manifest_path'],
             'ver3/quality/audio/incidents.json',
         ),
         expected_outputs=(review_path,),
