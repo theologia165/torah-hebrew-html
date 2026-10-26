@@ -2,21 +2,46 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "085-20261025-r1",
   "sequence": "085",
-  "phase": "COMPLETE",
-  "status": "PASS",
-  "next_action": "NONE",
+  "phase": "AUDIO_QUALITY",
+  "status": "WAITING_FOR_WORK",
+  "next_action": "REVIEW_AND_REPAIR_AUDIO",
   "stage_spec": {
-    "path": "ver3/spec/work-entry.md",
-    "sha256": "10b63f6e94b4f60011c2ef4c5ae11de185c87f6bbbbbf7502328ca776d3a769a"
+    "path": "ver3/spec/audio-quality.md",
+    "sha256": "2537f396ea47e7b30df87cb1467face6163dc68dc5811744689105eda0a62c49"
   },
   "required_inputs": [
-    "ver3/runs/085-20261025-r1/delivery.json",
-    "ver3/runs/085-20261025-r1/completion.json",
-    "ver3/state/production.json"
+    "ver3/runs/085-20261025-r1/audio-input.json",
+    "ver3/runs/085-20261025-r1/audio-repairs/label-offset-20261026-r1/audio-quality.json",
+    "ver3/runs/085-20261025-r1/audio-repairs/label-offset-20261026-r1/audio-quality-review-template.json",
+    "ver3/runs/085-20261025-r1/audio-repairs/label-offset-20261026-r1/085-20261025-r1/audio/audio_manifest.json",
+    "ver3/quality/audio/incidents.json"
   ],
-  "expected_outputs": [],
+  "expected_outputs": [
+    "ver3/runs/085-20261025-r1/audio-repairs/label-offset-20261026-r1/audio-content-review.json"
+  ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "reason": "Delivery, Gmail Sent receipt, and production advancement are all verified."
+    "quality_status": "CONTENT_REVIEW_PENDING",
+    "blocking_refs": [],
+    "pending_refs": [
+      "1:1",
+      "1:2",
+      "1:3",
+      "1:4",
+      "1:5",
+      "1:6",
+      "1:7",
+      "1:8",
+      "1:9",
+      "1:10",
+      "1:11",
+      "1:12",
+      "1:13",
+      "1:14",
+      "1:15",
+      "1:16",
+      "1:17"
+    ],
+    "published_audio_unchanged": true
   }
 }
