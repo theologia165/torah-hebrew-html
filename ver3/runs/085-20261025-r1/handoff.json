@@ -2,46 +2,24 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "085-20261025-r1",
   "sequence": "085",
-  "phase": "AUDIO_QUALITY",
-  "status": "WAITING_FOR_WORK",
-  "next_action": "REVIEW_AND_REPAIR_AUDIO",
+  "phase": "FAILURE_REPORT",
+  "status": "BLOCKED",
+  "next_action": "SEND_PARTIAL_EMAIL_KEEP_STATE",
   "stage_spec": {
-    "path": "ver3/spec/audio-quality.md",
-    "sha256": "2537f396ea47e7b30df87cb1467face6163dc68dc5811744689105eda0a62c49"
+    "path": "ver3/spec/failure-report.md",
+    "sha256": "49aa630c17d16e2376c459440d2353b14d55949e464b7d981e6999d742671bd9"
   },
   "required_inputs": [
-    "ver3/runs/085-20261025-r1/audio-input.json",
-    "ver3/runs/085-20261025-r1/audio-repairs/label-offset-20261026-r1/audio-quality.json",
-    "ver3/runs/085-20261025-r1/audio-repairs/label-offset-20261026-r1/audio-quality-review-template.json",
-    "ver3/runs/085-20261025-r1/audio-repairs/label-offset-20261026-r1/085-20261025-r1/audio/audio_manifest.json",
-    "ver3/quality/audio/incidents.json"
+    "ver3/runs/085-20261025-r1/delivery.json"
   ],
   "expected_outputs": [
-    "ver3/runs/085-20261025-r1/audio-repairs/label-offset-20261026-r1/audio-content-review.json"
+    "ver3/runs/085-20261025-r1/completion.md"
   ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "quality_status": "CONTENT_REVIEW_PENDING",
-    "blocking_refs": [],
-    "pending_refs": [
-      "1:1",
-      "1:2",
-      "1:3",
-      "1:4",
-      "1:5",
-      "1:6",
-      "1:7",
-      "1:8",
-      "1:9",
-      "1:10",
-      "1:11",
-      "1:12",
-      "1:13",
-      "1:14",
-      "1:15",
-      "1:16",
-      "1:17"
-    ],
-    "published_audio_unchanged": true
+    "failed_operation": "GITHUB_ACTIONS_PIPELINE",
+    "error_type": "RuntimeError",
+    "error_message": "Audio listening API 401: {\n  \"error\": {\n    \"message\": \"Your API key has expired. Create a new API key to continue.\",\n    \"type\": \"invalid_request_error\",\n    \"code\": \"expired_secret_key\",\n    \"param\": null\n  },\n  \"status\": 401\n}",
+    "last_successful_stage": "AUDIO_QUALITY_REPAIR"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "status": "BLOCKED",
+  "run_id": "085-20261025-r1",
+  "operation": "AUDIO_QUALITY_REPAIR",
+  "error_type": "RuntimeError",
+  "message": "Audio listening API 401: {\n  \"error\": {\n    \"message\": \"Your API key has expired. Create a new API key to continue.\",\n    \"type\": \"invalid_request_error\",\n    \"code\": \"expired_secret_key\",\n    \"param\": null\n  },\n  \"status\": 401\n}",
+  "repair_completed": false
+}
