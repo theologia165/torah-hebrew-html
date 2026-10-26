@@ -1,9 +1,28 @@
 {
-  "status": "FAIL",
+  "status": "PASS",
   "run_id": "086-20261026-r1",
   "page_id": "4058aa46-08ae-8109-a5f1-fb59563da8c5",
   "page_url": "https://app.notion.com/p/086-1-18-2-10-4058aa4608ae8109a5f1fb59563da8c5",
   "frame_upload_id": "3d48aa46-08ae-81fa-99e2-00b270ed575a",
   "frame_method": "SHARED_DUMMY_THEN_PAGES",
-  "error": "Citation links differ: text='参照：ニュッサのグレゴリオス『モーセの生涯』II.7–12'; expected=[{'url': 'https://catholiclibrary.org/library/view?chunk.id=00000027&docId=Fathers-Synchronized-EN/Gregory_of_Nyssa__De_vita_Mosis.en.html'}]; actual=[{'url': 'https://catholiclibrary.org/library/view?chunk.id=00000027&docId=Fathers-Synchronized-EN%2FGregory_of_Nyssa__De_vita_Mosis.en.html'}]"
+  "verse_count": 15,
+  "json3_sha256": "28239fb08451b2a11c7fac518107d3f3bd245b31b9f36bb26962e9c52fd4ad56",
+  "NOTION_PAGE_CREATED": true,
+  "TEXT_DELIVERED": true,
+  "HTML_IMPLEMENTED_COUNT": 15,
+  "AUDIO_IMPLEMENTED_COUNT": 15,
+  "missing_audio_refs": [],
+  "missing_html_refs": [],
+  "failure_details": [],
+  "ai_generated_audio_refs": [],
+  "open_bible_audio_refs": [],
+  "cover": {
+    "status": "PASS",
+    "r2_object_key": "covers/086-20261026-r1/cover.jpg",
+    "sha256": "3ce2dc5a36b35c5dfdbd09ab0bc6ab543e0032e605e59d9e4705884f9b2da5e6",
+    "byte_size": 457298,
+    "notion_file_upload_id": "4058aa46-08ae-8152-b9e0-00b25ddccf30",
+    "notion_cover_type": "file",
+    "r2_retention_days": 14
+  }
 }
