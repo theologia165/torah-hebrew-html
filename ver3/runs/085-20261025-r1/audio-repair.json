@@ -1,0 +1,13 @@
+{
+  "operation": "AUDIO_ONLY_REPLACE",
+  "audio_only_repair": true,
+  "run_id": "085-20261025-r1",
+  "page_id": "4048aa46-08ae-81d7-a880-fd4f928833d8",
+  "update_page_id": "4048aa46-08ae-81d7-a880-fd4f928833d8",
+  "repair_id": "label-offset-20261026-r1",
+  "reason": "先頭0を語開始と数えた1語分のずれを音源・ラベルhash固定で修正。全17節を再検品して同一Notionページの音声だけを差し替える。",
+  "incident_ids": [
+    "AUDIO-085-LABEL-OFFSET"
+  ],
+  "quality_department": "ver3/quality/audio"
+}

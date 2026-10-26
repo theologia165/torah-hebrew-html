@@ -15,9 +15,22 @@ from audio.quality import (CHECKS, cancel_repair, inspect, quarantine, read,
                            request_repair)
 from audio.repair import execute, pending
 from audio_quality import inspect_audio
+from deliver import non_audio_digest
 
 
 class AudioQualityTest(unittest.TestCase):
+    def test_audio_replacement_preserves_text_and_html_identity(self):
+        blocks = [
+            {'id': 't', 'type': 'paragraph', 'paragraph': {'rich_text': []}},
+            {'id': 'h', 'type': 'embed', 'embed': {'url': 'https://example.test/verse.html'}},
+            {'id': 'a', 'type': 'audio', 'audio': {'external': {'url': 'old_r2.mp3'}}},
+        ]
+        changed = copy.deepcopy(blocks)
+        changed[2]['audio']['external']['url'] = 'reviewed_revision_r2.mp3'
+        self.assertEqual(non_audio_digest(blocks), non_audio_digest(changed))
+        changed[1]['embed']['url'] = 'https://example.test/other.html'
+        self.assertNotEqual(non_audio_digest(blocks), non_audio_digest(changed))
+
     @classmethod
     def setUpClass(cls):
         cls.fixture = tempfile.TemporaryDirectory()

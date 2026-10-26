@@ -1,5 +1,6 @@
 """Primary PocketTorah source adapter and per-verse extractor."""
 import json
+import hashlib
 import re
 import sys
 import urllib.parse
@@ -23,6 +24,37 @@ ALIYAH_URL = f'{BASE_RAW}/data/aliyah.json'
 SILENCE_NOISE_DB = -38
 SILENCE_MIN_D = 0.08
 SIGNAL_WINDOW = 1.25
+
+
+def normalize_labels(labels, total_words, source_duration, source_meta,
+                     audio_sha256, labels_sha256):
+    """Apply only byte-pinned source conventions; never infer from a zero."""
+    registry = Path(__file__).resolve().parents[3] / 'quality/audio/source-alignments.json'
+    profiles = json.loads(registry.read_text(encoding='utf-8'))['profiles']
+    matches = [p for p in profiles
+               if p['audio_base'] == source_meta['audio_base']
+               and p['pockettorah_commit'] == POCKETTORAH_SHA]
+    if matches:
+        if len(matches) != 1:
+            fail('MAPPING: duplicate source-specific label profiles')
+        profile = matches[0]
+        if (profile['audio_sha256'] != audio_sha256
+                or profile['labels_sha256'] != labels_sha256
+                or profile['word_count'] != total_words):
+            fail('MAPPING: source-specific alignment bytes/word count changed')
+        if (profile['convention'] != 'LEADING_ZERO_THEN_WORD_ONSETS'
+                or len(labels) != total_words + 1 or labels[0] != 0):
+            fail('MAPPING: source-specific label convention mismatch')
+        onsets = labels[1:]
+        if (not all(a < b for a, b in zip(onsets, onsets[1:]))
+                or onsets[0] < 0 or onsets[-1] >= source_duration):
+            fail('MAPPING: source-specific onsets are not in the audio')
+        source_meta.update(label_alignment=profile['convention'],
+                           label_alignment_profile=profile['id'])
+        return onsets, source_duration
+    if len(labels) == total_words + 1 and labels[-1] <= source_duration + 0.25:
+        return labels[:-1], labels[-1]
+    return labels[:total_words], source_duration
 
 
 def fail(message):
@@ -160,9 +192,13 @@ def build(data, output):
         passage.get('end_chapter', default_chapter)) != default_chapter
     source_meta = resolve_source(data)
     source = output / f"{source_meta['audio_base']}_source.mp3"
-    source.write_bytes(get_bytes(source_meta['audio_url']))
+    source_bytes = get_bytes(source_meta['audio_url'])
+    labels_bytes = get_bytes(source_meta['labels_url'])
+    source.write_bytes(source_bytes)
+    source_meta.update(audio_sha256=hashlib.sha256(source_bytes).hexdigest(),
+                       labels_sha256=hashlib.sha256(labels_bytes).hexdigest())
     labels = [
-        float(value) for value in get_bytes(source_meta['labels_url'])
+        float(value) for value in labels_bytes
         .decode('utf-8-sig').strip().split(',') if value.strip()
     ]
     word_counts = [len(verse['words']) for verse in data['verses']]
@@ -172,18 +208,17 @@ def build(data, output):
             f'MAPPING: label count {len(labels)} incompatible with '
             f'word count {total_words}')
     source_duration = duration(source)
+    word_onsets, explicit_end = normalize_labels(
+        labels, total_words, source_duration, source_meta,
+        source_meta['audio_sha256'], source_meta['labels_sha256'])
 
     # A label beyond the physical MP3 is a stable source defect.  It is not a
     # boundary or atempo problem and is the only kind of defect eligible for
     # automatic fallback without further evidence.
     outside = [
-        (index + 1, onset) for index, onset in enumerate(labels[:total_words])
+        (index + 1, onset) for index, onset in enumerate(word_onsets)
         if onset > source_duration
     ]
-    if len(labels) == total_words + 1 and labels[-1] <= source_duration + 0.25:
-        word_onsets, explicit_end = labels[:-1], labels[-1]
-    else:
-        word_onsets, explicit_end = labels[:total_words], source_duration
     if len(word_onsets) != total_words:
         fail('MAPPING: could not normalize PocketTorah label count')
 
@@ -227,10 +262,10 @@ def build(data, output):
         r2 = output / f'{stem}_r2.mp3'
         word_start, word_end = cumulative[index], cumulative[index + 1]
         verse_outside = [
-            (token_index + 1, labels[token_index])
+            (token_index + 1, word_onsets[token_index])
             for token_index in range(word_start, word_end)
-            if token_index < len(labels)
-            and labels[token_index] > source_duration
+            if token_index < len(word_onsets)
+            and word_onsets[token_index] > source_duration
         ]
         if verse_outside:
             first_index, first_time = verse_outside[0]

@@ -3,6 +3,7 @@
 import subprocess
 import sys
 import tempfile
+import json
 from pathlib import Path
 from unittest.mock import patch
 
@@ -11,6 +12,29 @@ from audio.processing import normalized_atempo
 
 
 def main():
+    registry = json.loads((Path(__file__).resolve().parents[1] /
+                           'quality/audio/source-alignments.json').read_text())
+    profile = registry['profiles'][0]
+    # The 085 source has a leading marker plus N word onsets, not an end label.
+    fixture_labels = [0] + [1.5 + i for i in range(181)]
+    meta = {'audio_base': profile['audio_base']}
+    onsets, ending = pockettorah.normalize_labels(
+        fixture_labels, 181, 187.48075, meta,
+        profile['audio_sha256'], profile['labels_sha256'])
+    assert onsets == fixture_labels[1:] and ending == 187.48075
+    assert onsets[11] == fixture_labels[12]
+    assert meta['label_alignment'] == 'LEADING_ZERO_THEN_WORD_ONSETS'
+    try:
+        pockettorah.normalize_labels(fixture_labels, 181, 187.48075,
+                                    {'audio_base': profile['audio_base']},
+                                    '0' * 64, profile['labels_sha256'])
+    except SystemExit:
+        pass
+    else:
+        raise AssertionError('Changed source bytes accepted a pinned correction')
+    # Other sources keep their prior convention; a zero alone is not evidence.
+    assert pockettorah.normalize_labels([0, 1, 2], 2, 3,
+                                      {'audio_base': 'other'}, '', '') == ([0, 1], 2)
     factor, capped = normalized_atempo(0.35)
     assert factor == 1.0 and capped is True
     factor, capped = normalized_atempo(1.0)
