@@ -1,0 +1,481 @@
+{
+  "schema_version": "1.0-work-json2-quality",
+  "run_id": "088-20261028-r1",
+  "status": "PASS",
+  "WORK_JSON2_QUALITY": "PASS",
+  "auditor": "Work",
+  "audited_at": "2026-10-28T13:18:11.188500+00:00",
+  "json1_sha256": "ca1725a4a87540c9ff4a41f73c19f3c671f1a5d949dade04347de652f3f51b8f",
+  "json1_1_sha256": "698466db2558d5b6a0518b55b3668064b6b2c30dc065e57c07c38969f41fbdd4",
+  "json2_sha256": "3ecadfd9f00b46445cd24953f43b9b4e5990b1dd66d181ce4cb1f84634fa8f7b",
+  "verse_count": 15,
+  "token_count": 269,
+  "unresolved_count": 0,
+  "checks": {
+    "all_token_surface_lemma_morphology_gloss_correspondence": "PASS",
+    "no_missing_placeholder_hebrew_or_abnormal_repetition": "PASS",
+    "private_translation_syntax_consistency": "PASS",
+    "verse_specific_exposition": "PASS",
+    "distinct_aliyah_research_topics": "PASS",
+    "verified_supporting_sources": "PASS",
+    "unique_verse_devotions_with_empty_sources": "PASS",
+    "japanese_ltr_no_forbidden_phrase": "PASS",
+    "source_hash_identity": "PASS"
+  },
+  "verse_audit": [
+    {
+      "ref": "Exod.3.1",
+      "token_ids": [
+        29547,
+        29548,
+        29549,
+        29550,
+        29551,
+        29552,
+        29553,
+        29554,
+        29555,
+        29556,
+        29557,
+        29558,
+        29559,
+        29560,
+        29561,
+        29562,
+        29563,
+        29564,
+        29565
+      ],
+      "status": "PASS",
+      "focus": "継続的牧畜、連語、方向接尾辞"
+    },
+    {
+      "ref": "Exod.3.2",
+      "token_ids": [
+        29759,
+        29760,
+        29761,
+        29762,
+        29763,
+        29764,
+        29765,
+        29766,
+        29767,
+        29768,
+        29769,
+        29770,
+        29771,
+        29772,
+        29773,
+        29774
+      ],
+      "status": "PASS",
+      "focus": "見るのニファルと能動、燃焼と非消耗"
+    },
+    {
+      "ref": "Exod.3.3",
+      "token_ids": [
+        29821,
+        29822,
+        29823,
+        29824,
+        29825,
+        29826,
+        29827,
+        29828,
+        29829,
+        29830,
+        29831,
+        29832,
+        29833
+      ],
+      "status": "PASS",
+      "focus": "一人称意志形、文脈的な燃え尽きる"
+    },
+    {
+      "ref": "Exod.3.4",
+      "token_ids": [
+        29834,
+        29835,
+        29836,
+        29837,
+        29838,
+        29839,
+        29840,
+        29841,
+        29842,
+        29843,
+        29844,
+        29845,
+        29846,
+        29847,
+        29848
+      ],
+      "status": "PASS",
+      "focus": "見る反復、主／神、名の二重呼びかけ"
+    },
+    {
+      "ref": "Exod.3.5",
+      "token_ids": [
+        29849,
+        29850,
+        29851,
+        29852,
+        29853,
+        29854,
+        29855,
+        29856,
+        29857,
+        29858,
+        29859,
+        29860,
+        29861,
+        29862,
+        29863,
+        29864,
+        29865
+      ],
+      "status": "PASS",
+      "focus": "否定命令、命令、聖なる地の連語"
+    },
+    {
+      "ref": "Exod.3.6",
+      "token_ids": [
+        29866,
+        29867,
+        29868,
+        29869,
+        29870,
+        29871,
+        29872,
+        29873,
+        29874,
+        29875,
+        29876,
+        29877,
+        29878,
+        29879,
+        29880,
+        29881,
+        29882,
+        29883
+      ],
+      "status": "PASS",
+      "focus": "父の単数、祖先三名、顔を隠す使役形"
+    },
+    {
+      "ref": "Exod.3.7",
+      "token_ids": [
+        29884,
+        29885,
+        29886,
+        29887,
+        29888,
+        29889,
+        29890,
+        29891,
+        29892,
+        29893,
+        29894,
+        29895,
+        29896,
+        29897,
+        29898,
+        29899,
+        29900,
+        29901
+      ],
+      "status": "PASS",
+      "focus": "不定詞絶対形、集合名詞の単複参照"
+    },
+    {
+      "ref": "Exod.3.8",
+      "token_ids": [
+        29902,
+        29903,
+        29904,
+        29905,
+        29906,
+        29907,
+        29908,
+        29909,
+        29910,
+        29911,
+        29912,
+        29913,
+        29914,
+        29915,
+        29916,
+        29917,
+        29918,
+        29919,
+        29920,
+        29921,
+        29922,
+        29923,
+        29924,
+        29925,
+        29926
+      ],
+      "status": "PASS",
+      "focus": "二つの使役不定詞、民の接尾辞、六民族"
+    },
+    {
+      "ref": "Exod.3.9",
+      "token_ids": [
+        29927,
+        29928,
+        29929,
+        29930,
+        29931,
+        29932,
+        29933,
+        29934,
+        29935,
+        29936,
+        29937,
+        29938,
+        29939,
+        29940,
+        29941
+      ],
+      "status": "PASS",
+      "focus": "届いた完了と圧迫分詞、同根反復"
+    },
+    {
+      "ref": "Exod.3.10",
+      "token_ids": [
+        29566,
+        29567,
+        29568,
+        29569,
+        29570,
+        29571,
+        29572,
+        29573,
+        29574,
+        29575,
+        29576
+      ],
+      "status": "PASS",
+      "focus": "命令と派遣者、同格の民／子ら"
+    },
+    {
+      "ref": "Exod.3.11",
+      "token_ids": [
+        29577,
+        29578,
+        29579,
+        29580,
+        29581,
+        29582,
+        29583,
+        29584,
+        29585,
+        29586,
+        29587,
+        29588,
+        29589,
+        29590,
+        29591,
+        29592
+      ],
+      "status": "PASS",
+      "focus": "二つの任務を問う疑問文"
+    },
+    {
+      "ref": "Exod.3.12",
+      "token_ids": [
+        29593,
+        29594,
+        29595,
+        29596,
+        29597,
+        29598,
+        29599,
+        29600,
+        29601,
+        29602,
+        29603,
+        29604,
+        29605,
+        29606,
+        29607,
+        29608,
+        29609,
+        29610,
+        29611,
+        29612
+      ],
+      "status": "PASS",
+      "focus": "同伴未完了、単数から複数、将来のしるし"
+    },
+    {
+      "ref": "Exod.3.13",
+      "token_ids": [
+        29613,
+        29614,
+        29615,
+        29616,
+        29617,
+        29618,
+        29619,
+        29620,
+        29621,
+        29622,
+        29623,
+        29624,
+        29625,
+        29626,
+        29627,
+        29628,
+        29629,
+        29630,
+        29631,
+        29632,
+        29633,
+        29634,
+        29635
+      ],
+      "status": "PASS",
+      "focus": "想定会話、分詞と継続完了形、先祖複数"
+    },
+    {
+      "ref": "Exod.3.14",
+      "token_ids": [
+        29636,
+        29637,
+        29638,
+        29639,
+        29640,
+        29641,
+        29642,
+        29643,
+        29644,
+        29645,
+        29646,
+        29647,
+        29648,
+        29649,
+        29650
+      ],
+      "status": "PASS",
+      "focus": "未完了形と関係詞、現在と将来、神名としての呼称"
+    },
+    {
+      "ref": "Exod.3.15",
+      "token_ids": [
+        29651,
+        29652,
+        29653,
+        29654,
+        29655,
+        29656,
+        29657,
+        29658,
+        29659,
+        29660,
+        29661,
+        29662,
+        29663,
+        29664,
+        29665,
+        29666,
+        29667,
+        29668,
+        29669,
+        29670,
+        29671,
+        29672,
+        29673,
+        29674,
+        29675,
+        29676,
+        29677,
+        29678
+      ],
+      "status": "PASS",
+      "focus": "四子音神名の訳語、先祖三名、永遠と代々"
+    }
+  ],
+  "source_audit": [
+    {
+      "url": "https://raw.githubusercontent.com/openscriptures/morphhb/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Exod.xml",
+      "status": "VERIFIED",
+      "method": "原資料XMLをHTTP200で読み込み、出3:14を確認。当該RUN JSON1.1を全語の意味研究入力とした。"
+    },
+    {
+      "url": "https://www.sefaria.org/Berakhot.9b",
+      "status": "VERIFIED",
+      "method": "Sefaria API本文で現在／将来の隷属とモーセの応答を確認。"
+    },
+    {
+      "url": "https://www.sefaria.org/Guide_for_the_Perplexed,_Part_1.63",
+      "status": "VERIFIED",
+      "method": "Sefaria API英訳本文で絶対的存在と反復する属性の議論を確認。"
+    },
+    {
+      "url": "https://www.chabad.org/library/bible_cdo/aid/9864/showrashi/true",
+      "status": "VERIFIED",
+      "method": "出3:14ラシ掲載本文を閲覧。"
+    },
+    {
+      "url": "https://bible.usccb.org/bible/exodus/3",
+      "status": "VERIFIED",
+      "method": "3:12・3:14注を閲覧。民族列挙はWLCと異なるため流用せず。"
+    },
+    {
+      "url": "https://www.thetorah.com/article/how-does-god-answer-the-question-what-is-your-name",
+      "status": "VERIFIED",
+      "method": "Farber本文の層状形成仮説を閲覧し、仮説と明示。"
+    },
+    {
+      "url": "https://catholiclibrary.org/library/view?chunk.id=00000029&docId=Fathers-Synchronized-EN%2FGregory_of_Nyssa__De_vita_Mosis.en.html",
+      "status": "VERIFIED",
+      "method": "II.19–23本文を閲覧。キリスト論的類型と本文の直接の意味を区別。"
+    }
+  ],
+  "metadata_notes": [
+    {
+      "ref": "Exod.3.12",
+      "token_id": 29598,
+      "surface": "לְּךָ֣",
+      "lemma": "l",
+      "morph": "HR/Sp2ms",
+      "decision": "独立辞書項目null。前置詞と接尾辞を当該tokenの形態に即して訳す。Strong番号は補完しない。"
+    },
+    {
+      "ref": "Exod.3.13",
+      "token_id": 29624,
+      "surface": "לָהֶ֔ם",
+      "lemma": "l",
+      "morph": "HR/Sp3mp",
+      "decision": "独立辞書項目null。前置詞と接尾辞を当該tokenの形態に即して訳す。Strong番号は補完しない。"
+    },
+    {
+      "ref": "Exod.3.13",
+      "token_id": 29630,
+      "surface": "לִ֣י",
+      "lemma": "l",
+      "morph": "HR/Sp1cs",
+      "decision": "独立辞書項目null。前置詞と接尾辞を当該tokenの形態に即して訳す。Strong番号は補完しない。"
+    },
+    {
+      "ref": "Exod.3.12",
+      "token_id": 29596,
+      "source_morph": "HR/Sp2fs",
+      "decision": "ポーズ形と文脈上のモーセへの呼びかけに基づき「あなたと共に」。原形態データは変更しない。"
+    },
+    {
+      "ref": "Exod.3.8",
+      "token_id": 29905,
+      "source_lemma": "4713",
+      "decision": "表層と固有名詞形態および文脈に基づきエジプト。辞書メタデータを上書きしない。"
+    },
+    {
+      "ref": "Exod.3.14",
+      "decision": "未完了の現在／将来の含みを説明。意志・願望へ限定しない。"
+    }
+  ],
+  "scope_note": "過去RUNの研究成果・Notion本文・メール・画像を研究入力にしていない。構造PASSは独立した検証であり本監査の代替ではない。"
+}
