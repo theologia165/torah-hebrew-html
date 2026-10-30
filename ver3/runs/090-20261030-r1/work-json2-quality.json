@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.0-work-json2-quality",
+  "run_id": "090-20261030-r1",
+  "status": "PASS",
+  "WORK_JSON2_QUALITY": "PASS",
+  "auditor": "Work",
+  "audited_at": "2026-10-30T13:06:29.345278+00:00",
+  "json1_sha256": "c6a541e9532ec4d5656403023f8ea13132cc8b9d12400357b8abeb94d6c66c02",
+  "json1_1_sha256": "425bf34c746abe6b9c42523b31cd87184853fe01eb9f10a6da0970aa001e6dd3",
+  "json2_sha256": "abc23c0326db2e1f2b01241bd06e48794baebc348d1916248103d4ccaa7f20a0",
+  "verse_count": 14,
+  "token_count": 198,
+  "unresolved_count": 0,
+  "checks": {
+    "all_tokens_surface_lemma_morphology_gloss": "PASS",
+    "translation_syntax_and_context": "PASS",
+    "no_fallback_hebrew_or_empty_gloss": "PASS",
+    "verse_specific_exposition_and_devotion": "PASS",
+    "diversified_three_layer_research": "PASS",
+    "sources_actually_checked": "PASS",
+    "interpretation_and_text_separated": "PASS",
+    "hashes_and_ltr": "PASS"
+  },
+  "verse_audit": [
+    {
+      "ref": "Exod.4.18",
+      "token_ids": [
+        34519,
+        34520,
+        34521,
+        34522,
+        34523,
+        34524,
+        34525,
+        34526,
+        34527,
+        34528,
+        34529,
+        34530,
+        34531,
+        34532,
+        34533,
+        34534,
+        34535,
+        34536,
+        34537,
+        34538,
+        34539,
+        34540,
+        34541
+      ],
+      "focus": "帰る願いと送り出す言葉",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.19",
+      "token_ids": [
+        34542,
+        34543,
+        34544,
+        34545,
+        34546,
+        34547,
+        34548,
+        34549,
+        34550,
+        34551,
+        34552,
+        34553,
+        34554,
+        34555,
+        34556
+      ],
+      "focus": "戻る命令に添えられる危険の変化",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.20",
+      "token_ids": [
+        34566,
+        34567,
+        34568,
+        34569,
+        34570,
+        34571,
+        34572,
+        34573,
+        34574,
+        34575,
+        34576,
+        34577,
+        34578,
+        34579,
+        34580,
+        34581,
+        34582,
+        34583
+      ],
+      "focus": "家族の旅と神の杖",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.21",
+      "token_ids": [
+        34584,
+        34585,
+        34586,
+        34587,
+        34588,
+        34589,
+        34590,
+        34591,
+        34592,
+        34593,
+        34594,
+        34595,
+        34596,
+        34597,
+        34598,
+        34599,
+        34600,
+        34601,
+        34602,
+        34603,
+        34604,
+        34605,
+        34606,
+        34607
+      ],
+      "focus": "行う命令と心を強くする告知",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.22",
+      "token_ids": [
+        34608,
+        34609,
+        34610,
+        34611,
+        34612,
+        34613,
+        34614,
+        34615,
+        34616
+      ],
+      "focus": "一つの民を長子と呼ぶ",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.23",
+      "token_ids": [
+        34617,
+        34618,
+        34619,
+        34620,
+        34621,
+        34622,
+        34623,
+        34624,
+        34625,
+        34626,
+        34627,
+        34628,
+        34629,
+        34630
+      ],
+      "focus": "わたしの子とあなたの長子の対置",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.24",
+      "token_ids": [
+        34631,
+        34632,
+        34633,
+        34634,
+        34635,
+        34636,
+        34637
+      ],
+      "focus": "遣わす主が道で命を脅かす",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.25",
+      "token_ids": [
+        34638,
+        34639,
+        34640,
+        34641,
+        34642,
+        34643,
+        34644,
+        34645,
+        34646,
+        34647,
+        34648,
+        34649,
+        34650,
+        34651,
+        34652
+      ],
+      "focus": "ツィポラの行動と難しい呼び名",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.26",
+      "token_ids": [
+        34653,
+        34654,
+        34655,
+        34656,
+        34657,
+        34658,
+        34659
+      ],
+      "focus": "危機の終わりと割礼への説明",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.27",
+      "token_ids": [
+        34660,
+        34661,
+        34662,
+        34663,
+        34664,
+        34665,
+        34666,
+        34667,
+        34668,
+        34669,
+        34670,
+        34671,
+        34672,
+        34673
+      ],
+      "focus": "恐ろしい出会いから兄弟の出会いへ",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.28",
+      "token_ids": [
+        34674,
+        34675,
+        34676,
+        34677,
+        34678,
+        34679,
+        34680,
+        34681,
+        34682,
+        34683,
+        34684,
+        34685,
+        34686,
+        34687
+      ],
+      "focus": "共に進むために託された内容を共有する",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.29",
+      "token_ids": [
+        34688,
+        34689,
+        34690,
+        34691,
+        34692,
+        34693,
+        34694,
+        34695,
+        34696
+      ],
+      "focus": "二人で共同体の長老たちのもとへ",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.30",
+      "token_ids": [
+        34707,
+        34708,
+        34709,
+        34710,
+        34711,
+        34712,
+        34713,
+        34714,
+        34715,
+        34716,
+        34717,
+        34718,
+        34719,
+        34720
+      ],
+      "focus": "伝えられた言葉と人々の前の行為",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.4.31",
+      "token_ids": [
+        34721,
+        34722,
+        34723,
+        34724,
+        34725,
+        34726,
+        34727,
+        34728,
+        34729,
+        34730,
+        34731,
+        34732,
+        34733,
+        34734,
+        34735
+      ],
+      "focus": "苦しみを顧みられたと聞いて礼拝する",
+      "status": "PASS"
+    }
+  ],
+  "source_audit": [
+    {
+      "label": "Open Scriptures Hebrew Bible／WLC、出エジプト記4:18（当該RUN JSON1.1）",
+      "url": "https://github.com/openscriptures/morphhb/blob/3d15126fb1ef74867fc1434be1942e837932691f/wlc/Exod.xml",
+      "status": "VERIFIED",
+      "scope": "WLCは当該RUN本文、ラシと教父は該当箇所本文、現代論文2件は公開要旨。本文未読を読了としない。"
+    },
+    {
+      "label": "ラシ、出エジプト記4:24–26注解、Chabad掲載本文",
+      "url": "https://www.chabad.org/library/bible_cdo/aid/9865/showrashi/true",
+      "status": "VERIFIED",
+      "scope": "WLCは当該RUN本文、ラシと教父は該当箇所本文、現代論文2件は公開要旨。本文未読を読了としない。"
+    },
+    {
+      "label": "Adam J. Howell, “The Firstborn Son of Moses as the ‘Relative of Blood’ in Exodus 4.24–26,” JSOT 35/1 (2010), 63–76、公開要旨",
+      "url": "https://journals.sagepub.com/doi/10.1177/0309089210378962",
+      "status": "VERIFIED",
+      "scope": "WLCは当該RUN本文、ラシと教父は該当箇所本文、現代論文2件は公開要旨。本文未読を読了としない。"
+    },
+    {
+      "label": "Karen Strand Winslow, “Ethnicity, Exogamy, and Zipporah,” Women in Judaism 4/1 (2006)、公開要旨",
+      "url": "https://wjudaism.library.utoronto.ca/index.php/wjudaism/article/view/225",
+      "status": "VERIFIED",
+      "scope": "WLCは当該RUN本文、ラシと教父は該当箇所本文、現代論文2件は公開要旨。本文未読を読了としない。"
+    },
+    {
+      "label": "オリゲネス『ケルソス駁論』V.48、CCEL掲載英訳",
+      "url": "https://ccel.org/ccel/origen/against_celsus/anf04.vi.ix.v.xlviii.html",
+      "status": "VERIFIED",
+      "scope": "WLCは当該RUN本文、ラシと教父は該当箇所本文、現代論文2件は公開要旨。本文未読を読了としない。"
+    }
+  ],
+  "metadata_notes": [
+    {
+      "ref": "Exod.4.23",
+      "token_id": 34622,
+      "source_morph": "HC/Vqj3ms/Sp1cp",
+      "decision": "表層の-niと一人称単数の神の発話に従い「わたしに仕える」。接尾辞メタデータは上書きしない。"
+    },
+    {
+      "ref": "Exod.4.26",
+      "token_id": 34654,
+      "source_morph": "HR/Sp1cp",
+      "decision": "同形の一人称複数ではなく、文脈上の三人称単数「彼から」を採用。原データを変更しない。詳説にも判断を記す。"
+    },
+    {
+      "token_ids": [
+        34526,
+        34652,
+        34673
+      ],
+      "decision": "独立lexemeがnullの前置詞はsurface・morph_segments・構文から訳し、番号は補完しない。"
+    },
+    {
+      "ref": "Exod.4.24–26",
+      "decision": "代名詞の複数解釈は明示的に保留し、私訳で無標識にモーセ／子の名を挿入しない。"
+    },
+    {
+      "ref": "Exod.4.30",
+      "decision": "しるしの実行者の名を無標識に補わず「彼」と保持。"
+    }
+  ],
+  "research_policy": "過去RUN JSON2/JSON3、Notion、メール、画像は研究入力に使用していない。"
+}
