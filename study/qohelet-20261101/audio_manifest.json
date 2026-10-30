@@ -1,0 +1,2611 @@
+{
+  "source": "OHGB_SYNTHETIC",
+  "source_url": "https://raw.githubusercontent.com/eliranwong/MP3_OpenHebrewGreekBible_slow/main/21_Ecclesiastes.zip",
+  "license": "CC BY 4.0",
+  "attribution": "Eliran Wong, MP3 Open Hebrew Greek Bible (slow), generated with Unique Bible App text-to-speech",
+  "disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+  "zip_sha256": "1adca63620e789a7b79b3834db4d12abc7149d6dda55501322f4ab6f8b8c7e14",
+  "asr_model": "Systran/faster-whisper-small",
+  "verses": [
+    {
+      "chapter": 9,
+      "verse": 17,
+      "ref": "9:17",
+      "word_count": 7,
+      "boundary_start": 0.0,
+      "boundary_end": 4.806531,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 4.806531,
+        "refined": 4.806531,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-9-17_ohgb_r1.mp3",
+      "r1_duration": 4.806531,
+      "source_wps": 1.4563517846862946,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.5445524964085714,
+      "atempo": 0.5445524964085714,
+      "speed_cap_applied": false,
+      "r2": "eccl-9-17_ohgb_r2.mp3",
+      "r2_duration": 8.724898,
+      "r2_theoretical_duration": 8.826570499079514,
+      "r2_duration_error": 0.10167249907951437,
+      "r2_wps": 0.8023016429533045,
+      "mean_volume_db": -15.0,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.9.17",
+      "archive_entry": "21_9/OHGB_21_9_17.mp3",
+      "expected_text": "דִּבְרֵי חֲכָמִים בְּנַחַת נִשְׁמָעִים מִזַּעֲקַת מוֹשֵׁל בַּכְּסִילִֽים",
+      "asr_text": " דברי חכמים בנחת נשמעים מזעקת מושל בקסילים",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 8.04,
+          "text": " דברי חכמים בנחת נשמעים מזעקת מושל בקסילים",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.9,
+              "word": " דברי",
+              "probability": 0.9041765332221985
+            },
+            {
+              "start": 0.9,
+              "end": 1.94,
+              "word": " חכמים",
+              "probability": 0.9525792797406515
+            },
+            {
+              "start": 1.94,
+              "end": 3.12,
+              "word": " בנחת",
+              "probability": 0.8564146757125854
+            },
+            {
+              "start": 3.12,
+              "end": 4.28,
+              "word": " נשמעים",
+              "probability": 0.8823415189981461
+            },
+            {
+              "start": 4.28,
+              "end": 5.6,
+              "word": " מזעקת",
+              "probability": 0.8789019227027893
+            },
+            {
+              "start": 5.6,
+              "end": 6.6,
+              "word": " מושל",
+              "probability": 0.7250213424364725
+            },
+            {
+              "start": 6.6,
+              "end": 8.04,
+              "word": " בקסילים",
+              "probability": 0.9388291478157044
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "1d373b14e7c77d6814b596fb2d02e673e690bc599e8b38ef2d95eb2569a877e3",
+      "r2_sha256": "539e6a3e76e2a5645b6670fb2f033df52ebddb9edacf29a472b2359aff3f6c7a",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-9-17_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 9,
+      "verse": 18,
+      "ref": "9:18",
+      "word_count": 9,
+      "boundary_start": 0.0,
+      "boundary_end": 4.780408,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 4.780408,
+        "refined": 4.780408,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-9-18_ohgb_r1.mp3",
+      "r1_duration": 4.780408,
+      "source_wps": 1.8826844905288418,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.4212389298311111,
+      "atempo": 0.4212389298311111,
+      "speed_cap_applied": false,
+      "r2": "eccl-9-18_ohgb_r2.mp3",
+      "r2_duration": 11.154286,
+      "r2_theoretical_duration": 11.348447784530807,
+      "r2_duration_error": 0.1941617845308059,
+      "r2_wps": 0.8068647334307189,
+      "mean_volume_db": -15.3,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.9.18",
+      "archive_entry": "21_9/OHGB_21_9_18.mp3",
+      "expected_text": "טוֹבָה חָכְמָה מִכְּלֵי קְרָב וְחוֹטֶא אֶחָד יְאַבֵּד טוֹבָה הַרְבֵּֽה",
+      "asr_text": " טובה חכמה מכלי קרב וחרות חד יבד, טובה הרבה",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 10.44,
+          "text": " טובה חכמה מכלי קרב וחרות חד יבד, טובה הרבה",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.18,
+              "word": " טובה",
+              "probability": 0.8394200801849365
+            },
+            {
+              "start": 1.18,
+              "end": 2.26,
+              "word": " חכמה",
+              "probability": 0.7808030446370443
+            },
+            {
+              "start": 2.26,
+              "end": 3.3,
+              "word": " מכלי",
+              "probability": 0.6628512740135193
+            },
+            {
+              "start": 3.3,
+              "end": 4.46,
+              "word": " קרב",
+              "probability": 0.8457432687282562
+            },
+            {
+              "start": 4.46,
+              "end": 5.96,
+              "word": " וחרות",
+              "probability": 0.7240502536296844
+            },
+            {
+              "start": 5.96,
+              "end": 7.22,
+              "word": " חד",
+              "probability": 0.7219017446041107
+            },
+            {
+              "start": 7.22,
+              "end": 8.46,
+              "word": " יבד,",
+              "probability": 0.8285012245178223
+            },
+            {
+              "start": 8.66,
+              "end": 9.82,
+              "word": " טובה",
+              "probability": 0.9832653105258942
+            },
+            {
+              "start": 9.82,
+              "end": 10.44,
+              "word": " הרבה",
+              "probability": 0.9471015930175781
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "971550941fe0df8fe697ea27e7d19836c8b714cc79dc37c0e933bc7a1da9cacb",
+      "r2_sha256": "31cec1135a47bfe068d930cae38b7533dfb29cc0dd594e4c36db78be0c3ee9f7",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-9-18_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 1,
+      "ref": "10:1",
+      "word_count": 11,
+      "boundary_start": 0.0,
+      "boundary_end": 6.661224,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 6.661224,
+        "refined": 6.661224,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-1_ohgb_r1.mp3",
+      "r1_duration": 6.661224,
+      "source_wps": 1.651348160638345,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.4802500277672727,
+      "atempo": 0.4802500277672727,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-1_ohgb_r2.mp3",
+      "r2_duration": 13.688163,
+      "r2_theoretical_duration": 13.870325069982094,
+      "r2_duration_error": 0.18216206998209472,
+      "r2_wps": 0.8036140422933304,
+      "mean_volume_db": -14.4,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.1",
+      "archive_entry": "21_10/OHGB_21_10_1.mp3",
+      "expected_text": "זְבוּבֵי מָוֶת יַבְאִישׁ יַבִּיעַ שֶׁמֶן רוֹקֵחַ יָקָר מֵחָכְמָה מִכָּבוֹד סִכְלוּת מְעָֽט",
+      "asr_text": " זבובי מבט יביא שיביא שמן רואו כיח יקר מחחמה מקבוע עוד סיכלות מעט",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 13.08,
+          "text": " זבובי מבט יביא שיביא שמן רואו כיח יקר מחחמה מקבוע עוד סיכלות מעט",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.34,
+              "word": " זבובי",
+              "probability": 0.8103133141994476
+            },
+            {
+              "start": 1.34,
+              "end": 2.32,
+              "word": " מבט",
+              "probability": 0.7966538866360983
+            },
+            {
+              "start": 2.32,
+              "end": 3.0,
+              "word": " יביא",
+              "probability": 0.6351106663544973
+            },
+            {
+              "start": 3.0,
+              "end": 4.0,
+              "word": " שיביא",
+              "probability": 0.5869466563065847
+            },
+            {
+              "start": 4.0,
+              "end": 4.88,
+              "word": " שמן",
+              "probability": 0.23837267607450485
+            },
+            {
+              "start": 4.88,
+              "end": 5.94,
+              "word": " רואו",
+              "probability": 0.7421388626098633
+            },
+            {
+              "start": 5.94,
+              "end": 6.48,
+              "word": " כיח",
+              "probability": 0.5657233595848083
+            },
+            {
+              "start": 6.48,
+              "end": 7.42,
+              "word": " יקר",
+              "probability": 0.7801569501558939
+            },
+            {
+              "start": 7.42,
+              "end": 8.8,
+              "word": " מחחמה",
+              "probability": 0.7095263799031576
+            },
+            {
+              "start": 8.8,
+              "end": 10.1,
+              "word": " מקבוע",
+              "probability": 0.6741363207499186
+            },
+            {
+              "start": 10.1,
+              "end": 10.54,
+              "word": " עוד",
+              "probability": 0.6884001791477203
+            },
+            {
+              "start": 10.54,
+              "end": 11.9,
+              "word": " סיכלות",
+              "probability": 0.7949850112199783
+            },
+            {
+              "start": 11.9,
+              "end": 13.08,
+              "word": " מעט",
+              "probability": 0.9325924515724182
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "6273a46e35e69819506f51f6d3114e9a422e04a9d105ba47236442110094bbe6",
+      "r2_sha256": "aeb3ff6b3d1ba098fdcf334e77c2a4dba2b0b101bde4cb72275c976d10dc64d0",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-1_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 2,
+      "ref": "10:2",
+      "word_count": 6,
+      "boundary_start": 0.0,
+      "boundary_end": 3.500408,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 3.500408,
+        "refined": 3.500408,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-2_ohgb_r1.mp3",
+      "r1_duration": 3.500408,
+      "source_wps": 1.7140859008435587,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.46267226141333334,
+      "atempo": 0.46267226141333334,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-2_ohgb_r2.mp3",
+      "r2_duration": 7.418776,
+      "r2_theoretical_duration": 7.56563185635387,
+      "r2_duration_error": 0.14685585635387,
+      "r2_wps": 0.8087587494217374,
+      "mean_volume_db": -13.7,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.2",
+      "archive_entry": "21_10/OHGB_21_10_2.mp3",
+      "expected_text": "לֵב חָכָם לִֽימִינוֹ וְלֵב כְּסִיל לִשְׂמֹאלֽוֹ",
+      "asr_text": " לב חכם לי אמינו ולב כסילי שמו אלו",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 6.76,
+          "text": " לב חכם לי אמינו ולב כסילי שמו אלו",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.54,
+              "word": " לב",
+              "probability": 0.6048100590705872
+            },
+            {
+              "start": 0.54,
+              "end": 1.74,
+              "word": " חכם",
+              "probability": 0.918737788995107
+            },
+            {
+              "start": 1.74,
+              "end": 2.04,
+              "word": " לי",
+              "probability": 0.40959978103637695
+            },
+            {
+              "start": 2.04,
+              "end": 3.12,
+              "word": " אמינו",
+              "probability": 0.9068437814712524
+            },
+            {
+              "start": 3.12,
+              "end": 4.28,
+              "word": " ולב",
+              "probability": 0.9245971242586771
+            },
+            {
+              "start": 4.28,
+              "end": 5.52,
+              "word": " כסילי",
+              "probability": 0.7003149837255478
+            },
+            {
+              "start": 5.52,
+              "end": 6.12,
+              "word": " שמו",
+              "probability": 0.4680405408143997
+            },
+            {
+              "start": 6.12,
+              "end": 6.76,
+              "word": " אלו",
+              "probability": 0.9375546276569366
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "630cf77d49004b6fe42d3b2bdc02b54de6cb05e7459d64ce99a5de4cfe451507",
+      "r2_sha256": "521deef99071a48ec338d6b9756034bcb7ac653ae826fefbb20fa75a6e7cd413",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-2_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 3,
+      "ref": "10:3",
+      "word_count": 10,
+      "boundary_start": 0.0,
+      "boundary_end": 5.32898,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 5.32898,
+        "refined": 5.32898,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-3_ohgb_r1.mp3",
+      "r1_duration": 5.32898,
+      "source_wps": 1.8765317190156467,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.42262008787999994,
+      "atempo": 0.42262008787999994,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-3_ohgb_r2.mp3",
+      "r2_duration": 12.408163,
+      "r2_theoretical_duration": 12.609386427256451,
+      "r2_duration_error": 0.20122342725645126,
+      "r2_wps": 0.8059210698634439,
+      "mean_volume_db": -15.5,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.3",
+      "archive_entry": "21_10/OHGB_21_10_3.mp3",
+      "expected_text": "וְגַם בַּדֶּרֶךְ כְּשֶׁסָּכָל הֹלֵךְ לִבּוֹ חָסֵר וְאָמַר לַכֹּל סָכָל הֽוּא",
+      "asr_text": " וגם בדרך כשסחל הולך לברוך עשר ואמר לכל סחל הוא",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 11.64,
+          "text": " וגם בדרך כשסחל הולך לברוך עשר ואמר לכל סחל הוא",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.68,
+              "word": " וגם",
+              "probability": 0.9765433967113495
+            },
+            {
+              "start": 0.68,
+              "end": 1.88,
+              "word": " בדרך",
+              "probability": 0.9964733421802521
+            },
+            {
+              "start": 1.88,
+              "end": 4.16,
+              "word": " כשסחל",
+              "probability": 0.7412892162799836
+            },
+            {
+              "start": 4.16,
+              "end": 4.98,
+              "word": " הולך",
+              "probability": 0.9858944614728292
+            },
+            {
+              "start": 4.98,
+              "end": 6.34,
+              "word": " לברוך",
+              "probability": 0.838750883936882
+            },
+            {
+              "start": 6.34,
+              "end": 7.14,
+              "word": " עשר",
+              "probability": 0.8042336702346802
+            },
+            {
+              "start": 7.14,
+              "end": 8.52,
+              "word": " ואמר",
+              "probability": 0.5631834467252096
+            },
+            {
+              "start": 8.52,
+              "end": 9.76,
+              "word": " לכל",
+              "probability": 0.8630093634128571
+            },
+            {
+              "start": 9.76,
+              "end": 11.04,
+              "word": " סחל",
+              "probability": 0.921342670917511
+            },
+            {
+              "start": 11.04,
+              "end": 11.64,
+              "word": " הוא",
+              "probability": 0.7480146288871765
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "61f6742e64791ae1cc4484338a434e6ac378c101ef44ba78241dd8b15eac788c",
+      "r2_sha256": "9d13071e9cedb6e1553f53dda9fe187e8721043fadf49326995aa8c1c334aa3a",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-3_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 4,
+      "ref": "10:4",
+      "word_count": 13,
+      "boundary_start": 0.0,
+      "boundary_end": 7.053061,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 7.053061,
+        "refined": 7.053061,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-4_ohgb_r1.mp3",
+      "r1_duration": 7.053061,
+      "source_wps": 1.8431713549620514,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.4302692735892307,
+      "atempo": 0.4302692735892307,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-4_ohgb_r2.mp3",
+      "r2_duration": 16.222041,
+      "r2_theoretical_duration": 16.392202355433387,
+      "r2_duration_error": 0.17016135543338606,
+      "r2_wps": 0.8013788154030679,
+      "mean_volume_db": -14.4,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.4",
+      "archive_entry": "21_10/OHGB_21_10_4.mp3",
+      "expected_text": "אִם רוּחַ הַמּוֹשֵׁל תַּעֲלֶה עָלֶיךָ מְקוֹמְךָ אַל תַּנַּח כִּי מַרְפֵּא יַנִּיחַ חֲטָאִים גְּדוֹלִֽים",
+      "asr_text": " עם רוח המורשל תהליה לייחה מקוע ומחה על תנח כמרבה יניח התאים גדולים",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 15.26,
+          "text": " עם רוח המורשל תהליה לייחה מקוע ומחה על תנח כמרבה יניח התאים גדולים",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.42,
+              "word": " עם",
+              "probability": 0.2796540856361389
+            },
+            {
+              "start": 0.42,
+              "end": 1.36,
+              "word": " רוח",
+              "probability": 0.8940185308456421
+            },
+            {
+              "start": 1.36,
+              "end": 2.82,
+              "word": " המורשל",
+              "probability": 0.6015088483691216
+            },
+            {
+              "start": 2.82,
+              "end": 3.98,
+              "word": " תהליה",
+              "probability": 0.6334327384829521
+            },
+            {
+              "start": 3.98,
+              "end": 5.1,
+              "word": " לייחה",
+              "probability": 0.4882296721140544
+            },
+            {
+              "start": 5.1,
+              "end": 6.06,
+              "word": " מקוע",
+              "probability": 0.7445654273033142
+            },
+            {
+              "start": 6.06,
+              "end": 7.32,
+              "word": " ומחה",
+              "probability": 0.670492596924305
+            },
+            {
+              "start": 7.32,
+              "end": 7.66,
+              "word": " על",
+              "probability": 0.9330134987831116
+            },
+            {
+              "start": 7.66,
+              "end": 9.08,
+              "word": " תנח",
+              "probability": 0.816872795422872
+            },
+            {
+              "start": 9.08,
+              "end": 10.76,
+              "word": " כמרבה",
+              "probability": 0.671055257320404
+            },
+            {
+              "start": 10.76,
+              "end": 12.14,
+              "word": " יניח",
+              "probability": 0.9231356978416443
+            },
+            {
+              "start": 12.14,
+              "end": 13.58,
+              "word": " התאים",
+              "probability": 0.7547625799973806
+            },
+            {
+              "start": 13.58,
+              "end": 15.26,
+              "word": " גדולים",
+              "probability": 0.9625956863164902
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "aa14a2b4bee7c6d8fed8b2561162d604e0aace40ea0ab1402a16da1b93f0326a",
+      "r2_sha256": "570fd284810463361261985844650c606a07443204e767841f0020c95871025b",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-4_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 5,
+      "ref": "10:5",
+      "word_count": 9,
+      "boundary_start": 0.0,
+      "boundary_end": 5.250612,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 5.250612,
+        "refined": 5.250612,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-5_ohgb_r1.mp3",
+      "r1_duration": 5.250612,
+      "source_wps": 1.7140859008435587,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.46267226141333334,
+      "atempo": 0.46267226141333334,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-5_ohgb_r2.mp3",
+      "r2_duration": 11.206531,
+      "r2_theoretical_duration": 11.348447784530805,
+      "r2_duration_error": 0.14191678453080492,
+      "r2_wps": 0.8031031190651238,
+      "mean_volume_db": -16.2,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.5",
+      "archive_entry": "21_10/OHGB_21_10_5.mp3",
+      "expected_text": "יֵשׁ רָעָה רָאִיתִי תַּחַת הַשָּׁמֶשׁ כִּשְׁגָגָה שֶׁיֹּצָא מִלִּפְנֵי הַשַּׁלִּֽיט",
+      "asr_text": " יש רעה ראיתי תחת השמש כישג הגז שיוצא מלפני השליט",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 10.28,
+          "text": " יש רעה ראיתי תחת השמש כישג הגז שיוצא מלפני השליט",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.44,
+              "word": " יש",
+              "probability": 0.9728872179985046
+            },
+            {
+              "start": 0.44,
+              "end": 1.38,
+              "word": " רעה",
+              "probability": 0.7071539660294851
+            },
+            {
+              "start": 1.38,
+              "end": 2.48,
+              "word": " ראיתי",
+              "probability": 0.9313297669092814
+            },
+            {
+              "start": 2.48,
+              "end": 3.66,
+              "word": " תחת",
+              "probability": 0.943569540977478
+            },
+            {
+              "start": 3.66,
+              "end": 4.56,
+              "word": " השמש",
+              "probability": 0.9755964577198029
+            },
+            {
+              "start": 4.56,
+              "end": 5.76,
+              "word": " כישג",
+              "probability": 0.720426619052887
+            },
+            {
+              "start": 5.76,
+              "end": 6.48,
+              "word": " הגז",
+              "probability": 0.49317260831594467
+            },
+            {
+              "start": 6.48,
+              "end": 7.58,
+              "word": " שיוצא",
+              "probability": 0.9495071917772293
+            },
+            {
+              "start": 7.58,
+              "end": 8.8,
+              "word": " מלפני",
+              "probability": 0.7021891474723816
+            },
+            {
+              "start": 8.8,
+              "end": 10.28,
+              "word": " השליט",
+              "probability": 0.9251060088475546
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "b605659548ca5ed8fb86470cb1f8966e8da28f8bf9d55489bfa03f4496207747",
+      "r2_sha256": "7cf4df71aca7878478d0a25e84bf52b95e9f34a1213a7ead3424de557ff4ba6d",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-5_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 6,
+      "ref": "10:6",
+      "word_count": 7,
+      "boundary_start": 0.0,
+      "boundary_end": 4.649796,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 4.649796,
+        "refined": 4.649796,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-6_ohgb_r1.mp3",
+      "r1_duration": 4.649796,
+      "source_wps": 1.5054423893005198,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.5267953165371428,
+      "atempo": 0.5267953165371428,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-6_ohgb_r2.mp3",
+      "r2_duration": 8.724898,
+      "r2_theoretical_duration": 8.826570499079516,
+      "r2_duration_error": 0.10167249907951614,
+      "r2_wps": 0.8023016429533045,
+      "mean_volume_db": -14.2,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.6",
+      "archive_entry": "21_10/OHGB_21_10_6.mp3",
+      "expected_text": "נִתַּן הַסֶּכֶל בַּמְּרוֹמִים רַבִּים וַעֲשִׁירִים בַּשֵּׁפֶל יֵשֵֽׁבוּ",
+      "asr_text": " ניתן השכל במרום עם רבים והשירים בשפל ישבו.",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 8.2,
+          "text": " ניתן השכל במרום עם רבים והשירים בשפל ישבו.",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.82,
+              "word": " ניתן",
+              "probability": 0.764184445142746
+            },
+            {
+              "start": 0.82,
+              "end": 1.66,
+              "word": " השכל",
+              "probability": 0.6181536614894867
+            },
+            {
+              "start": 1.66,
+              "end": 3.06,
+              "word": " במרום",
+              "probability": 0.5864038119713465
+            },
+            {
+              "start": 3.06,
+              "end": 3.52,
+              "word": " עם",
+              "probability": 0.8630672693252563
+            },
+            {
+              "start": 3.52,
+              "end": 4.52,
+              "word": " רבים",
+              "probability": 0.9926032423973083
+            },
+            {
+              "start": 4.52,
+              "end": 6.02,
+              "word": " והשירים",
+              "probability": 0.854049488902092
+            },
+            {
+              "start": 6.02,
+              "end": 7.16,
+              "word": " בשפל",
+              "probability": 0.9478253523508707
+            },
+            {
+              "start": 7.16,
+              "end": 8.2,
+              "word": " ישבו.",
+              "probability": 0.9299820860226949
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "7b23113ebe934d9cf3a7b9da729e0c017fdfa65210e5ebe6240ab4e0cc67021c",
+      "r2_sha256": "c143add55c766fa2b480e8f49e9dc2a4364821965c276c200fee5a456714823e",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-6_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 7,
+      "ref": "10:7",
+      "word_count": 9,
+      "boundary_start": 0.0,
+      "boundary_end": 5.01551,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 5.01551,
+        "refined": 5.01551,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-7_ohgb_r1.mp3",
+      "r1_duration": 5.01551,
+      "source_wps": 1.7944336667656928,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.4419555956222222,
+      "atempo": 0.4419555956222222,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-7_ohgb_r2.mp3",
+      "r2_duration": 11.180408,
+      "r2_theoretical_duration": 11.348447784530805,
+      "r2_duration_error": 0.16803978453080504,
+      "r2_wps": 0.804979567829725,
+      "mean_volume_db": -14.6,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.7",
+      "archive_entry": "21_10/OHGB_21_10_7.mp3",
+      "expected_text": "רָאִיתִי עֲבָדִים עַל סוּסִים וְשָׂרִים הֹלְכִים כַּעֲבָדִים עַל הָאָֽרֶץ",
+      "asr_text": " ראיתי עבדים על סוסים ושרים מולחים כעבדים על הארץ",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 10.38,
+          "text": " ראיתי עבדים על סוסים ושרים מולחים כעבדים על הארץ",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.98,
+              "word": " ראיתי",
+              "probability": 0.9679029186566671
+            },
+            {
+              "start": 0.98,
+              "end": 2.38,
+              "word": " עבדים",
+              "probability": 0.91534423828125
+            },
+            {
+              "start": 2.38,
+              "end": 2.94,
+              "word": " על",
+              "probability": 0.9707989692687988
+            },
+            {
+              "start": 2.94,
+              "end": 4.24,
+              "word": " סוסים",
+              "probability": 0.9622795979181925
+            },
+            {
+              "start": 4.24,
+              "end": 5.44,
+              "word": " ושרים",
+              "probability": 0.8029950261116028
+            },
+            {
+              "start": 5.44,
+              "end": 6.64,
+              "word": " מולחים",
+              "probability": 0.9367695897817612
+            },
+            {
+              "start": 6.64,
+              "end": 8.4,
+              "word": " כעבדים",
+              "probability": 0.9885980725288391
+            },
+            {
+              "start": 8.4,
+              "end": 8.94,
+              "word": " על",
+              "probability": 0.9900033473968506
+            },
+            {
+              "start": 8.94,
+              "end": 10.38,
+              "word": " הארץ",
+              "probability": 0.8941021958986918
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "379aa07f7d9c51141bf86151f8b8750e12144d14bd040897dd3f50c030ff532f",
+      "r2_sha256": "b1c57fdb946c9d68037284758250313ec35d61cb54eadc404c00a6510e0fa49b",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-7_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 8,
+      "ref": "10:8",
+      "word_count": 8,
+      "boundary_start": 0.0,
+      "boundary_end": 4.649796,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 4.649796,
+        "refined": 4.649796,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-8_ohgb_r1.mp3",
+      "r1_duration": 4.649796,
+      "source_wps": 1.7205055877720226,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.46094590197,
+      "atempo": 0.46094590197,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-8_ohgb_r2.mp3",
+      "r2_duration": 9.874286,
+      "r2_theoretical_duration": 10.08750914180516,
+      "r2_duration_error": 0.21322314180516067,
+      "r2_wps": 0.8101851617423276,
+      "mean_volume_db": -14.8,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.8",
+      "archive_entry": "21_10/OHGB_21_10_8.mp3",
+      "expected_text": "חֹפֵר גּוּמָּץ בּוֹ יִפּוֹל וּפֹרֵץ גָּדֵר יִשְּׁכֶנּוּ נָחָֽשׁ",
+      "asr_text": " חופר גומט באי פה, לא פורץ גדר ישכנו נחש",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 9.08,
+          "text": " חופר גומט באי פה, לא פורץ גדר ישכנו נחש",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.12,
+              "word": " חופר",
+              "probability": 0.9446093440055847
+            },
+            {
+              "start": 1.12,
+              "end": 2.14,
+              "word": " גומט",
+              "probability": 0.8028509120146433
+            },
+            {
+              "start": 2.14,
+              "end": 3.08,
+              "word": " באי",
+              "probability": 0.6524171829223633
+            },
+            {
+              "start": 3.08,
+              "end": 3.6,
+              "word": " פה,",
+              "probability": 0.2941510081291199
+            },
+            {
+              "start": 4.0,
+              "end": 4.12,
+              "word": " לא",
+              "probability": 0.4682902693748474
+            },
+            {
+              "start": 4.12,
+              "end": 5.5,
+              "word": " פורץ",
+              "probability": 0.8656227787335714
+            },
+            {
+              "start": 5.5,
+              "end": 6.54,
+              "word": " גדר",
+              "probability": 0.8094780147075653
+            },
+            {
+              "start": 6.54,
+              "end": 7.62,
+              "word": " ישכנו",
+              "probability": 0.6558758517106374
+            },
+            {
+              "start": 7.62,
+              "end": 9.08,
+              "word": " נחש",
+              "probability": 0.9431036114692688
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "fdc804a451faba18b05303e20d97295e9f52944c9e10af99d7d5ce68ade30bf6",
+      "r2_sha256": "9ef551fb8cd1f91eabaae458c2b5f19700a48935be9449671bda9294af0e460b",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-8_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 9,
+      "ref": "10:9",
+      "word_count": 8,
+      "boundary_start": 0.0,
+      "boundary_end": 4.414694,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 4.414694,
+        "refined": 4.414694,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-9_ohgb_r1.mp3",
+      "r1_duration": 4.414694,
+      "source_wps": 1.8121301272523078,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.437639652955,
+      "atempo": 0.437639652955,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-9_ohgb_r2.mp3",
+      "r2_duration": 9.900408,
+      "r2_theoretical_duration": 10.087509141805159,
+      "r2_duration_error": 0.18710114180515802,
+      "r2_wps": 0.8080475067290156,
+      "mean_volume_db": -14.9,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.9",
+      "archive_entry": "21_10/OHGB_21_10_9.mp3",
+      "expected_text": "מַסִּיעַ אֲבָנִים יֵעָצֵב בָּהֶם בּוֹקֵעַ עֵצִים יִסָּכֶן בָּֽם",
+      "asr_text": " מסי אבנים יצב בהם בורכי הייצים משכן במ.",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 9.08,
+          "text": " מסי אבנים יצב בהם בורכי הייצים משכן במ.",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.98,
+              "word": " מסי",
+              "probability": 0.5124620646238327
+            },
+            {
+              "start": 0.98,
+              "end": 2.24,
+              "word": " אבנים",
+              "probability": 0.8376628160476685
+            },
+            {
+              "start": 2.24,
+              "end": 3.48,
+              "word": " יצב",
+              "probability": 0.9643591642379761
+            },
+            {
+              "start": 3.48,
+              "end": 4.5,
+              "word": " בהם",
+              "probability": 0.9508492648601532
+            },
+            {
+              "start": 4.5,
+              "end": 5.84,
+              "word": " בורכי",
+              "probability": 0.6936552673578262
+            },
+            {
+              "start": 5.84,
+              "end": 7.12,
+              "word": " הייצים",
+              "probability": 0.55637659629186
+            },
+            {
+              "start": 7.12,
+              "end": 8.4,
+              "word": " משכן",
+              "probability": 0.6412799060344696
+            },
+            {
+              "start": 8.4,
+              "end": 9.08,
+              "word": " במ.",
+              "probability": 0.32041940093040466
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "b4432c40296fd00b5f5e10826b4a8d5811a723c85ac7ac9172b704b9b10b6da2",
+      "r2_sha256": "a5fcb92b442c12f95884f83c56d1366c02cabdf136a0e59bd679ca1d5b5f1f3b",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-9_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 10,
+      "ref": "10:10",
+      "word_count": 12,
+      "boundary_start": 0.0,
+      "boundary_end": 6.243265,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 6.243265,
+        "refined": 6.243265,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-10_ohgb_r1.mp3",
+      "r1_duration": 6.243265,
+      "source_wps": 1.9220712239509294,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.4126069784083333,
+      "atempo": 0.4126069784083333,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-10_ohgb_r2.mp3",
+      "r2_duration": 14.915918,
+      "r2_theoretical_duration": 15.13126371270774,
+      "r2_duration_error": 0.21534571270774094,
+      "r2_wps": 0.8045096520375079,
+      "mean_volume_db": -14.8,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.10",
+      "archive_entry": "21_10/OHGB_21_10_10.mp3",
+      "expected_text": "אִם קֵהָה הַבַּרְזֶל וְהוּא לֹא פָנִים קִלְקַל וַחֲיָלִים יְגַבֵּר וְיִתְרוֹן הַכְשֵׁר חָכְמָֽה",
+      "asr_text": " עם כיה ברזל והולופנים  כלקל וחיילים יגבר ויתרון אחשר חחמה",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 5.26,
+          "text": " עם כיה ברזל והולופנים",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.48,
+              "word": " עם",
+              "probability": 0.33229807019233704
+            },
+            {
+              "start": 0.48,
+              "end": 1.56,
+              "word": " כיה",
+              "probability": 0.5964203029870987
+            },
+            {
+              "start": 1.56,
+              "end": 3.26,
+              "word": " ברזל",
+              "probability": 0.8212687770525614
+            },
+            {
+              "start": 3.26,
+              "end": 5.26,
+              "word": " והולופנים",
+              "probability": 0.9012246876955032
+            }
+          ]
+        },
+        {
+          "start": 5.26,
+          "end": 14.1,
+          "text": " כלקל וחיילים יגבר ויתרון אחשר חחמה",
+          "words": [
+            {
+              "start": 5.26,
+              "end": 6.72,
+              "word": " כלקל",
+              "probability": 0.4382305194934209
+            },
+            {
+              "start": 6.72,
+              "end": 8.6,
+              "word": " וחיילים",
+              "probability": 0.8818990468978882
+            },
+            {
+              "start": 8.6,
+              "end": 10.02,
+              "word": " יגבר",
+              "probability": 0.9288976788520813
+            },
+            {
+              "start": 10.02,
+              "end": 11.9,
+              "word": " ויתרון",
+              "probability": 0.7297976315021515
+            },
+            {
+              "start": 11.9,
+              "end": 12.8,
+              "word": " אחשר",
+              "probability": 0.4858480468392372
+            },
+            {
+              "start": 12.8,
+              "end": 14.1,
+              "word": " חחמה",
+              "probability": 0.7259488105773926
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "2f4b4115c2d2c669d2868590694b8ed68a65d22cfabd7fd2eb3f8295d40c3815",
+      "r2_sha256": "a4219ab20b7b4d2a12043586bfe25b91cad5bc60336a4a5810217fcc30397f2a",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-10_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 11,
+      "ref": "10:11",
+      "word_count": 9,
+      "boundary_start": 0.0,
+      "boundary_end": 5.146122,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 5.146122,
+        "refined": 5.146122,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-11_ohgb_r1.mp3",
+      "r1_duration": 5.146122,
+      "source_wps": 1.7488897464926016,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.45346483481333333,
+      "atempo": 0.45346483481333333,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-11_ohgb_r2.mp3",
+      "r2_duration": 11.154286,
+      "r2_theoretical_duration": 11.348447784530805,
+      "r2_duration_error": 0.19416178453080413,
+      "r2_wps": 0.8068647334307189,
+      "mean_volume_db": -14.4,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.11",
+      "archive_entry": "21_10/OHGB_21_10_11.mp3",
+      "expected_text": "אִם יִשֹּׁךְ הַנָּחָשׁ בְּלוֹא לָחַשׁ וְאֵין יִתְרוֹן לְבַעַל הַלָּשֽׁוֹן",
+      "asr_text": " אם היא שוחה נחש בלעול החש ואין איתרון לבוא על הלשון",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 10.32,
+          "text": " אם היא שוחה נחש בלעול החש ואין איתרון לבוא על הלשון",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.5,
+              "word": " אם",
+              "probability": 0.4434627592563629
+            },
+            {
+              "start": 0.5,
+              "end": 0.78,
+              "word": " היא",
+              "probability": 0.6761053800582886
+            },
+            {
+              "start": 0.78,
+              "end": 1.96,
+              "word": " שוחה",
+              "probability": 0.6078030367692312
+            },
+            {
+              "start": 1.96,
+              "end": 3.16,
+              "word": " נחש",
+              "probability": 0.9777255654335022
+            },
+            {
+              "start": 3.16,
+              "end": 4.48,
+              "word": " בלעול",
+              "probability": 0.6909514255821705
+            },
+            {
+              "start": 4.48,
+              "end": 5.62,
+              "word": " החש",
+              "probability": 0.7351152747869492
+            },
+            {
+              "start": 5.62,
+              "end": 6.58,
+              "word": " ואין",
+              "probability": 0.9191502134005228
+            },
+            {
+              "start": 6.58,
+              "end": 7.74,
+              "word": " איתרון",
+              "probability": 0.8339943736791611
+            },
+            {
+              "start": 7.74,
+              "end": 8.74,
+              "word": " לבוא",
+              "probability": 0.6599445839722952
+            },
+            {
+              "start": 8.74,
+              "end": 9.06,
+              "word": " על",
+              "probability": 0.6914805769920349
+            },
+            {
+              "start": 9.06,
+              "end": 10.32,
+              "word": " הלשון",
+              "probability": 0.9247764497995377
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "4377d455342c2225c76e41cdac10c6bd4dfc8b727581f10aa0a48a3fc04c47fe",
+      "r2_sha256": "50ab50bcac7dfbb684f1bb8f8f5b39ef837e8d6901f0c6e9d8aa4c405ebed751",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-11_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 12,
+      "ref": "10:12",
+      "word_count": 7,
+      "boundary_start": 0.0,
+      "boundary_end": 4.205714,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 4.205714,
+        "refined": 4.205714,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-12_ohgb_r1.mp3",
+      "r1_duration": 4.205714,
+      "source_wps": 1.6644022869838508,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.47648336354857146,
+      "atempo": 0.47648336354857146,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-12_ohgb_r2.mp3",
+      "r2_duration": 8.698776,
+      "r2_theoretical_duration": 8.826570499079516,
+      "r2_duration_error": 0.12779449907951523,
+      "r2_wps": 0.8047109156506617,
+      "mean_volume_db": -15.9,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.12",
+      "archive_entry": "21_10/OHGB_21_10_12.mp3",
+      "expected_text": "דִּבְרֵי פִי חָכָם חֵן וְשִׂפְתוֹת כְּסִיל תְּבַלְּעֶֽנּוּ",
+      "asr_text": " דברי פי חכם חן וספטרות כסיל תבלנו",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 7.84,
+          "text": " דברי פי חכם חן וספטרות כסיל תבלנו",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.98,
+              "word": " דברי",
+              "probability": 0.8642643094062805
+            },
+            {
+              "start": 0.98,
+              "end": 1.54,
+              "word": " פי",
+              "probability": 0.6745097041130066
+            },
+            {
+              "start": 1.54,
+              "end": 2.52,
+              "word": " חכם",
+              "probability": 0.941471258799235
+            },
+            {
+              "start": 2.52,
+              "end": 3.22,
+              "word": " חן",
+              "probability": 0.7709816098213196
+            },
+            {
+              "start": 3.22,
+              "end": 5.06,
+              "word": " וספטרות",
+              "probability": 0.8144840151071548
+            },
+            {
+              "start": 5.06,
+              "end": 6.2,
+              "word": " כסיל",
+              "probability": 0.9476725856463114
+            },
+            {
+              "start": 6.2,
+              "end": 7.84,
+              "word": " תבלנו",
+              "probability": 0.6286136209964752
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "e20f233cde246e4fda176454592d55794120c5025e07c8e39063b8c3ee31c774",
+      "r2_sha256": "016c463c6f5b4696884ea06eebe61d192b8238a0bafe0e2ec5c0c7da6a4a3d82",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-12_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 13,
+      "ref": "10:13",
+      "word_count": 8,
+      "boundary_start": 0.0,
+      "boundary_end": 4.858776,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 4.858776,
+        "refined": 4.858776,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-13_ohgb_r1.mp3",
+      "r1_duration": 4.858776,
+      "source_wps": 1.6465052103657383,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.48166261182,
+      "atempo": 0.48166261182,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-13_ohgb_r2.mp3",
+      "r2_duration": 9.926531,
+      "r2_theoretical_duration": 10.08750914180516,
+      "r2_duration_error": 0.16097814180515968,
+      "r2_wps": 0.805921021150289,
+      "mean_volume_db": -15.1,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.13",
+      "archive_entry": "21_10/OHGB_21_10_13.mp3",
+      "expected_text": "תְּחִלַּת דִּבְרֵי פִיהוּ סִכְלוּת וְאַחֲרִית פִּיהוּ הוֹלֵלוּת רָעָֽה",
+      "asr_text": " תחילת דברי פיה הוא סבכלות ואחרית פיה הוא עוללות רעה",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 9.3,
+          "text": " תחילת דברי פיה הוא סבכלות ואחרית פיה הוא עוללות רעה",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.22,
+              "word": " תחילת",
+              "probability": 0.9591821432113647
+            },
+            {
+              "start": 1.22,
+              "end": 2.28,
+              "word": " דברי",
+              "probability": 0.8996043602625529
+            },
+            {
+              "start": 2.28,
+              "end": 3.0,
+              "word": " פיה",
+              "probability": 0.766937643289566
+            },
+            {
+              "start": 3.0,
+              "end": 3.38,
+              "word": " הוא",
+              "probability": 0.14817939698696136
+            },
+            {
+              "start": 3.38,
+              "end": 4.78,
+              "word": " סבכלות",
+              "probability": 0.8109623849391937
+            },
+            {
+              "start": 4.78,
+              "end": 6.16,
+              "word": " ואחרית",
+              "probability": 0.9219827651977539
+            },
+            {
+              "start": 6.16,
+              "end": 6.92,
+              "word": " פיה",
+              "probability": 0.9931322634220123
+            },
+            {
+              "start": 6.92,
+              "end": 7.18,
+              "word": " הוא",
+              "probability": 0.968295156955719
+            },
+            {
+              "start": 7.18,
+              "end": 8.5,
+              "word": " עוללות",
+              "probability": 0.8200010284781456
+            },
+            {
+              "start": 8.5,
+              "end": 9.3,
+              "word": " רעה",
+              "probability": 0.9152175982793173
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "d564c5a7ce3b02d971d239a37eb5346a1c72819fff5717a92001ac2c02da830b",
+      "r2_sha256": "ec6f5e8efd072f4bd05906902379d0ac260e1a82ea0e3f8049c288edaf2b4591",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-13_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 14,
+      "ref": "10:14",
+      "word_count": 14,
+      "boundary_start": 0.0,
+      "boundary_end": 6.217143,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 6.217143,
+        "refined": 6.217143,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-14_ohgb_r1.mp3",
+      "r1_duration": 6.217143,
+      "source_wps": 2.2518381835515124,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.3521833876842857,
+      "atempo": 0.3521833876842857,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-14_ohgb_r2.mp3",
+      "r2_duration": 17.397551,
+      "r2_theoretical_duration": 17.65314099815903,
+      "r2_duration_error": 0.2555899981590315,
+      "r2_wps": 0.8047109619049256,
+      "mean_volume_db": -13.8,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.14",
+      "archive_entry": "21_10/OHGB_21_10_14.mp3",
+      "expected_text": "וְהַסָּכָל יַרְבֶּה דְבָרִים לֹא יֵדַע הָאָדָם מַה שֶׁיִּֽהְיֶה וַאֲשֶׁר יִֽהְיֶה מֵֽאַחֲרָיו מִי יַגִּיד לֽוֹ",
+      "asr_text": " והשכה לי הרבה דברים, לא ידע אדם מה שיהיה ואשר יהיה מאחר אב מי הגיד לו.",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 16.44,
+          "text": " והשכה לי הרבה דברים, לא ידע אדם מה שיהיה ואשר יהיה מאחר אב מי הגיד לו.",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.82,
+              "word": " והשכה",
+              "probability": 0.5953228399157524
+            },
+            {
+              "start": 1.82,
+              "end": 2.26,
+              "word": " לי",
+              "probability": 0.5252069234848022
+            },
+            {
+              "start": 2.26,
+              "end": 3.14,
+              "word": " הרבה",
+              "probability": 0.8877909183502197
+            },
+            {
+              "start": 3.14,
+              "end": 4.4,
+              "word": " דברים,",
+              "probability": 0.9778666496276855
+            },
+            {
+              "start": 4.82,
+              "end": 5.18,
+              "word": " לא",
+              "probability": 0.8983575701713562
+            },
+            {
+              "start": 5.18,
+              "end": 6.44,
+              "word": " ידע",
+              "probability": 0.9161454637845358
+            },
+            {
+              "start": 6.44,
+              "end": 7.7,
+              "word": " אדם",
+              "probability": 0.8925785223642985
+            },
+            {
+              "start": 7.7,
+              "end": 8.1,
+              "word": " מה",
+              "probability": 0.3028755486011505
+            },
+            {
+              "start": 8.1,
+              "end": 9.8,
+              "word": " שיהיה",
+              "probability": 0.8817503650983175
+            },
+            {
+              "start": 9.8,
+              "end": 11.4,
+              "word": " ואשר",
+              "probability": 0.6334275404612223
+            },
+            {
+              "start": 11.4,
+              "end": 12.56,
+              "word": " יהיה",
+              "probability": 0.8001579940319061
+            },
+            {
+              "start": 12.56,
+              "end": 13.78,
+              "word": " מאחר",
+              "probability": 0.790857324997584
+            },
+            {
+              "start": 13.78,
+              "end": 14.24,
+              "word": " אב",
+              "probability": 0.6963270604610443
+            },
+            {
+              "start": 14.24,
+              "end": 14.92,
+              "word": " מי",
+              "probability": 0.8135225772857666
+            },
+            {
+              "start": 14.92,
+              "end": 15.86,
+              "word": " הגיד",
+              "probability": 0.7276706695556641
+            },
+            {
+              "start": 15.86,
+              "end": 16.44,
+              "word": " לו.",
+              "probability": 0.8704215288162231
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "39aa1d8a37cf832bad7b1df20c5ed9fdb2e65b11892833bbc3f8f6ccf06445b1",
+      "r2_sha256": "3405536dbe162dd8fb15fdb4d2b529304e0e8277cd7def8b83b100606aaefb98",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-14_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 15,
+      "ref": "10:15",
+      "word_count": 9,
+      "boundary_start": 0.0,
+      "boundary_end": 4.623673,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 4.623673,
+        "refined": 4.623673,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-15_ohgb_r1.mp3",
+      "r1_duration": 4.623673,
+      "source_wps": 1.9465044348940765,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.4074277899311111,
+      "atempo": 0.4074277899311111,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-15_ohgb_r2.mp3",
+      "r2_duration": 11.180408,
+      "r2_theoretical_duration": 11.348447784530805,
+      "r2_duration_error": 0.16803978453080504,
+      "r2_wps": 0.804979567829725,
+      "mean_volume_db": -14.5,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.15",
+      "archive_entry": "21_10/OHGB_21_10_15.mp3",
+      "expected_text": "עֲמַל הַכְּסִילִים תְּיַגְּעֶנּוּ אֲשֶׁר לֹֽא יָדַע לָלֶכֶת אֶל עִֽיר",
+      "asr_text": " המעלה קסילי אם תיגענו אשר לא ידע ללכת אל העיר",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 10.4,
+          "text": " המעלה קסילי אם תיגענו אשר לא ידע ללכת אל העיר",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.12,
+              "word": " המעלה",
+              "probability": 0.49517999092737836
+            },
+            {
+              "start": 1.12,
+              "end": 2.78,
+              "word": " קסילי",
+              "probability": 0.7185384184122086
+            },
+            {
+              "start": 2.78,
+              "end": 3.26,
+              "word": " אם",
+              "probability": 0.8180142641067505
+            },
+            {
+              "start": 3.26,
+              "end": 5.1,
+              "word": " תיגענו",
+              "probability": 0.6695224046707153
+            },
+            {
+              "start": 5.1,
+              "end": 6.22,
+              "word": " אשר",
+              "probability": 0.7942227820555369
+            },
+            {
+              "start": 6.22,
+              "end": 6.6,
+              "word": " לא",
+              "probability": 0.5988150238990784
+            },
+            {
+              "start": 6.6,
+              "end": 7.64,
+              "word": " ידע",
+              "probability": 0.9504500428835551
+            },
+            {
+              "start": 7.64,
+              "end": 9.06,
+              "word": " ללכת",
+              "probability": 0.9729014039039612
+            },
+            {
+              "start": 9.06,
+              "end": 9.52,
+              "word": " אל",
+              "probability": 0.990541398525238
+            },
+            {
+              "start": 9.52,
+              "end": 10.4,
+              "word": " העיר",
+              "probability": 0.8736648261547089
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "7ba122371d3561a754281cdc8b4835e0a2344feafc1717c4dbd4bf3d6fb0aaa9",
+      "r2_sha256": "664bf8da6c33af811e8dd605065987f60e38a419b97cb4800f3b74ffca1dc7fa",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-15_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 16,
+      "ref": "10:16",
+      "word_count": 8,
+      "boundary_start": 0.0,
+      "boundary_end": 4.806531,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 4.806531,
+        "refined": 4.806531,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-16_ohgb_r1.mp3",
+      "r1_duration": 4.806531,
+      "source_wps": 1.6644020396414796,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.47648343435749996,
+      "atempo": 0.47648343435749996,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-16_ohgb_r2.mp3",
+      "r2_duration": 9.926531,
+      "r2_theoretical_duration": 10.08750914180516,
+      "r2_duration_error": 0.16097814180515968,
+      "r2_wps": 0.805921021150289,
+      "mean_volume_db": -15.2,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.16",
+      "archive_entry": "21_10/OHGB_21_10_16.mp3",
+      "expected_text": "אִֽי לָךְ אֶרֶץ שֶׁמַּלְכֵּךְ נָעַר וְשָׂרַיִךְ בַּבֹּקֶר יֹאכֵֽלוּ",
+      "asr_text": " הילך ארץ שמלכך נער ושראיך בבוקר יוחלו.",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 9.34,
+          "text": " הילך ארץ שמלכך נער ושראיך בבוקר יוחלו.",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.08,
+              "word": " הילך",
+              "probability": 0.5801930725574493
+            },
+            {
+              "start": 1.08,
+              "end": 2.24,
+              "word": " ארץ",
+              "probability": 0.8375096917152405
+            },
+            {
+              "start": 2.24,
+              "end": 3.74,
+              "word": " שמלכך",
+              "probability": 0.722437584400177
+            },
+            {
+              "start": 3.74,
+              "end": 4.72,
+              "word": " נער",
+              "probability": 0.8920856714248657
+            },
+            {
+              "start": 4.72,
+              "end": 6.52,
+              "word": " ושראיך",
+              "probability": 0.7203466072678566
+            },
+            {
+              "start": 6.52,
+              "end": 8.04,
+              "word": " בבוקר",
+              "probability": 0.9216954708099365
+            },
+            {
+              "start": 8.04,
+              "end": 9.34,
+              "word": " יוחלו.",
+              "probability": 0.8789221495389938
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "39019fdd2d1df38e0d84f7b1097448278eb87f831d1c1a21bc5985b6a2861f17",
+      "r2_sha256": "801233c4830145b84b17b370ee1216b771f15febc92268f70b9ff6a3def13742",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-16_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 17,
+      "ref": "10:17",
+      "word_count": 11,
+      "boundary_start": 0.0,
+      "boundary_end": 6.4,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 6.4,
+        "refined": 6.4,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-17_ohgb_r1.mp3",
+      "r1_duration": 6.4,
+      "source_wps": 1.71875,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.46141672727272726,
+      "atempo": 0.46141672727272726,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-17_ohgb_r2.mp3",
+      "r2_duration": 13.714286,
+      "r2_theoretical_duration": 13.870325069982096,
+      "r2_duration_error": 0.15603906998209638,
+      "r2_wps": 0.8020833166232643,
+      "mean_volume_db": -14.5,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.17",
+      "archive_entry": "21_10/OHGB_21_10_17.mp3",
+      "expected_text": "אַשְׁרֵיךְ אֶרֶץ שֶׁמַּלְכֵּךְ בֶּן חוֹרִים וְשָׂרַיִךְ בָּעֵת יֹאכֵלוּ בִּגְבוּרָה וְלֹא בַשְּׁתִֽי",
+      "asr_text": " והשרח ארץ שמלכיך בין חורים ושרעיך בעת יוחלו בגבורה ולא ושתי",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 13.0,
+          "text": " והשרח ארץ שמלכיך בין חורים ושרעיך בעת יוחלו בגבורה ולא ושתי",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.06,
+              "word": " והשרח",
+              "probability": 0.514835936948657
+            },
+            {
+              "start": 1.06,
+              "end": 2.24,
+              "word": " ארץ",
+              "probability": 0.8605117797851562
+            },
+            {
+              "start": 2.24,
+              "end": 3.84,
+              "word": " שמלכיך",
+              "probability": 0.6864127278327942
+            },
+            {
+              "start": 3.84,
+              "end": 4.42,
+              "word": " בין",
+              "probability": 0.7696984112262726
+            },
+            {
+              "start": 4.42,
+              "end": 5.68,
+              "word": " חורים",
+              "probability": 0.9748234748840332
+            },
+            {
+              "start": 5.68,
+              "end": 7.4,
+              "word": " ושרעיך",
+              "probability": 0.653685100376606
+            },
+            {
+              "start": 7.4,
+              "end": 8.48,
+              "word": " בעת",
+              "probability": 0.7954724133014679
+            },
+            {
+              "start": 8.48,
+              "end": 9.76,
+              "word": " יוחלו",
+              "probability": 0.8782656192779541
+            },
+            {
+              "start": 9.76,
+              "end": 11.1,
+              "word": " בגבורה",
+              "probability": 0.9699462503194809
+            },
+            {
+              "start": 11.1,
+              "end": 11.9,
+              "word": " ולא",
+              "probability": 0.9153627753257751
+            },
+            {
+              "start": 11.9,
+              "end": 13.0,
+              "word": " ושתי",
+              "probability": 0.6603476703166962
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "3776847af389a7c63b2f7d520814d5c3a84b00fe030262b290bb3b097ef61bd4",
+      "r2_sha256": "21b046a810cf8eae4075bd537c8fe9a0dee5e46e2e79a3196e6e0da4926463af",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-17_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 18,
+      "ref": "10:18",
+      "word_count": 7,
+      "boundary_start": 0.0,
+      "boundary_end": 5.041633,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 5.041633,
+        "refined": 5.041633,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-18_ohgb_r1.mp3",
+      "r1_duration": 5.041633,
+      "source_wps": 1.3884390236258768,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.5711882095685714,
+      "atempo": 0.5711882095685714,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-18_ohgb_r2.mp3",
+      "r2_duration": 8.724898,
+      "r2_theoretical_duration": 8.826570499079516,
+      "r2_duration_error": 0.10167249907951614,
+      "r2_wps": 0.8023016429533045,
+      "mean_volume_db": -14.4,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.18",
+      "archive_entry": "21_10/OHGB_21_10_18.mp3",
+      "expected_text": "בַּעֲצַלְתַּיִם יִמַּךְ הַמְּקָרֶה וּבְשִׁפְלוּת יָדַיִם יִדְלֹף הַבָּֽיִת",
+      "asr_text": " באצל תאים יימך המקרה ובשפלות ידעים ידלוף הבית",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 7.92,
+          "text": " באצל תאים יימך המקרה ובשפלות ידעים ידלוף הבית",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.86,
+              "word": " באצל",
+              "probability": 0.7843634883562723
+            },
+            {
+              "start": 0.86,
+              "end": 1.66,
+              "word": " תאים",
+              "probability": 0.7810415228207906
+            },
+            {
+              "start": 1.66,
+              "end": 2.42,
+              "word": " יימך",
+              "probability": 0.6378030814230442
+            },
+            {
+              "start": 2.42,
+              "end": 3.36,
+              "word": " המקרה",
+              "probability": 0.6180624564488729
+            },
+            {
+              "start": 3.36,
+              "end": 4.94,
+              "word": " ובשפלות",
+              "probability": 0.9397850433985392
+            },
+            {
+              "start": 4.94,
+              "end": 5.94,
+              "word": " ידעים",
+              "probability": 0.8760167360305786
+            },
+            {
+              "start": 5.94,
+              "end": 7.18,
+              "word": " ידלוף",
+              "probability": 0.9186251014471054
+            },
+            {
+              "start": 7.18,
+              "end": 7.92,
+              "word": " הבית",
+              "probability": 0.9638435542583466
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "ac58a1e64224829bb133ac71074941a89a58574b83ad336e4f002a78ccb33b8c",
+      "r2_sha256": "65d43ccba3ff8871c06b14f591703148d384a774780bc9b734c22c1b2172e842",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-18_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 19,
+      "ref": "10:19",
+      "word_count": 10,
+      "boundary_start": 0.0,
+      "boundary_end": 5.407347,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 5.407347,
+        "refined": 5.407347,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-19_ohgb_r1.mp3",
+      "r1_duration": 5.407347,
+      "source_wps": 1.8493357278532339,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.428835061182,
+      "atempo": 0.428835061182,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-19_ohgb_r2.mp3",
+      "r2_duration": 12.408163,
+      "r2_theoretical_duration": 12.60938642725645,
+      "r2_duration_error": 0.20122342725644948,
+      "r2_wps": 0.8059210698634439,
+      "mean_volume_db": -14.9,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.19",
+      "archive_entry": "21_10/OHGB_21_10_19.mp3",
+      "expected_text": "לִשְׂחוֹק עֹשִׂים לֶחֶם וְיַיִן יְשַׂמַּח חַיִּים וְהַכֶּסֶף יַעֲנֶה אֶת הַכֹּֽל",
+      "asr_text": " לזכרו כוסים לכם ויהן יסמה חיים וכספייני את הכל",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 11.66,
+          "text": " לזכרו כוסים לכם ויהן יסמה חיים וכספייני את הכל",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 1.2,
+              "word": " לזכרו",
+              "probability": 0.7450690150260926
+            },
+            {
+              "start": 1.2,
+              "end": 2.38,
+              "word": " כוסים",
+              "probability": 0.842360258102417
+            },
+            {
+              "start": 2.38,
+              "end": 3.36,
+              "word": " לכם",
+              "probability": 0.9468145668506622
+            },
+            {
+              "start": 3.36,
+              "end": 4.54,
+              "word": " ויהן",
+              "probability": 0.5531953175862631
+            },
+            {
+              "start": 4.54,
+              "end": 5.84,
+              "word": " יסמה",
+              "probability": 0.6486667394638062
+            },
+            {
+              "start": 5.84,
+              "end": 7.1,
+              "word": " חיים",
+              "probability": 0.9702642560005188
+            },
+            {
+              "start": 7.1,
+              "end": 9.74,
+              "word": " וכספייני",
+              "probability": 0.6918917170592717
+            },
+            {
+              "start": 9.74,
+              "end": 10.46,
+              "word": " את",
+              "probability": 0.9406656622886658
+            },
+            {
+              "start": 10.46,
+              "end": 11.66,
+              "word": " הכל",
+              "probability": 0.7353140711784363
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "8d843dc0166008d6429401cc77bab76ceaedbf25cdfdb226a9315c10efd13f6f",
+      "r2_sha256": "f0a79e11ae96eaebae807d5e8b5917c0a88d193fb3703c03870e88003fb81492",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-19_ohgb_r2.mp3"
+    },
+    {
+      "chapter": 10,
+      "verse": 20,
+      "ref": "10:20",
+      "word_count": 20,
+      "boundary_start": 0.0,
+      "boundary_end": 10.422857,
+      "boundary_start_meta": {
+        "candidate": 0.0,
+        "refined": 0.0,
+        "method": "standalone_ohgb_synthetic_source_start"
+      },
+      "boundary_end_meta": {
+        "candidate": 10.422857,
+        "refined": 10.422857,
+        "method": "standalone_ohgb_synthetic_source_end"
+      },
+      "boundary_scope": "STANDALONE_OHGB_SYNTHETIC",
+      "r1": "eccl-10-20_ohgb_r1.mp3",
+      "r1_duration": 10.422857,
+      "source_wps": 1.918859675422967,
+      "target_wps": 0.79306,
+      "max_atempo": 1.0,
+      "requested_atempo": 0.413297548621,
+      "atempo": 0.413297548621,
+      "speed_cap_applied": false,
+      "r2": "eccl-10-20_ohgb_r2.mp3",
+      "r2_duration": 24.999184,
+      "r2_theoretical_duration": 25.218772854512903,
+      "r2_duration_error": 0.219588854512903,
+      "r2_wps": 0.8000261128523235,
+      "mean_volume_db": -14.7,
+      "MAPPING_STATUS": "PASS",
+      "SIGNAL_STATUS": "PASS",
+      "MODEL_AUDIO_STATUS": "LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW",
+      "HIGHEST_VERIFIED_STAGE": "SIGNAL_CHECKED",
+      "DELIVERY_STATUS": "READY",
+      "LIMITATION_REASON": "",
+      "audio_origin": "OHGB_SYNTHETIC",
+      "ai_disclosure": "合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）",
+      "osis_ref": "Eccl.10.20",
+      "archive_entry": "21_10/OHGB_21_10_20.mp3",
+      "expected_text": "גַּם בְּמַדָּֽעֲךָ מֶלֶךְ אַל תְּקַלֵּל וּבְחַדְרֵי מִשְׁכָּבְךָ אַל תְּקַלֵּל עָשִׁיר כִּי עוֹף הַשָּׁמַיִם יוֹלִיךְ אֶת הַקּוֹל וּבַעַל כְּנָפַיִם יַגֵּיד דָּבָֽר",
+      "asr_text": " גם במדחה מלך, אל תקלל ובחדרי משכבחה, אל תקלל השיר כי עוף השמיים יהוליך את הכול ועל כנפיים יגד דבר.",
+      "asr_segments": [
+        {
+          "start": 0.0,
+          "end": 23.9,
+          "text": " גם במדחה מלך, אל תקלל ובחדרי משכבחה, אל תקלל השיר כי עוף השמיים יהוליך את הכול ועל כנפיים יגד דבר.",
+          "words": [
+            {
+              "start": 0.0,
+              "end": 0.58,
+              "word": " גם",
+              "probability": 0.952968180179596
+            },
+            {
+              "start": 0.58,
+              "end": 2.58,
+              "word": " במדחה",
+              "probability": 0.6609777398407459
+            },
+            {
+              "start": 2.58,
+              "end": 3.74,
+              "word": " מלך,",
+              "probability": 0.9323835372924805
+            },
+            {
+              "start": 3.92,
+              "end": 4.16,
+              "word": " אל",
+              "probability": 0.7224590182304382
+            },
+            {
+              "start": 4.16,
+              "end": 5.7,
+              "word": " תקלל",
+              "probability": 0.8287187069654465
+            },
+            {
+              "start": 5.7,
+              "end": 7.38,
+              "word": " ובחדרי",
+              "probability": 0.8295576095581054
+            },
+            {
+              "start": 7.38,
+              "end": 9.68,
+              "word": " משכבחה,",
+              "probability": 0.7171508252620697
+            },
+            {
+              "start": 9.68,
+              "end": 10.1,
+              "word": " אל",
+              "probability": 0.9660951495170593
+            },
+            {
+              "start": 10.1,
+              "end": 11.62,
+              "word": " תקלל",
+              "probability": 0.9828549772500992
+            },
+            {
+              "start": 11.62,
+              "end": 12.46,
+              "word": " השיר",
+              "probability": 0.7355746030807495
+            },
+            {
+              "start": 12.46,
+              "end": 13.06,
+              "word": " כי",
+              "probability": 0.2722235321998596
+            },
+            {
+              "start": 13.06,
+              "end": 13.88,
+              "word": " עוף",
+              "probability": 0.5107040256261826
+            },
+            {
+              "start": 13.88,
+              "end": 15.3,
+              "word": " השמיים",
+              "probability": 0.8027012149492899
+            },
+            {
+              "start": 15.3,
+              "end": 16.86,
+              "word": " יהוליך",
+              "probability": 0.7051024883985519
+            },
+            {
+              "start": 16.86,
+              "end": 17.42,
+              "word": " את",
+              "probability": 0.9903964996337891
+            },
+            {
+              "start": 17.42,
+              "end": 18.44,
+              "word": " הכול",
+              "probability": 0.5941031724214554
+            },
+            {
+              "start": 18.44,
+              "end": 19.62,
+              "word": " ועל",
+              "probability": 0.7861151993274689
+            },
+            {
+              "start": 19.62,
+              "end": 21.36,
+              "word": " כנפיים",
+              "probability": 0.7255486100912094
+            },
+            {
+              "start": 21.36,
+              "end": 22.88,
+              "word": " יגד",
+              "probability": 0.9648021658261617
+            },
+            {
+              "start": 22.88,
+              "end": 23.9,
+              "word": " דבר.",
+              "probability": 0.9803243577480316
+            }
+          ]
+        }
+      ],
+      "r1_sha256": "9ee2a25d626433c9afd67f8f5bcf473bfeacadc9268ae5010ab29469a557fce6",
+      "r2_sha256": "fd5236068846e55be01db8e8e3bf23ed7efa3c84ce5bbcf01cb912f480a44782",
+      "audio_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/study/qohelet-9-17-10-20-20261030/study/qohelet-20261101/audio/eccl-10-20_ohgb_r2.mp3"
+    }
+  ],
+  "status": "ASR_COMPLETE_AWAITING_WORK_REVIEW"
+}
