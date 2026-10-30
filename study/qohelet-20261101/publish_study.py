@@ -62,7 +62,7 @@ def main():
         uid=ensure_upload(token,ROOT)
         for old,url in zip(frames,urls):
             expected={'object':'block','type':'embed','embed':{'url':url,'caption':[]}}
-            created=request_json('PATCH',f'/blocks/{PAGE}/children',token,json={'after':old['id'],'children':creation_blocks([expected],uid)})['results'][0]
+            created=request_json('PATCH',f'/blocks/{PAGE}/children',token,json={'position':{'type':'after_block','after_block':{'id':old['id']}},'children':creation_blocks([expected],uid)})['results'][0]
             finalize_frames([expected],[created],token)
             request_json('DELETE',f'/blocks/{old["id"]}',token)
         done.write_text(json.dumps({'page_id':PAGE,'status':'UPGRADED_22_HTML_BACKED_FRAMES'}))

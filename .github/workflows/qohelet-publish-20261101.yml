@@ -30,11 +30,11 @@ jobs:
         with:
           node-version: '22'
       - run: npm install --no-save playwright
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install chromium
       - run: node study/qohelet-20261101/test_interactive.cjs
       - name: Save browser evidence
-        if: always()
+        if: ${{ always() && !cancelled() }}
         run: |
-          git add study/qohelet-20261101/interactive-audit.json study/qohelet-20261101/qa-*.png
+          find study/qohelet-20261101 -maxdepth 1 -type f \( -name 'interactive-audit.json' -o -name 'qa-*.png' \) -print0 | xargs -0 -r git add
           git diff --cached --quiet || git commit -m 'Record live Hebrew search and browser checks'
           git push origin HEAD:study/qohelet-9-17-10-20-20261030
