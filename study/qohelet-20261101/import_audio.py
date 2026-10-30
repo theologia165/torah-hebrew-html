@@ -1,5 +1,6 @@
 """Import licensed verse-separated synthetic Hebrew, with independent ASR."""
-import hashlib,io,json,re,sys,zipfile
+import hashlib,io,json,re,sys,zipfile,subprocess
+import numpy as np
 from pathlib import Path
 import requests
 from build_media import ROOT,REFS,BRANCH,prepare,write,commit
@@ -22,7 +23,9 @@ def main():
             stem=ref.replace('.','-').lower();r1=audio/(stem+'_ohgb_r1.mp3');r2=audio/(stem+'_ohgb_r2.mp3');r1.write_bytes(archive.read(entry))
             words=[t for t,w in zip(v['tokens'],v['layout']['words']) if w.get('read_aloud',True)]
             rec=make_audio_record(ref,{'words':words},r1,r2,'OHGB_SYNTHETIC',manifest['disclosure'])
-            segments,info=model.transcribe(str(r2),language='he',beam_size=5,word_timestamps=True,condition_on_previous_text=False,vad_filter=False)
+            pcm=subprocess.check_output(['ffmpeg','-v','error','-i',str(r2),'-f','f32le','-ac','1','-ar','16000','pipe:1'])
+            samples=np.frombuffer(pcm,dtype=np.float32)
+            segments,info=model.transcribe(samples,language='he',beam_size=5,word_timestamps=True,condition_on_previous_text=False,vad_filter=False)
             ss=[{'start':s.start,'end':s.end,'text':s.text,'words':[{'start':w.start,'end':w.end,'word':w.word,'probability':w.probability} for w in (s.words or [])]} for s in segments]
             rec.update(osis_ref=ref,archive_entry=entry,expected_text=spoken_text(words),asr_text=' '.join(s['text'] for s in ss),asr_segments=ss,r1_sha256=hashlib.sha256(r1.read_bytes()).hexdigest(),r2_sha256=hashlib.sha256(r2.read_bytes()).hexdigest(),MODEL_AUDIO_STATUS='LOCAL_ASR_OBSERVED_AWAITING_WORK_REVIEW',audio_url=f'https://raw.githubusercontent.com/theologia165/torah-hebrew-html/{BRANCH}/{r2.as_posix()}')
             manifest['verses'].append(rec);write('audio_manifest.json',manifest)
