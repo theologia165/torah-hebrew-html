@@ -1,0 +1,40 @@
+name: Publish Qohelet scholarly study
+on:
+  push:
+    branches: ['study/qohelet-9-17-10-20-20261030']
+    paths: ['study/qohelet-20261101/publish-request.json']
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: qohelet-publish-20261101
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests beautifulsoup4
+      - run: python study/qohelet-20261101/editorial.py
+      - run: python study/qohelet-20261101/publish_study.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps chromium
+      - run: node study/qohelet-20261101/test_interactive.cjs
+      - name: Save browser evidence
+        if: always()
+        run: |
+          git add study/qohelet-20261101/interactive-audit.json study/qohelet-20261101/qa-*.png
+          git diff --cached --quiet || git commit -m 'Record live Hebrew search and browser checks'
+          git push origin HEAD:study/qohelet-9-17-10-20-20261030
