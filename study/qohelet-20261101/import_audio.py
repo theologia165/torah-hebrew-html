@@ -15,15 +15,15 @@ def main():
     assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()=='cf58f80a76951b44dced0eba8ac52f12f4b48291'
     archive=zipfile.ZipFile(io.BytesIO(data))
     from faster_whisper import WhisperModel
-    model=WhisperModel('small',device='cpu',compute_type='int8',cpu_threads=4)
-    manifest={'source':'OHGB_SYNTHETIC','source_url':url,'license':'CC BY 4.0','attribution':'Eliran Wong, MP3 Open Hebrew Greek Bible (slow), generated with Unique Bible App text-to-speech','disclosure':'合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）','zip_sha256':hashlib.sha256(data).hexdigest(),'asr_model':'Systran/faster-whisper-small','verses':[],'status':'IN_PROGRESS'}
+    model=WhisperModel('medium',device='cpu',compute_type='int8',cpu_threads=4)
+    manifest={'source':'OHGB_SYNTHETIC','source_url':url,'license':'CC BY 4.0','attribution':'Eliran Wong, MP3 Open Hebrew Greek Bible (slow), generated with Unique Bible App text-to-speech','disclosure':'合成音声：Eliran Wong / Open Hebrew Greek Bible（CC BY 4.0）','zip_sha256':hashlib.sha256(data).hexdigest(),'asr_model':'Systran/faster-whisper-medium','asr_audio':'r1_original_speed','verses':[],'status':'IN_PROGRESS'}
     try:
         for v in j['verses']:
             ref=v['ref'];_,ch,n=ref.split('.');entry=f'21_{ch}/OHGB_21_{ch}_{n}.mp3'
             stem=ref.replace('.','-').lower();r1=audio/(stem+'_ohgb_r1.mp3');r2=audio/(stem+'_ohgb_r2.mp3');r1.write_bytes(archive.read(entry))
             words=[t for t,w in zip(v['tokens'],v['layout']['words']) if w.get('read_aloud',True)]
             rec=make_audio_record(ref,{'words':words},r1,r2,'OHGB_SYNTHETIC',manifest['disclosure'])
-            pcm=subprocess.check_output(['ffmpeg','-v','error','-i',str(r2),'-f','f32le','-ac','1','-ar','16000','pipe:1'])
+            pcm=subprocess.check_output(['ffmpeg','-v','error','-i',str(r1),'-f','f32le','-ac','1','-ar','16000','pipe:1'])
             samples=np.frombuffer(pcm,dtype=np.float32)
             segments,info=model.transcribe(samples,language='he',beam_size=5,word_timestamps=True,condition_on_previous_text=False,vad_filter=False)
             ss=[{'start':s.start,'end':s.end,'text':s.text,'words':[{'start':w.start,'end':w.end,'word':w.word,'probability':w.probability} for w in (s.words or [])]} for s in segments]
