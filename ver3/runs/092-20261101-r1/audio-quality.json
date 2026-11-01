@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0-audio-quality",
+  "run_id": "092-20261101-r1",
+  "status": "CONTENT_REVIEW_PENDING",
+  "machine_status": "PASS",
+  "content_status": "PENDING_OR_FAILED",
+  "AUDIO_VERIFICATION_COMPLETE": false,
+  "input_sha256": "678d466e4227bd40b06669319f9496856370bbae0e7ebdb54c9c91053aa9ebe2",
+  "manifest_sha256": "77bcee6c0e72edcde465c025f08eece79eee488fa223f35a4b690f55a419642c",
+  "manifest_path": "ver3/runs/092-20261101-r1/audio/audio_manifest.json",
+  "source": {
+    "parsha": "Vaera",
+    "aliyah": "1",
+    "base": "Vaera-1",
+    "audio_base": "Vaera-1",
+    "labels_base": "Vaera-1",
+    "audio_url": "https://raw.githubusercontent.com/rneiss/PocketTorah/8a23287221dd535966ee9914de9a03e71769a469/data/audio/Vaera-1.mp3",
+    "labels_url": "https://raw.githubusercontent.com/rneiss/PocketTorah/8a23287221dd535966ee9914de9a03e71769a469/data/torah/labels/Vaera-1.txt",
+    "audio_sha256": "7dea4745d5b999cc5d61e57692b45b128421ccef451d691a379faabb5fcd45df",
+    "labels_sha256": "fcbc21c3462adc65df39395273356085c0f6137d13eac45b36c22aa61d6eb3ab",
+    "pockettorah_commit": "8a23287221dd535966ee9914de9a03e71769a469",
+    "source_file": "Vaera-1_source.mp3",
+    "source_duration": 188.83925,
+    "label_count": 175,
+    "word_count": 175,
+    "out_of_audio_label_count": 0
+  },
+  "current_input_covered": true,
+  "register_sha256": "a236dc8f06ec1ceda67d9d53b1769f27a9493afb0a8961338452af1f64fa4d02",
+  "review_path": "ver3/runs/092-20261101-r1/audio-content-review.json",
+  "review_sha256": null,
+  "matched_incidents": [],
+  "regression_tests": "python ver3/scripts/test_audio_quality.py && python ver3/scripts/test_audio_primary_module.py && python ver3/scripts/test_audio_fallback_policy.py",
+  "blocking_refs": [],
+  "pending_refs": [
+    "6:2",
+    "6:3",
+    "6:4",
+    "6:5",
+    "6:6",
+    "6:7",
+    "6:8",
+    "6:9",
+    "6:10",
+    "6:11",
+    "6:12",
+    "6:13"
+  ],
+  "failed_refs": [],
+  "verses": [
+    {
+      "ref": "6:2",
+      "osis_ref": "Exodus.6.2",
+      "r1_sha256": "68e6d4f899a3e41f636f93c9bd542f296947a8ff7bc27c2d2b2b32e2cd2bfcef",
+      "r2_sha256": "0b6165492116a4fc4f776aa3feaa0f6891a57f5562922e0ab6572682f20f3d27",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_2_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_2_r2.mp3",
+      "boundary_start": 2.467699,
+      "boundary_end": 10.199824,
+      "boundary_start_meta": {
+        "candidate": 2.467699,
+        "refined": 2.467699,
+        "method": "first_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 10.199824,
+        "refined": 10.199824,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:3",
+      "osis_ref": "Exodus.6.3",
+      "r1_sha256": "fea6b2a0bdbc1022b26b7e4dd8073e1b3b4c82eecc55130a7e112b57d1c8a040",
+      "r2_sha256": "76c3567e39eeb834f5c8abbdde0f2bca609ca9d8505351b9d17292d88b83756f",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_3_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_3_r2.mp3",
+      "boundary_start": 10.199824,
+      "boundary_end": 25.056103,
+      "boundary_start_meta": {
+        "candidate": 10.199824,
+        "refined": 10.199824,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 25.056103,
+        "refined": 25.056103,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:4",
+      "osis_ref": "Exodus.6.4",
+      "r1_sha256": "4be4b00bf96d17cc5af83ddc823bd876933caa9971f284e59b0552b8bb9ee861",
+      "r2_sha256": "9326426ad2fccd4e851d9147067f1b0898d05bc752a665d34e1aaf84479a0155",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_4_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_4_r2.mp3",
+      "boundary_start": 25.056103,
+      "boundary_end": 38.969907,
+      "boundary_start_meta": {
+        "candidate": 25.056103,
+        "refined": 25.056103,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 38.969907,
+        "refined": 38.969907,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:5",
+      "osis_ref": "Exodus.6.5",
+      "r1_sha256": "fc985a675b492f6a720c9435f378d09d6a7bdaad87ecd598ffa950451feb03b0",
+      "r2_sha256": "068fe2ec549b903acdef2d17fab39eb8ace3cecb4cb01c8d27fb545302db4442",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_5_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_5_r2.mp3",
+      "boundary_start": 38.969907,
+      "boundary_end": 55.129879,
+      "boundary_start_meta": {
+        "candidate": 38.969907,
+        "refined": 38.969907,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 55.129879,
+        "refined": 55.129879,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:6",
+      "osis_ref": "Exodus.6.6",
+      "r1_sha256": "a631eb77918832fb2f917f8e9c956b892bc4a9e0b14af0892c2bceb8dbf505e5",
+      "r2_sha256": "b66904c1991159afe8073e714dfe20e18ac7203177148c9a4cb7ba9f5435faff",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_6_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_6_r2.mp3",
+      "boundary_start": 55.129879,
+      "boundary_end": 82.366469,
+      "boundary_start_meta": {
+        "candidate": 55.129879,
+        "refined": 55.129879,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 82.366469,
+        "refined": 82.366469,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:7",
+      "osis_ref": "Exodus.6.7",
+      "r1_sha256": "ace8293a3f71a25add0c8868661164b85519c5e55cb2beaa7a5c333f69179305",
+      "r2_sha256": "bb5f74ec61ab2a69a0493bcbfb6b0bccd186c742946e520be9d2444e4eaca0fd",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_7_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_7_r2.mp3",
+      "boundary_start": 82.366469,
+      "boundary_end": 101.954869,
+      "boundary_start_meta": {
+        "candidate": 82.366469,
+        "refined": 82.366469,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 101.954869,
+        "refined": 101.954869,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:8",
+      "osis_ref": "Exodus.6.8",
+      "r1_sha256": "d57dd737eefdf964e4a63912fe317a723101040af9c21596b1982180831d43a0",
+      "r2_sha256": "01a222e2ef3ccfc6f6ad56747ecb0a74e2ef32cf4b8a83e561a382eb51e1c12a",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_8_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_8_r2.mp3",
+      "boundary_start": 101.954869,
+      "boundary_end": 121.517167,
+      "boundary_start_meta": {
+        "candidate": 101.954869,
+        "refined": 101.954869,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 121.517167,
+        "refined": 121.517167,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:9",
+      "osis_ref": "Exodus.6.9",
+      "r1_sha256": "fa754c9f9aa836cadcb415995f5af8b5dbe76ed9630af8e0f671e78e122eb358",
+      "r2_sha256": "4df789c1b8fbcdff932b7b21abc9a7cb21c23294846b8a5c26a8e5b260261e85",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_9_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_9_r2.mp3",
+      "boundary_start": 121.517167,
+      "boundary_end": 135.841911,
+      "boundary_start_meta": {
+        "candidate": 121.517167,
+        "refined": 121.517167,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 135.841911,
+        "refined": 135.841911,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:10",
+      "osis_ref": "Exodus.6.10",
+      "r1_sha256": "0a90f4e87fc624cbc718256d22318bdb35aaa843f137e0af6f1fc0c36bcca81f",
+      "r2_sha256": "b5ea55fd75e7df9145ba7e448f440462926ee693d5f32c2f8d6ee475c3a5926c",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_10_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_10_r2.mp3",
+      "boundary_start": 135.841911,
+      "boundary_end": 139.735155,
+      "boundary_start_meta": {
+        "candidate": 135.841911,
+        "refined": 135.841911,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 139.735155,
+        "refined": 139.735155,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:11",
+      "osis_ref": "Exodus.6.11",
+      "r1_sha256": "cd69682ea695a3adf85929a39feb592aa75f755acf32faa494405f5bc1cc74ce",
+      "r2_sha256": "bec1ceba87f5e68c054f4cc740b9a879db93e688d3ed72f9d9647abb0a64e9ed",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_11_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_11_r2.mp3",
+      "boundary_start": 139.735155,
+      "boundary_end": 149.520843,
+      "boundary_start_meta": {
+        "candidate": 139.735155,
+        "refined": 139.735155,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 149.520843,
+        "refined": 149.520843,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:12",
+      "osis_ref": "Exodus.6.12",
+      "r1_sha256": "124cc84005d3e5042f2f666ca53bbb40a1bab7d78324ff83a155d381fb30e40d",
+      "r2_sha256": "905c36b6683aadf7bc35db29a740d71b245501708c78b80eee891f2029d7d2af",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_12_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_12_r2.mp3",
+      "boundary_start": 149.520843,
+      "boundary_end": 166.737849,
+      "boundary_start_meta": {
+        "candidate": 149.520843,
+        "refined": 149.520843,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 166.737849,
+        "refined": 166.737849,
+        "method": "next_word_onset"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    },
+    {
+      "ref": "6:13",
+      "osis_ref": "Exodus.6.13",
+      "r1_sha256": "55ab78fc9d23d3585c5f0bf9387fc2bdb58789afc2129f791b5d28bedf9717ee",
+      "r2_sha256": "00de4f285d27a64acfb2671a56a894ea471e002b35b96d65c84b113145f4c0d0",
+      "r1": "ver3/runs/092-20261101-r1/audio/092_13_r1.mp3",
+      "r2": "ver3/runs/092-20261101-r1/audio/092_13_r2.mp3",
+      "boundary_start": 166.737849,
+      "boundary_end": 188.83925,
+      "boundary_start_meta": {
+        "candidate": 166.737849,
+        "refined": 166.737849,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 188.83925,
+        "refined": 188.83925,
+        "method": "source_end"
+      },
+      "content_status": "PENDING",
+      "findings": []
+    }
+  ],
+  "machine_output": "PASS: AUDIO acceptance implemented=12 failed=0 pockettorah=12 open_bible=0 ai=0 MAPPING=PASS SIGNAL=PASS SPEED=PASS_FOR_IMPLEMENTED MODEL_AUDIO=PENDING\n",
+  "next_action": "REVIEW_AUDIO_CONTENT"
+}
