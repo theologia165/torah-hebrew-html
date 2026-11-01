@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "config_type": "ASAICHI_TORAH_PARASHA_IMAGE_PROFILE",
+  "parasha": "Vaera",
+  "parasha_jp": "ヴァエラ",
+  "scope": "PARASHA_ABSTRACT_CONTINUITY",
+  "biblical_world": "古代エジプトと古代近東。素材・衣服・建築は蓋然性を優先し、年代の過度な断定を避ける。",
+  "palette": [
+    "温かい石灰岩色",
+    "砂と黄土",
+    "深い藍",
+    "控えめな銅色"
+  ],
+  "light": "圧迫感のある環境でも自然光を残す。超自然的な光の人物像は描かない。",
+  "materials": [
+    "日干し煉瓦",
+    "粗い亜麻布",
+    "土壁",
+    "石"
+  ],
+  "composition": "GLOBAL IMAGE MASTERの左情報38%・右場面62%と有機的な境界を守る。",
+  "tone": "契約と解放へ向かう厳粛さ。人の尊厳、抑制された希望、現実感。",
+  "scene_rule": "人物・行為・出来事は各CURRENT RUN IMAGE PACKAGEだけから決定する。このprofileは特定アリヤーの場面を指定しない。",
+  "avoid": [
+    "現代物",
+    "中世欧州風衣装",
+    "神の身体化",
+    "十字架・後代の宗教記号",
+    "本文にない出来事の先取り",
+    "既存画像・番号・gen_idの保存"
+  ]
+}
