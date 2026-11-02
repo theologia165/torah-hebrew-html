@@ -1,0 +1,337 @@
+{
+  "schema_version": "1.0-work-json2-quality",
+  "run_id": "093-20261102-r1",
+  "status": "PASS",
+  "WORK_JSON2_QUALITY": "PASS",
+  "verse_count": 15,
+  "token_count": 182,
+  "json1_sha256": "a2ddfbd4bc4fc827b772f2385dcd80e7209641bc4be1e9429ab2a874c26bdc4f",
+  "json1_1_sha256": "f9c2ecaaaa285a1a7862ee403e076824726ef9dc90e627d2cb397c09645cd5cc",
+  "reviewed_by": "Work",
+  "all_tokens_semantically_reviewed": true,
+  "checks": {
+    "token_identity_order": "PASS",
+    "surface_lemma_morph_segments_gloss": "PASS",
+    "private_translation": "PASS",
+    "verse_specific_exegesis": "PASS",
+    "three_layers": "PASS",
+    "verified_sources": "PASS",
+    "distinct_devotions": "PASS",
+    "no_fallback_placeholder_or_hebrew_gloss": "PASS",
+    "ltr_and_forbidden_phrase": "PASS",
+    "canonical_hashes": "PASS"
+  },
+  "verse_review": [
+    {
+      "ref": "Exod.6.14",
+      "token_ids": [
+        35662,
+        35663,
+        35664,
+        35665,
+        35666,
+        35667,
+        35668,
+        35669,
+        35670,
+        35671,
+        35672,
+        35673,
+        35674,
+        35675,
+        35676
+      ],
+      "focus": "父祖の家から始める",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.15",
+      "token_ids": [
+        35677,
+        35678,
+        35679,
+        35680,
+        35681,
+        35682,
+        35683,
+        35684,
+        35685,
+        35686,
+        35687,
+        35688,
+        35689
+      ],
+      "focus": "母の出自を記す一語",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.16",
+      "token_ids": [
+        35690,
+        35691,
+        35692,
+        35693,
+        35694,
+        35695,
+        35696,
+        35697,
+        35698,
+        35699,
+        35700,
+        35701,
+        35702,
+        35703,
+        35704
+      ],
+      "focus": "名と世代と生涯",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.17",
+      "token_ids": [
+        35705,
+        35706,
+        35707,
+        35708,
+        35709
+      ],
+      "focus": "短い枝も系譜に含まれる",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.18",
+      "token_ids": [
+        35710,
+        35711,
+        35712,
+        35713,
+        35714,
+        35715,
+        35716,
+        35717,
+        35718,
+        35719,
+        35720,
+        35721,
+        35722
+      ],
+      "focus": "四つの枝と寿命の記載",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.19",
+      "token_ids": [
+        35723,
+        35724,
+        35725,
+        35726,
+        35727,
+        35728,
+        35729,
+        35730
+      ],
+      "focus": "全体をまとめてから一つの家へ",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.20",
+      "token_ids": [
+        35739,
+        35740,
+        35741,
+        35742,
+        35743,
+        35744,
+        35745,
+        35746,
+        35747,
+        35748,
+        35749,
+        35750,
+        35751,
+        35752,
+        35753,
+        35754,
+        35755,
+        35756,
+        35757,
+        35758
+      ],
+      "focus": "母の名と二人の出生",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.21",
+      "token_ids": [
+        35759,
+        35760,
+        35761,
+        35762,
+        35763
+      ],
+      "focus": "兄弟の枝へ戻る構成",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.22",
+      "token_ids": [
+        35764,
+        35765,
+        35766,
+        35767,
+        35768
+      ],
+      "focus": "列挙される枝と省略される枝",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.23",
+      "token_ids": [
+        35769,
+        35770,
+        35771,
+        35772,
+        35773,
+        35774,
+        35775,
+        35776,
+        35777,
+        35778,
+        35779,
+        35780,
+        35781,
+        35782,
+        35783,
+        35784,
+        35785,
+        35786,
+        35787,
+        35788
+      ],
+      "focus": "妻、娘、姉妹、母として記される人",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.24",
+      "token_ids": [
+        35789,
+        35790,
+        35791,
+        35792,
+        35793,
+        35794,
+        35795,
+        35796
+      ],
+      "focus": "一人の名から氏族へ",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.25",
+      "token_ids": [
+        35797,
+        35798,
+        35799,
+        35800,
+        35801,
+        35802,
+        35803,
+        35804,
+        35805,
+        35806,
+        35807,
+        35808,
+        35809,
+        35810,
+        35811,
+        35812,
+        35813,
+        35814
+      ],
+      "focus": "孫に至る系譜と名のない母",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.26",
+      "token_ids": [
+        35815,
+        35816,
+        35817,
+        35818,
+        35819,
+        35820,
+        35821,
+        35822,
+        35823,
+        35824,
+        35825,
+        35826,
+        35827,
+        35828,
+        35829
+      ],
+      "focus": "系譜と召命を結ぶ同定",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.27",
+      "token_ids": [
+        35830,
+        35831,
+        35832,
+        35833,
+        35834,
+        35835,
+        35836,
+        35837,
+        35838,
+        35839,
+        35840,
+        35841,
+        35842,
+        35843
+      ],
+      "focus": "命令を受けた二人が語る二人へ",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.28",
+      "token_ids": [
+        35844,
+        35845,
+        35846,
+        35847,
+        35848,
+        35849,
+        35850,
+        35851
+      ],
+      "focus": "読書範囲の終わりと文の続き",
+      "status": "PASS"
+    }
+  ],
+  "source_review": [
+    {
+      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492610/p/2/showrashi/true/jewish/Vaera-Torah-Reading.htm",
+      "verified": "Rashi primary commentary 6:14,16,18,20,26,28; peshat, chronology and midrash distinguished"
+    },
+    {
+      "url": "https://www.jewishbible.org/articles/moses-non-genealogy/",
+      "verified": "Nataf full article, Introduction, Possible Explanations, Conclusion; hypothesis attributed"
+    },
+    {
+      "url": "https://www.augustinus.it/latino/questioni_ettateuco/quest_ettateuco_2_libro.htm",
+      "verified": "Latin primary text section 15, De origine Moysi, explicitly 6:14–28"
+    }
+  ],
+  "notes": [
+    "All 182 current tokens reviewed with surface lemma morphology; null lexeme prepositions not assigned invented Strong values.",
+    "Morph tag Acmdc at shenei is retained in source, but year-count phrase and numerals control Japanese meaning, not two years.",
+    "6:23 achot does not specify older/younger; translated sister without asserting age.",
+    "6:25 repeated lo preserved in glosses, idiomatic private translation; unnamed daughter not given invented name.",
+    "6:26 asher is relational; following lahem resumes it. Singular hu identifies the two named figures; imperative is plural.",
+    "6:28 is an incomplete temporal introduction; next verse not inserted into current translation.",
+    "No ketiv/qere pairs; names transliterated from current surface, no speculative etymological character claims.",
+    "Work semantic audit and production structural validator are independent."
+  ]
+}
