@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0-work-json2-quality",
+  "run_id": "094-20261103-r1",
+  "status": "PASS",
+  "WORK_JSON2_QUALITY": "PASS",
+  "verse_count": 9,
+  "token_count": 125,
+  "json1_sha256": "dda1667b0deb1d0fb0695492e18f4568b45642f99ac46f9e1a5a9118e8ea6a84",
+  "json1_1_sha256": "877e8e88a7acf65f1f4c62cbb9e1a6b1c53301abfb7f1325ab2c8c4610ad8529",
+  "reviewed_by": "Work",
+  "all_tokens_semantically_reviewed": true,
+  "checks": {
+    "token_identity_order_types": "PASS",
+    "surface_lemma_morph_segments_gloss": "PASS",
+    "private_translation": "PASS",
+    "verse_specific_exegesis": "PASS",
+    "three_layers": "PASS",
+    "verified_sources": "PASS",
+    "distinct_devotions": "PASS",
+    "no_fallback_placeholder_hebrew_gloss": "PASS",
+    "ltr_forbidden_phrase": "PASS",
+    "canonical_hashes": "PASS"
+  },
+  "verse_review": [
+    {
+      "ref": "Exod.6.29",
+      "token_ids": [
+        35852,
+        35853,
+        35854,
+        35855,
+        35856,
+        35857,
+        35858,
+        35859,
+        35860,
+        35861,
+        35862,
+        35863,
+        35864,
+        35865,
+        35866,
+        35867,
+        35868,
+        35869
+      ],
+      "focus": "「すべて」を伝えるように",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.6.30",
+      "token_ids": [
+        35884,
+        35885,
+        35886,
+        35887,
+        35888,
+        35889,
+        35890,
+        35891,
+        35892,
+        35893,
+        35894,
+        35895
+      ],
+      "focus": "閉ざされた唇と聞かれる見込み",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.7.1",
+      "token_ids": [
+        35996,
+        35997,
+        35998,
+        35999,
+        36000,
+        36001,
+        36002,
+        36003,
+        36004,
+        36005,
+        36006,
+        36007
+      ],
+      "focus": "神と預言者の関係を使った委任",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.7.2",
+      "token_ids": [
+        36170,
+        36171,
+        36172,
+        36173,
+        36174,
+        36175,
+        36176,
+        36177,
+        36178,
+        36179,
+        36180,
+        36181,
+        36182,
+        36183,
+        36184,
+        36185
+      ],
+      "focus": "役割の区別と一つの解放要求",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.7.3",
+      "token_ids": [
+        36321,
+        36322,
+        36323,
+        36324,
+        36325,
+        36326,
+        36327,
+        36328,
+        36329,
+        36330,
+        36331,
+        36332
+      ],
+      "focus": "使役形を弱めずに読む",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.7.4",
+      "token_ids": [
+        36333,
+        36334,
+        36335,
+        36336,
+        36337,
+        36338,
+        36339,
+        36340,
+        36341,
+        36342,
+        36343,
+        36344,
+        36345,
+        36346,
+        36347,
+        36348,
+        36349,
+        36350,
+        36351
+      ],
+      "focus": "「わたしの諸隊、わたしの民」という同格",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.7.5",
+      "token_ids": [
+        36352,
+        36353,
+        36354,
+        36355,
+        36356,
+        36357,
+        36358,
+        36359,
+        36360,
+        36361,
+        36362,
+        36363,
+        36364,
+        36365,
+        36366
+      ],
+      "focus": "知ることと解放の出来事",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.7.6",
+      "token_ids": [
+        36367,
+        36368,
+        36369,
+        36370,
+        36371,
+        36372,
+        36373,
+        36374,
+        36375
+      ],
+      "focus": "命令と実行を対応させる反復",
+      "status": "PASS"
+    },
+    {
+      "ref": "Exod.7.7",
+      "token_ids": [
+        36376,
+        36377,
+        36378,
+        36379,
+        36380,
+        36381,
+        36382,
+        36383,
+        36384,
+        36385,
+        36386,
+        36387
+      ],
+      "focus": "二人の年齢と共同の発話",
+      "status": "PASS"
+    }
+  ],
+  "source_review": [
+    {
+      "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492610/p/3/showrashi/true/jewish/Vaera-Torah-Reading.htm",
+      "verified": "Rashi 7:1 and 7:3 primary commentary opened"
+    },
+    {
+      "url": "https://poj.peeters-leuven.be/content.php?id=3287093&journal_code=JSCS&url=article",
+      "verified": "Publisher abstract and bibliographic details only, scope disclosed"
+    },
+    {
+      "url": "https://www.chabad.org/library/article_cdo/aid/911905/jewish/Teshuvah-Chapter-Six.htm",
+      "verified": "Teshuvah6:3 primary Hebrew and translation, cited passage broader than7:3 disclosed"
+    },
+    {
+      "url": "https://www.augustinus.it/latino/questioni_ettateuco/quest_ettateuco_2_libro.htm",
+      "verified": "Latin primary Questions on Exodus17–18, relevant paragraphs read"
+    }
+  ],
+  "notes": [
+    "125 tokens all field types checked; no source data modified, no Strong values inferred.",
+    "6:29 dober tagged Qal participle in input, not silently changed to Piel.",
+    "7:1 as/like is interpretive Japanese addition, absent comparative prefix explicitly disclosed; elohim retains literal gloss god.",
+    "7:3 harden Hiphil1cs active divine subject preserved, not weakened to allow.",
+    "7:4 my hosts and my people read apposition; 7:5 Egypt collective ethnonym not confused with place.",
+    "7:6 singular preverbal agreement with compound subject and later plural preserved semantically.",
+    "No ketiv/qere pairs. No neurological diagnosis or assurance of universal conversion inferred.",
+    "Independent Work full semantic audit, not a machine structure certificate."
+  ]
+}
