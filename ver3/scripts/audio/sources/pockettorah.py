@@ -1,6 +1,7 @@
 """Primary PocketTorah source adapter and per-verse extractor."""
 import json
 import hashlib
+import os
 import re
 import sys
 import urllib.parse
@@ -63,8 +64,14 @@ def fail(message):
 
 
 def get_bytes(url):
-    request = urllib.request.Request(
-        url, headers={'User-Agent': 'asaichi-torah-ver3'})
+    headers = {'User-Agent': 'asaichi-torah-ver3'}
+    # The shared Actions IP can exhaust GitHub's anonymous API quota.
+    # Authenticate API requests only; never send this token to audio hosts.
+    parsed = urllib.parse.urlparse(url)
+    token = os.environ.get('GITHUB_TOKEN')
+    if parsed.scheme == 'https' and parsed.netloc == 'api.github.com' and token:
+        headers['Authorization'] = f'Bearer {token}'
+    request = urllib.request.Request(url, headers=headers)
     return urllib.request.urlopen(request, timeout=60).read()
 
 

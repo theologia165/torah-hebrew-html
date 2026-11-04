@@ -4,6 +4,7 @@ import subprocess
 import sys
 import tempfile
 import json
+import os
 from pathlib import Path
 from unittest.mock import patch
 
@@ -12,6 +13,16 @@ from audio.processing import normalized_atempo
 
 
 def main():
+    with patch.dict(os.environ, {'GITHUB_TOKEN': 'test-token'}), \
+            patch.object(pockettorah.urllib.request, 'urlopen') as open_url:
+        open_url.return_value.read.return_value = b'{}'
+        pockettorah.get_bytes('https://api.github.com/repos/rneiss/PocketTorah/git/trees/pinned')
+        assert open_url.call_args.args[0].get_header('Authorization') == 'Bearer test-token'
+        for url in ('https://raw.githubusercontent.com/rneiss/PocketTorah/pinned/file',
+                    'https://api.github.com.example.test/file',
+                    'http://api.github.com/file'):
+            pockettorah.get_bytes(url)
+            assert open_url.call_args.args[0].get_header('Authorization') is None
     registry = json.loads((Path(__file__).resolve().parents[1] /
                            'quality/audio/source-alignments.json').read_text())
     profile = registry['profiles'][0]

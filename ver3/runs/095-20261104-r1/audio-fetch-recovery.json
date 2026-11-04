@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0-run-recovery",
+  "run_id": "095-20261104-r1",
+  "operation": "PocketTorah labels filename resolution via GitHub tree API",
+  "failed_actions_run_id": 41836548348,
+  "http_status": 403,
+  "error_message": "rate limit exceeded",
+  "confirmed_cause": "Shared Actions runner requested api.github.com without authentication; anonymous API quota exhausted.",
+  "last_successful_stage": "JSON2_COMPOSED",
+  "healthy_outputs_retained": [
+    "json2.json",
+    "work-json2-quality.json",
+    "html/*",
+    "audio-input.json"
+  ],
+  "delivery_json_status": "NOT_CREATED (404); no Notion page or delivery PASS claimed",
+  "repair": "Use existing GITHUB_TOKEN only for HTTPS api.github.com requests; audio processing and fallback policy unchanged.",
+  "retry_count_before_repair": 0,
+  "next_action": "Rerun same request/run_id after committing transport fix; do not advance production state",
+  "recorded_at": "2026-11-04T13:19:14.668859+00:00"
+}
