@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "095-20261104-r1",
+  "sequence": "095",
+  "delivery_status": "PASS",
+  "page_id": "40e8aa46-08ae-8173-8e73-d8f8c806b218",
+  "page_url": "https://app.notion.com/p/095-7-8-8-6-40e8aa4608ae81738e73d8f8c806b218",
+  "gmail": {
+    "message_id": "1a1a6c004403e37a",
+    "subject": "095｜出エジプト記7:8–8:6",
+    "sent_verified": true,
+    "to": "nishiharat@gmail.com",
+    "sent_label_verified": true,
+    "attachment": {
+      "filename": "asaichi-torah-095-20261104.jpg",
+      "content_type": "image/jpeg",
+      "byte_size": 448855,
+      "sha256": "03bba88b196fc9e44675e34aac01442d61575dd58e6139963339331102587267"
+    }
+  },
+  "completed_at": "2026-11-04T13:29:44Z",
+  "verse_count": 28,
+  "token_count": 413,
+  "WORK_JSON2_QUALITY": "PASS",
+  "HTML_IMPLEMENTED_COUNT": 28,
+  "AUDIO_IMPLEMENTED_COUNT": 28,
+  "cover_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "notion_readback": {
+    "title_matches": true,
+    "audio_count": 28,
+    "html_embed_count": 28,
+    "refs_match": true,
+    "cover_sha256_verified": true,
+    "callout2_matches": true
+  },
+  "recovery": {
+    "cause": "GitHub anonymous API rate limit (403) during PocketTorah tree lookup",
+    "fix_commit": "a9afcc6514fd9e9152189b72e0317cea1b41447c",
+    "retry_actions_run_id": 41837055634,
+    "result": "PASS"
+  },
+  "next_passage_source": {
+    "label": "Chabad Vaera fifth aliyah, Exodus 8:7–18 (Hebrew/WLC numbering), verified 2026-11-04",
+    "url": "https://www.chabad.org/parshah/torahreading_cdo/aid/2492610/p/5/jewish/Vaera-Torah-Reading.htm"
+  }
+}
