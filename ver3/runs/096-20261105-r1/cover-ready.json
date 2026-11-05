@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0-work-cover-ready",
+  "run_id": "096-20261105-r1",
+  "status": "PASS",
+  "object_key": "covers/096-20261105-r1/cover.jpg",
+  "content_type": "image/jpeg",
+  "width": 1200,
+  "height": 630,
+  "byte_size": 414844,
+  "sha256": "64a7c12863ec077bb83b8476db238d2b8a7ade4d44e257f1e3277ccddeab3c78",
+  "qa_pass": true,
+  "qa_checks": {
+    "NNN": "PASS",
+    "parasha": "PASS",
+    "aliyah": "PASS",
+    "range": "PASS",
+    "theme": "PASS",
+    "optional_subcopy": "NOT_USED",
+    "typography": "PASS",
+    "no_cross_run_content": "PASS",
+    "scene": "PASS",
+    "dimensions": "PASS"
+  },
+  "upload_http_status": 200,
+  "reviewed_by": "Work",
+  "reviewed_at": "2026-11-05T13:15:48.525Z"
+}
