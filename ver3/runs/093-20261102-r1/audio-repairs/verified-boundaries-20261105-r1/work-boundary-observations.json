@@ -3,7 +3,7 @@
   "manifest_sha256": "663b59f8fb348bc85fb112dcd9f12d3ae94d791063e551038eebb50f07c8fac0",
   "input_sha256": "3b30add9ec657f6bbf40c5f9b763e0fa715daa9b9a89e15b4e25eafb2de7ed20",
   "reviewed_at": "2026-11-05T13:10:43.469855+00:00",
-  "status": "CANDIDATE_BOUNDARIES_REVISED_CONTENT_REVIEW_PENDING",
+  "status": "BOUNDARY_CANDIDATE_READY_TWO_WORD_IDENTIFICATIONS_PENDING",
   "method": "Unprompted ivrit-ai Whisper candidate r1/r2 + previous two-model raw-source boundary investigation and signal windows",
   "observations": [
     {
@@ -548,8 +548,8 @@
     }
   ],
   "confirmed_repair_scope": "Source-pinned verse boundary profile, no global offset; all 15 candidate verses regenerated and 30 candidate files ASR-processed.",
-  "blocking_reason": "Audio listening API HTTP=429 code=credit_balance_exhausted type=insufficient_quota (workflow 42032638730 attempt 2). No actual candidate listening observation was collected; full content review remains pending.",
-  "required_next_step": "Add available credit to the OpenAI API billing account/project associated with the updated key, then rerun this exact 093 listening request. After Work evaluates all 15 verses at both speeds and all six content checks pass, invoke audio_quality repair for the same run and page.",
+  "blocking_reason": "API authentication and credit errors are resolved. Word identification remains uncertain at Exod6:15 יְמוּאֵל and Exod6:24 הַקָּרְחִי after actual listening and unprompted transcription. No all-content PASS is claimed.",
+  "required_next_step": "Confirm the two exact byte-bound candidate words by reliable listening, then complete the remaining review checks and invoke the existing 093 repair. Do not publish on the basis of the invalid focused gpt-audio response.",
   "published_audio_replaced": false,
   "previous_blocking_reasons": [
     {
@@ -570,5 +570,18 @@
     "content_status": "PENDING",
     "published_audio_replaced": false,
     "production_next_sequence": "097"
+  },
+  "latest_review": {
+    "reviewed_at": "2026-11-05T14:02:32.639Z",
+    "api_access": "AVAILABLE",
+    "full_listening_verses": 15,
+    "full_content_pass_verses": 13,
+    "unresolved_refs": [
+      "6:15",
+      "6:24"
+    ],
+    "content_review_status": "PENDING",
+    "published_audio_replaced": false,
+    "excluded_evidence": "Focused gpt-audio response hallucinated another biblical passage at6:18."
   }
 }

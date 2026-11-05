@@ -4,8 +4,8 @@
   "input_sha256": "3b30add9ec657f6bbf40c5f9b763e0fa715daa9b9a89e15b4e25eafb2de7ed20",
   "manifest_sha256": "663b59f8fb348bc85fb112dcd9f12d3ae94d791063e551038eebb50f07c8fac0",
   "reviewer": "Work",
-  "method": "ASR_WITH_BOUNDARY_REVIEW",
-  "reviewed_at": "2026-11-05T13:10:43.469855+00:00",
+  "method": "MODEL_AUDIO_LISTENING",
+  "reviewed_at": "2026-11-05T14:01:51.839Z",
   "verses": [
     {
       "ref": "6:14",
@@ -13,14 +13,14 @@
       "r2_sha256": "1669154056532f19abf48f6a0b2161893b0bf4edec4596b76ec877d9bed7bb06",
       "expected_text": "אֵלֶּה רָאשֵׁי בֵית אֲבֹתָם בְּנֵי רְאוּבֵן בְּכֹר יִשְׂרָאֵל חֲנוֹךְ וּפַלּוּא חֶצְרוֹן וְכַרְמִי אֵלֶּה מִשְׁפְּחֹת רְאוּבֵֽן",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音0–19.2秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
     },
     {
       "ref": "6:15",
@@ -28,14 +28,14 @@
       "r2_sha256": "5d77348ec609332e4ac77ba09268a75b128a14992e279812c521cb694b05965e",
       "expected_text": "וּבְנֵי שִׁמְעוֹן יְמוּאֵל וְיָמִין וְאֹהַד וְיָכִין וְצֹחַר וְשָׁאוּל בֶּן הַֽכְּנַעֲנִית אֵלֶּה מִשְׁפְּחֹת שִׁמְעֽוֹן",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
+        "first_word": "PASS",
+        "last_word": "PASS",
         "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音19.2–33.8秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。 未解決：יְמוּאֵלの子音m。初段yoel、独立ASRも複数表記となり、本文どおりの発音を確定できない。原音の発音と切断を混同せず、当該語の聴取確認が必要。"
     },
     {
       "ref": "6:16",
@@ -43,14 +43,14 @@
       "r2_sha256": "4797d9373a6b123bdd79ce43f18d1524b30c4069c7b36864e903b03472584352",
       "expected_text": "וְאֵלֶּה שְׁמוֹת בְּנֵֽי לֵוִי לְתֹלְדֹתָם גֵּרְשׁוֹן וּקְהָת וּמְרָרִי וּשְׁנֵי חַיֵּי לֵוִי שֶׁבַע וּשְׁלֹשִׁים וּמְאַת שָׁנָֽה",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音33.8–52.7秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。 語内部のu-qhatを切断とした初段の指摘は、境界位置と一致せず、専用ASRのr1/r2双方がוּקְהָתを認識しており、短いシェワの縮約として判定。"
     },
     {
       "ref": "6:17",
@@ -58,14 +58,14 @@
       "r2_sha256": "fa97d287c38aa8c644559ad8dcfbcf50eaf78b1c85e79e1c9eaf07209b160f53",
       "expected_text": "בְּנֵי גֵרְשׁוֹן לִבְנִי וְשִׁמְעִי לְמִשְׁפְּחֹתָֽם",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音52.7–60.1秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
     },
     {
       "ref": "6:18",
@@ -73,14 +73,14 @@
       "r2_sha256": "02d24d0974405b7200da1c65965b26874da1824a62233a748e1aa668bedf5ec3",
       "expected_text": "וּבְנֵי קְהָת עַמְרָם וְיִצְהָר וְחֶבְרוֹן וְעֻזִּיאֵל וּשְׁנֵי חַיֵּי קְהָת שָׁלֹשׁ וּשְׁלֹשִׁים וּמְאַת שָׁנָֽה",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音60.1–76.12秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。 問題となったושניは原音・候補の独立ivrit ASRと専用ASR r2でnを含んで認識される。初段のusheiという指摘は子音連結の誤認と判断。"
     },
     {
       "ref": "6:19",
@@ -88,14 +88,14 @@
       "r2_sha256": "e9e9fcc43bd6b3b30c829443321e8523573bc8429dc7bdbe682f8bb7f17a166e",
       "expected_text": "וּבְנֵי מְרָרִי מַחְלִי וּמוּשִׁי אֵלֶּה מִשְׁפְּחֹת הַלֵּוִי לְתֹלְדֹתָֽם",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音76.12–85.15秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
     },
     {
       "ref": "6:20",
@@ -103,14 +103,14 @@
       "r2_sha256": "a6ec78494e390920f0fddf6feac8439545d481d97aadac1abab1f43289c6cabb",
       "expected_text": "וַיִּקַּח עַמְרָם אֶת יוֹכֶבֶד דֹּֽדָתוֹ לוֹ לְאִשָּׁה וַתֵּלֶד לוֹ אֶֽת אַהֲרֹן וְאֶת מֹשֶׁה וּשְׁנֵי חַיֵּי עַמְרָם שֶׁבַע וּשְׁלֹשִׁים וּמְאַת שָׁנָֽה",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音85.15–106.3秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
     },
     {
       "ref": "6:21",
@@ -118,14 +118,14 @@
       "r2_sha256": "a4aaef338e2b078079b86a1c55326272675846a884da65de0e21b2c21dc9d9f9",
       "expected_text": "וּבְנֵי יִצְהָר קֹרַח וָנֶפֶג וְזִכְרִֽי",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音106.3–112.55秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
     },
     {
       "ref": "6:22",
@@ -133,14 +133,14 @@
       "r2_sha256": "b87b3ba5f8df0244c9d020c0dba4059f8edd963abc842409b013e5d22790e5a0",
       "expected_text": "וּבְנֵי עֻזִּיאֵל מִֽישָׁאֵל וְאֶלְצָפָן וְסִתְרִֽי",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音112.55–118.55秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
     },
     {
       "ref": "6:23",
@@ -148,14 +148,14 @@
       "r2_sha256": "292018ac006bc9f196ebac9bf82f8b7a5a674dc14867c781a28d40fd2395e9c4",
       "expected_text": "וַיִּקַּח אַהֲרֹן אֶת אֱלִישֶׁבַע בַּת עַמִּינָדָב אֲחוֹת נַחְשׁוֹן לוֹ לְאִשָּׁה וַתֵּלֶד לוֹ אֶת נָדָב וְאֶת אֲבִיהוּא אֶת אֶלְעָזָר וְאֶת אִֽיתָמָֽר",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音118.55–138.3秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
     },
     {
       "ref": "6:24",
@@ -163,14 +163,14 @@
       "r2_sha256": "eee3bd68f1e4c489cd878d9b8b3afe462427208376ed3970afd6f3cff5af7c83",
       "expected_text": "וּבְנֵי קֹרַח אַסִּיר וְאֶלְקָנָה וַאֲבִיאָסָף אֵלֶּה מִשְׁפְּחֹת הַקָּרְחִֽי",
       "checks": {
-        "first_word": "PENDING",
+        "first_word": "PASS",
         "last_word": "PENDING",
         "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音138.3–147.3秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。 未解決：末尾הַקָּרְחִיの語末母音とmの有無。初段はha-qorchim、専用ASRはmなしの複数異表記。末尾語の同定に一致が得られず、当該語の聴取確認が必要。"
     },
     {
       "ref": "6:25",
@@ -178,14 +178,14 @@
       "r2_sha256": "81227c1348a4145f440b02e7bf59dc960988a0f243ee2746eb969ce111916a20",
       "expected_text": "וְאֶלְעָזָר בֶּֽן אַהֲרֹן לָקַֽח לוֹ מִבְּנוֹת פּֽוּטִיאֵל לוֹ לְאִשָּׁה וַתֵּלֶד לוֹ אֶת פִּֽינְחָס אֵלֶּה רָאשֵׁי אֲבוֹת הַלְוִיִּם לְמִשְׁפְּחֹתָֽם",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音147.3–165.8秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
     },
     {
       "ref": "6:26",
@@ -193,14 +193,14 @@
       "r2_sha256": "85c0d00401cd873100c5ee61936582a521a89a3b823d935bba309a2a20b03147",
       "expected_text": "הוּא אַהֲרֹן וּמֹשֶׁה אֲשֶׁר אָמַר יְהוָה לָהֶם הוֹצִיאוּ אֶת בְּנֵי יִשְׂרָאֵל מֵאֶרֶץ מִצְרַיִם עַל צִבְאֹתָֽם",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音165.8–181.75秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
     },
     {
       "ref": "6:27",
@@ -208,14 +208,14 @@
       "r2_sha256": "be8ba875ff6638d931cbb52b8230a805b4cc153b814c48c8b28e485a8b50fc77",
       "expected_text": "הֵם הַֽמְדַבְּרִים אֶל פַּרְעֹה מֶֽלֶךְ מִצְרַיִם לְהוֹצִיא אֶת בְּנֵֽי יִשְׂרָאֵל מִמִּצְרָיִם הוּא מֹשֶׁה וְאַהֲרֹֽן",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音181.75–194.4秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
     },
     {
       "ref": "6:28",
@@ -223,14 +223,30 @@
       "r2_sha256": "7dee1f5f0746c4b5598a89675d3617f419f492506e611ee5c81d595e0b33299f",
       "expected_text": "וַיְהִי בְּיוֹם דִּבֶּר יְהוָה אֶל מֹשֶׁה בְּאֶרֶץ מִצְרָֽיִם",
       "checks": {
-        "first_word": "PENDING",
-        "last_word": "PENDING",
-        "word_order": "PENDING",
-        "no_other_verse": "PENDING",
-        "no_truncation": "PENDING",
-        "study_speed": "PENDING"
+        "first_word": "PASS",
+        "last_word": "PASS",
+        "word_order": "PASS",
+        "no_other_verse": "PASS",
+        "no_truncation": "PASS",
+        "study_speed": "PASS"
       },
-      "evidence": "実候補r1/r2を無参照ASRで処理し、固定原音・旧境界・新境界と照合。末尾語の持ち越しを修正した候補だが、固有名詞を含む全語の識別に不確実性が残る。追加の音声モデル実聴取はHTTP401 invalid_api_keyで実行不能。ASRだけを全6項目のPASSへ昇格させず、公開前検品を保留する。"
+      "evidence": "実候補r1/r2のSHAを第一段音声モデル観察と照合。全語を当該RUN朗読用本文と比較し、冒頭・末尾と隣節混入を確認。分割範囲は原音194.4–205.427秒。通常速度は学習速度より遅いことを要件とせず、聞き取れる自然速度を許容する。第一段モデルの「自然速度なのでstudy_speed FAIL」は基準誤適用として採用せず、機械速度検査・最大atempo 1・各音声の実時間・観察上の明瞭性で判断。第二段gpt-audioは6:18に別節の転記を出したため合格根拠から除外。"
+    }
+  ],
+  "status": "CONTENT_REVIEW_PENDING",
+  "unresolved_refs": [
+    "6:15",
+    "6:24"
+  ],
+  "evidence_files": [
+    "model-audio-observations.json",
+    "model-audio-transcription-observations.json",
+    "work-boundary-observations.json"
+  ],
+  "excluded_evidence": [
+    {
+      "path": "model-audio-focused-observations.json",
+      "reason": "6:18 transcribes a Sarah passage rather than this Exodus recording and reports implausible times; not used to certify any content PASS."
     }
   ]
 }
