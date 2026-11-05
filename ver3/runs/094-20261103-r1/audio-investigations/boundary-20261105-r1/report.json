@@ -1,0 +1,497 @@
+{
+  "schema_version": "1.0-audio-boundary-investigation",
+  "run_id": "094-20261103-r1",
+  "checked_at": "2026-11-05T13:10:43.469855+00:00",
+  "reviewer": "Work",
+  "method": "Unprompted two-model ASR + source-versus-published hash and boundary signal review",
+  "status": "NO_CONFIRMED_BOUNDARY_DEFECT_CONTENT_REVIEW_PENDING",
+  "verse_count": 9,
+  "r1_r2_file_count": 18,
+  "source_audio_sha256": "edeec6a49ec2e80b6ebbcc7bd91569f5921918af338da2f8a3a3536d710030bd",
+  "source_labels_sha256": "28f300d0044e85dd35a6e8941d9f85fb2832059509baf897bdcaf586919176ca",
+  "repair_required_by_available_evidence": false,
+  "published_audio_changed": false,
+  "limitations": [
+    "ASR misrecognizes cantillation and names. Output alone cannot certify all spoken words or pronunciation.",
+    "A source-wide gap or packet count is not a semantic PASS. No content PASS is issued."
+  ],
+  "special_observations": [],
+  "next_step": "No boundary replacement based on unconfirmed ASR differences. All-word listening certification remains pending.",
+  "verses": [
+    {
+      "ref": "6:29",
+      "first_expected": "וַיְדַבֵּ֧ר",
+      "last_expected": "אֵלֶֽיךָ",
+      "files": {
+        "r1": {
+          "filename": "094_6_29_r1.mp3",
+          "sha256": "9328662b425f651fc14cc5984883c51bae3e5a4618531f927d334e506596467e"
+        },
+        "r2": {
+          "filename": "094_6_29_r2.mp3",
+          "sha256": "66b4ad378c1ed37adfc29ba644934b51f007be130b6a592ab4f1186c2a1b5cd7"
+        }
+      },
+      "ivrit": {
+        "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+        "file": "094-20261103-r1/094_6_29_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 11.3,
+            "text": " בואי דבר ה' אל משה לימור אני ה' דבר"
+          },
+          {
+            "start": 11.3,
+            "end": 21.64,
+            "text": " אל הראה מלך מצרים עץ כל אשר אני זובר אליכם."
+          }
+        ]
+      },
+      "small": {
+        "model": "small",
+        "file": "094-20261103-r1/094_6_29_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 21.88,
+            "text": " בי דבר אדונאי, אל מושל למור, אני אדונאי, דבר, אל פרעה ולך מצרעים את כל השר אני זובר אין דחת"
+          }
+        ]
+      },
+      "boundary_finding": "No confirmed carry-over or clipped boundary found by current source/cut/ASR comparison; not an all-word listening PASS."
+    },
+    {
+      "ref": "6:30",
+      "first_expected": "וַיֹּ֥אמֶר",
+      "last_expected": "פַּרְעֹֽה",
+      "files": {
+        "r1": {
+          "filename": "094_6_30_r1.mp3",
+          "sha256": "a75dcb9469290918766a539c18f1f0dc08b21009bfbe9e211373056916040c0e"
+        },
+        "r2": {
+          "filename": "094_6_30_r2.mp3",
+          "sha256": "0f69b5d633d0611154abe2829ae450758e261ac3f4ea12168e2d78fb3c78bbc8"
+        }
+      },
+      "ivrit": {
+        "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+        "file": "094-20261103-r1/094_6_30_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 4.84,
+            "text": " ויאמר משה לפני אדוני,"
+          },
+          {
+            "start": 5.62,
+            "end": 9.08,
+            "text": " פן אני ארז שפת האם,"
+          },
+          {
+            "start": 9.82,
+            "end": 14.22,
+            "text": " ואיך ישמע אלי פרעה."
+          }
+        ]
+      },
+      "small": {
+        "model": "small",
+        "file": "094-20261103-r1/094_6_30_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 5.3,
+            "text": " ביום ומושל, ביץ נהד עדיין,"
+          },
+          {
+            "start": 5.5,
+            "end": 9.14,
+            "text": " אין אני אראה ספר טריד,"
+          },
+          {
+            "start": 10.52,
+            "end": 14.82,
+            "text": " נהש, איש מה אהבי פרעה."
+          }
+        ]
+      },
+      "boundary_finding": "No confirmed carry-over or clipped boundary found by current source/cut/ASR comparison; not an all-word listening PASS."
+    },
+    {
+      "ref": "7:1",
+      "first_expected": "וַיֹּ֤אמֶר",
+      "last_expected": "נְבִיאֶֽךָ",
+      "files": {
+        "r1": {
+          "filename": "094_7_1_r1.mp3",
+          "sha256": "643ab7b74bec6bed44237cb980c4a768fc9fb3e422e21b97914c934296377211"
+        },
+        "r2": {
+          "filename": "094_7_1_r2.mp3",
+          "sha256": "8b62435345bda1c9c58326a530d1fd3623ade8b3c458b8903802c5d47cda6c93"
+        }
+      },
+      "ivrit": {
+        "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+        "file": "094-20261103-r1/094_7_1_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 14.3,
+            "text": " ויאמר ה' אל משה ראה נפלתיך אלוהים לפרעה ואהרון אפיך יהיה נגיעך"
+          }
+        ]
+      },
+      "small": {
+        "model": "small",
+        "file": "094-20261103-r1/094_7_1_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 14.24,
+            "text": " ביום מראז ונאי אמא של רעי, נפתח תיכה אלוהים לספרות, והרון אף תיכה יהיה נביא אך."
+          }
+        ]
+      },
+      "boundary_finding": "No confirmed carry-over or clipped boundary found by current source/cut/ASR comparison; not an all-word listening PASS."
+    },
+    {
+      "ref": "7:2",
+      "first_expected": "אַתָּ֣ה",
+      "last_expected": "מֵאַרְצֽוֹ",
+      "files": {
+        "r1": {
+          "filename": "094_7_2_r1.mp3",
+          "sha256": "51eae75ed114a453d6a94ad382053dbb2c03f79f5290feda3e3f827c30563c9c"
+        },
+        "r2": {
+          "filename": "094_7_2_r2.mp3",
+          "sha256": "54d0ef8e1b2eadcd5b29d23c3402a07f95e41f60be2f65c1c085aea7e1968d9f"
+        }
+      },
+      "ivrit": {
+        "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+        "file": "094-20261103-r1/094_7_2_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.92,
+            "end": 8.04,
+            "text": " אתה תדבר עץ כל אשר אצרבקה,"
+          },
+          {
+            "start": 8.76,
+            "end": 14.2,
+            "text": " יהרון אחיך ידבר אל פרעה,"
+          },
+          {
+            "start": 15.02,
+            "end": 19.28,
+            "text": " ושילח את בני ישראל מארצו."
+          }
+        ]
+      },
+      "small": {
+        "model": "small",
+        "file": "094-20261103-r1/094_7_2_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 8.18,
+            "text": " עד טעה עד תדבר אצל אשר עד טרבקה"
+          },
+          {
+            "start": 8.18,
+            "end": 14.0,
+            "text": " ירון עד שיחה ידבר אל פרום"
+          },
+          {
+            "start": 14.54,
+            "end": 19.46,
+            "text": " ושילה אצל ניסר אל מרצו"
+          }
+        ]
+      },
+      "boundary_finding": "No confirmed carry-over or clipped boundary found by current source/cut/ASR comparison; not an all-word listening PASS."
+    },
+    {
+      "ref": "7:3",
+      "first_expected": "וַאֲנִ֥י",
+      "last_expected": "מִצְרָֽיִם",
+      "files": {
+        "r1": {
+          "filename": "094_7_3_r1.mp3",
+          "sha256": "4f3af3516ed0ff09cea3fb3edf86a840967cdae0bd77abc38c6ac344fa11c0b8"
+        },
+        "r2": {
+          "filename": "094_7_3_r2.mp3",
+          "sha256": "8ee7462f930e9a18a4ebd4909ff43f7a3a18daa295e72464418bcba23bc43c6d"
+        }
+      },
+      "ivrit": {
+        "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+        "file": "094-20261103-r1/094_7_3_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.88,
+            "end": 5.14,
+            "text": " ואני אקשה את זה לפרעה,"
+          },
+          {
+            "start": 5.76,
+            "end": 10.14,
+            "text": " והיר ביתי את עוטותיי,"
+          },
+          {
+            "start": 10.98,
+            "end": 14.24,
+            "text": " יתמוטותיי בארץ מצרים."
+          }
+        ]
+      },
+      "small": {
+        "model": "small",
+        "file": "094-20261103-r1/094_7_3_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 5.42,
+            "text": " ואני אקשה אצל את פירוש"
+          },
+          {
+            "start": 5.42,
+            "end": 10.24,
+            "text": " ויורדתי את עוד של טיאט"
+          },
+          {
+            "start": 10.24,
+            "end": 14.24,
+            "text": " לצמוק של טיאט בעץ מצרים"
+          }
+        ]
+      },
+      "boundary_finding": "No confirmed carry-over or clipped boundary found by current source/cut/ASR comparison; not an all-word listening PASS."
+    },
+    {
+      "ref": "7:4",
+      "first_expected": "וְלֹֽא",
+      "last_expected": "גְּדֹלִֽים",
+      "files": {
+        "r1": {
+          "filename": "094_7_4_r1.mp3",
+          "sha256": "036408263efa0bfba287555da3ca6edf559f53cdfb87c912da9c56abf36a3bbb"
+        },
+        "r2": {
+          "filename": "094_7_4_r2.mp3",
+          "sha256": "f1841ee52219b65fb2fbc56ea4a43193d0cfb597ef64b8594942b93a4addf22f"
+        }
+      },
+      "ivrit": {
+        "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+        "file": "094-20261103-r1/094_7_4_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.54,
+            "end": 8.52,
+            "text": " ולא אשמע עליכם פראו ורצאתי את ידי במצרים."
+          },
+          {
+            "start": 10.0,
+            "end": 23.24,
+            "text": " והוצאתי את צבאותיי את עמי בני ישראל מארץ מצרים בשבטים גדולים."
+          }
+        ]
+      },
+      "small": {
+        "model": "small",
+        "file": "094-20261103-r1/094_7_4_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 8.3,
+            "text": " ולא יש מה על איכם פרו, ורצאתי את ידי במיצרים."
+          },
+          {
+            "start": 10.22,
+            "end": 17.6,
+            "text": " ורצאתי את סיבותיי את אמית בני ישראל,"
+          },
+          {
+            "start": 18.12,
+            "end": 23.24,
+            "text": " וירצ מצרים בשפטים גדולים."
+          }
+        ]
+      },
+      "boundary_finding": "No confirmed carry-over or clipped boundary found by current source/cut/ASR comparison; not an all-word listening PASS."
+    },
+    {
+      "ref": "7:5",
+      "first_expected": "וְיָדְע֤וּ",
+      "last_expected": "מִתּוֹכָֽם",
+      "files": {
+        "r1": {
+          "filename": "094_7_5_r1.mp3",
+          "sha256": "5cd9da63daa30380f6ff36a1d0945aac78d1fd795543d8991ed0789f8a6628a7"
+        },
+        "r2": {
+          "filename": "094_7_5_r2.mp3",
+          "sha256": "2bb1832cea6f634f99a2f7576109ce850c2cdefc6ffaee2ca21303b2400e9a82"
+        }
+      },
+      "ivrit": {
+        "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+        "file": "094-20261103-r1/094_7_5_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 6.26,
+            "text": " ויעלו מרצאים, כי אני אדוני,"
+          },
+          {
+            "start": 7.24,
+            "end": 11.54,
+            "text": " בין תותי את ידי על מרצאים,"
+          },
+          {
+            "start": 12.540000000000001,
+            "end": 17.56,
+            "text": " ועל תותי את בני ישראל מתוכם."
+          }
+        ]
+      },
+      "small": {
+        "model": "small",
+        "file": "094-20261103-r1/094_7_5_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 6.72,
+            "text": " תהיה לומי טהים, כהניאה על זניף,"
+          },
+          {
+            "start": 6.74,
+            "end": 11.62,
+            "text": " בינתו תהיה תהיה לומי טהים,"
+          },
+          {
+            "start": 12.04,
+            "end": 17.64,
+            "text": " אל תהיה תהיה נעיסה אל מיתו קם."
+          }
+        ]
+      },
+      "boundary_finding": "No confirmed carry-over or clipped boundary found by current source/cut/ASR comparison; not an all-word listening PASS."
+    },
+    {
+      "ref": "7:6",
+      "first_expected": "וַיַּ֥עַשׂ",
+      "last_expected": "עָשֽׂוּ",
+      "files": {
+        "r1": {
+          "filename": "094_7_6_r1.mp3",
+          "sha256": "370b386f1e4ee6dd5f1e58cb8c0b1d0d680a2c22733e58f53b2c2295b0d487c8"
+        },
+        "r2": {
+          "filename": "094_7_6_r2.mp3",
+          "sha256": "e8ae15721f86b7364eeb8c09cbccc76a560ab607e0b4927b8cb41dc9bebd039e"
+        }
+      },
+      "ivrit": {
+        "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+        "file": "094-20261103-r1/094_7_6_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 10.88,
+            "text": " ביעש משה ואהרון, כאשר ציווה ה' אותם כן עשו"
+          }
+        ]
+      },
+      "small": {
+        "model": "small",
+        "file": "094-20261103-r1/094_7_6_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 10.92,
+            "text": " בייס מושד ירון, קשר ציבה עד עיני, עוד סם כנסו."
+          }
+        ]
+      },
+      "boundary_finding": "No confirmed carry-over or clipped boundary found by current source/cut/ASR comparison; not an all-word listening PASS."
+    },
+    {
+      "ref": "7:7",
+      "first_expected": "וּמֹשֶׁה֙",
+      "last_expected": "פַּרְעֹֽה",
+      "files": {
+        "r1": {
+          "filename": "094_7_7_r1.mp3",
+          "sha256": "7ec75b0df434d427a3cdcaad707aa37407c19bdb5e26ac5528066d3c9b7c49da"
+        },
+        "r2": {
+          "filename": "094_7_7_r2.mp3",
+          "sha256": "4eec95024cd688f84bfc9d92b24ca2fef39a7da95dbe4e98dfe0b0fdd783a036"
+        }
+      },
+      "ivrit": {
+        "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+        "file": "094-20261103-r1/094_7_7_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.62,
+            "end": 4.34,
+            "text": " ומשה בן שמונים שנה,"
+          },
+          {
+            "start": 4.42,
+            "end": 6.54,
+            "text": " בריאה אהרון,"
+          },
+          {
+            "start": 6.7,
+            "end": 10.2,
+            "text": " בן שלוש ושמונים שנה,"
+          },
+          {
+            "start": 10.72,
+            "end": 13.62,
+            "text": " בדברם אל פרעה."
+          }
+        ]
+      },
+      "small": {
+        "model": "small",
+        "file": "094-20261103-r1/094_7_7_r2.mp3",
+        "reference_prompt": false,
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 14.0,
+            "text": " ומושא בן שמולים שנה, בריאה הרון, בן שמושא ושמולים שנה, בלדה ברם אל פראו."
+          }
+        ]
+      },
+      "boundary_finding": "No confirmed carry-over or clipped boundary found by current source/cut/ASR comparison; not an all-word listening PASS."
+    }
+  ]
+}

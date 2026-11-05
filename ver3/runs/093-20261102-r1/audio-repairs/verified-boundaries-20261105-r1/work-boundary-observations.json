@@ -1,0 +1,554 @@
+{
+  "run_id": "093-20261102-r1",
+  "manifest_sha256": "663b59f8fb348bc85fb112dcd9f12d3ae94d791063e551038eebb50f07c8fac0",
+  "input_sha256": "3b30add9ec657f6bbf40c5f9b763e0fa715daa9b9a89e15b4e25eafb2de7ed20",
+  "reviewed_at": "2026-11-05T13:10:43.469855+00:00",
+  "status": "CANDIDATE_BOUNDARIES_REVISED_CONTENT_REVIEW_PENDING",
+  "method": "Unprompted ivrit-ai Whisper candidate r1/r2 + previous two-model raw-source boundary investigation and signal windows",
+  "observations": [
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_14_verified-boundaries-20261105-r1_166915405653_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 1.44,
+          "end": 5.54,
+          "text": " אלה ראשי בית אבותם,"
+        },
+        {
+          "start": 5.66,
+          "end": 8.18,
+          "text": " בני ראובן,"
+        },
+        {
+          "start": 8.32,
+          "end": 10.36,
+          "text": " בכור ישראל,"
+        },
+        {
+          "start": 11.16,
+          "end": 13.2,
+          "text": " חנוך ובלוך,"
+        },
+        {
+          "start": 13.36,
+          "end": 15.6,
+          "text": " חצון וחרמי,"
+        },
+        {
+          "start": 15.84,
+          "end": 18.32,
+          "text": " אלה משפחות ראובן."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_14_verified-boundaries-20261105-r1_168ea0fae4cf_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 1.5,
+          "end": 5.54,
+          "text": " אלה ראשי בית אבותם,"
+        },
+        {
+          "start": 5.66,
+          "end": 8.18,
+          "text": " בני ראובן,"
+        },
+        {
+          "start": 8.34,
+          "end": 10.48,
+          "text": " בכור ישראל,"
+        },
+        {
+          "start": 11.16,
+          "end": 15.62,
+          "text": " חנוך ופעלו חצרון וחרמי,"
+        },
+        {
+          "start": 15.8,
+          "end": 18.32,
+          "text": " אלה משפחות ראובן."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_15_verified-boundaries-20261105-r1_5d77348ec609_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 12.36,
+          "text": " ובני שמעון יבואב ימית ואוהד ירין וצוחר ושאור בן הקנעליס"
+        },
+        {
+          "start": 12.9,
+          "end": 15.92,
+          "text": " אלא משפחות שמעון"
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_15_verified-boundaries-20261105-r1_c35909c834cc_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.38,
+          "text": " ובני שמעון,"
+        },
+        {
+          "start": 3.08,
+          "end": 5.44,
+          "text": " יבואר ימין ואוהד,"
+        },
+        {
+          "start": 5.52,
+          "end": 7.96,
+          "text": " ירין וצוחק,"
+        },
+        {
+          "start": 8.16,
+          "end": 11.02,
+          "text": " ושאור בין הקנעניס,"
+        },
+        {
+          "start": 11.6,
+          "end": 14.2,
+          "text": " אלא משפחות שמעון."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_16_verified-boundaries-20261105-r1_4797d9373a6b_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 18.04,
+          "text": " ואלה שמות בין הילדי לתולדותם גרשון וכת ומרי ושני חיי הילדי שבע ושלושים ומאות שנה."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_16_verified-boundaries-20261105-r1_8cb85cbd3383_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 18.0,
+          "text": " ואלה שמות בני לידי לתולדותם גרשון וכת ומרי ושני חיי לידי שבע ושלושים ומאות שנה."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_17_verified-boundaries-20261105-r1_8f11bd81687d_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.6,
+          "text": " בני גרשון, נבני בשמעי למשפחותם."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_17_verified-boundaries-20261105-r1_fa97d287c38a_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.62,
+          "text": " בני גרשון, נבני בשמעי למשפחותם."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_18_verified-boundaries-20261105-r1_02d24d097440_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.98,
+          "text": " ובני קהץ,"
+        },
+        {
+          "start": 2.08,
+          "end": 7.42,
+          "text": " אברהם ויצהר, וחברון ועוזיאל,"
+        },
+        {
+          "start": 7.6,
+          "end": 10.48,
+          "text": " ושני חיי קהץ,"
+        },
+        {
+          "start": 11.34,
+          "end": 15.56,
+          "text": " שלוש ושלושים ומאה שנה."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_18_verified-boundaries-20261105-r1_0588b212e4b2_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.94,
+          "text": " ובני קהץ,"
+        },
+        {
+          "start": 2.04,
+          "end": 4.5,
+          "text": " אברהם ויצהר,"
+        },
+        {
+          "start": 4.72,
+          "end": 7.3,
+          "text": " וחברון ועוזיאל,"
+        },
+        {
+          "start": 7.48,
+          "end": 10.28,
+          "text": " ושני חיי קהץ,"
+        },
+        {
+          "start": 10.56,
+          "end": 15.2,
+          "text": " שלוש ושלושים ומאות שנה."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_19_verified-boundaries-20261105-r1_082ee0cde97b_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 8.54,
+          "text": " ובני בררי מחלי ומושי אלה משפחות הרגיל לתולדות העם."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_19_verified-boundaries-20261105-r1_e9e9fcc43bd6_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 9.54,
+          "text": " ובני ברעי, מחלי ומושיעי אלה משפחות הרגיל לתולדות העם."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_20_verified-boundaries-20261105-r1_831030707be2_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 6.82,
+          "text": " לא ייקח אמרם, עת יוכבד תעודתו לא על אישה,"
+        },
+        {
+          "start": 6.96,
+          "end": 11.88,
+          "text": " בתי לבו את ערו ואת משה,"
+        },
+        {
+          "start": 12.1,
+          "end": 20.14,
+          "text": " ושני חיי אמרם שבע ושלושים ומאות שנה."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_20_verified-boundaries-20261105-r1_a6ec78494e39_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 8.12,
+          "text": " וילקח אברהם את יוחדת דודתו זו על אישה,"
+        },
+        {
+          "start": 8.8,
+          "end": 14.1,
+          "text": " בתי לבוא את אהרון ועץ משה,"
+        },
+        {
+          "start": 15.02,
+          "end": 23.96,
+          "text": " ושני חיי אברהם שבע ושלושים ומאה שנה."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_21_verified-boundaries-20261105-r1_2649ab57669a_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.74,
+          "text": " ובני איסהר, קרח בנפג בזכרים."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_21_verified-boundaries-20261105-r1_a4aaef338e2b_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.66,
+          "text": " ובני איסהר, קרח בנפלג בזכרים."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_22_verified-boundaries-20261105-r1_3abdb4094305_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.16,
+          "text": " ופני עוזיאל, מישה אלדריאל, צפן וסי צ'י."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_22_verified-boundaries-20261105-r1_b87b3ba5f8df_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.32,
+          "text": " ופני עוזיאל, נישאר ביד צפן וסי טרי."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_23_verified-boundaries-20261105-r1_1473f075ce31_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 6.34,
+          "text": " וייקח אהרון את אלישבע בתלמי נדב,"
+        },
+        {
+          "start": 6.44,
+          "end": 12.58,
+          "text": " אך חוץ נחשון לו לאישה בתלד לו,"
+        },
+        {
+          "start": 13.76,
+          "end": 16.1,
+          "text": " את נדב ואת אביהו,"
+        },
+        {
+          "start": 16.2,
+          "end": 19.12,
+          "text": " את אלעזר ואת איתמר."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_23_verified-boundaries-20261105-r1_292018ac006b_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 8.06,
+          "text": " ויבח אהרון את אלישבע בתלמי נדב,"
+        },
+        {
+          "start": 8.78,
+          "end": 13.32,
+          "text": " אך חוץ נחשון לו לאישה,"
+        },
+        {
+          "start": 14.16,
+          "end": 23.82,
+          "text": " ותלד לו את נדב ואת אביהו את אלעזר ואת איתרמן."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_24_verified-boundaries-20261105-r1_6c6d579916a5_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.58,
+          "text": " ובני קורח, אסיר ואלקנה, ואבי אסף,"
+        },
+        {
+          "start": 6.22,
+          "end": 8.38,
+          "text": " איזה משפחות הכורחים."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_24_verified-boundaries-20261105-r1_eee3bd68f1e4_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 6.7,
+          "text": " ובני קורח אסיר ואלקנה ועל אביה נוסף"
+        },
+        {
+          "start": 6.7,
+          "end": 9.38,
+          "text": " איזה משפחות הקורחים"
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_25_verified-boundaries-20261105-r1_81227c1348a4_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.56,
+          "end": 10.28,
+          "text": " גל עזר בן אהרון לקח לו מבנות פוטיאל ואוהל לאישה,"
+        },
+        {
+          "start": 10.9,
+          "end": 13.76,
+          "text": " רטל לו את פנחס."
+        },
+        {
+          "start": 14.5,
+          "end": 21.52,
+          "text": " אלה ראשי אבות הלווים למשפחותם."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_25_verified-boundaries-20261105-r1_9e6bd63004ee_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 11.34,
+          "text": " ואלעזר בן אהרון לקח לו מבנות פוטיאל ואוהל לאישה בתל אדו את פנחס."
+        },
+        {
+          "start": 11.58,
+          "end": 17.68,
+          "text": " אלה ראשי אבות הלוויים למשפחותם."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_26_verified-boundaries-20261105-r1_1dcc5d8cdbf8_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.86,
+          "text": " הוא אהרון ומשה, אשר אמר אדוני להם,"
+        },
+        {
+          "start": 6.0,
+          "end": 14.68,
+          "text": " הוציאו את בני ישראל מארץ מצרים אלפי אותם."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_26_verified-boundaries-20261105-r1_85c0d00401cd_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 17.38,
+          "text": " הוא אהרון משה אשר אמר ה' להם הוציאו את בני ישראל מארץ מצרים הוציאו אותם."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_27_verified-boundaries-20261105-r1_be8ba875ff66_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 16.46,
+          "text": " הם המדברים אל קרעון מלך מצרים והוציא את בני ישראל ממצרים ומושב יהרון."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_27_verified-boundaries-20261105-r1_d625d86355d4_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 11.88,
+          "text": " הם המדברים אל פרעה מלך מצרים להוציא את שדני ישראל ממצרים ומושב יהרון."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_28_verified-boundaries-20261105-r1_02af33a93b20_r1.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 9.76,
+          "text": " ויהי, ביום דיבר אדוני על משה בארץ מצרים."
+        }
+      ]
+    },
+    {
+      "model": "ivrit-ai/whisper-large-v3-turbo-ct2",
+      "file": "093-20261102-r1/candidate/093_28_verified-boundaries-20261105-r1_7dee1f5f0746_r2.mp3",
+      "reference_prompt": false,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 9.76,
+          "text": " ויהי, ביום דיבר אדוני על משה בארץ מצרים."
+        }
+      ]
+    }
+  ],
+  "confirmed_repair_scope": "Source-pinned verse boundary profile, no global offset; all 15 candidate verses regenerated and 30 candidate files ASR-processed.",
+  "blocking_reason": "Actual audio listening model returned HTTP401 invalid_api_key; ASR proper-name uncertainty prevents all-word content certification.",
+  "required_next_step": "Restore a valid configured audio listening credential or obtain a complete human listening review of these exact byte-bound 30 candidate files. Evaluate all 6 checks per verse, then invoke audio_quality repair for this run.",
+  "published_audio_replaced": false
+}

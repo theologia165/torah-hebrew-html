@@ -62,7 +62,7 @@ jobs:
           node --check ver3/templates/search.js
       - name: Neon JSON1 → JSON1.1 → ChatGPT JSON2 → Notion JSON3
         env:
-          AUDIO_QUALITY_RUN_ID: ${{ inputs.audio_quality_run_id || '093-20261102-r1' }}
+          AUDIO_QUALITY_RUN_ID: ${{ inputs.audio_quality_run_id }}
         run: |
           if [ -n "$AUDIO_QUALITY_RUN_ID" ]; then
             [[ "$AUDIO_QUALITY_RUN_ID" =~ ^[0-9]{3}-[0-9]{8}-r[0-9]+$ ]] || exit 1
