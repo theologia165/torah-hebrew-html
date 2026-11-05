@@ -2,7 +2,7 @@ name: Audio quality regression
 on:
   pull_request:
     branches: [asaichi-torah-ver3]
-    paths: ['ver3/scripts/**', 'ver3/quality/audio/**', 'ver3/spec/audio-quality.md', '.github/workflows/**']
+    paths: ['ver3/scripts/**', 'ver3/quality/audio/**', 'ver3/spec/audio-quality.md', 'ver3/spec/audio-boundary.md', 'ver3/config/audio-boundary.json', '.github/workflows/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -27,6 +27,7 @@ jobs:
       - run: |
           python -m compileall -q ver3/scripts
           python ver3/scripts/test_audio_quality.py
+          python ver3/scripts/test_audio_boundary.py
           python ver3/scripts/test_audio_primary_module.py
           python ver3/scripts/test_audio_fallback_policy.py
           python ver3/scripts/test_handoff_contract.py

@@ -8,7 +8,9 @@ RUN作成後は`ver3/runs/{run_id}/handoff.json`を正本とし、そこに指�
 
 画像工程では`ver3/spec/image-handoff.md`に従い、当日三層画像入力だけからfresh画像を生成・目視QAし、合格JPEGを短時間PUT URLでR2へ直接送る。画像バイナリをGitHubやWorkの文字コンテキストへ入れない。
 
-Actionsは本文・HTML・節別音声・Pages・Notionを機械的に生成、検証、配信する。音声方針は`ver3/config/audio-fallback.json`と音声モジュールを正本とし、詳細をWorkが毎回再解釈しない。特定媒体がPARTIALでも正常な成果物の配信を継続し、不良・空・別節・過去RUNの代用品を使わない。
+Actionsは本文・HTML・節別音声・Pages・Notionを機械的に生成、検証、配信する。音声方針は`ver3/config/audio-fallback.json`と音声モジュールを正本とし、詳細をWorkが毎回再解釈しない。特定媒体がPARTIALでも正常な成果物の配信を継続し、再生不能・空・別節・過去RUNの代用品を使わない。再生可能な音声の境界未解決は報告して配信する。
+
+`next_action=REVIEW_AUDIO_BOUNDARIES`では`ver3/spec/audio-boundary.md`に従い、全節冒頭・末尾の観察を判断する。必要箇所の詳査は1回、修復も1回、再検品は変更箇所のみ。直せない・API利用不能・予算到達でもDELIVER_CURRENTで従来音声を配信し、未解決をメールに記す。配信完了と修復完了を分け、境界未解決だけで番号進行を止めない。
 
 最後は`ver3/spec/email-delivery.md`に従い、完全成功でも未完了でもGmailをto: meへ実送信し、Sentを確認する。PASS時はGmail証明を`completion.json`へ記録し、同一コミットでproduction stateを次へ一つ進める。`delivery.json=PASS`だけを完了扱いしない。BLOCKED／PARTIAL時は`ver3/spec/failure-report.md`に従い具体的原因と残作業を記す。
 

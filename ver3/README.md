@@ -7,9 +7,15 @@
 
 `ver3/README.md`は人間向けの全体契約、`ver3/spec/work-entry.md`はWorkの通常実行入口とする。定期実行プロンプトは全仕様を複製せず、最初にwork-entryとproduction stateだけを読む。Actionsは各RUNへ小さな`handoff.json`を出力し、Workはそこに記載された`next_action`、`stage_spec`、`required_inputs`だけを追加で読む。通常運用でREADME全体、Actions専用の機械仕様、成功済み媒体を毎回再読しない。
 
-主なhandoffは`CREATE_JSON2`、`GENERATE_QA_AND_UPLOAD_COVER`、`SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE`、`SEND_PARTIAL_EMAIL_KEEP_STATE`、`NONE`である。stage specのSHA256をhandoffへ記録し、どの仕様で作業したかを再現可能にする。handoffは秘密値や画像・音声バイナリを含めない。`NONE`はdelivery PASSだけでは出さず、Gmail Sent証明を持つ`completion.json`とproduction stateの進行まで一致した時だけ出す。両ファイルはActionsのpush対象であり、Workの最終化コミット後に完了ゲートを必ず自動実行する。
+主なhandoffは`CREATE_JSON2`、`GENERATE_QA_AND_UPLOAD_COVER`、`REVIEW_AUDIO_BOUNDARIES`、`SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE`、`SEND_PARTIAL_EMAIL_KEEP_STATE`、`NONE`である。stage specのSHA256をhandoffへ記録し、どの仕様で作業したかを再現可能にする。handoffは秘密値や画像・音声バイナリを含めない。`NONE`はdelivery PASSだけでは出さず、Gmail Sent証明を持つ`completion.json`とproduction stateの進行まで一致した時だけ出す。両ファイルはActionsのpush対象であり、Workの最終化コミット後に完了ゲートを必ず自動実行する。
 
 Workの段階別仕様は`ver3/spec/`、定型メールは`ver3/templates/`、機械的な方針は`ver3/config/`へ置く。JSON2の意味監査はWorkから外部化しない一方、HTML・音声・Notion・R2の変換と照合はActionsへ置く。
+
+## 通常配信の最終境界チェッカー
+
+新しい通常RUNは[音声境界検品](spec/audio-boundary.md)へ必ず引き継ぐ。Actionsが全実装節の配信用r2の冒頭・末尾を各4秒（短い節は全体を一度）観察し、Workが結果・修復・採用を判断する。詳査1回・修復1回・変更節のみ再検品。比較用TTSは作らず、抜粋・要求・出力・見積予算をRUN単位で制限し、未変更音声の結果を継承する。設定は`config/audio-boundary.json`。
+
+未解決でも再生可能な従来音声で配信し、メールへ具体的残件を記す。配信完了と修復完了は別。境界PASSは全節内容PASSを意味しない。finalizationとメール報告の証明を完了ゲートで照合する。既完了RUN・093〜095の個別修復を自動再実行しない。既存の厳格な全節修復経路は維持する。
 
 ## 音声実装の責任分割
 
@@ -132,7 +138,7 @@ JSON1/1.1/HTML/JSON3は不一致上書きを拒否する。Notion作成直後に
 
 ### 媒体別PARTIAL DELIVERY
 
-JSON1／JSON1.1／JSON2の本文・hash・token identityが合格している場合、特定節の音声、HTML、Pagesまたはcoverの独立障害をRUN全体の配信停止へ拡大しない。合格成果物でNotionページを作成し、欠落媒体だけを実装しない。JSON3は全refsと媒体別状態を保持し、delivery.jsonは`PARTIAL`、page_id、page_url、実装数、missing refs、failure detailsを記録する。PARTIALではproduction stateを進めず、後日同じrun_id・同じNotionページへ欠落媒体だけを追加する。不良音声、空media block、別節・過去RUNの代用品は使わない。
+JSON1／JSON1.1／JSON2の本文・hash・token identityが合格している場合、特定節の音声、HTML、Pagesまたはcoverの独立障害をRUN全体の配信停止へ拡大しない。合格成果物でNotionページを作成し、欠落媒体だけを実装しない。JSON3は全refsと媒体別状態を保持し、delivery.jsonは`PARTIAL`、page_id、page_url、実装数、missing refs、failure detailsを記録する。PARTIALではproduction stateを進めず、後日同じrun_id・同じNotionページへ欠落媒体だけを追加する。再生不能な音声、空media block、別節・過去RUNの代用品は使わない。通常の境界検品で不十分な点が残る再生可能音声は、音声境界仕様に従い未解決をメールで伝えて配信する。
 
 ## HTML配信方針（2026-09-07更新）
 全節をGITHUB_PAGES方式とする。publish_pagesがmainのver3-public/{run_id}/だけへHTMLを追加し、Pages build APIを明示的に起動して公開内容を照合する。公開に失敗した場合はNotion投稿前に停止する。完了済みdelivery PASSのRUNは契約検査のみ行い、既存Notionページを再投稿・変更しない。未完了の旧添付RUNは自動移行せず明示的な照合を要求する。既存050の32:4はユーザー確認済みのPages実験で、他の節の一括移行はこの設定変更では行わない。

@@ -194,6 +194,9 @@ def main():
     seq=req['sequence']; routes=[]; audio_by_ref={}; audio_meta_by_ref={}
     state_path=run/'delivery.json'
     state=json.loads(state_path.read_text()) if state_path.exists() else {'status':'PENDING','run_id':req['run_id']}
+    if (run/'audio-boundary/state.json').exists() and not req.get('audio_only_repair'):
+        from audio.boundary_flow import delivery_summary
+        state['audio_boundary'] = delivery_summary(run)
     def checkpoint(): state_path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n')
     if state.get('status')=='PASS' and not req.get('audio_only_repair'):
         # A delivery PASS is reusable only when the stored JSON3 itself has

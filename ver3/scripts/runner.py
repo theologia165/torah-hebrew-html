@@ -170,11 +170,23 @@ def main():
         quality = inspect_audio(run)
         if quality['machine_status'] != 'PASS':
             raise RuntimeError('Audio machine inspection failed; see audio-quality.json')
-        if quality['blocking_refs']:
+        # A playable but imperfect normal recording is retained and disclosed.
+        # Historical/explicit strict repair policy remains unchanged.
+        if quality['blocking_refs'] and r['mode']!='publish':
             quarantine(run, quality)
             cmd(sys.executable,'ver3/scripts/verify_audio.py',str(audio))
             quality = inspect_audio(run)
         last_successful_stage='AUDIO_VERIFIED_FOR_IMPLEMENTED_REFS'
+        if r['mode']=='publish':
+            from audio.boundary_flow import process as process_boundaries
+            if not process_boundaries(run, commit_run):
+                print('WAITING_FOR_WORK: review audio boundaries; unresolved audio may still be delivered')
+                return
+            # Candidates change only selected audio; retain a fresh machine
+            # report without promoting boundary observations to full-content QA.
+            quality = inspect_audio(run)
+            if quality['machine_status'] != 'PASS':
+                raise RuntimeError('Selected audio failed machine inspection')
         commit_run(run,'Build verified Ver.3 HTML and per-verse audio')
         if r['mode']=='publish':
             # Work receives only this short-lived presigned URL; it uploads no image binary to GitHub.
