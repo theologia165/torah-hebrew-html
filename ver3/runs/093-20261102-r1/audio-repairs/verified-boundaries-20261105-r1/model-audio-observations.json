@@ -1,0 +1,903 @@
+{
+  "schema_version": "1.0-model-audio-observations",
+  "run_id": "093-20261102-r1",
+  "input_sha256": "3b30add9ec657f6bbf40c5f9b763e0fa715daa9b9a89e15b4e25eafb2de7ed20",
+  "manifest_sha256": "663b59f8fb348bc85fb112dcd9f12d3ae94d791063e551038eebb50f07c8fac0",
+  "model": "gpt-audio-1.5",
+  "review_request_sha256": "be3ac29c209f5fb613029026e07c7708696cac048923b82d7d897fb0594c163a",
+  "verses": [
+    {
+      "ref": "6:14",
+      "r1_sha256": "168ea0fae4cfd6114d7044103d33952b47ebc7f54060d79d5f20a0f123c1d8d1",
+      "r2_sha256": "1669154056532f19abf48f6a0b2161893b0bf4edec4596b76ec877d9bed7bb06",
+      "expected_text": "אֵלֶּה רָאשֵׁי בֵית אֲבֹתָם בְּנֵי רְאוּבֵן בְּכֹר יִשְׂרָאֵל חֲנוֹךְ וּפַלּוּא חֶצְרוֹן וְכַרְמִי אֵלֶּה מִשְׁפְּחֹת רְאוּבֵֽן",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_d846c77e901445f6a312eed8b48da0cc",
+      "response_id": "chatcmpl-Egs5tANk0A7t7tyfwsJbnZjFiPYBW",
+      "usage": {
+        "prompt_tokens": 727,
+        "completion_tokens": 301,
+        "total_tokens": 1028,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 383,
+          "text_tokens": 344,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 301
+        }
+      },
+      "observed_at": "2026-11-05T13:47:04.697965+00:00",
+      "observation": {
+        "heard_text_r1": "ele rashei beit avotam bnei reuven bechor yisrael chanokh u-falu chetzron ve-karmi ele mishpechot reuven",
+        "heard_text_r2": "ele rashei beit avotam bnei reuven bechor yisrael chanokh u-falu chetzron ve-karmi ele mishpechot reuven",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "UNCERTAIN",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference are present in correct order. Pronunciation variations are acceptable. The speed is natural, but not clearly slower or faster than typical."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference are present in correct order. Pronunciation variations are acceptable. The speed is slower and more deliberate, suitable for study."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:15",
+      "r1_sha256": "c35909c834cce8b7e9a6617974b254bc43de721138ec6c4f187fa338d1ded56f",
+      "r2_sha256": "5d77348ec609332e4ac77ba09268a75b128a14992e279812c521cb694b05965e",
+      "expected_text": "וּבְנֵי שִׁמְעוֹן יְמוּאֵל וְיָמִין וְאֹהַד וְיָכִין וְצֹחַר וְשָׁאוּל בֶּן הַֽכְּנַעֲנִית אֵלֶּה מִשְׁפְּחֹת שִׁמְעֽוֹן",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_ed465fb9c43340f398e99c72a5751cec",
+      "response_id": "chatcmpl-Egs5x3EXd2hvy1Pq9eCbe2ySKtx5L",
+      "usage": {
+        "prompt_tokens": 650,
+        "completion_tokens": 278,
+        "total_tokens": 928,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 309,
+          "text_tokens": 341,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 278
+        }
+      },
+      "observed_at": "2026-11-05T13:47:08.662305+00:00",
+      "observation": {
+        "heard_text_r1": "ובני שמעון יואל וימין ואוהד ויכין וצחר ושאול בן הכנענית אלה משפחות שמעון",
+        "heard_text_r2": "ובני שמעון יואל וימין ואוהד ויכין וצחר ושאול בן הכנענית אלה משפחות שמעון",
+        "r1": {
+          "first_word": "ובני",
+          "last_word": "שמעון",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [
+            "ימואל"
+          ],
+          "extra_words": [
+            "יואל"
+          ],
+          "clipped_words": [],
+          "evidence": "The first name after 'ובני שמעון' is heard as 'יואל' instead of 'ימואל'. All other names match the reference. The speed is natural, not study speed."
+        },
+        "r2": {
+          "first_word": "ובני",
+          "last_word": "שמעון",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [
+            "ימואל"
+          ],
+          "extra_words": [
+            "יואל"
+          ],
+          "clipped_words": [],
+          "evidence": "The first name after 'ובני שמעון' is heard as 'יואל' instead of 'ימואל'. The pace is slower and clear, consistent with study speed."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:16",
+      "r1_sha256": "8cb85cbd338307b2d916bddbf6b065a04db26e2f3725b7df20f2ed50002fb99f",
+      "r2_sha256": "4797d9373a6b123bdd79ce43f18d1524b30c4069c7b36864e903b03472584352",
+      "expected_text": "וְאֵלֶּה שְׁמוֹת בְּנֵֽי לֵוִי לְתֹלְדֹתָם גֵּרְשׁוֹן וּקְהָת וּמְרָרִי וּשְׁנֵי חַיֵּי לֵוִי שֶׁבַע וּשְׁלֹשִׁים וּמְאַת שָׁנָֽה",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_57bf1343d231441eb3f2a0b764634dfe",
+      "response_id": "chatcmpl-Egs61yXXHqXZLUIPIbHRKllqxfQzM",
+      "usage": {
+        "prompt_tokens": 731,
+        "completion_tokens": 350,
+        "total_tokens": 1081,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 377,
+          "text_tokens": 354,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 350
+        }
+      },
+      "observed_at": "2026-11-05T13:47:13.077971+00:00",
+      "observation": {
+        "heard_text_r1": "ve'eleh shemot bnei levi letoldotam gershon ukhat umarari ushnei chayei levi sheva ushloshim ume'at shana",
+        "heard_text_r2": "ve'eleh shemot bnei levi letoldotam gershon ukhat umarari ushnei chayei levi sheva ushloshim ume'at shana",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "FAIL",
+          "study_speed": "UNCERTAIN",
+          "missing_words": [
+            "ukehat"
+          ],
+          "extra_words": [],
+          "clipped_words": [
+            "ukhat"
+          ],
+          "evidence": "The word 'ukehat' was pronounced as 'ukhat', missing the 'e' sound. The rest of the words match the reference."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "FAIL",
+          "study_speed": "PASS",
+          "missing_words": [
+            "ukehat"
+          ],
+          "extra_words": [],
+          "clipped_words": [
+            "ukhat"
+          ],
+          "evidence": "The word 'ukehat' was pronounced as 'ukhat', missing the 'e' sound. The rest of the words match the reference. The speed was slower and clear."
+        },
+        "doubts": [
+          "The exact vowel in 'ukehat' is unclear in both recordings, leading to uncertainty about the completeness of the word."
+        ]
+      }
+    },
+    {
+      "ref": "6:17",
+      "r1_sha256": "8f11bd81687d7f083f509797171ec4af7367ddae8b93837ff4d0c6d0ceb851a2",
+      "r2_sha256": "fa97d287c38aa8c644559ad8dcfbcf50eaf78b1c85e79e1c9eaf07209b160f53",
+      "expected_text": "בְּנֵי גֵרְשׁוֹן לִבְנִי וְשִׁמְעִי לְמִשְׁפְּחֹתָֽם",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_6a4e8842c9d74c1983f18d96b277c10e",
+      "response_id": "chatcmpl-Egs65tk1Jc49uuXKCbFKRCnjmCjfZ",
+      "usage": {
+        "prompt_tokens": 431,
+        "completion_tokens": 250,
+        "total_tokens": 681,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 147,
+          "text_tokens": 284,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 250
+        }
+      },
+      "observed_at": "2026-11-05T13:47:16.324737+00:00",
+      "observation": {
+        "heard_text_r1": "b'nei gershon livni v'shim'i l'mishp'chotam",
+        "heard_text_r2": "b'nei gershon livni v'shim'i l'mishp'chotam",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words match the reference in order. The speed is natural and faster than study speed, which is acceptable for r1."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words match the reference in order. The speed is slower and clear, suitable for study speed."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:18",
+      "r1_sha256": "0588b212e4b29661d9c7ac981dec4dae0c61aee327a13f515d0a62da5d6bdffe",
+      "r2_sha256": "02d24d0974405b7200da1c65965b26874da1824a62233a748e1aa668bedf5ec3",
+      "expected_text": "וּבְנֵי קְהָת עַמְרָם וְיִצְהָר וְחֶבְרוֹן וְעֻזִּיאֵל וּשְׁנֵי חַיֵּי קְהָת שָׁלֹשׁ וּשְׁלֹשִׁים וּמְאַת שָׁנָֽה",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_b9559b1d34a0463a832e8b69c4b764ac",
+      "response_id": "chatcmpl-Egs69hf1t6U4Aje1L4pdrPp0hv91d",
+      "usage": {
+        "prompt_tokens": 660,
+        "completion_tokens": 335,
+        "total_tokens": 995,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 323,
+          "text_tokens": 337,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 335
+        }
+      },
+      "observed_at": "2026-11-05T13:47:21.203634+00:00",
+      "observation": {
+        "heard_text_r1": "uvnei kehat amram veyitzhar vechevron ve'uziel ushei chayei kehat shalosh ushloshim ume'at shanah",
+        "heard_text_r2": "uvnei kehat amram veyitzhar vechevron ve'uziel ushei chayei kehat shalosh ushloshim ume'at shanah",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "FAIL",
+          "study_speed": "PASS",
+          "missing_words": [
+            "ushnei"
+          ],
+          "extra_words": [],
+          "clipped_words": [
+            "ushei"
+          ],
+          "evidence": "The word 'ushnei' was pronounced as 'ushei', indicating a clipped or altered pronunciation. All other words appear in correct order and match the reference."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "FAIL",
+          "study_speed": "PASS",
+          "missing_words": [
+            "ushnei"
+          ],
+          "extra_words": [],
+          "clipped_words": [
+            "ushei"
+          ],
+          "evidence": "Similar to r1, 'ushnei' was pronounced as 'ushei'. The rest of the verse matches the reference in order and content."
+        },
+        "doubts": [
+          "The exact pronunciation of 'ushnei' is uncertain as it sounded like 'ushei' in both recordings."
+        ]
+      }
+    },
+    {
+      "ref": "6:19",
+      "r1_sha256": "082ee0cde97bf4b7921f6a5bb20187cd9a6ffc6acbd852a7e1f6d929412031c2",
+      "r2_sha256": "e9e9fcc43bd6b3b30c829443321e8523573bc8429dc7bdbe682f8bb7f17a166e",
+      "expected_text": "וּבְנֵי מְרָרִי מַחְלִי וּמוּשִׁי אֵלֶּה מִשְׁפְּחֹת הַלֵּוִי לְתֹלְדֹתָֽם",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_d248a39189884a84a693d1e09fb3e5c8",
+      "response_id": "chatcmpl-Egs6D2hls0dbwMK1SbWNstzXNpN2Y",
+      "usage": {
+        "prompt_tokens": 490,
+        "completion_tokens": 257,
+        "total_tokens": 747,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 190,
+          "text_tokens": 300,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 257
+        }
+      },
+      "observed_at": "2026-11-05T13:47:24.161784+00:00",
+      "observation": {
+        "heard_text_r1": "u'vnei merari machli u'mushi eleh mishpachot halevi l'toldotam",
+        "heard_text_r2": "u'vnei merari machli u'mushi eleh mishpachot halevi l'toldotam",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words present in correct order, natural speed is faster than study speed. No truncation or extra words."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words present in correct order, slower and clear study speed, no truncation or extra words."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:20",
+      "r1_sha256": "831030707be2148dd12204a7da1e1863621d01c99797c57e5707033f59ebbc7b",
+      "r2_sha256": "a6ec78494e390920f0fddf6feac8439545d481d97aadac1abab1f43289c6cabb",
+      "expected_text": "וַיִּקַּח עַמְרָם אֶת יוֹכֶבֶד דֹּֽדָתוֹ לוֹ לְאִשָּׁה וַתֵּלֶד לוֹ אֶֽת אַהֲרֹן וְאֶת מֹשֶׁה וּשְׁנֵי חַיֵּי עַמְרָם שֶׁבַע וּשְׁלֹשִׁים וּמְאַת שָׁנָֽה",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_fe8dedf5e4254b1f8712a29aa8451930",
+      "response_id": "chatcmpl-Egs6G4OjymygVceViBg9YNSxDXAPU",
+      "usage": {
+        "prompt_tokens": 833,
+        "completion_tokens": 516,
+        "total_tokens": 1349,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 462,
+          "text_tokens": 371,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 516
+        }
+      },
+      "observed_at": "2026-11-05T13:47:30.420556+00:00",
+      "observation": {
+        "heard_text_r1": "וַיִּקַּח עַמְרָם אֶת יוֹכֶבֶד דֹּדָתוֹ לוֹ לְאִשָּׁה וַתֵּלֶד לוֹ אֶת אַהֲרֹן וְאֶת מֹשֶׁה וּשְׁנֵי חַיֵּי עַמְרָם שֶׁבַע וּשְׁלֹשִׁים וּמְאַת שָׁנָה",
+        "heard_text_r2": "וַיִּקַּח עַמְרָם אֶת יוֹכֶבֶד דֹּדָתוֹ לוֹ לְאִשָּׁה וַתֵּלֶד לוֹ אֶת אַהֲרֹן וְאֶת מֹשֶׁה וּשְׁנֵי חַיֵּי עַמְרָם שֶׁבַע וּשְׁלֹשִׁים וּמְאַת שָׁנָה",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference verse are present in the correct order. The speed is natural and faster than study speed, which is expected for r1."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference verse are present in the correct order. The speed is slower and clear, suitable for study speed."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:21",
+      "r1_sha256": "2649ab57669a5f63928bcf5ad22ac1473659c21c2fd0d4746cb3747a361819ac",
+      "r2_sha256": "a4aaef338e2b078079b86a1c55326272675846a884da65de0e21b2c21dc9d9f9",
+      "expected_text": "וּבְנֵי יִצְהָר קֹרַח וָנֶפֶג וְזִכְרִֽי",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_4323515e5ba24023a6dc7224c6d7a47a",
+      "response_id": "chatcmpl-Egs6NICaBsVLz1A6Faw1JJ0gOSG6X",
+      "usage": {
+        "prompt_tokens": 394,
+        "completion_tokens": 276,
+        "total_tokens": 670,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 124,
+          "text_tokens": 270,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 276
+        }
+      },
+      "observed_at": "2026-11-05T13:47:34.382776+00:00",
+      "observation": {
+        "heard_text_r1": "u'vnei yitzhar korach va'nepheg v'zichri",
+        "heard_text_r2": "u'vnei yitzhar korach va'nepheg v'zichri",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All four words 'u'vnei', 'yitzhar', 'korach', 'va'nepheg', 'v'zichri' are clearly heard in correct order. The speed is natural and slightly fast, not study speed."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All four words are clearly heard in correct order at a slower, study speed. No truncation or extra words."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:22",
+      "r1_sha256": "3abdb409430567030fd9e33b2d5da5ad12817d8b78d8396a29bb3ca1132ee11c",
+      "r2_sha256": "b87b3ba5f8df0244c9d020c0dba4059f8edd963abc842409b013e5d22790e5a0",
+      "expected_text": "וּבְנֵי עֻזִּיאֵל מִֽישָׁאֵל וְאֶלְצָפָן וְסִתְרִֽי",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_d3d048d3b6f04e8cb6fad5335b94e223",
+      "response_id": "chatcmpl-Egs6Q0j0SXHmNLSBoahjk3E1We0sY",
+      "usage": {
+        "prompt_tokens": 404,
+        "completion_tokens": 240,
+        "total_tokens": 644,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 122,
+          "text_tokens": 282,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 240
+        }
+      },
+      "observed_at": "2026-11-05T13:47:37.693774+00:00",
+      "observation": {
+        "heard_text_r1": "u'vnei uziel mish'ael v'el tzafan v'sitri",
+        "heard_text_r2": "u'vnei uziel mish'ael v'el tzafan v'sitri",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words match the reference in order. The speed is natural and slightly fast, not study speed."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words match the reference in order. The speed is slower and clear, suitable for study."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:23",
+      "r1_sha256": "1473f075ce314e77b1855ba0891e24da34a25bf0be581f6db18726627a707f04",
+      "r2_sha256": "292018ac006bc9f196ebac9bf82f8b7a5a674dc14867c781a28d40fd2395e9c4",
+      "expected_text": "וַיִּקַּח אַהֲרֹן אֶת אֱלִישֶׁבַע בַּת עַמִּינָדָב אֲחוֹת נַחְשׁוֹן לוֹ לְאִשָּׁה וַתֵּלֶד לוֹ אֶת נָדָב וְאֶת אֲבִיהוּא אֶת אֶלְעָזָר וְאֶת אִֽיתָמָֽר",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_a378e4e84c0e402dbc5d08e9f75e4190",
+      "response_id": "chatcmpl-Egs6UfvDhGVJvRIOTeWwm01E4yOuA",
+      "usage": {
+        "prompt_tokens": 814,
+        "completion_tokens": 303,
+        "total_tokens": 1117,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 448,
+          "text_tokens": 366,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 303
+        }
+      },
+      "observed_at": "2026-11-05T13:47:41.756971+00:00",
+      "observation": {
+        "heard_text_r1": "vayikach aharon et elisheva bat aminadav achot nachshon lo le'isha vateled lo et nadav ve'et avihu et elazar ve'et itamar",
+        "heard_text_r2": "vayikach aharon et elisheva bat aminadav achot nachshon lo le'isha vateled lo et nadav ve'et avihu et elazar ve'et itamar",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference verse are present in correct order. Pronunciation variations are acceptable. The speed is natural, not study speed."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference verse are present in correct order. Pronunciation variations are acceptable. The speed is slower and clear, suitable for study."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:24",
+      "r1_sha256": "6c6d579916a581a46d05bae4dd14fae79af6fe9e5d8cbb5988755b0b969688f8",
+      "r2_sha256": "eee3bd68f1e4c489cd878d9b8b3afe462427208376ed3970afd6f3cff5af7c83",
+      "expected_text": "וּבְנֵי קֹרַח אַסִּיר וְאֶלְקָנָה וַאֲבִיאָסָף אֵלֶּה מִשְׁפְּחֹת הַקָּרְחִֽי",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_77ef4057795249cf9f198885925c3b9f",
+      "response_id": "chatcmpl-Egs6YD8vbRJYSt2bBjpi5tgFiEltP",
+      "usage": {
+        "prompt_tokens": 491,
+        "completion_tokens": 325,
+        "total_tokens": 816,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 190,
+          "text_tokens": 301,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 325
+        }
+      },
+      "observed_at": "2026-11-05T13:47:45.404394+00:00",
+      "observation": {
+        "heard_text_r1": "u'vnei Korach Asir ve'Elkanah va'Aviasaf eileh mishpechot ha'Korchim",
+        "heard_text_r2": "u'vnei Korach Asir ve'Elkanah va'Aviasaf eileh mishpechot ha'Korchim",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "FAIL",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "FAIL",
+          "study_speed": "FAIL",
+          "missing_words": [
+            "ha'Karchi"
+          ],
+          "extra_words": [
+            "ha'Korchim"
+          ],
+          "clipped_words": [],
+          "evidence": "The final word was pronounced as 'ha'Korchim' instead of 'ha'Karchi', indicating a variation. The rest of the words match the reference in order."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "FAIL",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "FAIL",
+          "study_speed": "PASS",
+          "missing_words": [
+            "ha'Karchi"
+          ],
+          "extra_words": [
+            "ha'Korchim"
+          ],
+          "clipped_words": [],
+          "evidence": "The final word was pronounced as 'ha'Korchim' instead of 'ha'Karchi'. The pace was slower and clear, but the final word does not match the reference."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:25",
+      "r1_sha256": "9e6bd63004eeb64075ec9d2ec45d4a2dd3757be5ff32015404f841760ca8053e",
+      "r2_sha256": "81227c1348a4145f440b02e7bf59dc960988a0f243ee2746eb969ce111916a20",
+      "expected_text": "וְאֶלְעָזָר בֶּֽן אַהֲרֹן לָקַֽח לוֹ מִבְּנוֹת פּֽוּטִיאֵל לוֹ לְאִשָּׁה וַתֵּלֶד לוֹ אֶת פִּֽינְחָס אֵלֶּה רָאשֵׁי אֲבוֹת הַלְוִיִּם לְמִשְׁפְּחֹתָֽם",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_19490f2db0dc400aae548eb2dca86280",
+      "response_id": "chatcmpl-Egs6cmU1zTIMOSOIo4Vcc08JmadXI",
+      "usage": {
+        "prompt_tokens": 774,
+        "completion_tokens": 344,
+        "total_tokens": 1118,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 411,
+          "text_tokens": 363,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 344
+        }
+      },
+      "observed_at": "2026-11-05T13:47:50.110492+00:00",
+      "observation": {
+        "heard_text_r1": "ve'elazar ben aharon lakach lo mibnot putiel lo le'isha vateled lo et pinchas ele rashei avot haleviim lemishpechotam",
+        "heard_text_r2": "ve'elazar ben aharon lakach lo mibnot putiel lo le'isha vateled lo et pinchas ele rashei avot haleviim lemishpechotam",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference verse are present in the correct order. The speed is natural and slightly fast, which is acceptable for r1. No words appear to be truncated or clipped."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference verse are present in the correct order. The speed is slower and clear, suitable for study speed. No words appear to be truncated or clipped."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:26",
+      "r1_sha256": "1dcc5d8cdbf86dd626c06f00fa19172434748909a755e51be2a766e0c56fc932",
+      "r2_sha256": "85c0d00401cd873100c5ee61936582a521a89a3b823d935bba309a2a20b03147",
+      "expected_text": "הוּא אַהֲרֹן וּמֹשֶׁה אֲשֶׁר אָמַר יְהוָה לָהֶם הוֹצִיאוּ אֶת בְּנֵי יִשְׂרָאֵל מֵאֶרֶץ מִצְרַיִם עַל צִבְאֹתָֽם",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_24e4d6d6bea64bd98ba96d361c5d10bf",
+      "response_id": "chatcmpl-Egs6gGg2WYwMuLSTZniCZJcSp59a5",
+      "usage": {
+        "prompt_tokens": 679,
+        "completion_tokens": 295,
+        "total_tokens": 974,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 347,
+          "text_tokens": 332,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 295
+        }
+      },
+      "observed_at": "2026-11-05T13:47:54.162239+00:00",
+      "observation": {
+        "heard_text_r1": "hu aharon u'moshe asher amar adonai lahem hotziu et bnei yisrael me'eretz mitzrayim al tzivotam",
+        "heard_text_r2": "hu aharon u'moshe asher amar adonai lahem hotziu et bnei yisrael me'eretz mitzrayim al tzivotam",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference are present in correct order. The speed is natural and slightly fast, which is acceptable for r1. No words appear missing or clipped."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference are present in correct order. The speed is slower and clear, suitable for study. No words appear missing or clipped."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:27",
+      "r1_sha256": "d625d86355d4215e3030f0044a00658df7b95ce554d487ef1a7a5bb1e3e7a5e4",
+      "r2_sha256": "be8ba875ff6638d931cbb52b8230a805b4cc153b814c48c8b28e485a8b50fc77",
+      "expected_text": "הֵם הַֽמְדַבְּרִים אֶל פַּרְעֹה מֶֽלֶךְ מִצְרַיִם לְהוֹצִיא אֶת בְּנֵֽי יִשְׂרָאֵל מִמִּצְרָיִם הוּא מֹשֶׁה וְאַהֲרֹֽן",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_d915757059e64244a762442f3d4abd46",
+      "response_id": "chatcmpl-Egs6lYtmlrPwgKOA7mFax3pgixiwx",
+      "usage": {
+        "prompt_tokens": 640,
+        "completion_tokens": 229,
+        "total_tokens": 869,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 301,
+          "text_tokens": 339,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 229
+        }
+      },
+      "observed_at": "2026-11-05T13:47:57.594574+00:00",
+      "observation": {
+        "heard_text_r1": "הם המדברים אל פרעה מלך מצרים להוציא את בני ישראל ממצרים הוא משה ואהרן",
+        "heard_text_r2": "הם המדברים אל פרעה מלך מצרים להוציא את בני ישראל ממצרים הוא משה ואהרן",
+        "r1": {
+          "first_word": "הם",
+          "last_word": "ואהרן",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference are present in the correct order. The speed is natural and slightly fast, which is acceptable for r1."
+        },
+        "r2": {
+          "first_word": "הם",
+          "last_word": "ואהרן",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference are present in the correct order. The speed is slower and clear, suitable for study speed."
+        },
+        "doubts": []
+      }
+    },
+    {
+      "ref": "6:28",
+      "r1_sha256": "02af33a93b20bf2f84e2084d8d53017a04ae5ab5dbf0f05bbc820d9c78bb257d",
+      "r2_sha256": "7dee1f5f0746c4b5598a89675d3617f419f492506e611ee5c81d595e0b33299f",
+      "expected_text": "וַיְהִי בְּיוֹם דִּבֶּר יְהוָה אֶל מֹשֶׁה בְּאֶרֶץ מִצְרָֽיִם",
+      "model": "gpt-audio-1.5",
+      "api_request_id": "req_3eb4fb53524e462a96c4ab6543e3e315",
+      "response_id": "chatcmpl-Egs6o2mx9LnMLZi90DuanptokkeMN",
+      "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 272,
+        "total_tokens": 779,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 220,
+          "text_tokens": 287,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 272
+        }
+      },
+      "observed_at": "2026-11-05T13:48:01.425641+00:00",
+      "observation": {
+        "heard_text_r1": "vayehi beyom diber Adonai el Moshe be'eretz Mitzrayim",
+        "heard_text_r2": "vayehi beyom diber Adonai el Moshe be'eretz Mitzrayim",
+        "r1": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "FAIL",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference verse are present in the correct order. The speed is natural and slightly fast, which is acceptable for r1. No words appear truncated or missing."
+        },
+        "r2": {
+          "first_word": "PASS",
+          "last_word": "PASS",
+          "word_order": "PASS",
+          "no_other_verse": "PASS",
+          "no_truncation": "PASS",
+          "study_speed": "PASS",
+          "missing_words": [],
+          "extra_words": [],
+          "clipped_words": [],
+          "evidence": "All words from the reference verse are present in the correct order. The speed is slower and clear, suitable for study speed. No words appear truncated or missing."
+        },
+        "doubts": []
+      }
+    }
+  ],
+  "purpose": "Observations only. Work must evaluate them before writing a content PASS.",
+  "status": "OBSERVATIONS_COMPLETE_NOT_A_CONTENT_PASS"
+}
