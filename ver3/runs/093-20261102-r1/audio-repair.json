@@ -1,0 +1,13 @@
+{
+  "operation": "AUDIO_ONLY_REPLACE",
+  "audio_only_repair": true,
+  "run_id": "093-20261102-r1",
+  "page_id": "40c8aa46-08ae-8117-a4a7-d121683caa1e",
+  "update_page_id": "40c8aa46-08ae-8117-a4a7-d121683caa1e",
+  "repair_id": "verified-boundaries-20261105-r1",
+  "reason": "原音と本文で確認した節間区間へ分割位置を修正し、全15節を再検品して同じNotionページの音声だけ更新する",
+  "incident_ids": [
+    "AUDIO-093-VERSE-BOUNDARIES"
+  ],
+  "quality_department": "ver3/quality/audio"
+}

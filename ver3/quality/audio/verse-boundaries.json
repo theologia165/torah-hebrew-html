@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0-source-verse-boundaries",
+  "profiles": [
+    {
+      "id": "VAERA_2_BOUNDARIES_20261105",
+      "audio_base": "Vaera-2",
+      "pockettorah_commit": "8a23287221dd535966ee9914de9a03e71769a469",
+      "audio_sha256": "ec6910441fe0e9b7ac5140e8ced8362658c88d76b2f8e3ff7ff24325fa89ff0f",
+      "labels_sha256": "7cb843fc560248917c42add2a353b8ebc9e3980de37abf8bd2338c687b8ec819",
+      "word_count": 182,
+      "expected_refs": [
+        "6:14",
+        "6:15",
+        "6:16",
+        "6:17",
+        "6:18",
+        "6:19",
+        "6:20",
+        "6:21",
+        "6:22",
+        "6:23",
+        "6:24",
+        "6:25",
+        "6:26",
+        "6:27",
+        "6:28"
+      ],
+      "boundaries": [
+        0,
+        19.2,
+        33.8,
+        52.7,
+        60.1,
+        76.12,
+        85.15,
+        106.3,
+        112.55,
+        118.55,
+        138.3,
+        147.3,
+        165.8,
+        181.75,
+        194.4,
+        205.427
+      ],
+      "incident_id": "AUDIO-093-VERSE-BOUNDARIES",
+      "basis": "当該原音・本文・独立ASRと低エネルギーの節間区間を照合した修復候補。内容PASSは候補の全節再検品で別途確定。",
+      "verse_word_counts": [
+        15,
+        13,
+        15,
+        5,
+        13,
+        8,
+        20,
+        5,
+        5,
+        20,
+        8,
+        18,
+        15,
+        14,
+        8
+      ]
+    }
+  ]
+}

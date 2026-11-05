@@ -2,6 +2,7 @@
 import json
 import hashlib
 import os
+import math
 import re
 import sys
 import urllib.parse
@@ -123,6 +124,39 @@ def boundary_meta(candidate, silences):
             record['refined'] = end
             record['method'] = 'next_word_onset_refined_to_silence_end'
     return record
+
+
+def verified_verse_boundaries(data, source_meta, source_duration, boundaries):
+    """Use a reviewed source-specific cut list, never a global label offset."""
+    registry = Path(__file__).resolve().parents[3] / 'quality/audio/verse-boundaries.json'
+    if not registry.exists():
+        return boundaries
+    profiles = json.loads(registry.read_text(encoding='utf-8'))['profiles']
+    matches = [p for p in profiles if p['audio_base'] == source_meta['audio_base']
+               and p['pockettorah_commit'] == POCKETTORAH_SHA]
+    if not matches:
+        return boundaries
+    if len(matches) != 1:
+        fail('MAPPING: duplicate source-specific verse boundary profiles')
+    profile = matches[0]
+    refs = [f"{int(v.get('chapter', data['passage']['chapter']))}:{int(v['verse'])}"
+            for v in data['verses']]
+    if (any(profile[key] != source_meta[key] for key in ('audio_sha256', 'labels_sha256'))
+            or profile['word_count'] != sum(len(v['words']) for v in data['verses'])
+            or profile['verse_word_counts'] != [len(v['words']) for v in data['verses']]
+            or profile['expected_refs'] != refs):
+        fail('MAPPING: source-specific verse boundary identity changed')
+    cuts = profile['boundaries']
+    if (len(cuts) != len(refs) + 1
+            or any(not isinstance(t, (int, float)) or isinstance(t, bool)
+                   or not math.isfinite(t) for t in cuts)
+            or cuts[0] < 0 or cuts[-1] > source_duration + 0.001
+            or not all(a < b for a, b in zip(cuts, cuts[1:]))):
+        fail('SIGNAL: invalid source-specific verse boundaries')
+    source_meta['verse_boundary_profile'] = profile['id']
+    return [{**prior, 'refined': cut,
+             'method': 'verified_source_specific_verse_boundary',
+             'profile_id': profile['id']} for prior, cut in zip(boundaries, cuts)]
 
 
 def resolve_source(data):
@@ -250,6 +284,7 @@ def build(data, output):
         else:
             boundaries.append(boundary_meta(
                 word_onsets[cumulative[index]], silences))
+    boundaries = verified_verse_boundaries(data, source_meta, source_duration, boundaries)
     for index in range(1, len(boundaries)):
         if boundaries[index]['refined'] <= boundaries[index - 1]['refined']:
             fail(f'SIGNAL: non-monotonic boundary {index}')

@@ -13,6 +13,34 @@ from audio.processing import normalized_atempo
 
 
 def main():
+    # Reproduce the 093 last-word spill without applying 085's label shift.
+    fixture_profile = {
+        'id': 'boundary-test', 'audio_base': 'test-source',
+        'pockettorah_commit': pockettorah.POCKETTORAH_SHA,
+        'audio_sha256': 'audio-hash', 'labels_sha256': 'labels-hash',
+        'word_count': 2, 'verse_word_counts': [1, 1],
+        'expected_refs': ['6:16', '6:17'], 'boundaries': [0, 2.7, 5],
+    }
+    fixture_data = {'passage': {'chapter': 6}, 'verses': [
+        {'verse': 16, 'words': [{}]}, {'verse': 17, 'words': [{}]}]}
+    prior_cuts = [{'candidate': t, 'refined': t} for t in [0.2, 1.1, 5]]
+    fixture_meta = {key: fixture_profile[key] for key in
+                    ('audio_base', 'audio_sha256', 'labels_sha256')}
+    with patch.object(Path, 'exists', return_value=True), \
+            patch.object(Path, 'read_text', return_value=json.dumps({'profiles': [fixture_profile]})):
+        corrected = pockettorah.verified_verse_boundaries(
+            fixture_data, fixture_meta.copy(), 5, prior_cuts)
+        assert [v['refined'] for v in corrected] == [0, 2.7, 5]
+        assert corrected[1]['candidate'] == 1.1
+        assert pockettorah.verified_verse_boundaries(
+            fixture_data, {'audio_base': 'unrelated'}, 5, prior_cuts) == prior_cuts
+        try:
+            pockettorah.verified_verse_boundaries(
+                fixture_data, dict(fixture_meta, audio_sha256='changed'), 5, prior_cuts)
+        except SystemExit:
+            pass
+        else:
+            raise AssertionError('Changed source accepted reviewed boundaries')
     with patch.dict(os.environ, {'GITHUB_TOKEN': 'test-token'}), \
             patch.object(pockettorah.urllib.request, 'urlopen') as open_url:
         open_url.return_value.read.return_value = b'{}'
