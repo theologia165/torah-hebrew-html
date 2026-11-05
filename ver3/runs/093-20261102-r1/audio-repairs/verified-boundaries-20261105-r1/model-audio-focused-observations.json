@@ -1,0 +1,551 @@
+{
+  "schema_version": "1.0-focused-audio-observations",
+  "run_id": "093-20261102-r1",
+  "input_sha256": "3b30add9ec657f6bbf40c5f9b763e0fa715daa9b9a89e15b4e25eafb2de7ed20",
+  "manifest_sha256": "663b59f8fb348bc85fb112dcd9f12d3ae94d791063e551038eebb50f07c8fac0",
+  "model": "gpt-audio",
+  "purpose": "Independent observations only; no content PASS. Resolve first-pass disagreements without changing candidate bytes.",
+  "verses": [
+    {
+      "ref": "6:15",
+      "r1_sha256": "c35909c834cce8b7e9a6617974b254bc43de721138ec6c4f187fa338d1ded56f",
+      "r2_sha256": "5d77348ec609332e4ac77ba09268a75b128a14992e279812c521cb694b05965e",
+      "model": "gpt-audio-2025-08-28",
+      "observed_at": "2026-11-05T13:53:45.450861+00:00",
+      "api_request_id": "req_929fe018cc7e4c2eba1e201b251ef9a4",
+      "response_id": "chatcmpl-EgsCE0NOQzO3ibJtwlHrbgSuInLNd",
+      "usage": {
+        "prompt_tokens": 511,
+        "completion_tokens": 1386,
+        "total_tokens": 1897,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 309,
+          "text_tokens": 202,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 1386
+        }
+      },
+      "question": "After the opening two words, is the next name audibly yemuel/yemual, yoel, or something else? Describe especially any medial m consonant; mark uncertainty rather than guessing.",
+      "observation": {
+        "heard_text_r1": "Shim'on, Ye'u'el, Yam'in, ve'Ohad, Yakhin, vetzokhar, veSha'ul ben haKenaanit, eleh mishpechot Shim'on.",
+        "heard_text_r2": "Shim'on, Ye'u'el, Yam'in, ve'Ohad, Yakhin, vetzokhar, veSha'ul ben haKenaanit, eleh mishpechot Shim'on.",
+        "acoustic_answer": "After the opening two words, the next name is audibly closer to 'Ye'u'el'. There is a clear 'm' consonant sound in the following name 'Yam'in'. The name after the first two words does not have a strong 'm' consonant. It is not 'yemuel' or 'yemual'. It is not 'yoel' either. The audible name is 'Ye'u'el'.",
+        "audible_consonants": {
+          "r1": [
+            {
+              "segment": "Shim'on",
+              "consonants": [
+                "sh",
+                "m",
+                "ʔ"
+              ]
+            },
+            {
+              "segment": "Ye'u'el",
+              "consonants": [
+                "y",
+                "ʔ",
+                "ʔ",
+                "l"
+              ]
+            },
+            {
+              "segment": "Yam'in",
+              "consonants": [
+                "y",
+                "m",
+                "ʔ",
+                "n"
+              ]
+            },
+            {
+              "segment": "ve'Ohad",
+              "consonants": [
+                "v",
+                "ʔ",
+                "h",
+                "d"
+              ]
+            },
+            {
+              "segment": "Yakhin",
+              "consonants": [
+                "y",
+                "kh",
+                "n"
+              ]
+            },
+            {
+              "segment": "vetzokhar",
+              "consonants": [
+                "v",
+                "ts",
+                "kh",
+                "r"
+              ]
+            },
+            {
+              "segment": "veSha'ul",
+              "consonants": [
+                "v",
+                "sh",
+                "ʔ",
+                "l"
+              ]
+            },
+            {
+              "segment": "ben",
+              "consonants": [
+                "b",
+                "n"
+              ]
+            },
+            {
+              "segment": "haKenaanit",
+              "consonants": [
+                "h",
+                "k",
+                "n",
+                "ʔ",
+                "n",
+                "t"
+              ]
+            },
+            {
+              "segment": "eleh",
+              "consonants": [
+                "ʔ",
+                "l"
+              ]
+            },
+            {
+              "segment": "mishpechot",
+              "consonants": [
+                "m",
+                "sh",
+                "p",
+                "kh",
+                "t"
+              ]
+            },
+            {
+              "segment": "Shim'on",
+              "consonants": [
+                "sh",
+                "m",
+                "ʔ"
+              ]
+            }
+          ],
+          "r2": [
+            {
+              "segment": "Shim'on",
+              "consonants": [
+                "sh",
+                "m",
+                "ʔ"
+              ]
+            },
+            {
+              "segment": "Ye'u'el",
+              "consonants": [
+                "y",
+                "ʔ",
+                "ʔ",
+                "l"
+              ]
+            },
+            {
+              "segment": "Yam'in",
+              "consonants": [
+                "y",
+                "m",
+                "ʔ",
+                "n"
+              ]
+            },
+            {
+              "segment": "ve'Ohad",
+              "consonants": [
+                "v",
+                "ʔ",
+                "h",
+                "d"
+              ]
+            },
+            {
+              "segment": "Yakhin",
+              "consonants": [
+                "y",
+                "kh",
+                "n"
+              ]
+            },
+            {
+              "segment": "vetzokhar",
+              "consonants": [
+                "v",
+                "ts",
+                "kh",
+                "r"
+              ]
+            },
+            {
+              "segment": "veSha'ul",
+              "consonants": [
+                "v",
+                "sh",
+                "ʔ",
+                "l"
+              ]
+            },
+            {
+              "segment": "ben",
+              "consonants": [
+                "b",
+                "n"
+              ]
+            },
+            {
+              "segment": "haKenaanit",
+              "consonants": [
+                "h",
+                "k",
+                "n",
+                "ʔ",
+                "n",
+                "t"
+              ]
+            },
+            {
+              "segment": "eleh",
+              "consonants": [
+                "ʔ",
+                "l"
+              ]
+            },
+            {
+              "segment": "mishpechot",
+              "consonants": [
+                "m",
+                "sh",
+                "p",
+                "kh",
+                "t"
+              ]
+            },
+            {
+              "segment": "Shim'on",
+              "consonants": [
+                "sh",
+                "m",
+                "ʔ"
+              ]
+            }
+          ]
+        },
+        "time_ranges_in_each_recording": {
+          "r1": {
+            "Shim'on": [
+              0.0,
+              0.8
+            ],
+            "Ye'u'el": [
+              0.8,
+              1.4
+            ],
+            "Yam'in": [
+              1.4,
+              2.0
+            ],
+            "ve'Ohad": [
+              2.0,
+              2.6
+            ],
+            "Yakhin": [
+              2.6,
+              3.2
+            ],
+            "vetzokhar": [
+              3.2,
+              3.8
+            ],
+            "veSha'ul ben haKenaanit": [
+              3.8,
+              5.0
+            ],
+            "eleh mishpechot Shim'on": [
+              5.0,
+              6.0
+            ]
+          },
+          "r2": {
+            "Shim'on": [
+              0.0,
+              1.0
+            ],
+            "Ye'u'el": [
+              1.0,
+              2.0
+            ],
+            "Yam'in": [
+              2.0,
+              3.0
+            ],
+            "ve'Ohad": [
+              3.0,
+              4.0
+            ],
+            "Yakhin": [
+              4.0,
+              5.0
+            ],
+            "vetzokhar": [
+              5.0,
+              6.0
+            ],
+            "veSha'ul ben haKenaanit": [
+              6.0,
+              7.5
+            ],
+            "eleh mishpechot Shim'on": [
+              7.5,
+              9.0
+            ]
+          }
+        },
+        "actual_clipping_evidence": {
+          "r1": false,
+          "r2": false
+        },
+        "uncertainty": {
+          "r1": {
+            "Ye'u'el": "low",
+            "Yam'in": "low",
+            "ve'Ohad": "low",
+            "Yakhin": "low",
+            "vetzokhar": "low",
+            "veSha'ul ben haKenaanit": "low",
+            "eleh mishpechot Shim'on": "low"
+          },
+          "r2": {
+            "Ye'u'el": "low",
+            "Yam'in": "low",
+            "ve'Ohad": "low",
+            "Yakhin": "low",
+            "vetzokhar": "low",
+            "veSha'ul ben haKenaanit": "low",
+            "eleh mishpechot Shim'on": "low"
+          }
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "ref": "6:16",
+      "r1_sha256": "8cb85cbd338307b2d916bddbf6b065a04db26e2f3725b7df20f2ed50002fb99f",
+      "r2_sha256": "4797d9373a6b123bdd79ce43f18d1524b30c4069c7b36864e903b03472584352",
+      "model": "gpt-audio-2025-08-28",
+      "observed_at": "2026-11-05T13:53:50.764044+00:00",
+      "api_request_id": "req_086c3597d02f4ed6b1aaf393dc3d2140",
+      "response_id": "chatcmpl-EgsCQzVgCUUJ7cH11235Mdu4EdA5K",
+      "usage": {
+        "prompt_tokens": 591,
+        "completion_tokens": 479,
+        "total_tokens": 1070,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 377,
+          "text_tokens": 214,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 479
+        }
+      },
+      "question": "In the name after Gershon, is reduced sheva in u-qehat/u-qhat a normal pronunciation variation, or is there evidence of actual clipping? The word is internal to the recording. Distinguish uncertain vowel recognition from an audio edit.",
+      "observation": {
+        "heard_text_r1": "ve-eleh shemot benei levi letoldotam gershon u-khat u-merari ushnei chayei levi sheva ushloshim ume'at shana",
+        "heard_text_r2": "ve-eleh shemot benei levi letoldotam gershon u-khat u-merari ushnei chayei levi sheva ushloshim ume'at shana",
+        "acoustic_answer": "The reduced sheva in 'u-khat' is a normal pronunciation variation. There is no clear evidence of actual clipping in the audio. The vowel reduction is consistent with natural speech patterns and not an audio edit.",
+        "audible_consonants": [
+          "v",
+          "l",
+          "sh",
+          "m",
+          "t",
+          "b",
+          "n",
+          "l",
+          "v",
+          "l",
+          "t",
+          "l",
+          "d",
+          "t",
+          "m",
+          "g",
+          "r",
+          "sh",
+          "n",
+          "k",
+          "h",
+          "t",
+          "m",
+          "r",
+          "r",
+          "y",
+          "sh",
+          "n",
+          "ch",
+          "y",
+          "l",
+          "v",
+          "sh",
+          "v",
+          "sh",
+          "l",
+          "sh",
+          "m",
+          "m",
+          "t",
+          "sh",
+          "n"
+        ],
+        "time_ranges_in_each_recording": {
+          "r1": {
+            "gershon": "2.0s-2.5s",
+            "u-khat": "2.5s-3.0s",
+            "u-merari": "3.0s-3.5s"
+          },
+          "r2": {
+            "gershon": "2.0s-2.8s",
+            "u-khat": "2.8s-3.5s",
+            "u-merari": "3.5s-4.2s"
+          }
+        },
+        "actual_clipping_evidence": "No clear evidence of clipping. The transitions are smooth and the vowel reduction is natural.",
+        "uncertainty": "UNCERTAIN in vowel length distinction due to natural reduction, but consonants are clear.",
+        "confidence": "High confidence in consonant sequence and overall structure. Moderate confidence in vowel reduction interpretation."
+      }
+    },
+    {
+      "ref": "6:18",
+      "r1_sha256": "0588b212e4b29661d9c7ac981dec4dae0c61aee327a13f515d0a62da5d6bdffe",
+      "r2_sha256": "02d24d0974405b7200da1c65965b26874da1824a62233a748e1aa668bedf5ec3",
+      "model": "gpt-audio-2025-08-28",
+      "observed_at": "2026-11-05T13:53:54.192864+00:00",
+      "api_request_id": "req_f8996f6cd1a34275a79b849af06aff29",
+      "response_id": "chatcmpl-EgsCVQwADYDDDcQS70LG0Zd3bBVKR",
+      "usage": {
+        "prompt_tokens": 527,
+        "completion_tokens": 288,
+        "total_tokens": 815,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 323,
+          "text_tokens": 204,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 288
+        }
+      },
+      "question": "Before chayei, are the consonants sh-n audible in u-shnei, or do you hear u-shei? Distinguish coarticulation/cantillation from actual omission or clipping.",
+      "observation": {
+        "heard_text_r1": "Vayihyu chayei Sarah me'at shanah ve'esrim shanah v'sheva shanim shnei chayei Sarah.",
+        "heard_text_r2": "Vayihyu chayei Sarah me'at shanah ve'esrim shanah v'sheva shanim shnei chayei Sarah.",
+        "acoustic_answer": "In both recordings, before 'chayei', the consonants 'sh-n' are audible. It is 'u-shnei' and not 'u-shei'. The 'n' sound is present, though slightly coarticulated with the following consonant, but not omitted or clipped.",
+        "audible_consonants": "sh, n",
+        "time_ranges_in_each_recording": {
+          "r1": {
+            "u-shnei": "approximately 3.0 to 3.5 seconds"
+          },
+          "r2": {
+            "u-shnei": "approximately 3.0 to 4.0 seconds"
+          }
+        },
+        "actual_clipping_evidence": "No actual clipping is evident. The consonants are present, though coarticulated smoothly.",
+        "uncertainty": "No significant uncertainty in the consonants 'sh-n' before 'chayei'.",
+        "confidence": "High"
+      }
+    },
+    {
+      "ref": "6:24",
+      "r1_sha256": "6c6d579916a581a46d05bae4dd14fae79af6fe9e5d8cbb5988755b0b969688f8",
+      "r2_sha256": "eee3bd68f1e4c489cd878d9b8b3afe462427208376ed3970afd6f3cff5af7c83",
+      "model": "gpt-audio-2025-08-28",
+      "observed_at": "2026-11-05T13:53:57.813917+00:00",
+      "api_request_id": "req_0177b176437c451cadeeba2995342f2d",
+      "response_id": "chatcmpl-EgsCY1mfn4DpuseXsToZ9XECcPfTj",
+      "usage": {
+        "prompt_tokens": 403,
+        "completion_tokens": 357,
+        "total_tokens": 760,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 190,
+          "text_tokens": 213,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 357
+        }
+      },
+      "question": "At the end, is the last word ha-qorchi/ha-qarhi ending in a vowel, or ha-qorchim with a distinct final m consonant? Do not infer number from grammar. Is any neighboring verse audible after it?",
+      "observation": {
+        "heard_text_r1": "וְאֵלֶּה קֹרַח אַסִּיר וְאֶלְקָנָה וַאֲבִיאָסָף אֵלֶּה מִשְׁפְּחֹת הַקֹּרְחִים",
+        "heard_text_r2": "וְאֵלֶּה קֹרַח אַסִּיר וְאֶלְקָנָה וַאֲבִיאָסָף אֵלֶּה מִשְׁפְּחֹת הַקֹּרְחִים",
+        "acoustic_answer": "The last word ends with a distinct final 'm' consonant sound, making it 'ha-qorchim'.",
+        "audible_consonants": [
+          "v",
+          "l",
+          "k",
+          "r",
+          "ḥ",
+          "s",
+          "ʾ",
+          "n",
+          "b",
+          "y",
+          "p",
+          "t",
+          "m"
+        ],
+        "time_ranges_in_each_recording": {
+          "r1": {
+            "start": "0:00",
+            "end": "0:05"
+          },
+          "r2": {
+            "start": "0:00",
+            "end": "0:06"
+          }
+        },
+        "actual_clipping_evidence": "No significant clipping is evident in either recording. The audio is clear at the end of the verse.",
+        "uncertainty": "Minimal uncertainty. Both recordings clearly articulate the final 'm' consonant.",
+        "confidence": "High"
+      }
+    }
+  ],
+  "status": "OBSERVATIONS_COMPLETE_NOT_A_CONTENT_PASS"
+}
