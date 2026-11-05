@@ -70,6 +70,8 @@ jobs:
           else
             python ver3/scripts/runner.py
           fi
+      - name: Focused 093 listening observations
+        run: python ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/focused-review.py
       - name: Keep run evidence
         if: always()
         uses: actions/upload-artifact@v4
