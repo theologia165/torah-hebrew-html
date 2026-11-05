@@ -85,6 +85,20 @@
   "public_bytes_and_existing_page_verified_by": "ver3/scripts/deliver.py",
   "production_state_unchanged": true,
   "production_state_sha256": "7f0611e087e97f261c3dca0ba991bb73da5ae5ec6777bc7c83e42e2b53b73f5e",
-  "notification_status": "GMAIL_SENT_PROOF_PENDING",
-  "published_at": "2026-11-05T21:14:40.302256+00:00"
+  "notification_status": "SENT_VERIFIED",
+  "published_at": "2026-11-05T21:14:40.302256+00:00",
+  "gmail": {
+    "message_id": "1a1ad91e3b18b9b5",
+    "subject": "【音声修復・一部判定保留】093｜出エジプト記6:14–28",
+    "sent_verified": true,
+    "verified_at": "2026-11-05T21:16:43.777Z",
+    "to": "nishiharat@gmail.com"
+  },
+  "finalized_at": "2026-11-05T21:17:24.083Z",
+  "non_audio_content_verified_unchanged": true,
+  "cover_verified_unchanged": true,
+  "independent_public_r2_hash_verification": {
+    "count": 15,
+    "status": "PASS"
+  }
 }

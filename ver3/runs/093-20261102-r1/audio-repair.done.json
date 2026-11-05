@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0-partial-audio-repair-receipt",
+  "status": "PARTIAL",
+  "operation": "AUDIO_ONLY_REPLACE",
+  "run_id": "093-20261102-r1",
+  "repair_id": "verified-boundaries-20261105-r1",
+  "request_sha256": "7c029decca6d0cfb5f2ab5f4b1d6f90f08ac21b4e682c38725b265b39a6e8602",
+  "page_id": "40c8aa46-08ae-8117-a4a7-d121683caa1e",
+  "page_url": "https://app.notion.com/p/093-6-14-28-40c8aa4608ae8117a4a7d121683caa1e",
+  "boundary_repair_status": "PUBLISHED_VERIFIED",
+  "audio_implemented_count": 15,
+  "machine_status": "PASS",
+  "content_status": "CONTENT_REVIEW_PENDING",
+  "full_content_pass_verses": 14,
+  "pending_refs": [
+    "6:24"
+  ],
+  "candidate_manifest_sha256": "663b59f8fb348bc85fb112dcd9f12d3ae94d791063e551038eebb50f07c8fac0",
+  "input_sha256": "3b30add9ec657f6bbf40c5f9b763e0fa715daa9b9a89e15b4e25eafb2de7ed20",
+  "content_review_sha256": "299ec822ad08096f4cde2f5e1245babab74247108cdec06f0d6e0af0379fee5c",
+  "quality_report_sha256": "0d619ec1bc6cfa7b413ac779ec16646cc4caea6e154851be2448f36b93863333",
+  "delivery_sha256": "9c65afb78fee41c72eace10a413d41870a15ed9192a01b9a04597526b273b4e0",
+  "audio_sha256": {
+    "6:14": {
+      "r1": "168ea0fae4cfd6114d7044103d33952b47ebc7f54060d79d5f20a0f123c1d8d1",
+      "r2": "1669154056532f19abf48f6a0b2161893b0bf4edec4596b76ec877d9bed7bb06"
+    },
+    "6:15": {
+      "r1": "c35909c834cce8b7e9a6617974b254bc43de721138ec6c4f187fa338d1ded56f",
+      "r2": "5d77348ec609332e4ac77ba09268a75b128a14992e279812c521cb694b05965e"
+    },
+    "6:16": {
+      "r1": "8cb85cbd338307b2d916bddbf6b065a04db26e2f3725b7df20f2ed50002fb99f",
+      "r2": "4797d9373a6b123bdd79ce43f18d1524b30c4069c7b36864e903b03472584352"
+    },
+    "6:17": {
+      "r1": "8f11bd81687d7f083f509797171ec4af7367ddae8b93837ff4d0c6d0ceb851a2",
+      "r2": "fa97d287c38aa8c644559ad8dcfbcf50eaf78b1c85e79e1c9eaf07209b160f53"
+    },
+    "6:18": {
+      "r1": "0588b212e4b29661d9c7ac981dec4dae0c61aee327a13f515d0a62da5d6bdffe",
+      "r2": "02d24d0974405b7200da1c65965b26874da1824a62233a748e1aa668bedf5ec3"
+    },
+    "6:19": {
+      "r1": "082ee0cde97bf4b7921f6a5bb20187cd9a6ffc6acbd852a7e1f6d929412031c2",
+      "r2": "e9e9fcc43bd6b3b30c829443321e8523573bc8429dc7bdbe682f8bb7f17a166e"
+    },
+    "6:20": {
+      "r1": "831030707be2148dd12204a7da1e1863621d01c99797c57e5707033f59ebbc7b",
+      "r2": "a6ec78494e390920f0fddf6feac8439545d481d97aadac1abab1f43289c6cabb"
+    },
+    "6:21": {
+      "r1": "2649ab57669a5f63928bcf5ad22ac1473659c21c2fd0d4746cb3747a361819ac",
+      "r2": "a4aaef338e2b078079b86a1c55326272675846a884da65de0e21b2c21dc9d9f9"
+    },
+    "6:22": {
+      "r1": "3abdb409430567030fd9e33b2d5da5ad12817d8b78d8396a29bb3ca1132ee11c",
+      "r2": "b87b3ba5f8df0244c9d020c0dba4059f8edd963abc842409b013e5d22790e5a0"
+    },
+    "6:23": {
+      "r1": "1473f075ce314e77b1855ba0891e24da34a25bf0be581f6db18726627a707f04",
+      "r2": "292018ac006bc9f196ebac9bf82f8b7a5a674dc14867c781a28d40fd2395e9c4"
+    },
+    "6:24": {
+      "r1": "6c6d579916a581a46d05bae4dd14fae79af6fe9e5d8cbb5988755b0b969688f8",
+      "r2": "eee3bd68f1e4c489cd878d9b8b3afe462427208376ed3970afd6f3cff5af7c83"
+    },
+    "6:25": {
+      "r1": "9e6bd63004eeb64075ec9d2ec45d4a2dd3757be5ff32015404f841760ca8053e",
+      "r2": "81227c1348a4145f440b02e7bf59dc960988a0f243ee2746eb969ce111916a20"
+    },
+    "6:26": {
+      "r1": "1dcc5d8cdbf86dd626c06f00fa19172434748909a755e51be2a766e0c56fc932",
+      "r2": "85c0d00401cd873100c5ee61936582a521a89a3b823d935bba309a2a20b03147"
+    },
+    "6:27": {
+      "r1": "d625d86355d4215e3030f0044a00658df7b95ce554d487ef1a7a5bb1e3e7a5e4",
+      "r2": "be8ba875ff6638d931cbb52b8230a805b4cc153b814c48c8b28e485a8b50fc77"
+    },
+    "6:28": {
+      "r1": "02af33a93b20bf2f84e2084d8d53017a04ae5ab5dbf0f05bbc820d9c78bb257d",
+      "r2": "7dee1f5f0746c4b5598a89675d3617f419f492506e611ee5c81d595e0b33299f"
+    }
+  },
+  "public_bytes_and_existing_page_verified_by": "ver3/scripts/deliver.py",
+  "production_state_unchanged": true,
+  "production_state_sha256": "7f0611e087e97f261c3dca0ba991bb73da5ae5ec6777bc7c83e42e2b53b73f5e",
+  "notification_status": "SENT_VERIFIED",
+  "published_at": "2026-11-05T21:14:40.302256+00:00",
+  "gmail": {
+    "message_id": "1a1ad91e3b18b9b5",
+    "subject": "【音声修復・一部判定保留】093｜出エジプト記6:14–28",
+    "sent_verified": true,
+    "verified_at": "2026-11-05T21:16:43.777Z",
+    "to": "nishiharat@gmail.com"
+  },
+  "finalized_at": "2026-11-05T21:17:24.083Z",
+  "non_audio_content_verified_unchanged": true,
+  "cover_verified_unchanged": true,
+  "independent_public_r2_hash_verification": {
+    "count": 15,
+    "status": "PASS"
+  }
+}

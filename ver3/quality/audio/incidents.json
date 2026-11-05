@@ -161,7 +161,10 @@
       "evidence": [
         "ver3/runs/093-20261102-r1/audio-investigations/boundary-20261105-r1/report.json",
         "ver3/runs/093-20261102-r1/audio-investigations/boundary-20261105-r1/asr-observations.json",
-        "ver3/runs/093-20261102-r1/audio-investigations/boundary-20261105-r1/signal-evidence.json"
+        "ver3/runs/093-20261102-r1/audio-investigations/boundary-20261105-r1/signal-evidence.json",
+        "ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/published-partial.json",
+        "ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/human-listening-feedback-20261105.json",
+        "ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/partial-release-policy.json"
       ],
       "source_match": {
         "audio_base": "Vaera-2",
@@ -173,8 +176,8 @@
         "boundary_end": 51.129451
       },
       "failure_code": "POCKETTORAH_VERSE_BOUNDARY_093",
-      "implementation_status": "DIAGNOSED_NO_FIX_APPLIED",
-      "verification_status": "PUBLISHED_AUDIO_DEFECT_CONFIRMED_REPAIR_PENDING",
+      "implementation_status": "SOURCE_PINNED_BOUNDARY_PROFILE_APPLIED",
+      "verification_status": "BOUNDARY_REPAIR_PUBLISHED_CONTENT_REVIEW_PENDING",
       "affected_refs_confirmed": [
         "6:16",
         "6:17",
@@ -188,8 +191,14 @@
         "6:26"
       ],
       "notion_page_id": "40c8aa46-08ae-8117-a4a7-d121683caa1e",
-      "published_audio_replaced": false,
-      "regression": "修復時にこの音源の語境界を固定して回帰検査を追加する。085形式補正や一律時間移動を流用しない。"
+      "published_audio_replaced": true,
+      "regression": "Source fingerprint, verse order, word counts and immutable per-verse boundaries are regression-tested in test_audio_primary_module.py; standard Ver3 Actions checks passed before publication.",
+      "repair_id": "verified-boundaries-20261105-r1",
+      "content_status": "CONTENT_REVIEW_PENDING",
+      "full_content_pass_verses": 14,
+      "pending_refs": [
+        "6:24"
+      ]
     }
   ],
   "excluded_incidents": [

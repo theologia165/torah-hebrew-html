@@ -71,8 +71,6 @@ jobs:
           else
             python ver3/scripts/runner.py
           fi
-      - name: One-time 093 partial boundary release
-        run: python ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/partial-release.py
       - name: Keep run evidence
         if: always()
         uses: actions/upload-artifact@v4
