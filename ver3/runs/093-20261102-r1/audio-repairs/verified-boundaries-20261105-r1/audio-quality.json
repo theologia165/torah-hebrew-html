@@ -29,28 +29,15 @@
   "current_input_covered": true,
   "register_sha256": "b764e062176e1507cc5f91a9457aeb869e010d4712b0223392acc5f07d51b6af",
   "review_path": "ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/audio-content-review.json",
-  "review_sha256": "39eb172d6dbfb988545eb4b9fc7c80be8cc3adeaf3fdeae6d16296c63ba7a95a",
+  "review_sha256": "4fbd3f0b9e9312dcf253def8768244b57a464f340c83c72614ee1a4e2ba6c4ad",
   "matched_incidents": [
     "AUDIO-093-VERSE-BOUNDARIES"
   ],
   "regression_tests": "python ver3/scripts/test_audio_quality.py && python ver3/scripts/test_audio_primary_module.py && python ver3/scripts/test_audio_fallback_policy.py",
   "blocking_refs": [],
   "pending_refs": [
-    "6:14",
     "6:15",
-    "6:16",
-    "6:17",
-    "6:18",
-    "6:19",
-    "6:20",
-    "6:21",
-    "6:22",
-    "6:23",
-    "6:24",
-    "6:25",
-    "6:26",
-    "6:27",
-    "6:28"
+    "6:24"
   ],
   "failed_refs": [],
   "verses": [
@@ -75,7 +62,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -123,7 +110,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -147,7 +134,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -171,7 +158,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -195,7 +182,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -219,7 +206,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -243,7 +230,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -267,7 +254,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -291,7 +278,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -339,7 +326,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -363,7 +350,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -387,7 +374,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
@@ -411,7 +398,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     }
   ],
