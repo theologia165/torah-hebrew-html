@@ -61,3 +61,28 @@ try:
 finally:
  write_json_atomic(path,audit)
  commit_run(run,'Record independent listening of disputed 093 names and endings')
+
+# A dedicated transcription endpoint is independent of the conversational
+# listener, whose second pass hallucinated another biblical verse in 6:18.
+# No reference transcript, spelling prompt, or expected words are supplied.
+tpath=desk/'model-audio-transcription-observations.json'
+transcriptions=read(tpath) or dict(schema_version='1.0-audio-transcription-observations',run_id=run.name,input_sha256=digest(audio_input),manifest_sha256=digest(manifest),model='gpt-transcribe',reference_prompt=False,purpose='Resolve disputed words from actual candidate audio; observations are not a quality PASS.',files=[])
+try:
+ for verse in manifest['verses']:
+  if verse['ref'] not in questions:continue
+  for key in ('r1','r2'):
+   file=safe_audio_path(audio,verse[key]);fsha=file_sha(file)
+   if any(row['filename']==file.name and row['sha256']==fsha for row in transcriptions['files']):continue
+   with file.open('rb') as stream:
+    res=requests.post('https://api.openai.com/v1/audio/transcriptions',headers={'Authorization':'Bearer '+os.environ['OPENAI_API_KEY']},data={'model':'gpt-transcribe'},files={'file':(file.name,stream,'audio/mpeg')},timeout=180)
+   if not res.ok:
+    try:err=res.json().get('error',{})
+    except ValueError:err={}
+    raise RuntimeError(f'Dedicated transcription HTTP={res.status_code} code={err.get("code","UNKNOWN")} type={err.get("type","UNKNOWN")}')
+   transcriptions['files'].append(dict(ref=verse['ref'],speed=key,filename=file.name,sha256=fsha,observed_at=datetime.now(timezone.utc).isoformat(),api_request_id=res.headers.get('x-request-id'),response=res.json()))
+   write_json_atomic(tpath,transcriptions)
+   print('DEDICATED_TRANSCRIPTION:',verse['ref'],key,'recorded; Work review required')
+ transcriptions['status']='OBSERVATIONS_COMPLETE_NOT_A_CONTENT_PASS'
+finally:
+ write_json_atomic(tpath,transcriptions)
+ commit_run(run,'Record unprompted dedicated transcription of four disputed 093 verses')
