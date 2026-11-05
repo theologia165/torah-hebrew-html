@@ -16,8 +16,10 @@
   "reported_issue": {
     "from_ref": "6:22",
     "position": "verse ending onward",
-    "target_audio": "UNRESOLVED_NOTION_PUBLISHED_OR_REPAIR_CANDIDATE",
-    "finding": "Must distinguish the currently published original audio from the uninstalled candidate before revising candidate boundaries."
+    "target_audio": "NOTION_PUBLISHED_ORIGINAL",
+    "finding": "Must distinguish the currently published original audio from the uninstalled candidate before revising candidate boundaries.",
+    "clarification": "User selected Notion上の音声 in the source question. The report concerns the still-published original files, not the uninstalled repair candidate.",
+    "candidate_boundary_failure_confirmed": false
   },
   "notion_readback": {
     "page_id": "40c8aa46-08ae-8117-a4a7-d121683caa1e",
