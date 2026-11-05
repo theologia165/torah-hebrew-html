@@ -3,7 +3,7 @@
   "run_id": "093-20261102-r1",
   "sequence": "093",
   "phase": "AUDIO_QUALITY",
-  "status": "WAITING_FOR_WORK",
+  "status": "PARTIAL",
   "next_action": "REVIEW_AND_REPAIR_AUDIO",
   "stage_spec": {
     "path": "ver3/spec/audio-quality.md",
@@ -27,6 +27,9 @@
     "pending_refs": [
       "6:24"
     ],
-    "published_audio_unchanged": true
+    "published_audio_unchanged": false,
+    "boundary_repair_status": "PUBLISHED_VERIFIED",
+    "full_content_pass_verses": 14,
+    "notification_status": "GMAIL_SENT_PROOF_PENDING"
   }
 }
