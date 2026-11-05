@@ -9,9 +9,13 @@ RUNの最後に、途中失敗があっても接続済みGmail自身（to: me）
 
 `audio-quality.json`がある場合は音声品質管理部の結果を確認し、機械検査と内容検品を区別して記す。`CONTENT_REVIEW_PENDING`を「全節の音声内容検品PASS」と報告しない。配信整合のPASSと音声品質のPASSは別の証明である。
 
-送信後はSentを再確認する。全条件PASSかつ送信確認済みの場合だけ、次の二つを同一コミットで記録する。
+`audio-boundary/finalization.json`がある場合は、境界検品・修復有無・採用音声・未解決の節と理由をメールへ記す。API利用不能・予算到達・修復失敗も省かない。媒体が揃った配信は境界未解決でも通常の完了メールに残件を併記する。配信完了と修復完了を混同せず、全節内容検品PASSと書かない。
+
+送信後はSentを再確認する。配信条件PASSかつ送信確認済みの場合だけ、次の二つを同一コミットで記録する。
 
 1. `ver3/runs/{run_id}/completion.json`を作成する。`schema_version`は`1.0-work-completion`、`run_id`、3桁`sequence`、`delivery_status: PASS`、deliveryと同じ`page_id`／`page_url`、`gmail.message_id`／`gmail.subject`／`gmail.sent_verified: true`、UTCの`completed_at`を必須とする。
 2. `ver3/state/production.json`の`last_completed`へ同じrun_id・page・Gmail証明を記録し、`next_sequence`と`next_passage`を次の標準アリヤーへ一つだけ進める。
 
 `delivery.json=PASS`だけでは完了ではない。Actionsの最終完了ゲートは、delivery、completion.json、production stateの三者とGmail証明が一致した場合だけ`next_action=NONE`を返す。不一致時は同じNotionページを再作成せず、`SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE`へ戻す。
+
+新しい境界検品RUNでは、completion.jsonの`audio_boundary.finalization_sha256`へfinalization.jsonのファイルSHA256を転記する。報告が必要な場合はメール実送信とSent確認後に`audio_boundary.disclosed_in_email: true`を記す。境界未解決自体は番号進行を止めない。

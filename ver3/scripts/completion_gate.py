@@ -36,6 +36,23 @@ def inspect_completion(run, production_path='ver3/state/production.json'):
     if delivery.get('missing_html_refs'):
         reasons.append('DELIVERY_HTML_MISSING')
 
+    # Only new normal runs use this boundary contract. Historical repairs and
+    # completed runs keep their established completion receipts unchanged.
+    boundary_state = run / 'audio-boundary/state.json'
+    if boundary_state.exists():
+        from audio.boundary_flow import delivery_summary
+        try:
+            boundary = delivery_summary(run)
+        except (OSError, ValueError, KeyError):
+            boundary = None
+            reasons.append('BOUNDARY_FINALIZATION_MISSING_OR_STALE')
+        if boundary:
+            acknowledgement = (completion or {}).get('audio_boundary', {})
+            if acknowledgement.get('finalization_sha256') != boundary['finalization_sha256']:
+                reasons.append('BOUNDARY_COMPLETION_ACK_MISMATCH')
+            if boundary['email_disclosure_required'] and acknowledgement.get('disclosed_in_email') is not True:
+                reasons.append('BOUNDARY_UNRESOLVED_NOT_DISCLOSED')
+
     if completion is None:
         reasons.append('COMPLETION_RECEIPT_MISSING')
     else:

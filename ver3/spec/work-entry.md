@@ -8,7 +8,7 @@
 - Workは当該RUNのJSON1.1だけから逐語訳、私訳、解説、三層研究、出典、デボーショナルな受けとめを作り、JSON2の意味品質をコミット前に保証する。
 - Actionsの構造PASSをJSON2の意味内容PASSへ読み替えない。
 - 過去RUNのJSON2／JSON3、Notionページ、画像、メールを研究材料として読まない。過去RUNから継承できるのは失敗code、HTTP status、page_id等の運用監査だけである。
-- PARTIALでも正常な本文・HTML・cover・他節音声を配信する。全条件PASSまでproduction stateを進めない。`delivery.json=PASS`だけを完了根拠にせず、`completion.json`のGmail Sent証明とproduction stateの進行まで照合する。
+- PARTIALでも正常な本文・HTML・cover・他節音声を配信する。媒体の配信条件PASSまでproduction stateを進めない。音声境界の未解決はメール報告を条件に進行を許す。`delivery.json=PASS`だけを完了根拠にせず、`completion.json`のGmail Sent証明とproduction stateの進行まで照合する。
 
 ## 実行
 
@@ -19,5 +19,7 @@
    `REVIEW_AND_REPAIR_AUDIO`および音声不具合の調査・修正は`audio-quality.md`を入口とし、音声品質管理部の台帳・統一検品・候補再検品を使う。機械PASSを内容検品PASSへ読み替えない。
 5. BLOCKED／PARTIALでは`failure-report.md`に従って詳細を残す。同じ失敗操作を根拠なく反復しない。
 6. 必要な入力・監査結果をコミットし、Ver.3 Actionsを起動して次のhandoffまたはdelivery確定まで確認する。
+
+`REVIEW_AUDIO_BOUNDARIES`では`audio-boundary.md`を読む。全節冒頭・末尾の観察をWorkが判断し、必要箇所だけ詳査・1回の修復・部分再検品を依頼する。直せなくても`DELIVER_CURRENT`で従来音声を配信し、メールへ残件を明記する。境界未解決だけで配信・番号進行を止めず、配信完了と修復完了を別々に記録する。
 
 旧Ver.2ブランチ、既存035、実験050は変更しない。「静かに〜」という表現は使用しない。

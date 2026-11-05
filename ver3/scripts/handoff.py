@@ -125,6 +125,8 @@ def ready_for_email(run, delivery, completion_gate=None):
     status = delivery.get('status', 'UNKNOWN')
     quality_path = run / 'audio-quality.json'
     quality = json.loads(quality_path.read_text(encoding='utf-8')) if quality_path.exists() else {}
+    boundary_path = run / 'audio-boundary/finalization.json'
+    boundary = json.loads(boundary_path.read_text()) if boundary_path.exists() else {}
     return write_handoff(
         run,
         phase='EMAIL_AND_STATE',
@@ -137,7 +139,7 @@ def ready_for_email(run, delivery, completion_gate=None):
             run / 'delivery.json',
             run / 'json2.json',
             run / 'cover-ready.json',
-        ) + ((quality_path,) if quality else ()),
+        ) + ((quality_path,) if quality else ()) + ((boundary_path, run / 'audio-boundary/usage.json') if boundary else ()),
         expected_outputs=(
             (run / 'completion.json', 'ver3/state/production.json')
             if status == 'PASS' else (run / 'completion.md',)
@@ -150,6 +152,9 @@ def ready_for_email(run, delivery, completion_gate=None):
             'cover_status': delivery.get('cover', {}).get('status'),
             'audio_quality_status': quality.get('status', 'NOT_RECORDED'),
             'audio_content_verified': quality.get('AUDIO_VERIFICATION_COMPLETE', False),
+            'audio_boundary_status': boundary.get('status', 'NOT_RECORDED'),
+            'audio_boundary_unresolved': boundary.get('unresolved', []),
+            'audio_boundary_email_disclosure_required': boundary.get('email_disclosure_required', False),
             'completion_gate_reasons': (
                 (completion_gate or {}).get('reasons', [])),
         },
