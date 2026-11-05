@@ -19,7 +19,7 @@
   "details": {
     "failed_operation": "GITHUB_ACTIONS_PIPELINE",
     "error_type": "RuntimeError",
-    "error_message": "Audio listening API HTTP=401 code=invalid_api_key type=invalid_request_error",
+    "error_message": "Audio listening API HTTP=429 code=credit_balance_exhausted type=insufficient_quota",
     "last_successful_stage": "AUDIO_QUALITY_REPAIR"
   }
 }

@@ -3,6 +3,6 @@
   "run_id": "093-20261102-r1",
   "operation": "AUDIO_QUALITY_REPAIR",
   "error_type": "RuntimeError",
-  "message": "Audio listening API HTTP=401 code=invalid_api_key type=invalid_request_error",
+  "message": "Audio listening API HTTP=429 code=credit_balance_exhausted type=insufficient_quota",
   "repair_completed": false
 }
