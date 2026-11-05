@@ -261,14 +261,21 @@ def report(run, audio_dir=None, *, filename='report.json'):
     run = Path(run)
     audio_dir = Path(audio_dir) if audio_dir else run / 'audio'
     rows = observe(run, edge_jobs(run, audio_dir, settings), settings)
+    current = identity(run, audio_dir)
     machine_path = (run / 'audio-quality.json' if audio_dir == run / 'audio'
                     else run / 'audio-boundary/candidate-machine.json')
-    known = {v['ref']: v.get('findings', []) for v in read(machine_path, {}).get('verses', [])
-             if v.get('findings')}
+    machine = read(machine_path, {})
+    # After candidate adoption the root machine report can still describe the
+    # old MP3 set. Never carry old defect findings onto newly selected bytes.
+    if (machine.get('manifest_sha256') != current['manifest_sha256']
+            or machine.get('input_sha256') != current['input_sha256']):
+        machine = {}
+    known = {v['ref']: v.get('findings', []) for v in machine.get('verses', [])
+             if v.get('findings') and v.get('r2_sha256') == current['audio_sha256'].get(v['ref'])}
     for row in rows:
         row['known_findings'] = known.get(row['ref'], [])
     result = {
-        'schema_version': '1.0-boundary-report', **identity(run, audio_dir),
+        'schema_version': '1.0-boundary-report', **current,
         'scope': 'ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY',
         'full_content_verified': False, 'policy_sha256': digest(settings),
         'observations': rows,

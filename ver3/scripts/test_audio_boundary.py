@@ -251,14 +251,26 @@ class BoundaryTest(unittest.TestCase):
         self.assertTrue(self.advance())
 
     def test_known_defect_is_disclosed_even_if_model_edges_pass(self):
-        write_json_atomic(self.run / 'audio-quality.json', {'verses': [
-            {'ref': '1:1', 'findings': ['KNOWN_BOUNDARY_DEFECT']} ]})
+        write_json_atomic(self.run / 'audio-quality.json', {
+            **{k: v for k, v in identity(self.run, self.audio).items() if k in ('manifest_sha256', 'input_sha256')},
+            'verses': [
+            {'ref': '1:1', 'r2_sha256': identity(self.run, self.audio)['audio_sha256']['1:1'],
+             'findings': ['KNOWN_BOUNDARY_DEFECT']} ]})
         self.advance()
         self.decide()
         self.assertTrue(self.advance())
         summary = delivery_summary(self.run)
         self.assertTrue(summary['email_disclosure_required'])
         self.assertEqual(summary['unresolved'][0]['reason'], 'KNOWN_BOUNDARY_DEFECT')
+
+    def test_old_machine_report_cannot_mark_newly_selected_audio_defective(self):
+        write_json_atomic(self.run / 'audio-quality.json', {
+            'manifest_sha256': 'old-manifest', 'input_sha256': 'old-input',
+            'verses': [{'ref': '1:1', 'findings': ['OLD_DEFECT']} ]})
+        self.advance()
+        self.decide()
+        self.assertTrue(self.advance())
+        self.assertEqual(delivery_summary(self.run)['status'], 'BOUNDARY_PASS')
 
     def test_context_and_repair_limits_survive_repeated_requests(self):
         self.fail_ids = {'1:1/tail'}
