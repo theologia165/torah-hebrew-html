@@ -29,14 +29,13 @@
   "current_input_covered": true,
   "register_sha256": "b764e062176e1507cc5f91a9457aeb869e010d4712b0223392acc5f07d51b6af",
   "review_path": "ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/audio-content-review.json",
-  "review_sha256": "4fbd3f0b9e9312dcf253def8768244b57a464f340c83c72614ee1a4e2ba6c4ad",
+  "review_sha256": "d5857b156c5d20f6958a332ccb527f46c5648f30a15ac8ea2e90c9cf6244791f",
   "matched_incidents": [
     "AUDIO-093-VERSE-BOUNDARIES"
   ],
   "regression_tests": "python ver3/scripts/test_audio_quality.py && python ver3/scripts/test_audio_primary_module.py && python ver3/scripts/test_audio_fallback_policy.py",
   "blocking_refs": [],
   "pending_refs": [
-    "6:15",
     "6:24"
   ],
   "failed_refs": [],
@@ -86,7 +85,7 @@
         "method": "verified_source_specific_verse_boundary",
         "profile_id": "VAERA_2_BOUNDARIES_20261105"
       },
-      "content_status": "PENDING",
+      "content_status": "PASS",
       "findings": []
     },
     {
