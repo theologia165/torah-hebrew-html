@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0-audio-transcription-observations",
+  "run_id": "093-20261102-r1",
+  "input_sha256": "3b30add9ec657f6bbf40c5f9b763e0fa715daa9b9a89e15b4e25eafb2de7ed20",
+  "manifest_sha256": "663b59f8fb348bc85fb112dcd9f12d3ae94d791063e551038eebb50f07c8fac0",
+  "model": "gpt-transcribe",
+  "reference_prompt": false,
+  "purpose": "Resolve disputed words from actual candidate audio; observations are not a quality PASS.",
+  "files": [
+    {
+      "ref": "6:15",
+      "speed": "r1",
+      "filename": "093_15_verified-boundaries-20261105-r1_c35909c834cc_r1.mp3",
+      "sha256": "c35909c834cce8b7e9a6617974b254bc43de721138ec6c4f187fa338d1ded56f",
+      "observed_at": "2026-11-05T13:58:46.715730+00:00",
+      "api_request_id": "req_225c5827a81047a1b4e0de9f334c080d",
+      "response": {
+        "text": "ושמעון, ירואל וימין, ואוהד, ירחין, בצוחר, ושאול בן הכנענית, אלה משפחות שמעון.",
+        "languages": [
+          {
+            "code": "he"
+          }
+        ],
+        "usage": {
+          "type": "duration",
+          "seconds": 15
+        }
+      }
+    },
+    {
+      "ref": "6:15",
+      "speed": "r2",
+      "filename": "093_15_verified-boundaries-20261105-r1_5d77348ec609_r2.mp3",
+      "sha256": "5d77348ec609332e4ac77ba09268a75b128a14992e279812c521cb694b05965e",
+      "observed_at": "2026-11-05T13:58:49.681959+00:00",
+      "api_request_id": "req_c180f3b10aa54dc584bb154498781bb6",
+      "response": {
+        "text": "וְשִׁמְעוֹן, יְרוּאֵל יָמִין וְאֹהַד, יָכִין וְצֹחַר, וְשָׁאוּל בֶּן הַכְּנַעֲנִית, אֵלֶּה מִשְׁפְּחוֹת שִׁמְעוֹן.",
+        "languages": [
+          {
+            "code": "he"
+          }
+        ],
+        "usage": {
+          "type": "duration",
+          "seconds": 17
+        }
+      }
+    },
+    {
+      "ref": "6:16",
+      "speed": "r1",
+      "filename": "093_16_verified-boundaries-20261105-r1_8cb85cbd3383_r1.mp3",
+      "sha256": "8cb85cbd338307b2d916bddbf6b065a04db26e2f3725b7df20f2ed50002fb99f",
+      "observed_at": "2026-11-05T13:58:51.739007+00:00",
+      "api_request_id": "req_6346584c056e44e4aa2ad9d59c41451f",
+      "response": {
+        "text": "בְּאֵלֶּה שְׁמוֹת בְּנֵי לֵוִי לְתֹלְדֹתָם, גֵּרְשׁוֹן, וּקְהָת, וּמְרָרִי. וּשְׁנֵי חַיֵּי לֵוִי שֶׁבַע וּשְׁלֹשִׁים וּמְאַת שָׁנָה.",
+        "languages": [
+          {
+            "code": "he"
+          }
+        ],
+        "usage": {
+          "type": "duration",
+          "seconds": 19
+        }
+      }
+    },
+    {
+      "ref": "6:16",
+      "speed": "r2",
+      "filename": "093_16_verified-boundaries-20261105-r1_4797d9373a6b_r2.mp3",
+      "sha256": "4797d9373a6b123bdd79ce43f18d1524b30c4069c7b36864e903b03472584352",
+      "observed_at": "2026-11-05T13:58:52.795301+00:00",
+      "api_request_id": "req_9d5954dcbfd142fca05a5b23599bf98a",
+      "response": {
+        "text": "בְּאֵלֶּה שְׁמוֹת בְּנֵי לֵוִי לְתֹלְדֹתָם, גֵּרְשׁוֹן, וּקְהָת, וּמְרָרִי. וּשְׁנֵי חַיֵּי לֵוִי שֶׁבַע וּשְׁלֹשִׁים וּמְאַת שָׁנָה.",
+        "languages": [
+          {
+            "code": "he"
+          }
+        ],
+        "usage": {
+          "type": "duration",
+          "seconds": 19
+        }
+      }
+    },
+    {
+      "ref": "6:18",
+      "speed": "r1",
+      "filename": "093_18_verified-boundaries-20261105-r1_0588b212e4b2_r1.mp3",
+      "sha256": "0588b212e4b29661d9c7ac981dec4dae0c61aee327a13f515d0a62da5d6bdffe",
+      "observed_at": "2026-11-05T13:58:53.516625+00:00",
+      "api_request_id": "req_b377f194c19c4dde8676cc52df34838d",
+      "response": {
+        "text": "ובלך אחד, אברהם ויצחק, וחברון, לוזיאל, ושני אחד, שלוש ושושים ומאת שנה.",
+        "languages": [
+          {
+            "code": "he"
+          }
+        ],
+        "usage": {
+          "type": "duration",
+          "seconds": 17
+        }
+      }
+    },
+    {
+      "ref": "6:18",
+      "speed": "r2",
+      "filename": "093_18_verified-boundaries-20261105-r1_02d24d097440_r2.mp3",
+      "sha256": "02d24d0974405b7200da1c65965b26874da1824a62233a748e1aa668bedf5ec3",
+      "observed_at": "2026-11-05T13:58:55.326564+00:00",
+      "api_request_id": "req_ff949d6eb4fb47f5bc02936becb9f05e",
+      "response": {
+        "text": "וּבְלֵב אֶחָד, אַבְרָם וְיִצְחָק, וְחֶבְרוֹן, לוּזִיאֵל, וּשְׁנֵי חַיֵּי אֶחָד, שָׁלוֹשׁ וְשָׁלוֹשִׁים וּמְאַת שָׁנָה.",
+        "languages": [
+          {
+            "code": "he"
+          }
+        ],
+        "usage": {
+          "type": "duration",
+          "seconds": 17
+        }
+      }
+    },
+    {
+      "ref": "6:24",
+      "speed": "r1",
+      "filename": "093_24_verified-boundaries-20261105-r1_6c6d579916a5_r1.mp3",
+      "sha256": "6c6d579916a581a46d05bae4dd14fae79af6fe9e5d8cbb5988755b0b969688f8",
+      "observed_at": "2026-11-05T13:58:56.031203+00:00",
+      "api_request_id": "req_7e1f9a3461f241fa87fd2225ef7a0b53",
+      "response": {
+        "text": "בולי כורף, עשיר גלקנה, באבי אסף, אלה משפחות הכורתי.",
+        "languages": [
+          {
+            "code": "he"
+          }
+        ],
+        "usage": {
+          "type": "duration",
+          "seconds": 9
+        }
+      }
+    },
+    {
+      "ref": "6:24",
+      "speed": "r2",
+      "filename": "093_24_verified-boundaries-20261105-r1_eee3bd68f1e4_r2.mp3",
+      "sha256": "eee3bd68f1e4c489cd878d9b8b3afe462427208376ed3970afd6f3cff5af7c83",
+      "observed_at": "2026-11-05T13:58:56.918959+00:00",
+      "api_request_id": "req_0da6c5c88d044309a05c1a0b2c9799e4",
+      "response": {
+        "text": "ברך, אסיר גלכנא, באביאסס, אבן משפחות הקורפי.",
+        "languages": [
+          {
+            "code": "he"
+          }
+        ],
+        "usage": {
+          "type": "duration",
+          "seconds": 11
+        }
+      }
+    }
+  ],
+  "status": "OBSERVATIONS_COMPLETE_NOT_A_CONTENT_PASS"
+}
