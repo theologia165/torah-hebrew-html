@@ -149,6 +149,47 @@
       "verification_method": "ASR_WITH_BOUNDARY_REVIEW",
       "optional_api_listening": "UNAVAILABLE_401_EXPIRED_SECRET_KEY",
       "final_actions_url": "https://github.com/theologia165/torah-hebrew-html/actions/runs/40252975692"
+    },
+    {
+      "id": "AUDIO-093-VERSE-BOUNDARIES",
+      "sequences": [
+        "093"
+      ],
+      "symptom": "複数の前節末尾語が次節冒頭へ入り、節境界が早い又は語中で切れる",
+      "cause": "ラベル由来の分割時刻と実際の語境界が一致しない。無音検出0件で補正が働かず、機械検査だけでは通過した。元ラベル作成上の原因は未確定。",
+      "evidence_level": "CURRENT_SOURCE_PUBLISHED_R2_TWO_ASR_AND_SIGNAL_BOUNDARY_REVIEW",
+      "evidence": [
+        "ver3/runs/093-20261102-r1/audio-investigations/boundary-20261105-r1/report.json",
+        "ver3/runs/093-20261102-r1/audio-investigations/boundary-20261105-r1/asr-observations.json",
+        "ver3/runs/093-20261102-r1/audio-investigations/boundary-20261105-r1/signal-evidence.json"
+      ],
+      "source_match": {
+        "audio_base": "Vaera-2",
+        "pockettorah_commit": "8a23287221dd535966ee9914de9a03e71769a469",
+        "audio_sha256": "ec6910441fe0e9b7ac5140e8ced8362658c88d76b2f8e3ff7ff24325fa89ff0f",
+        "labels_sha256": "7cb843fc560248917c42add2a353b8ebc9e3980de37abf8bd2338c687b8ec819"
+      },
+      "defective_boundary_values": {
+        "boundary_end": 51.129451
+      },
+      "failure_code": "POCKETTORAH_VERSE_BOUNDARY_093",
+      "implementation_status": "DIAGNOSED_NO_FIX_APPLIED",
+      "verification_status": "PUBLISHED_AUDIO_DEFECT_CONFIRMED_REPAIR_PENDING",
+      "affected_refs_confirmed": [
+        "6:16",
+        "6:17",
+        "6:18",
+        "6:19",
+        "6:20",
+        "6:22",
+        "6:23",
+        "6:24",
+        "6:25",
+        "6:26"
+      ],
+      "notion_page_id": "40c8aa46-08ae-8117-a4a7-d121683caa1e",
+      "published_audio_replaced": false,
+      "regression": "修復時にこの音源の語境界を固定して回帰検査を追加する。085形式補正や一律時間移動を流用しない。"
     }
   ],
   "excluded_incidents": [

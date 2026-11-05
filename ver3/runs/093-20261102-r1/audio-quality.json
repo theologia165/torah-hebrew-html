@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0-audio-quality",
   "run_id": "093-20261102-r1",
-  "status": "CONTENT_REVIEW_PENDING",
+  "status": "BLOCKED",
   "machine_status": "PASS",
   "content_status": "PENDING_OR_FAILED",
   "AUDIO_VERIFICATION_COMPLETE": false,
@@ -26,26 +26,29 @@
     "out_of_audio_label_count": 0
   },
   "current_input_covered": true,
-  "register_sha256": "a236dc8f06ec1ceda67d9d53b1769f27a9493afb0a8961338452af1f64fa4d02",
+  "register_sha256": "b764e062176e1507cc5f91a9457aeb869e010d4712b0223392acc5f07d51b6af",
   "review_path": "ver3/runs/093-20261102-r1/audio-content-review.json",
-  "review_sha256": null,
-  "matched_incidents": [],
+  "review_sha256": "ffd8fb65290d5390259dc6da9e7812e0e6a8cc865cfd8daedc9c3d91a3216edf",
+  "matched_incidents": [
+    "AUDIO-093-VERSE-BOUNDARIES"
+  ],
   "regression_tests": "python ver3/scripts/test_audio_quality.py && python ver3/scripts/test_audio_primary_module.py && python ver3/scripts/test_audio_fallback_policy.py",
-  "blocking_refs": [],
-  "pending_refs": [
-    "6:14",
-    "6:15",
+  "blocking_refs": [
     "6:16",
     "6:17",
     "6:18",
     "6:19",
     "6:20",
-    "6:21",
     "6:22",
     "6:23",
     "6:24",
     "6:25",
-    "6:26",
+    "6:26"
+  ],
+  "pending_refs": [
+    "6:14",
+    "6:15",
+    "6:21",
     "6:27",
     "6:28"
   ],
@@ -114,8 +117,11 @@
         "refined": 51.129451,
         "method": "next_word_onset"
       },
-      "content_status": "PENDING",
-      "findings": []
+      "content_status": "FAIL",
+      "findings": [
+        "POCKETTORAH_VERSE_BOUNDARY_093",
+        "CONTENT_REVIEW_FAILED"
+      ]
     },
     {
       "ref": "6:17",
@@ -136,8 +142,10 @@
         "refined": 57.166057,
         "method": "next_word_onset"
       },
-      "content_status": "PENDING",
-      "findings": []
+      "content_status": "FAIL",
+      "findings": [
+        "CONTENT_REVIEW_FAILED"
+      ]
     },
     {
       "ref": "6:18",
@@ -158,8 +166,10 @@
         "refined": 74.689383,
         "method": "next_word_onset"
       },
-      "content_status": "PENDING",
-      "findings": []
+      "content_status": "FAIL",
+      "findings": [
+        "CONTENT_REVIEW_FAILED"
+      ]
     },
     {
       "ref": "6:19",
@@ -180,8 +190,10 @@
         "refined": 83.276273,
         "method": "next_word_onset"
       },
-      "content_status": "PENDING",
-      "findings": []
+      "content_status": "FAIL",
+      "findings": [
+        "CONTENT_REVIEW_FAILED"
+      ]
     },
     {
       "ref": "6:20",
@@ -202,8 +214,10 @@
         "refined": 106.060511,
         "method": "next_word_onset"
       },
-      "content_status": "PENDING",
-      "findings": []
+      "content_status": "FAIL",
+      "findings": [
+        "CONTENT_REVIEW_FAILED"
+      ]
     },
     {
       "ref": "6:21",
@@ -246,8 +260,10 @@
         "refined": 116.822404,
         "method": "next_word_onset"
       },
-      "content_status": "PENDING",
-      "findings": []
+      "content_status": "FAIL",
+      "findings": [
+        "CONTENT_REVIEW_FAILED"
+      ]
     },
     {
       "ref": "6:23",
@@ -268,8 +284,10 @@
         "refined": 136.560406,
         "method": "next_word_onset"
       },
-      "content_status": "PENDING",
-      "findings": []
+      "content_status": "FAIL",
+      "findings": [
+        "CONTENT_REVIEW_FAILED"
+      ]
     },
     {
       "ref": "6:24",
@@ -290,8 +308,10 @@
         "refined": 145.786468,
         "method": "next_word_onset"
       },
-      "content_status": "PENDING",
-      "findings": []
+      "content_status": "FAIL",
+      "findings": [
+        "CONTENT_REVIEW_FAILED"
+      ]
     },
     {
       "ref": "6:25",
@@ -312,8 +332,10 @@
         "refined": 163.804157,
         "method": "next_word_onset"
       },
-      "content_status": "PENDING",
-      "findings": []
+      "content_status": "FAIL",
+      "findings": [
+        "CONTENT_REVIEW_FAILED"
+      ]
     },
     {
       "ref": "6:26",
@@ -334,8 +356,10 @@
         "refined": 180.894619,
         "method": "next_word_onset"
       },
-      "content_status": "PENDING",
-      "findings": []
+      "content_status": "FAIL",
+      "findings": [
+        "CONTENT_REVIEW_FAILED"
+      ]
     },
     {
       "ref": "6:27",
@@ -383,5 +407,5 @@
     }
   ],
   "machine_output": "PASS: AUDIO acceptance implemented=15 failed=0 pockettorah=15 open_bible=0 ai=0 MAPPING=PASS SIGNAL=PASS SPEED=PASS_FOR_IMPLEMENTED MODEL_AUDIO=PENDING\n",
-  "next_action": "REVIEW_AUDIO_CONTENT"
+  "next_action": "DIAGNOSE_AND_REPAIR_AUDIO"
 }

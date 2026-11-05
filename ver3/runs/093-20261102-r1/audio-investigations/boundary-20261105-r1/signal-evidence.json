@@ -1,0 +1,111 @@
+{
+  "method": "mono16k20ms RMS; signal evidence only, not content PASS",
+  "rms_quantiles": [
+    -97.9824447631836,
+    -32.95564346313476,
+    -30.225360870361328,
+    -18.261857986450195,
+    -11.252058982849121,
+    -4.270586013793945
+  ],
+  "boundaries": [
+    {
+      "after": "6:14",
+      "cut": 19.068989,
+      "cut_rms_db": -31.8,
+      "nearby_min_time": 19.26,
+      "nearby_min_db": -32.32
+    },
+    {
+      "after": "6:15",
+      "cut": 33.670437,
+      "cut_rms_db": -28.44,
+      "nearby_min_time": 33.7,
+      "nearby_min_db": -33.09
+    },
+    {
+      "after": "6:16",
+      "cut": 51.129451,
+      "cut_rms_db": -19.89,
+      "nearby_min_time": 50.36,
+      "nearby_min_db": -32.71
+    },
+    {
+      "after": "6:17",
+      "cut": 57.166057,
+      "cut_rms_db": -17.95,
+      "nearby_min_time": 57.54,
+      "nearby_min_db": -32.22
+    },
+    {
+      "after": "6:18",
+      "cut": 74.689383,
+      "cut_rms_db": -24.92,
+      "nearby_min_time": 73.94,
+      "nearby_min_db": -32.75
+    },
+    {
+      "after": "6:19",
+      "cut": 83.276273,
+      "cut_rms_db": -19.45,
+      "nearby_min_time": 82.52,
+      "nearby_min_db": -33.04
+    },
+    {
+      "after": "6:20",
+      "cut": 106.060511,
+      "cut_rms_db": -29.65,
+      "nearby_min_time": 105.84,
+      "nearby_min_db": -32.66
+    },
+    {
+      "after": "6:21",
+      "cut": 111.790139,
+      "cut_rms_db": -29.94,
+      "nearby_min_time": 112.42,
+      "nearby_min_db": -36.93
+    },
+    {
+      "after": "6:22",
+      "cut": 116.822404,
+      "cut_rms_db": -20.93,
+      "nearby_min_time": 117.16,
+      "nearby_min_db": -31.53
+    },
+    {
+      "after": "6:23",
+      "cut": 136.560406,
+      "cut_rms_db": -26.44,
+      "nearby_min_time": 136.82,
+      "nearby_min_db": -31.38
+    },
+    {
+      "after": "6:24",
+      "cut": 145.786468,
+      "cut_rms_db": -18.98,
+      "nearby_min_time": 145.32,
+      "nearby_min_db": -32.68
+    },
+    {
+      "after": "6:25",
+      "cut": 163.804157,
+      "cut_rms_db": -21.86,
+      "nearby_min_time": 164.1,
+      "nearby_min_db": -33.18
+    },
+    {
+      "after": "6:26",
+      "cut": 180.894619,
+      "cut_rms_db": -28.75,
+      "nearby_min_time": 181.84,
+      "nearby_min_db": -34.86
+    },
+    {
+      "after": "6:27",
+      "cut": 194.108339,
+      "cut_rms_db": -29.82,
+      "nearby_min_time": 194.14,
+      "nearby_min_db": -33.94
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0-audio-investigation",
+  "run_id": "093-20261102-r1",
+  "incident_id": "AUDIO-093-VERSE-BOUNDARIES",
+  "checked_at": "2026-11-05T12:43:12.377748+00:00",
+  "status": "DEFECT_CONFIRMED_REPAIR_PENDING",
+  "machine_inspection": "PASS",
+  "content_inspection": "FAIL_CONFIRMED_AT_LISTED_BOUNDARIES; OTHER_CHECKS_PENDING",
+  "repair_and_publication": "NOT_PERFORMED",
+  "page_id": "40c8aa46-08ae-8117-a4a7-d121683caa1e",
+  "notion_audio_url_count": 15,
+  "notion_audio_urls_match_current_run": true,
+  "source_and_labels_hash_match": true,
+  "published_audio_hashes_verified": 30,
+  "r2_files_asr_checked": 15,
+  "models": [
+    "faster-whisper-small",
+    "ivrit-ai/whisper-large-v3-turbo-ct2"
+  ],
+  "source_label_count": 182,
+  "spoken_token_count": 182,
+  "label_first_value": 1.911193,
+  "silences_detected_at_current_threshold": 0,
+  "silence_threshold_db": -38,
+  "silence_min_seconds": 0.08,
+  "affected_refs_confirmed": [
+    "6:16",
+    "6:17",
+    "6:18",
+    "6:19",
+    "6:20",
+    "6:22",
+    "6:23",
+    "6:24",
+    "6:25",
+    "6:26"
+  ],
+  "confirmed_boundaries": [
+    {
+      "after_ref": "6:16",
+      "next_ref": "6:17",
+      "cut_source_seconds": 51.129451,
+      "expected_last_word": "שנה",
+      "intruding_word_in_next_r2": "שנה",
+      "raw_source_asr_approximate_word_range": [
+        51.16,
+        52.04
+      ]
+    },
+    {
+      "after_ref": "6:17",
+      "next_ref": "6:18",
+      "cut_source_seconds": 57.166057,
+      "expected_last_word": "למשפחתם",
+      "intruding_word_in_next_r2": "ולמשפחותם",
+      "raw_source_asr_approximate_word_range": [
+        57.0,
+        58.5
+      ]
+    },
+    {
+      "after_ref": "6:18",
+      "next_ref": "6:19",
+      "cut_source_seconds": 74.689383,
+      "expected_last_word": "שנה",
+      "intruding_word_in_next_r2": "שנה",
+      "raw_source_asr_approximate_word_range": [
+        74.7,
+        75.52
+      ]
+    },
+    {
+      "after_ref": "6:19",
+      "next_ref": "6:20",
+      "cut_source_seconds": 83.276273,
+      "expected_last_word": "לתולדתם",
+      "intruding_word_in_next_r2": "לתולדותם",
+      "raw_source_asr_approximate_word_range": [
+        83.18,
+        84.68
+      ]
+    },
+    {
+      "after_ref": "6:22",
+      "next_ref": "6:23",
+      "cut_source_seconds": 116.822404,
+      "expected_last_word": "וסתרי",
+      "intruding_word_in_next_r2": "וסי-טרי",
+      "raw_source_asr_approximate_word_range": [
+        116.82,
+        117.68
+      ]
+    },
+    {
+      "after_ref": "6:23",
+      "next_ref": "6:24",
+      "cut_source_seconds": 136.560406,
+      "expected_last_word": "איתמר",
+      "intruding_word_in_next_r2": "איתמר",
+      "raw_source_asr_approximate_word_range": [
+        136.6,
+        137.64
+      ]
+    },
+    {
+      "after_ref": "6:24",
+      "next_ref": "6:25",
+      "cut_source_seconds": 145.786468,
+      "expected_last_word": "הקרחי",
+      "intruding_word_in_next_r2": "הקורחי",
+      "raw_source_asr_approximate_word_range": [
+        145.84,
+        146.88
+      ]
+    },
+    {
+      "after_ref": "6:25",
+      "next_ref": "6:26",
+      "cut_source_seconds": 163.804157,
+      "expected_last_word": "למשפחתם",
+      "intruding_word_in_next_r2": "למשפחותם",
+      "raw_source_asr_approximate_word_range": [
+        163.68,
+        165.26
+      ]
+    }
+  ],
+  "confirmed_cause": [
+    "公開済みファイルの区切りが、前節の末尾語より早い又はその語中にあり、末尾語・音節が後続ファイルへ残る。",
+    "当該ラベルを累積語数で選択した時刻がそのまま採用された。現行しきい値では無音0件のため補正が働かなかった。",
+    "機械検査は語数・連続境界・実体・速度を検証したが、語が正しい節に収まることを検証していなかった。"
+  ],
+  "not_yet_established": [
+    "元のPocketTorahラベルがこのずれを持つに至った作成上の原因。",
+    "未確定の境界・全語順・発音・速度を含む全15節の六項目PASS。",
+    "安全な修復境界の秒数。ASR時刻をそのまま採用しない。"
+  ],
+  "comparison_to_085": "085の先頭0＋N語開始時刻を誤解釈した形式とは異なる。093は182語・182ラベルで先頭1.911193秒。085用の先頭削除修正を流用しない。",
+  "remaining_work": [
+    "093専用の音源hashに結び付けた節境界候補を作る",
+    "原音と本文から全15節の開始・終了を確認し、r1/r2候補を別置きで生成",
+    "機械検査と全15節六項目の内容再検品を通過後だけ同じNotionページの音声を差し替える"
+  ],
+  "public_outputs_changed": false,
+  "production_state_changed": false
+}
