@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0-human-listening-feedback",
+  "run_id": "093-20261102-r1",
+  "repair_id": "verified-boundaries-20261105-r1",
+  "received_at": "2026-11-05T14:14:31.894Z",
+  "reviewer": "User",
+  "original_message": "6:15は大丈夫です。6:22の終わりの音からズレていますよ。",
+  "confirmed": [
+    {
+      "ref": "6:15",
+      "audio": "candidate r2 linked in the preceding reply",
+      "sha256": "5d77348ec609332e4ac77ba09268a75b128a14992e279812c521cb694b05965e",
+      "finding": "User confirms acceptable; resolves the disputed name identification for this exact r2 clip."
+    }
+  ],
+  "reported_issue": {
+    "from_ref": "6:22",
+    "position": "verse ending onward",
+    "target_audio": "UNRESOLVED_NOTION_PUBLISHED_OR_REPAIR_CANDIDATE",
+    "finding": "Must distinguish the currently published original audio from the uninstalled candidate before revising candidate boundaries."
+  },
+  "notion_readback": {
+    "page_id": "40c8aa46-08ae-8117-a4a7-d121683caa1e",
+    "published_audio_count": 15,
+    "repair_candidate_published": false,
+    "verse22_url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/093-20261102-r1/audio/093_22_r2.mp3"
+  },
+  "candidate_manifest_sha256": "663b59f8fb348bc85fb112dcd9f12d3ae94d791063e551038eebb50f07c8fac0"
+}
