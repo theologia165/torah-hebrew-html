@@ -2,44 +2,24 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "093-20261102-r1",
   "sequence": "093",
-  "phase": "AUDIO_QUALITY",
-  "status": "WAITING_FOR_WORK",
-  "next_action": "REVIEW_AND_REPAIR_AUDIO",
+  "phase": "FAILURE_REPORT",
+  "status": "BLOCKED",
+  "next_action": "SEND_PARTIAL_EMAIL_KEEP_STATE",
   "stage_spec": {
-    "path": "ver3/spec/audio-quality.md",
-    "sha256": "c4bf54a8784c0173aa4fc6af1b111e7e07538c8d8466ff04b3f95fde6422b3b9"
+    "path": "ver3/spec/failure-report.md",
+    "sha256": "49aa630c17d16e2376c459440d2353b14d55949e464b7d981e6999d742671bd9"
   },
   "required_inputs": [
-    "ver3/runs/093-20261102-r1/audio-input.json",
-    "ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/audio-quality.json",
-    "ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/audio-quality-review-template.json",
-    "ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/093-20261102-r1/audio/audio_manifest.json",
-    "ver3/quality/audio/incidents.json"
+    "ver3/runs/093-20261102-r1/delivery.json"
   ],
   "expected_outputs": [
-    "ver3/runs/093-20261102-r1/audio-repairs/verified-boundaries-20261105-r1/audio-content-review.json"
+    "ver3/runs/093-20261102-r1/completion.md"
   ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "quality_status": "CONTENT_REVIEW_PENDING",
-    "blocking_refs": [],
-    "pending_refs": [
-      "6:14",
-      "6:15",
-      "6:16",
-      "6:17",
-      "6:18",
-      "6:19",
-      "6:20",
-      "6:21",
-      "6:22",
-      "6:23",
-      "6:24",
-      "6:25",
-      "6:26",
-      "6:27",
-      "6:28"
-    ],
-    "published_audio_unchanged": true
+    "failed_operation": "GITHUB_ACTIONS_PIPELINE",
+    "error_type": "RuntimeError",
+    "error_message": "Audio listening API HTTP=401 code=invalid_api_key type=invalid_request_error",
+    "last_successful_stage": "AUDIO_QUALITY_REPAIR"
   }
 }
