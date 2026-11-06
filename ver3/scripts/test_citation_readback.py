@@ -20,6 +20,19 @@ class CitationReadbackTests(unittest.TestCase):
                 self.assertEqual(item['content'], '本文の参照名')
                 self.assertNotIn('link', item)
 
+    def test_internal_run_annotation_is_removed_from_citation_label(self):
+        prefix = 'WLC／MorphHB、出エジプト記6:14'
+        suffixes = ['（当該RUN JSON1.1）', '（当該RUN JSON1.1、固定commit 3d15126）', '(当該RUN JSON1.1)']
+        for suffix in suffixes:
+            with self.subTest(suffix=suffix):
+                b = source_block([{'label': prefix + suffix, 'url': 'https://github.com/openscriptures/morphhb'}])
+                self.assertEqual(b['paragraph']['rich_text'][1]['text']['content'], prefix)
+
+    def test_scholarly_parentheses_are_preserved(self):
+        label = 'Augustine, De Trinitate (Book III)'
+        b = source_block([{'label': label, 'url': 'https://www.newadvent.org/fathers/130103.htm'}])
+        self.assertEqual(b['paragraph']['rich_text'][1]['text']['content'], label)
+
     def test_external_scholarly_citations_remain_linked(self):
         url = 'https://www.newadvent.org/fathers/130103.htm'
         b = source_block([

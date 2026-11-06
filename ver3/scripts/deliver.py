@@ -1,5 +1,5 @@
 """Build JSON3, send exactly that payload through Actions, verify Notion blocks."""
-import json, os, sys, time
+import json, os, re, sys, time
 from pathlib import Path
 import requests
 from urllib.parse import urlsplit, parse_qsl, unquote
@@ -18,11 +18,15 @@ def public_citation_url(url):
     path = unquote(urlsplit(url).path).rstrip('/').lower()
     return None if path.rsplit('/', 1)[-1] == 'json1.1.json' else url
 
+def public_citation_label(label):
+    """Remove internal pipeline annotations, preserving the bibliographic label."""
+    return re.sub(r'[（(]\s*当該RUN\s*JSON1\.1[^）)]*[）)]', '', label, flags=re.IGNORECASE).strip()
+
 def source_block(sources):
     references=rt('参照：')
     for i,source in enumerate(sources):
         if i: references+=rt(' ／ ')
-        references+=rt(source['label'],public_citation_url(source['url']))
+        references+=rt(public_citation_label(source['label']),public_citation_url(source['url']))
     return {'object':'block','type':'paragraph','paragraph':{'rich_text':references}}
 def children(page, token):
     out=[]; cursor=''
