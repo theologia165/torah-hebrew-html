@@ -1,0 +1,73 @@
+{
+  "status": "CREATED",
+  "run_id": "097-20261106-r1",
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "9:1/head",
+        "status": "FAIL",
+        "reason": "The speaker says 'מֹשֶׁה' instead of ending at 'אֶל'."
+      },
+      {
+        "edge": "9:12/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:12/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:13/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:13/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:14/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:14/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:15/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:15/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:16/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:16/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      }
+    ],
+    "workflow_notes": [],
+    "email_disclosure_required": true,
+    "finalization_sha256": "ef256b5ab1b62411fc44e975bbc6373db7de7c2828e7f9d957f56ee471d7928f"
+  },
+  "page_id": "4108aa46-08ae-81f0-9ed3-f01013bb66eb",
+  "page_url": "https://app.notion.com/p/097-8-19-9-16-4108aa4608ae81f09ed3f01013bb66eb"
+}
