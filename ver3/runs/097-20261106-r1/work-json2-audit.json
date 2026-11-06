@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0-work-json2-audit",
+  "run_id": "097-20261106-r1",
+  "sequence": "097",
+  "WORK_JSON2_QUALITY": "PASS",
+  "status": "PASS",
+  "auditor": "Work",
+  "verse_count": 26,
+  "token_count": 380,
+  "checks": [
+    {
+      "criterion": 1,
+      "name": "token_id_surface_lemma_morphology_gloss_all_380",
+      "result": "PASS"
+    },
+    {
+      "criterion": 2,
+      "name": "zero_unresolved_fallback_placeholder_or_abnormal_repetition",
+      "result": "PASS"
+    },
+    {
+      "criterion": 3,
+      "name": "translation_matches_glosses_and_syntax",
+      "result": "PASS"
+    },
+    {
+      "criterion": 4,
+      "name": "all_26_verse_specific_commentaries",
+      "result": "PASS"
+    },
+    {
+      "criterion": 5,
+      "name": "distinct_multi_chunk_aliyah_research",
+      "result": "PASS"
+    },
+    {
+      "criterion": 6,
+      "name": "external_sources_verified_and_supporting",
+      "result": "PASS"
+    },
+    {
+      "criterion": 7,
+      "name": "all_26_devotionals_distinct_sources_empty",
+      "result": "PASS"
+    },
+    {
+      "criterion": 8,
+      "name": "japanese_LTR_no_prohibited_phrase",
+      "result": "PASS"
+    },
+    {
+      "criterion": 9,
+      "name": "both_input_hashes_verified",
+      "result": "PASS"
+    }
+  ],
+  "unresolved": [],
+  "review_notes": [
+    "All 380 token IDs, surfaces, lemma_raw, morph_raw and morph_segments were compared with their Japanese glosses in this RUN.",
+    "Null lexical lemma for prepositions at 9:2 and 9:8 resolved from actual morphology; no lexical data generated or overwritten.",
+    "8:25 supplied morph 2fs noted transparently; addressee remains Pharaoh.",
+    "9:15 construed counterfactually from 9:16 contrast; 8:28/9:7/9:12 subjects and stems differentiated.",
+    "Rashi 8:19,8:22,9:10; Maimonides Teshuvah 6:3; Augustine chapters41,43; Romans9:14-18; Frankel notes1,7-9; Magid opening and note17 consulted directly.",
+    "Later traditions are reception history, not replacements for peshat. No unrelated tradition was used as filler."
+  ],
+  "audited_at": "2026-11-06T13:13:22.617421+00:00"
+}
