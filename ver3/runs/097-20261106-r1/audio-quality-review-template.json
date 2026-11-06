@@ -1,0 +1,401 @@
+{
+  "schema_version": "1.0-audio-content-review",
+  "run_id": "097-20261106-r1",
+  "input_sha256": "0f3c9f658f36b7e097f0c4a28ea20c77838f53740ca98a7d631d41077015849b",
+  "manifest_sha256": "15d4d885181f7412176635d8b7ccb59e8c0f9a75528ac06b47080f201774d0fc",
+  "reviewer": "",
+  "method": "",
+  "reviewed_at": "",
+  "verses": [
+    {
+      "ref": "8:19",
+      "r1_sha256": "6880014d969433e6585d7a3d7c7af73cbe8f96ea7b57e1b87e75d1b5f8993f60",
+      "r2_sha256": "2ad1ac9e21094138effde8f355e16388e2b7a312560d23ccfdc68f29794f5fe3",
+      "expected_text": "וְשַׂמְתִּי פְדֻת בֵּין עַמִּי וּבֵין עַמֶּךָ לְמָחָר יִהְיֶה הָאֹת הַזֶּֽה",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "8:20",
+      "r1_sha256": "d01b397a541de1a4ed69dfaa7919eac1564b56508c38be77925dbee738faa020",
+      "r2_sha256": "90bcde5e7653b0aa29930a16f64eceff60c6e14f7c6214d6ad460c44bcd0f5d4",
+      "expected_text": "וַיַּעַשׂ יְהוָה כֵּן וַיָּבֹא עָרֹב כָּבֵד בֵּיתָה פַרְעֹה וּבֵית עֲבָדָיו וּבְכָל אֶרֶץ מִצְרַיִם תִּשָּׁחֵת הָאָרֶץ מִפְּנֵי הֶעָרֹֽב",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "8:21",
+      "r1_sha256": "8aff453b05bdb666fdcba13c5227e54553749572337600f98346711fa94d3305",
+      "r2_sha256": "b1cf654abca5dad8b913666329b75d248d6867bfc7ecb487abc71cb0f41adad0",
+      "expected_text": "וַיִּקְרָא פַרְעֹה אֶל מֹשֶׁה וּֽלְאַהֲרֹן וַיֹּאמֶר לְכוּ זִבְחוּ לֵֽאלֹהֵיכֶם בָּאָֽרֶץ",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "8:22",
+      "r1_sha256": "0731f44ff5e6f49053d919f7367f192adbbbf70e1704762c7066cd07f0f843e2",
+      "r2_sha256": "8021a46fb45d12be9533b34b5cdefe6b8580dbb3139642ccbd3febbf2a2e3528",
+      "expected_text": "וַיֹּאמֶר מֹשֶׁה לֹא נָכוֹן לַעֲשׂוֹת כֵּן כִּי תּוֹעֲבַת מִצְרַיִם נִזְבַּח לַיהוָה אֱלֹהֵינוּ הֵן נִזְבַּח אֶת תּוֹעֲבַת מִצְרַיִם לְעֵינֵיהֶם וְלֹא יִסְקְלֻֽנוּ",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "8:23",
+      "r1_sha256": "6c1aa17333a6c0ed78005afb226272149761356885ba328de1e6f9f540b81c49",
+      "r2_sha256": "7c896d5e3578b934fc4ecfcb9e219aed2c46ee69d261ea3de1b3e4818d602c69",
+      "expected_text": "דֶּרֶךְ שְׁלֹשֶׁת יָמִים נֵלֵךְ בַּמִּדְבָּר וְזָבַחְנוּ לַֽיהוָה אֱלֹהֵינוּ כַּאֲשֶׁר יֹאמַר אֵלֵֽינוּ",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "8:24",
+      "r1_sha256": "00c2bd9a07ae7caa80956f2d062971cb2f60618cec93bacc8be8aeea191ff6f3",
+      "r2_sha256": "4f3c44e1acb69c353a0680d82ce90f57791fa3dd7741bd114ef1862451c32755",
+      "expected_text": "וַיֹּאמֶר פַּרְעֹה אָנֹכִי אֲשַׁלַּח אֶתְכֶם וּזְבַחְתֶּם לַיהוָה אֱלֹֽהֵיכֶם בַּמִּדְבָּר רַק הַרְחֵק לֹא תַרְחִיקוּ לָלֶכֶת הַעְתִּירוּ בַּעֲדִֽי",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "8:25",
+      "r1_sha256": "978a13b6e294c2d6d0e720cf72c1e012f1db28a13eae5c687a2012bedbccd7b0",
+      "r2_sha256": "6b4b28ea214d5beb7c984a24a9744c99c8bdcf071bcefd82ce4b3170bb0ab4c7",
+      "expected_text": "וַיֹּאמֶר מֹשֶׁה הִנֵּה אָנֹכִי יוֹצֵא מֵֽעִמָּךְ וְהַעְתַּרְתִּי אֶל יְהוָה וְסָר הֶעָרֹב מִפַּרְעֹה מֵעֲבָדָיו וּמֵעַמּוֹ מָחָר רַק אַל יֹסֵף פַּרְעֹה הָתֵל לְבִלְתִּי שַׁלַּח אֶת הָעָם לִזְבֹּחַ לַֽיהוָֽה",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "8:26",
+      "r1_sha256": "5559352cc50a02401f7ae1ff45253f4d5b1d6122afbe5fa3ee4212eb2065439a",
+      "r2_sha256": "6d200e5205bc367321575a0a74018dc4f45bf70fc9cefe022c9445cea405999b",
+      "expected_text": "וַיֵּצֵא מֹשֶׁה מֵעִם פַּרְעֹה וַיֶּעְתַּר אֶל יְהוָֽה",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "8:27",
+      "r1_sha256": "76a92a28f1742109ce323135add65cfc6b12c95a966cd4b712891683a4b14251",
+      "r2_sha256": "1a26a52cd53cc49bde0fcb004874ef603d268c9a62891ee4e5998b56b17af9d5",
+      "expected_text": "וַיַּעַשׂ יְהוָה כִּדְבַר מֹשֶׁה וַיָּסַר הֶעָרֹב מִפַּרְעֹה מֵעֲבָדָיו וּמֵעַמּוֹ לֹא נִשְׁאַר אֶחָֽד",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "8:28",
+      "r1_sha256": "c95de08e0858de91001ad14ba8d5b5e623e484f2302ca38d50a727096b9f1316",
+      "r2_sha256": "2730dda7bfa58a4dc2733fecfe9f9436b1659b02b0ebb66f5bf930baecdec5af",
+      "expected_text": "וַיַּכְבֵּד פַּרְעֹה אֶת לִבּוֹ גַּם בַּפַּעַם הַזֹּאת וְלֹא שִׁלַּח אֶת הָעָֽם",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:1",
+      "r1_sha256": "9f8a1cf7af0a7e4a8eae3b74d82ef698975fc070e4f70f00203201f9e92ef391",
+      "r2_sha256": "98fc28bbc24925967959a1ff77de6c2fe7afdbe24f1ceccb143a7e409ef62054",
+      "expected_text": "וַיֹּאמֶר יְהוָה אֶל מֹשֶׁה בֹּא אֶל פַּרְעֹה וְדִבַּרְתָּ אֵלָיו כֹּֽה אָמַר יְהוָה אֱלֹהֵי הָֽעִבְרִים שַׁלַּח אֶת עַמִּי וְיַֽעַבְדֻֽנִי",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:2",
+      "r1_sha256": "f3d328009f0fc8be78e7d5c824ce00fe0912b971c6260188b23978fc52ac01a5",
+      "r2_sha256": "7b01b272cad415a9cea1614b2e895c449c52545b368abb62800f765d044f8a25",
+      "expected_text": "כִּי אִם מָאֵן אַתָּה לְשַׁלֵּחַ וְעוֹדְךָ מַחֲזִיק בָּֽם",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:3",
+      "r1_sha256": "2934190591f08e343e975c2ccd40b52ee5ca730728ba1c2e8d6181ac492ad19a",
+      "r2_sha256": "d9f8ed2b26b989a9c06cbfc1ad3d0937d4e5615046af817cf9311eee1e0cf76e",
+      "expected_text": "הִנֵּה יַד יְהוָה הוֹיָה בְּמִקְנְךָ אֲשֶׁר בַּשָּׂדֶה בַּסּוּסִים בַּֽחֲמֹרִים בַּגְּמַלִּים בַּבָּקָר וּבַצֹּאן דֶּבֶר כָּבֵד מְאֹֽד",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:4",
+      "r1_sha256": "596a5f4f909a015a7f14ccc8ccfd38f7d0c07e288f33c671d67641e5c35fe145",
+      "r2_sha256": "3332ebe138d8996cefd1961409a131653fcaeec0252a097960385c9aa83febb8",
+      "expected_text": "וְהִפְלָה יְהוָה בֵּין מִקְנֵה יִשְׂרָאֵל וּבֵין מִקְנֵה מִצְרָיִם וְלֹא יָמוּת מִכָּל לִבְנֵי יִשְׂרָאֵל דָּבָֽר",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:5",
+      "r1_sha256": "880977bbe4b9d826e32375f621dacf388456d9cbd8f9ba7838e6196ce1b4da6e",
+      "r2_sha256": "3011d9f7ad0896324e7497452c020029a51e8b825d3ba620786946d7dc1647a6",
+      "expected_text": "וַיָּשֶׂם יְהוָה מוֹעֵד לֵאמֹר מָחָר יַעֲשֶׂה יְהוָה הַדָּבָר הַזֶּה בָּאָֽרֶץ",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:6",
+      "r1_sha256": "ebdd5c28b5ecc023305048f60782c025379657e696a312e99daf19f1406e1400",
+      "r2_sha256": "646ef15244d38ac6c42a1120998d653431d243655617f8635f79b58383a5d021",
+      "expected_text": "וַיַּעַשׂ יְהוָה אֶת הַדָּבָר הַזֶּה מִֽמָּחֳרָת וַיָּמָת כֹּל מִקְנֵה מִצְרָיִם וּמִמִּקְנֵה בְנֵֽי יִשְׂרָאֵל לֹא מֵת אֶחָֽד",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:7",
+      "r1_sha256": "12485ddf4e285be4158b0e0adcc63ed8471d3ecd6ba71e60281d91dfe598bb0c",
+      "r2_sha256": "884d12e5e42f0bdcee49be5e04679be06fe7953e69b9d62ac93ca0ef8ade0ec6",
+      "expected_text": "וַיִּשְׁלַח פַּרְעֹה וְהִנֵּה לֹא מֵת מִמִּקְנֵה יִשְׂרָאֵל עַד אֶחָד וַיִּכְבַּד לֵב פַּרְעֹה וְלֹא שִׁלַּח אֶת הָעָֽם",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:8",
+      "r1_sha256": "2be6418ae74bc734cea2e40222b27b23429fa4378121add7c3ba81ab73ec68ab",
+      "r2_sha256": "2cbcfe7555cddeda0fbc09c3b11bee3390bae817e20c7062162aefb377685a74",
+      "expected_text": "וַיֹּאמֶר יְהוָה אֶל מֹשֶׁה וְאֶֽל אַהֲרֹן קְחוּ לָכֶם מְלֹא חָפְנֵיכֶם פִּיחַ כִּבְשָׁן וּזְרָקוֹ מֹשֶׁה הַשָּׁמַיְמָה לְעֵינֵי פַרְעֹֽה",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:9",
+      "r1_sha256": "703ef378c48c212580ec5c153771d0e0f93a1ec728807213fe34a3918fcc4f66",
+      "r2_sha256": "51324a6dd975aafaa8a4af49c6ece8bbf580afb9e2a09f392e3a5a2af23ce365",
+      "expected_text": "וְהָיָה לְאָבָק עַל כָּל אֶרֶץ מִצְרָיִם וְהָיָה עַל הָאָדָם וְעַל הַבְּהֵמָה לִשְׁחִין פֹּרֵחַ אֲבַעְבֻּעֹת בְּכָל אֶרֶץ מִצְרָֽיִם",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:10",
+      "r1_sha256": "3decbae13796eec7f6ee0909410313d979b1f967e008a28f221f95fd6ff01a60",
+      "r2_sha256": "b1f8ffaa6f788636e0d42ab6babd25744df1b0149bdb272973331b19f56c5109",
+      "expected_text": "וַיִּקְחוּ אֶת פִּיחַ הַכִּבְשָׁן וַיַּֽעַמְדוּ לִפְנֵי פַרְעֹה וַיִּזְרֹק אֹתוֹ מֹשֶׁה הַשָּׁמָיְמָה וַיְהִי שְׁחִין אֲבַעְבֻּעֹת פֹּרֵחַ בָּאָדָם וּבַבְּהֵמָֽה",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:11",
+      "r1_sha256": "fec3e66ec48ffe64bc5cc5c0aebc2d9f89d3206ec66b66c1769e4fc1d760b490",
+      "r2_sha256": "89420149e3910d356ced80185e899b7df358cc7e62977c41a08b05efcc6554fc",
+      "expected_text": "וְלֹֽא יָכְלוּ הַֽחַרְטֻמִּים לַעֲמֹד לִפְנֵי מֹשֶׁה מִפְּנֵי הַשְּׁחִין כִּֽי הָיָה הַשְּׁחִין בַּֽחֲרְטֻמִּם וּבְכָל מִצְרָֽיִם",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:12",
+      "r1_sha256": "bedaa0eecd5de2ee3d9643eb83fa7aba6f3d8ecfd5c1c64ad0bbaa7c441a03d5",
+      "r2_sha256": "19c3538981cbc2344042e75608b7a6d71cde1c790d9f105375efef4b1cd6a515",
+      "expected_text": "וַיְחַזֵּק יְהוָה אֶת לֵב פַּרְעֹה וְלֹא שָׁמַע אֲלֵהֶם כַּאֲשֶׁר דִּבֶּר יְהוָה אֶל מֹשֶֽׁה",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:13",
+      "r1_sha256": "ba899d38a5f060bfaa171b12283ead46c6d140fe3ffdfc17fde7502c66958fe9",
+      "r2_sha256": "f15945628384c266e1303a80aabe45cacd59e7c03fb68f1d71dcb4bcac6c8b30",
+      "expected_text": "וַיֹּאמֶר יְהוָה אֶל מֹשֶׁה הַשְׁכֵּם בַּבֹּקֶר וְהִתְיַצֵּב לִפְנֵי פַרְעֹה וְאָמַרְתָּ אֵלָיו כֹּֽה אָמַר יְהוָה אֱלֹהֵי הָֽעִבְרִים שַׁלַּח אֶת עַמִּי וְיַֽעַבְדֻֽנִי",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:14",
+      "r1_sha256": "02e3d23777a01e9e157b2b41a5c00a0b2de8a86c53384646bec7a605d468aa50",
+      "r2_sha256": "f5abb86fbf35811b47141f90c4a88391cdc1ebb16d89142bacdbaf47bd222a26",
+      "expected_text": "כִּי בַּפַּעַם הַזֹּאת אֲנִי שֹׁלֵחַ אֶת כָּל מַגֵּפֹתַי אֶֽל לִבְּךָ וּבַעֲבָדֶיךָ וּבְעַמֶּךָ בַּעֲבוּר תֵּדַע כִּי אֵין כָּמֹנִי בְּכָל הָאָֽרֶץ",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:15",
+      "r1_sha256": "b1e49dc3d29ea6cf7e6d4e72177d17d00b31be9a84f21930880b553daefb5695",
+      "r2_sha256": "2a3cd60daca3328b5b9c920aa5b60790cd3c51ac7568f23622b33515f95b6d6e",
+      "expected_text": "כִּי עַתָּה שָׁלַחְתִּי אֶת יָדִי וָאַךְ אוֹתְךָ וְאֶֽת עַמְּךָ בַּדָּבֶר וַתִּכָּחֵד מִן הָאָֽרֶץ",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "9:16",
+      "r1_sha256": "b35b9191303c5f9badbf13d7a8745dbfd59b506ab58375f5b6f1c8acfb1a76c2",
+      "r2_sha256": "39459c79559d46fe59cac6849ea4b448aae505b45f3f20ee30d455d09326a94f",
+      "expected_text": "וְאוּלָם בַּעֲבוּר זֹאת הֶעֱמַדְתִּיךָ בַּעֲבוּר הַרְאֹתְךָ אֶת כֹּחִי וּלְמַעַן סַפֵּר שְׁמִי בְּכָל הָאָֽרֶץ",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    }
+  ]
+}
