@@ -55,3 +55,7 @@ python ver3/scripts/validate_json2.py ver3/runs/{run_id}
 
 全項目合格時だけ`WORK_JSON2_QUALITY=PASS`として`json2.json`をコミットする。構造validatorのPASSは意味監査の代替ではない。未解決が一件でもあれば`JSON2_QUALITY_BLOCKED`としてActionsへ渡さない。
 
+
+## 読者向け参照URL
+
+当該RUNのJSON1.1は内部の研究入力であり、読者向け出典ではない。`sources[].url`や本文へ`json1.1.json`の公開URLを入れない。本文・文法の独自分析に外部出典を付けられない場合は`sources: []`とし、形式上の穴埋めで内部データを引用しない。必要なWLC／MorphHBの資料帰属は既存のページ末尾「本文資料」に置く。実際に確認した学術文献・原典の外部参照URLは従来どおり記す。配信側もJSON1.1へのリンクを除去し、本文・参照名は保持する。

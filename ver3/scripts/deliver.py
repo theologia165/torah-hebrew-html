@@ -2,7 +2,7 @@
 import json, os, sys, time
 from pathlib import Path
 import requests
-from urllib.parse import urlsplit, parse_qsl
+from urllib.parse import urlsplit, parse_qsl, unquote
 from prepare import digest, save
 from compose import validate
 from notion_frames import ensure_upload, creation_blocks, finalize_frames
@@ -13,11 +13,16 @@ def rt(text, url=None):
 def block(kind,text):
     return {'object':'block','type':kind,kind:{'rich_text':rt(text)}}
 def paragraph(text): return block('paragraph',text)
+def public_citation_url(url):
+    """Internal JSON1.1 is research input, never a reader-facing source link."""
+    path = unquote(urlsplit(url).path).rstrip('/').lower()
+    return None if path.rsplit('/', 1)[-1] == 'json1.1.json' else url
+
 def source_block(sources):
     references=rt('参照：')
     for i,source in enumerate(sources):
         if i: references+=rt(' ／ ')
-        references+=rt(source['label'],source['url'])
+        references+=rt(source['label'],public_citation_url(source['url']))
     return {'object':'block','type':'paragraph','paragraph':{'rich_text':references}}
 def children(page, token):
     out=[]; cursor=''
