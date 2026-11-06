@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0-citation-label-cleanup",
+  "status": "PASS",
+  "operation": "REMOVE_INTERNAL_RUN_ANNOTATION_ONLY",
+  "run_id": "090-20261030-r1",
+  "page_id": "4098aa46-08ae-812a-bd27-efea10b790fc",
+  "removed_annotation_count": 18,
+  "before_commit": "68b0528b12dfcf8a7e75e4db776235ff0bf61dce",
+  "before_json3_blob_sha": "e969f1ad335a21269e6782babac8a1319a424092",
+  "before_json3_sha256": "0656a15cbb942577904a26c18628d7e2182a69f715bd3ecaa22fc0c986db46a0",
+  "after_json3_sha256": "96ebb87f99e83cc7a7226bd638fb4b6ff97a98a1200eae1680e21433eed62286",
+  "notion_edit": "targeted update_content; bibliographic labels, text and media otherwise preserved"
+}
