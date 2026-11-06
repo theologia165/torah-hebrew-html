@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0-work-boundary-decision",
+  "run_id": "097-20261106-r1",
+  "report_sha256": "a6e4a7e90750ad0824b974f1ecb620be96546ad78c03cbdf76bdfa34c3793156",
+  "action": "DELIVER_CURRENT",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-06T13:17:16.620Z",
+  "evidence": "Read all 52 head/tail observations and their expected/heard words and acoustic reasons. 41 raw PASS observations are compatible with expected starts/ends; several short heads contain only two transcribed words and do not certify full content. 9:1/head is flagged FAIL solely because heard ויאמר יהוה אל משה continues to the valid fourth token משה after the three-token expected prefix. This is the artificial inner end of a four-second head excerpt, not evidence of previous-verse intrusion or a wrong start. No justified cut follows from that reason; preserve the raw flag rather than fabricate PASS. 9:12/head+tail,9:13/head+tail,9:14/head+tail,9:15/head+tail,9:16/head+tail have no observation because BOUNDARY_BUDGET_LIMIT. Usage is seven requests,168 seconds,reserved estimate USD0.375220; the next batch would exceed USD0.40, although actual reported estimate so far is USD0.090898. No API error, no context inspection or repair attempted, no candidate adopted. Stop additional calls under the shared budget and deliver all 26 current playable r2 files unchanged. Disclose the ten budget-unreviewed edges and raw 9:1/head warning with its invalid rationale, the absence of repair, and full_content_verified=false in the actual completion email."
+}
