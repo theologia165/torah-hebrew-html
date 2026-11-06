@@ -31,3 +31,4 @@ jobs:
           python ver3/scripts/test_audio_primary_module.py
           python ver3/scripts/test_audio_fallback_policy.py
           python ver3/scripts/test_handoff_contract.py
+          python ver3/scripts/test_citation_readback.py

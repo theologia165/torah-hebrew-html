@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0-citation-link-cleanup",
+  "status": "PASS",
+  "operation": "UNLINK_INTERNAL_JSON11_ONLY",
+  "run_id": "092-20261101-r1",
+  "page_id": "40b8aa46-08ae-8151-8294-f9e6c7fbf88b",
+  "removed_link_count": 18,
+  "notion_edit": "targeted update_content; labels and all other blocks preserved",
+  "before_commit": "836e18df5ced1ed73d40a8a9ca2057dc0bb82969",
+  "before_json3_blob_sha": "48750df2b0c8b8b4ac57400805224fc1573e741b",
+  "before_json3_sha256": "091e4c4f235808f99e613e908892664e04b32de0bc75970bf7cc7e52d9e9ce04",
+  "after_json3_sha256": "6eaace7d1cf2e7da6460ec7c05c28c998946c4e21349e964d257848f6746fbaa"
+}
