@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "097-20261106-r1",
+  "sequence": "097",
+  "delivery_status": "PASS",
+  "page_id": "4108aa46-08ae-81f0-9ed3-f01013bb66eb",
+  "page_url": "https://app.notion.com/p/097-8-19-9-16-4108aa4608ae81f09ed3f01013bb66eb",
+  "gmail": {
+    "message_id": "1a1b10bc16e829af",
+    "subject": "097｜出エジプト記8:19–9:16",
+    "sent_verified": true,
+    "to": "me",
+    "resolved_to": "nishiharat@gmail.com",
+    "attachment_filename": "asaichi-torah-097-20261106.jpg",
+    "attachment_byte_size": 426678,
+    "attachment_sha256": "216297ace540549b9239e38a17bf452b139e806121f824f49a388c890686e5f7"
+  },
+  "completed_at": "2026-11-06T13:29:05.215Z",
+  "WORK_JSON2_QUALITY": "PASS",
+  "verse_count": 26,
+  "token_count": 380,
+  "html_implemented_count": 26,
+  "audio_implemented_count": 26,
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "cover_status": "PASS",
+  "audio_boundary": {
+    "finalization_sha256": "ef256b5ab1b62411fc44e975bbc6373db7de7c2828e7f9d957f56ee471d7928f",
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "disclosed_in_email": true,
+    "full_content_verified": false,
+    "repair_attempted": false,
+    "candidate_adopted": false,
+    "unresolved": [
+      {
+        "edge": "9:1/head",
+        "status": "FAIL",
+        "reason": "The speaker says 'מֹשֶׁה' instead of ending at 'אֶל'."
+      },
+      {
+        "edge": "9:12/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:12/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:13/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:13/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:14/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:14/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:15/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:15/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:16/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "9:16/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      }
+    ]
+  }
+}

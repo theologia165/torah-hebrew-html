@@ -12,35 +12,101 @@
   },
   "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。",
   "last_completed": {
-    "sequence": "096",
-    "run_id": "096-20261105-r1",
-    "page_id": "40f8aa46-08ae-81e9-b435-e9d27d0e2f2d",
-    "page_url": "https://app.notion.com/p/096-8-7-18-40f8aa4608ae81e9b435e9d27d0e2f2d",
+    "sequence": "097",
+    "run_id": "097-20261106-r1",
+    "page_id": "4108aa46-08ae-81f0-9ed3-f01013bb66eb",
+    "page_url": "https://app.notion.com/p/097-8-19-9-16-4108aa4608ae81f09ed3f01013bb66eb",
     "status": "PASS",
-    "verse_count": 12,
+    "verse_count": 26,
+    "token_count": 380,
     "WORK_JSON2_QUALITY": "PASS",
     "image_status": "PASS",
     "cover_status": "PASS",
-    "gmail_message_id": "1a1abddd190ec385",
+    "gmail_message_id": "1a1b10bc16e829af",
     "gmail_sent_verified": true,
-    "completed_at": "2026-11-05T13:20:34.367Z",
+    "completed_at": "2026-11-06T13:29:05.215Z",
     "audio_quality_status": "CONTENT_REVIEW_PENDING",
-    "audio_content_verified": false
+    "audio_content_verified": false,
+    "audio_boundary": {
+      "finalization_sha256": "ef256b5ab1b62411fc44e975bbc6373db7de7c2828e7f9d957f56ee471d7928f",
+      "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+      "disclosed_in_email": true,
+      "full_content_verified": false,
+      "repair_attempted": false,
+      "candidate_adopted": false,
+      "unresolved": [
+        {
+          "edge": "9:1/head",
+          "status": "FAIL",
+          "reason": "The speaker says 'מֹשֶׁה' instead of ending at 'אֶל'."
+        },
+        {
+          "edge": "9:12/head",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "9:12/tail",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "9:13/head",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "9:13/tail",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "9:14/head",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "9:14/tail",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "9:15/head",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "9:15/tail",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "9:16/head",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "9:16/tail",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        }
+      ]
+    }
   },
   "mode": "ver3-production",
   "model_audio_default": false,
   "next_passage": {
     "parasha": "Vaera",
     "parasha_jp": "ヴァエラ",
-    "aliyah": 6,
+    "aliyah": 7,
     "book": "Exodus",
-    "chapter": 8,
+    "chapter": 9,
     "end_chapter": 9,
-    "start_verse": 19,
-    "end_verse": 16,
-    "display": "ヴァエラ｜第6アリヤー｜出エジプト記8:19–9:16"
+    "start_verse": 17,
+    "end_verse": 35,
+    "display": "ヴァエラ｜第7アリヤー｜出エジプト記9:17–35"
   },
-  "next_sequence": "097",
+  "next_sequence": "098",
   "notion_api_version": "2026-03-11",
   "notion_output_rule": {
     "show_development_labels": false,
