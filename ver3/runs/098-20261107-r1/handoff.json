@@ -2,37 +2,21 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "098-20261107-r1",
   "sequence": "098",
-  "phase": "EMAIL_AND_STATE",
-  "status": "WAITING_FOR_WORK",
-  "next_action": "SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE",
+  "phase": "COMPLETE",
+  "status": "PASS",
+  "next_action": "NONE",
   "stage_spec": {
-    "path": "ver3/spec/email-delivery.md",
-    "sha256": "1028683e4c18db6da8cb52f70f7aa3b3c482b167ca33dc41019a73a6c1967907"
+    "path": "ver3/spec/work-entry.md",
+    "sha256": "bf08f3c980c4c79c597e6d1877d26578ae879fba6e800025298908dd1e6baa92"
   },
   "required_inputs": [
     "ver3/runs/098-20261107-r1/delivery.json",
-    "ver3/runs/098-20261107-r1/json2.json",
-    "ver3/runs/098-20261107-r1/cover-ready.json",
-    "ver3/runs/098-20261107-r1/audio-quality.json",
-    "ver3/runs/098-20261107-r1/audio-boundary/finalization.json",
-    "ver3/runs/098-20261107-r1/audio-boundary/usage.json"
-  ],
-  "expected_outputs": [
     "ver3/runs/098-20261107-r1/completion.json",
     "ver3/state/production.json"
   ],
+  "expected_outputs": [],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "delivery_status": "PASS",
-    "page_url": "https://app.notion.com/p/098-9-17-35-4118aa4608ae815da883e6abb67bd29d",
-    "missing_audio_refs": [],
-    "missing_html_refs": [],
-    "cover_status": "PASS",
-    "audio_quality_status": "CONTENT_REVIEW_PENDING",
-    "audio_content_verified": false,
-    "audio_boundary_status": "BOUNDARY_PASS",
-    "audio_boundary_unresolved": [],
-    "audio_boundary_email_disclosure_required": false,
-    "completion_gate_reasons": []
+    "reason": "Delivery, Gmail Sent receipt, and production advancement are all verified."
   }
 }
