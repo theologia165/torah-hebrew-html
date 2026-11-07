@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0-work-json2-audit",
+  "run_id": "098-20261107-r1",
+  "WORK_JSON2_QUALITY": "PASS",
+  "status": "PASS",
+  "verse_count": 19,
+  "token_count": 281,
+  "auditor": "Work",
+  "audited_at": "2026-11-07T13:11:32.463716+00:00",
+  "checks": [
+    {
+      "criterion": 1,
+      "result": "PASS"
+    },
+    {
+      "criterion": 2,
+      "result": "PASS"
+    },
+    {
+      "criterion": 3,
+      "result": "PASS"
+    },
+    {
+      "criterion": 4,
+      "result": "PASS"
+    },
+    {
+      "criterion": 5,
+      "result": "PASS"
+    },
+    {
+      "criterion": 6,
+      "result": "PASS"
+    },
+    {
+      "criterion": 7,
+      "result": "PASS"
+    },
+    {
+      "criterion": 8,
+      "result": "PASS"
+    },
+    {
+      "criterion": 9,
+      "result": "PASS"
+    }
+  ],
+  "unresolved": [],
+  "notes": [
+    "All 281 IDs, surface forms, lemma_raw, morph_raw, actual lexemes and morph_segments compared individually with glosses; translations reviewed against syntax.",
+    "9:19 null lexeme preposition resolved from actual morph; source data unchanged. 9:24 participle,9:29 infinitive suffix,9:31-32 passive,9:34 hiphil versus9:35 qal differentiated.",
+    "Nineteen distinct verse studies/devotionals; four contiguous chunks; three distinct aliyah studies. Rashi peshat/midrash separated; Gregory Oration16 sections10-11 is reception not direct lexical commentary; Grossman VT64 abstract/600-602 verified.",
+    "No fallback, blanks, Hebrew gloss substitution, copied prior RUN research, prohibited phrase or internal JSON1.1 citations."
+  ]
+}
