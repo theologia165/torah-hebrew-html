@@ -219,13 +219,34 @@
     },
     {
       "id": 7,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 4.0,
       "reserved_usd": 0.018945,
       "model": "gpt-audio-1.5",
       "clip_keys": [
         "f212d8919795fc81f96b233826cf5cc3079fc5f9668fbbdc3596658f072773f1"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_be443f47fa834c618e3ddc2739366e51",
+      "usage": {
+        "prompt_tokens": 322,
+        "completion_tokens": 64,
+        "total_tokens": 386,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 39,
+          "text_tokens": 283,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 64
+        }
+      },
+      "actual_usd": 0.0025955
     }
   ],
   "cache": {
@@ -482,9 +503,11 @@
       "suggested_cut_seconds": null
     },
     "f212d8919795fc81f96b233826cf5cc3079fc5f9668fbbdc3596658f072773f1": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "בְּיַד מֹשֶׁה",
+      "evidence": "The ending words בְּיַד מֹשֶׁה are clearly audible at the tail.",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     }
   }
 }
