@@ -1,0 +1,19 @@
+{
+  "run_id": "099-20261108-r1",
+  "WORK_JSON2_QUALITY": "PASS",
+  "reviewer": "Work",
+  "verse_count": 11,
+  "token_count": 207,
+  "json1_1_sha256": "e8ed155ad795b61e6f3a8c7293208c66ef123f4410d835c1bfb0e8536d7bcc56",
+  "checks": {
+    "all_token_surface_lemma_morphology_gloss_pairs_reviewed": true,
+    "translations_reviewed": true,
+    "distinct_verse_notes_and_devotionals": true,
+    "three_research_layers": true,
+    "sources_opened_and_verified": true,
+    "no_internal_source_links": true
+  },
+  "source_scope": "Rashi 10:2,10:10,10:11; NET notes 10:2,10:10-11; Gregory Life of Moses I.23-25. NET notes are modern translation scholarship; no unviewed academic monographs claimed.",
+  "textual_notes": "WLC accent notes retained in JSON1.1; no consonantal emendation proposed; token morphology unchanged.",
+  "gloss_notes": "עד־מתי is rendered as a compound question across two token glosses; accusative markers retained as Japanese object markers; passive וישב and indefinite agent ויגרש distinguished."
+}
