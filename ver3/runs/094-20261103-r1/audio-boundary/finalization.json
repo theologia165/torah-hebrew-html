@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "094-20261103-r1",
+  "input_sha256": "9fcf1c71e35813c3c8bf5bb0a6b110d9db63bc2c0c1ede725d55f85912a49a98",
+  "manifest_sha256": "9fab206ca9f0daec0ddf2675c666b6f4cfce14b278824478ede7b420ad398df0",
+  "audio_sha256": {
+    "6:29": "66b4ad378c1ed37adfc29ba644934b51f007be130b6a592ab4f1186c2a1b5cd7",
+    "6:30": "0f69b5d633d0611154abe2829ae450758e261ac3f4ea12168e2d78fb3c78bbc8",
+    "7:1": "8b62435345bda1c9c58326a530d1fd3623ade8b3c458b8903802c5d47cda6c93",
+    "7:2": "54d0ef8e1b2eadcd5b29d23c3402a07f95e41f60be2f65c1c085aea7e1968d9f",
+    "7:3": "8ee7462f930e9a18a4ebd4909ff43f7a3a18daa295e72464418bcba23bc43c6d",
+    "7:4": "f1841ee52219b65fb2fbc56ea4a43193d0cfb597ef64b8594942b93a4addf22f",
+    "7:5": "2bb1832cea6f634f99a2f7576109ce850c2cdefc6ffaee2ca21303b2400e9a82",
+    "7:6": "e8ae15721f86b7364eeb8c09cbccc76a560ab607e0b4927b8cb41dc9bebd039e",
+    "7:7": "4eec95024cd688f84bfc9d92b24ca2fef39a7da95dbe4e98dfe0b0fdd783a036"
+  },
+  "status": "BOUNDARY_PASS",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-08T04:04:31.252Z",
+  "evidence": "全9節・18境界観察をaudio-input本文と照合。各節固有の冒頭・末尾が聞き取られ、隣接節の混入・語末切断の根拠はない。6:29と7:2のheadは抜粋内で期待3語の一部のみだが原音冒頭の第1語・第2語は明瞭で、人工的な抜粋末端を実際の節境界不良と取り違えない。現行MP3を維持し、修正不要。これは境界検品であり全語順・節中央の全内容確認ではない。",
+  "decision_sha256": "c76899b7b7e10d0fe6d671b218e23cd93e6b722aa79277ddc7dc69f14b7d0a61",
+  "usage_sha256": "f633aa12f1c1c67a8d9437363a436b33185dff4814431ac7a7be9552b23c6f5e",
+  "report_sha256": "33796e413ecd5e21affe6037bdaa2f0c6ee36983b746df8c65326ee495f84dc7",
+  "email_disclosure_required": false
+}
