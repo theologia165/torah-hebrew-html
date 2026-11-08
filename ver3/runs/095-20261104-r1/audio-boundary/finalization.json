@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "095-20261104-r1",
+  "input_sha256": "da8f6039f803d668bba800b0f48ce9d5d74fc7a9cc9f84777cf21853a4a66810",
+  "manifest_sha256": "5b0697018c781a7e8574f8c57a1d805c9e2e318b3157f38965c35e8aa24f3f81",
+  "audio_sha256": {
+    "7:8": "af19c7c77fc8e2f11bceb2c12edf36a708f349f6f90fea440328f050a85edd69",
+    "7:9": "f33771b68f0925e1250bea4f73541f6de7cd9acce5045dc6a716074471683599",
+    "7:10": "a7514f72e6d75660efd422d59dfe65fa435b965a6bbd876659ccefcd6c9be700",
+    "7:11": "868f326ef4e10dad9e6f80135494e7942948d92675d78ccbcd72a138caf42031",
+    "7:12": "25191dda2e2590da0bbe4aaefd67006dc92633abd6d80f49ccdff5e06da8433d",
+    "7:13": "8d609625329d4cb45dbba59defacb48abe5a472731fbd5a1c8caa69927d40cc2",
+    "7:14": "a27ff74b1c62c709389b010edd92655aad156d4b5a82c87f2d6dc6f757b25592",
+    "7:15": "3623739c048ea06350dc41a54e77c60ac4f865573278761a42eabb11d0638d18",
+    "7:16": "f9708f815aba0c0869ac4e6fef79fb14c9d0306e192c528137ae211f57a8bcf4",
+    "7:17": "3db00fe04904c23b797dce4949358042203c70d64ab8f24dfcbf92173b9ad536",
+    "7:18": "f999faac902add809fc34ca63ad3ce7ba642f01a01eb20e1752c26ab5eb1ed31",
+    "7:19": "ff37f6a459a967c477f02398222ba9c6f945d738306a822e65f33471fd45d954",
+    "7:20": "440b9878307c6197f79ec6d4658ae4bad8ba94fd2f25f239fe677c36001f18f9",
+    "7:21": "db730f58ac310d140fa734a3e581838ded63ef192d5fc243d99d6968a6a04920",
+    "7:22": "ffc99320c740dab342f57c3c7305064622144a431ae560f5848f705aead4dd81",
+    "7:23": "a9c196fae2464ca8d64fb60f746851eb3c8334f6a05fe67bf946a410eabd3531",
+    "7:24": "8b8257f281d84c1d70eef149b7a7ed905327b0219f1600df3fb2b7e887618991",
+    "7:25": "71ac7bb00f0eb92e1a3962febac37131f84a1ac39d4aa42695f1ea78bd08daf9",
+    "7:26": "9175368779f4f35a0855eb395100583b83ee717195b725a6645fd709fb255818",
+    "7:27": "221ad9aeaff7caa0ac27753348af769e56516036e5f6af3c4b3af6b713aec669",
+    "7:28": "1aed969a622321b0cd66b71b7b3ce50d0f4f153a367ad63c83dda825c9f575c1",
+    "7:29": "c4e87c7ef85905f412b4d0a8f0b7173387f16d98d024337f7530ed25f259dc0a",
+    "8:1": "5f5e5571abb92ebcf8f282d5d981f8af2b7973fdd1784055e02e2911b8fda774",
+    "8:2": "12350d9fa82a8fe08abcfd0721b4fa1007e373b277716e63e09e865faafd3459",
+    "8:3": "c625412715366bf62931894f1bd53808f2eec8fad9d02daa04fc428ab6b3a0d9",
+    "8:4": "5148208ea19376df665c3fcc5bb363cc547016bc032557ed482ce3074a5d280a",
+    "8:5": "d735d88cd64298b505e02741062964c2fae1d1f8ffb9e4312aeb46c3aec56886",
+    "8:6": "6c8080a7698c4f42c3b6d6021dba1956a095bf6f1e0563f07c32288e4f04dc2f"
+  },
+  "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [
+    {
+      "edge": "7:10/tail",
+      "status": "FAIL",
+      "reason": "missing עֲבָדָיו at the start of the ending phrase"
+    },
+    {
+      "edge": "7:14/head",
+      "status": "FAIL",
+      "reason": "speaker says אֲדֹנָי instead of יְהוָה"
+    },
+    {
+      "edge": "7:29/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "7:29/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:1/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:1/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:2/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:2/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:3/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:3/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:4/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:4/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:5/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:5/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:6/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "8:6/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    }
+  ],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-08T04:11:08.332Z",
+  "evidence": "全56境界レコードを監査。7:8–7:28の42境界観察のうち40件はPASS。7:10/tailは末尾ויהי לתניןが聞こえており、期待3語の先頭עבדיוが4秒抜粋内にないという根拠は人工的な抜粋開始点に関するもので、節末切断の証拠ではない。7:14/headはויאמר אדני אל משהが聞こえ、יהוהをAdonaiと読む慣習を誤ってFAILとした判定であり、節冒頭ずれではない。修復すべき境界移動を裏づける根拠は得られていないため現行MP3を維持する。7:29および8:1–6の14境界はRUN共通の保守的予算上限により未観察。既使用7要求・168秒・予約見積0.37575 USD、報告実使用見積0.0941905 USD。上限のリセット・追加詳査・候補生成は行わず未解決を残す。全節合格・全内容検品完了とは判定しない。",
+  "decision_sha256": "9381b67125acd4eaec9fa83e0af9ae3e0ec31d04a600c10a57509c4486c4e326",
+  "usage_sha256": "e7f04a3a5a53935e8d7dcff2dc3ab625f66f7975cec7c2502a667ea4efce3317",
+  "report_sha256": "162c75bd66b988f11e7246464b8ab8a4a64886d13e39fff74be1abd0dc993b88",
+  "email_disclosure_required": true
+}
