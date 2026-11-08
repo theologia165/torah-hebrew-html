@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Offline checks: historical routing and completed-page state preservation."""
 import os
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -21,6 +22,21 @@ class HistoryTest(unittest.TestCase):
             self.assertEqual(changed_runs('a'*40, 'b'*40), ['094-20261103-r1'])
         with self.assertRaises(ValueError):
             changed_runs('HEAD~1', 'HEAD')
+
+    def test_media_subprocess_cannot_consume_the_next_run(self):
+        workflow = Path(__file__).resolve().parents[2] / '.github/workflows/asaichi-torah-ver3.yml'
+        text = workflow.read_text()
+        start = text.index('            mapfile -t historical_runs')
+        end = text.index('\n          elif', start)
+        loop = text[start:end]
+        with tempfile.TemporaryDirectory() as tmp:
+            targets = Path(tmp) / 'targets'
+            targets.write_text('094-20261103-r1\n095-20261104-r1\n')
+            loop = loop.replace('/tmp/torah-history-targets', str(targets))
+            # A decoder that reads all stdin reproduces ffmpeg's loop hazard.
+            script = 'python() { cat >/dev/null; printf "%s\\n" "$2"; };\n' + loop
+            result = subprocess.check_output(['bash', '-c', script], text=True)
+            self.assertEqual(result.splitlines(), ['ver3/runs/094-20261103-r1', 'ver3/runs/095-20261104-r1'])
 
     def test_review_handoff_never_replaces_completed_production_handoff(self):
         with tempfile.TemporaryDirectory() as tmp:
