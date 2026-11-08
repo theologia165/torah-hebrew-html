@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0-historical-boundary-request",
+  "operation": "BOUNDED_HISTORICAL_BOUNDARY_REVIEW",
+  "run_id": "094-20261103-r1",
+  "page_id": "40d8aa46-08ae-819d-a7f7-e93f56e5c82d",
+  "reason": "利用者の明示依頼に基づき094・095を新しい境界検品方式でチェックし、根拠のある箇所のみ修正する。",
+  "requested_at": "2026-11-08",
+  "repair_if_confirmed": true,
+  "before": {
+    "run_id": "094-20261103-r1",
+    "input_sha256": "9fcf1c71e35813c3c8bf5bb0a6b110d9db63bc2c0c1ede725d55f85912a49a98",
+    "manifest_sha256": "9fab206ca9f0daec0ddf2675c666b6f4cfce14b278824478ede7b420ad398df0",
+    "audio_sha256": {
+      "6:29": "66b4ad378c1ed37adfc29ba644934b51f007be130b6a592ab4f1186c2a1b5cd7",
+      "6:30": "0f69b5d633d0611154abe2829ae450758e261ac3f4ea12168e2d78fb3c78bbc8",
+      "7:1": "8b62435345bda1c9c58326a530d1fd3623ade8b3c458b8903802c5d47cda6c93",
+      "7:2": "54d0ef8e1b2eadcd5b29d23c3402a07f95e41f60be2f65c1c085aea7e1968d9f",
+      "7:3": "8ee7462f930e9a18a4ebd4909ff43f7a3a18daa295e72464418bcba23bc43c6d",
+      "7:4": "f1841ee52219b65fb2fbc56ea4a43193d0cfb597ef64b8594942b93a4addf22f",
+      "7:5": "2bb1832cea6f634f99a2f7576109ce850c2cdefc6ffaee2ca21303b2400e9a82",
+      "7:6": "e8ae15721f86b7364eeb8c09cbccc76a560ab607e0b4927b8cb41dc9bebd039e",
+      "7:7": "4eec95024cd688f84bfc9d92b24ca2fef39a7da95dbe4e98dfe0b0fdd783a036"
+    }
+  }
+}

@@ -2,7 +2,7 @@ name: Asaichi Torah Ver.3
 on:
   push:
     branches: [asaichi-torah-ver3]
-    paths: ['ver3/request.json', 'ver3/runs/**/json2.json', 'ver3/runs/**/cover-ready.json', 'ver3/runs/**/completion.json', 'ver3/runs/**/ai-audio-request.json', 'ver3/runs/**/research-style-refresh.json', 'ver3/runs/**/audio-repair.json', 'ver3/runs/**/audio-boundary/decision.json', 'ver3/runs/**/audio-repairs/**/audio-content-review.json', 'ver3/runs/**/audio-repairs/**/audio-model-review-request.json', 'ver3/state/production.json', 'ver3/scripts/**', 'ver3/spec/**', 'ver3/quality/audio/**', 'ver3/templates/**', 'ver3/config/audio-fallback.json', 'ver3/config/audio-boundary.json', 'ver3/config/open-bible-sources.json', '.github/workflows/asaichi-torah-ver3.yml']
+    paths: ['ver3/request.json', 'ver3/runs/**/json2.json', 'ver3/runs/**/cover-ready.json', 'ver3/runs/**/completion.json', 'ver3/runs/**/ai-audio-request.json', 'ver3/runs/**/research-style-refresh.json', 'ver3/runs/**/audio-repair.json', 'ver3/runs/**/audio-boundary/decision.json', 'ver3/runs/**/audio-boundary/history-request.json', 'ver3/runs/**/audio-repairs/**/audio-content-review.json', 'ver3/runs/**/audio-repairs/**/audio-model-review-request.json', 'ver3/state/production.json', 'ver3/scripts/**', 'ver3/spec/**', 'ver3/quality/audio/**', 'ver3/templates/**', 'ver3/config/audio-fallback.json', 'ver3/config/audio-boundary.json', 'ver3/config/open-bible-sources.json', '.github/workflows/asaichi-torah-ver3.yml']
   workflow_dispatch:
     inputs:
       audio_quality_run_id:
@@ -58,14 +58,26 @@ jobs:
           python ver3/scripts/test_audio_fallback_policy.py
           python ver3/scripts/test_audio_quality.py
           python ver3/scripts/test_audio_boundary.py
+          python ver3/scripts/test_audio_boundary_history.py
           python ver3/scripts/test_handoff_contract.py
           python ver3/scripts/test_citation_readback.py
           node --check ver3/templates/search.js
       - name: Neon JSON1 → JSON1.1 → ChatGPT JSON2 → Notion JSON3
         env:
           AUDIO_QUALITY_RUN_ID: ${{ inputs.audio_quality_run_id }}
+          PUSH_BEFORE: ${{ github.event.before }}
+          PUSH_AFTER: ${{ github.sha }}
         run: |
-          if [ -n "$AUDIO_QUALITY_RUN_ID" ]; then
+          if [ "$GITHUB_EVENT_NAME" = push ]; then
+            python ver3/scripts/audio_boundary_history.py --changed-runs "$PUSH_BEFORE" "$PUSH_AFTER" > /tmp/torah-history-targets
+          else
+            : > /tmp/torah-history-targets
+          fi
+          if [ -s /tmp/torah-history-targets ]; then
+            while IFS= read -r historical_run; do
+              python ver3/scripts/audio_boundary_history.py "ver3/runs/$historical_run"
+            done < /tmp/torah-history-targets
+          elif [ -n "$AUDIO_QUALITY_RUN_ID" ]; then
             [[ "$AUDIO_QUALITY_RUN_ID" =~ ^[0-9]{3}-[0-9]{8}-r[0-9]+$ ]] || exit 1
             python ver3/scripts/audio_quality.py repair "ver3/runs/$AUDIO_QUALITY_RUN_ID"
           else

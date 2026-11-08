@@ -34,3 +34,9 @@ finalization.jsonは本文・manifest・全配信MP3のhash、Work判断、採�
 メールには境界検品結果、修復有無、採用音声、未解決の節・冒頭/末尾・理由を記す。API障害・予算到達・修復失敗も省かない。媒体が揃えば未解決でも通常の配信完了メールへ音声残件を併記する。completion.jsonのaudio_boundary.finalization_sha256へ証明hashを転記し、必要な報告を実送信・Sent確認したらaudio_boundary.disclosed_in_email=trueとする。完了ゲートは報告証明の一致を確認するが、境界PASSは番号進行の条件にしない。
 
 既完了RUNや093〜095の個別修復を、この機能導入のために再実行しない。新しい通常RUNから適用する。
+
+## 明示依頼された既完了回の境界再検品
+
+利用者が過去回を新方式で再検品・必要時修正するよう明示した場合だけ、対象RUNのaudio-boundary/history-request.jsonにoperation=BOUNDED_HISTORICAL_BOUNDARY_REVIEW、run_id、既存page_id、reason、repair_if_confirmed=true、before（現行音声のidentity）を記録する。このrequestまたは当該RUNのdecision.jsonのpushは、audio_boundary_history.pyが通常production requestと分離して対象回だけ処理する。既存のhandoff・delivery・completion・本番連番は保持し、再検品用handoffはhistory-handoff.jsonへ置く。予算・回数・候補採用条件は通常方式と同一。全内容PASSへ昇格しない。
+
+採用候補がある場合だけ変更節の既存Notion audio blockを更新し、公開MP3実体・全audio URL・本文等の非音声blockとページ表紙の不変を読戻し確認する。候補がない場合は既存音声を検証するだけで変更しない。結果はhistory-closed.jsonへ残し、過去の配信完了証明は書き換えない。厳格な全内容修復は引き続きaudio_quality_run_idを使う。
