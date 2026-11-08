@@ -5,6 +5,7 @@ import json
 import os
 import re
 import subprocess
+from urllib.parse import urlsplit, urlunsplit
 from pathlib import Path
 
 from audio.boundary import identity
@@ -28,6 +29,23 @@ def changed_runs(before, after):
     return sorted(selected)
 
 
+def stable_page(value):
+    """Notion refreshes file signatures without changing the cover asset."""
+    if isinstance(value, list):
+        return [stable_page(v) for v in value]
+    if not isinstance(value, dict):
+        return value
+    result = {}
+    for key, item in value.items():
+        if key == 'expiry_time':
+            continue
+        if key == 'file' and isinstance(item, dict) and isinstance(item.get('url'), str):
+            parts = urlsplit(item['url'])
+            item = {**item, 'url': urlunsplit((parts.scheme, parts.netloc, parts.path, '', ''))}
+        result[key] = stable_page(item)
+    return result
+
+
 def publish(run, request):
     """Read back all audio; patch only adopted, uniquely named changed audio."""
     import requests
@@ -39,7 +57,7 @@ def publish(run, request):
     page = request_json('GET', '/pages/' + page_id, token)
     blocks = children(page_id, token)
     before = non_audio_digest(blocks)
-    protected_page = {k: page.get(k) for k in ('properties', 'cover', 'icon', 'parent')}
+    protected_page = stable_page({k: page.get(k) for k in ('properties', 'cover', 'icon', 'parent')})
     manifest = read(run / 'audio/audio_manifest.json')
     by_ref = {v['ref']: v for v in manifest['verses']}
     mapped, ref = {}, None
@@ -60,7 +78,7 @@ def publish(run, request):
         write_json_atomic(snapshot, {'page_id': page_id, 'non_audio_sha256': before,
                                     'page': protected_page, 'audio_blocks': list(mapped.values())})
     saved = read(snapshot)
-    if saved['non_audio_sha256'] != before or saved['page'] != protected_page:
+    if saved['non_audio_sha256'] != before or stable_page(saved['page']) != protected_page:
         raise ValueError('Existing page changed during bounded repair')
     from runner import commit_run
     commit_run(run, 'Checkpoint existing Notion audio before bounded repair')
@@ -86,7 +104,7 @@ def publish(run, request):
     if non_audio_digest(after) != before:
         raise ValueError('Non-audio blocks changed')
     page_after = request_json('GET', '/pages/' + page_id, token)
-    if {k: page_after.get(k) for k in protected_page} != protected_page:
+    if stable_page({k: page_after.get(k) for k in protected_page}) != protected_page:
         raise ValueError('Page cover/title changed')
     after_by_id = {b['id']: b for b in after}
     for row in verified:

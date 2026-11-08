@@ -76,9 +76,11 @@ jobs:
           if [ -s /tmp/torah-history-targets ]; then
             # ffmpeg subprocesses may read stdin; materialize targets first.
             mapfile -t historical_runs < /tmp/torah-history-targets
+            history_status=0
             for historical_run in "${historical_runs[@]}"; do
-              python ver3/scripts/audio_boundary_history.py "ver3/runs/$historical_run" < /dev/null
+              python ver3/scripts/audio_boundary_history.py "ver3/runs/$historical_run" < /dev/null || history_status=1
             done
+            exit "$history_status"
           elif [ -n "$AUDIO_QUALITY_RUN_ID" ]; then
             [[ "$AUDIO_QUALITY_RUN_ID" =~ ^[0-9]{3}-[0-9]{8}-r[0-9]+$ ]] || exit 1
             python ver3/scripts/audio_quality.py repair "ver3/runs/$AUDIO_QUALITY_RUN_ID"

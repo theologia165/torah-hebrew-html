@@ -7,10 +7,17 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 from audio.manifest import write_json_atomic
-from audio_boundary_history import changed_runs, execute
+from audio_boundary_history import changed_runs, execute, stable_page
 
 
 class HistoryTest(unittest.TestCase):
+    def test_expiring_cover_signature_is_not_an_asset_change(self):
+        one = {'cover': {'type': 'file', 'file': {'url': 'https://files.example/asset-id/cover.jpg?signature=old', 'expiry_time': 'old'}}}
+        two = {'cover': {'type': 'file', 'file': {'url': 'https://files.example/asset-id/cover.jpg?signature=new', 'expiry_time': 'new'}}}
+        self.assertEqual(stable_page(one), stable_page(two))
+        two['cover']['file']['url'] = 'https://files.example/other-asset/cover.jpg?signature=new'
+        self.assertNotEqual(stable_page(one), stable_page(two))
+
     def test_only_explicit_history_inputs_select_old_runs(self):
         paths = '\n'.join([
             'ver3/runs/094-20261103-r1/audio-boundary/decision.json',
