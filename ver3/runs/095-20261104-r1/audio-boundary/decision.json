@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0-work-boundary-decision",
+  "run_id": "095-20261104-r1",
+  "report_sha256": "162c75bd66b988f11e7246464b8ab8a4a64886d13e39fff74be1abd0dc993b88",
+  "action": "DELIVER_CURRENT",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-08T04:11:08.332Z",
+  "evidence": "全56境界レコードを監査。7:8–7:28の42境界観察のうち40件はPASS。7:10/tailは末尾ויהי לתניןが聞こえており、期待3語の先頭עבדיוが4秒抜粋内にないという根拠は人工的な抜粋開始点に関するもので、節末切断の証拠ではない。7:14/headはויאמר אדני אל משהが聞こえ、יהוהをAdonaiと読む慣習を誤ってFAILとした判定であり、節冒頭ずれではない。修復すべき境界移動を裏づける根拠は得られていないため現行MP3を維持する。7:29および8:1–6の14境界はRUN共通の保守的予算上限により未観察。既使用7要求・168秒・予約見積0.37575 USD、報告実使用見積0.0941905 USD。上限のリセット・追加詳査・候補生成は行わず未解決を残す。全節合格・全内容検品完了とは判定しない。",
+  "work_assessment": {
+    "confirmed_boundary_defects": [],
+    "model_findings_not_confirmed_as_boundary_defects": [
+      {
+        "edge": "7:10/tail",
+        "reason": "Missing first expected word is at artificial excerpt start; verse-final words are audible."
+      },
+      {
+        "edge": "7:14/head",
+        "reason": "Adonai is the permitted traditional reading of the divine name, not an incorrect verse edge."
+      }
+    ],
+    "uninspected_refs": [
+      "7:29",
+      "8:1",
+      "8:2",
+      "8:3",
+      "8:4",
+      "8:5",
+      "8:6"
+    ],
+    "full_content_verified": false,
+    "repair_required_by_available_evidence": false
+  }
+}
