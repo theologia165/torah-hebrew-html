@@ -13,8 +13,14 @@
     "model": "LEFT_INFO_RIGHT_SCENE",
     "left_panel_ratio_target": 0.38,
     "right_scene_ratio_target": 0.62,
-    "left_panel_range": [0.34, 0.42],
-    "right_scene_range": [0.58, 0.66],
+    "left_panel_range": [
+      0.34,
+      0.42
+    ],
+    "right_scene_range": [
+      0.58,
+      0.66
+    ],
     "boundary": "soft organic transition; no hard modern UI divider",
     "safe_margin": "generous; all text must remain comfortably inside canvas"
   },
@@ -65,7 +71,19 @@
       "medieval European fantasy costume",
       "fantasy spectacle",
       "people, events or symbols absent from or unsupported by the current passage"
-    ]
+    ],
+    "photographic_direction": {
+      "scope": "Right-side scene only. Keep the left information panel and every required character crisp and fully legible; do not apply optical blur or light bloom to text. Preserve the existing unified 1200x630 cover layout.",
+      "intent": "Plan the viewpoint, framing, focus and light like a professional environmental photographer while retaining warm painterly realism and the current parasha's visual identity.",
+      "narrative_focus": "From the current RUN's passage and theme, first identify the main person, relationship, expression, gesture, object or landscape and the meaningful instant to depict. Direct the viewer's eye toward that focus.",
+      "viewpoint_and_framing": "Choose camera height, distance, framing, subject placement, gaze and negative space to support the current passage. For intimate encounters, favor a close human-scale view with natural standard-to-short-telephoto perspective. Use wider views when communal action, scale or landscape is central.",
+      "depth_of_field": "When suitable, build foreground, main-subject and background depth: a softly defocused near element, a sharply readable main subject, and a gently defocused distant setting. Let focus and blur change plausibly with distance from the focal plane; avoid uniform blur, cutout halos or arbitrarily blurred body parts. Do not invent people or props merely to create a foreground layer.",
+      "relational_focus": "If a relationship or group is the subject, keep the relevant faces, hands and actions readable together through staging and sufficient depth of field. Do not isolate one face so strongly that the passage's central relationship disappears.",
+      "lens_and_aperture": "Select the lens character and depth of field for each scene. Intimate portraits may use a shallower depth of field; communal or landscape scenes may use a deeper one. Focal-length and f-number descriptions are optional visual guidance, never fixed numeric requirements. Strong bokeh and three distinct layers are not mandatory in every scene.",
+      "lighting_and_texture": "Use a coherent light direction, soft modeled shadows and, when appropriate, restrained rim or reflected light to reveal faces, cloth and spatial depth. Retain natural skin and material texture without plastic smoothing, excessive HDR or oversharpening.",
+      "variation": "Choose composition and lighting afresh from the current passage. Do not mechanically repeat golden sunsets, upward-looking posed groups, the same focal subject, camera angle or foreground object.",
+      "fidelity_and_continuity": "Current passage fidelity and exact required text take precedence over photographic effects. Preserve the parasha palette, materials and historical-world continuity; do not add unsupported actions, relationships or events or use past images or generation identifiers."
+    }
   },
   "generation_policy": {
     "fresh_generation_only": true,
@@ -128,7 +146,11 @@
       "no typo, garbling or omission",
       "no cross-run number/title/range/scene contamination",
       "right-side scene is consistent with current passage",
-      "final image is 1200x630"
+      "final image is 1200x630",
+      "right-side visual focus and viewpoint support the current passage and theme",
+      "focus and blur vary plausibly with scene depth when appropriate; strong bokeh is not required",
+      "important faces, hands and relationships remain readable and the left text is unaffected by optical effects",
+      "theme and required text remain clear at thumbnail viewing size"
     ]
   },
   "persistence": {
