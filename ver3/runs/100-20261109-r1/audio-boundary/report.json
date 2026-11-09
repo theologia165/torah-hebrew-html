@@ -1,0 +1,741 @@
+{
+  "schema_version": "1.0-boundary-report",
+  "run_id": "100-20261109-r1",
+  "input_sha256": "98a74b3b62dea5bdc30321926e6f19a9d3a1342c425ef35a0a1a2e6b6c5b5c87",
+  "manifest_sha256": "304e025b0c6ce6c2357d1f4063b5b626614950431990502de20d62b1f27c3abf",
+  "audio_sha256": {
+    "10:12": "36231f4773b5d5b79bf0e7a28857a6bedfa75755939429d752488f0dd00e6741",
+    "10:13": "daef776628066ebbb47c07782d13201b9d474c4afca61ff86d1cd7b2db0c7b49",
+    "10:14": "fccee3d8e50a6e48e8192a72713b8a080a80f8cce41a22a70137d94756c4c834",
+    "10:15": "747fbbc13d445c2faa0f11c02ad1ecd734b0958456a20886a07e03147129b0c4",
+    "10:16": "e3212b74f0d50e68f2124e2397a4aca69ea4d90a670bd511f3740b4816835c14",
+    "10:17": "77bd93eb944946dd7c8576c80227796a580bcd554c38e0430dd37a2a13b53690",
+    "10:18": "51ff5e6b35094358713e22a621cac46bc85da1018c2c9d4b662bea5bfaebfb17",
+    "10:19": "5e569683ff3707e84f3b1b4d4e50f4f191f71214ea8593932fc9292422a58507",
+    "10:20": "5fbadae80fcd2f73eb7a7ed32b46176cfea401140e523fa1e00e10e82db1293d",
+    "10:21": "caee8ffbb7cfbc137f2e3000e215e68e3889de6b21879b62d40db824daab5157",
+    "10:22": "5295d34c13d52e002394f824069692eea9c43267f6b7ee1dc90964eb22b0982a",
+    "10:23": "9ada8c23f2f65c276591abf66055348690cf38f99809c2d03f94a4a365b5977e"
+  },
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "policy_sha256": "984d8bb9cb196764d8093a1e0df226a744fd9e69a4f3f721208dbf2e5f80244e",
+  "observations": [
+    {
+      "id": "10:12/head",
+      "ref": "10:12",
+      "side": "head",
+      "audio_sha256": "36231f4773b5d5b79bf0e7a28857a6bedfa75755939429d752488f0dd00e6741",
+      "start": 0,
+      "end": 4,
+      "expected": "וַיֹּאמֶר יְהוָה אֶל",
+      "other_edge": "",
+      "boundary_start": 1.714772,
+      "boundary_end": 24.047035,
+      "boundary_start_meta": {
+        "candidate": 1.714772,
+        "refined": 1.714772,
+        "method": "first_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 24.047035,
+        "refined": 24.047035,
+        "method": "next_word_onset"
+      },
+      "cache_key": "c8795ded8290a11bed515ea7a9be28682e7d332ce09cdebbc52a75e201204110",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיֹּאמֶר יְהוָה אֶל",
+        "evidence": "The clip begins clearly with the expected words.",
+        "request_id": 1,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:12/tail",
+      "ref": "10:12",
+      "side": "tail",
+      "audio_sha256": "36231f4773b5d5b79bf0e7a28857a6bedfa75755939429d752488f0dd00e6741",
+      "start": 26.249796,
+      "end": 30.249796,
+      "expected": "אֲשֶׁר הִשְׁאִיר הַבָּרָֽד",
+      "other_edge": "וַיֵּט מֹשֶׁה אֶת",
+      "boundary_start": 1.714772,
+      "boundary_end": 24.047035,
+      "boundary_start_meta": {
+        "candidate": 1.714772,
+        "refined": 1.714772,
+        "method": "first_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 24.047035,
+        "refined": 24.047035,
+        "method": "next_word_onset"
+      },
+      "cache_key": "e179d5e5be254fa04e642c5e63ff013fd9a74703d9bdcd33d97c1c10916e84db",
+      "observation": {
+        "status": "PASS",
+        "heard": "אֲשֶׁר הִשְׁאִיר הַבָּרָד",
+        "evidence": "The clip ends with the expected phrase clearly audible.",
+        "request_id": 1,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:13/head",
+      "ref": "10:13",
+      "side": "head",
+      "audio_sha256": "daef776628066ebbb47c07782d13201b9d474c4afca61ff86d1cd7b2db0c7b49",
+      "start": 0,
+      "end": 4,
+      "expected": "וַיֵּט מֹשֶׁה אֶת",
+      "other_edge": "אֲשֶׁר הִשְׁאִיר הַבָּרָֽד",
+      "boundary_start": 24.047035,
+      "boundary_end": 47.325937,
+      "boundary_start_meta": {
+        "candidate": 24.047035,
+        "refined": 24.047035,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 47.325937,
+        "refined": 47.325937,
+        "method": "next_word_onset"
+      },
+      "cache_key": "1aff199739d3c85885ecf8375e5861298f5153dd1217a9a818f0a8afe7d31904",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיֵּט מֹשֶׁה אֶת",
+        "evidence": "The clip starts with the expected words clearly spoken.",
+        "request_id": 1,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:13/tail",
+      "ref": "10:13",
+      "side": "tail",
+      "audio_sha256": "daef776628066ebbb47c07782d13201b9d474c4afca61ff86d1cd7b2db0c7b49",
+      "start": 26.223673,
+      "end": 30.223673,
+      "expected": "נָשָׂא אֶת הָאַרְבֶּֽה",
+      "other_edge": "וַיַּעַל הָֽאַרְבֶּה עַל",
+      "boundary_start": 24.047035,
+      "boundary_end": 47.325937,
+      "boundary_start_meta": {
+        "candidate": 24.047035,
+        "refined": 24.047035,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 47.325937,
+        "refined": 47.325937,
+        "method": "next_word_onset"
+      },
+      "cache_key": "cc7aa4fbaea23581b48187548ce451eff1501794dbb461ee6f08a90eb472f8f8",
+      "observation": {
+        "status": "PASS",
+        "heard": "נָשָׂא אֶת הָאַרְבֶּה",
+        "evidence": "The clip ends with the expected phrase clearly audible.",
+        "request_id": 1,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:14/head",
+      "ref": "10:14",
+      "side": "head",
+      "audio_sha256": "fccee3d8e50a6e48e8192a72713b8a080a80f8cce41a22a70137d94756c4c834",
+      "start": 0,
+      "end": 4,
+      "expected": "וַיַּעַל הָֽאַרְבֶּה עַל",
+      "other_edge": "נָשָׂא אֶת הָאַרְבֶּֽה",
+      "boundary_start": 47.325937,
+      "boundary_end": 71.661273,
+      "boundary_start_meta": {
+        "candidate": 47.325937,
+        "refined": 47.325937,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 71.661273,
+        "refined": 71.661273,
+        "method": "next_word_onset"
+      },
+      "cache_key": "565eb9e77d5b8bebebc16fb0a31506d0590df318093b0293663b01fb4a322907",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיַּעַל הָאַרְבֶּה עַל",
+        "evidence": "The clip begins with the expected words clearly spoken.",
+        "request_id": 1,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:14/tail",
+      "ref": "10:14",
+      "side": "tail",
+      "audio_sha256": "fccee3d8e50a6e48e8192a72713b8a080a80f8cce41a22a70137d94756c4c834",
+      "start": 23.742041,
+      "end": 27.742041,
+      "expected": "לֹא יִֽהְיֶה כֵּֽן",
+      "other_edge": "וַיְכַס אֶת עֵין",
+      "boundary_start": 47.325937,
+      "boundary_end": 71.661273,
+      "boundary_start_meta": {
+        "candidate": 47.325937,
+        "refined": 47.325937,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 71.661273,
+        "refined": 71.661273,
+        "method": "next_word_onset"
+      },
+      "cache_key": "9a085077c923a2ce9868e8e490da6b89059fb92d73725ea54d41277c34c4c386",
+      "observation": {
+        "status": "PASS",
+        "heard": "לֹא יִהְיֶה כֵּן",
+        "evidence": "The clip ends with the expected phrase clearly audible.",
+        "request_id": 1,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:15/head",
+      "ref": "10:15",
+      "side": "head",
+      "audio_sha256": "747fbbc13d445c2faa0f11c02ad1ecd734b0958456a20886a07e03147129b0c4",
+      "start": 0,
+      "end": 4,
+      "expected": "וַיְכַס אֶת עֵין",
+      "other_edge": "לֹא יִֽהְיֶה כֵּֽן",
+      "boundary_start": 71.661273,
+      "boundary_end": 101.861694,
+      "boundary_start_meta": {
+        "candidate": 71.661273,
+        "refined": 71.661273,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 101.861694,
+        "refined": 101.861694,
+        "method": "next_word_onset"
+      },
+      "cache_key": "aa95217b28c1b6155921d25c748a71db010b646ca0366d7b55cb1bab35876481",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיְכַס אֶת עֵין",
+        "evidence": "clear articulation of all expected words at the start",
+        "request_id": 2,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:15/tail",
+      "ref": "10:15",
+      "side": "tail",
+      "audio_sha256": "747fbbc13d445c2faa0f11c02ad1ecd734b0958456a20886a07e03147129b0c4",
+      "start": 32.545306,
+      "end": 36.545306,
+      "expected": "בְּכָל אֶרֶץ מִצְרָֽיִם",
+      "other_edge": "וַיְמַהֵר פַּרְעֹה לִקְרֹא",
+      "boundary_start": 71.661273,
+      "boundary_end": 101.861694,
+      "boundary_start_meta": {
+        "candidate": 71.661273,
+        "refined": 71.661273,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 101.861694,
+        "refined": 101.861694,
+        "method": "next_word_onset"
+      },
+      "cache_key": "dfbabca48385070d4bb193943c5048ecb047ec4f463cb839761c179c03bf2fcb",
+      "observation": {
+        "status": "PASS",
+        "heard": "בְּכָל אֶרֶץ מִצְרָֽיִם",
+        "evidence": "ending phrase matches expected words clearly",
+        "request_id": 2,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:16/head",
+      "ref": "10:16",
+      "side": "head",
+      "audio_sha256": "e3212b74f0d50e68f2124e2397a4aca69ea4d90a670bd511f3740b4816835c14",
+      "start": 0,
+      "end": 4,
+      "expected": "וַיְמַהֵר פַּרְעֹה לִקְרֹא",
+      "other_edge": "בְּכָל אֶרֶץ מִצְרָֽיִם",
+      "boundary_start": 101.861694,
+      "boundary_end": 115.470907,
+      "boundary_start_meta": {
+        "candidate": 101.861694,
+        "refined": 101.861694,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 115.470907,
+        "refined": 115.470907,
+        "method": "next_word_onset"
+      },
+      "cache_key": "c1d404e682595748acbbb67f883d6a30d1add1ee359022c6e664bd9736db8c99",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיְמַהֵר פַּרְעֹה לִקְרֹא",
+        "evidence": "all expected words audible at the beginning",
+        "request_id": 2,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:16/tail",
+      "ref": "10:16",
+      "side": "tail",
+      "audio_sha256": "e3212b74f0d50e68f2124e2397a4aca69ea4d90a670bd511f3740b4816835c14",
+      "start": 9.635918,
+      "end": 13.635918,
+      "expected": "לַיהוָה אֱלֹֽהֵיכֶם וְלָכֶֽם",
+      "other_edge": "וְעַתָּה שָׂא נָא",
+      "boundary_start": 101.861694,
+      "boundary_end": 115.470907,
+      "boundary_start_meta": {
+        "candidate": 101.861694,
+        "refined": 101.861694,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 115.470907,
+        "refined": 115.470907,
+        "method": "next_word_onset"
+      },
+      "cache_key": "33cc765b4637cb3bee61a3fa21421de5a100e20ddee9c6376d33102a9a08ea6d",
+      "observation": {
+        "status": "PASS",
+        "heard": "לַיהוָה אֱלֹֽהֵיכֶם וְלָכֶֽם",
+        "evidence": "ending phrase fully present and clear",
+        "request_id": 2,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:17/head",
+      "ref": "10:17",
+      "side": "head",
+      "audio_sha256": "77bd93eb944946dd7c8576c80227796a580bcd554c38e0430dd37a2a13b53690",
+      "start": 0,
+      "end": 4,
+      "expected": "וְעַתָּה שָׂא נָא",
+      "other_edge": "לַיהוָה אֱלֹֽהֵיכֶם וְלָכֶֽם",
+      "boundary_start": 115.470907,
+      "boundary_end": 130.988347,
+      "boundary_start_meta": {
+        "candidate": 115.470907,
+        "refined": 115.470907,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 130.988347,
+        "refined": 130.988347,
+        "method": "next_word_onset"
+      },
+      "cache_key": "45fec6ea580a22e78a08e3428367a5405c6c9a634d111f06f8598d38fe2ff181",
+      "observation": {
+        "status": "PASS",
+        "heard": "וְעַתָּה שָׂא נָא",
+        "evidence": "initial words match expected phrase",
+        "request_id": 2,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:17/tail",
+      "ref": "10:17",
+      "side": "tail",
+      "audio_sha256": "77bd93eb944946dd7c8576c80227796a580bcd554c38e0430dd37a2a13b53690",
+      "start": 14.860408,
+      "end": 18.860408,
+      "expected": "אֶת הַמָּוֶת הַזֶּֽה",
+      "other_edge": "וַיֵּצֵא מֵעִם פַּרְעֹה",
+      "boundary_start": 115.470907,
+      "boundary_end": 130.988347,
+      "boundary_start_meta": {
+        "candidate": 115.470907,
+        "refined": 115.470907,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 130.988347,
+        "refined": 130.988347,
+        "method": "next_word_onset"
+      },
+      "cache_key": "8f763b8d99c773d81ef682eed073e6ee8c6192f1cb69accd2a5f8e1df19f541c",
+      "observation": {
+        "status": "PASS",
+        "heard": "אֶת הַמָּוֶת הַזֶּֽה",
+        "evidence": "final words clearly heard as expected",
+        "request_id": 2,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:18/whole",
+      "ref": "10:18",
+      "side": "whole",
+      "audio_sha256": "51ff5e6b35094358713e22a621cac46bc85da1018c2c9d4b662bea5bfaebfb17",
+      "start": 0,
+      "end": 7.523265,
+      "expected": "וַיֵּצֵא מֵעִם פַּרְעֹה וַיֶּעְתַּר אֶל יְהוָֽה",
+      "other_edge": "וַיַּהֲפֹךְ יְהוָה רֽוּחַ",
+      "boundary_start": 130.988347,
+      "boundary_end": 137.284571,
+      "boundary_start_meta": {
+        "candidate": 130.988347,
+        "refined": 130.988347,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 137.284571,
+        "refined": 137.284571,
+        "method": "next_word_onset"
+      },
+      "cache_key": "235c98e4f5dc8000a36850ca952a90aacf71ef94553eb95b46519410eabdd103",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיֵּצֵא מֵעִם פַּרְעֹה וַיֶּעְתַּר אֶל יְהוָֽה",
+        "evidence": "Both beginning and ending words are clearly audible",
+        "request_id": 3,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:19/head",
+      "ref": "10:19",
+      "side": "head",
+      "audio_sha256": "5e569683ff3707e84f3b1b4d4e50f4f191f71214ea8593932fc9292422a58507",
+      "start": 0,
+      "end": 4,
+      "expected": "וַיַּהֲפֹךְ יְהוָה רֽוּחַ",
+      "other_edge": "וַיֶּעְתַּר אֶל יְהוָֽה",
+      "boundary_start": 137.284571,
+      "boundary_end": 156.266048,
+      "boundary_start_meta": {
+        "candidate": 137.284571,
+        "refined": 137.284571,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 156.266048,
+        "refined": 156.266048,
+        "method": "next_word_onset"
+      },
+      "cache_key": "f6fec7793feb2f699aee703b1662f5a4d3a0232cf221c701f9dff06c566a3b5a",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיַּהֲפֹךְ יְהוָה",
+        "evidence": "The clip starts with the expected words",
+        "request_id": 3,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:19/tail",
+      "ref": "10:19",
+      "side": "tail",
+      "audio_sha256": "5e569683ff3707e84f3b1b4d4e50f4f191f71214ea8593932fc9292422a58507",
+      "start": 19.954286,
+      "end": 23.954286,
+      "expected": "בְּכֹל גְּבוּל מִצְרָֽיִם",
+      "other_edge": "וַיְחַזֵּק יְהוָה אֶת",
+      "boundary_start": 137.284571,
+      "boundary_end": 156.266048,
+      "boundary_start_meta": {
+        "candidate": 137.284571,
+        "refined": 137.284571,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 156.266048,
+        "refined": 156.266048,
+        "method": "next_word_onset"
+      },
+      "cache_key": "cac9f56ec0cfe166a83134278f2bda8822d57eee33f3bb11b3e97ab679470783",
+      "observation": {
+        "status": "PASS",
+        "heard": "בְּכֹל גְּבוּל מִצְרָֽיִם",
+        "evidence": "The clip ends with the expected words",
+        "request_id": 3,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:20/head",
+      "ref": "10:20",
+      "side": "head",
+      "audio_sha256": "5fbadae80fcd2f73eb7a7ed32b46176cfea401140e523fa1e00e10e82db1293d",
+      "start": 0,
+      "end": 4,
+      "expected": "וַיְחַזֵּק יְהוָה אֶת",
+      "other_edge": "בְּכֹל גְּבוּל מִצְרָֽיִם",
+      "boundary_start": 156.266048,
+      "boundary_end": 164.600816,
+      "boundary_start_meta": {
+        "candidate": 156.266048,
+        "refined": 156.266048,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 164.600816,
+        "refined": 164.600816,
+        "method": "next_word_onset"
+      },
+      "cache_key": "eada77222b5ca2628def00e2bd88068a477660ef628da00de8f2ea315585afeb",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיְחַזֵּק יְהוָה",
+        "evidence": "The clip starts with the expected words",
+        "request_id": 3,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:20/tail",
+      "ref": "10:20",
+      "side": "tail",
+      "audio_sha256": "5fbadae80fcd2f73eb7a7ed32b46176cfea401140e523fa1e00e10e82db1293d",
+      "start": 8.564898,
+      "end": 12.564898,
+      "expected": "אֶת בְּנֵי יִשְׂרָאֵֽל",
+      "other_edge": "וַיֹּאמֶר יְהוָה אֶל",
+      "boundary_start": 156.266048,
+      "boundary_end": 164.600816,
+      "boundary_start_meta": {
+        "candidate": 156.266048,
+        "refined": 156.266048,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 164.600816,
+        "refined": 164.600816,
+        "method": "next_word_onset"
+      },
+      "cache_key": "57d72ff794740cd9068b668a8c8bc78d2577729194621ea76e7c6db28f2c5e57",
+      "observation": {
+        "status": "PASS",
+        "heard": "אֶת בְּנֵי יִשְׂרָאֵֽל",
+        "evidence": "The clip ends with the expected words",
+        "request_id": 3,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:21/head",
+      "ref": "10:21",
+      "side": "head",
+      "audio_sha256": "caee8ffbb7cfbc137f2e3000e215e68e3889de6b21879b62d40db824daab5157",
+      "start": 0,
+      "end": 4,
+      "expected": "וַיֹּאמֶר יְהוָה אֶל",
+      "other_edge": "אֶת בְּנֵי יִשְׂרָאֵֽל",
+      "boundary_start": 164.600816,
+      "boundary_end": 178.05606,
+      "boundary_start_meta": {
+        "candidate": 164.600816,
+        "refined": 164.600816,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 178.05606,
+        "refined": 178.05606,
+        "method": "next_word_onset"
+      },
+      "cache_key": "804c9ea8e60860775c916a34ac01328dc7a4044c1c861dcf7df45e66df46cabe",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיֹּאמֶר יְהוָה אֶל",
+        "evidence": "The clip starts with the expected words",
+        "request_id": 3,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:21/tail",
+      "ref": "10:21",
+      "side": "tail",
+      "audio_sha256": "caee8ffbb7cfbc137f2e3000e215e68e3889de6b21879b62d40db824daab5157",
+      "start": 14.860408,
+      "end": 18.860408,
+      "expected": "מִצְרָיִם וְיָמֵשׁ חֹֽשֶׁךְ",
+      "other_edge": "וַיֵּט מֹשֶׁה אֶת",
+      "boundary_start": 164.600816,
+      "boundary_end": 178.05606,
+      "boundary_start_meta": {
+        "candidate": 164.600816,
+        "refined": 164.600816,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 178.05606,
+        "refined": 178.05606,
+        "method": "next_word_onset"
+      },
+      "cache_key": "3283a9059e0feac483dddbe24be4dac64e36a4b7611a73f48676b9b2c5c20886",
+      "observation": {
+        "status": "PASS",
+        "heard": "מִצְרָיִם וְיָמֵשׁ חֹשֶׁךְ",
+        "evidence": "Both expected ending words are clearly audible at the end of the clip.",
+        "request_id": 4,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:22/head",
+      "ref": "10:22",
+      "side": "head",
+      "audio_sha256": "5295d34c13d52e002394f824069692eea9c43267f6b7ee1dc90964eb22b0982a",
+      "start": 0,
+      "end": 4,
+      "expected": "וַיֵּט מֹשֶׁה אֶת",
+      "other_edge": "מִצְרָיִם וְיָמֵשׁ חֹֽשֶׁךְ",
+      "boundary_start": 178.05606,
+      "boundary_end": 191.78184,
+      "boundary_start_meta": {
+        "candidate": 178.05606,
+        "refined": 178.05606,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 191.78184,
+        "refined": 191.78184,
+        "method": "next_word_onset"
+      },
+      "cache_key": "9c6115381c0b7ab308362aeb13f61c7c19c5b3e29a9b368c7191e68d673af9c7",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיֵּט מֹשֶׁה",
+        "evidence": "The clip begins with the expected words clearly pronounced.",
+        "request_id": 4,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:22/tail",
+      "ref": "10:22",
+      "side": "tail",
+      "audio_sha256": "5295d34c13d52e002394f824069692eea9c43267f6b7ee1dc90964eb22b0982a",
+      "start": 13.632653,
+      "end": 17.632653,
+      "expected": "מִצְרַיִם שְׁלֹשֶׁת יָמִֽים",
+      "other_edge": "לֹֽא רָאוּ אִישׁ",
+      "boundary_start": 178.05606,
+      "boundary_end": 191.78184,
+      "boundary_start_meta": {
+        "candidate": 178.05606,
+        "refined": 178.05606,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 191.78184,
+        "refined": 191.78184,
+        "method": "next_word_onset"
+      },
+      "cache_key": "b097ec700ac21a43199cbe86b2349b3ab299a779e0257aea1d90810fc3c2c3f4",
+      "observation": {
+        "status": "PASS",
+        "heard": "מִצְרַיִם שְׁלֹשֶׁת יָמִים",
+        "evidence": "The expected ending words are clearly heard at the end of the clip.",
+        "request_id": 4,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:23/head",
+      "ref": "10:23",
+      "side": "head",
+      "audio_sha256": "9ada8c23f2f65c276591abf66055348690cf38f99809c2d03f94a4a365b5977e",
+      "start": 0,
+      "end": 4,
+      "expected": "לֹֽא רָאוּ אִישׁ",
+      "other_edge": "מִצְרַיִם שְׁלֹשֶׁת יָמִֽים",
+      "boundary_start": 191.78184,
+      "boundary_end": 211.38275,
+      "boundary_start_meta": {
+        "candidate": 191.78184,
+        "refined": 191.78184,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 211.38275,
+        "refined": 211.38275,
+        "method": "source_end"
+      },
+      "cache_key": "34ef82c0bf7759ebd3d9f80bc67ac622f136af1e75bc180f9d35dfc9bfe69e97",
+      "observation": {
+        "status": "PASS",
+        "heard": "לֹא רָאוּ אִישׁ",
+        "evidence": "The clip starts with the expected words clearly audible.",
+        "request_id": 4,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    },
+    {
+      "id": "10:23/tail",
+      "ref": "10:23",
+      "side": "tail",
+      "audio_sha256": "9ada8c23f2f65c276591abf66055348690cf38f99809c2d03f94a4a365b5977e",
+      "start": 17.420408,
+      "end": 21.420408,
+      "expected": "הָיָה אוֹר בְּמוֹשְׁבֹתָֽם",
+      "other_edge": "",
+      "boundary_start": 191.78184,
+      "boundary_end": 211.38275,
+      "boundary_start_meta": {
+        "candidate": 191.78184,
+        "refined": 191.78184,
+        "method": "next_word_onset"
+      },
+      "boundary_end_meta": {
+        "candidate": 211.38275,
+        "refined": 211.38275,
+        "method": "source_end"
+      },
+      "cache_key": "033eebf41a12500097b418a8348eecaa40fd2ab1b831ae854904701d8d5da435",
+      "observation": {
+        "status": "PASS",
+        "heard": "הָיָה אוֹר בְּמוֹשְׁבֹתָם",
+        "evidence": "The expected ending words are clearly heard at the end of the clip.",
+        "request_id": 4,
+        "suggested_cut_seconds": null
+      },
+      "known_findings": []
+    }
+  ],
+  "problem_edges": [],
+  "missing_audio_refs": [],
+  "status": "BOUNDARY_OBSERVATIONS_PASS"
+}
