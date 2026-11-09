@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "100-20261109-r1",
+  "sequence": "100",
+  "delivery_status": "PASS",
+  "page_id": "4138aa46-08ae-81c6-9e61-cc60457c91f0",
+  "page_url": "https://app.notion.com/p/100-10-12-23-4138aa4608ae81c69e61cc60457c91f0",
+  "gmail": {
+    "message_id": "1a1c0787329a0d47",
+    "subject": "100｜出エジプト記10:12–23",
+    "sent_verified": true,
+    "to": "nishiharat@gmail.com",
+    "attachment": {
+      "filename": "asaichi-torah-100-20261109.jpg",
+      "byte_size": 272821,
+      "sha256": "42b6ae3ee8d865c25d511705084f7affa43c0eabb172efea6dd7d8b00f65773f",
+      "sent_attachment_verified": true,
+      "verification_method": "Sent MIME filename/type/byte size readback"
+    }
+  },
+  "completed_at": "2026-11-09T13:21:44.210Z",
+  "verse_count": 12,
+  "token_count": 205,
+  "WORK_JSON2_QUALITY": "PASS",
+  "cover_status": "PASS",
+  "audio_machine_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "finalization_sha256": "9e9e05c283568f9ac184075756a2c05ee3d194a7b56b7298a568ca3c6dcdb75a",
+    "status": "BOUNDARY_PASS",
+    "disclosed_in_email": true,
+    "full_content_verified": false,
+    "repair_attempted": false,
+    "candidate_adopted": false,
+    "unresolved": []
+  },
+  "next_passage": {
+    "parasha": "Bo",
+    "parasha_jp": "ボー",
+    "aliyah": 3,
+    "book": "Exodus",
+    "chapter": 10,
+    "end_chapter": 11,
+    "start_verse": 24,
+    "end_verse": 3,
+    "display": "ボー｜第3アリヤー｜出エジプト記10:24–11:3"
+  }
+}
