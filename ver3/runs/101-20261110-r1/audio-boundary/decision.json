@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0-work-boundary-decision",
+  "run_id": "101-20261110-r1",
+  "report_sha256": "b4a3bf257e0926fe04f8b88e44728f492ea48abffa7fbd7913a570fca9f75087",
+  "action": "DELIVER_CURRENT",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-10T13:16:04.918Z",
+  "evidence": "9節の冒頭・末尾18観察を全件照合。10:24/head ויקרא פרעה אל、tail טפכם ילך עמכם；10:25/head ויאמר משה גם、tail ועשינו ליהוה אלהינו；10:26/head וגם מקננו ילך、tail עד באנו שמה；10:27/head ויחזק יהוה את、tail ולא אבה לשלחם；10:28/head ויאמר לו פרעה、tail ראתך פני תמות；10:29/head ויאמר משה כן、tail עוד ראות פניך；11:1/headは期待する冒頭ויאמר יהוהが明瞭との観察で、heardに第3語אלの明記がないことを確認した。4秒抜粋の内部終端から実ファイル冒頭の欠落を推定しない。11:1/tail יגרש אתכם מזה；11:2/head דבר נא באזני、tail כסף וכלי זהב；11:3/head ויתן יהוה את、tail פרעה ובעיני העם。全観察PASS、隣接節混入・実境界の早切れ・冒頭欠落を示す報告なし、known_findings/problem_edges/missing_audio_refsすべて空。機械PASSだけではなく各heardとevidenceを本文に照合した判断。詳査・修復の根拠は認めずDELIVER_CURRENT。3要求72秒、追加要求なし。境界のみの判断であり、11:1冒頭の第3語を含む全語照合、節中央の欠落や全編内容の正しさは認証しない。full_content_verified=falseを保持。"
+}
