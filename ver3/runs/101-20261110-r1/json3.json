@@ -1,0 +1,2898 @@
+{
+  "schema_version": "3.0-json3",
+  "run_id": "101-20261110-r1",
+  "json1_sha256": "acd4c166bf9c9f0f675ee34db9ad9877b187804718d30e6464b4161416ee11f9",
+  "json2_sha256": "039c7b775bf3c02c30f9d611cf4ae326e403e691ce616d4d7107c26b4984ac62",
+  "title": "101｜出エジプト記10:24–11:3",
+  "verses": [
+    {
+      "ref": "Exod.10.24",
+      "tokens": [
+        {
+          "token_id": 21148,
+          "token_index": 1,
+          "surface": "וַיִּקְרָ֨א",
+          "ja": "そして呼び寄せた"
+        },
+        {
+          "token_id": 21149,
+          "token_index": 2,
+          "surface": "פַרְעֹ֜ה",
+          "ja": "ファラオは"
+        },
+        {
+          "token_id": 21150,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 21151,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֗ה",
+          "ja": "モーセ"
+        },
+        {
+          "token_id": 21152,
+          "token_index": 5,
+          "surface": "וַיֹּ֨אמֶר֙",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 21153,
+          "token_index": 6,
+          "surface": "לְכוּ֙",
+          "ja": "行け、あなたがたは"
+        },
+        {
+          "token_id": 21154,
+          "token_index": 7,
+          "surface": "עִבְד֣וּ",
+          "ja": "仕えよ、あなたがたは"
+        },
+        {
+          "token_id": 21155,
+          "token_index": 8,
+          "surface": "אֶת",
+          "ja": "〜を〔目的語〕"
+        },
+        {
+          "token_id": 21156,
+          "token_index": 9,
+          "surface": "יְהוָ֔ה",
+          "ja": "主に"
+        },
+        {
+          "token_id": 21157,
+          "token_index": 10,
+          "surface": "רַ֛ק",
+          "ja": "ただし"
+        },
+        {
+          "token_id": 21158,
+          "token_index": 11,
+          "surface": "צֹאנְכֶ֥ם",
+          "ja": "あなたがたの羊・山羊の群れは"
+        },
+        {
+          "token_id": 21159,
+          "token_index": 12,
+          "surface": "וּבְקַרְכֶ֖ם",
+          "ja": "そしてあなたがたの牛の群れは"
+        },
+        {
+          "token_id": 21160,
+          "token_index": 13,
+          "surface": "יֻצָּ֑ג",
+          "ja": "とどめ置かれるべきだ"
+        },
+        {
+          "token_id": 21161,
+          "token_index": 14,
+          "surface": "גַּֽם",
+          "ja": "〜もまた"
+        },
+        {
+          "token_id": 21162,
+          "token_index": 15,
+          "surface": "טַפְּכֶ֖ם",
+          "ja": "あなたがたの幼い者たちは"
+        },
+        {
+          "token_id": 21163,
+          "token_index": 16,
+          "surface": "יֵלֵ֥ךְ",
+          "ja": "行ってよい"
+        },
+        {
+          "token_id": 21164,
+          "token_index": 17,
+          "surface": "עִמָּכֶֽם",
+          "ja": "あなたがたと共に"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.10.25",
+      "tokens": [
+        {
+          "token_id": 21165,
+          "token_index": 1,
+          "surface": "וַיֹּ֣אמֶר",
+          "ja": "すると言った"
+        },
+        {
+          "token_id": 21166,
+          "token_index": 2,
+          "surface": "מֹשֶׁ֔ה",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 21167,
+          "token_index": 3,
+          "surface": "גַּם",
+          "ja": "〜もまた"
+        },
+        {
+          "token_id": 21168,
+          "token_index": 4,
+          "surface": "אַתָּ֛ה",
+          "ja": "あなた自身が"
+        },
+        {
+          "token_id": 21169,
+          "token_index": 5,
+          "surface": "תִּתֵּ֥ן",
+          "ja": "与えてください"
+        },
+        {
+          "token_id": 21170,
+          "token_index": 6,
+          "surface": "בְּיָדֵ֖נוּ",
+          "ja": "私たちの手に"
+        },
+        {
+          "token_id": 21171,
+          "token_index": 7,
+          "surface": "זְבָחִ֣ים",
+          "ja": "いけにえを"
+        },
+        {
+          "token_id": 21172,
+          "token_index": 8,
+          "surface": "וְעֹל֑וֹת",
+          "ja": "そして焼き尽くす献げ物を"
+        },
+        {
+          "token_id": 21173,
+          "token_index": 9,
+          "surface": "וְעָשִׂ֖ינוּ",
+          "ja": "そうすれば私たちは献げます"
+        },
+        {
+          "token_id": 21174,
+          "token_index": 10,
+          "surface": "לַיהוָ֥ה",
+          "ja": "主に"
+        },
+        {
+          "token_id": 21175,
+          "token_index": 11,
+          "surface": "אֱלֹהֵֽינוּ",
+          "ja": "私たちの神である"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.10.26",
+      "tokens": [
+        {
+          "token_id": 21176,
+          "token_index": 1,
+          "surface": "וְגַם",
+          "ja": "そして〜もまた"
+        },
+        {
+          "token_id": 21177,
+          "token_index": 2,
+          "surface": "מִקְנֵ֜נוּ",
+          "ja": "私たちの家畜は"
+        },
+        {
+          "token_id": 21178,
+          "token_index": 3,
+          "surface": "יֵלֵ֣ךְ",
+          "ja": "行かなければならない"
+        },
+        {
+          "token_id": 21179,
+          "token_index": 4,
+          "surface": "עִמָּ֗נוּ",
+          "ja": "私たちと共に"
+        },
+        {
+          "token_id": 21180,
+          "token_index": 5,
+          "surface": "לֹ֤א",
+          "ja": "〜ない"
+        },
+        {
+          "token_id": 21181,
+          "token_index": 6,
+          "surface": "תִשָּׁאֵר֙",
+          "ja": "残される"
+        },
+        {
+          "token_id": 21182,
+          "token_index": 7,
+          "surface": "פַּרְסָ֔ה",
+          "ja": "ひづめ一つも"
+        },
+        {
+          "token_id": 21183,
+          "token_index": 8,
+          "surface": "כִּ֚י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 21184,
+          "token_index": 9,
+          "surface": "מִמֶּ֣נּוּ",
+          "ja": "その家畜の中から"
+        },
+        {
+          "token_id": 21185,
+          "token_index": 10,
+          "surface": "נִקַּ֔ח",
+          "ja": "私たちは取るからだ"
+        },
+        {
+          "token_id": 21186,
+          "token_index": 11,
+          "surface": "לַעֲבֹ֖ד",
+          "ja": "仕えるために"
+        },
+        {
+          "token_id": 21187,
+          "token_index": 12,
+          "surface": "אֶת",
+          "ja": "〜を〔目的語〕"
+        },
+        {
+          "token_id": 21188,
+          "token_index": 13,
+          "surface": "יְהוָ֣ה",
+          "ja": "主に"
+        },
+        {
+          "token_id": 21189,
+          "token_index": 14,
+          "surface": "אֱלֹהֵ֑ינוּ",
+          "ja": "私たちの神である"
+        },
+        {
+          "token_id": 21190,
+          "token_index": 15,
+          "surface": "וַאֲנַ֣חְנוּ",
+          "ja": "そして私たちは"
+        },
+        {
+          "token_id": 21191,
+          "token_index": 16,
+          "surface": "לֹֽא",
+          "ja": "〜ない"
+        },
+        {
+          "token_id": 21192,
+          "token_index": 17,
+          "surface": "נֵדַ֗ע",
+          "ja": "知っている"
+        },
+        {
+          "token_id": 21193,
+          "token_index": 18,
+          "surface": "מַֽה",
+          "ja": "何を用いて"
+        },
+        {
+          "token_id": 21194,
+          "token_index": 19,
+          "surface": "נַּעֲבֹד֙",
+          "ja": "私たちが仕えるべきか"
+        },
+        {
+          "token_id": 21195,
+          "token_index": 20,
+          "surface": "אֶת",
+          "ja": "〜を〔目的語〕"
+        },
+        {
+          "token_id": 21196,
+          "token_index": 21,
+          "surface": "יְהוָ֔ה",
+          "ja": "主に"
+        },
+        {
+          "token_id": 21197,
+          "token_index": 22,
+          "surface": "עַד",
+          "ja": "〜まで"
+        },
+        {
+          "token_id": 21198,
+          "token_index": 23,
+          "surface": "בֹּאֵ֖נוּ",
+          "ja": "私たちが到着する"
+        },
+        {
+          "token_id": 21199,
+          "token_index": 24,
+          "surface": "שָֽׁמָּה",
+          "ja": "そこへ"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.10.27",
+      "tokens": [
+        {
+          "token_id": 21200,
+          "token_index": 1,
+          "surface": "וַיְחַזֵּ֥ק",
+          "ja": "しかし強くした"
+        },
+        {
+          "token_id": 21201,
+          "token_index": 2,
+          "surface": "יְהוָ֖ה",
+          "ja": "主は"
+        },
+        {
+          "token_id": 21202,
+          "token_index": 3,
+          "surface": "אֶת",
+          "ja": "〜を〔目的語〕"
+        },
+        {
+          "token_id": 21203,
+          "token_index": 4,
+          "surface": "לֵ֣ב",
+          "ja": "心を"
+        },
+        {
+          "token_id": 21204,
+          "token_index": 5,
+          "surface": "פַּרְעֹ֑ה",
+          "ja": "ファラオの"
+        },
+        {
+          "token_id": 21205,
+          "token_index": 6,
+          "surface": "וְלֹ֥א",
+          "ja": "そして〜なかった"
+        },
+        {
+          "token_id": 21206,
+          "token_index": 7,
+          "surface": "אָבָ֖ה",
+          "ja": "彼は望んだ"
+        },
+        {
+          "token_id": 21207,
+          "token_index": 8,
+          "surface": "לְשַׁלְּחָֽם",
+          "ja": "彼らを去らせることを"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.10.28",
+      "tokens": [
+        {
+          "token_id": 21208,
+          "token_index": 1,
+          "surface": "וַיֹּֽאמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 21209,
+          "token_index": 2,
+          "surface": "ל֥וֹ",
+          "ja": "彼に"
+        },
+        {
+          "token_id": 21210,
+          "token_index": 3,
+          "surface": "פַרְעֹ֖ה",
+          "ja": "ファラオは"
+        },
+        {
+          "token_id": 21211,
+          "token_index": 4,
+          "surface": "לֵ֣ךְ",
+          "ja": "行け"
+        },
+        {
+          "token_id": 21212,
+          "token_index": 5,
+          "surface": "מֵעָלָ֑י",
+          "ja": "私の前から"
+        },
+        {
+          "token_id": 21213,
+          "token_index": 6,
+          "surface": "הִשָּׁ֣מֶר",
+          "ja": "用心せよ"
+        },
+        {
+          "token_id": 21214,
+          "token_index": 7,
+          "surface": "לְךָ֗",
+          "ja": "自分自身のために"
+        },
+        {
+          "token_id": 21215,
+          "token_index": 8,
+          "surface": "אֶל",
+          "ja": "〜するな"
+        },
+        {
+          "token_id": 21216,
+          "token_index": 9,
+          "surface": "תֹּ֨סֶף֙",
+          "ja": "あなたが再び〜することを"
+        },
+        {
+          "token_id": 21217,
+          "token_index": 10,
+          "surface": "רְא֣וֹת",
+          "ja": "見る"
+        },
+        {
+          "token_id": 21218,
+          "token_index": 11,
+          "surface": "פָּנַ֔י",
+          "ja": "私の顔を"
+        },
+        {
+          "token_id": 21219,
+          "token_index": 12,
+          "surface": "כִּ֗י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 21220,
+          "token_index": 13,
+          "surface": "בְּי֛וֹם",
+          "ja": "その日に"
+        },
+        {
+          "token_id": 21221,
+          "token_index": 14,
+          "surface": "רְאֹתְךָ֥",
+          "ja": "あなたが見る"
+        },
+        {
+          "token_id": 21222,
+          "token_index": 15,
+          "surface": "פָנַ֖י",
+          "ja": "私の顔を"
+        },
+        {
+          "token_id": 21223,
+          "token_index": 16,
+          "surface": "תָּמֽוּת",
+          "ja": "あなたは死ぬからだ"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.10.29",
+      "tokens": [
+        {
+          "token_id": 21224,
+          "token_index": 1,
+          "surface": "וַיֹּ֥אמֶר",
+          "ja": "すると言った"
+        },
+        {
+          "token_id": 21225,
+          "token_index": 2,
+          "surface": "מֹשֶׁ֖ה",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 21226,
+          "token_index": 3,
+          "surface": "כֵּ֣ן",
+          "ja": "そのとおりに"
+        },
+        {
+          "token_id": 21227,
+          "token_index": 4,
+          "surface": "דִּבַּ֑רְתָּ",
+          "ja": "あなたは語った"
+        },
+        {
+          "token_id": 21228,
+          "token_index": 5,
+          "surface": "לֹא",
+          "ja": "〜ない"
+        },
+        {
+          "token_id": 21229,
+          "token_index": 6,
+          "surface": "אֹסִ֥ף",
+          "ja": "私は再び〜する"
+        },
+        {
+          "token_id": 21230,
+          "token_index": 7,
+          "surface": "ע֖וֹד",
+          "ja": "もはや"
+        },
+        {
+          "token_id": 21231,
+          "token_index": 8,
+          "surface": "רְא֥וֹת",
+          "ja": "見る"
+        },
+        {
+          "token_id": 21232,
+          "token_index": 9,
+          "surface": "פָּנֶֽיךָ",
+          "ja": "あなたの顔を"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.11.1",
+      "tokens": [
+        {
+          "token_id": 21368,
+          "token_index": 1,
+          "surface": "וַיֹּ֨אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 21369,
+          "token_index": 2,
+          "surface": "יְהוָ֜ה",
+          "ja": "主は"
+        },
+        {
+          "token_id": 21370,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 21371,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֗ה",
+          "ja": "モーセ"
+        },
+        {
+          "token_id": 21372,
+          "token_index": 5,
+          "surface": "ע֣וֹד",
+          "ja": "さらに"
+        },
+        {
+          "token_id": 21373,
+          "token_index": 6,
+          "surface": "נֶ֤גַע",
+          "ja": "災いを"
+        },
+        {
+          "token_id": 21374,
+          "token_index": 7,
+          "surface": "אֶחָד֙",
+          "ja": "一つ"
+        },
+        {
+          "token_id": 21375,
+          "token_index": 8,
+          "surface": "אָבִ֤יא",
+          "ja": "私はもたらす"
+        },
+        {
+          "token_id": 21376,
+          "token_index": 9,
+          "surface": "עַל",
+          "ja": "〜の上に"
+        },
+        {
+          "token_id": 21377,
+          "token_index": 10,
+          "surface": "פַּרְעֹה֙",
+          "ja": "ファラオ"
+        },
+        {
+          "token_id": 21378,
+          "token_index": 11,
+          "surface": "וְעַל",
+          "ja": "そして〜の上に"
+        },
+        {
+          "token_id": 21379,
+          "token_index": 12,
+          "surface": "מִצְרַ֔יִם",
+          "ja": "エジプト"
+        },
+        {
+          "token_id": 21380,
+          "token_index": 13,
+          "surface": "אַֽחֲרֵי",
+          "ja": "〜の後に"
+        },
+        {
+          "token_id": 21381,
+          "token_index": 14,
+          "surface": "כֵ֕ן",
+          "ja": "そのこと〔直前の出来事〕"
+        },
+        {
+          "token_id": 21382,
+          "token_index": 15,
+          "surface": "יְשַׁלַּ֥ח",
+          "ja": "彼は去らせるだろう"
+        },
+        {
+          "token_id": 21383,
+          "token_index": 16,
+          "surface": "אֶתְכֶ֖ם",
+          "ja": "あなたがたを"
+        },
+        {
+          "token_id": 21384,
+          "token_index": 17,
+          "surface": "מִזֶּ֑ה",
+          "ja": "ここから"
+        },
+        {
+          "token_id": 21385,
+          "token_index": 18,
+          "surface": "כְּשַׁ֨לְּח֔וֹ",
+          "ja": "彼が去らせるときには"
+        },
+        {
+          "token_id": 21386,
+          "token_index": 19,
+          "surface": "כָּלָ֕ה",
+          "ja": "ことごとく"
+        },
+        {
+          "token_id": 21387,
+          "token_index": 20,
+          "surface": "גָּרֵ֛שׁ",
+          "ja": "必ず追い出すことを〔強意〕"
+        },
+        {
+          "token_id": 21388,
+          "token_index": 21,
+          "surface": "יְגָרֵ֥שׁ",
+          "ja": "彼は追い出すだろう"
+        },
+        {
+          "token_id": 21389,
+          "token_index": 22,
+          "surface": "אֶתְכֶ֖ם",
+          "ja": "あなたがたを"
+        },
+        {
+          "token_id": 21390,
+          "token_index": 23,
+          "surface": "מִזֶּֽה",
+          "ja": "ここから"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.11.2",
+      "tokens": [
+        {
+          "token_id": 21411,
+          "token_index": 1,
+          "surface": "דַּבֶּר",
+          "ja": "語りなさい"
+        },
+        {
+          "token_id": 21412,
+          "token_index": 2,
+          "surface": "נָ֖א",
+          "ja": "どうか"
+        },
+        {
+          "token_id": 21413,
+          "token_index": 3,
+          "surface": "בְּאָזְנֵ֣י",
+          "ja": "耳に"
+        },
+        {
+          "token_id": 21414,
+          "token_index": 4,
+          "surface": "הָעָ֑ם",
+          "ja": "この民の"
+        },
+        {
+          "token_id": 21415,
+          "token_index": 5,
+          "surface": "וְיִשְׁאֲל֞וּ",
+          "ja": "そして彼らが求めるように"
+        },
+        {
+          "token_id": 21416,
+          "token_index": 6,
+          "surface": "אִ֣ישׁ",
+          "ja": "各々の男が"
+        },
+        {
+          "token_id": 21417,
+          "token_index": 7,
+          "surface": "מֵאֵ֣ת",
+          "ja": "〜から"
+        },
+        {
+          "token_id": 21418,
+          "token_index": 8,
+          "surface": "רֵעֵ֗הוּ",
+          "ja": "その隣人"
+        },
+        {
+          "token_id": 21419,
+          "token_index": 9,
+          "surface": "וְאִשָּׁה֙",
+          "ja": "そして各々の女が"
+        },
+        {
+          "token_id": 21420,
+          "token_index": 10,
+          "surface": "מֵאֵ֣ת",
+          "ja": "〜から"
+        },
+        {
+          "token_id": 21421,
+          "token_index": 11,
+          "surface": "רְעוּתָ֔הּ",
+          "ja": "その隣人である女性"
+        },
+        {
+          "token_id": 21422,
+          "token_index": 12,
+          "surface": "כְּלֵי",
+          "ja": "品々を"
+        },
+        {
+          "token_id": 21423,
+          "token_index": 13,
+          "surface": "כֶ֖סֶף",
+          "ja": "銀の"
+        },
+        {
+          "token_id": 21424,
+          "token_index": 14,
+          "surface": "וּכְלֵ֥י",
+          "ja": "そして品々を"
+        },
+        {
+          "token_id": 21425,
+          "token_index": 15,
+          "surface": "זָהָֽב",
+          "ja": "金の"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.11.3",
+      "tokens": [
+        {
+          "token_id": 21426,
+          "token_index": 1,
+          "surface": "וַיִּתֵּ֧ן",
+          "ja": "そして与えた"
+        },
+        {
+          "token_id": 21427,
+          "token_index": 2,
+          "surface": "יְהוָ֛ה",
+          "ja": "主は"
+        },
+        {
+          "token_id": 21428,
+          "token_index": 3,
+          "surface": "אֶת",
+          "ja": "〜を〔目的語〕"
+        },
+        {
+          "token_id": 21429,
+          "token_index": 4,
+          "surface": "חֵ֥ן",
+          "ja": "好意を得ることを"
+        },
+        {
+          "token_id": 21430,
+          "token_index": 5,
+          "surface": "הָעָ֖ם",
+          "ja": "この民が"
+        },
+        {
+          "token_id": 21431,
+          "token_index": 6,
+          "surface": "בְּעֵינֵ֣י",
+          "ja": "〜の目に"
+        },
+        {
+          "token_id": 21432,
+          "token_index": 7,
+          "surface": "מִצְרָ֑יִם",
+          "ja": "エジプトの人々"
+        },
+        {
+          "token_id": 21433,
+          "token_index": 8,
+          "surface": "גַּ֣ם",
+          "ja": "さらに"
+        },
+        {
+          "token_id": 21434,
+          "token_index": 9,
+          "surface": "הָאִ֣ישׁ",
+          "ja": "その人は"
+        },
+        {
+          "token_id": 21435,
+          "token_index": 10,
+          "surface": "מֹשֶׁ֗ה",
+          "ja": "モーセという"
+        },
+        {
+          "token_id": 21436,
+          "token_index": 11,
+          "surface": "גָּד֤וֹל",
+          "ja": "大いなる者であった"
+        },
+        {
+          "token_id": 21437,
+          "token_index": 12,
+          "surface": "מְאֹד֙",
+          "ja": "非常に"
+        },
+        {
+          "token_id": 21438,
+          "token_index": 13,
+          "surface": "בְּאֶ֣רֶץ",
+          "ja": "〜の地で"
+        },
+        {
+          "token_id": 21439,
+          "token_index": 14,
+          "surface": "מִצְרַ֔יִם",
+          "ja": "エジプト"
+        },
+        {
+          "token_id": 21440,
+          "token_index": 15,
+          "surface": "בְּעֵינֵ֥י",
+          "ja": "〜の目に"
+        },
+        {
+          "token_id": 21441,
+          "token_index": 16,
+          "surface": "עַבְדֵֽי",
+          "ja": "家臣たち"
+        },
+        {
+          "token_id": 21442,
+          "token_index": 17,
+          "surface": "פַרְעֹ֖ה",
+          "ja": "ファラオの"
+        },
+        {
+          "token_id": 21443,
+          "token_index": 18,
+          "surface": "וּבְעֵינֵ֥י",
+          "ja": "そして〜の目に"
+        },
+        {
+          "token_id": 21444,
+          "token_index": 19,
+          "surface": "הָעָֽם",
+          "ja": "その民"
+        }
+      ]
+    }
+  ],
+  "media_status": {
+    "audio_status": "PASS",
+    "audio_implemented_count": 9,
+    "audio_expected_count": 9,
+    "missing_audio_refs": [],
+    "audio_failures": [],
+    "html_status": "PASS",
+    "html_implemented_count": 9,
+    "missing_html_refs": [],
+    "pages_status": "PASS",
+    "ai_generated_audio_refs": [],
+    "open_bible_audio_refs": []
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ボー｜第3アリヤー｜出エジプト記10:24–11:3"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ファラオは人々の出発を認めながら、家畜を残す条件を付けます。モーセは「ひづめ一つも」と応じ、礼拝に必要なものを王の判断へ委ねません。交渉が死の威嚇で閉じられる一方、主は全面的な出発を予告し、男女が隣人へ銀・金の品を求めるよう命じます。王の拒絶と、民に向けられる好意との隔たりにも目を向け、解放が礼拝と暮らしの具体的な支えに及ぶことを学びます。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ひづめ一つも残さない――解放と礼拝の全体性"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 10:24"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/101-20261110-r1/audio/101_10_24_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ファラオはモーセを呼び寄せて言った。「行け、主に仕えよ。ただし、お前たちの羊や山羊と牛の群れは残しておけ。幼い者たちもお前たちと一緒に行ってよい。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/101-20261110-r1/exodus-10-24.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：人々の移動を認めても家畜を保持するなら、礼拝と生活の資源はなお王の支配下にある。「ただし」が提案の限界を示す。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の רַק（ただし）は、二つの命令「行け・仕えよ」の直後で許可を制限する。羊・山羊と牛には二人称複数の所有接尾辞があり、「お前たちの」家畜を王が留めようとしている。יֻצָּג は受動のホフアル形で、複合された集合名詞を単数で受ける。「置かれる」をこの交渉では「残されるべきだ」と訳す。後半の טַף は幼い者・扶養される者たちを集合的に指し、単数動詞「行く」と結びつく。ここで人々の外出を認めることと、共同体が自立して去ることを区別して読む必要がある。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「ただし、家畜は残せ」という条件を読むと、他者の自由を認めると言いながら、生活の支えを自分の手元へ留めたがる態度を問われる。自分が支援する人の選択に、依存を残す条件を付けていないかを具体的に点検したい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 10:25"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/101-20261110-r1/audio/101_10_25_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセは言った。「あなたご自身も、私たちの手にいけにえと焼き尽くす献げ物を与えてください。それを私たちの神、主に献げましょう。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/101-20261110-r1/exodus-10-25.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：モーセは「あなたも」と王を応答の中へ引き入れる。家畜の留置を当然とする提案に対し、献げ物の提供まで王に求める大胆な切り返しである。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の גַּם־אַתָּה は独立代名詞を伴う「あなたも」であり、王自身を強調する。תִּתֵּן は二人称男性単数の要求として読める形で、本訳では「与えてください」を選んだ。זְבָחִים はいけにえ、עֹלוֹת は焼き尽くす献げ物であり、両者を一語の「供物」に潰さない。「私たちの手に」は受け渡しの表現で、続く「私たちは行う」はこの目的語を受けて「献げる」と訳す。王に献げるのではなく、「私たちの神、主」に献げるという帰属も応答の要点である。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "要求として読むか、反問として読むか"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "NET Bibleの翻訳注71は、王が家畜を留めるなら王自身が献げ物を用意するのか、という反問の読みを紹介する。本訳は要求の形を選ぶ。疑問詞のない強調表現から反問を読む余地は残るが、いずれも王の条件が礼拝に必要な資源と矛盾することを突く応答となる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "NET Bible翻訳委員会『出エジプト記』10:25–29、翻訳注71–82",
+                    "link": {
+                      "url": "https://classic.net.bible.org/bible.php?book=Exo&chapter=10"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "モーセが王に向けた「あなたも」は、強い者が責任の外に立てるという前提を崩す。自分が資源を持つ側にいるとき、他者の礼拝や生活のために何を差し出すべきかという問いを、他人任せにしないで受け止めたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 10:26"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/101-20261110-r1/audio/101_10_26_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：「私たちの家畜も一緒に行かなければなりません。ひづめ一つも残してはおけません。私たちの神、主に仕えるため、その家畜の中から取るからです。そこへ着くまで、何を用いて主に仕えるべきか、私たちには分かりません。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/101-20261110-r1/exodus-10-26.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：「ひづめ一つも」が交渉の余地を閉じる。何を献げるかは到着後に定まるのであり、王が必要量を先取りして制限することはできない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の פַּרְסָה（ひづめ）は家畜一頭を身体の一部で言い表し、否定と結びついて残留の全面拒否を示す。「私たちの家畜」は集合単数なので「行く」も単数形となる。מִמֶּנּוּ は形の上では「私たちから」とも同形だが、ここでは直前の家畜を受ける「その中から」と解するのが文脈に合う。מַה־נַּעֲבֹד は直訳的には「何を私たちは仕えるか」であり、家畜を取るという前の文から手段を補って「何を用いて仕えるべきか」とした。知らないのは主の存在ではなく、献げるものの具体的な定めである。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ユダヤ教注解｜礼拝の必要量は未確定"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシーは10:26の「分からない」を、礼拝にどれだけ求められるか分からず、手持ち以上を求められるかもしれないという説明へ広げる。彼が示す出エジプト記ラッバー由来の展開と、本文に直接ある必要量の未確定とを区別して読む。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシー『出エジプト記注解』10:24–26、29（Chabad英訳・ヘブライ語本文）",
+                    "link": {
+                      "url": "https://www.chabad.org/library/bible_cdo/aid/9871/jewish/Chapter-10.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「そこへ着くまで分からない」という言葉には、支配者の条件へ信仰の歩みを閉じ込めない姿勢がある。必要をすべて見通せない時にも、委ねられている生活と責任を途中で切り捨てず、次に求められることを聞く備えを持ちたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "10:24–26を深める｜礼拝に必要な資源を誰が決めるのか"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "「お前たちの群れ」から「あなたも」、そして「私たちの家畜も」へ、所有と参加を示す表現が応酬を作る。王は人の出発を認めながら動物を留め、モーセは献げ物を王に求めるところまで要求を押し返す。さらに「ひづめ一つも」と「そこへ着くまで分からない」が、王による必要量の先取りを拒む。礼拝の自由を気持ちの自由だけに狭めず、その実行を支える具体的な資源と共に読むべき箇所である。ただし家畜を残す意図が担保の確保だったという理解は、この交渉の機能から導く推論であり、王がその意図を明言したわけではない。ラシーは24節をその場への留置、25節を王からの追加提供と読み、段階的な応酬を捉える。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ラシー『出エジプト記注解』10:24–26、29（Chabad英訳・ヘブライ語本文）",
+              "link": {
+                "url": "https://www.chabad.org/library/bible_cdo/aid/9871/jewish/Chapter-10.htm"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 10:27"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/101-20261110-r1/audio/101_10_27_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：しかし主はファラオの心を強くされた。彼は彼らを去らせようとはしなかった。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/101-20261110-r1/exodus-10-27.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：主が心を強くするという語りと、王が去らせることを望まないという叙述が並ぶ。物語は神の働きと王の拒絶を同じ出来事の中に置く。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の וַיְחַזֵּק は חזק のピエル形で、主がファラオの心を「強くした」と述べる。「強める」が常に肯定的な勇気づけを意味するわけではなく、この節では解放に抵抗する意志の持続となる。後半の אָבָה は「望む・進んでする」で、否定されて「去らせようとはしなかった」となる。神が文法上の主語である前半と、王が意志の主体である後半のどちらも消さずに訳した。この一節だけで自由意志と予定に関する体系的な解答を完成させることはできない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「望まなかった」という一語を、自分には無関係な王の問題として片づけたくない。正当な求めを聞いた時に、内容を考える前から拒む心がないかを問い、神の働きを口実にして自分の応答の責任から逃れないようにしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 10:28"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/101-20261110-r1/audio/101_10_28_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ファラオは彼に言った。「私の前から去れ。気をつけよ。二度と私の顔を見ようとするな。私の顔を見る日には、お前は死ぬ。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/101-20261110-r1/exodus-10-28.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：王は交渉を死の威嚇で打ち切る。「顔を見る」は視覚そのものに加え、王の前に出ることを表す。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の הִשָּׁמֶר はニファル命令形で、「自分に気をつけよ」という警告をなす。後続の否定辞は lemma と形態上、禁止を表す語であり、「〜へ」という前置詞として読まない。禁止辞と「加える」のヒフィル形、さらに「見る」の不定詞が結びつき、全体で「再び見ようとするな」となる。「あなたが私の顔を見る日」は不定詞に付く二人称接尾辞を主語として読む時間節で、最後の「あなたは死ぬ」が制裁を告げる。対話を閉じる王の権力が、ここでは命への脅迫として露わになる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "王は対話の終わりに死を持ち出す。この場面から、自分が不利になった時に言葉を威圧へ変えていないかを考える。異議を唱える人の安全を守り、関係の強弱を使って相手の声を奪わないことを、日々の会話で選びたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 10:29"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/101-20261110-r1/audio/101_10_29_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセは言った。「おっしゃるとおりです。私はもはや、あなたの顔を再び見ることはありません。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/101-20261110-r1/exodus-10-29.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：モーセは威嚇の言葉を反転させ、再び王の面前へ願い出ることはないと応じる。短い返答が交渉の終点を示す。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の כֵּן דִּבַּרְתָּ は「そのようにあなたは語った」で、応答としては「おっしゃるとおり」と訳せる。これは王の圧政を正しいと認める評価ではなく、面会の終わりを受け止める発言である。「私は加えない」に「もはや」と「見る」の不定詞が続き、「再び見ることはない」を構成する。王の「私の顔」とモーセの「あなたの顔」が対応し、同じ面会を王は脅迫の対象に、モーセは終結した交渉に位置づける。ただし、この言葉から次章の発話時点までを機械的な時系列として確定することは避ける。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "モーセは王の顔を再び求めないと告げる。あらゆる要求に応じ続けることだけが誠実さではないと、この応答から学ぶ。脅迫を伴う関係では、無理な接触を重ねず、安全と支えを確保して対話の限界を定めることも大切にしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "10:27–29を深める｜強い心と閉ざされる面会"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "語り手はまず主が王の心を強くしたと述べ、次に王自身の拒絶と威嚇を聞かせる。神の行為についての叙述を、王の発言を無意味にする説明として用いないことが大切である。「顔を見る」が二度の発話を結ぶため、この三節の終点は単なる意見の不一致ではなく、面会という交渉の仕組みそのものの閉鎖となる。NET Bible注79–82も「再び顔を見る」を再度面前に出ることとして説明する。モーセは王を倒すと反対に脅すのではなく、面会の終わりを告げる。ここに描かれた対話の破綻と、次の神の言葉への場面転換を続けて読む。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "NET Bible翻訳委員会『出エジプト記』10:25–29、翻訳注71–82",
+              "link": {
+                "url": "https://classic.net.bible.org/bible.php?book=Exo&chapter=10"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 11:1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/101-20261110-r1/audio/101_11_1_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：主はモーセに言われた。「私はファラオとエジプトに、なお一つの災いをもたらす。その後、彼はあなたがたをここから去らせる。去らせるときには、あなたがたをことごとく、必ずここから追い出す。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/101-20261110-r1/exodus-11-1.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：「なお一つ」が次の転換を予告する。「去らせる」から「必ず追い出す」へ言い方が強まり、限定つき許可とは異なる結末が告げられる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の עוֹד נֶגַע אֶחָד は「なお災い一つ」で、災いの具体的内容をこの節では述べていない。אָבִיא は「来る」のヒフィル一人称で、主がそれをもたらす主体となる。כָּלָה は名詞的な「完全・終わり」に関係する形で、ここでは「ことごとく」と副詞的に訳した。גָּרֵשׁ יְגָרֵשׁ はピエル不定詞絶対形と同語根の定形動詞を重ね、追放の確実さ・強さを示す。災いが二つあるという意味ではなく、一つの災いの後に王の態度が全面的な追放へ変わるという宣言である。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "翻訳上の選択｜ことごとく"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "NET Bible注2–3は「ことごとく」を副詞的に読む訳と、同語根の反復による強意を採る。本訳も母音の変更を要する別解に依らず、全面的な追放を表すと判断した。これは現代の注解による翻訳判断であり、別の綴りの本文が確認されたという意味ではない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "NET Bible翻訳委員会『出エジプト記』11:1–3、注1–9",
+                    "link": {
+                      "url": "https://classic.net.bible.org/bible.php?book=Exo&chapter=11"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "限定つきの許可しか見えなかった場に、全面的な出発の約束が語られる。人を拘束する条件を当然のものとして受け入れず、解放が生活全体に届くことを願いたい。同時に、ここで予告される災いを軽々しく他者への報復の願いへ置き換えない。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 11:2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/101-20261110-r1/audio/101_11_2_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：「どうか民の耳に語りなさい。男は各々その隣人に、女は各々その隣人である女性に、銀の品や金の品を求めるように。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/101-20261110-r1/exodus-11-2.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：男女がそれぞれ近隣の人に求める命令であり、王との交渉だけでなく生活の場で出発への備えが始まる。「求める」を直ちに「借りる」に限定しない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の דַּבֶּר־נָא は「どうか語りなさい」で、命令形に依頼の小辞を添える。「民の耳に」は聞き手への確かな伝達を示す。וְיִשְׁאֲלוּ はシャーアルのカル形で、「彼らが求めるように」と命令の内容を続ける。語自体から返却義務を伴う借用契約までを確定することはできない。男性と女性を対にした各々の表現は、求める行為が共同体の生活圏へ広がることを示す。כְּלֵי は品・器具の複数連語形で、銀・金の材質を受けるため、特定の装飾品だけに限定せず「品」と訳した。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ユダヤ教解釈史｜依頼の小辞と約束"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシーは11:2の依頼の小辞を、アブラハムへの財産を伴う出立の約束が果たされることと結びつける。ベルアホート9aに由来すると明記されたミドラシュ的読解であり、この小辞だけの辞書的意味と混同しない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシー『出エジプト記注解』11:1–2（Chabad英訳・ヘブライ語本文）",
+                    "link": {
+                      "url": "https://www.chabad.org/library/bible_cdo/aid/9872/jewish/Chapter-11.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "命令を受けるのは特別な代表者だけではなく、各々の男と女である。隣人に必要を伝えることが出発の備えになる。助けを求める側を恥じさせず、求める言葉を実際に聞き取れる関係を、自分の身近な場所で育てたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 11:3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/101-20261110-r1/audio/101_11_3_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：主は、この民がエジプトの人々の目に好意を得るようにされた。また、モーセというその人は、エジプトの地で、ファラオの家臣たちの目にも民の目にも、非常に大いなる者であった。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/101-20261110-r1/exodus-11-3.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：好意を得る民と高く評価されるモーセが描かれる。王の敵意がエジプト社会全体の態度を代表するわけではない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の「民の好意を与える」は、その民が他者の好意を得るようにするという表現で、「エジプトの目に」が評価する側を示す。後半は「モーセというその人」を改めて取り上げ、「非常に大いなる者」と述べる名詞文である。「大きい」を身長や神格化として読まず、この社会的文脈での重み・評価として訳した。最後の「その民」は単独なら指示が広いが、エジプトの地と王の家臣たちを並べる文脈から、ここではエジプトの人々と理解する。王の拒絶と周囲の評価の隔たりが強調されている。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "王の敵意のもとでも、民への好意とモーセへの評価は生まれている。一人の権力者の態度で、そこに暮らす人々を一括りに判断しないようにしたい。敵対が目立つ状況でも、個々の隣人の応答と協力の可能性に目を向けたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "11:1–3を深める｜王の許可から隣人の応答へ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "主の発言は追放の予告にとどまらず、各々の男女が隣人へ求めるという準備の命令へ進む。その後、語り手が民の得た好意とモーセの評価を説明する。王との関係が破綻したことと、エジプトの人々との接点がなくなったことは同じではない。最後の「民」はエジプトの人々と解して訳したが、これは周囲の地名と王の家臣への言及からの判断である。求める動詞を「借りる」と限定すると返却をめぐる問題が前面に出る一方、ここでは返却の約束自体は記されていない。まず本文にある要求と好意の関係を読み、財の移動をめぐる倫理的問いは、そこから区別して検討する。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "まとめ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーは、条件を付けて人を支配下に留めようとする王と、礼拝のための出発を全面的に求めるモーセとの対話を描く。面会は閉ざされるが、主の言葉と隣人との関係を通して出立への備えは進む。解放を内面だけに狭めず、共同体と資源、そして周囲の人々との関係までを含めて読む。同時に、災いの予告や後代の霊的解釈を、他者への威嚇や本文の現実の消去に用いない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーをさらに学ぶ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "文学的構成｜「仕える」をめぐる交渉の終わり"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "この範囲では10:24の王の命令、25節のモーセの応答、26節の説明に「主に仕える」という目的が反復される。争点はその目的の存在ではなく、誰が参加し何を携えるかを王が決められるのかという点にある。家畜を留める限定つきの許可は、11:1のことごとく追い出すという宣言へ反転する。また、10:28–29の「顔」による面会の終結に対し、11:3はエジプトの人々の「目」における評価を描く。王との関係だけに閉じられていた視野が社会へ広がる構成として読める。これは語の配置から導く文学的観察であり、編集年代や単一の資料仮説をこの小範囲から確定するものではない。"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "叙述の時間｜章の区切りだけで面会を数えない"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "10:29で面会を終えると言った後、次章にも王への発言が続くため、叙述の時間をどう捉えるかが問題となる。NET Bible11章注1は、1–3節を挿入的な説明と見る可能性を論じる。本資料では本文の順序を保持し、11:1の発言が王との会見後の新しい場面だったとは断定しない。章番号が変わること自体は、新たな会見の証拠にはならない。本文の時系列についての解釈と、本文の移動・校訂についての提案を混同しないことが、この箇所を読む上で必要である。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "NET Bible翻訳委員会『出エジプト記』11:1–3、注1–9",
+                    "link": {
+                      "url": "https://classic.net.bible.org/bible.php?book=Exo&chapter=11"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "キリスト教受容史｜エジプトの富を知へ読み替える"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ニュッサのグレゴリオスは『モーセの生涯』II.112–116で、エジプトから富を得る記事を、教会が外部の学問を受け取り用いることへ読み替える。借用を欺きとして正当化することには異議を示し、倫理的難点を霊的解釈へ進む契機とする。この議論は出立と財の取得の記事群を扱うもので、11:2だけの逐語的注解ではない。本文における銀・金の品と、後代のキリスト教教育論における知の獲得を分け、解釈の変換そのものを受容史として観察する。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ニュッサのグレゴリオス『モーセの生涯』第II巻112–116（英訳本文）",
+                    "link": {
+                      "url": "https://www.uecf.net/books/life-of-moses-gregory-of-nyssa/chapter3.html"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダヤ教解釈の方法｜文脈説明と約束の連関"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシーの10:24–26の説明は、家畜の留置、王の追加提供、未確定の礼拝という対話の推移を追う。他方、11:2では依頼の小辞からアブラハムへの約束へ視野を広げる。同じ注解の中でも、目前の発話を説明する働きと、伝承を介して聖書の他の箇所へ結びつける働きは区別される。この区別によって、ユダヤ教解釈を一つの方法へまとめず、文脈に即した説明とミドラシュ的連関の双方を、それぞれの根拠に即して学ぶことができる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシー『出エジプト記注解』10:24–26、29（Chabad英訳・ヘブライ語本文）",
+                    "link": {
+                      "url": "https://www.chabad.org/library/bible_cdo/aid/9871/jewish/Chapter-10.htm"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシー『出エジプト記注解』11:1–2（Chabad英訳・ヘブライ語本文）",
+                    "link": {
+                      "url": "https://www.chabad.org/library/bible_cdo/aid/9872/jewish/Chapter-11.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0",
+              "link": {
+                "url": "https://github.com/openscriptures/morphhb"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
