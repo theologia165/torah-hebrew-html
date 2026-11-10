@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "101-20261110-r1",
+  "input_sha256": "dd1e3bb5a656e755e21a7cae9126193ed7f77399700d930db881a5a6d1c88344",
+  "manifest_sha256": "bc68cf672b59808caf29a94f2a18035f4ee7b01b0e958e226b0545e8352d5017",
+  "audio_sha256": {
+    "10:24": "8e414e4d93cea3f96dfb73e858e466dc9021532566b9231a83be1f3f616b9be2",
+    "10:25": "505fe65614feaacc548d3923ca1cc44393d510df5ec215a095acc53026ae577c",
+    "10:26": "8aeb29f9549c086d1b23f84e94711252acb3f3031dfa878ef196365a77e63918",
+    "10:27": "819f0b4feb2e6be845051ba948d924f56c93fad728761cdf0a3ac5c792ff5bfe",
+    "10:28": "1df055a7ecec795942ecae02929ad6a9a58297e05b8e160c4a9976815aeb175f",
+    "10:29": "be94f6b843a89ef4cf9f01536dfcc6bb581255944df614667bdec2539d8013eb",
+    "11:1": "e126139fee0acf7721f5a4e74ac7b53397f0e5428a0bd9412f6575b15cc77cf7",
+    "11:2": "8889eff415ee6bf6afd94d689db66fcc87943433738739f31425c2826e8875ba",
+    "11:3": "8bc56700a5e9133b371b554f50bd5999468e61b1ebb4a1cd64f995919c0447e3"
+  },
+  "status": "BOUNDARY_PASS",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-10T13:16:04.918Z",
+  "evidence": "9節の冒頭・末尾18観察を全件照合。10:24/head ויקרא פרעה אל、tail טפכם ילך עמכם；10:25/head ויאמר משה גם、tail ועשינו ליהוה אלהינו；10:26/head וגם מקננו ילך、tail עד באנו שמה；10:27/head ויחזק יהוה את、tail ולא אבה לשלחם；10:28/head ויאמר לו פרעה、tail ראתך פני תמות；10:29/head ויאמר משה כן、tail עוד ראות פניך；11:1/headは期待する冒頭ויאמר יהוהが明瞭との観察で、heardに第3語אלの明記がないことを確認した。4秒抜粋の内部終端から実ファイル冒頭の欠落を推定しない。11:1/tail יגרש אתכם מזה；11:2/head דבר נא באזני、tail כסף וכלי זהב；11:3/head ויתן יהוה את、tail פרעה ובעיני העם。全観察PASS、隣接節混入・実境界の早切れ・冒頭欠落を示す報告なし、known_findings/problem_edges/missing_audio_refsすべて空。機械PASSだけではなく各heardとevidenceを本文に照合した判断。詳査・修復の根拠は認めずDELIVER_CURRENT。3要求72秒、追加要求なし。境界のみの判断であり、11:1冒頭の第3語を含む全語照合、節中央の欠落や全編内容の正しさは認証しない。full_content_verified=falseを保持。",
+  "decision_sha256": "07dbb3a55927532a00e2995f810a557670bdcd052ed7cc65d26bdc0dd91caecc",
+  "usage_sha256": "3b5af8459a56031ec6692fee48329186aebcfba6e1ed91fb48c3aa88579c5923",
+  "report_sha256": "b4a3bf257e0926fe04f8b88e44728f492ea48abffa7fbd7913a570fca9f75087",
+  "email_disclosure_required": false
+}
