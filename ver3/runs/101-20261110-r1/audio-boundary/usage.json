@@ -1,0 +1,52 @@
+{
+  "run_id": "101-20261110-r1",
+  "requests": [
+    {
+      "id": 1,
+      "status": "RESERVED",
+      "audio_seconds": 24.0,
+      "reserved_usd": 0.053565,
+      "model": "gpt-audio-1.5",
+      "clip_keys": [
+        "46575e5b0e4ed4c540543808e9de8a92ee9b6373369146c64ef52126e81556d4",
+        "c94bce8c915e04cae29455ba0baa68cfd3455e5c9619b8433e3605be37489102",
+        "d43a418302f1ded4322f3f39fa645fa6e7cd30f4a7bfeacf63a019d7b9868b65",
+        "794beee3532993485c5f75620173ceaa48212647cb6674604f60da7500d5dae6",
+        "7d42437ef11f0a9ce3042f652d78528667b1b3fafc02ff6a90217b3e313d7b7e",
+        "2729d91ea82dccca52bb002682633aa7b0f54bed9e0e8294965f8f8545d0c726"
+      ]
+    }
+  ],
+  "cache": {
+    "46575e5b0e4ed4c540543808e9de8a92ee9b6373369146c64ef52126e81556d4": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    },
+    "c94bce8c915e04cae29455ba0baa68cfd3455e5c9619b8433e3605be37489102": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    },
+    "d43a418302f1ded4322f3f39fa645fa6e7cd30f4a7bfeacf63a019d7b9868b65": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    },
+    "794beee3532993485c5f75620173ceaa48212647cb6674604f60da7500d5dae6": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    },
+    "7d42437ef11f0a9ce3042f652d78528667b1b3fafc02ff6a90217b3e313d7b7e": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    },
+    "2729d91ea82dccca52bb002682633aa7b0f54bed9e0e8294965f8f8545d0c726": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    }
+  }
+}
