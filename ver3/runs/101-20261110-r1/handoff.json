@@ -2,21 +2,26 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "101-20261110-r1",
   "sequence": "101",
-  "phase": "JSON2",
+  "phase": "AUDIO_BOUNDARY",
   "status": "WAITING_FOR_WORK",
-  "next_action": "CREATE_JSON2",
+  "next_action": "REVIEW_AUDIO_BOUNDARIES",
   "stage_spec": {
-    "path": "ver3/spec/json2-quality.md",
-    "sha256": "15ae41db6f54be1d24bfff649b8c21fcff2a360dea91af6628b48c963cf14457"
+    "path": "ver3/spec/audio-boundary.md",
+    "sha256": "f6c62e8846ea96daeab0a90d73b9bb63c3379aae81c3f02ac6a7c00b32fda902"
   },
   "required_inputs": [
-    "ver3/runs/101-20261110-r1/json1.1.json"
+    "ver3/runs/101-20261110-r1/audio-boundary/report.json",
+    "ver3/runs/101-20261110-r1/audio-boundary/usage.json",
+    "ver3/runs/101-20261110-r1/audio-boundary/state.json",
+    "ver3/runs/101-20261110-r1/audio-boundary/decision-template.json"
   ],
   "expected_outputs": [
-    "ver3/runs/101-20261110-r1/json2.json"
+    "ver3/runs/101-20261110-r1/audio-boundary/decision.json"
   ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "quality_gate": "WORK_JSON2_QUALITY=PASS_BEFORE_COMMIT"
+    "phase": "REVIEW",
+    "problem_edges": [],
+    "delivery_policy": "Unresolved audio is delivered with email disclosure; no PASS fabrication."
   }
 }
