@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0-work-json2-quality",
+  "run_id": "101-20261110-r1",
+  "WORK_JSON2_QUALITY": "PASS",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-10T13:13:07.337145+00:00",
+  "source_scope": "Current RUN JSON1.1 only for biblical text, tokens, lemmas and morphology; external primary commentaries opened and checked. No earlier RUN research inputs.",
+  "verse_count": 9,
+  "token_count": 142,
+  "reviewed_refs": [
+    "Exod.10.24",
+    "Exod.10.25",
+    "Exod.10.26",
+    "Exod.10.27",
+    "Exod.10.28",
+    "Exod.10.29",
+    "Exod.11.1",
+    "Exod.11.2",
+    "Exod.11.3"
+  ],
+  "semantic_checks": {
+    "all_token_id_surface_lemma_morphology_gloss_pairs_reviewed": true,
+    "all_translations_reviewed": true,
+    "all_22_sections_reviewed": true,
+    "three_chunks_and_four_aliyah_notes_reviewed": true,
+    "nine_distinct_final_devotions_sources_empty": true,
+    "source_support_and_scope_checked": true,
+    "placeholder_or_unresolved_gloss_count": 0,
+    "forbidden_phrase_count": 0,
+    "input_hashes_verified": true
+  },
+  "decisions": [
+    {
+      "ref": "Exod.10.26",
+      "token_id": 21184,
+      "input_morph": "HR/Sp1cp",
+      "decision": "Source annotation preserved. Surface is homographic between 1cp and 3ms suffix readings; contextual referent is collective livestock, translated その家畜の中から. Ambiguity explained in verse grammar."
+    },
+    {
+      "ref": "Exod.10.28",
+      "token_id": 21215,
+      "decision": "Preserve supplied surface; lemma 408 and HTn identify prohibitive negative, not preposition."
+    },
+    {
+      "token_ids": [
+        21209,
+        21214
+      ],
+      "decision": "lexeme keys exist with null values for preposition+suffix. Translate directly from supplied lemma/morphology; invent no lexical keys."
+    },
+    {
+      "ref": "Exod.11.1",
+      "decision": "kalah read adverbially; infinitive absolute + finite Piel expresses emphasis. No repointing performed."
+    },
+    {
+      "ref": "Exod.11.2",
+      "decision": "Qal request not necessarily a loan; distinct male/female distributive subjects preserved."
+    },
+    {
+      "ref": "Exod.11.3",
+      "token_id": 21432,
+      "decision": "Source lemma/lexeme identity retained; translate Egypt metonymically as its people in the favor construction."
+    }
+  ],
+  "external_sources": [
+    {
+      "url": "https://www.chabad.org/library/bible_cdo/aid/9871/jewish/Chapter-10.htm",
+      "scope": "Rashi 10:24–26,29 direct text"
+    },
+    {
+      "url": "https://www.chabad.org/library/bible_cdo/aid/9872/jewish/Chapter-11.htm",
+      "scope": "Rashi 11:1–2 direct text; Berakhot9a accessed through Rashi attribution only"
+    },
+    {
+      "url": "https://classic.net.bible.org/bible.php?book=Exo&chapter=10",
+      "scope": "NET editorial translation notes71–82; cited third-party books not claimed directly read"
+    },
+    {
+      "url": "https://classic.net.bible.org/bible.php?book=Exo&chapter=11",
+      "scope": "NET editorial notes1–9; chronology and kala choices; cited books not claimed directly read"
+    },
+    {
+      "url": "https://www.uecf.net/books/life-of-moses-gregory-of-nyssa/chapter3.html",
+      "scope": "Gregory Life of MosesII112–116 direct English text; reception of departure-wealth narrative, not a verse-specific philological gloss"
+    }
+  ],
+  "structure_validation": "validate_json2.py on actual RUN: STRUCTURE_PASS; separately audited meaning above"
+}
