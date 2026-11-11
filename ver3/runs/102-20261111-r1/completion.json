@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "102-20261111-r1",
+  "sequence": "102",
+  "delivery_status": "PASS",
+  "page_id": "4158aa46-08ae-8161-b791-f4081cc88dca",
+  "page_url": "https://app.notion.com/p/102-11-4-12-20-4158aa4608ae8161b791f4081cc88dca",
+  "gmail": {
+    "message_id": "1a1cac717306af68",
+    "subject": "102｜出エジプト記11:4–12:20",
+    "sent_verified": true,
+    "to": "nishiharat@gmail.com",
+    "attachment": {
+      "filename": "asaichi-torah-102-20261111.jpg",
+      "byte_size": 300782,
+      "sha256": "61e28dcdd5fe9d4758da02e17be4682f56145397c0620d6319851c57c41e8f4d",
+      "sent_attachment_verified": true,
+      "verification_method": "Sent MIME filename/type/byte size readback"
+    }
+  },
+  "completed_at": "2026-11-11T13:23:57.903Z",
+  "verse_count": 27,
+  "token_count": 430,
+  "WORK_JSON2_QUALITY": "PASS",
+  "cover_status": "PASS",
+  "audio_machine_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "finalization_sha256": "befe20ba9a87be612746240fd717b5e5331fca610de39b97020b97f318b5194f",
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "disclosed_in_email": true,
+    "full_content_verified": false,
+    "repair_attempted": false,
+    "candidate_adopted": false,
+    "unresolved": [
+      {
+        "edge": "11:9/head",
+        "status": "FAIL",
+        "reason": "The expected start is 'וַיֹּאמֶר יְהוָה אֶל' but 'אֲדֹנָי' is heard instead of 'יְהוָה'."
+      },
+      {
+        "edge": "12:15/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:15/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:16/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:16/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:17/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:17/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:18/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:18/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:19/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:19/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:20/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:20/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      }
+    ]
+  },
+  "next_passage": {
+    "parasha": "Bo",
+    "parasha_jp": "ボー",
+    "aliyah": 5,
+    "book": "Exodus",
+    "chapter": 12,
+    "end_chapter": 12,
+    "start_verse": 21,
+    "end_verse": 28,
+    "display": "ボー｜第5アリヤー｜出エジプト記12:21–28"
+  }
+}
