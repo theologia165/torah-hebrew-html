@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0-work-boundary-decision",
+  "run_id": "102-20261111-r1",
+  "report_sha256": "b39e6c9d682a7643daf2957b340d7baa4e8d0cd533a768005499aef0575940d3",
+  "action": "DELIVER_CURRENT",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-11T13:16:54.592Z",
+  "evidence": "27節54境界の一覧を全件確認。11:4–12:14の42観察中41は期待冒頭・末尾と一致するPASS。11:7/headと11:10/headはheardが先頭2語のみであり、抜粋内部終端を実ファイル欠落と誤認しない。11:9/headはheard ויאמר אדני אל משהで期待の順序と開始を満たし、YHWHをAdonaiと朗読する通常の神名読み替えのみをFAIL理由としているため、Workは実境界不良の根拠と認めない。モデル原記録は改変しない。12:15/head,tail；12:16/head,tail；12:17/head,tail；12:18/head,tail；12:19/head,tail；12:20/head,tailの12箇所はBOUNDARY_BUDGET_LIMITで未観察・未解決のまま。7要求168秒、保守的予約見積約0.37552USD、追加バッチは0.40USD上限を超えるため詳査・修復なし。欠落音声は0。全境界PASSとはせずDELIVER_CURRENT、現在生成済みPocketTorah節別r2を採用し、修復・候補採用なし。メールで上記12未確認境界と11:9/headの自動判定とWork判断の相違を開示する。全編内容は未検品、full_content_verified=false。"
+}
