@@ -111,7 +111,7 @@
     },
     {
       "id": 4,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 24.0,
       "reserved_usd": 0.053535,
       "model": "gpt-audio-1.5",
@@ -122,6 +122,42 @@
         "2ced21663a07c099daca035dcb8c0e6c9fb6d010d6fa37ee3a941adae46bf39d",
         "d974d483bc1ed13327f604a2da2d069ba723f5128e74dc009327ed9214d5571e",
         "f8fd7f4fa400674c2825d899c0995ba363634ab91bba83a3e6cbc72ebaecb9cc"
+      ],
+      "http_status": 200,
+      "api_request_id": "req_7db22a22335e40c287f929fd79225a60",
+      "usage": {
+        "prompt_tokens": 983,
+        "completion_tokens": 295,
+        "total_tokens": 1278,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 237,
+          "text_tokens": 746,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 295
+        }
+      },
+      "actual_usd": 0.012399
+    },
+    {
+      "id": 5,
+      "status": "RESERVED",
+      "audio_seconds": 24.0,
+      "reserved_usd": 0.05369,
+      "model": "gpt-audio-1.5",
+      "clip_keys": [
+        "bcf1853ec70b177296bef6d8cd1ddb2db16ac87df15c1728dfaa81d49d4b7f00",
+        "25e5678b7bb5e956f71618d76eb06f5bfb90065b39381a42f8f0d5a55b319c3e",
+        "e981adb199a7b143afa39e917cf4685cfa0d734b3d57d314df41497fb8fce7d4",
+        "3a1991c023b0ce4054809bfaddb504d6daf8097cba36a067ae8a08496f2bb9e0",
+        "3a89fa972f1a1933515835a728faa8fe2a8dd189343d47677cee00511eeed0b4",
+        "047cfd40fb24b194dfc6f53b02e99f2f463ce2f52f6cdda59a1842fd54f09730"
       ]
     }
   ],
@@ -253,31 +289,73 @@
       "suggested_cut_seconds": null
     },
     "cfb1b2027a20956e5b44697a19172da7ed1a8eba2e305c16eae45c1073ef558b": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "דַּבְּרוּ אֶל כָּל",
+      "evidence": "clear articulation of all expected words at start",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "841b3a16db48332457bf9332b60869e6354dcff813b7df16eb67b35572af0f17": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "אָבֹת שֶׂה לַבָּיִת",
+      "evidence": "ending words match expected tail clearly",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "4d70cf72d208645d4df465a75c928c3be683052d7bb3a365a7bbdd88d085138c": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וְאִם יִמְעַט הַבַּיִת",
+      "evidence": "all expected head words audible",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "2ced21663a07c099daca035dcb8c0e6c9fb6d010d6fa37ee3a941adae46bf39d": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "תָּכֹסּוּ עַל הַשֶּׂה",
+      "evidence": "ending phrase matches expected tail",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "d974d483bc1ed13327f604a2da2d069ba723f5128e74dc009327ed9214d5571e": {
+      "status": "PASS",
+      "heard": "שֶׂה תָמִים זָכָר",
+      "evidence": "all expected head words present",
+      "request_id": 4,
+      "suggested_cut_seconds": null
+    },
+    "f8fd7f4fa400674c2825d899c0995ba363634ab91bba83a3e6cbc72ebaecb9cc": {
+      "status": "PASS",
+      "heard": "וּמִן הָעִזִּים תִּקָּחוּ",
+      "evidence": "ending words clearly heard",
+      "request_id": 4,
+      "suggested_cut_seconds": null
+    },
+    "bcf1853ec70b177296bef6d8cd1ddb2db16ac87df15c1728dfaa81d49d4b7f00": {
       "status": "UNCERTAIN",
       "heard": "",
       "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
     },
-    "f8fd7f4fa400674c2825d899c0995ba363634ab91bba83a3e6cbc72ebaecb9cc": {
+    "25e5678b7bb5e956f71618d76eb06f5bfb90065b39381a42f8f0d5a55b319c3e": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    },
+    "e981adb199a7b143afa39e917cf4685cfa0d734b3d57d314df41497fb8fce7d4": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    },
+    "3a1991c023b0ce4054809bfaddb504d6daf8097cba36a067ae8a08496f2bb9e0": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    },
+    "3a89fa972f1a1933515835a728faa8fe2a8dd189343d47677cee00511eeed0b4": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    },
+    "047cfd40fb24b194dfc6f53b02e99f2f463ce2f52f6cdda59a1842fd54f09730": {
       "status": "UNCERTAIN",
       "heard": "",
       "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
