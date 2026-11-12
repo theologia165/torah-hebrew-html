@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0-work-json2-quality",
+  "run_id": "103-20261112-r1",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-12T13:06:47.785602+00:00",
+  "WORK_JSON2_QUALITY": "PASS",
+  "verse_count": 8,
+  "token_count": 129,
+  "json2_sha256": "e98afc0549f35a5ec316c986e6f207da9947d269e7f6745f72c2860bea8f85c1",
+  "checks": {
+    "all_token_surface_lemma_morphology_gloss_pairs_reviewed": true,
+    "private_translations_checked_against_every_verse": true,
+    "verse_chunk_aliyah_levels_distinct": true,
+    "all_de-votional_items_verse_specific_sources_empty": true,
+    "sources_opened_and_support_checked": true,
+    "no_fallback_or_placeholder_or_hebrew_copy": true,
+    "ltr_japanese_no_prohibited_phrase": true,
+    "canonical_hashes_checked": true,
+    "real_production_validator": "STRUCTURE_PASS; independently of Work semantic PASS"
+  },
+  "decisions": [
+    "129/129 pairs manually examined in order. Null lexemes for preposition l resolved by morph_segments and syntax, not replaced.",
+    "lexeme language_code arc for kol/al does not override Hebrew token morph H. Source data unchanged.",
+    "12:23 mashhit stored nominal morphology retained; NET participial word formation discussed separately.",
+    "12:24 plural command and singular suffixes both preserved;12:27 singular people then plural worship recognized.",
+    "12:26 question not labeled rebellion;12:27 first-person plural preserved; speech nesting closed before people bow.",
+    "Rashi, NET notes and Gregory II95–99 freshly opened; no direct Mechilta/LXX collation falsely claimed.",
+    "No historical source dating inferred from final-text analysis. No unrelated traditions padded in."
+  ],
+  "unresolved": [],
+  "research_inputs": [
+    "ver3/runs/103-20261112-r1/json1.1.json",
+    "ver3/spec/json2-quality.md"
+  ],
+  "external_sources": [
+    {
+      "url": "https://www.chabad.org/library/bible_cdo/aid/9873/jewish/Chapter-12.htm",
+      "verified_on": "2026-11-12"
+    },
+    {
+      "url": "https://classic.net.bible.org/bible.php?book=Exo&chapter=12",
+      "verified_on": "2026-11-12"
+    },
+    {
+      "url": "https://www.uecf.net/books/life-of-moses-gregory-of-nyssa/chapter3.html",
+      "verified_on": "2026-11-12"
+    }
+  ]
+}
