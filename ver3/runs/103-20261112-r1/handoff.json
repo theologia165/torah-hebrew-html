@@ -2,26 +2,24 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "103-20261112-r1",
   "sequence": "103",
-  "phase": "AUDIO_BOUNDARY",
+  "phase": "IMAGE",
   "status": "WAITING_FOR_WORK",
-  "next_action": "REVIEW_AUDIO_BOUNDARIES",
+  "next_action": "GENERATE_QA_AND_UPLOAD_COVER",
   "stage_spec": {
-    "path": "ver3/spec/audio-boundary.md",
-    "sha256": "f6c62e8846ea96daeab0a90d73b9bb63c3379aae81c3f02ac6a7c00b32fda902"
+    "path": "ver3/spec/image-handoff.md",
+    "sha256": "f5f324c154caad1c7deca1752a9b0009f1ada981f63dd6814d84ea74323fc3d4"
   },
   "required_inputs": [
-    "ver3/runs/103-20261112-r1/audio-boundary/report.json",
-    "ver3/runs/103-20261112-r1/audio-boundary/usage.json",
-    "ver3/runs/103-20261112-r1/audio-boundary/state.json",
-    "ver3/runs/103-20261112-r1/audio-boundary/decision-template.json"
+    "ver3/runs/103-20261112-r1/json2.json",
+    "ver3/config/image-master.json",
+    "ver3/config/parasha-image/index.json",
+    "ver3/runs/103-20261112-r1/cover-upload.json"
   ],
   "expected_outputs": [
-    "ver3/runs/103-20261112-r1/audio-boundary/decision.json"
+    "ver3/runs/103-20261112-r1/cover-ready.json"
   ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "phase": "REVIEW",
-    "problem_edges": [],
-    "delivery_policy": "Unresolved audio is delivered with email disclosure; no PASS fabrication."
+    "cover_ticket_status": "ISSUED_CURRENT"
   }
 }
