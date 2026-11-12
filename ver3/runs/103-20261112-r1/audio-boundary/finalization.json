@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "103-20261112-r1",
+  "input_sha256": "37757f86048cf200737c60260f9cbc742f6c470ed526c38b71d28d0d5e88a725",
+  "manifest_sha256": "3718bcc978864babdfa78211ef242e8d386fde37994671825a5015eb8881b749",
+  "audio_sha256": {
+    "12:21": "b24733ce59462b5a879c3fd2ed722590b642dc04d83211f7bd0c48d814c0b16e",
+    "12:22": "f8c1c3dd1be22b962bc2b303795e31d41e98e669b277f26f8eac53ef1e64fd7a",
+    "12:23": "558ce3dfef5cd01764bff9fe05a0ada1ea5c07e039addff4c3118193fca7ff7d",
+    "12:24": "e87c0b6a518cb00d0162cad18d5328567a37d69acbc3761519e51083c64c452e",
+    "12:25": "caab085d12019aacb927e79b891187885ea34b222aa0113486b927c0b978bfe1",
+    "12:26": "cfcbb256143ffe663f0b6a46653fc84d3d5570f9906dc0ac15b9f7ae804b93bc",
+    "12:27": "6f4a96e55f0855b0b2e650685855b8df68f3872e7504e95ddbcc1567f32dc72c",
+    "12:28": "97cc5f3a32874e9ace05d3e1154ff8630f7bf1f834929063c3ccd07f4d3b3e61"
+  },
+  "status": "BOUNDARY_PASS",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-12T13:09:38.041Z",
+  "evidence": "Work reviewed all 16 current-MP3 head/tail observations for Exod12:21–28, expected/heard phrases, neighboring edges, source boundary metadata, known findings and usage. All observations are model PASS with no problem_edges, missing audio or known findings. Tails12:21–28 each report the expected ending; heads12:21,23–26,28 report all three opening tokens. 12:22/head only transcribes two expected tokens;12:27/head only the first token. Both explicitly report a clear correct onset, so no physical start-boundary defect is evidenced; the remaining expected tokens are not claimed verified from these 4-second excerpts. Keep the current playable audio; no contextual inspection, repair or candidate adoption justified. 3 successful API calls,64excerpt seconds, app-calculated actual estimate USD0.0346065; no API error or budget exhaustion. This is boundary-only review, full_content_verified=false, not all-word/content PASS. Disclose the two short opening transcriptions and review scope in email.",
+  "decision_sha256": "d405e12dfeaa4428441b8f0e70354ca64ae045b3bd071b07ab6147ee7bc5bac9",
+  "usage_sha256": "9b2d541b6c51d7975bcf6cdf189a72670a66e23a4ec29b9fab719dd02ebd6196",
+  "report_sha256": "e300e840aeed548e79061b33cab0bf4d2c514da8a2f30a25c29f9692ce25e08d",
+  "email_disclosure_required": false
+}
