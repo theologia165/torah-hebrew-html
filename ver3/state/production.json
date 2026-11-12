@@ -12,94 +12,34 @@
   },
   "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。",
   "last_completed": {
-    "sequence": "102",
-    "run_id": "102-20261111-r1",
-    "page_id": "4158aa46-08ae-8161-b791-f4081cc88dca",
-    "page_url": "https://app.notion.com/p/102-11-4-12-20-4158aa4608ae8161b791f4081cc88dca",
+    "sequence": "103",
+    "run_id": "103-20261112-r1",
+    "page_id": "4168aa46-08ae-8134-81a5-ca25a20d7648",
+    "page_url": "https://app.notion.com/p/103-12-21-28-4168aa4608ae813481a5ca25a20d7648",
     "status": "PASS",
-    "verse_count": 27,
-    "token_count": 430,
+    "verse_count": 8,
+    "token_count": 129,
     "WORK_JSON2_QUALITY": "PASS",
     "image_status": "PASS",
     "cover_status": "PASS",
-    "gmail_message_id": "1a1cac717306af68",
+    "gmail_message_id": "1a1cfe88d0af79d1",
     "gmail_sent_verified": true,
-    "completed_at": "2026-11-11T13:23:57.903Z",
+    "gmail_subject": "103｜出エジプト記12:21–28",
+    "completed_at": "2026-11-12T13:18:41.291Z",
     "audio_quality_status": "CONTENT_REVIEW_PENDING",
     "audio_content_verified": false,
     "audio_boundary": {
-      "finalization_sha256": "befe20ba9a87be612746240fd717b5e5331fca610de39b97020b97f318b5194f",
-      "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+      "finalization_sha256": "8c9ec675e4747808bdad3942c6a7d63eb4270c53020e9c7be168c1fdb2f56a22",
+      "status": "BOUNDARY_PASS",
       "disclosed_in_email": true,
       "full_content_verified": false,
       "repair_attempted": false,
       "candidate_adopted": false,
-      "unresolved": [
-        {
-          "edge": "11:9/head",
-          "status": "FAIL",
-          "reason": "The expected start is 'וַיֹּאמֶר יְהוָה אֶל' but 'אֲדֹנָי' is heard instead of 'יְהוָה'."
-        },
-        {
-          "edge": "12:15/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:15/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:16/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:16/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:17/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:17/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:18/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:18/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:19/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:19/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:20/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "12:20/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        }
+      "unresolved": [],
+      "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+      "opening_transcription_limits": [
+        "12:22/head:2 of 3 expected tokens transcribed; clear correct onset",
+        "12:27/head:1 of 3 expected tokens transcribed; clear correct onset"
       ]
     }
   },
@@ -108,15 +48,15 @@
   "next_passage": {
     "parasha": "Bo",
     "parasha_jp": "ボー",
-    "aliyah": 5,
+    "aliyah": 6,
     "book": "Exodus",
     "chapter": 12,
     "end_chapter": 12,
-    "start_verse": 21,
-    "end_verse": 28,
-    "display": "ボー｜第5アリヤー｜出エジプト記12:21–28"
+    "start_verse": 29,
+    "end_verse": 51,
+    "display": "ボー｜第6アリヤー｜出エジプト記12:29–51"
   },
-  "next_sequence": "103",
+  "next_sequence": "104",
   "notion_api_version": "2026-03-11",
   "notion_output_rule": {
     "show_development_labels": false,

@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "103-20261112-r1",
+  "sequence": "103",
+  "delivery_status": "PASS",
+  "page_id": "4168aa46-08ae-8134-81a5-ca25a20d7648",
+  "page_url": "https://app.notion.com/p/103-12-21-28-4168aa4608ae813481a5ca25a20d7648",
+  "gmail": {
+    "message_id": "1a1cfe88d0af79d1",
+    "subject": "103｜出エジプト記12:21–28",
+    "sent_verified": true,
+    "to": "nishiharat@gmail.com",
+    "attachment": {
+      "filename": "asaichi-torah-103-20261112.jpg",
+      "byte_size": 309621,
+      "sha256": "61e45e2b1f1c70b42f2859437fd53263d73e0f19f3eef4c497d1da1ed9edc0a3",
+      "sent_attachment_verified": true,
+      "verification_method": "Sent full MIME readback: exact filename, MIME image/jpeg and309621byte size; original source SHA256 recorded separately"
+    },
+    "sent_label_verified": true,
+    "body_readback_verified": true
+  },
+  "completed_at": "2026-11-12T13:18:41.291Z",
+  "verse_count": 8,
+  "token_count": 129,
+  "WORK_JSON2_QUALITY": "PASS",
+  "cover_status": "PASS",
+  "audio_machine_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "finalization_sha256": "8c9ec675e4747808bdad3942c6a7d63eb4270c53020e9c7be168c1fdb2f56a22",
+    "status": "BOUNDARY_PASS",
+    "disclosed_in_email": true,
+    "full_content_verified": false,
+    "repair_attempted": false,
+    "candidate_adopted": false,
+    "unresolved": [],
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "opening_transcription_limits": [
+      "12:22/head:2 of 3 expected tokens transcribed; clear correct onset",
+      "12:27/head:1 of 3 expected tokens transcribed; clear correct onset"
+    ]
+  },
+  "next_passage": {
+    "parasha": "Bo",
+    "parasha_jp": "ボー",
+    "aliyah": 6,
+    "book": "Exodus",
+    "chapter": 12,
+    "end_chapter": 12,
+    "start_verse": 29,
+    "end_verse": 51,
+    "display": "ボー｜第6アリヤー｜出エジプト記12:29–51"
+  }
+}
