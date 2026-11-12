@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0-work-boundary-decision",
+  "run_id": "103-20261112-r1",
+  "report_sha256": "e300e840aeed548e79061b33cab0bf4d2c514da8a2f30a25c29f9692ce25e08d",
+  "action": "DELIVER_CURRENT",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-12T13:09:38.041Z",
+  "evidence": "Work reviewed all 16 current-MP3 head/tail observations for Exod12:21–28, expected/heard phrases, neighboring edges, source boundary metadata, known findings and usage. All observations are model PASS with no problem_edges, missing audio or known findings. Tails12:21–28 each report the expected ending; heads12:21,23–26,28 report all three opening tokens. 12:22/head only transcribes two expected tokens;12:27/head only the first token. Both explicitly report a clear correct onset, so no physical start-boundary defect is evidenced; the remaining expected tokens are not claimed verified from these 4-second excerpts. Keep the current playable audio; no contextual inspection, repair or candidate adoption justified. 3 successful API calls,64excerpt seconds, app-calculated actual estimate USD0.0346065; no API error or budget exhaustion. This is boundary-only review, full_content_verified=false, not all-word/content PASS. Disclose the two short opening transcriptions and review scope in email."
+}
