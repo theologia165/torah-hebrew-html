@@ -75,7 +75,7 @@
     },
     {
       "id": 3,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 16.0,
       "reserved_usd": 0.0399,
       "model": "gpt-audio-1.5",
@@ -84,7 +84,28 @@
         "00cb0f2fa4874e8eef77f894df69bc2e567e296e32669339dd7dce39ec296788",
         "b7dd95c3b05ed90d8cbb9b22745efc369bac69333f649087aabbf4c8e56a8da5",
         "29d85169a9dcdc0060e290caec60d3dcf9416188e77f5fb759a8bb9999434f53"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_ad6da6c96bda4c548bf3f17343703dd1",
+      "usage": {
+        "prompt_tokens": 770,
+        "completion_tokens": 249,
+        "total_tokens": 1019,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 158,
+          "text_tokens": 612,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 249
+        }
+      },
+      "actual_usd": 0.009076
     }
   ],
   "cache": {
@@ -173,24 +194,32 @@
       "suggested_cut_seconds": null
     },
     "93d89f3b2f444d6ef1ee99c2777ab74f966ae24a060fb22cbe1ed68bb6fa4baa": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַאֲמַרְתֶּם",
+      "evidence": "The clip starts clearly with וַאֲמַרְתֶּם matching the expected beginning.",
+      "request_id": 3,
+      "suggested_cut_seconds": null
     },
     "00cb0f2fa4874e8eef77f894df69bc2e567e296e32669339dd7dce39ec296788": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיִּקֹּד הָעָם וַיִּשְׁתַּחֲוּוּ",
+      "evidence": "The clip ends with the expected phrase fully audible.",
+      "request_id": 3,
+      "suggested_cut_seconds": null
     },
     "b7dd95c3b05ed90d8cbb9b22745efc369bac69333f649087aabbf4c8e56a8da5": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיֵּלְכוּ וַיַּעֲשׂוּ בְּנֵי",
+      "evidence": "The clip begins with the expected words clearly heard.",
+      "request_id": 3,
+      "suggested_cut_seconds": null
     },
     "29d85169a9dcdc0060e290caec60d3dcf9416188e77f5fb759a8bb9999434f53": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וְאַהֲרֹן כֵּן עָשׂוּ",
+      "evidence": "The clip ends with the expected words fully audible.",
+      "request_id": 3,
+      "suggested_cut_seconds": null
     }
   }
 }
