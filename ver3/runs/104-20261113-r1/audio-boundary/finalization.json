@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "104-20261113-r1",
+  "input_sha256": "4ffd9175fe33e380b4640f478b19f4428cc75d7a22b69fd6e7df15e995a9cd62",
+  "manifest_sha256": "8d583122fcb3178a13e2fdda096f0d0a774d11103a64de155804ec86f2d5ec7e",
+  "audio_sha256": {
+    "12:29": "3ca36cc81f589aadb6d07bfd98af8ad0055f6c40621598c3a1ed8a0e790f58ad",
+    "12:30": "3a72133cbc5b1c6614441c0ccde71dac3b27cfe5ab19e9641514f10f481a3a5d",
+    "12:31": "02ec828cb2c38f954d51034839e0baa9c48ab241c6f1d9b426b653b08542ccee",
+    "12:32": "93bcdfaad9c32b187175fa64980ace76f8e854931b6eb1f7221d35629a679715",
+    "12:33": "fa5d7e49081a63746673ec0cd5e7d84270ad0ef687f354f10e183fed23e164ed",
+    "12:34": "b6655fe4cf2c8e50d93aa6988d31be64c983834a83ca3dfca087ba3f0e72ec0e",
+    "12:35": "2c42c10650f3bda4cefa191901d00d4caa5c64cc775140840b567bc38c4daa79",
+    "12:36": "5bdcd117aa08d6529cf519ef96a9ed5b740b8415d2a4d4aae70ecd94f7267d43",
+    "12:37": "44929feb270d341786767db566589056ef975ef1c79dfb8914cd8d8c6dcc8b5d",
+    "12:38": "2d18fdd53979d5a83513cfe70ee0a026b48389c4cc714681444bee9a23be1f3c",
+    "12:39": "c1219442cfec66dff8f553dd8cabc270fc41c9de173d94ef041b178d63432a26",
+    "12:40": "ab65b60ce8683fbb464fc988e2bc0848868a5f767a01afa2e30a7957e009a989",
+    "12:41": "9e94dff5202844d8cb3a971646a85d95e536100e8078c51a8a1e1e2f1395fe82",
+    "12:42": "f59435855f6a504c2886ec4e5fa1927ca097fd7ec78b5bec163a3e908d0963aa",
+    "12:43": "fec14300abff941802d082ecaa4f9257eb754e211873dfe8553740d09de26228",
+    "12:44": "f9185daa32fb881400bfa32fe71c033b9b61ca77e78702410f36b50028f2785f",
+    "12:45": "299cd933305e4cbc84768601f28d04da908d79ac9fb5efb8758b5841f417d8d3",
+    "12:46": "aa81d13c1defccc5b3bd4738d9d47ab2052e6c210666c3f9763cf923427b7a79",
+    "12:47": "8921faa2d571052158e7013b0328a04b602d6485200900457e9ee404f29a7bae",
+    "12:48": "1e6d2e37793cdf9a1fd910d002cbd9033b87a5afe3b7497666c06ed907ed3267",
+    "12:49": "f4800e597a131ba56dc2e21f53d37a59d65a009303b84fedc00f794b6a9857f0",
+    "12:50": "705567697670809abcb0f1f1f7f3a464bf2514944d5f1838c707f85024eab990",
+    "12:51": "397ec2d751ff806e12bd78f7d9cff6f911169a7b2436b3273593ab629dbded75"
+  },
+  "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [
+    {
+      "edge": "12:51/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "12:51/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    }
+  ],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-13T13:10:32.258Z",
+  "evidence": "Work reviewed all44 observations:42 PASS for12:29–50 (12:45/47 each whole clip),12:51/head and tail UNCERTAIN BOUNDARY_BUDGET_LIMIT. No missing audio or known findings.12:29/head and12:41/head transcribe2 of3 expected tokens but explicitly clear correct onset; remaining token not claimed checked. No confirmed cut defect and no repair justified. Reserved conservative USD sum reaches next-call budget limit; do not reset ledger or invoke another API. DELIVER_CURRENT with unresolved12:51 both edges disclosed in email.7 successful requests,172.512653seconds. Boundary-only, full_content_verified=false; content remains pending.",
+  "decision_sha256": "278f774be195ebdf00ca4d3cb45389e30e636c8881c0427f08508cbb145f0c84",
+  "usage_sha256": "f21e4cf43272bb20391f31b5bd6c73b15a4184570eaed28f09186ec91035ce89",
+  "report_sha256": "7c806c90ad55998ef5308e3c1e390a9aa145d2195c32ffc733562833041006c2",
+  "email_disclosure_required": true
+}
