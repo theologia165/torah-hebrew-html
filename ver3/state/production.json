@@ -12,35 +12,42 @@
   },
   "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。",
   "last_completed": {
-    "sequence": "103",
-    "run_id": "103-20261112-r1",
-    "page_id": "4168aa46-08ae-8134-81a5-ca25a20d7648",
-    "page_url": "https://app.notion.com/p/103-12-21-28-4168aa4608ae813481a5ca25a20d7648",
+    "sequence": "104",
+    "run_id": "104-20261113-r1",
+    "page_id": "4178aa46-08ae-81f4-a0e2-e4d691c9c12e",
+    "page_url": "https://app.notion.com/p/104-12-29-51-4178aa4608ae81f4a0e2e4d691c9c12e",
     "status": "PASS",
-    "verse_count": 8,
-    "token_count": 129,
+    "verse_count": 23,
+    "token_count": 309,
     "WORK_JSON2_QUALITY": "PASS",
     "image_status": "PASS",
     "cover_status": "PASS",
-    "gmail_message_id": "1a1cfe88d0af79d1",
+    "gmail_message_id": "1a1d50f3797ef4f3",
     "gmail_sent_verified": true,
-    "gmail_subject": "103｜出エジプト記12:21–28",
-    "completed_at": "2026-11-12T13:18:41.291Z",
+    "gmail_subject": "104｜出エジプト記12:29–51",
+    "completed_at": "2026-11-13T13:19:02.873Z",
     "audio_quality_status": "CONTENT_REVIEW_PENDING",
     "audio_content_verified": false,
     "audio_boundary": {
-      "finalization_sha256": "8c9ec675e4747808bdad3942c6a7d63eb4270c53020e9c7be168c1fdb2f56a22",
-      "status": "BOUNDARY_PASS",
+      "finalization_sha256": "55d0b1d6582541fc781b48532f7ed3985bdff9863c38d54875b80b9222a8e228",
+      "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
       "disclosed_in_email": true,
       "full_content_verified": false,
       "repair_attempted": false,
       "candidate_adopted": false,
-      "unresolved": [],
-      "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
-      "opening_transcription_limits": [
-        "12:22/head:2 of 3 expected tokens transcribed; clear correct onset",
-        "12:27/head:1 of 3 expected tokens transcribed; clear correct onset"
-      ]
+      "unresolved": [
+        {
+          "edge": "12:51/head",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "12:51/tail",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        }
+      ],
+      "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY"
     }
   },
   "mode": "ver3-production",
@@ -48,15 +55,15 @@
   "next_passage": {
     "parasha": "Bo",
     "parasha_jp": "ボー",
-    "aliyah": 6,
+    "aliyah": 7,
     "book": "Exodus",
-    "chapter": 12,
-    "end_chapter": 12,
-    "start_verse": 29,
-    "end_verse": 51,
-    "display": "ボー｜第6アリヤー｜出エジプト記12:29–51"
+    "chapter": 13,
+    "end_chapter": 13,
+    "start_verse": 1,
+    "end_verse": 16,
+    "display": "ボー｜第7アリヤー｜出エジプト記13:1–16"
   },
-  "next_sequence": "104",
+  "next_sequence": "105",
   "notion_api_version": "2026-03-11",
   "notion_output_rule": {
     "show_development_labels": false,
