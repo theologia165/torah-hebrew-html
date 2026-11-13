@@ -1,0 +1,28 @@
+{
+  "status": "CREATED",
+  "run_id": "104-20261113-r1",
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "12:51/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "12:51/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      }
+    ],
+    "workflow_notes": [],
+    "email_disclosure_required": true,
+    "finalization_sha256": "55d0b1d6582541fc781b48532f7ed3985bdff9863c38d54875b80b9222a8e228"
+  },
+  "page_id": "4178aa46-08ae-81f4-a0e2-e4d691c9c12e",
+  "page_url": "https://app.notion.com/p/104-12-29-51-4178aa4608ae81f4a0e2e4d691c9c12e"
+}
