@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0-work-json2-quality",
+  "run_id": "104-20261113-r1",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-13T13:07:11.401051+00:00",
+  "WORK_JSON2_QUALITY": "PASS",
+  "verse_count": 23,
+  "token_count": 309,
+  "checks": [
+    "All309 token surface/lemma/morph segments/Japanese gloss correspondences manually audited",
+    "All23 private translations and verse-specific grammar audited; no fallback/empty/gloss Hebrew copy",
+    "23 distinct devotional responses last and sources empty",
+    "Five continuous chunks and five aliyah research items distinct",
+    "Fresh Rashi12:39–40, NET32/37/42, GregoryII90–94 checked; sources distinguish own final-text analysis from reception",
+    "Canonical input hash and real production validator PASS, independently of semantic audit"
+  ],
+  "decisions": [
+    "12:33 source lemma4713 retained despite surface Mitsrayim; translation from Hebrew morph and sentence, no source edits",
+    "Token ID gaps across verses retained, not regenerated",
+    "12:34 kneading trough versus Rashi leftovers: private translation follows noun lexical/context sense; no forced midrash gloss",
+    "12:37 six hundred thousand retained; children excluded from that stated count; no speculative total population",
+    "12:40 current Hebrew Egypt relation clause retained; Rashi extended patriarchal chronology identified as interpretation",
+    "12:48 Niphal infinitive absolute with imperative force;12:49 native and resident sojourner under same contextual rule",
+    "No source-dating assertion or modern disaster victim blame"
+  ],
+  "unresolved": []
+}
