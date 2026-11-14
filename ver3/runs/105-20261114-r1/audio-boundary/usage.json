@@ -183,7 +183,7 @@
     },
     {
       "id": 6,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 30.0,
       "reserved_usd": 0.0619275,
       "model": "gpt-audio-1.5",
@@ -191,7 +191,28 @@
         "7c34a6ff4e493a385eebac3c9e6c1e35f576c472abc4e5105f644fda0d6f6024",
         "f8ad179dbe3670907669b80d64976dc505fea325bbd01ebb089356cdc88f0f79",
         "a910b79727ac605590498ec6a4708bc70d8cb055660f61ea05bac5ccee5f40c3"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_c2d6e781b5c5405089fa4b2f1a0d7649",
+      "usage": {
+        "prompt_tokens": 806,
+        "completion_tokens": 230,
+        "total_tokens": 1036,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 299,
+          "text_tokens": 507,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 230
+        }
+      },
+      "actual_usd": 0.0131355
     }
   ],
   "cache": {
@@ -406,19 +427,25 @@
       "suggested_cut_seconds": null
     },
     "7c34a6ff4e493a385eebac3c9e6c1e35f576c472abc4e5105f644fda0d6f6024": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "אָדָם בְּבָנֶיךָ תִּפְדֶּה ... וְהָיָה כִּי יִשְׁאָלְךָ",
+      "evidence": "Both other_edge and expected phrases are clearly audible around the cut",
+      "request_id": 6,
+      "suggested_cut_seconds": null
     },
     "f8ad179dbe3670907669b80d64976dc505fea325bbd01ebb089356cdc88f0f79": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "מִמִּצְרַיִם מִבֵּית עֲבָדִים ... וַיְהִי כִּי הִקְשָׁה",
+      "evidence": "Both other_edge and expected phrases are clearly audible around the cut",
+      "request_id": 6,
+      "suggested_cut_seconds": null
     },
     "a910b79727ac605590498ec6a4708bc70d8cb055660f61ea05bac5ccee5f40c3": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "הוֹצִיאָנוּ יְהוָה מִמִּצְרָיִם",
+      "evidence": "The expected ending phrase is clearly audible at the end",
+      "request_id": 6,
+      "suggested_cut_seconds": null
     }
   }
 }

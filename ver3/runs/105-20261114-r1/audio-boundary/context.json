@@ -1,0 +1,89 @@
+{
+  "run_id": "105-20261114-r1",
+  "input_sha256": "f0a2b56e036b7f93e1d1eefec69cc3f38a29f2b4dd0e9bbc3a88b12c91170b51",
+  "manifest_sha256": "90c5dc306acbc2e68b505eae7cc2a38adf8b9648eec05e12ddfc86117451587d",
+  "audio_sha256": {
+    "13:1": "9fec7b8018f57bccbcf8920382b19c1e3a58bf34a93d405dec3b59edb7721813",
+    "13:2": "9668636bf05bec9132dee0e7fb45b193491efbc07612137bb9970ffd2cd05402",
+    "13:3": "540e9bcb88162e7b9c401b8fcbf18c55e25d5130dd7892c0e946075396f6ad67",
+    "13:4": "78d8645cc7e8c7d1ffe558d9acb1bf9e252f9d3046ddcca381c5cde05e27a727",
+    "13:5": "c1ef3b4ab32e82f7693ae39b3ca143d12648bb4d649da1bc24ea25880bc864d4",
+    "13:6": "fd656c12e4b76c29937e8387a65f8a59e716c0e54b88e8f87a8075c91fd39913",
+    "13:7": "ced4d72a3f0d27cf6f7bc6a2741f3e7414e7063dea458396f6242f39c6136bda",
+    "13:8": "d7421a79a81cdf558ba996d2351b3c1e3f9712778bed446aec686c9f82379bf1",
+    "13:9": "d69e951229653f63e768e76e096540c774426480e290a012578814593b71c595",
+    "13:10": "3c3aa4b45aa70114ad47837e7e9bc6034400bb3ea39287d57b063ea978d116a5",
+    "13:11": "de51b99826864ac8397efa50879649aacdda738c33cbe380e7ca6427f63ed524",
+    "13:12": "a75947c08dde68e96eab821deefabea4a716916fd628d4df780d8d5202864bee",
+    "13:13": "b1bfca0db54b22d76c8dc685d7451c7156e79e6d1c577e34dd4bb6a6122236e6",
+    "13:14": "51e44a60e93ef5f7b0ed02ac0a015cb5d6c6f4b022b52cdc4236c63ae015200f",
+    "13:15": "8d49f8d75602176ed4503dd0a6df315dc06aeaf4c37c62e33319d61bb3b4aea4",
+    "13:16": "866dc36105a0d44528f9ffea75c17cc135ed23590f3a7daa76e658ab998a98f1"
+  },
+  "observations": [
+    {
+      "id": "13:14/head/context",
+      "ref": "13:14",
+      "side": "context",
+      "audio_sha256": "f71a1fcd22bb750d804f64f8165d789f4367c6a52d020617cb85f542dce7924a",
+      "start": 184.2637,
+      "end": 196.2637,
+      "cut_seconds": 6.0,
+      "source_cut_seconds": 190.2637,
+      "expected": "וְהָיָה כִּֽי יִשְׁאָלְךָ",
+      "other_edge": "אָדָם בְּבָנֶיךָ תִּפְדֶּֽה",
+      "expected_order": "other_edge then expected",
+      "cache_key": "7c34a6ff4e493a385eebac3c9e6c1e35f576c472abc4e5105f644fda0d6f6024",
+      "observation": {
+        "status": "PASS",
+        "heard": "אָדָם בְּבָנֶיךָ תִּפְדֶּה ... וְהָיָה כִּי יִשְׁאָלְךָ",
+        "evidence": "Both other_edge and expected phrases are clearly audible around the cut",
+        "request_id": 6,
+        "suggested_cut_seconds": null
+      }
+    },
+    {
+      "id": "13:15/head/context",
+      "ref": "13:15",
+      "side": "context",
+      "audio_sha256": "f71a1fcd22bb750d804f64f8165d789f4367c6a52d020617cb85f542dce7924a",
+      "start": 204.674991,
+      "end": 216.674991,
+      "cut_seconds": 6.0,
+      "source_cut_seconds": 210.674991,
+      "expected": "וַיְהִי כִּֽי הִקְשָׁה",
+      "other_edge": "מִמִּצְרַיִם מִבֵּית עֲבָדִֽים",
+      "expected_order": "other_edge then expected",
+      "cache_key": "f8ad179dbe3670907669b80d64976dc505fea325bbd01ebb089356cdc88f0f79",
+      "observation": {
+        "status": "PASS",
+        "heard": "מִמִּצְרַיִם מִבֵּית עֲבָדִים ... וַיְהִי כִּי הִקְשָׁה",
+        "evidence": "Both other_edge and expected phrases are clearly audible around the cut",
+        "request_id": 6,
+        "suggested_cut_seconds": null
+      }
+    },
+    {
+      "id": "13:16/tail/context",
+      "ref": "13:16",
+      "side": "context",
+      "audio_sha256": "f71a1fcd22bb750d804f64f8165d789f4367c6a52d020617cb85f542dce7924a",
+      "start": 248.11925,
+      "end": 254.11925,
+      "cut_seconds": 6.0,
+      "source_cut_seconds": 254.11925,
+      "expected": "הוֹצִיאָנוּ יְהוָה מִמִּצְרָֽיִם",
+      "other_edge": "",
+      "expected_order": "expected then other_edge",
+      "cache_key": "a910b79727ac605590498ec6a4708bc70d8cb055660f61ea05bac5ccee5f40c3",
+      "observation": {
+        "status": "PASS",
+        "heard": "הוֹצִיאָנוּ יְהוָה מִמִּצְרָיִם",
+        "evidence": "The expected ending phrase is clearly audible at the end",
+        "request_id": 6,
+        "suggested_cut_seconds": null
+      }
+    }
+  ],
+  "note": "suggested_cut_seconds is local to the excerpt; add start for original-source seconds. Work must judge it."
+}
