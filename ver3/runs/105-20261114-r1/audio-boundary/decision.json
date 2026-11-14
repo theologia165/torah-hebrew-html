@@ -2,14 +2,9 @@
   "schema_version": "1.0-work-boundary-decision",
   "run_id": "105-20261114-r1",
   "report_sha256": "fa7e87c51a71a69a9c8826b21e1573a514534aa39a6d6ffa9d2adfa17c41bf4c",
-  "action": "INSPECT_CONTEXT",
+  "action": "DELIVER_CURRENT",
   "reviewer": "Work",
-  "reviewed_at": "2026-11-14T13:12:54.127Z",
-  "evidence": "All30 whole/head/tail observations reviewed.13:14 and13:15 start with the correct first two words; third word absence inside4s may reflect chanting rather than wrong cut, so inspect source context before moving boundary.13:16 tail observer reports cut word at source_end; inspect last source context to determine whether correction is physically possible. Other27 observations match boundary text; this is not a whole-content PASS.",
-  "note": "Work must judge observations. A template is not an approval. Other actions: INSPECT_CONTEXT, REQUEST_REPAIR, ADOPT_CANDIDATE.",
-  "edges": [
-    "13:14/head",
-    "13:15/head",
-    "13:16/tail"
-  ]
+  "reviewed_at": "2026-11-14T13:15:09.972Z",
+  "evidence": "Reviewed all30 boundary observations and one context round.13:14/head and13:15/head context hears previous ending then complete expected opening; correct initial words in original4s plus complete third word in longer context support keeping existing cuts, not shifting them.13:16/tail context hears complete final phrase at source_end with no suggested cut; no evidence for trimming or extending beyond source. No repair performed. Original short-clip FAIL records retained, not rewritten as whole-content PASS. Deliver current playable audio; disclose initial discrepancies and context PASS, and any unresolved status retained by finalization. full_content_verified=false.",
+  "note": "Work must judge observations. A template is not an approval. Other actions: INSPECT_CONTEXT, REQUEST_REPAIR, ADOPT_CANDIDATE."
 }
