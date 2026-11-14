@@ -1,0 +1,95 @@
+name: Correct 104 cover only
+on:
+  push:
+    branches: [asaichi-torah-ver3]
+    paths:
+      - '.github/workflows/asaichi-torah-ver3-cover-104.yml'
+      - 'ver3/runs/104-20261113-r1/cover-correction-ready.json'
+permissions:
+  contents: write
+concurrency:
+  group: asaichi-torah-production
+  cancel-in-progress: false
+jobs:
+  cover-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+      R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_BUCKET: asaichi-torah-images
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: asaichi-torah-ver3
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests boto3 pillow
+      - name: Issue relay ticket or apply corrected cover
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,sys
+          from pathlib import Path
+          sys.path.insert(0,'ver3/scripts')
+          from r2_cover import ticket,ticket_is_current,fetch,upload_to_notion
+          from prepare_notion_html import request_json
+          import requests
+          run=Path('ver3/runs/104-20261113-r1')
+          ready=run/'cover-correction-ready.json'
+          result=run/'cover-correction-result.json'
+          ticket_path=run/'cover-correction-upload.json'
+          relay_id='104-20261113-r1-correction-20261114'
+          page_id='4178aa46-08ae-81f4-a0e2-e4d691c9c12e'
+          if not ready.exists():
+              if not ticket_is_current(ticket_path): ticket(relay_id,ticket_path)
+              print('WAITING_FOR_CORRECTED_JPEG')
+          else:
+              q=json.loads(ready.read_text())
+              assert len(q['sha256'])==64 and q['anatomy_review']=='PASS_ENLARGED' and q['run_id']=='104-20261113-r1'
+              assert q['status']=='PASS' and q['page_id']==page_id
+              if not result.exists():
+                  immutable={p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['ver3/state/production.json',str(run/'delivery.json'),str(run/'completion.json'),str(run/'json3.json')]}
+                  delivery=json.loads((run/'delivery.json').read_text())
+                  assert delivery['page_id']==page_id and delivery['status']=='PASS'
+                  token=os.environ['NOTION_TOKEN']
+                  before=request_json('GET',f'/pages/{page_id}',token)
+                  def blocks(parent):
+                      items=[];cursor=None
+                      while True:
+                          suffix='?page_size=100'+('&start_cursor='+cursor if cursor else '')
+                          res=request_json('GET',f'/blocks/{parent}/children'+suffix,token)
+                          for item in res['results']:
+                              items.append(item)
+                              if item.get('has_children'): items.extend(blocks(item['id']))
+                          if not res.get('has_more'): return items
+                          cursor=res['next_cursor']
+                  before_blocks=blocks(page_id)
+                  data=fetch(relay_id,30)
+                  assert hashlib.sha256(data).hexdigest()==q['sha256'] and len(data)==q['byte_size']
+                  upload_id=upload_to_notion(data,token)
+                  request_json('PATCH',f'/pages/{page_id}',token,json={'cover':{'type':'file_upload','file_upload':{'id':upload_id}}})
+                  after=request_json('GET',f'/pages/{page_id}',token)
+                  assert after['properties']==before['properties']
+                  assert blocks(page_id)==before_blocks, 'Non-cover page blocks changed'
+                  assert after.get('in_trash')==before.get('in_trash')
+                  assert after['cover']['type']=='file'
+                  actual=requests.get(after['cover']['file']['url'],timeout=60)
+                  actual.raise_for_status()
+                  assert hashlib.sha256(actual.content).hexdigest()==q['sha256']
+                  assert all(hashlib.sha256(Path(p).read_bytes()).hexdigest()==h for p,h in immutable.items())
+                  result.write_text(json.dumps({'status':'PASS','operation':'COVER_ONLY_CORRECTION','run_id':'104-20261113-r1','page_id':page_id,'reason':'User reported incorrect left hand; fresh image independently enlarged and left/right hand anatomy inspected','prior_cover_sha256':delivery['cover']['sha256'],'sha256':q['sha256'],'byte_size':len(data),'notion_file_upload_id':upload_id,'notion_cover_bytes_verified':True,'page_properties_unchanged':True,'all_non_cover_blocks_unchanged':True,'anatomy_review':q['qa'],'production_and_original_delivery_completion_unchanged':True},indent=2)+'\n')
+                  print('PASS: corrected cover uploaded and saved Notion bytes verified')
+          
+          PY
+      - name: Commit cover correction evidence
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ver3/runs/104-20261113-r1/cover-correction-*.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record 104 cover-only correction handoff"
+            git push origin HEAD:asaichi-torah-ver3
+          fi

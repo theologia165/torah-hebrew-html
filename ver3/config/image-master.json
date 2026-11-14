@@ -153,8 +153,16 @@
       "focus and blur vary plausibly with scene depth when appropriate; strong bokeh is not required",
       "important faces, hands and relationships remain readable and the left text is unaffected by optical effects",
       "theme and required text remain clear at thumbnail viewing size",
-      "the viewer's position and selected camera angle are visibly realized and convey the current passage's central action or tension"
-    ]
+      "the viewer's position and selected camera angle are visibly realized and convey the current passage's central action or tension",
+      "Independent enlarged anatomy review completed for each principal figure before aesthetic review; left/right hand identity, thumb/fingers, joints, limbs and object contact checked; no unresolved anatomy"
+    ],
+    "anatomy_review": {
+      "required": true,
+      "order": "INDEPENDENT_ENLARGED_ANATOMY_REVIEW_BEFORE_COMPOSITION_REVIEW",
+      "method": "Actually display enlarged inspection crops of each principal figure; trace shoulders/elbows/wrists, left/right hand identity and thumb/finger arrangement, hip/knee/ankle/foot chains and supported objects; scan background figures.",
+      "uncertain_policy": "Do not mark unreadable key anatomy PASS; reject FAIL or UNCERTAIN within the existing total3 fresh-generation limit.",
+      "evidence": "Use existing cover-ready.json qa field with specific figures/body regions/left-right and contact judgments; no separate audit JSON or stored crop binaries."
+    }
   },
   "persistence": {
     "store_image_audit_json": false,

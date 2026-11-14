@@ -149,3 +149,7 @@ JSON1／JSON1.1／JSON2の本文・hash・token identityが合格している場
 
 
 【Notionのヘブライ語枠：共通ダミーHTML方式】全節の最終表示はGitHub Pages URL embedとする。新規枠はver3/config/notion-frame.jsonのアップロード済み共通frame-bootstrap.htmlのfile_upload_idを再利用して作成し、同じブロックを各節のPages URLへ更新する。本文HTMLを節ごとにNotionへアップロードしない。共有IDが失効した場合だけ小さなダミーを当該RUNで一度再アップロードする。途中停止した添付枠はダミー内容を照合してPagesへ切り替えてから通常検証を行う。JSON3は最終Pages URLを正本とし、ダミーのまま配信完了としない。
+
+## サムネイルの人体拡大検品
+
+画像は構図評価の前に、[画像工程](spec/image-handoff.md)の独立した人体拡大検品を必須とする。左右の手・親指・各関節・物との接触を実画像の拡大表示で確認し、FAIL／UNCERTAINは配信しない。判断は既存cover-ready.jsonのqa欄へ記録し、専用監査JSONや画像バイナリは増やさない。
