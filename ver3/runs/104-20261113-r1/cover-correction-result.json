@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "operation": "COVER_ONLY_CORRECTION",
+  "run_id": "104-20261113-r1",
+  "page_id": "4178aa46-08ae-81f4-a0e2-e4d691c9c12e",
+  "reason": "User reported incorrect left hand; fresh image independently enlarged and left/right hand anatomy inspected",
+  "prior_cover_sha256": "3b859c2b759f0a241a46dd5a174ecebc6e146897a0fa592fa83100167403528d",
+  "sha256": "a2759ec9f680b8b650fdcab863a12c8590afc7ea0bd704929d28db54d2064e16",
+  "byte_size": 352884,
+  "notion_file_upload_id": "4188aa46-08ae-8184-9bdf-00b27c81bc82",
+  "notion_cover_bytes_verified": true,
+  "page_properties_unchanged": true,
+  "all_non_cover_blocks_unchanged": true,
+  "anatomy_review": {
+    "anatomy_review": "PASS_ENLARGED",
+    "method": "Actual enlarged crop display, independent of composition review; not image-count or prompt-only approval.",
+    "observations": [
+      "Foreground man: head and neck, both shoulder\u2013elbow\u2013wrist\u2013hand chains inspected separately at enlargement. His right hand wraps the cloth at chest level with the thumb opposing the curled fingers; the bowl rests on his right shoulder in the sling. His left forearm descends from the left sleeve, with the thumb on the torso side and naturally overlapping curved fingers. No duplicated hand, reversed hand or detached joint observed.",
+      "Foreground child: head/neck, both arms, wrists and hands inspected at enlargement. Near hand shows four descending fingers and a separate thumb toward the body; far hand has a separate thumb and naturally overlapped flexed fingers. Both arms belong to the child; no contact fusion with the man.",
+      "Middle-ground woman: head/neck, visible shoulder\u2013elbow\u2013wrist\u2013hand at bowl, garment-covered lower body and both visible ankles/feet inspected. Visible hand supports the wrapped bowl, thumb/fingers opposed; farther hand is occluded by the bowl and is not claimed as visible. Feet remain separately connected beneath the garment.",
+      "Background queue: visible arms, hands, lower legs and feet scanned; garments, livestock and other figures account for occlusion. No obvious extra limbs or merged body parts observed.",
+      "Foreground man and child lower legs/feet lie outside the frame; no claim of inspecting unseen anatomy. Visible hip/thigh and child's knee follow the walking pose."
+    ],
+    "composition": "PASS: oblique view slightly ahead of the departing man/child, natural perspective, readable faces/hands/cloth-wrapped dough bowl, gaze leading rightward toward the receding community. Main subjects clear; distant queue gradually softer. No extreme wide-angle distortion.",
+    "text_and_scene": "PASS: \u671d\u4e00\u30c8\u30fc\u30e9\u30fc /104 /\u30dc\u30fc /\u7b2c6\u30a2\u30ea\u30e4\u30fc /\u51fa\u30a8\u30b8\u30d7\u30c8\u8a18 /12:29\u201351 /\u6025\u3050\u51fa\u7acb /\u5171\u306b\u5b88\u308b\u904e\u8d8a. Text checked at normal thumbnail size. Dough in wrapped kneading bowls, departing households and livestock fit current Exodus12:29\u201351; no prior images or failed image references used.",
+    "format": "RGB JPEG1200\u00d7630; fresh generation attempt1. Enlargement crops were temporary inspection aids only."
+  },
+  "production_and_original_delivery_completion_unchanged": true
+}
