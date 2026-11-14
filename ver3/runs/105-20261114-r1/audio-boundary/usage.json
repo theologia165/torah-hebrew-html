@@ -147,7 +147,7 @@
     },
     {
       "id": 5,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 24.0,
       "reserved_usd": 0.053615,
       "model": "gpt-audio-1.5",
@@ -158,7 +158,28 @@
         "74c11c09794d0cc6466a3a3074278d24e8c556712c84d3139439d9027667198e",
         "40521b126204d61ff575e3e18bceb496a7cc2af27e16a741ea49a512c256777c",
         "3bc5fcb12c18b8428012b1fdc0bfd72414125c8a112247252e5bc82f4bf7bac9"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_3632f57456f34fa1aabf15ce3623dbef",
+      "usage": {
+        "prompt_tokens": 984,
+        "completion_tokens": 315,
+        "total_tokens": 1299,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 237,
+          "text_tokens": 747,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 315
+        }
+      },
+      "actual_usd": 0.0126015
     }
   ],
   "cache": {
@@ -331,34 +352,46 @@
       "suggested_cut_seconds": null
     },
     "fe92878e4d4d675fe00347554c2ca26d2a7b6aa3b9683ef2c3c4824d01f9cd76": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "FAIL",
+      "heard": "וְהָיָה כִּי",
+      "evidence": "יִשְׁאָלְךָ is missing at the start edge",
+      "request_id": 5,
+      "suggested_cut_seconds": null
     },
     "a5e6e1dc5c8ad521e01b2307aa45e1e3033819cc969a9fda63e20160bb0c8f14": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "מִמִּצְרַיִם מִבֵּית עֲבָדִים",
+      "evidence": "Complete expected ending words are audible",
+      "request_id": 5,
+      "suggested_cut_seconds": null
     },
     "13969ec37a3b1a0645bc042bb451a6de64a6b27faa1a0f3a784ddd10794db072": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "FAIL",
+      "heard": "וַיְהִי כִּי",
+      "evidence": "הִקְשָׁה is missing at the start edge",
+      "request_id": 5,
+      "suggested_cut_seconds": null
     },
     "74c11c09794d0cc6466a3a3074278d24e8c556712c84d3139439d9027667198e": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "בְּכוֹר בָּנַי אֶפְדֶּה",
+      "evidence": "Complete expected ending words are audible",
+      "request_id": 5,
+      "suggested_cut_seconds": null
     },
     "40521b126204d61ff575e3e18bceb496a7cc2af27e16a741ea49a512c256777c": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וְהָיָה לְאוֹת עַל",
+      "evidence": "Complete expected beginning words are audible",
+      "request_id": 5,
+      "suggested_cut_seconds": null
     },
     "3bc5fcb12c18b8428012b1fdc0bfd72414125c8a112247252e5bc82f4bf7bac9": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "FAIL",
+      "heard": "הוֹצִיאָנוּ יְהוָה מִמִּצְרַיִם",
+      "evidence": "Ending word is cut off",
+      "request_id": 5,
+      "suggested_cut_seconds": null
     }
   }
 }
