@@ -1,0 +1,33 @@
+{
+  "status": "CREATED",
+  "run_id": "105-20261114-r1",
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "13:14/head",
+        "status": "FAIL",
+        "reason": "יִשְׁאָלְךָ is missing at the start edge"
+      },
+      {
+        "edge": "13:15/head",
+        "status": "FAIL",
+        "reason": "הִקְשָׁה is missing at the start edge"
+      },
+      {
+        "edge": "13:16/tail",
+        "status": "FAIL",
+        "reason": "Ending word is cut off"
+      }
+    ],
+    "workflow_notes": [],
+    "email_disclosure_required": true,
+    "finalization_sha256": "934537ff5d9bcc4bf0c60aee7f94c0466843a05689d5bfdc948f3e6d2b4c0fb2"
+  },
+  "page_id": "4188aa46-08ae-81cd-a16f-c70f5da37df6",
+  "page_url": "https://app.notion.com/p/105-13-1-16-4188aa4608ae81cda16fc70f5da37df6"
+}

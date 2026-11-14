@@ -1,0 +1,4241 @@
+{
+  "schema_version": "3.0-json3",
+  "run_id": "105-20261114-r1",
+  "json1_sha256": "4e8935b1e9c45d9ed88831e3008ab123f89650eaaacef76d14121bc117ee6567",
+  "json2_sha256": "1197f86ca870bb435fd1cd36b55acecdc142856440a38c0ee59e3062702abeb8",
+  "title": "105｜出エジプト記13:1–16",
+  "verses": [
+    {
+      "ref": "Exod.13.1",
+      "tokens": [
+        {
+          "token_id": 22293,
+          "token_index": 1,
+          "surface": "וַיְדַבֵּ֥ר",
+          "ja": "そして語られた"
+        },
+        {
+          "token_id": 22294,
+          "token_index": 2,
+          "surface": "יְהוָ֖ה",
+          "ja": "主が"
+        },
+        {
+          "token_id": 22295,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 22296,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֥ה",
+          "ja": "モーセ"
+        },
+        {
+          "token_id": 22297,
+          "token_index": 5,
+          "surface": "לֵּאמֹֽר",
+          "ja": "こう言って"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.2",
+      "tokens": [
+        {
+          "token_id": 22465,
+          "token_index": 1,
+          "surface": "קַדֶּשׁ",
+          "ja": "聖別せよ"
+        },
+        {
+          "token_id": 22466,
+          "token_index": 2,
+          "surface": "לִ֨י",
+          "ja": "わたしのために"
+        },
+        {
+          "token_id": 22467,
+          "token_index": 3,
+          "surface": "כָל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 22468,
+          "token_index": 4,
+          "surface": "בְּכ֜וֹר",
+          "ja": "初子を"
+        },
+        {
+          "token_id": 22469,
+          "token_index": 5,
+          "surface": "פֶּ֤טֶר",
+          "ja": "最初に開くものを"
+        },
+        {
+          "token_id": 22470,
+          "token_index": 6,
+          "surface": "כָּל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 22471,
+          "token_index": 7,
+          "surface": "רֶ֨חֶם֙",
+          "ja": "胎を"
+        },
+        {
+          "token_id": 22472,
+          "token_index": 8,
+          "surface": "בִּבְנֵ֣י",
+          "ja": "子らのうちで"
+        },
+        {
+          "token_id": 22473,
+          "token_index": 9,
+          "surface": "יִשְׂרָאֵ֔ל",
+          "ja": "イスラエルの"
+        },
+        {
+          "token_id": 22474,
+          "token_index": 10,
+          "surface": "בָּאָדָ֖ם",
+          "ja": "人において"
+        },
+        {
+          "token_id": 22475,
+          "token_index": 11,
+          "surface": "וּבַבְּהֵמָ֑ה",
+          "ja": "また家畜において"
+        },
+        {
+          "token_id": 22476,
+          "token_index": 12,
+          "surface": "לִ֖י",
+          "ja": "わたしに属する"
+        },
+        {
+          "token_id": 22477,
+          "token_index": 13,
+          "surface": "הֽוּא",
+          "ja": "それは"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.3",
+      "tokens": [
+        {
+          "token_id": 22510,
+          "token_index": 1,
+          "surface": "וַיֹּ֨אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 22511,
+          "token_index": 2,
+          "surface": "מֹשֶׁ֜ה",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 22512,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "〜に"
+        },
+        {
+          "token_id": 22513,
+          "token_index": 4,
+          "surface": "הָעָ֗ם",
+          "ja": "その民"
+        },
+        {
+          "token_id": 22514,
+          "token_index": 5,
+          "surface": "זָכ֞וֹר",
+          "ja": "覚えよ"
+        },
+        {
+          "token_id": 22515,
+          "token_index": 6,
+          "surface": "אֶת",
+          "ja": "〜を"
+        },
+        {
+          "token_id": 22516,
+          "token_index": 7,
+          "surface": "הַיּ֤וֹם",
+          "ja": "その日"
+        },
+        {
+          "token_id": 22517,
+          "token_index": 8,
+          "surface": "הַזֶּה֙",
+          "ja": "この"
+        },
+        {
+          "token_id": 22518,
+          "token_index": 9,
+          "surface": "אֲשֶׁ֨ר",
+          "ja": "〜した"
+        },
+        {
+          "token_id": 22519,
+          "token_index": 10,
+          "surface": "יְצָאתֶ֤ם",
+          "ja": "あなたがたが出た"
+        },
+        {
+          "token_id": 22520,
+          "token_index": 11,
+          "surface": "מִמִּצְרַ֨יִם֙",
+          "ja": "エジプトから"
+        },
+        {
+          "token_id": 22521,
+          "token_index": 12,
+          "surface": "מִבֵּ֣ית",
+          "ja": "家から"
+        },
+        {
+          "token_id": 22522,
+          "token_index": 13,
+          "surface": "עֲבָדִ֔ים",
+          "ja": "奴隷たちの"
+        },
+        {
+          "token_id": 22523,
+          "token_index": 14,
+          "surface": "כִּ֚י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 22524,
+          "token_index": 15,
+          "surface": "בְּחֹ֣זֶק",
+          "ja": "力によって（〜の）"
+        },
+        {
+          "token_id": 22525,
+          "token_index": 16,
+          "surface": "יָ֔ד",
+          "ja": "手の"
+        },
+        {
+          "token_id": 22526,
+          "token_index": 17,
+          "surface": "הוֹצִ֧יא",
+          "ja": "連れ出された"
+        },
+        {
+          "token_id": 22527,
+          "token_index": 18,
+          "surface": "יְהֹוָ֛ה",
+          "ja": "主が"
+        },
+        {
+          "token_id": 22528,
+          "token_index": 19,
+          "surface": "אֶתְכֶ֖ם",
+          "ja": "あなたがたを"
+        },
+        {
+          "token_id": 22529,
+          "token_index": 20,
+          "surface": "מִזֶּ֑ה",
+          "ja": "ここから"
+        },
+        {
+          "token_id": 22530,
+          "token_index": 21,
+          "surface": "וְלֹ֥א",
+          "ja": "そして〜ない"
+        },
+        {
+          "token_id": 22531,
+          "token_index": 22,
+          "surface": "יֵאָכֵ֖ל",
+          "ja": "食べられてはならない"
+        },
+        {
+          "token_id": 22532,
+          "token_index": 23,
+          "surface": "חָמֵֽץ",
+          "ja": "発酵したものは"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.4",
+      "tokens": [
+        {
+          "token_id": 22533,
+          "token_index": 1,
+          "surface": "הַיּ֖וֹם",
+          "ja": "今日"
+        },
+        {
+          "token_id": 22534,
+          "token_index": 2,
+          "surface": "אַתֶּ֣ם",
+          "ja": "あなたがたは"
+        },
+        {
+          "token_id": 22535,
+          "token_index": 3,
+          "surface": "יֹצְאִ֑ים",
+          "ja": "出て行く"
+        },
+        {
+          "token_id": 22536,
+          "token_index": 4,
+          "surface": "בְּחֹ֖דֶשׁ",
+          "ja": "月に"
+        },
+        {
+          "token_id": 22537,
+          "token_index": 5,
+          "surface": "הָאָבִֽיב",
+          "ja": "アビブの"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.5",
+      "tokens": [
+        {
+          "token_id": 22538,
+          "token_index": 1,
+          "surface": "וְהָיָ֣ה",
+          "ja": "そしてこうなる"
+        },
+        {
+          "token_id": 22539,
+          "token_index": 2,
+          "surface": "כִֽי",
+          "ja": "〜するとき"
+        },
+        {
+          "token_id": 22540,
+          "token_index": 3,
+          "surface": "יְבִֽיאֲךָ֣",
+          "ja": "あなたを導き入れる"
+        },
+        {
+          "token_id": 22541,
+          "token_index": 4,
+          "surface": "יְהוָ֡ה",
+          "ja": "主が"
+        },
+        {
+          "token_id": 22542,
+          "token_index": 5,
+          "surface": "אֶל",
+          "ja": "〜へ"
+        },
+        {
+          "token_id": 22543,
+          "token_index": 6,
+          "surface": "אֶ֣רֶץ",
+          "ja": "地（〜の）"
+        },
+        {
+          "token_id": 22544,
+          "token_index": 7,
+          "surface": "הַֽ֠כְּנַעֲנִי",
+          "ja": "カナン人の"
+        },
+        {
+          "token_id": 22545,
+          "token_index": 8,
+          "surface": "וְהַחִתִּ֨י",
+          "ja": "またヒッタイト人の"
+        },
+        {
+          "token_id": 22546,
+          "token_index": 9,
+          "surface": "וְהָאֱמֹרִ֜י",
+          "ja": "またアモリ人の"
+        },
+        {
+          "token_id": 22547,
+          "token_index": 10,
+          "surface": "וְהַחִוִּ֣י",
+          "ja": "またヒビ人の"
+        },
+        {
+          "token_id": 22548,
+          "token_index": 11,
+          "surface": "וְהַיְבוּסִ֗י",
+          "ja": "またエブス人の"
+        },
+        {
+          "token_id": 22549,
+          "token_index": 12,
+          "surface": "אֲשֶׁ֨ר",
+          "ja": "〜と"
+        },
+        {
+          "token_id": 22550,
+          "token_index": 13,
+          "surface": "נִשְׁבַּ֤ע",
+          "ja": "誓われた"
+        },
+        {
+          "token_id": 22551,
+          "token_index": 14,
+          "surface": "לַאֲבֹתֶ֨יךָ֙",
+          "ja": "あなたの父祖たちに"
+        },
+        {
+          "token_id": 22552,
+          "token_index": 15,
+          "surface": "לָ֣תֶת",
+          "ja": "与えることを"
+        },
+        {
+          "token_id": 22553,
+          "token_index": 16,
+          "surface": "לָ֔ךְ",
+          "ja": "あなたに"
+        },
+        {
+          "token_id": 22554,
+          "token_index": 17,
+          "surface": "אֶ֛רֶץ",
+          "ja": "地を"
+        },
+        {
+          "token_id": 22555,
+          "token_index": 18,
+          "surface": "זָבַ֥ת",
+          "ja": "流れる"
+        },
+        {
+          "token_id": 22556,
+          "token_index": 19,
+          "surface": "חָלָ֖ב",
+          "ja": "乳が"
+        },
+        {
+          "token_id": 22557,
+          "token_index": 20,
+          "surface": "וּדְבָ֑שׁ",
+          "ja": "また蜜が"
+        },
+        {
+          "token_id": 22558,
+          "token_index": 21,
+          "surface": "וְעָבַדְתָּ֛",
+          "ja": "そしてあなたは行え"
+        },
+        {
+          "token_id": 22559,
+          "token_index": 22,
+          "surface": "אֶת",
+          "ja": "〜を"
+        },
+        {
+          "token_id": 22560,
+          "token_index": 23,
+          "surface": "הָעֲבֹדָ֥ה",
+          "ja": "その祭儀"
+        },
+        {
+          "token_id": 22561,
+          "token_index": 24,
+          "surface": "הַזֹּ֖את",
+          "ja": "この"
+        },
+        {
+          "token_id": 22562,
+          "token_index": 25,
+          "surface": "בַּחֹ֥דֶשׁ",
+          "ja": "その月に"
+        },
+        {
+          "token_id": 22563,
+          "token_index": 26,
+          "surface": "הַזֶּֽה",
+          "ja": "この"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.6",
+      "tokens": [
+        {
+          "token_id": 22564,
+          "token_index": 1,
+          "surface": "שִׁבְעַ֥ת",
+          "ja": "七つの"
+        },
+        {
+          "token_id": 22565,
+          "token_index": 2,
+          "surface": "יָמִ֖ים",
+          "ja": "日々"
+        },
+        {
+          "token_id": 22566,
+          "token_index": 3,
+          "surface": "תֹּאכַ֣ל",
+          "ja": "あなたは食べよ"
+        },
+        {
+          "token_id": 22567,
+          "token_index": 4,
+          "surface": "מַצֹּ֑ת",
+          "ja": "種なしパンを"
+        },
+        {
+          "token_id": 22568,
+          "token_index": 5,
+          "surface": "וּבַיּוֹם֙",
+          "ja": "そしてその日に"
+        },
+        {
+          "token_id": 22569,
+          "token_index": 6,
+          "surface": "הַשְּׁבִיעִ֔י",
+          "ja": "第七の"
+        },
+        {
+          "token_id": 22570,
+          "token_index": 7,
+          "surface": "חַ֖ג",
+          "ja": "祭りがある"
+        },
+        {
+          "token_id": 22571,
+          "token_index": 8,
+          "surface": "לַיהוָֽה",
+          "ja": "主のために"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.7",
+      "tokens": [
+        {
+          "token_id": 22572,
+          "token_index": 1,
+          "surface": "מַצּוֹת֙",
+          "ja": "種なしパンが"
+        },
+        {
+          "token_id": 22573,
+          "token_index": 2,
+          "surface": "יֵֽאָכֵ֔ל",
+          "ja": "食べられるべきである"
+        },
+        {
+          "token_id": 22574,
+          "token_index": 3,
+          "surface": "אֵ֖ת",
+          "ja": "〜の間"
+        },
+        {
+          "token_id": 22575,
+          "token_index": 4,
+          "surface": "שִׁבְעַ֣ת",
+          "ja": "七つの"
+        },
+        {
+          "token_id": 22576,
+          "token_index": 5,
+          "surface": "הַיָּמִ֑ים",
+          "ja": "その日々"
+        },
+        {
+          "token_id": 22577,
+          "token_index": 6,
+          "surface": "וְלֹֽא",
+          "ja": "そして〜ない"
+        },
+        {
+          "token_id": 22578,
+          "token_index": 7,
+          "surface": "יֵרָאֶ֨ה",
+          "ja": "見られてはならない"
+        },
+        {
+          "token_id": 22579,
+          "token_index": 8,
+          "surface": "לְךָ֜",
+          "ja": "あなたのもとに"
+        },
+        {
+          "token_id": 22580,
+          "token_index": 9,
+          "surface": "חָמֵ֗ץ",
+          "ja": "発酵したものは"
+        },
+        {
+          "token_id": 22581,
+          "token_index": 10,
+          "surface": "וְלֹֽא",
+          "ja": "また〜ない"
+        },
+        {
+          "token_id": 22582,
+          "token_index": 11,
+          "surface": "יֵרָאֶ֥ה",
+          "ja": "見られてはならない"
+        },
+        {
+          "token_id": 22583,
+          "token_index": 12,
+          "surface": "לְךָ֛",
+          "ja": "あなたのもとに"
+        },
+        {
+          "token_id": 22584,
+          "token_index": 13,
+          "surface": "שְׂאֹ֖ר",
+          "ja": "パン種は"
+        },
+        {
+          "token_id": 22585,
+          "token_index": 14,
+          "surface": "בְּכָל",
+          "ja": "全域で"
+        },
+        {
+          "token_id": 22586,
+          "token_index": 15,
+          "surface": "גְּבֻלֶֽךָ",
+          "ja": "あなたの領域の"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.8",
+      "tokens": [
+        {
+          "token_id": 22587,
+          "token_index": 1,
+          "surface": "וְהִגַּדְתָּ֣",
+          "ja": "そしてあなたは語り聞かせよ"
+        },
+        {
+          "token_id": 22588,
+          "token_index": 2,
+          "surface": "לְבִנְךָ֔",
+          "ja": "あなたの息子に"
+        },
+        {
+          "token_id": 22589,
+          "token_index": 3,
+          "surface": "בַּיּ֥וֹם",
+          "ja": "その日に"
+        },
+        {
+          "token_id": 22590,
+          "token_index": 4,
+          "surface": "הַה֖וּא",
+          "ja": "あの"
+        },
+        {
+          "token_id": 22591,
+          "token_index": 5,
+          "surface": "לֵאמֹ֑ר",
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 22592,
+          "token_index": 6,
+          "surface": "בַּעֲב֣וּר",
+          "ja": "〜のために"
+        },
+        {
+          "token_id": 22593,
+          "token_index": 7,
+          "surface": "זֶ֗ה",
+          "ja": "これ"
+        },
+        {
+          "token_id": 22594,
+          "token_index": 8,
+          "surface": "עָשָׂ֤ה",
+          "ja": "行われた"
+        },
+        {
+          "token_id": 22595,
+          "token_index": 9,
+          "surface": "יְהוָה֙",
+          "ja": "主が"
+        },
+        {
+          "token_id": 22596,
+          "token_index": 10,
+          "surface": "לִ֔י",
+          "ja": "わたしのために"
+        },
+        {
+          "token_id": 22597,
+          "token_index": 11,
+          "surface": "בְּצֵאתִ֖י",
+          "ja": "わたしが出たときに"
+        },
+        {
+          "token_id": 22598,
+          "token_index": 12,
+          "surface": "מִמִּצְרָֽיִם",
+          "ja": "エジプトから"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.9",
+      "tokens": [
+        {
+          "token_id": 22599,
+          "token_index": 1,
+          "surface": "וְהָיָה֩",
+          "ja": "そしてそれはなる"
+        },
+        {
+          "token_id": 22600,
+          "token_index": 2,
+          "surface": "לְךָ֨",
+          "ja": "あなたのために"
+        },
+        {
+          "token_id": 22601,
+          "token_index": 3,
+          "surface": "לְא֜וֹת",
+          "ja": "しるしに"
+        },
+        {
+          "token_id": 22602,
+          "token_index": 4,
+          "surface": "עַל",
+          "ja": "〜の上の"
+        },
+        {
+          "token_id": 22603,
+          "token_index": 5,
+          "surface": "יָדְךָ֗",
+          "ja": "あなたの手"
+        },
+        {
+          "token_id": 22604,
+          "token_index": 6,
+          "surface": "וּלְזִכָּרוֹן֙",
+          "ja": "また記念に"
+        },
+        {
+          "token_id": 22605,
+          "token_index": 7,
+          "surface": "בֵּ֣ין",
+          "ja": "〜の間の"
+        },
+        {
+          "token_id": 22606,
+          "token_index": 8,
+          "surface": "עֵינֶ֔יךָ",
+          "ja": "あなたの両目"
+        },
+        {
+          "token_id": 22607,
+          "token_index": 9,
+          "surface": "לְמַ֗עַן",
+          "ja": "〜するために"
+        },
+        {
+          "token_id": 22608,
+          "token_index": 10,
+          "surface": "תִּהְיֶ֛ה",
+          "ja": "あるように"
+        },
+        {
+          "token_id": 22609,
+          "token_index": 11,
+          "surface": "תּוֹרַ֥ת",
+          "ja": "教えが（〜の）"
+        },
+        {
+          "token_id": 22610,
+          "token_index": 12,
+          "surface": "יְהוָ֖ה",
+          "ja": "主の"
+        },
+        {
+          "token_id": 22611,
+          "token_index": 13,
+          "surface": "בְּפִ֑יךָ",
+          "ja": "あなたの口に"
+        },
+        {
+          "token_id": 22612,
+          "token_index": 14,
+          "surface": "כִּ֚י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 22613,
+          "token_index": 15,
+          "surface": "בְּיָ֣ד",
+          "ja": "手によって"
+        },
+        {
+          "token_id": 22614,
+          "token_index": 16,
+          "surface": "חֲזָקָ֔ה",
+          "ja": "強い"
+        },
+        {
+          "token_id": 22615,
+          "token_index": 17,
+          "surface": "הוֹצִֽאֲךָ֥",
+          "ja": "あなたを連れ出された"
+        },
+        {
+          "token_id": 22616,
+          "token_index": 18,
+          "surface": "יְהֹוָ֖ה",
+          "ja": "主が"
+        },
+        {
+          "token_id": 22617,
+          "token_index": 19,
+          "surface": "מִמִּצְרָֽיִם",
+          "ja": "エジプトから"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.10",
+      "tokens": [
+        {
+          "token_id": 22298,
+          "token_index": 1,
+          "surface": "וְשָׁמַרְתָּ֛",
+          "ja": "そしてあなたは守れ"
+        },
+        {
+          "token_id": 22299,
+          "token_index": 2,
+          "surface": "אֶת",
+          "ja": "〜を"
+        },
+        {
+          "token_id": 22300,
+          "token_index": 3,
+          "surface": "הַחֻקָּ֥ה",
+          "ja": "その定め"
+        },
+        {
+          "token_id": 22301,
+          "token_index": 4,
+          "surface": "הַזֹּ֖את",
+          "ja": "この"
+        },
+        {
+          "token_id": 22302,
+          "token_index": 5,
+          "surface": "לְמוֹעֲדָ֑הּ",
+          "ja": "その定めの時に"
+        },
+        {
+          "token_id": 22303,
+          "token_index": 6,
+          "surface": "מִיָּמִ֖ים",
+          "ja": "日々から"
+        },
+        {
+          "token_id": 22304,
+          "token_index": 7,
+          "surface": "יָמִֽימָה",
+          "ja": "日々へと"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.11",
+      "tokens": [
+        {
+          "token_id": 22305,
+          "token_index": 1,
+          "surface": "וְהָיָ֞ה",
+          "ja": "そしてこうなる"
+        },
+        {
+          "token_id": 22306,
+          "token_index": 2,
+          "surface": "כִּֽי",
+          "ja": "〜するとき"
+        },
+        {
+          "token_id": 22307,
+          "token_index": 3,
+          "surface": "יְבִֽאֲךָ֤",
+          "ja": "あなたを導き入れる"
+        },
+        {
+          "token_id": 22308,
+          "token_index": 4,
+          "surface": "יְהוָה֙",
+          "ja": "主が"
+        },
+        {
+          "token_id": 22309,
+          "token_index": 5,
+          "surface": "אֶל",
+          "ja": "〜へ"
+        },
+        {
+          "token_id": 22310,
+          "token_index": 6,
+          "surface": "אֶ֣רֶץ",
+          "ja": "地（〜の）"
+        },
+        {
+          "token_id": 22311,
+          "token_index": 7,
+          "surface": "הַֽכְּנַעֲנִ֔י",
+          "ja": "カナン人の"
+        },
+        {
+          "token_id": 22312,
+          "token_index": 8,
+          "surface": "כַּאֲשֶׁ֛ר",
+          "ja": "〜したとおり"
+        },
+        {
+          "token_id": 22313,
+          "token_index": 9,
+          "surface": "נִשְׁבַּ֥ע",
+          "ja": "誓われた"
+        },
+        {
+          "token_id": 22314,
+          "token_index": 10,
+          "surface": "לְךָ֖",
+          "ja": "あなたに"
+        },
+        {
+          "token_id": 22315,
+          "token_index": 11,
+          "surface": "וְלַֽאֲבֹתֶ֑יךָ",
+          "ja": "またあなたの父祖たちに"
+        },
+        {
+          "token_id": 22316,
+          "token_index": 12,
+          "surface": "וּנְתָנָ֖הּ",
+          "ja": "そしてそれを与えられる"
+        },
+        {
+          "token_id": 22317,
+          "token_index": 13,
+          "surface": "לָֽךְ",
+          "ja": "あなたに"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.12",
+      "tokens": [
+        {
+          "token_id": 22318,
+          "token_index": 1,
+          "surface": "וְהַעֲבַרְתָּ֥",
+          "ja": "そしてあなたは引き渡せ"
+        },
+        {
+          "token_id": 22319,
+          "token_index": 2,
+          "surface": "כָל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 22320,
+          "token_index": 3,
+          "surface": "פֶּֽטֶר",
+          "ja": "最初に開くものを"
+        },
+        {
+          "token_id": 22321,
+          "token_index": 4,
+          "surface": "רֶ֖חֶם",
+          "ja": "胎を"
+        },
+        {
+          "token_id": 22322,
+          "token_index": 5,
+          "surface": "לַֽיהֹוָ֑ה",
+          "ja": "主に"
+        },
+        {
+          "token_id": 22323,
+          "token_index": 6,
+          "surface": "וְכָל",
+          "ja": "またすべての"
+        },
+        {
+          "token_id": 22324,
+          "token_index": 7,
+          "surface": "פֶּ֣טֶר",
+          "ja": "最初に開くもの"
+        },
+        {
+          "token_id": 22325,
+          "token_index": 8,
+          "surface": "שֶׁ֣גֶר",
+          "ja": "生まれる子の"
+        },
+        {
+          "token_id": 22326,
+          "token_index": 9,
+          "surface": "בְּהֵמָ֗ה",
+          "ja": "家畜の"
+        },
+        {
+          "token_id": 22327,
+          "token_index": 10,
+          "surface": "אֲשֶׁ֨ר",
+          "ja": "〜である"
+        },
+        {
+          "token_id": 22328,
+          "token_index": 11,
+          "surface": "יִהְיֶ֥ה",
+          "ja": "あるようになる"
+        },
+        {
+          "token_id": 22329,
+          "token_index": 12,
+          "surface": "לְךָ֛",
+          "ja": "あなたに"
+        },
+        {
+          "token_id": 22330,
+          "token_index": 13,
+          "surface": "הַזְּכָרִ֖ים",
+          "ja": "雄たちは"
+        },
+        {
+          "token_id": 22331,
+          "token_index": 14,
+          "surface": "לַיהוָֽה",
+          "ja": "主に属する"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.13",
+      "tokens": [
+        {
+          "token_id": 22332,
+          "token_index": 1,
+          "surface": "וְכָל",
+          "ja": "またすべての"
+        },
+        {
+          "token_id": 22333,
+          "token_index": 2,
+          "surface": "פֶּ֤טֶר",
+          "ja": "最初に開く子を"
+        },
+        {
+          "token_id": 22334,
+          "token_index": 3,
+          "surface": "חֲמֹר֙",
+          "ja": "ろばの"
+        },
+        {
+          "token_id": 22335,
+          "token_index": 4,
+          "surface": "תִּפְדֶּ֣ה",
+          "ja": "あなたは贖え"
+        },
+        {
+          "token_id": 22336,
+          "token_index": 5,
+          "surface": "בְשֶׂ֔ה",
+          "ja": "羊または山羊で"
+        },
+        {
+          "token_id": 22337,
+          "token_index": 6,
+          "surface": "וְאִם",
+          "ja": "そしてもし"
+        },
+        {
+          "token_id": 22338,
+          "token_index": 7,
+          "surface": "לֹ֥א",
+          "ja": "〜ないなら"
+        },
+        {
+          "token_id": 22339,
+          "token_index": 8,
+          "surface": "תִפְדֶּ֖ה",
+          "ja": "あなたが贖う"
+        },
+        {
+          "token_id": 22340,
+          "token_index": 9,
+          "surface": "וַעֲרַפְתּ֑וֹ",
+          "ja": "その首を折れ"
+        },
+        {
+          "token_id": 22341,
+          "token_index": 10,
+          "surface": "וְכֹ֨ל",
+          "ja": "またすべての"
+        },
+        {
+          "token_id": 22342,
+          "token_index": 11,
+          "surface": "בְּכ֥וֹר",
+          "ja": "初子を"
+        },
+        {
+          "token_id": 22343,
+          "token_index": 12,
+          "surface": "אָדָ֛ם",
+          "ja": "人の"
+        },
+        {
+          "token_id": 22344,
+          "token_index": 13,
+          "surface": "בְּבָנֶ֖יךָ",
+          "ja": "あなたの息子たちのうちの"
+        },
+        {
+          "token_id": 22345,
+          "token_index": 14,
+          "surface": "תִּפְדֶּֽה",
+          "ja": "あなたは贖え"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.14",
+      "tokens": [
+        {
+          "token_id": 22346,
+          "token_index": 1,
+          "surface": "וְהָיָ֞ה",
+          "ja": "そしてこうなる"
+        },
+        {
+          "token_id": 22347,
+          "token_index": 2,
+          "surface": "כִּֽי",
+          "ja": "〜するとき"
+        },
+        {
+          "token_id": 22348,
+          "token_index": 3,
+          "surface": "יִשְׁאָלְךָ֥",
+          "ja": "あなたに尋ねる"
+        },
+        {
+          "token_id": 22349,
+          "token_index": 4,
+          "surface": "בִנְךָ֛",
+          "ja": "あなたの息子が"
+        },
+        {
+          "token_id": 22350,
+          "token_index": 5,
+          "surface": "מָחָ֖ר",
+          "ja": "後の日に"
+        },
+        {
+          "token_id": 22351,
+          "token_index": 6,
+          "surface": "לֵאמֹ֣ר",
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 22352,
+          "token_index": 7,
+          "surface": "מַה",
+          "ja": "何ですか"
+        },
+        {
+          "token_id": 22353,
+          "token_index": 8,
+          "surface": "זֹּ֑את",
+          "ja": "これは"
+        },
+        {
+          "token_id": 22354,
+          "token_index": 9,
+          "surface": "וְאָמַרְתָּ֣",
+          "ja": "そのときあなたは言え"
+        },
+        {
+          "token_id": 22355,
+          "token_index": 10,
+          "surface": "אֵלָ֔יו",
+          "ja": "彼に"
+        },
+        {
+          "token_id": 22356,
+          "token_index": 11,
+          "surface": "בְּחֹ֣זֶק",
+          "ja": "力によって（〜の）"
+        },
+        {
+          "token_id": 22357,
+          "token_index": 12,
+          "surface": "יָ֗ד",
+          "ja": "手の"
+        },
+        {
+          "token_id": 22358,
+          "token_index": 13,
+          "surface": "הוֹצִיאָ֧נוּ",
+          "ja": "わたしたちを連れ出された"
+        },
+        {
+          "token_id": 22359,
+          "token_index": 14,
+          "surface": "יְהוָ֛ה",
+          "ja": "主が"
+        },
+        {
+          "token_id": 22360,
+          "token_index": 15,
+          "surface": "מִמִּצְרַ֖יִם",
+          "ja": "エジプトから"
+        },
+        {
+          "token_id": 22361,
+          "token_index": 16,
+          "surface": "מִבֵּ֥ית",
+          "ja": "家から"
+        },
+        {
+          "token_id": 22362,
+          "token_index": 17,
+          "surface": "עֲבָדִֽים",
+          "ja": "奴隷たちの"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.15",
+      "tokens": [
+        {
+          "token_id": 22363,
+          "token_index": 1,
+          "surface": "וַיְהִ֗י",
+          "ja": "そしてこうなった"
+        },
+        {
+          "token_id": 22364,
+          "token_index": 2,
+          "surface": "כִּֽי",
+          "ja": "〜のとき"
+        },
+        {
+          "token_id": 22365,
+          "token_index": 3,
+          "surface": "הִקְשָׁ֣ה",
+          "ja": "頑なに拒んだ"
+        },
+        {
+          "token_id": 22366,
+          "token_index": 4,
+          "surface": "פַרְעֹה֮",
+          "ja": "ファラオが"
+        },
+        {
+          "token_id": 22367,
+          "token_index": 5,
+          "surface": "לְשַׁלְּחֵנוּ֒",
+          "ja": "わたしたちを去らせることを"
+        },
+        {
+          "token_id": 22368,
+          "token_index": 6,
+          "surface": "וַיַּהֲרֹ֨ג",
+          "ja": "そして殺された"
+        },
+        {
+          "token_id": 22369,
+          "token_index": 7,
+          "surface": "יְהֹוָ֤ה",
+          "ja": "主が"
+        },
+        {
+          "token_id": 22370,
+          "token_index": 8,
+          "surface": "כָּל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 22371,
+          "token_index": 9,
+          "surface": "בְּכוֹר֙",
+          "ja": "初子を"
+        },
+        {
+          "token_id": 22372,
+          "token_index": 10,
+          "surface": "בְּאֶ֣רֶץ",
+          "ja": "地で"
+        },
+        {
+          "token_id": 22373,
+          "token_index": 11,
+          "surface": "מִצְרַ֔יִם",
+          "ja": "エジプトの"
+        },
+        {
+          "token_id": 22374,
+          "token_index": 12,
+          "surface": "מִבְּכֹ֥ר",
+          "ja": "初子から"
+        },
+        {
+          "token_id": 22375,
+          "token_index": 13,
+          "surface": "אָדָ֖ם",
+          "ja": "人の"
+        },
+        {
+          "token_id": 22376,
+          "token_index": 14,
+          "surface": "וְעַד",
+          "ja": "また〜に至るまで"
+        },
+        {
+          "token_id": 22377,
+          "token_index": 15,
+          "surface": "בְּכ֣וֹר",
+          "ja": "初子"
+        },
+        {
+          "token_id": 22378,
+          "token_index": 16,
+          "surface": "בְּהֵמָ֑ה",
+          "ja": "家畜の"
+        },
+        {
+          "token_id": 22379,
+          "token_index": 17,
+          "surface": "עַל",
+          "ja": "〜のゆえに"
+        },
+        {
+          "token_id": 22380,
+          "token_index": 18,
+          "surface": "כֵּן֩",
+          "ja": "それ"
+        },
+        {
+          "token_id": 22381,
+          "token_index": 19,
+          "surface": "אֲנִ֨י",
+          "ja": "わたしは"
+        },
+        {
+          "token_id": 22382,
+          "token_index": 20,
+          "surface": "זֹבֵ֜חַ",
+          "ja": "犠牲として献げる"
+        },
+        {
+          "token_id": 22383,
+          "token_index": 21,
+          "surface": "לַֽיהוָ֗ה",
+          "ja": "主に"
+        },
+        {
+          "token_id": 22384,
+          "token_index": 22,
+          "surface": "כָּל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 22385,
+          "token_index": 23,
+          "surface": "פֶּ֤טֶר",
+          "ja": "最初に開くものを"
+        },
+        {
+          "token_id": 22386,
+          "token_index": 24,
+          "surface": "רֶ֨חֶם֙",
+          "ja": "胎を"
+        },
+        {
+          "token_id": 22387,
+          "token_index": 25,
+          "surface": "הַזְּכָרִ֔ים",
+          "ja": "雄たちを"
+        },
+        {
+          "token_id": 22388,
+          "token_index": 26,
+          "surface": "וְכָל",
+          "ja": "しかしすべての"
+        },
+        {
+          "token_id": 22389,
+          "token_index": 27,
+          "surface": "בְּכ֥וֹר",
+          "ja": "初子を"
+        },
+        {
+          "token_id": 22390,
+          "token_index": 28,
+          "surface": "בָּנַ֖י",
+          "ja": "わたしの息子たちの"
+        },
+        {
+          "token_id": 22391,
+          "token_index": 29,
+          "surface": "אֶפְדֶּֽה",
+          "ja": "わたしは贖う"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.13.16",
+      "tokens": [
+        {
+          "token_id": 22392,
+          "token_index": 1,
+          "surface": "וְהָיָ֤ה",
+          "ja": "そしてそれはなる"
+        },
+        {
+          "token_id": 22393,
+          "token_index": 2,
+          "surface": "לְאוֹת֙",
+          "ja": "しるしに"
+        },
+        {
+          "token_id": 22394,
+          "token_index": 3,
+          "surface": "עַל",
+          "ja": "〜の上の"
+        },
+        {
+          "token_id": 22395,
+          "token_index": 4,
+          "surface": "יָ֣דְכָ֔ה",
+          "ja": "あなたの手"
+        },
+        {
+          "token_id": 22396,
+          "token_index": 5,
+          "surface": "וּלְטוֹטָפֹ֖ת",
+          "ja": "また額の標に"
+        },
+        {
+          "token_id": 22397,
+          "token_index": 6,
+          "surface": "בֵּ֣ין",
+          "ja": "〜の間の"
+        },
+        {
+          "token_id": 22398,
+          "token_index": 7,
+          "surface": "עֵינֶ֑יךָ",
+          "ja": "あなたの両目"
+        },
+        {
+          "token_id": 22399,
+          "token_index": 8,
+          "surface": "כִּ֚י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 22400,
+          "token_index": 9,
+          "surface": "בְּחֹ֣זֶק",
+          "ja": "力によって（〜の）"
+        },
+        {
+          "token_id": 22401,
+          "token_index": 10,
+          "surface": "יָ֔ד",
+          "ja": "手の"
+        },
+        {
+          "token_id": 22402,
+          "token_index": 11,
+          "surface": "הוֹצִיאָ֥נוּ",
+          "ja": "わたしたちを連れ出された"
+        },
+        {
+          "token_id": 22403,
+          "token_index": 12,
+          "surface": "יְהוָ֖ה",
+          "ja": "主が"
+        },
+        {
+          "token_id": 22404,
+          "token_index": 13,
+          "surface": "מִמִּצְרָֽיִם",
+          "ja": "エジプトから"
+        }
+      ]
+    }
+  ],
+  "media_status": {
+    "audio_status": "PASS",
+    "audio_implemented_count": 16,
+    "audio_expected_count": 16,
+    "missing_audio_refs": [],
+    "audio_failures": [],
+    "html_status": "PASS",
+    "html_implemented_count": 16,
+    "missing_html_refs": [],
+    "pages_status": "PASS",
+    "ai_generated_audio_refs": [],
+    "open_bible_audio_refs": []
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ボー｜第7アリヤー｜出エジプト記13:1–16"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "主に連れ出された記憶は、種なしパンを食べる日々、子どもへの説明、手と目のしるしへ結び付けられます。初子を神のために取り分ける命令も、人の初子は必ず贖うという区別を伴います。「わたし」と「わたしたち」で語られる救出は、遠い過去を毎年の生活と次世代の問いへつなぎます。出来事を思い出すだけでなく、命と暮らしをどう受けとめるかが問われる段落です。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "救いを語り継ぐ、命を贖う"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_1_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：主はモーセに、次のように語られた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-1.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：主の発話が初子の聖別を導入する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "主を主語とするピエルの物語形「語られた」に、相手を示す前置詞句と「こう言って」という不定詞構文が続く。ここではモーセに直接告げられ、3節ではモーセが民へ語る。神の言葉が共同体へ渡される二段階を区別すると、2節の短い命令と3節以下の説明の関係が見える。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "受けた言葉を、自分だけの理解にとどめず、相手に届く言葉へとつなぎたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_2_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：イスラエルの人々のうち、人でも家畜でも、すべての胎を最初に開く初子を、わたしのために聖別せよ。それはわたしに属する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-2.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：聖別命令を「わたしに属する」が根拠付ける。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "冒頭の「聖別せよ」はピエル命令形で、神のために取り分ける行為を求める。「初子」に「胎を最初に開くもの」という説明が添い、人と家畜が並ぶ。結びの「わたしに、それは」は動詞のない所有表現である。帰属の宣言は、すべてを同じ仕方で犠牲にせよという命令ではない。人の初子の扱いは13節の贖いで具体化される。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "授かった命を自分の所有物のように扱わず、託された存在として大切にしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "帰属の宣言から記念の実践へ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1–2節は、初子が主に属するという原則を短く告げる。その直後に種なしパンの規定が入り、11節で初子の具体的扱いへ戻る。したがって2節だけを独立した一律の犠牲命令として読むことはできない。帰属という原則、救出を覚える食と語り、人と家畜を区別する実践が、最終形の本文では一つのまとまりを成す。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_3_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセは民に言った。「あなたがたがエジプト、奴隷の家から出たこの日を覚えよ。主が強い手の力で、あなたがたをここから連れ出されたからである。発酵したものを食べてはならない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-3.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：記憶の命令は、主が連れ出した行為を理由とする。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ヘブライ語の「覚えよ」は形態上は不定詞絶対形だが、この位置では命令として働く。「あなたがたが出た」というカルと、主が「連れ出した」というヒフィルが同じ出来事を人と神の両側から語る。「奴隷の家」は一軒の住居よりも隷属の場を示す。末尾の受動形による食物の禁止が、記憶を具体的な生活へ結び付ける。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "救いを自分の成功談だけにせず、どこから、誰によって支え出されたかを覚えたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_4_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：今日、アビブの月に、あなたがたは出て行く。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-4.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：「今日」と出立の分詞が、その場の現在を強める。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "冒頭の「今日」に、独立代名詞「あなたがた」と能動分詞「出て行く」が続く。未来の毎年の祭りを述べる前に、語りかけられる共同体が今まさに出発する位置へ戻される。アビブは若い穂に関わる月名であり、季節の記憶を伴う。現代の暦の特定日と一対一に同定する説明は、本文だけからはできない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "いつか変わりたいという願いを、今日踏み出せる小さな行動へ移したい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_5_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：主があなたを、カナン人、ヒッタイト人、アモリ人、ヒビ人、エブス人の地、すなわちあなたに与えると父祖たちに誓われた乳と蜜の流れる地へ導き入れられるとき、あなたはこの月に、この祭儀を行わなければならない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-5.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：豊かな土地への到着後も、救出を記念する務めは続く。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "長い「〜するとき」の条件に対し、後半の「あなたはこの祭儀を行え」が主節となる。「仕える・行う」と「祭儀」は同じ語根に属し、3節の奴隷の状態から、主への務めへと関係が変わる。地名の列挙と父祖への誓いは、到着を自力の獲得だけでは説明させない。豊かさは記憶の不要になる段階ではない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "暮らしが整ったときにも、苦しかった時に受けた助けを忘れない習慣を持ちたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:6"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_6_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：七日間、種なしパンを食べよ。第七日には主のための祭りがある。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-6.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：七日間の食と第七日の祭りが組み合わされる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「七つの日々」は食べる期間を示す。二人称単数の未完了形は、この命令の文脈では守るべき行為を表す。後半は動詞を省いた名詞文で、第七日を「主のための祭り」と定める。日常の食物と共同体の祝祭は切り離されず、一週間のまとまりに置かれる。毎日の繰り返しも祭りの準備と記憶の一部である。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "特別な集まりだけでなく、一週間の食事や時間の使い方にも感謝を表したい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:7"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_7_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：その七日間は種なしパンを食べなければならない。あなたのもとに発酵したものが見られてはならず、あなたの領域のどこにもパン種が見られてはならない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-7.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：禁止は食べる行為から、領域全体へ広がる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「食べられる」「見られる」というニファルの受動形が続き、誰か一人の食卓を越えて規定が広がる。「発酵したもの」と「パン種」を並べ、完成品と発酵を起こす材料の双方に及ぶ。「あなたのもとに」の反復と「全領域」が徹底を示す。ここでパン種そのものが道徳的に悪だとは述べられず、祭期の区別を保つ規定である。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "記念したい価値を、一度の言葉だけでなく、身の回りの整え方にも反映させたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:8"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_8_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：その日、あなたは息子に語り聞かせよ。『このために、わたしがエジプトから出たとき、主がわたしのために事を行われたのだ』と。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-8.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：「このために」と「わたしのために」が、儀礼を自分の物語へ結ぶ。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「語り聞かせよ」はヒフィルで、知らせる行為を求める。「このために」の指示対象は明示されず、食卓の実践を指す読みと、主の救出のわざを理由として述べる読みの分かれ目になる。私訳は句の形を残した。「わたしのために」と「わたしが出たとき」は、記念する者が出来事を一人称で語る特徴を示す。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "教えを説明する際に、抽象的な正しさだけでなく、自分が受けた恵みを具体的に語りたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_9_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：それはあなたの手の上のしるしとなり、両目の間の記念となる。主の教えがあなたの口にあるためである。主が強い手で、あなたをエジプトから連れ出されたからである。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-9.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：手・目・口が、記憶を担う身体として並ぶ。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「しるし」「記念」という名詞に続く「〜するために」が、主の教えを口に置くという目的を示す。主語は女性名詞の「教え」で、それを受ける「ある」も女性単数となる。結尾では主の「強い手」が述べられ、人の手のしるしと救出する主の手が対応する。形象的表現と、身に着ける実践としての受容を区別して考える必要がある。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "覚えた言葉が、手の行い、目の向け方、人に語る言葉につながっているか確かめたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:10"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_10_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：あなたはこの定めを、定められた時に、年ごとに守らなければならない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-10.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：記念は一度限りでなく、定めの時ごとに更新される。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「その定めの時に」の接尾辞は、直前の定めを受ける。「日々から日々へ」という表現は、この祭期の文脈では年ごとの反復を表す。単純に毎日という頻度へ置き換えると、月と七日間を指定した段落のまとまりを失う。ここで最初の規定のまとまりが閉じ、11節から初子の奉献へ移る。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "大切な記憶を偶然思い出すだけにせず、振り返る時を暮らしの中に設けたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "食卓の「これ」と、記憶を担う身体"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "3節の「この日を覚えよ」は、七日間の食、子への語り、手と目の記念を経て、年ごとの遵守で閉じる。8節の「これ」は実践の場と切り離せず、9節はその目的を教えが口にあることと説明する。記念は過去についての知識だけでなく、食べる・語る・見る・行うという身体を通して継がれる。単なる象徴か実物かという二択を急ぐ前に、この段落内の働きを確かめたい。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:11"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_11_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：主が、あなたと父祖たちに誓われたとおり、あなたをカナン人の地へ導き入れ、それをあなたに与えられるとき、"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-11.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：5節に似た導入が、初子の規定を導く。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「主が導き入れるとき」という条件は、この節だけで閉じず12節の命令へ続く。「それを与える」の女性接尾辞は地を受け、贈与する主の行為も条件部に含まれる。誓いの相手には「あなた」と「父祖たち」が並ぶ。5節の祭儀の命令と同様に、初子の奉献も土地を与えられた生活に結び付けられる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "受け継いだものを当然とせず、今も与えられている恵みとして受け直したい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:12"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_12_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：あなたは、胎を最初に開くものをすべて主に引き渡せ。あなたの家畜に生まれる最初の子、その雄たちは主に属する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-12.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：帰属の宣言が、雄の初子の規定として具体化される。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「引き渡す」はヒフィルで、所属を移す・取り分ける方向を表す。「胎を開くもの」は2節を受け、「家畜の生まれる子」を添えて具体化される。結びの「雄たちは主に」は動詞のない帰属表現である。この節を人間の犠牲まで含む一律の処分と読むのでなく、直後のろばと人の贖いによる区別まで読む必要がある。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "自分の自由に使えるものと考えてきた恵みを、誰のために用いるか問い直したい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:13"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_13_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ろばの最初の子はすべて、羊または山羊一頭で贖え。贖わないなら、その首を折らなければならない。しかし、あなたの息子たちのうち、人の初子はすべて贖わなければならない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-13.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：ろばには条件分岐があるが、人の初子には贖いが命じられる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「贖う」が三度現れる。代わりに渡す「セー」は小家畜一頭で、羊だけに限定する語ではない。ろばには「もし贖わないなら」という分岐と首を折る処置があるが、人の初子の文にはその代案がなく、贖う命令が反復される。厳しい古代家畜規定を無害化せず、人間の子どもを殺す命令とも混同しない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "何かを献げる熱心さが、人を傷つける口実になっていないか確かめ、命を守る選択をしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:14"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_14_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：後の日に、あなたの息子が『これは何ですか』と尋ねるとき、あなたは答えよ。『主が強い手の力で、わたしたちをエジプト、奴隷の家から連れ出されたのだ。』"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-14.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：子どもの問いには、救出の物語で応じる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "「後の日」は文字どおりには「明日」だが、ここでは子どもが意味を尋ねる将来の機会を示す。「これは何か」という短い問いに、まず制度の手順ではなく主の救出を答える。8節の「わたしのために」と異なり、ここは「わたしたちを」という一人称複数である。次世代に向けた説明の中へ、語り手自身も含まれる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "問いを面倒なものとして退けず、相手と共に自分の信仰の根拠へ立ち戻る機会にしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:15"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_15_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ファラオがわたしたちを去らせることを頑なに拒んだとき、主はエジプトの地のすべての初子を、人の初子から家畜の初子まで殺された。それゆえ、わたしは胎を最初に開く雄をすべて主に犠牲として献げるが、息子たちの初子はすべて贖う。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-15.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：救出の説明には、初子の死という重い記憶が含まれる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "冒頭の「頑なにした」はヒフィルで、去らせることへのファラオの拒否を表す。続く死の叙述は人と家畜を範囲として示す。現在の行いを述べる後半は、「犠牲として献げる」という分詞と「贖う」という未完了形を対置し、家畜の雄と自分の息子の扱いを分ける。解放の記憶は、犠牲者を忘れた単純な勝利譚ではない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "自分たちの救いを喜ぶとき、そこに刻まれた他者の苦痛を消さず、命への畏れを失わないでいたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 13:16"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/105-20261114-r1/audio/105_16_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：それはあなたの手の上のしるしとなり、両目の間の額の標となる。主が強い手の力で、わたしたちをエジプトから連れ出されたからである。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/105-20261114-r1/exodus-13-16.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：手と額の標が、主の強い手による救出を覚えさせる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "本文と文法"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "9節の「記念」に代わり、ここでは「トタフォト」という複数形名詞が使われる。その語源や具体的形状を本文だけで確定することはできないので、私訳は「額の標」とした。9節と同じ身体の位置と強い手の説明で後半が閉じるが、救出の目的語は「わたしたち」である。初子の規定も共同体の記憶の一部となる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "目につくしるしが単なる飾りにならず、支えられてきた歩みと隣人への責任を思い起こさせるものにしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "贖いの規定が、子どもの問いに開かれる"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "11–13節は土地の贈与と初子の規定、14–16節は将来の問いとその答えを記す。「贖う」が重なる13節に対して、15節はなぜ献げ、なぜ息子を贖うのかを救出の記憶から説明する。制度だけを列挙せず、子どもが意味を尋ねる余地を本文自身が置く。ろばへの処置と人の初子の義務を区別する読みは、その説明の核心を守る。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "まとめ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "救出の記憶は、土地を得て豊かになった後にも、食と時間、問いへの応答、命の扱いの中で更新される。自分の体験を語る「わたし」と、共に救われた「わたしたち」の両方を保ち、人の初子を贖う区別を忘れずに読みたい。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーをさらに学ぶ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "文学研究：二つの規定を結ぶ反復"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "3–10節と11–16節は、土地へ導き入れられる導入、子どもへの説明、手と目のしるし、主の強い手という要素で対応する。NET注6もこの平行を指摘する。初子の原則を冒頭に置きながら種なしパンの規定を挟む配置は、両者を救出の記念という共通の働きへ結び付ける。反復の確認から特定の成立年代や単一の編集者まで推定することはできず、ここでは最終本文の構成上の効果を述べる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "NET Bible『Exodus13』注6・27–32",
+                    "link": {
+                      "url": "https://bible.org/sites/bible.org/resources/netbible/exo13_notes.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダヤ教解釈：問いを待たずに語ることと、身に着ける記憶"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシは13:5の注で、13:8をまだ尋ね方を知らない子への働きかけと結び、語り手が先に話を始めるべきだと読む。これは複数箇所を結ぶミドラシュ的な教育論であり、13:8がその子の類型を直接命名しているわけではない。また13:9では、この二つの段落を書き、頭と腕に結ぶ実践として説明する。文中の身体表現の働きと、具体的な儀礼として継承された解釈を区別しつつ尊重する。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』13:5・8–9",
+                    "link": {
+                      "url": "https://www.chabad.org/library/bible_cdo/aid/9874/jewish/Chapter-13.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "キリスト教受容史：初子の奉献を通して読む受肉"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "キュリロスは『ルカ福音書注解』説教3で、幼子イエスが人間として初子に数えられ、律法の定めに従って父の前へ運ばれることを、神の子が人間のあり方を引き受けた出来事として読む。これはルカ2:21–24を介した初子規定のキリスト論的受容で、出13章の逐節注解ではない。鳥の供え物を人の初子の贖いの具体的支払額と同一視せず、出13章が語るイスラエルの救出と生活規定を、後代の解釈で置き換えない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "アレクサンドリアのキュリロス『ルカ福音書注解』説教3、ルカ2:21–24（R.Payne Smith訳、1859年、22–24頁）",
+                    "link": {
+                      "url": "https://www.tertullian.org/fathers/cyril_on_luke_01_sermons_01_11.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "倫理的読解：救出の記憶と命の区別"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "2節の帰属と15節の死の記憶の間には、13節の人の初子を贖う命令がある。すべてを現代の平等や人権の言葉へそのまま移すことはできないが、人を犠牲にすることと人を贖うことの区別は本文自身が作る。家畜への苛酷な処置やエジプトの初子の死を消して美談にせず、その重さを含めて、救われた者が命をどう扱うのかを問うことができる。"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0",
+              "link": {
+                "url": "https://github.com/openscriptures/morphhb"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
