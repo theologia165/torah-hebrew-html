@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "105-20261114-r1",
+  "sequence": "105",
+  "delivery_status": "PASS",
+  "page_id": "4188aa46-08ae-81cd-a16f-c70f5da37df6",
+  "page_url": "https://app.notion.com/p/105-13-1-16-4188aa4608ae81cda16fc70f5da37df6",
+  "gmail": {
+    "message_id": "1a1da3a12faf88c8",
+    "subject": "105｜出エジプト記13:1–16",
+    "sent_verified": true,
+    "attachment_filename": "asaichi-torah-105.jpg",
+    "attachment_byte_size": 303875
+  },
+  "completed_at": "2026-11-14T13:23:55.651Z",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "finalization_sha256": "934537ff5d9bcc4bf0c60aee7f94c0466843a05689d5bfdc948f3e6d2b4c0fb2",
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "disclosed_in_email": true,
+    "full_content_verified": false,
+    "repair_attempted": false,
+    "candidate_adopted": false,
+    "unresolved": [
+      {
+        "edge": "13:14/head",
+        "status": "FAIL",
+        "reason": "יִשְׁאָלְךָ is missing at the start edge"
+      },
+      {
+        "edge": "13:15/head",
+        "status": "FAIL",
+        "reason": "הִקְשָׁה is missing at the start edge"
+      },
+      {
+        "edge": "13:16/tail",
+        "status": "FAIL",
+        "reason": "Ending word is cut off"
+      }
+    ],
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY"
+  },
+  "WORK_JSON2_QUALITY": "PASS",
+  "image_status": "PASS"
+}

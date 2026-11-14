@@ -12,24 +12,24 @@
   },
   "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。",
   "last_completed": {
-    "sequence": "104",
-    "run_id": "104-20261113-r1",
-    "page_id": "4178aa46-08ae-81f4-a0e2-e4d691c9c12e",
-    "page_url": "https://app.notion.com/p/104-12-29-51-4178aa4608ae81f4a0e2e4d691c9c12e",
+    "sequence": "105",
+    "run_id": "105-20261114-r1",
+    "page_id": "4188aa46-08ae-81cd-a16f-c70f5da37df6",
+    "page_url": "https://app.notion.com/p/105-13-1-16-4188aa4608ae81cda16fc70f5da37df6",
     "status": "PASS",
-    "verse_count": 23,
-    "token_count": 309,
+    "verse_count": 16,
+    "token_count": 233,
     "WORK_JSON2_QUALITY": "PASS",
     "image_status": "PASS",
     "cover_status": "PASS",
-    "gmail_message_id": "1a1d50f3797ef4f3",
+    "gmail_message_id": "1a1da3a12faf88c8",
+    "gmail_subject": "105｜出エジプト記13:1–16",
     "gmail_sent_verified": true,
-    "gmail_subject": "104｜出エジプト記12:29–51",
-    "completed_at": "2026-11-13T13:19:02.873Z",
+    "completed_at": "2026-11-14T13:23:55.651Z",
     "audio_quality_status": "CONTENT_REVIEW_PENDING",
     "audio_content_verified": false,
     "audio_boundary": {
-      "finalization_sha256": "55d0b1d6582541fc781b48532f7ed3985bdff9863c38d54875b80b9222a8e228",
+      "finalization_sha256": "934537ff5d9bcc4bf0c60aee7f94c0466843a05689d5bfdc948f3e6d2b4c0fb2",
       "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
       "disclosed_in_email": true,
       "full_content_verified": false,
@@ -37,14 +37,19 @@
       "candidate_adopted": false,
       "unresolved": [
         {
-          "edge": "12:51/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
+          "edge": "13:14/head",
+          "status": "FAIL",
+          "reason": "יִשְׁאָלְךָ is missing at the start edge"
         },
         {
-          "edge": "12:51/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
+          "edge": "13:15/head",
+          "status": "FAIL",
+          "reason": "הִקְשָׁה is missing at the start edge"
+        },
+        {
+          "edge": "13:16/tail",
+          "status": "FAIL",
+          "reason": "Ending word is cut off"
         }
       ],
       "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY"
@@ -53,17 +58,17 @@
   "mode": "ver3-production",
   "model_audio_default": false,
   "next_passage": {
-    "parasha": "Bo",
-    "parasha_jp": "ボー",
-    "aliyah": 7,
+    "parasha": "Beshalach",
+    "parasha_jp": "ベシャラハ",
+    "aliyah": 1,
     "book": "Exodus",
     "chapter": 13,
-    "end_chapter": 13,
-    "start_verse": 1,
-    "end_verse": 16,
-    "display": "ボー｜第7アリヤー｜出エジプト記13:1–16"
+    "end_chapter": 14,
+    "start_verse": 17,
+    "end_verse": 8,
+    "display": "ベシャラハ｜第1アリヤー｜出エジプト記13:17–14:8"
   },
-  "next_sequence": "105",
+  "next_sequence": "106",
   "notion_api_version": "2026-03-11",
   "notion_output_rule": {
     "show_development_labels": false,
