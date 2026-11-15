@@ -1,0 +1,28 @@
+{
+  "status": "CREATED",
+  "run_id": "106-20261115-r1",
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "13:21/head",
+        "status": "FAIL",
+        "reason": "Expected 'וַֽיהוָה הֹלֵךְ לִפְנֵיהֶם' but only 'וַאֲדֹנָי' is heard"
+      },
+      {
+        "edge": "13:22/head",
+        "status": "FAIL",
+        "reason": "Expected 'לֹֽא יָמִישׁ עַמּוּד' but 'עַמּוּד' is incomplete or unclear"
+      }
+    ],
+    "workflow_notes": [],
+    "email_disclosure_required": true,
+    "finalization_sha256": "1b5712cb1fcca7c5037cfc3472175029e8adfe6c6c2e7728c30db28a6dbeeb10"
+  },
+  "page_id": "4198aa46-08ae-8191-a8c9-ceb66cdf5bcc",
+  "page_url": "https://app.notion.com/p/106-13-17-14-8-4198aa4608ae8191a8c9ceb66cdf5bcc"
+}
