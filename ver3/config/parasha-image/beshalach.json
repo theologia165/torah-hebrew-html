@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "config_type": "ASAICHI_TORAH_PARASHA_IMAGE_PROFILE",
+  "parasha": "Beshalach",
+  "parasha_jp": "ベシャラハ",
+  "scope": "PARASHA_ABSTRACT_VISUAL_CONTINUITY",
+  "biblical_world": "Ancient Near Eastern Egypt-to-wilderness setting; plausible Bronze Age materials, no asserted precise chronology or geography.",
+  "palette": {
+    "base": [
+      "muted sand ochre",
+      "weathered limestone",
+      "deep slate blue",
+      "dusty indigo"
+    ],
+    "accents": [
+      "restrained copper",
+      "warm reflected light"
+    ],
+    "rule": "Choose daylight, night, cloud, fire or interior light only as supported by the current aliyah; do not fix sunrise or gold as a preset."
+  },
+  "materials": [
+    "rough woven linen and wool",
+    "leather",
+    "weathered wood",
+    "bronze",
+    "stone",
+    "sand and water appropriate to the current passage"
+  ],
+  "atmosphere": "Physical human weight and communal scale; warm painterly cinematic realism, selective detail rather than spectacle.",
+  "composition_rules": [
+    "Choose viewpoint, distance, lens-like perspective, focus and exposure afresh for the current passage's primary action or relationship.",
+    "Movement and wilderness may use compressed distant telephoto layers or close wider spatial depth; neither is mandatory.",
+    "Keep principal faces, hands, feet and object contacts anatomically coherent and readable; preserve exact left-panel Japanese typography."
+  ],
+  "fidelity_rules": [
+    "Do not import later events into an earlier aliyah.",
+    "No modern equipment, medieval costumes, later religious symbols or invented miracles.",
+    "Profile stores no run number, aliyah-specific scene, image, failed image or generation identifier."
+  ]
+}
