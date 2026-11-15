@@ -1,0 +1,66 @@
+{
+  "run_id": "106-20261115-r1",
+  "input_sha256": "7dc33fb424d6b45d98ca4e70b7e55d9e233124440f386ea2c0210c48d8f7db4e",
+  "manifest_sha256": "e40aa3ec4ffea8a72e64d7c24c0e40afe881173b83baacd07a3cf94559f78b1f",
+  "audio_sha256": {
+    "13:17": "67398db7a80a739e6a45847b5bfae134d1f183c55447af0eaaabf3e82179aa66",
+    "13:18": "c75fc61446e8439c47a92feaeaba2d5c6309595eb36877ac3175709c2cf5783b",
+    "13:19": "375119cf07a11e1b1e1236dba31074b79666170a318f07ff31f30a915df0ee16",
+    "13:20": "524ca346e49f2e1650e8f29e4a29ba4dd116ef4ba47976c5ea4d73b9f41a4b11",
+    "13:21": "4733e5702f7add94cc6f11c5af6afb424381c02d65ccb41ebcf608ecc791bdce",
+    "13:22": "5276e7dccb76fc038812b83c030d23c1a272073692a5a733dfcc0729cf5d8e15",
+    "14:1": "60dc1da30d48a9c2f6645641a5870e21a0d3cf30cf62f064a4833e5a478ab643",
+    "14:2": "07b7fc115abe42858cbec0e096c62f260c1fdbf583502f6aa7b80ce555bfd6f3",
+    "14:3": "56a4ebf469815b7f3c7b7152216a3e3bfa1f6eeb5ca38f11380fdfa5ea42a850",
+    "14:4": "a88f373627cbcda3948ee056bc1082237fb24ff960a45a425a549aa77098af59",
+    "14:5": "e3b5ab73ef45d753023422b0ec6ef7941513294a63368607bf50b08d0ab0ed01",
+    "14:6": "bab03c8d585adc2d879c881df142d5f6c33827b9124b539e7f487f281d7e2f30",
+    "14:7": "d3c49bfc8c73f0b80701e2938f8a6a9ffc9fba8df43c17ea73ed56f72381996b",
+    "14:8": "29b5a19d6b1f57d2456699597b1f212271b0e98343c98b092907850735b50db1"
+  },
+  "observations": [
+    {
+      "id": "13:21/head/context",
+      "ref": "13:21",
+      "side": "context",
+      "audio_sha256": "033f0741a1a5426f5501b802fc5e9b05b19b04823d0a0bd80c78c263bb74cd24",
+      "start": 70.341454,
+      "end": 82.341454,
+      "cut_seconds": 6.0,
+      "source_cut_seconds": 76.341454,
+      "expected": "וַֽיהוָה הֹלֵךְ לִפְנֵיהֶם",
+      "other_edge": "בְאֵתָם בִּקְצֵה הַמִּדְבָּֽר",
+      "expected_order": "other_edge then expected",
+      "cache_key": "eb814da25aa488a4fc9b09bcba2b53ea2c2764d73fc87e68270aaff3d738a185",
+      "observation": {
+        "status": "PASS",
+        "heard": "בְאֵתָם בִּקְצֵה הַמִּדְבָּר ... וַֽיהוָה הֹלֵךְ לִפְנֵיהֶם",
+        "evidence": "both expected edges are clearly audible",
+        "request_id": 6,
+        "suggested_cut_seconds": null
+      }
+    },
+    {
+      "id": "13:22/head/context",
+      "ref": "13:22",
+      "side": "context",
+      "audio_sha256": "033f0741a1a5426f5501b802fc5e9b05b19b04823d0a0bd80c78c263bb74cd24",
+      "start": 91.172006,
+      "end": 103.172006,
+      "cut_seconds": 6.0,
+      "source_cut_seconds": 97.172006,
+      "expected": "לֹֽא יָמִישׁ עַמּוּד",
+      "other_edge": "לָלֶכֶת יוֹמָם וָלָֽיְלָה",
+      "expected_order": "other_edge then expected",
+      "cache_key": "585b41fe0fb669d50ab6fb6f71ec4fbaaecfee01aca08c151ec5ead1b3ac0307",
+      "observation": {
+        "status": "PASS",
+        "heard": "לָלֶכֶת יוֹמָם וָלָֽיְלָה ... לֹֽא יָמִישׁ עַמּוּד",
+        "evidence": "both expected edges are clearly audible",
+        "request_id": 6,
+        "suggested_cut_seconds": null
+      }
+    }
+  ],
+  "note": "suggested_cut_seconds is local to the excerpt; add start for original-source seconds. Work must judge it."
+}

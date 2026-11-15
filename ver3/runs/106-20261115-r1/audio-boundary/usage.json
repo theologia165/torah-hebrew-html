@@ -179,14 +179,35 @@
     },
     {
       "id": 6,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 24.0,
       "reserved_usd": 0.05178,
       "model": "gpt-audio-1.5",
       "clip_keys": [
         "eb814da25aa488a4fc9b09bcba2b53ea2c2764d73fc87e68270aaff3d738a185",
         "585b41fe0fb669d50ab6fb6f71ec4fbaaecfee01aca08c151ec5ead1b3ac0307"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_bf510845f66c426d97919a39d20ec93a",
+      "usage": {
+        "prompt_tokens": 662,
+        "completion_tokens": 162,
+        "total_tokens": 824,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 240,
+          "text_tokens": 422,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 162
+        }
+      },
+      "actual_usd": 0.010355
     }
   ],
   "cache": {
@@ -373,14 +394,18 @@
       "suggested_cut_seconds": null
     },
     "eb814da25aa488a4fc9b09bcba2b53ea2c2764d73fc87e68270aaff3d738a185": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "בְאֵתָם בִּקְצֵה הַמִּדְבָּר ... וַֽיהוָה הֹלֵךְ לִפְנֵיהֶם",
+      "evidence": "both expected edges are clearly audible",
+      "request_id": 6,
+      "suggested_cut_seconds": null
     },
     "585b41fe0fb669d50ab6fb6f71ec4fbaaecfee01aca08c151ec5ead1b3ac0307": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "לָלֶכֶת יוֹמָם וָלָֽיְלָה ... לֹֽא יָמִישׁ עַמּוּד",
+      "evidence": "both expected edges are clearly audible",
+      "request_id": 6,
+      "suggested_cut_seconds": null
     }
   }
 }
