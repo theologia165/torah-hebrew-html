@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "106-20261115-r1",
+  "sequence": "106",
+  "delivery_status": "PASS",
+  "page_id": "4198aa46-08ae-8191-a8c9-ceb66cdf5bcc",
+  "page_url": "https://app.notion.com/p/106-13-17-14-8-4198aa4608ae8191a8c9ceb66cdf5bcc",
+  "gmail": {
+    "message_id": "1a1df6779931e8f5",
+    "subject": "106｜出エジプト記13:17–14:8",
+    "sent_verified": true,
+    "attachment_filename": "asaichi-torah-106.jpg",
+    "attachment_byte_size": 382022
+  },
+  "completed_at": "2026-11-15T13:31:39.829Z",
+  "WORK_JSON2_QUALITY": "PASS",
+  "image_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "finalization_sha256": "1b5712cb1fcca7c5037cfc3472175029e8adfe6c6c2e7728c30db28a6dbeeb10",
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "disclosed_in_email": true,
+    "full_content_verified": false,
+    "repair_attempted": false,
+    "candidate_adopted": false,
+    "unresolved": [
+      {
+        "edge": "13:21/head",
+        "status": "FAIL",
+        "reason": "Expected 'וַֽיהוָה הֹלֵךְ לִפְנֵיהֶם' but only 'וַאֲדֹנָי' is heard"
+      },
+      {
+        "edge": "13:22/head",
+        "status": "FAIL",
+        "reason": "Expected 'לֹֽא יָמִישׁ עַמּוּד' but 'עַמּוּד' is incomplete or unclear"
+      }
+    ],
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY"
+  }
+}
