@@ -176,6 +176,17 @@
         }
       },
       "actual_usd": 0.0045955
+    },
+    {
+      "id": 6,
+      "status": "RESERVED",
+      "audio_seconds": 24.0,
+      "reserved_usd": 0.05178,
+      "model": "gpt-audio-1.5",
+      "clip_keys": [
+        "eb814da25aa488a4fc9b09bcba2b53ea2c2764d73fc87e68270aaff3d738a185",
+        "585b41fe0fb669d50ab6fb6f71ec4fbaaecfee01aca08c151ec5ead1b3ac0307"
+      ]
     }
   ],
   "cache": {
@@ -360,6 +371,16 @@
       "evidence": "The ending words are clearly audible and match the expected phrase.",
       "request_id": 5,
       "suggested_cut_seconds": null
+    },
+    "eb814da25aa488a4fc9b09bcba2b53ea2c2764d73fc87e68270aaff3d738a185": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+    },
+    "585b41fe0fb669d50ab6fb6f71ec4fbaaecfee01aca08c151ec5ead1b3ac0307": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
     }
   }
 }
