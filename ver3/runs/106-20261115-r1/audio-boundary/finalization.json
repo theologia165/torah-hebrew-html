@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "106-20261115-r1",
+  "input_sha256": "7dc33fb424d6b45d98ca4e70b7e55d9e233124440f386ea2c0210c48d8f7db4e",
+  "manifest_sha256": "e40aa3ec4ffea8a72e64d7c24c0e40afe881173b83baacd07a3cf94559f78b1f",
+  "audio_sha256": {
+    "13:17": "67398db7a80a739e6a45847b5bfae134d1f183c55447af0eaaabf3e82179aa66",
+    "13:18": "c75fc61446e8439c47a92feaeaba2d5c6309595eb36877ac3175709c2cf5783b",
+    "13:19": "375119cf07a11e1b1e1236dba31074b79666170a318f07ff31f30a915df0ee16",
+    "13:20": "524ca346e49f2e1650e8f29e4a29ba4dd116ef4ba47976c5ea4d73b9f41a4b11",
+    "13:21": "4733e5702f7add94cc6f11c5af6afb424381c02d65ccb41ebcf608ecc791bdce",
+    "13:22": "5276e7dccb76fc038812b83c030d23c1a272073692a5a733dfcc0729cf5d8e15",
+    "14:1": "60dc1da30d48a9c2f6645641a5870e21a0d3cf30cf62f064a4833e5a478ab643",
+    "14:2": "07b7fc115abe42858cbec0e096c62f260c1fdbf583502f6aa7b80ce555bfd6f3",
+    "14:3": "56a4ebf469815b7f3c7b7152216a3e3bfa1f6eeb5ca38f11380fdfa5ea42a850",
+    "14:4": "a88f373627cbcda3948ee056bc1082237fb24ff960a45a425a549aa77098af59",
+    "14:5": "e3b5ab73ef45d753023422b0ec6ef7941513294a63368607bf50b08d0ab0ed01",
+    "14:6": "bab03c8d585adc2d879c881df142d5f6c33827b9124b539e7f487f281d7e2f30",
+    "14:7": "d3c49bfc8c73f0b80701e2938f8a6a9ffc9fba8df43c17ea73ed56f72381996b",
+    "14:8": "29b5a19d6b1f57d2456699597b1f212271b0e98343c98b092907850735b50db1"
+  },
+  "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [
+    {
+      "edge": "13:21/head",
+      "status": "FAIL",
+      "reason": "Expected 'וַֽיהוָה הֹלֵךְ לִפְנֵיהֶם' but only 'וַאֲדֹנָי' is heard"
+    },
+    {
+      "edge": "13:22/head",
+      "status": "FAIL",
+      "reason": "Expected 'לֹֽא יָמִישׁ עַמּוּד' but 'עַמּוּד' is incomplete or unclear"
+    }
+  ],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-15T13:20:06.206Z",
+  "evidence": "全14節26観察を再照合。13:21/headの前後6秒詳査では13:20末尾「בְאֵתָם בִּקְצֵה הַמִּדְבָּר」に続き13:21冒頭「וַֽיהוָה הֹלֵךְ לִפְנֵיהֶם」が明瞭に観察され、13:22/headでは13:21末尾「לָלֶכֶת יוֹמָם וָלָֽיְלָה」から「לֹא יָמִישׁ עַמּוּד」の正しい順序が観察された。両詳査はPASS、切替秒の提案なし。初回FAILは4秒内の朗唱長/抜粋内側終端の影響の可能性があり、原音の欠損や誤境界は確定していない。証拠なしの再切断をせずDELIVER_CURRENTとする。初回13:21/head・13:22/headのFAILは書換えず、最終証明で未解決として保持される場合は初回所見と詳査PASSの両方をメールに明記。修復0回・候補採用なし・現在の再生可能r2を配信する。境界限定の観察であり全内容PASSとは扱わない。",
+  "decision_sha256": "7c7046b7d3eb5879f1f116a874848307cd7ca14ef412f1f80af57d307f99bce0",
+  "usage_sha256": "64ac98601fedeece98f081cb5022bd55690ab7e41d04aafd7f88a6a0b188c8c7",
+  "report_sha256": "945f14bfac3b57d839843a32be68530dec50f5f4993c0015d6fe6c75459199be",
+  "email_disclosure_required": true
+}
