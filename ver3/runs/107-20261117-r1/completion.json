@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "107-20261117-r1",
+  "sequence": "107",
+  "delivery_status": "PASS",
+  "page_id": "41a8aa46-08ae-81ba-85e9-c3b999688d18",
+  "page_url": "https://app.notion.com/p/107-14-9-14-41a8aa4608ae81ba85e9c3b999688d18",
+  "gmail": {
+    "message_id": "1a1e51ddc2dfd2a3",
+    "subject": "107｜出エジプト記14:9–14",
+    "to": "me",
+    "sent_verified": true,
+    "sent_verified_at": "2026-11-16T16:09:32.087Z",
+    "attachment_filename": "asaichi-torah-107.jpg",
+    "attachment_byte_size": 444108,
+    "attachment_source_sha256": "451354424b66a65877bd6101b5fd726d8b30bcc8a8516d4ddf1cd8f30b698c7b"
+  },
+  "completed_at": "2026-11-16T16:09:32.087Z",
+  "WORK_JSON2_QUALITY": "PASS",
+  "verse_count": 6,
+  "token_count": 107,
+  "image_status": "PASS",
+  "cover_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "finalization_sha256": "b07eea58ba015a7c29e1c166f8ff108f3b6bdfcb6b936a95cc42b884d33ab336",
+    "status": "BOUNDARY_PASS",
+    "disclosed_in_email": true,
+    "full_content_verified": false,
+    "repair_attempted": false,
+    "candidate_adopted": false,
+    "unresolved": [],
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY"
+  }
+}

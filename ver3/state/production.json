@@ -12,41 +12,30 @@
   },
   "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。",
   "last_completed": {
-    "sequence": "106",
-    "run_id": "106-20261115-r1",
-    "page_id": "4198aa46-08ae-8191-a8c9-ceb66cdf5bcc",
-    "page_url": "https://app.notion.com/p/106-13-17-14-8-4198aa4608ae8191a8c9ceb66cdf5bcc",
+    "sequence": "107",
+    "run_id": "107-20261117-r1",
+    "page_id": "41a8aa46-08ae-81ba-85e9-c3b999688d18",
+    "page_url": "https://app.notion.com/p/107-14-9-14-41a8aa4608ae81ba85e9c3b999688d18",
     "status": "PASS",
-    "verse_count": 14,
-    "token_count": 199,
+    "verse_count": 6,
+    "token_count": 107,
     "WORK_JSON2_QUALITY": "PASS",
     "image_status": "PASS",
     "cover_status": "PASS",
-    "gmail_message_id": "1a1df6779931e8f5",
-    "gmail_subject": "106｜出エジプト記13:17–14:8",
+    "gmail_message_id": "1a1e51ddc2dfd2a3",
+    "gmail_subject": "107｜出エジプト記14:9–14",
     "gmail_sent_verified": true,
-    "completed_at": "2026-11-15T13:31:39.829Z",
+    "completed_at": "2026-11-16T16:09:32.087Z",
     "audio_quality_status": "CONTENT_REVIEW_PENDING",
     "audio_content_verified": false,
     "audio_boundary": {
-      "finalization_sha256": "1b5712cb1fcca7c5037cfc3472175029e8adfe6c6c2e7728c30db28a6dbeeb10",
-      "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+      "finalization_sha256": "b07eea58ba015a7c29e1c166f8ff108f3b6bdfcb6b936a95cc42b884d33ab336",
+      "status": "BOUNDARY_PASS",
       "disclosed_in_email": true,
       "full_content_verified": false,
       "repair_attempted": false,
       "candidate_adopted": false,
-      "unresolved": [
-        {
-          "edge": "13:21/head",
-          "status": "FAIL",
-          "reason": "Expected 'וַֽיהוָה הֹלֵךְ לִפְנֵיהֶם' but only 'וַאֲדֹנָי' is heard"
-        },
-        {
-          "edge": "13:22/head",
-          "status": "FAIL",
-          "reason": "Expected 'לֹֽא יָמִישׁ עַמּוּד' but 'עַמּוּד' is incomplete or unclear"
-        }
-      ],
+      "unresolved": [],
       "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY"
     }
   },
@@ -55,15 +44,15 @@
   "next_passage": {
     "parasha": "Beshalach",
     "parasha_jp": "ベシャラハ",
-    "aliyah": 2,
+    "aliyah": 3,
     "book": "Exodus",
     "chapter": 14,
     "end_chapter": 14,
-    "start_verse": 9,
-    "end_verse": 14,
-    "display": "ベシャラハ｜第2アリヤー｜出エジプト記14:9–14"
+    "start_verse": 15,
+    "end_verse": 25,
+    "display": "ベシャラハ｜第3アリヤー｜出エジプト記14:15–25"
   },
-  "next_sequence": "107",
+  "next_sequence": "108",
   "notion_api_version": "2026-03-11",
   "notion_output_rule": {
     "show_development_labels": false,
