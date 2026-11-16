@@ -156,14 +156,22 @@
       "theme and required text remain clear at thumbnail viewing size",
       "the viewer's position and selected camera angle are visibly realized and convey the current passage's central action or tension",
       "Independent enlarged anatomy review completed for each principal figure before aesthetic review; left/right hand identity, thumb/fingers, joints, limbs and object contact checked; no unresolved anatomy",
-      "The current passage's chosen action/relationship/tension is unmistakably emphasized at thumbnail size through selective framing, focus and light; secondary details do not compete by being equally crisp and bright"
+      "The current passage's chosen action/relationship/tension is unmistakably emphasized at thumbnail size through selective framing, focus and light; secondary details do not compete by being equally crisp and bright",
+      "Whole-body proportions, left/right pelvis-to-foot continuity, support/swing gait, load balance and consistent foreshortening independently PASS before and after enlarged local inspection; no unresolved important anatomy."
     ],
     "anatomy_review": {
       "required": true,
-      "order": "INDEPENDENT_ENLARGED_ANATOMY_REVIEW_BEFORE_COMPOSITION_REVIEW",
+      "order": "WHOLE_BODY_GATE_THEN_ENLARGED_LOCAL_GATE_THEN_WHOLE_BODY_AND_THUMBNAIL_RECHECK_BEFORE_AESTHETIC_REVIEW",
       "method": "Actually display enlarged inspection crops of each principal figure; trace shoulders/elbows/wrists, left/right hand identity and thumb/finger arrangement, hip/knee/ankle/foot chains and supported objects; scan background figures.",
-      "uncertain_policy": "Do not mark unreadable key anatomy PASS; reject FAIL or UNCERTAIN within the existing total3 fresh-generation limit.",
-      "evidence": "Use existing cover-ready.json qa field with specific figures/body regions/left-right and contact judgments; no separate audit JSON or stored crop binaries."
+      "uncertain_policy": "Reject if any whole-body gate, enlarged local gate, or whole-body/thumbnail recheck is FAIL or UNCERTAIN. Natural occlusion is allowed only where visible form supports a coherent interpretation; do not invent certainty about hidden anatomy, crop/blur away an unresolved important limb, or use local correctness to certify the whole body. Existing maximum3 fresh generations applies.",
+      "evidence": "Use existing qa field to record actual whole-body proportion/leg-chain/support/swing/balance/shortening judgments, enlarged left-right hands/contact and final whole-body/thumbnail recheck with visibility limits; no dedicated audit JSON or persistent crops.",
+      "whole_body_pass_conditions": {
+        "leg_continuity": "Each leg must be traceable from pelvis/hip through thigh, knee, lower leg, ankle and foot without contradictory anatomy.",
+        "proportions": "Head, torso, pelvis and leg lengths/joint positions form a coherent body; no unexplained compressed stature. Do not impose fixed ideal head counts or body types.",
+        "gait": "Identify support and swing legs and reconcile stride, knee bend, foot direction and left/right depth; for standing poses identify the support relationship.",
+        "balance": "Ground contact, weight shift, torso inclination and carried load must support a plausible center of mass.",
+        "foreshortening": "Shortening and overlap must follow actual camera/body orientation consistently across body parts; telephoto or low-angle labels alone are not evidence."
+      }
     }
   },
   "persistence": {
