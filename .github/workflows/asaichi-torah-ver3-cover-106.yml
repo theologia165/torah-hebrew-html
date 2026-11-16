@@ -1,10 +1,10 @@
-name: Apply anatomy-reviewed 106 cover only
+name: Apply theme-reviewed 106 cover only
 on:
   push:
     branches: [asaichi-torah-ver3]
     paths:
       - '.github/workflows/asaichi-torah-ver3-cover-106.yml'
-      - 'ver3/runs/106-20261115-r1/cover-revised-ready.json'
+      - 'ver3/runs/106-20261115-r1/cover-theme-ready.json'
 permissions:
   contents: write
 concurrency:
@@ -38,17 +38,17 @@ jobs:
           from prepare_notion_html import request_json
           import requests
           run=Path('ver3/runs/106-20261115-r1')
-          ready=run/'cover-revised-ready.json'
-          result=run/'cover-revised-result.json'
-          ticket_path=run/'cover-revised-upload.json'
-          relay_id='106-20261115-r1-anatomy-v2-20261116'
+          ready=run/'cover-theme-ready.json'
+          result=run/'cover-theme-result.json'
+          ticket_path=run/'cover-theme-upload.json'
+          relay_id='106-20261115-r1-theme-v3-20261116'
           page_id='4198aa46-08ae-8191-a8c9-ceb66cdf5bcc'
           if not ready.exists():
               if not ticket_is_current(ticket_path): ticket(relay_id,ticket_path)
               print('WAITING_FOR_CORRECTED_JPEG')
           else:
               q=json.loads(ready.read_text())
-              assert len(q['sha256'])==64 and q['anatomy_review']=='PASS_ENLARGED' and q['whole_body_review']=='PASS' and q['whole_body_recheck']=='PASS' and q['run_id']=='106-20261115-r1'
+              assert len(q['sha256'])==64 and q['anatomy_review']=='PASS_ENLARGED' and q['whole_body_review']=='PASS' and q['whole_body_recheck']=='PASS' and q['theme_communication']=='PASS' and q['run_id']=='106-20261115-r1'
               assert q['status']=='PASS' and q['page_id']==page_id
               if not result.exists():
                   immutable={p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in ['ver3/state/production.json',str(run/'delivery.json'),str(run/'completion.json'),str(run/'json3.json')]}
@@ -84,7 +84,7 @@ jobs:
                   actual.raise_for_status()
                   assert hashlib.sha256(actual.content).hexdigest()==q['sha256']
                   assert all(hashlib.sha256(Path(p).read_bytes()).hexdigest()==h for p,h in immutable.items())
-                  result.write_text(json.dumps({'status':'PASS','operation':'COVER_ONLY_CORRECTION','run_id':'106-20261115-r1','page_id':page_id,'reason':'User reported leg overlap and compressed stature; fresh image passed independent whole-body, enlarged local and whole-body recheck gates','prior_cover_sha256':previous_hash,'sha256':q['sha256'],'byte_size':len(data),'notion_file_upload_id':upload_id,'notion_cover_bytes_verified':True,'page_properties_unchanged':True,'all_non_cover_blocks_unchanged':True,'anatomy_review':q['qa'],'production_and_original_delivery_completion_unchanged':True},indent=2)+'\n')
+                  result.write_text(json.dumps({'status':'PASS','operation':'COVER_ONLY_CORRECTION','run_id':'106-20261115-r1','page_id':page_id,'reason':'User requested PR8 keyword-based theme selection; fresh image passed independent anatomy and theme-communication review','prior_cover_sha256':previous_hash,'sha256':q['sha256'],'byte_size':len(data),'notion_file_upload_id':upload_id,'notion_cover_bytes_verified':True,'page_properties_unchanged':True,'all_non_cover_blocks_unchanged':True,'anatomy_review':q['qa'],'production_and_original_delivery_completion_unchanged':True},indent=2)+'\n')
                   print('PASS: corrected cover uploaded and saved Notion bytes verified')
           
           PY
@@ -92,8 +92,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ver3/runs/106-20261115-r1/cover-revised-*.json
+          git add ver3/runs/106-20261115-r1/cover-theme-*.json
           if ! git diff --cached --quiet; then
-            git commit -m "Record anatomy-reviewed 106 cover-only correction"
+            git commit -m "Record keyword-based 106 theme cover correction"
             git push origin HEAD:asaichi-torah-ver3
           fi
