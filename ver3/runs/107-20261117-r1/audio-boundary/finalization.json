@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "107-20261117-r1",
+  "input_sha256": "70241ffee3526f777a89446e62b4eb28f3b395f089ced91a4ad9ee72fa2c1a63",
+  "manifest_sha256": "f48449933f2b70543352e9dd02367879a58c5e78f888bc77f997497560211843",
+  "audio_sha256": {
+    "14:9": "983f085092b8e6846ffae8ecfc05372ba9bea90c6afffcfc57484a30087796ef",
+    "14:10": "ab81ea0d6821d4335c1e5a6d61f75ccfdc0019e291905779a77b864f1d7140f4",
+    "14:11": "2793ddf2070cd4703c0dd046cb4a5202f60e4347c6244c84e3543aa015a69e0e",
+    "14:12": "6a6179a0e7d372c04d1715077daa3b623a4c04d101bca4d736e1364eac23aa76",
+    "14:13": "23d478cc80bac20bdadb498115ab488e24c57ecc54a52adbe5805c0a692836ba",
+    "14:14": "162270c880b97188ccddcdb485c962aac0555652821e1ffb780664c1b47bb773"
+  },
+  "status": "BOUNDARY_PASS",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-16T15:48:23.422Z",
+  "evidence": "全6節の観察11件を、107のJSON1.1の節冒頭・末尾と照合した。14:9–13は冒頭・末尾各4秒、14:14は7.94秒の短い全体抜粋。14:9冒頭で記録された2語は期待する3語の先頭と一致し、抜粋内部で終わる3語目を境界欠落とは判定しない。他の冒頭・末尾では期待語句との対応が明記され、隣節混入・語頭／語尾切れ・既知findingの指摘はない。共有境界をまたぐ隣節の組も整合し、problem_edgesとmissing_audio_refsは空。2要求ともHTTP200、予算内で完了。現行音声を配信する。追加詳査・修復・候補採用は不要と判断する。ただし境界観察の判断であり、長い節の中央を含む全語順・全内容の聴取合格へは昇格させない。",
+  "decision_sha256": "4c468eb25098dc12cc7211ac92ba65751741ae5d0f9136fb5faecef4cf046a2a",
+  "usage_sha256": "1133ef97bff5c7c9c23776b70fbc9aa9045cd987fa6efd6bd800e564948226bd",
+  "report_sha256": "18795b4033e3640dcee8837dbb586ffc602b5ca87af236651d7cc2238bfd040f",
+  "email_disclosure_required": false
+}
