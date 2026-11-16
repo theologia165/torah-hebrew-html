@@ -91,10 +91,11 @@
         "candidates": "Before camera choices, Work enumerates a small nonredundant set of passage-specific words/short phrases with verse refs, textual roles/relationships, and reasons to prioritize as theme, support, or omit. Consider actors/recipients including collectives, verbs/objects, contrast/tension, changes/repetition and objects/places/signs when relevant. No quota, frequency-only ranking, invented symbols or generic keywords detached from their local roles.",
         "selection": "Choose one sentence naming who/what acts or relates to whom/what at a meaningful moment, with supporting keywords. Deliberately consider individual, community, relationship, action, object or landscape as focal subject; do not collapse a collective relationship into an isolated attractive portrait. An individual may represent a community if the relationship is visible; do not impose crowds as a preset.",
         "transfer": "Use the chosen relationship to compare the existing three viewpoint options and specify gaze, direction, placement, distance, route/contact, focus and light in the prompt. Do not generate an image per keyword or add a separate set of three generations.",
-        "review": "After anatomy review, describe the scene-only image's visible actor/action/relationship before rereading intent; then inspect the complete cover at thumbnail size and compare with selected theme and verse-grounded relationships. Exact aliyah identification without text is not required. Mere presence of passage objects, correct anatomy or an explanatory headline cannot substitute for a visibly communicated relationship.",
+        "review": "After generation and before anatomy inspection, describe the scene-only visible actor/action/relationship before rereading intent; compare with the selected theme/viewpoint, then conduct framing-aware anatomy inspection and recheck full cover at thumbnail size. Exact aliyah identification without text is not required. Correct anatomy or an explanatory headline cannot rescue an unrealized viewpoint or relationship.",
         "gate": "Passage fidelity, anatomy, theme communication and required text must independently PASS. Reject FAIL/UNCERTAIN theme communication within the existing maximum3 fresh attempts; report incomplete if none passes.",
         "persistence": "Keep candidate table and selection ephemeral in CURRENT RUN IMAGE PACKAGE. Record only chosen theme/verse refs, observed visual reading and thumbnail comparison in existing cover-ready.json qa; no new package files or dedicated audit JSON. Actions structural/media PASS cannot certify Work's semantic judgment."
-      }
+      },
+      "workflow_order": "Choose passage keywords, relational theme and three camera options first; commit to framing, lens character, focus and light before generation. After fresh generation, review scene-only composition/theme before anatomy; then inspect anatomy within the selected framing and finally recheck complete cover and thumbnail. Never choose a full-body frontal pose merely to make anatomy inspection easier."
     }
   },
   "generation_policy": {
@@ -164,23 +165,24 @@
       "important faces, hands and relationships remain readable and the left text is unaffected by optical effects",
       "theme and required text remain clear at thumbnail viewing size",
       "the viewer's position and selected camera angle are visibly realized and convey the current passage's central action or tension",
-      "Independent enlarged anatomy review completed for each principal figure before aesthetic review; left/right hand identity, thumb/fingers, joints, limbs and object contact checked; no unresolved anatomy",
+      "After composition realization review, independent enlarged anatomy inspection covers each principal figure's visible limbs/hands and important contacts within the chosen framing; unobserved off-frame anatomy is not certified.",
       "The current passage's chosen action/relationship/tension is unmistakably emphasized at thumbnail size through selective framing, focus and light; secondary details do not compete by being equally crisp and bright",
-      "Whole-body proportions, left/right pelvis-to-foot continuity, support/swing gait, load balance and consistent foreshortening independently PASS before and after enlarged local inspection; no unresolved important anatomy.",
+      "Visible body proportions, continuity, pose, load and foreshortening PASS at complete-image view before and after enlarged local inspection; assess hip-to-foot chains and support/swing/ground contact where depicted, without demanding full-body framing.",
       "Passage-specific keyword candidates with verse-grounded roles were compared before choosing subject/viewpoint; selected action/relationship visibly survives scene-only reading and thumbnail review independently of anatomy and text."
     ],
     "anatomy_review": {
       "required": true,
-      "order": "WHOLE_BODY_GATE_THEN_ENLARGED_LOCAL_GATE_THEN_WHOLE_BODY_AND_THUMBNAIL_RECHECK_BEFORE_AESTHETIC_REVIEW",
-      "method": "Actually display enlarged inspection crops of each principal figure; trace shoulders/elbows/wrists, left/right hand identity and thumb/finger arrangement, hip/knee/ankle/foot chains and supported objects; scan background figures.",
-      "uncertain_policy": "Reject if any whole-body gate, enlarged local gate, or whole-body/thumbnail recheck is FAIL or UNCERTAIN. Natural occlusion is allowed only where visible form supports a coherent interpretation; do not invent certainty about hidden anatomy, crop/blur away an unresolved important limb, or use local correctness to certify the whole body. Existing maximum3 fresh generations applies.",
-      "evidence": "Use existing qa field to record actual whole-body proportion/leg-chain/support/swing/balance/shortening judgments, enlarged left-right hands/contact and final whole-body/thumbnail recheck with visibility limits; no dedicated audit JSON or persistent crops.",
+      "order": "THEME_AND_VIEWPOINT_DESIGN_THEN_FRESH_GENERATION_THEN_COMPOSITION_REVIEW_THEN_FRAME_GLOBAL_ANATOMY_THEN_ENLARGED_VISIBLE_PARTS_THEN_FULL_COVER_AND_THUMBNAIL_RECHECK",
+      "method": "Actually display enlarged crops of visible anatomy and important contacts for each principal; trace visible head/neck/shoulders/arms/wrists/hands, and hip-to-foot chains when depicted; scan background figures. Select framing for story, not inspection convenience.",
+      "uncertain_policy": "Natural planned cropping and coherent occlusion are allowed; mark off-frame parts unobserved, not automatically UNCERTAIN. Reject unresolved contradictions in depicted anatomy or unclear important visible action/contact. Do not crop or blur away a discovered defect. Never demand visible feet for a chest-up composition. Existing maximum3 fresh generations applies.",
+      "evidence": "In existing qa record chosen framing, observed parts and left/right/contact judgments, complete-image proportions/pose/occlusion, applicable leg/support/ground checks, unobserved off-frame parts, and final composition plus anatomy thumbnail recheck. No dedicated audit JSON or persistent crops.",
       "whole_body_pass_conditions": {
-        "leg_continuity": "Each leg must be traceable from pelvis/hip through thigh, knee, lower leg, ankle and foot without contradictory anatomy.",
-        "proportions": "Head, torso, pelvis and leg lengths/joint positions form a coherent body; no unexplained compressed stature. Do not impose fixed ideal head counts or body types.",
-        "gait": "Identify support and swing legs and reconcile stride, knee bend, foot direction and left/right depth; for standing poses identify the support relationship.",
-        "balance": "Ground contact, weight shift, torso inclination and carried load must support a plausible center of mass.",
-        "foreshortening": "Shortening and overlap must follow actual camera/body orientation consistently across body parts; telephoto or low-angle labels alone are not evidence."
+        "scope": "Judge the complete image within the preselected framing; 'complete image' does not require a complete body.",
+        "leg_continuity": "When legs are depicted, trace each visible hip/thigh/knee/lower leg/ankle/foot coherently; off-frame legs remain unobserved.",
+        "proportions": "Visible head/torso/pelvis/limbs and joint positions form a coherent pose. Full-body views must have credible stature; do not impose a full-body view or fixed ideal head count.",
+        "gait": "When shown, identify support/swing or standing support with coherent stride and foot direction; do not add feet solely for inspection.",
+        "balance": "Visible body inclination, supported loads and contacts must be plausible; check ground contact where in frame.",
+        "foreshortening": "Visible shortening, overlap, occlusion and frame-edge cuts follow camera/body direction consistently. Optical labels do not excuse contradictions."
       }
     }
   },
