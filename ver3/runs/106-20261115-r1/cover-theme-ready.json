@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0-cover-ready",
+  "operation": "COVER_ONLY_CORRECTION",
+  "run_id": "106-20261115-r1",
+  "page_id": "4198aa46-08ae-8191-a8c9-ceb66cdf5bcc",
+  "status": "PASS",
+  "anatomy_review": "PASS_ENLARGED",
+  "whole_body_review": "PASS",
+  "whole_body_recheck": "PASS",
+  "theme_communication": "PASS",
+  "object_key": "covers/106-20261115-r1-theme-v3-20261116/cover.jpg",
+  "prior_cover_sha256": "9deeac63aeadcd7c842f8cd118af407a0d569f5a5cb28d169b22da7bad1f3f8c",
+  "sha256": "fc0dc31e054a474e3885d8e6803c61db8e6f72e9a3dac65c8029be791bf6ed3e",
+  "bytes": 473126,
+  "width": 1200,
+  "height": 630,
+  "content_type": "image/jpeg",
+  "uploaded": true,
+  "qa": {
+    "fresh_generation_attempts": 1,
+    "source_layers": [
+      "GLOBAL_IMAGE_MASTER after PR8 merge",
+      "CURRENT_PARASHA_PROFILE: ベシャラハ",
+      "CURRENT_RUN_IMAGE_PACKAGE from 106-20261115-r1 JSON2 only"
+    ],
+    "whole_body_review": "PASS. Viewed complete generated image before crop inspection. Three principal walkers retain credible adult/younger stature, torso-to-leg proportions, pelvis/robe direction and separate feet. Left adult's image-left leg trails with heel lifted while image-right foot advances; blue-clothed adult likewise has a visible trailing sole and distinct forward sandal. Younger walker's two lower legs separate below the garment, one trailing and the supporting leg farther ahead. Upper legs are naturally covered by garments; no claim of seeing hidden joints. Load-bearing straps lead to shoulders and bundles rest against backs without a disembodied gripping hand.",
+    "enlarged_anatomy_review": "Actually displayed 2x enlarged full-figure crops of left adult, younger walker and blue-clothed adult, followed by joint hand, leg and background-group crops. Traced each visible shoulder/elbow/wrist and lower-limb chain through garment contour to ankle/sandal. Visible right hands have coherent wrist-to-palm alignment, inner thumb placement and naturally curled overlapping fingers; no duplicated hand, unattached digit or contradictory finger root observed. Younger left hand and blue-clothed adult left hand are partly occluded at the bundle/garment edges; visible portions attach to their respective arms, and hidden finger count is not certified. Left adult's far arm is naturally occluded by body/garment/bundle and panel boundary. No hand-object contact is the central action. Scanned readable midground silhouettes and their visible limbs; distant simplified people are not certified finger by finger.",
+    "whole_body_and_thumbnail_recheck": "PASS. Re-viewed scene-only image, complete 600x315 thumbnail and final 1200x630 JPEG after local inspection. Principal figures maintain stature and coherent support/swing strides; feet are separate, with natural depth overlap rather than fused legs. No local crop was used to excuse a whole-body contradiction.",
+    "selected_theme": "神に導かれ、共に進む民",
+    "theme_verse_refs": [
+      "Exodus 13:17–18",
+      "Exodus 13:21–22",
+      "Exodus 14:8"
+    ],
+    "scene_only_observed_reading": "Before rereading shot intent, the visible scene reads as ordinary adults and a younger person carrying bundles, walking away with many others along one continuous route toward a tall cloud column ahead. Rear three-quarter views and converging route put the viewer among the following people; no single frontal hero commands the scene.",
+    "theme_comparison": "PASS. The selected people/following/guidance relationship is carried by the procession's common direction, forward-looking profiles, the continuous route and the cloud visibly before them. At 600x315 the three near walkers remain part of a larger people rather than isolated portraits; the long procession and pale column remain readable. Full cover typography identifies the exact aliyah but is not required to rescue an absent relationship. Foreground cloth/ground retain texture; the compositional hierarchy is the shared procession leading toward the brighter cloud, with more distant ranks progressively softer.",
+    "text_review": "PASS. Visually read all final-JPEG text: 朝一トーラー / 106 / ベシャラハ / 第1アリヤー / 出エジプト記 / 13:17–14:8 / 導きの先へ. High-contrast left panel, comfortable margins, no omitted or garbled character.",
+    "passage_fidelity": "PASS. Daytime cloud ahead of released people in wilderness; ancient clothing and carried bundles. No parted sea, battle, fire pillar simultaneous with daylight cloud, divine portrait, later-verse fear scene or historical-date claim.",
+    "layout_and_media": "PASS. Left information panel approximately 38%; final JPEG 1200x630. PUT returned HTTP200; sha256 and byte count recorded above. No image binary committed to GitHub.",
+    "scope": "106 Notion cover only. Preserve page body, properties, research, HTML, audio, delivery/completion and production progression."
+  },
+  "reviewed_at": "2026-11-16T13:21:07.271Z"
+}
