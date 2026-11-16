@@ -39,7 +39,7 @@
     },
     {
       "id": 2,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 23.941224,
       "reserved_usd": 0.053088458399999996,
       "model": "gpt-audio-1.5",
@@ -49,7 +49,28 @@
         "fedb9325fa2628b7fa175fae3cad3774e37749a32cf74cdca6383928be1e4249",
         "babf9c4be905837c4d6f0e68f0432a636a025aaafef4cec2eebb4af2c3adb521",
         "85e854164eb719434a85eebf6c2aa50669b5596f9ce6e7519bf7ae4ac145eaef"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_6a43750fe0e046089353ed53eccd81d3",
+      "usage": {
+        "prompt_tokens": 915,
+        "completion_tokens": 280,
+        "total_tokens": 1195,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 236,
+          "text_tokens": 679,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 280
+        }
+      },
+      "actual_usd": 0.0120495
     }
   ],
   "cache": {
@@ -96,29 +117,39 @@
       "suggested_cut_seconds": null
     },
     "ca3ce8c2cc955752807eb554722e1e42a0a700027a39247215d0aab342df4a90": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "הֲלֹא זֶה הַדָּבָר",
+      "evidence": "clear pronunciation of expected beginning words",
+      "request_id": 2,
+      "suggested_cut_seconds": null
     },
     "8eb1e922fbdf49c816b922442c7297ead577ce71c839ae37d8118af433a5ceef": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "מִצְרַיִם מִמֻּתֵנוּ בַּמִּדְבָּר",
+      "evidence": "ending words match expected tail",
+      "request_id": 2,
+      "suggested_cut_seconds": null
     },
     "fedb9325fa2628b7fa175fae3cad3774e37749a32cf74cdca6383928be1e4249": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיֹּאמֶר מֹשֶׁה אֶל",
+      "evidence": "beginning words clearly audible",
+      "request_id": 2,
+      "suggested_cut_seconds": null
     },
     "babf9c4be905837c4d6f0e68f0432a636a025aaafef4cec2eebb4af2c3adb521": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "עוֹד עַד עוֹלָֽם",
+      "evidence": "ending words clearly match expected",
+      "request_id": 2,
+      "suggested_cut_seconds": null
     },
     "85e854164eb719434a85eebf6c2aa50669b5596f9ce6e7519bf7ae4ac145eaef": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "יְהוָה יִלָּחֵם לָכֶם וְאַתֶּם תַּחֲרִישֽׁוּן",
+      "evidence": "full verse heard as expected",
+      "request_id": 2,
+      "suggested_cut_seconds": null
     }
   }
 }
