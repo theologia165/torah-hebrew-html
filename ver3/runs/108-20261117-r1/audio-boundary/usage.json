@@ -111,7 +111,7 @@
     },
     {
       "id": 4,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 16.0,
       "reserved_usd": 0.03967,
       "model": "gpt-audio-1.5",
@@ -120,7 +120,28 @@
         "c759e8b0ff66dc913cd7b04a59b65dc4d0d17e84b288b41e947b82e67555980c",
         "cfde513fc3c204579c4320caa4051bdff9a1701f0a2394d880296f3b96e47630",
         "e2539e70b016e2f7c743fdb24b028280fada650a41e326a3adeb276f035004a4"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_a21642b3d3624554b5bdfe3584e07fc6",
+      "usage": {
+        "prompt_tokens": 713,
+        "completion_tokens": 228,
+        "total_tokens": 941,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 158,
+          "text_tokens": 555,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 228
+        }
+      },
+      "actual_usd": 0.0087235
     }
   ],
   "cache": {
@@ -251,24 +272,32 @@
       "suggested_cut_seconds": null
     },
     "79a170b10d44ff92fa90364abe4050f5fe75cf8955b343bf6704474b1919f58d": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַֽיְהִי בְּאַשְׁמֹרֶת",
+      "evidence": "The beginning words match the expected phrase clearly.",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "c759e8b0ff66dc913cd7b04a59b65dc4d0d17e84b288b41e947b82e67555980c": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "אֵת מַחֲנֵה מִצְרָֽיִם",
+      "evidence": "The ending words are clearly audible and match the expected ending.",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "cfde513fc3c204579c4320caa4051bdff9a1701f0a2394d880296f3b96e47630": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיָּסַר אֵת אֹפַן",
+      "evidence": "The clip starts with the expected words clearly pronounced.",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "e2539e70b016e2f7c743fdb24b028280fada650a41e326a3adeb276f035004a4": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "נִלְחָם לָהֶם בְּמִצְרָֽיִם",
+      "evidence": "The clip ends with the expected words clearly audible.",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     }
   }
 }
