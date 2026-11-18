@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0-work-boundary-decision",
+  "run_id": "109-20261118-r1",
+  "report_sha256": "7befa429c76b03a8f1e4b83018321f0f51cd58e1ecd531772016d58659884427",
+  "action": "DELIVER_CURRENT",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-18T13:39:16.419Z",
+  "evidence": "全60観察を期待語・聞こえた語・根拠と照合。14:29/headは期待の冒頭「ウヴネイ」が聞こえず、イスラエルのみとのFAIL報告で、冒頭欠落疑いを未解決として保持する。「ハルフー」は4秒抜粋の内側に収まらない可能性もあるため、モデルの欠落説明を全語欠落確定へ拡張しない。他の観察済み41箇所は開始・終止の対応を確認。15:17/tail、15:18/whole、15:19–26の冒頭末尾の計18箇所はBOUNDARY_BUDGET_LIMITによるUNCERTAIN。7要求の保守的見積合計が約0.388 USDで、残額では12秒の詳査・再検品を確保できず、規定に従い追加API要求・修復を行わずDELIVER_CURRENT。欠落疑いと未確認箇所をメールに全て報告し、境界・全内容PASSにはしない。再生可能な現行PocketTorah音声を配信し、番号進行と修復完了を分ける。",
+  "note": "Work must judge observations. A template is not an approval. Other actions: INSPECT_CONTEXT, REQUEST_REPAIR, ADOPT_CANDIDATE."
+}
