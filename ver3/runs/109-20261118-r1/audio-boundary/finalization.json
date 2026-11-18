@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "109-20261118-r1",
+  "input_sha256": "6d6c7e67c1cb1e7423e4a4ce8a695e6766bffa8f69a2de55eb8c964903877e33",
+  "manifest_sha256": "ece96a1cafbaad706ed5dc601cb2a1350948c78a537dc63e6ef046fa75aab2d0",
+  "audio_sha256": {
+    "14:26": "3bfa8e854ab3e09872f09892e1816a14ca13f595092d201ad1e69e640618dd7b",
+    "14:27": "ad55ce17bf48470a98d273bde4016f60a716d8f3df98ccc63e9992b0e425338e",
+    "14:28": "93f7f457ca8ec9141c8dd7fcf1bfc67a07638c21f5159cbf6c63b948cd698e00",
+    "14:29": "fb62d49ff1cfd3db08b1fe92486945b205b35a38323cec22dc10c84f058a7389",
+    "14:30": "93f357263d110136d78bb8e918f361bc08d57685db616a63052a40839705e105",
+    "14:31": "737850a44f829f850ed7829b0c777735733f6ecd5d504ca2da8b77c6c48084a0",
+    "15:1": "73670228b2fbacc682b87407fa9913dddd70038a0c2e74a2c7878b52dc6d8561",
+    "15:2": "73909d89405292a8c57b6f8125769a55b419e6eb52eb1b52d088510de045dea3",
+    "15:3": "14f3c50cb9e483921995b204c8dcb53fc82b907e573f2165544856ae9f832fb9",
+    "15:4": "959d704899a2ef8d4f3692986a38ac0bb35017fc4d86c2468b4ab1523a85a5f5",
+    "15:5": "dd4ac852de68c2b79a9d7269e0d1e6ab608d163d13141d2eb732af5f1cecb723",
+    "15:6": "0bfddd753f439fc92da517b8260135e826ebdbdaa664b9600f0ba48a26f48930",
+    "15:7": "33b2fda7c5838d6ff9cfe55e111a5f02fcb1005bb020fce3aa1e38f4558c8d17",
+    "15:8": "92b08a015d62570d4354777c3427a334e3a0a6ce5c6d41136791839a36b0aecc",
+    "15:9": "51419d2b30e19b8c89006f20a5736b8284ddb5abc7b398a5077c26a5a1277e8b",
+    "15:10": "4cb12c0ebf1517a2844984c9e4d970071d372c4f2ff72c771b506af1397c26e6",
+    "15:11": "ec83fae95beb583505745807fbbef3619a761fd236a76e49bb42ec75f25665f8",
+    "15:12": "b6d1937b4d5a2cb810552dee02e5c70e6425e9cd7e01723e454b364f680d3baa",
+    "15:13": "46ec753c1c1ac28eb75104b91027fa0dcd655a0d3b7a14ccaf4b320401236eda",
+    "15:14": "0530d7c19c147b0276212aee422815a716b016e4921261cee62cad782ba8824d",
+    "15:15": "0a5ee77f7810394108defbc5747bb219c2a473947cede68ac87d5be431658479",
+    "15:16": "edf129a76d2fffe7fdc63e11c5d683fdd81f0c410277aca5d0b406256a422303",
+    "15:17": "67232b63a3d3ad32045edb357998e3757799dd0c613afb8ccae89791b1e63288",
+    "15:18": "08e2f68da5f098960f0b686db71294c26b3dd61e265d5f23453b4d0ac631c29b",
+    "15:19": "6b9eaff7697fbb5172016c16dce697fc5b4314dc942397a196b7c57b947b8ff2",
+    "15:20": "88633f4f7ae0e997b816d7b65ca14219db893e6ffcfd16524191891e7757d791",
+    "15:21": "e578644c62ca875d776ab4dca156d0333dee6987a4596b9ade02cf6550dbea0a",
+    "15:22": "6951a54a7104e340e77c909f93b34bf33c109fbeba80ef9e81c984d502156ca4",
+    "15:23": "a2f1d5d18bd5094bac1929ae66c81ec0c99abb7e747124cd49ac2b4580d8bb06",
+    "15:24": "3c40df6f27322538c656a8b6a53aa2688f08d9599216972084c8c4514ae6cd75",
+    "15:25": "2214f9140af322ff11858bae71d66a61295d5e9ccfd8c088aaa70bd94c9d77a8",
+    "15:26": "ee82cb8f3cf72e006e6b70a71788b93c3599b2434a03418d18b68ebaebf3d784"
+  },
+  "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [
+    {
+      "edge": "14:29/head",
+      "status": "FAIL",
+      "reason": "The beginning words וּבְנֵי and הָלְכוּ are missing; only יִשְׂרָאֵל is audible."
+    },
+    {
+      "edge": "15:17/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:18/whole",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:19/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:19/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:20/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:20/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:21/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:21/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:22/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:22/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:23/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:23/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:24/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:24/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:25/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:25/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:26/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "15:26/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    }
+  ],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-18T13:39:16.419Z",
+  "evidence": "全60観察を期待語・聞こえた語・根拠と照合。14:29/headは期待の冒頭「ウヴネイ」が聞こえず、イスラエルのみとのFAIL報告で、冒頭欠落疑いを未解決として保持する。「ハルフー」は4秒抜粋の内側に収まらない可能性もあるため、モデルの欠落説明を全語欠落確定へ拡張しない。他の観察済み41箇所は開始・終止の対応を確認。15:17/tail、15:18/whole、15:19–26の冒頭末尾の計18箇所はBOUNDARY_BUDGET_LIMITによるUNCERTAIN。7要求の保守的見積合計が約0.388 USDで、残額では12秒の詳査・再検品を確保できず、規定に従い追加API要求・修復を行わずDELIVER_CURRENT。欠落疑いと未確認箇所をメールに全て報告し、境界・全内容PASSにはしない。再生可能な現行PocketTorah音声を配信し、番号進行と修復完了を分ける。",
+  "decision_sha256": "9586da15575c77bc1aabfc98a374b43838df8126944555642867bc87f4642ebf",
+  "usage_sha256": "4775fe98098dedf1ae7543e5c0d3fe8636279113d36b69f7b3feb5552ce46127",
+  "report_sha256": "7befa429c76b03a8f1e4b83018321f0f51cd58e1ecd531772016d58659884427",
+  "email_disclosure_required": true
+}
