@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "109-20261118-r1",
+  "sequence": "109",
+  "delivery_status": "PASS",
+  "page_id": "41c8aa46-08ae-81be-a9ef-f9c14160d5ce",
+  "page_url": "https://app.notion.com/p/109-14-26-15-26-41c8aa4608ae81bea9eff9c14160d5ce",
+  "gmail": {
+    "message_id": "1a1eeebd9108cbe5",
+    "subject": "109｜出エジプト記14:26–15:26",
+    "sent_verified": true
+  },
+  "completed_at": "2026-11-18T13:50:34.214Z",
+  "verse_count": 32,
+  "token_count": 407,
+  "WORK_JSON2_QUALITY": "PASS",
+  "image_status": "PASS",
+  "cover_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "14:29/head",
+        "status": "FAIL",
+        "reason": "The beginning words וּבְנֵי and הָלְכוּ are missing; only יִשְׂרָאֵל is audible."
+      },
+      {
+        "edge": "15:17/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:18/whole",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:19/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:19/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:20/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:20/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:21/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:21/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:22/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:22/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:23/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:23/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:24/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:24/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:25/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:25/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:26/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:26/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      }
+    ],
+    "workflow_notes": [],
+    "finalization_sha256": "5da0cacf03affade76669758d696c0bc622dead26f27dacae4df72c205db952a",
+    "disclosed_in_email": true
+  }
+}
