@@ -2,24 +2,133 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "109-20261118-r1",
   "sequence": "109",
-  "phase": "IMAGE",
+  "phase": "EMAIL_AND_STATE",
   "status": "WAITING_FOR_WORK",
-  "next_action": "GENERATE_QA_AND_UPLOAD_COVER",
+  "next_action": "SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE",
   "stage_spec": {
-    "path": "ver3/spec/image-handoff.md",
-    "sha256": "3649b45ab77e5edf6e928e5b448c3cd1e5be96054f5f40171d24ab9de48df09b"
+    "path": "ver3/spec/email-delivery.md",
+    "sha256": "1028683e4c18db6da8cb52f70f7aa3b3c482b167ca33dc41019a73a6c1967907"
   },
   "required_inputs": [
+    "ver3/runs/109-20261118-r1/delivery.json",
     "ver3/runs/109-20261118-r1/json2.json",
-    "ver3/config/image-master.json",
-    "ver3/config/parasha-image/index.json",
-    "ver3/runs/109-20261118-r1/cover-upload.json"
+    "ver3/runs/109-20261118-r1/cover-ready.json",
+    "ver3/runs/109-20261118-r1/audio-quality.json",
+    "ver3/runs/109-20261118-r1/audio-boundary/finalization.json",
+    "ver3/runs/109-20261118-r1/audio-boundary/usage.json"
   ],
   "expected_outputs": [
-    "ver3/runs/109-20261118-r1/cover-ready.json"
+    "ver3/runs/109-20261118-r1/completion.json",
+    "ver3/state/production.json"
   ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "cover_ticket_status": "ISSUED_CURRENT"
+    "delivery_status": "PASS",
+    "page_url": "https://app.notion.com/p/109-14-26-15-26-41c8aa4608ae81bea9eff9c14160d5ce",
+    "missing_audio_refs": [],
+    "missing_html_refs": [],
+    "cover_status": "PASS",
+    "audio_quality_status": "CONTENT_REVIEW_PENDING",
+    "audio_content_verified": false,
+    "audio_boundary_status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "audio_boundary_unresolved": [
+      {
+        "edge": "14:29/head",
+        "status": "FAIL",
+        "reason": "The beginning words וּבְנֵי and הָלְכוּ are missing; only יִשְׂרָאֵל is audible."
+      },
+      {
+        "edge": "15:17/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:18/whole",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:19/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:19/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:20/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:20/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:21/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:21/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:22/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:22/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:23/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:23/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:24/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:24/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:25/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:25/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:26/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "15:26/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      }
+    ],
+    "audio_boundary_email_disclosure_required": true,
+    "completion_gate_reasons": []
   }
 }
