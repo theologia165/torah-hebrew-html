@@ -12,127 +12,31 @@
   },
   "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。",
   "last_completed": {
-    "sequence": "109",
-    "run_id": "109-20261118-r1",
-    "page_id": "41c8aa46-08ae-81be-a9ef-f9c14160d5ce",
-    "page_url": "https://app.notion.com/p/109-14-26-15-26-41c8aa4608ae81bea9eff9c14160d5ce",
+    "sequence": "110",
+    "run_id": "110-20261119-r1",
+    "page_id": "41d8aa46-08ae-81cf-a483-d327ece01f8a",
+    "page_url": "https://app.notion.com/p/110-15-27-16-10-41d8aa4608ae81cfa483d327ece01f8a",
     "status": "PASS",
-    "verse_count": 32,
-    "token_count": 407,
+    "verse_count": 11,
+    "token_count": 204,
     "WORK_JSON2_QUALITY": "PASS",
     "image_status": "PASS",
     "cover_status": "PASS",
-    "gmail_message_id": "1a1eeebd9108cbe5",
-    "gmail_subject": "109｜出エジプト記14:26–15:26",
+    "gmail_message_id": "1a1f3fe1f778b5d3",
+    "gmail_subject": "110｜出エジプト記15:27–16:10",
     "gmail_sent_verified": true,
-    "completed_at": "2026-11-18T13:50:34.214Z",
+    "completed_at": "2026-11-19T13:28:20.589Z",
     "audio_quality_status": "CONTENT_REVIEW_PENDING",
     "audio_content_verified": false,
     "audio_boundary": {
-      "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+      "status": "BOUNDARY_PASS",
       "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
       "full_content_verified": false,
       "candidate_adopted": false,
       "repair_attempted": false,
-      "unresolved": [
-        {
-          "edge": "14:29/head",
-          "status": "FAIL",
-          "reason": "The beginning words וּבְנֵי and הָלְכוּ are missing; only יִשְׂרָאֵל is audible."
-        },
-        {
-          "edge": "15:17/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:18/whole",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:19/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:19/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:20/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:20/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:21/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:21/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:22/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:22/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:23/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:23/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:24/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:24/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:25/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:25/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:26/head",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        },
-        {
-          "edge": "15:26/tail",
-          "status": "UNCERTAIN",
-          "reason": "BOUNDARY_BUDGET_LIMIT"
-        }
-      ],
+      "unresolved": [],
       "workflow_notes": [],
-      "finalization_sha256": "5da0cacf03affade76669758d696c0bc622dead26f27dacae4df72c205db952a",
+      "finalization_sha256": "b218ba076bdb85a122495dd93e8480f3022aa4f6d2922f00cc6ba2c23cacbe6e",
       "disclosed_in_email": true
     }
   },
@@ -141,15 +45,14 @@
   "next_passage": {
     "parasha": "Beshalach",
     "parasha_jp": "ベシャラハ",
-    "aliyah": 5,
+    "aliyah": 6,
     "book": "Exodus",
-    "chapter": 15,
-    "end_chapter": 16,
-    "start_verse": 27,
-    "end_verse": 10,
-    "display": "ベシャラハ｜第5アリヤー｜出エジプト記15:27–16:10"
+    "chapter": 16,
+    "start_verse": 11,
+    "end_verse": 36,
+    "display": "ベシャラハ｜第6アリヤー｜出エジプト記16:11–36"
   },
-  "next_sequence": "110",
+  "next_sequence": "111",
   "notion_api_version": "2026-03-11",
   "notion_output_rule": {
     "show_development_labels": false,
