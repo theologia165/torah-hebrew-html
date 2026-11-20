@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "111-20261120-r1",
+  "input_sha256": "bf4f5c4e19db77995124e558078bb3ec891381e6ef2060015cdfa4fd0fc8e397",
+  "manifest_sha256": "685a12c38a22e90da065db073cab0b2501b5406c96add95e294ad7cfcdd78cd7",
+  "audio_sha256": {
+    "16:11": "1e918d2c5c885ad091949d4cdab6286d88f1477709769f7d98a6c07525b9ac9d",
+    "16:12": "24ae39ba5baf11a1d8daefcf18cb6170cd21ca9bf95396fc86baf493284c0ba6",
+    "16:13": "2c38dc3db011e77cf5a67dc4c306d1d0d9ecb5d1a3d44dce33ce90d5102a81f4",
+    "16:14": "b52161b0014c20b81eec3eb89a1a4ee61065b04d5a796ef72ff596ed76a7a24e",
+    "16:15": "433d61a069df2d69e86b7499844b8217d78243325676bcda9fd4bb1a9f19d37f",
+    "16:16": "79193cc2eb98d39c84b34f10c3165e288471ad038f8fdf84d32929e7d727ced1",
+    "16:17": "c03722213b1ed55d9bd3765132782182f12ca426a3cb0a419e6447d6c1984a41",
+    "16:18": "15afc2f3858a75e7b292e0201d6273300bd9551f4fce79299f3ff90bdfdc57be",
+    "16:19": "0a392d61e93abf8ee78dac1e3739cffa12486e0de46d217d4b4f8b1535670057",
+    "16:20": "a930ab24ded80c2c3ed00a1ac034e1affad7e6b32472f2ab76728933c67f56e9",
+    "16:21": "d84ec572ff8229c38b8701510430c505c328a4d163cc580bfc05a07af2294f80",
+    "16:22": "adf98fd530bce098afbc23c6c55b99fa0c0d10ccac18f5b1d650b36f764b112e",
+    "16:23": "6903db17f4e47f2f6d5e8677e0df6e016fbe515baa42b1a4addb3f5a3a873708",
+    "16:24": "c70115a7a71ed2cca6d5653f7b8da025e7ccc93a33797f01382a64a3c977cef4",
+    "16:25": "b381055e24b7c17f76ff702eb49d5b10aee874a7cc858fffcd21174bce313685",
+    "16:26": "3ee6e19a3bdecc3b50a30d5e43d506d66de6e34919761ebdb7fc14b6f34f095f",
+    "16:27": "40f60ddbeb26fd10ceb5f11c6b18058cc5e509b8cd753fe5322d06e0c40546d4",
+    "16:28": "dfefb9fdd3959502644021ea238f582370a8d40c4dc6d661a72f0d507bde5f94",
+    "16:29": "65ce869b0cb2b75aa086393480930bfa83f262e20506221eed2bc62c72bceeea",
+    "16:30": "aae6e0af6ee7e36ddc7af8a15f90c6e0c9422f5068f21a783c98bc37956d5f95",
+    "16:31": "68b013e33bb155f7929e4b27abb880493358c84580cbffef568a67382f274227",
+    "16:32": "ac0ae3dd28debe3cd7c5f5edef096f66af9f2ad30338a5dac1e7713c76e0bb07",
+    "16:33": "fbec228a22a179764f5e80bd085c0fbd4e118434e5ff89cc4040afa68cbcd80e",
+    "16:34": "b9981d31d94e60c3e3c5a7625bc49e1d9c4942176dd0e39f39659074ce28f8ca",
+    "16:35": "2f81f392aee3ba0c63639a3a52d859b356651a57ac34cc3bea890f06ddb6d341",
+    "16:36": "82d5a312e050fbf6288b366aadaf85939eca7c8d4a279eea5dc076bba6f7328c"
+  },
+  "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [
+    {
+      "edge": "16:33/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "16:33/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "16:34/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "16:34/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "16:35/head",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "16:35/tail",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    },
+    {
+      "edge": "16:36/whole",
+      "status": "UNCERTAIN",
+      "reason": "BOUNDARY_BUDGET_LIMIT"
+    }
+  ],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-20T13:14:29.761Z",
+  "evidence": "全49観察の期待語・聞こえた語・音響根拠を個別に照合。16:11～32の42観察は外側の冒頭／末尾が本文と対応。16:26/tailは終止二語、16:27/headは先頭二語と後続冠詞までで、4秒抜粋の内側にある第三語の完全性までは認定しない。外側端の切れを示す根拠なし。16:33/head・tail、16:34/head・tail、16:35/head・tail、16:36/wholeの7箇所はBOUNDARY_BUDGET_LIMITによる未確認。7要求の保守的見積予約約0.382 USDは上限0.40に近く、残額で追加詳査と再検品を確保できない。未確認をPASSにせず、修復なしで今回RUNの再生可能な現行音声をDELIVER_CURRENT。7箇所の未確認理由、採用音声、修復未実施、全内容未検品をメールに明記する。",
+  "decision_sha256": "b0e4b39267a67bbf1877f759039462caaa77d38addc368e30a5292269143f027",
+  "usage_sha256": "87a529c4289f449671688206844171470a913c8a6b584b4bf816c0a0a1a92702",
+  "report_sha256": "9927ddd829d9c6b738266bfd9db8a7a1f5851788df84d97cb4208d06da79a88a",
+  "email_disclosure_required": true
+}
