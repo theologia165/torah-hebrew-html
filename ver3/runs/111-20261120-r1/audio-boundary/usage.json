@@ -219,7 +219,7 @@
     },
     {
       "id": 7,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 25.035828000000002,
       "reserved_usd": 0.0556198248,
       "model": "gpt-audio-1.5",
@@ -230,7 +230,28 @@
         "09645084d29373b4894c4d0fa7babf5ba5769c483e411d1d2df5efba71dce11c",
         "55d5da90b1104e03d91152b65e3d41abfd068d07cbfeda9608520aac5b6faf2a",
         "9bb08ba563ad78ffd817073ecc674e7058a2ff1e95f02e991aa5c99507e1515a"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_451cee4c0da842dfad7d615b38023828",
+      "usage": {
+        "prompt_tokens": 1078,
+        "completion_tokens": 363,
+        "total_tokens": 1441,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 250,
+          "text_tokens": 828,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 363
+        }
+      },
+      "actual_usd": 0.0137
     }
   ],
   "cache": {
@@ -487,34 +508,81 @@
       "suggested_cut_seconds": null
     },
     "a42c4e1c14c3d524d6b3cec07132018e38dbbd6cbe4089f27d0a3242f1e0783c": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "מִמְּקֹמוֹ בַּיּוֹם הַשְּׁבִיעִי",
+      "evidence": "All expected ending words are clearly audible",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     },
     "81d20e8f2ac772ebbbc731074a1f84726a3e544d45a8c70a4d0e8eaf3434bf3f": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיִּשְׁבְּתוּ הָעָם בַּיּוֹם הַשְּׁבִיעִי",
+      "evidence": "Both beginning and ending words match the expected phrase",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     },
     "1176eaa030358bfafcfbc3018bc6dc05b7779d57b7296c353bd73552b3f86037": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיִּקְרְאוּ בֵית יִשְׂרָאֵל",
+      "evidence": "The original beginning words are clearly present",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     },
     "09645084d29373b4894c4d0fa7babf5ba5769c483e411d1d2df5efba71dce11c": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וְטַעְמוֹ כְּצַפִּיחִת בִּדְבָשׁ",
+      "evidence": "The expected ending words are clearly audible",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     },
     "55d5da90b1104e03d91152b65e3d41abfd068d07cbfeda9608520aac5b6faf2a": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיֹּאמֶר מֹשֶׁה זֶה",
+      "evidence": "The original beginning words are clearly present",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     },
     "9bb08ba563ad78ffd817073ecc674e7058a2ff1e95f02e991aa5c99507e1515a": {
+      "status": "PASS",
+      "heard": "אֶתְכֶם מֵאֶרֶץ מִצְרָיִם",
+      "evidence": "The expected ending words are clearly audible",
+      "request_id": 7,
+      "suggested_cut_seconds": null
+    },
+    "1e7db3b1de0a8f9c73df897c38f405c2f8bb85bf50908e2af964e896ac698445": {
       "status": "UNCERTAIN",
       "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "evidence": "BOUNDARY_BUDGET_LIMIT"
+    },
+    "443ed9098767b1c39291fed6a5c6167cef0e01eea4e1dc2d939b1fa9dfe05379": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "BOUNDARY_BUDGET_LIMIT"
+    },
+    "9ba67361bb0315d14234ce2ac0aa8e11e969463d7d1773c3fd17ea77938301a4": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "BOUNDARY_BUDGET_LIMIT"
+    },
+    "8b0cef034d4407dc09b6dfd0881fbbe96fae2a4efb885b8c05a53b941571ecea": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "BOUNDARY_BUDGET_LIMIT"
+    },
+    "0ec8395ce843295971ed74ae6efb69729c224aba6d5ac63d6e22780d6d10ea50": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "BOUNDARY_BUDGET_LIMIT"
+    },
+    "9a53e50de9cbab2f3e8cddae8b3bf5ba5655fdc5229b7a1834ac7f7e6a3de88e": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "BOUNDARY_BUDGET_LIMIT"
+    },
+    "78826022948fc0d2effb08c1d60534f7559d84027e4d446e24f7f678d108137f": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "BOUNDARY_BUDGET_LIMIT"
     }
   }
 }
