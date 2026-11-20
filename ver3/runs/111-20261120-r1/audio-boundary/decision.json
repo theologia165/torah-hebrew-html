@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0-work-boundary-decision",
+  "run_id": "111-20261120-r1",
+  "report_sha256": "9927ddd829d9c6b738266bfd9db8a7a1f5851788df84d97cb4208d06da79a88a",
+  "action": "DELIVER_CURRENT",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-20T13:14:29.761Z",
+  "evidence": "全49観察の期待語・聞こえた語・音響根拠を個別に照合。16:11～32の42観察は外側の冒頭／末尾が本文と対応。16:26/tailは終止二語、16:27/headは先頭二語と後続冠詞までで、4秒抜粋の内側にある第三語の完全性までは認定しない。外側端の切れを示す根拠なし。16:33/head・tail、16:34/head・tail、16:35/head・tail、16:36/wholeの7箇所はBOUNDARY_BUDGET_LIMITによる未確認。7要求の保守的見積予約約0.382 USDは上限0.40に近く、残額で追加詳査と再検品を確保できない。未確認をPASSにせず、修復なしで今回RUNの再生可能な現行音声をDELIVER_CURRENT。7箇所の未確認理由、採用音声、修復未実施、全内容未検品をメールに明記する。",
+  "note": "Work must judge observations. A template is not an approval. Other actions: INSPECT_CONTEXT, REQUEST_REPAIR, ADOPT_CANDIDATE."
+}
