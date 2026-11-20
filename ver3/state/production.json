@@ -12,31 +12,67 @@
   },
   "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。",
   "last_completed": {
-    "sequence": "110",
-    "run_id": "110-20261119-r1",
-    "page_id": "41d8aa46-08ae-81cf-a483-d327ece01f8a",
-    "page_url": "https://app.notion.com/p/110-15-27-16-10-41d8aa4608ae81cfa483d327ece01f8a",
+    "sequence": "111",
+    "run_id": "111-20261120-r1",
+    "page_id": "41e8aa46-08ae-816b-a0b4-c075b3789ac1",
+    "page_url": "https://app.notion.com/p/111-16-11-36-41e8aa4608ae816ba0b4c075b3789ac1",
     "status": "PASS",
-    "verse_count": 11,
-    "token_count": 204,
+    "verse_count": 26,
+    "token_count": 359,
     "WORK_JSON2_QUALITY": "PASS",
     "image_status": "PASS",
     "cover_status": "PASS",
-    "gmail_message_id": "1a1f3fe1f778b5d3",
-    "gmail_subject": "110｜出エジプト記15:27–16:10",
+    "gmail_message_id": "1a1f9212f703d14d",
+    "gmail_subject": "111｜出エジプト記16:11–36",
     "gmail_sent_verified": true,
-    "completed_at": "2026-11-19T13:28:20.589Z",
+    "completed_at": "2026-11-20T13:24:42Z",
     "audio_quality_status": "CONTENT_REVIEW_PENDING",
     "audio_content_verified": false,
     "audio_boundary": {
-      "status": "BOUNDARY_PASS",
+      "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
       "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
       "full_content_verified": false,
       "candidate_adopted": false,
       "repair_attempted": false,
-      "unresolved": [],
+      "unresolved": [
+        {
+          "edge": "16:33/head",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "16:33/tail",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "16:34/head",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "16:34/tail",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "16:35/head",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "16:35/tail",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        },
+        {
+          "edge": "16:36/whole",
+          "status": "UNCERTAIN",
+          "reason": "BOUNDARY_BUDGET_LIMIT"
+        }
+      ],
       "workflow_notes": [],
-      "finalization_sha256": "b218ba076bdb85a122495dd93e8480f3022aa4f6d2922f00cc6ba2c23cacbe6e",
+      "finalization_sha256": "0659a18485192086e3d1a6fa628d64f2262bb6101756115662e14f0bd0470062",
       "disclosed_in_email": true
     }
   },
@@ -45,14 +81,14 @@
   "next_passage": {
     "parasha": "Beshalach",
     "parasha_jp": "ベシャラハ",
-    "aliyah": 6,
+    "aliyah": 7,
     "book": "Exodus",
-    "chapter": 16,
-    "start_verse": 11,
-    "end_verse": 36,
-    "display": "ベシャラハ｜第6アリヤー｜出エジプト記16:11–36"
+    "chapter": 17,
+    "start_verse": 1,
+    "end_verse": 16,
+    "display": "ベシャラハ｜第7アリヤー｜出エジプト記17:1–16"
   },
-  "next_sequence": "111",
+  "next_sequence": "112",
   "notion_api_version": "2026-03-11",
   "notion_output_rule": {
     "show_development_labels": false,

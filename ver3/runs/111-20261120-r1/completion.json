@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "111-20261120-r1",
+  "sequence": "111",
+  "delivery_status": "PASS",
+  "page_id": "41e8aa46-08ae-816b-a0b4-c075b3789ac1",
+  "page_url": "https://app.notion.com/p/111-16-11-36-41e8aa4608ae816ba0b4c075b3789ac1",
+  "gmail": {
+    "message_id": "1a1f9212f703d14d",
+    "subject": "111｜出エジプト記16:11–36",
+    "sent_verified": true
+  },
+  "completed_at": "2026-11-20T13:24:42Z",
+  "verse_count": 26,
+  "token_count": 359,
+  "WORK_JSON2_QUALITY": "PASS",
+  "image_status": "PASS",
+  "cover_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "16:33/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "16:33/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "16:34/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "16:34/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "16:35/head",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "16:35/tail",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      },
+      {
+        "edge": "16:36/whole",
+        "status": "UNCERTAIN",
+        "reason": "BOUNDARY_BUDGET_LIMIT"
+      }
+    ],
+    "workflow_notes": [],
+    "finalization_sha256": "0659a18485192086e3d1a6fa628d64f2262bb6101756115662e14f0bd0470062",
+    "disclosed_in_email": true
+  }
+}
