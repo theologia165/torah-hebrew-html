@@ -1,0 +1,47 @@
+{
+  "run_id": "112-20261121-r1",
+  "input_sha256": "c96f55e5859c1a98c2a9b6a4a6d93d25bf0f2510c0625f8a264e45f3e18fb290",
+  "manifest_sha256": "83bc1cedeb13b11ca202f7dca34a5677b474a0df77cc847ac3e8b468fe8c5b55",
+  "audio_sha256": {
+    "17:1": "77f3ca17c7f039841a5a57b2b560b4c7020006828970bd352f189d267e7ad70c",
+    "17:2": "045e7d164413997983e7404fd22a1b2d8dd12311ac31c2f36e84c8cf5d34758f",
+    "17:3": "b59105a55ac1ddeb36e1c691d69244bef1145e541a767ae614e1736d877ec4de",
+    "17:4": "08311d7ef4da6b9cd5993f4ce240dc650fedb86bb18901ee55a7574626eddadf",
+    "17:5": "2b73bbcb48bac9f61e9ad89770d30a658c7ddb97f9050e10575ec8a5423cefd2",
+    "17:6": "1887e60784ca10be4a929d40cbf989052ffe22c56987c16467f319414d101e08",
+    "17:7": "3e2b3f045973869ce7b2e3c3920b0ce6a4b360ceee9b8e1876147e2f2a91de61",
+    "17:8": "f2d058650886bc05e80aa05cf5c6ddbc415376e6c30cf1b4230de263296ccad9",
+    "17:9": "2f86c48648c80ddd3c562d33e281cf05ae95a964ed1a0384309ff16d402b193c",
+    "17:10": "de30ad5e5a44ddc7c5eaf7640edd212973b8e324b7923b73c8f8305a56f500b2",
+    "17:11": "f01e0f969abca640c8b716c3b0bba3fe3244aaab13d6fcf6a620bc37db9732dd",
+    "17:12": "324cb82126d1098324c91e6c62f869f620e34ea126823a5a134e07a9f42ecef8",
+    "17:13": "a5a3467c29e6f1b73a7b9e6eaa06835260e969056b7cb2761d3a33ae4520aca5",
+    "17:14": "4115c6eb753669ad2a00b394df72f05e1f65a0ec67bb5f7f5eae0d887d2133d8",
+    "17:15": "cb0fb766a5013579575a5093ccffe64b2c91bb35ddf1d9e007b1c9fc291e909e",
+    "17:16": "19a7e144d02a71ce5520b59fe98d3f6c9499d027f1417d2c2c33d73a42cc3568"
+  },
+  "observations": [
+    {
+      "id": "17:1/head/context",
+      "ref": "17:1",
+      "side": "context",
+      "audio_sha256": "809ae9b69ef4a9a0e38efe664d153e8932ec4a63a619c0e332d24ee589731d11",
+      "start": 0,
+      "end": 8.018839,
+      "cut_seconds": 2.018839,
+      "source_cut_seconds": 2.018839,
+      "expected": "וַיִּסְעוּ כָּל עֲדַת",
+      "other_edge": "",
+      "expected_order": "other_edge then expected",
+      "cache_key": "3b6dca51f3cdec51b44f3f486f0e79f05d0b967366e1a785063fe561d587a879",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיִּסְעוּ כָּל עֲדַת",
+        "evidence": "The clip begins clearly with וַיִּסְעוּ כָּל עֲדַת matching the expected edge words.",
+        "request_id": 7,
+        "suggested_cut_seconds": null
+      }
+    }
+  ],
+  "note": "suggested_cut_seconds is local to the excerpt; add start for original-source seconds. Work must judge it."
+}

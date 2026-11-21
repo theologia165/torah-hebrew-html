@@ -214,13 +214,34 @@
     },
     {
       "id": 7,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 8.018839,
       "reserved_usd": 0.0254676424,
       "model": "gpt-audio-1.5",
       "clip_keys": [
         "3b6dca51f3cdec51b44f3f486f0e79f05d0b967366e1a785063fe561d587a879"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_09ab26105895447593d1ba7e2831b359",
+      "usage": {
+        "prompt_tokens": 370,
+        "completion_tokens": 77,
+        "total_tokens": 447,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 80,
+          "text_tokens": 290,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 77
+        }
+      },
+      "actual_usd": 0.004055
     }
   ],
   "cache": {
@@ -442,9 +463,11 @@
       "suggested_cut_seconds": null
     },
     "3b6dca51f3cdec51b44f3f486f0e79f05d0b967366e1a785063fe561d587a879": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיִּסְעוּ כָּל עֲדַת",
+      "evidence": "The clip begins clearly with וַיִּסְעוּ כָּל עֲדַת matching the expected edge words.",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     }
   }
 }
