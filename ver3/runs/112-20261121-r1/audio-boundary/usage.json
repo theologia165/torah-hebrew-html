@@ -183,13 +183,34 @@
     },
     {
       "id": 6,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 4.0,
       "reserved_usd": 0.0189625,
       "model": "gpt-audio-1.5",
       "clip_keys": [
         "2603325073e868a3aa52e10795d58cf2baf8d5958c14b72a8a6363fa923f294e"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_bf0fe78ece5040a392a346f68142bcca",
+      "usage": {
+        "prompt_tokens": 328,
+        "completion_tokens": 58,
+        "total_tokens": 386,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 40,
+          "text_tokens": 288,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 58
+        }
+      },
+      "actual_usd": 0.00258
     }
   ],
   "cache": {
@@ -404,9 +425,11 @@
       "suggested_cut_seconds": null
     },
     "2603325073e868a3aa52e10795d58cf2baf8d5958c14b72a8a6363fa923f294e": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "דֹּר דֹּר",
+      "evidence": "The ending words דֹּר דֹּר are clearly audible, matching the expected tail.",
+      "request_id": 6,
+      "suggested_cut_seconds": null
     }
   }
 }
