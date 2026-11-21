@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "112-20261121-r1",
+  "input_sha256": "c96f55e5859c1a98c2a9b6a4a6d93d25bf0f2510c0625f8a264e45f3e18fb290",
+  "manifest_sha256": "83bc1cedeb13b11ca202f7dca34a5677b474a0df77cc847ac3e8b468fe8c5b55",
+  "audio_sha256": {
+    "17:1": "77f3ca17c7f039841a5a57b2b560b4c7020006828970bd352f189d267e7ad70c",
+    "17:2": "045e7d164413997983e7404fd22a1b2d8dd12311ac31c2f36e84c8cf5d34758f",
+    "17:3": "b59105a55ac1ddeb36e1c691d69244bef1145e541a767ae614e1736d877ec4de",
+    "17:4": "08311d7ef4da6b9cd5993f4ce240dc650fedb86bb18901ee55a7574626eddadf",
+    "17:5": "2b73bbcb48bac9f61e9ad89770d30a658c7ddb97f9050e10575ec8a5423cefd2",
+    "17:6": "1887e60784ca10be4a929d40cbf989052ffe22c56987c16467f319414d101e08",
+    "17:7": "3e2b3f045973869ce7b2e3c3920b0ce6a4b360ceee9b8e1876147e2f2a91de61",
+    "17:8": "f2d058650886bc05e80aa05cf5c6ddbc415376e6c30cf1b4230de263296ccad9",
+    "17:9": "2f86c48648c80ddd3c562d33e281cf05ae95a964ed1a0384309ff16d402b193c",
+    "17:10": "de30ad5e5a44ddc7c5eaf7640edd212973b8e324b7923b73c8f8305a56f500b2",
+    "17:11": "f01e0f969abca640c8b716c3b0bba3fe3244aaab13d6fcf6a620bc37db9732dd",
+    "17:12": "324cb82126d1098324c91e6c62f869f620e34ea126823a5a134e07a9f42ecef8",
+    "17:13": "a5a3467c29e6f1b73a7b9e6eaa06835260e969056b7cb2761d3a33ae4520aca5",
+    "17:14": "4115c6eb753669ad2a00b394df72f05e1f65a0ec67bb5f7f5eae0d887d2133d8",
+    "17:15": "cb0fb766a5013579575a5093ccffe64b2c91bb35ddf1d9e007b1c9fc291e909e",
+    "17:16": "19a7e144d02a71ce5520b59fe98d3f6c9499d027f1417d2c2c33d73a42cc3568"
+  },
+  "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [
+    {
+      "edge": "17:1/head",
+      "status": "UNCERTAIN",
+      "reason": "Only the first word וַיִּסְעוּ is clearly audible; the following words are not fully heard."
+    }
+  ],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-21T13:11:35Z",
+  "evidence": "全31件の節外側の冒頭・末尾観察を照合し、17:1/headのみ1回詳査。固定原音0–8.018839秒のcontextで期待冒頭三語が明瞭に確認され、現境界2.018839秒を移動すべき欠落・混入の証拠はない。初回4秒のUNCERTAINを無言で書換えず、追加根拠により現行音声採用と判断する。17:2/tailと17:14/headの神名はアドナイの朗読。17:13/tailの転記は『その民』でなく『アマレク』となっており三語完全一致を認定しないが、外側末尾の『剣の刃によって』は対応し、境界移動で直す証拠はない。17:16/tailも最後の二語が確認範囲で、内側の抜粋端の完全性は認定しない。修復0回・候補採用なし。7要求すべて成功、保守的予約総額0.3183376896 USD、抜粋135.573556秒、全節内容の検品は未完了。初回の不確かさと追加確認、転記差と検品範囲の限定をメールで開示しDELIVER_CURRENT。",
+  "decision_sha256": "e71830c6a1f20b9dc5ae88508dc25ab8651d2eb806e789625df1c5548e75ab7f",
+  "usage_sha256": "a24aac215df80d55b0e308a968aaa2a8b3c99d6bf42e813adb22e0765bc79dfe",
+  "report_sha256": "2f7855aef1605f4c8464608920235319cccee7686d3d6b46a33fb61b6d89aed0",
+  "email_disclosure_required": true
+}
