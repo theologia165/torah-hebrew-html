@@ -211,6 +211,16 @@
         }
       },
       "actual_usd": 0.00258
+    },
+    {
+      "id": 7,
+      "status": "RESERVED",
+      "audio_seconds": 8.018839,
+      "reserved_usd": 0.0254676424,
+      "model": "gpt-audio-1.5",
+      "clip_keys": [
+        "3b6dca51f3cdec51b44f3f486f0e79f05d0b967366e1a785063fe561d587a879"
+      ]
     }
   ],
   "cache": {
@@ -430,6 +440,11 @@
       "evidence": "The ending words דֹּר דֹּר are clearly audible, matching the expected tail.",
       "request_id": 6,
       "suggested_cut_seconds": null
+    },
+    "3b6dca51f3cdec51b44f3f486f0e79f05d0b967366e1a785063fe561d587a879": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
     }
   }
 }
