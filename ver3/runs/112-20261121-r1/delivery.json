@@ -1,0 +1,23 @@
+{
+  "status": "CREATED",
+  "run_id": "112-20261121-r1",
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "17:1/head",
+        "status": "UNCERTAIN",
+        "reason": "Only the first word וַיִּסְעוּ is clearly audible; the following words are not fully heard."
+      }
+    ],
+    "workflow_notes": [],
+    "email_disclosure_required": true,
+    "finalization_sha256": "0ed327b273de2f1f79db9f4a24310d97fe406e8317e54954d0fdf4c33d00fad8"
+  },
+  "page_id": "41f8aa46-08ae-814f-bdfe-f3fbf264d3c1",
+  "page_url": "https://app.notion.com/p/112-17-1-16-41f8aa4608ae814fbdfef3fbf264d3c1"
+}

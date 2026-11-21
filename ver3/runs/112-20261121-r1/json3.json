@@ -1,0 +1,4535 @@
+{
+  "schema_version": "3.0-json3",
+  "run_id": "112-20261121-r1",
+  "json1_sha256": "a4214ada0147f63d646c5c48804d6e0ce51ddb05631cd1cf967ac72f0843e14b",
+  "json2_sha256": "9d7b301c7e87e93bab1f5a7b0290a816bf10372e8a63119d6639025416558109",
+  "title": "112｜出エジプト記17:1–16",
+  "verses": [
+    {
+      "ref": "Exod.17.1",
+      "tokens": [
+        {
+          "token_id": 23963,
+          "token_index": 1,
+          "surface": "וַ֠יִּסְעוּ",
+          "ja": "そして彼らは出発した"
+        },
+        {
+          "token_id": 23964,
+          "token_index": 2,
+          "surface": "כָּל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 23965,
+          "token_index": 3,
+          "surface": "עֲדַ֨ת",
+          "ja": "会衆"
+        },
+        {
+          "token_id": 23966,
+          "token_index": 4,
+          "surface": "בְּנֵֽי",
+          "ja": "子らの"
+        },
+        {
+          "token_id": 23967,
+          "token_index": 5,
+          "surface": "יִשְׂרָאֵ֧ל",
+          "ja": "イスラエル"
+        },
+        {
+          "token_id": 23968,
+          "token_index": 6,
+          "surface": "מִמִּדְבַּר",
+          "ja": "荒野から"
+        },
+        {
+          "token_id": 23969,
+          "token_index": 7,
+          "surface": "סִ֛ין",
+          "ja": "シンの"
+        },
+        {
+          "token_id": 23970,
+          "token_index": 8,
+          "surface": "לְמַסְעֵיהֶ֖ם",
+          "ja": "彼らの旅程ごとに"
+        },
+        {
+          "token_id": 23971,
+          "token_index": 9,
+          "surface": "עַל",
+          "ja": "～に従って"
+        },
+        {
+          "token_id": 23972,
+          "token_index": 10,
+          "surface": "פִּ֣י",
+          "ja": "口〔命令〕"
+        },
+        {
+          "token_id": 23973,
+          "token_index": 11,
+          "surface": "יְהוָ֑ה",
+          "ja": "主の"
+        },
+        {
+          "token_id": 23974,
+          "token_index": 12,
+          "surface": "וַֽיַּחֲנוּ֙",
+          "ja": "そして彼らは宿営した"
+        },
+        {
+          "token_id": 23975,
+          "token_index": 13,
+          "surface": "בִּרְפִידִ֔ים",
+          "ja": "レフィディムに"
+        },
+        {
+          "token_id": 23976,
+          "token_index": 14,
+          "surface": "וְאֵ֥ין",
+          "ja": "しかしなかった"
+        },
+        {
+          "token_id": 23977,
+          "token_index": 15,
+          "surface": "מַ֖יִם",
+          "ja": "水が"
+        },
+        {
+          "token_id": 23978,
+          "token_index": 16,
+          "surface": "לִשְׁתֹּ֥ת",
+          "ja": "飲むための"
+        },
+        {
+          "token_id": 23979,
+          "token_index": 17,
+          "surface": "הָעָֽם",
+          "ja": "その民が"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.2",
+      "tokens": [
+        {
+          "token_id": 24074,
+          "token_index": 1,
+          "surface": "וַיָּ֤רֶב",
+          "ja": "そこで争った"
+        },
+        {
+          "token_id": 24075,
+          "token_index": 2,
+          "surface": "הָעָם֙",
+          "ja": "その民は"
+        },
+        {
+          "token_id": 24076,
+          "token_index": 3,
+          "surface": "עִם",
+          "ja": "～と"
+        },
+        {
+          "token_id": 24077,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֔ה",
+          "ja": "モーセ"
+        },
+        {
+          "token_id": 24078,
+          "token_index": 5,
+          "surface": "וַיֹּ֣אמְר֔וּ",
+          "ja": "そして彼らは言った"
+        },
+        {
+          "token_id": 24079,
+          "token_index": 6,
+          "surface": "תְּנוּ",
+          "ja": "与えよ〔あなたがたは〕"
+        },
+        {
+          "token_id": 24080,
+          "token_index": 7,
+          "surface": "לָ֥נוּ",
+          "ja": "私たちに"
+        },
+        {
+          "token_id": 24081,
+          "token_index": 8,
+          "surface": "מַ֖יִם",
+          "ja": "水を"
+        },
+        {
+          "token_id": 24082,
+          "token_index": 9,
+          "surface": "וְנִשְׁתֶּ֑ה",
+          "ja": "そうすれば私たちは飲もう"
+        },
+        {
+          "token_id": 24083,
+          "token_index": 10,
+          "surface": "וַיֹּ֤אמֶר",
+          "ja": "すると彼は言った"
+        },
+        {
+          "token_id": 24084,
+          "token_index": 11,
+          "surface": "לָהֶם֙",
+          "ja": "彼らに"
+        },
+        {
+          "token_id": 24085,
+          "token_index": 12,
+          "surface": "מֹשֶׁ֔ה",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 24086,
+          "token_index": 13,
+          "surface": "מַה",
+          "ja": "なぜ"
+        },
+        {
+          "token_id": 24087,
+          "token_index": 14,
+          "surface": "תְּרִיבוּן֙",
+          "ja": "あなたがたは争うのか"
+        },
+        {
+          "token_id": 24088,
+          "token_index": 15,
+          "surface": "עִמָּדִ֔י",
+          "ja": "私と"
+        },
+        {
+          "token_id": 24089,
+          "token_index": 16,
+          "surface": "מַה",
+          "ja": "なぜ"
+        },
+        {
+          "token_id": 24090,
+          "token_index": 17,
+          "surface": "תְּנַסּ֖וּן",
+          "ja": "あなたがたは試すのか"
+        },
+        {
+          "token_id": 24091,
+          "token_index": 18,
+          "surface": "אֶת",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24092,
+          "token_index": 19,
+          "surface": "יְהוָֽה",
+          "ja": "主"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.3",
+      "tokens": [
+        {
+          "token_id": 24093,
+          "token_index": 1,
+          "surface": "וַיִּצְמָ֨א",
+          "ja": "そして渇いた"
+        },
+        {
+          "token_id": 24094,
+          "token_index": 2,
+          "surface": "שָׁ֤ם",
+          "ja": "そこで"
+        },
+        {
+          "token_id": 24095,
+          "token_index": 3,
+          "surface": "הָעָם֙",
+          "ja": "その民は"
+        },
+        {
+          "token_id": 24096,
+          "token_index": 4,
+          "surface": "לַמַּ֔יִם",
+          "ja": "その水を求めて"
+        },
+        {
+          "token_id": 24097,
+          "token_index": 5,
+          "surface": "וַיָּ֥לֶן",
+          "ja": "そして不平を言った"
+        },
+        {
+          "token_id": 24098,
+          "token_index": 6,
+          "surface": "הָעָ֖ם",
+          "ja": "その民は"
+        },
+        {
+          "token_id": 24099,
+          "token_index": 7,
+          "surface": "עַל",
+          "ja": "～に対して"
+        },
+        {
+          "token_id": 24100,
+          "token_index": 8,
+          "surface": "מֹשֶׁ֑ה",
+          "ja": "モーセ"
+        },
+        {
+          "token_id": 24101,
+          "token_index": 9,
+          "surface": "וַיֹּ֗אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 24102,
+          "token_index": 10,
+          "surface": "לָ֤מָּה",
+          "ja": "なぜ"
+        },
+        {
+          "token_id": 24103,
+          "token_index": 11,
+          "surface": "זֶּה֙",
+          "ja": "いったい"
+        },
+        {
+          "token_id": 24104,
+          "token_index": 12,
+          "surface": "הֶעֱלִיתָ֣נוּ",
+          "ja": "あなたは私たちを連れ上ったのか"
+        },
+        {
+          "token_id": 24105,
+          "token_index": 13,
+          "surface": "מִמִּצְרַ֔יִם",
+          "ja": "エジプトから"
+        },
+        {
+          "token_id": 24106,
+          "token_index": 14,
+          "surface": "לְהָמִ֥ית",
+          "ja": "死なせるために"
+        },
+        {
+          "token_id": 24107,
+          "token_index": 15,
+          "surface": "אֹתִ֛י",
+          "ja": "私を"
+        },
+        {
+          "token_id": 24108,
+          "token_index": 16,
+          "surface": "וְאֶת",
+          "ja": "そして～を"
+        },
+        {
+          "token_id": 24109,
+          "token_index": 17,
+          "surface": "בָּנַ֥י",
+          "ja": "私の子ら"
+        },
+        {
+          "token_id": 24110,
+          "token_index": 18,
+          "surface": "וְאֶת",
+          "ja": "そして～を"
+        },
+        {
+          "token_id": 24111,
+          "token_index": 19,
+          "surface": "מִקְנַ֖י",
+          "ja": "私の家畜たち"
+        },
+        {
+          "token_id": 24112,
+          "token_index": 20,
+          "surface": "בַּצָּמָֽא",
+          "ja": "渇きによって"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.4",
+      "tokens": [
+        {
+          "token_id": 24113,
+          "token_index": 1,
+          "surface": "וַיִּצְעַ֤ק",
+          "ja": "そこで彼は叫んだ"
+        },
+        {
+          "token_id": 24114,
+          "token_index": 2,
+          "surface": "מֹשֶׁה֙",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 24115,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "～に向かって"
+        },
+        {
+          "token_id": 24116,
+          "token_index": 4,
+          "surface": "יְהוָ֣ה",
+          "ja": "主"
+        },
+        {
+          "token_id": 24117,
+          "token_index": 5,
+          "surface": "לֵאמֹ֔ר",
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 24118,
+          "token_index": 6,
+          "surface": "מָ֥ה",
+          "ja": "何を"
+        },
+        {
+          "token_id": 24119,
+          "token_index": 7,
+          "surface": "אֶעֱשֶׂ֖ה",
+          "ja": "私はすればよいのか"
+        },
+        {
+          "token_id": 24120,
+          "token_index": 8,
+          "surface": "לָעָ֣ם",
+          "ja": "その民に対して"
+        },
+        {
+          "token_id": 24121,
+          "token_index": 9,
+          "surface": "הַזֶּ֑ה",
+          "ja": "この"
+        },
+        {
+          "token_id": 24122,
+          "token_index": 10,
+          "surface": "ע֥וֹד",
+          "ja": "もう"
+        },
+        {
+          "token_id": 24123,
+          "token_index": 11,
+          "surface": "מְעַ֖ט",
+          "ja": "少しで"
+        },
+        {
+          "token_id": 24124,
+          "token_index": 12,
+          "surface": "וּסְקָלֻֽנִי",
+          "ja": "彼らは私を石で打ち殺すだろう"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.5",
+      "tokens": [
+        {
+          "token_id": 24125,
+          "token_index": 1,
+          "surface": "וַיֹּ֨אמֶר",
+          "ja": "すると言われた"
+        },
+        {
+          "token_id": 24126,
+          "token_index": 2,
+          "surface": "יְהוָ֜ה",
+          "ja": "主は"
+        },
+        {
+          "token_id": 24127,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "～に"
+        },
+        {
+          "token_id": 24128,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֗ה",
+          "ja": "モーセ"
+        },
+        {
+          "token_id": 24129,
+          "token_index": 5,
+          "surface": "עֲבֹר֙",
+          "ja": "進め〔あなたは〕"
+        },
+        {
+          "token_id": 24130,
+          "token_index": 6,
+          "surface": "לִפְנֵ֣י",
+          "ja": "～の前を"
+        },
+        {
+          "token_id": 24131,
+          "token_index": 7,
+          "surface": "הָעָ֔ם",
+          "ja": "その民"
+        },
+        {
+          "token_id": 24132,
+          "token_index": 8,
+          "surface": "וְקַ֥ח",
+          "ja": "そして連れて行け"
+        },
+        {
+          "token_id": 24133,
+          "token_index": 9,
+          "surface": "אִתְּךָ֖",
+          "ja": "あなたと共に"
+        },
+        {
+          "token_id": 24134,
+          "token_index": 10,
+          "surface": "מִזִּקְנֵ֣י",
+          "ja": "長老たちのうちから"
+        },
+        {
+          "token_id": 24135,
+          "token_index": 11,
+          "surface": "יִשְׂרָאֵ֑ל",
+          "ja": "イスラエルの"
+        },
+        {
+          "token_id": 24136,
+          "token_index": 12,
+          "surface": "וּמַטְּךָ֗",
+          "ja": "またあなたの杖を"
+        },
+        {
+          "token_id": 24137,
+          "token_index": 13,
+          "surface": "אֲשֶׁ֨ר",
+          "ja": "～したところの"
+        },
+        {
+          "token_id": 24138,
+          "token_index": 14,
+          "surface": "הִכִּ֤יתָ",
+          "ja": "あなたが打った"
+        },
+        {
+          "token_id": 24139,
+          "token_index": 15,
+          "surface": "בּוֹ֙",
+          "ja": "それで"
+        },
+        {
+          "token_id": 24140,
+          "token_index": 16,
+          "surface": "אֶת",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24141,
+          "token_index": 17,
+          "surface": "הַיְאֹ֔ר",
+          "ja": "そのナイル川"
+        },
+        {
+          "token_id": 24142,
+          "token_index": 18,
+          "surface": "קַ֥ח",
+          "ja": "取れ"
+        },
+        {
+          "token_id": 24143,
+          "token_index": 19,
+          "surface": "בְּיָדְךָ֖",
+          "ja": "あなたの手に"
+        },
+        {
+          "token_id": 24144,
+          "token_index": 20,
+          "surface": "וְהָלָֽכְתָּ",
+          "ja": "そしてあなたは行きなさい"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.6",
+      "tokens": [
+        {
+          "token_id": 24145,
+          "token_index": 1,
+          "surface": "הִנְנִ֣י",
+          "ja": "見よ、私は"
+        },
+        {
+          "token_id": 24146,
+          "token_index": 2,
+          "surface": "עֹמֵד֩",
+          "ja": "立っている"
+        },
+        {
+          "token_id": 24147,
+          "token_index": 3,
+          "surface": "לְפָנֶ֨יךָ",
+          "ja": "あなたの前に"
+        },
+        {
+          "token_id": 24148,
+          "token_index": 4,
+          "surface": "שָּׁ֥ם",
+          "ja": "そこに"
+        },
+        {
+          "token_id": 24149,
+          "token_index": 5,
+          "surface": "עַֽל",
+          "ja": "～の上に"
+        },
+        {
+          "token_id": 24150,
+          "token_index": 6,
+          "surface": "הַצּוּר֮",
+          "ja": "その岩"
+        },
+        {
+          "token_id": 24151,
+          "token_index": 7,
+          "surface": "בְּחֹרֵב֒",
+          "ja": "ホレブにある"
+        },
+        {
+          "token_id": 24152,
+          "token_index": 8,
+          "surface": "וְהִכִּ֣יתָ",
+          "ja": "そしてあなたは打ちなさい"
+        },
+        {
+          "token_id": 24153,
+          "token_index": 9,
+          "surface": "בַצּ֗וּר",
+          "ja": "その岩を"
+        },
+        {
+          "token_id": 24154,
+          "token_index": 10,
+          "surface": "וְיָצְא֥וּ",
+          "ja": "すると出るだろう"
+        },
+        {
+          "token_id": 24155,
+          "token_index": 11,
+          "surface": "מִמֶּ֛נּוּ",
+          "ja": "そこから〔その岩から〕"
+        },
+        {
+          "token_id": 24156,
+          "token_index": 12,
+          "surface": "מַ֖יִם",
+          "ja": "水が"
+        },
+        {
+          "token_id": 24157,
+          "token_index": 13,
+          "surface": "וְשָׁתָ֣ה",
+          "ja": "そして飲むだろう"
+        },
+        {
+          "token_id": 24158,
+          "token_index": 14,
+          "surface": "הָעָ֑ם",
+          "ja": "その民は"
+        },
+        {
+          "token_id": 24159,
+          "token_index": 15,
+          "surface": "וַיַּ֤עַשׂ",
+          "ja": "そこで行った"
+        },
+        {
+          "token_id": 24160,
+          "token_index": 16,
+          "surface": "כֵּן֙",
+          "ja": "そのとおりに"
+        },
+        {
+          "token_id": 24161,
+          "token_index": 17,
+          "surface": "מֹשֶׁ֔ה",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 24162,
+          "token_index": 18,
+          "surface": "לְעֵינֵ֖י",
+          "ja": "～の目の前で"
+        },
+        {
+          "token_id": 24163,
+          "token_index": 19,
+          "surface": "זִקְנֵ֥י",
+          "ja": "長老たち"
+        },
+        {
+          "token_id": 24164,
+          "token_index": 20,
+          "surface": "יִשְׂרָאֵֽל",
+          "ja": "イスラエルの"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.7",
+      "tokens": [
+        {
+          "token_id": 24165,
+          "token_index": 1,
+          "surface": "וַיִּקְרָא֙",
+          "ja": "そして彼は呼んだ"
+        },
+        {
+          "token_id": 24166,
+          "token_index": 2,
+          "surface": "שֵׁ֣ם",
+          "ja": "名を"
+        },
+        {
+          "token_id": 24167,
+          "token_index": 3,
+          "surface": "הַמָּק֔וֹם",
+          "ja": "その場所の"
+        },
+        {
+          "token_id": 24168,
+          "token_index": 4,
+          "surface": "מַסָּ֖ה",
+          "ja": "マサ"
+        },
+        {
+          "token_id": 24169,
+          "token_index": 5,
+          "surface": "וּמְרִיבָ֑ה",
+          "ja": "またメリバと"
+        },
+        {
+          "token_id": 24170,
+          "token_index": 6,
+          "surface": "עַל",
+          "ja": "～のために"
+        },
+        {
+          "token_id": 24171,
+          "token_index": 7,
+          "surface": "רִ֣יב",
+          "ja": "争い"
+        },
+        {
+          "token_id": 24172,
+          "token_index": 8,
+          "surface": "בְּנֵ֣י",
+          "ja": "子らの"
+        },
+        {
+          "token_id": 24173,
+          "token_index": 9,
+          "surface": "יִשְׂרָאֵ֗ל",
+          "ja": "イスラエル"
+        },
+        {
+          "token_id": 24174,
+          "token_index": 10,
+          "surface": "וְעַ֨ל",
+          "ja": "また～のために"
+        },
+        {
+          "token_id": 24175,
+          "token_index": 11,
+          "surface": "נַסֹּתָ֤ם",
+          "ja": "彼らが試したこと"
+        },
+        {
+          "token_id": 24176,
+          "token_index": 12,
+          "surface": "אֶת",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24177,
+          "token_index": 13,
+          "surface": "יְהוָה֙",
+          "ja": "主"
+        },
+        {
+          "token_id": 24178,
+          "token_index": 14,
+          "surface": "לֵאמֹ֔ר",
+          "ja": "こう言って"
+        },
+        {
+          "token_id": 24179,
+          "token_index": 15,
+          "surface": "הֲיֵ֧שׁ",
+          "ja": "おられるのか"
+        },
+        {
+          "token_id": 24180,
+          "token_index": 16,
+          "surface": "יְהוָ֛ה",
+          "ja": "主は"
+        },
+        {
+          "token_id": 24181,
+          "token_index": 17,
+          "surface": "בְּקִרְבֵּ֖נוּ",
+          "ja": "私たちのただ中に"
+        },
+        {
+          "token_id": 24182,
+          "token_index": 18,
+          "surface": "אִם",
+          "ja": "それとも"
+        },
+        {
+          "token_id": 24183,
+          "token_index": 19,
+          "surface": "אָֽיִן",
+          "ja": "おられないのか"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.8",
+      "tokens": [
+        {
+          "token_id": 24184,
+          "token_index": 1,
+          "surface": "וַיָּבֹ֖א",
+          "ja": "そして来た"
+        },
+        {
+          "token_id": 24185,
+          "token_index": 2,
+          "surface": "עֲמָלֵ֑ק",
+          "ja": "アマレクが"
+        },
+        {
+          "token_id": 24186,
+          "token_index": 3,
+          "surface": "וַיִּלָּ֥חֶם",
+          "ja": "そして戦った"
+        },
+        {
+          "token_id": 24187,
+          "token_index": 4,
+          "surface": "עִם",
+          "ja": "～と"
+        },
+        {
+          "token_id": 24188,
+          "token_index": 5,
+          "surface": "יִשְׂרָאֵ֖ל",
+          "ja": "イスラエル"
+        },
+        {
+          "token_id": 24189,
+          "token_index": 6,
+          "surface": "בִּרְפִידִֽם",
+          "ja": "レフィディムで"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.9",
+      "tokens": [
+        {
+          "token_id": 24190,
+          "token_index": 1,
+          "surface": "וַיֹּ֨אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 24191,
+          "token_index": 2,
+          "surface": "מֹשֶׁ֤ה",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 24192,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "～に"
+        },
+        {
+          "token_id": 24193,
+          "token_index": 4,
+          "surface": "יְהוֹשֻׁ֨עַ֙",
+          "ja": "ヨシュア"
+        },
+        {
+          "token_id": 24194,
+          "token_index": 5,
+          "surface": "בְּחַר",
+          "ja": "選べ"
+        },
+        {
+          "token_id": 24195,
+          "token_index": 6,
+          "surface": "לָ֣נוּ",
+          "ja": "私たちのために"
+        },
+        {
+          "token_id": 24196,
+          "token_index": 7,
+          "surface": "אֲנָשִׁ֔ים",
+          "ja": "男たちを"
+        },
+        {
+          "token_id": 24197,
+          "token_index": 8,
+          "surface": "וְצֵ֖א",
+          "ja": "そして出て行け"
+        },
+        {
+          "token_id": 24198,
+          "token_index": 9,
+          "surface": "הִלָּחֵ֣ם",
+          "ja": "戦え"
+        },
+        {
+          "token_id": 24199,
+          "token_index": 10,
+          "surface": "בַּעֲמָלֵ֑ק",
+          "ja": "アマレクと"
+        },
+        {
+          "token_id": 24200,
+          "token_index": 11,
+          "surface": "מָחָ֗ר",
+          "ja": "明日"
+        },
+        {
+          "token_id": 24201,
+          "token_index": 12,
+          "surface": "אָנֹכִ֤י",
+          "ja": "私は"
+        },
+        {
+          "token_id": 24202,
+          "token_index": 13,
+          "surface": "נִצָּב֙",
+          "ja": "立つ"
+        },
+        {
+          "token_id": 24203,
+          "token_index": 14,
+          "surface": "עַל",
+          "ja": "～の上に"
+        },
+        {
+          "token_id": 24204,
+          "token_index": 15,
+          "surface": "רֹ֣אשׁ",
+          "ja": "頂"
+        },
+        {
+          "token_id": 24205,
+          "token_index": 16,
+          "surface": "הַגִּבְעָ֔ה",
+          "ja": "その丘の"
+        },
+        {
+          "token_id": 24206,
+          "token_index": 17,
+          "surface": "וּמַטֵּ֥ה",
+          "ja": "そして杖が"
+        },
+        {
+          "token_id": 24207,
+          "token_index": 18,
+          "surface": "הָאֱלֹהִ֖ים",
+          "ja": "神の"
+        },
+        {
+          "token_id": 24208,
+          "token_index": 19,
+          "surface": "בְּיָדִֽי",
+          "ja": "私の手に"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.10",
+      "tokens": [
+        {
+          "token_id": 23980,
+          "token_index": 1,
+          "surface": "וַיַּ֣עַשׂ",
+          "ja": "そこで行った"
+        },
+        {
+          "token_id": 23981,
+          "token_index": 2,
+          "surface": "יְהוֹשֻׁ֗עַ",
+          "ja": "ヨシュアは"
+        },
+        {
+          "token_id": 23982,
+          "token_index": 3,
+          "surface": "כַּאֲשֶׁ֤ר",
+          "ja": "～のとおりに"
+        },
+        {
+          "token_id": 23983,
+          "token_index": 4,
+          "surface": "אָֽמַר",
+          "ja": "言った"
+        },
+        {
+          "token_id": 23984,
+          "token_index": 5,
+          "surface": "לוֹ֙",
+          "ja": "彼に"
+        },
+        {
+          "token_id": 23985,
+          "token_index": 6,
+          "surface": "מֹשֶׁ֔ה",
+          "ja": "モーセが"
+        },
+        {
+          "token_id": 23986,
+          "token_index": 7,
+          "surface": "לְהִלָּחֵ֖ם",
+          "ja": "戦うために"
+        },
+        {
+          "token_id": 23987,
+          "token_index": 8,
+          "surface": "בַּעֲמָלֵ֑ק",
+          "ja": "アマレクと"
+        },
+        {
+          "token_id": 23988,
+          "token_index": 9,
+          "surface": "וּמֹשֶׁה֙",
+          "ja": "一方モーセと"
+        },
+        {
+          "token_id": 23989,
+          "token_index": 10,
+          "surface": "אַהֲרֹ֣ן",
+          "ja": "アロンと"
+        },
+        {
+          "token_id": 23990,
+          "token_index": 11,
+          "surface": "וְח֔וּר",
+          "ja": "そしてフルは"
+        },
+        {
+          "token_id": 23991,
+          "token_index": 12,
+          "surface": "עָל֖וּ",
+          "ja": "上った"
+        },
+        {
+          "token_id": 23992,
+          "token_index": 13,
+          "surface": "רֹ֥אשׁ",
+          "ja": "頂へ"
+        },
+        {
+          "token_id": 23993,
+          "token_index": 14,
+          "surface": "הַגִּבְעָֽה",
+          "ja": "その丘の"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.11",
+      "tokens": [
+        {
+          "token_id": 23994,
+          "token_index": 1,
+          "surface": "וְהָיָ֗ה",
+          "ja": "そして～となった"
+        },
+        {
+          "token_id": 23995,
+          "token_index": 2,
+          "surface": "כַּאֲשֶׁ֨ר",
+          "ja": "～するときには"
+        },
+        {
+          "token_id": 23996,
+          "token_index": 3,
+          "surface": "יָרִ֥ים",
+          "ja": "上げる"
+        },
+        {
+          "token_id": 23997,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֛ה",
+          "ja": "モーセが"
+        },
+        {
+          "token_id": 23998,
+          "token_index": 5,
+          "surface": "יָד֖וֹ",
+          "ja": "彼の手を"
+        },
+        {
+          "token_id": 23999,
+          "token_index": 6,
+          "surface": "וְגָבַ֣ר",
+          "ja": "優勢になった"
+        },
+        {
+          "token_id": 24000,
+          "token_index": 7,
+          "surface": "יִשְׂרָאֵ֑ל",
+          "ja": "イスラエルが"
+        },
+        {
+          "token_id": 24001,
+          "token_index": 8,
+          "surface": "וְכַאֲשֶׁ֥ר",
+          "ja": "しかし～するときには"
+        },
+        {
+          "token_id": 24002,
+          "token_index": 9,
+          "surface": "יָנִ֛יחַ",
+          "ja": "下ろす"
+        },
+        {
+          "token_id": 24003,
+          "token_index": 10,
+          "surface": "יָד֖וֹ",
+          "ja": "彼の手を"
+        },
+        {
+          "token_id": 24004,
+          "token_index": 11,
+          "surface": "וְגָבַ֥ר",
+          "ja": "優勢になった"
+        },
+        {
+          "token_id": 24005,
+          "token_index": 12,
+          "surface": "עֲמָלֵֽק",
+          "ja": "アマレクが"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.12",
+      "tokens": [
+        {
+          "token_id": 24006,
+          "token_index": 1,
+          "surface": "וִידֵ֤י",
+          "ja": "一方、両手は"
+        },
+        {
+          "token_id": 24007,
+          "token_index": 2,
+          "surface": "מֹשֶׁה֙",
+          "ja": "モーセの"
+        },
+        {
+          "token_id": 24008,
+          "token_index": 3,
+          "surface": "כְּבֵדִ֔ים",
+          "ja": "重かった"
+        },
+        {
+          "token_id": 24009,
+          "token_index": 4,
+          "surface": "וַיִּקְחוּ",
+          "ja": "そこで彼らは取った"
+        },
+        {
+          "token_id": 24010,
+          "token_index": 5,
+          "surface": "אֶ֛בֶן",
+          "ja": "石を"
+        },
+        {
+          "token_id": 24011,
+          "token_index": 6,
+          "surface": "וַיָּשִׂ֥ימוּ",
+          "ja": "そして彼らは置いた"
+        },
+        {
+          "token_id": 24012,
+          "token_index": 7,
+          "surface": "תַחְתָּ֖יו",
+          "ja": "彼の下に"
+        },
+        {
+          "token_id": 24013,
+          "token_index": 8,
+          "surface": "וַיֵּ֣שֶׁב",
+          "ja": "そして彼は座った"
+        },
+        {
+          "token_id": 24014,
+          "token_index": 9,
+          "surface": "עָלֶ֑יהָ",
+          "ja": "その上に"
+        },
+        {
+          "token_id": 24015,
+          "token_index": 10,
+          "surface": "וְאַהֲרֹ֨ן",
+          "ja": "そしてアロンと"
+        },
+        {
+          "token_id": 24016,
+          "token_index": 11,
+          "surface": "וְח֜וּר",
+          "ja": "またフルは"
+        },
+        {
+          "token_id": 24017,
+          "token_index": 12,
+          "surface": "תָּֽמְכ֣וּ",
+          "ja": "支えた"
+        },
+        {
+          "token_id": 24018,
+          "token_index": 13,
+          "surface": "בְיָדָ֗יו",
+          "ja": "彼の両手を"
+        },
+        {
+          "token_id": 24019,
+          "token_index": 14,
+          "surface": "מִזֶּ֤ה",
+          "ja": "こちら側から"
+        },
+        {
+          "token_id": 24020,
+          "token_index": 15,
+          "surface": "אֶחָד֙",
+          "ja": "一人が"
+        },
+        {
+          "token_id": 24021,
+          "token_index": 16,
+          "surface": "וּמִזֶּ֣ה",
+          "ja": "またこちら側から"
+        },
+        {
+          "token_id": 24022,
+          "token_index": 17,
+          "surface": "אֶחָ֔ד",
+          "ja": "一人が"
+        },
+        {
+          "token_id": 24023,
+          "token_index": 18,
+          "surface": "וַיְהִ֥י",
+          "ja": "そして～となった"
+        },
+        {
+          "token_id": 24024,
+          "token_index": 19,
+          "surface": "יָדָ֛יו",
+          "ja": "彼の両手は"
+        },
+        {
+          "token_id": 24025,
+          "token_index": 20,
+          "surface": "אֱמוּנָ֖ה",
+          "ja": "確かに保たれた状態に"
+        },
+        {
+          "token_id": 24026,
+          "token_index": 21,
+          "surface": "עַד",
+          "ja": "～まで"
+        },
+        {
+          "token_id": 24027,
+          "token_index": 22,
+          "surface": "בֹּ֥א",
+          "ja": "入ること〔沈むこと〕"
+        },
+        {
+          "token_id": 24028,
+          "token_index": 23,
+          "surface": "הַשָּֽׁמֶשׁ",
+          "ja": "その太陽が"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.13",
+      "tokens": [
+        {
+          "token_id": 24029,
+          "token_index": 1,
+          "surface": "וַיַּחֲלֹ֧שׁ",
+          "ja": "そして打ち破った"
+        },
+        {
+          "token_id": 24030,
+          "token_index": 2,
+          "surface": "יְהוֹשֻׁ֛עַ",
+          "ja": "ヨシュアは"
+        },
+        {
+          "token_id": 24031,
+          "token_index": 3,
+          "surface": "אֶת",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24032,
+          "token_index": 4,
+          "surface": "עֲמָלֵ֥ק",
+          "ja": "アマレク"
+        },
+        {
+          "token_id": 24033,
+          "token_index": 5,
+          "surface": "וְאֶת",
+          "ja": "および～を"
+        },
+        {
+          "token_id": 24034,
+          "token_index": 6,
+          "surface": "עַמּ֖וֹ",
+          "ja": "彼の民"
+        },
+        {
+          "token_id": 24035,
+          "token_index": 7,
+          "surface": "לְפִי",
+          "ja": "刃によって"
+        },
+        {
+          "token_id": 24036,
+          "token_index": 8,
+          "surface": "חָֽרֶב",
+          "ja": "剣の"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.14",
+      "tokens": [
+        {
+          "token_id": 24037,
+          "token_index": 1,
+          "surface": "וַיֹּ֨אמֶר",
+          "ja": "そして言われた"
+        },
+        {
+          "token_id": 24038,
+          "token_index": 2,
+          "surface": "יְהוָ֜ה",
+          "ja": "主は"
+        },
+        {
+          "token_id": 24039,
+          "token_index": 3,
+          "surface": "אֶל",
+          "ja": "～に"
+        },
+        {
+          "token_id": 24040,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֗ה",
+          "ja": "モーセ"
+        },
+        {
+          "token_id": 24041,
+          "token_index": 5,
+          "surface": "כְּתֹ֨ב",
+          "ja": "書き記せ"
+        },
+        {
+          "token_id": 24042,
+          "token_index": 6,
+          "surface": "זֹ֤את",
+          "ja": "これを"
+        },
+        {
+          "token_id": 24043,
+          "token_index": 7,
+          "surface": "זִכָּרוֹן֙",
+          "ja": "記念として"
+        },
+        {
+          "token_id": 24044,
+          "token_index": 8,
+          "surface": "בַּסֵּ֔פֶר",
+          "ja": "その書に"
+        },
+        {
+          "token_id": 24045,
+          "token_index": 9,
+          "surface": "וְשִׂ֖ים",
+          "ja": "そして置け〔伝えよ〕"
+        },
+        {
+          "token_id": 24046,
+          "token_index": 10,
+          "surface": "בְּאָזְנֵ֣י",
+          "ja": "耳に"
+        },
+        {
+          "token_id": 24047,
+          "token_index": 11,
+          "surface": "יְהוֹשֻׁ֑עַ",
+          "ja": "ヨシュアの"
+        },
+        {
+          "token_id": 24048,
+          "token_index": 12,
+          "surface": "כִּֽי",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 24049,
+          "token_index": 13,
+          "surface": "מָחֹ֤ה",
+          "ja": "消し去ることを〔強調〕"
+        },
+        {
+          "token_id": 24050,
+          "token_index": 14,
+          "surface": "אֶמְחֶה֙",
+          "ja": "私は消し去る"
+        },
+        {
+          "token_id": 24051,
+          "token_index": 15,
+          "surface": "אֶת",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24052,
+          "token_index": 16,
+          "surface": "זֵ֣כֶר",
+          "ja": "記憶"
+        },
+        {
+          "token_id": 24053,
+          "token_index": 17,
+          "surface": "עֲמָלֵ֔ק",
+          "ja": "アマレクの"
+        },
+        {
+          "token_id": 24054,
+          "token_index": 18,
+          "surface": "מִתַּ֖חַת",
+          "ja": "～の下から"
+        },
+        {
+          "token_id": 24055,
+          "token_index": 19,
+          "surface": "הַשָּׁמָֽיִם",
+          "ja": "その天"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.15",
+      "tokens": [
+        {
+          "token_id": 24056,
+          "token_index": 1,
+          "surface": "וַיִּ֥בֶן",
+          "ja": "そして築いた"
+        },
+        {
+          "token_id": 24057,
+          "token_index": 2,
+          "surface": "מֹשֶׁ֖ה",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 24058,
+          "token_index": 3,
+          "surface": "מִזְבֵּ֑חַ",
+          "ja": "祭壇を"
+        },
+        {
+          "token_id": 24059,
+          "token_index": 4,
+          "surface": "וַיִּקְרָ֥א",
+          "ja": "そして呼んだ"
+        },
+        {
+          "token_id": 24060,
+          "token_index": 5,
+          "surface": "שְׁמ֖וֹ",
+          "ja": "その名を"
+        },
+        {
+          "token_id": 24061,
+          "token_index": 6,
+          "surface": "יְהוָ֥ה",
+          "ja": "主は"
+        },
+        {
+          "token_id": 24062,
+          "token_index": 7,
+          "surface": "נִסִּֽי",
+          "ja": "私の旗"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.17.16",
+      "tokens": [
+        {
+          "token_id": 24063,
+          "token_index": 1,
+          "surface": "וַיֹּ֗אמֶר",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 24064,
+          "token_index": 2,
+          "surface": "כִּֽי",
+          "ja": "まことに"
+        },
+        {
+          "token_id": 24065,
+          "token_index": 3,
+          "surface": "יָד֙",
+          "ja": "手が"
+        },
+        {
+          "token_id": 24066,
+          "token_index": 4,
+          "surface": "עַל",
+          "ja": "～の上に"
+        },
+        {
+          "token_id": 24067,
+          "token_index": 5,
+          "surface": "כֵּ֣ס",
+          "ja": "王座"
+        },
+        {
+          "token_id": 24068,
+          "token_index": 6,
+          "surface": "יָ֔הּ",
+          "ja": "ヤハ〔主〕の"
+        },
+        {
+          "token_id": 24069,
+          "token_index": 7,
+          "surface": "מִלְחָמָ֥ה",
+          "ja": "戦いがある"
+        },
+        {
+          "token_id": 24070,
+          "token_index": 8,
+          "surface": "לַיהוָ֖ה",
+          "ja": "主には"
+        },
+        {
+          "token_id": 24071,
+          "token_index": 9,
+          "surface": "בַּֽעֲמָלֵ֑ק",
+          "ja": "アマレクと"
+        },
+        {
+          "token_id": 24072,
+          "token_index": 10,
+          "surface": "מִדֹּ֖ר",
+          "ja": "代から"
+        },
+        {
+          "token_id": 24073,
+          "token_index": 11,
+          "surface": "דֹּֽר",
+          "ja": "代へ"
+        }
+      ]
+    }
+  ],
+  "media_status": {
+    "audio_status": "PASS",
+    "audio_implemented_count": 16,
+    "audio_expected_count": 16,
+    "missing_audio_refs": [],
+    "audio_failures": [],
+    "html_status": "PASS",
+    "html_implemented_count": 16,
+    "missing_html_refs": [],
+    "pages_status": "PASS",
+    "ai_generated_audio_refs": [],
+    "open_bible_audio_refs": []
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ベシャラハ｜第7アリヤー｜出エジプト記17:1–16"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "主に導かれて着いた場所にも、水がありませんでした。民の渇きは争いとなり、モーセも危険を訴えます。主は長老たちの目の前で、岩から民の飲む水を与えられます。続くアマレクとの戦いでは、モーセ一人の力は続きません。アロンとフルが両側から手を支え、ヨシュアは別の場所で務めを担います。神の助けは、人の弱さを消すことよりも、命を養い、重荷を共に担う関係の中に現れます。結びには勝利の記憶と、争いの重い課題も残されます。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "渇く民に水を、疲れた手に支えを"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_1_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：イスラエルの子らの全会衆は、主の命令に従って、シンの荒野から旅程を重ねて進み、レフィディムに宿営した。しかし、民の飲む水がなかった。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-1.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『主の口に従って』は命令に従うことを表す慣用句で、旅程ごとの移動を修飾する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "導かれた場所にも水がない"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『主の口に従って』は命令に従うことを表す慣用句で、旅程ごとの移動を修飾する。導きに従ったことと、水がないことが同じ節に並ぶ。困難な場所に来たという結果だけから、民の進路が最初から誤っていたと逆算しない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "導きに従っても生活の必要が満たされない時がある。その苦しみを、信仰が足りなかった証拠として片づけず、何が欠けているかを共に確かめたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_2_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：民はモーセと争い、「私たちに水を与えよ。飲ませてくれ」と言った。モーセは彼らに言った。「なぜ私と争うのか。なぜ主を試すのか。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-2.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『与えよ』は複数の相手に向けた命令であり、語りの焦点がモーセだからと単数形へ直さない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "水の要求が、主を試す問いへ変わる"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『与えよ』は複数の相手に向けた命令であり、語りの焦点がモーセだからと単数形へ直さない。『なぜ争う／なぜ試す』という対応する問いが、指導者との争いと主との関係を結び付ける。『試す』はピエル形で、7節の地名マサへつながる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "飲む水を求める声には応答が必要である。同時に、相手を際限なく試し続ける関係になっていないか、必要の訴え方と受け止め方を考えたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_3_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：そこで民は水に渇き、モーセに不平を言って、こう言った。「なぜ、いったい私たちをエジプトから連れ上ったのか。私と子どもたちと家畜を、渇きで死なせるためか。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-3.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『私たちを連れ上った』は二人称単数のヒフィル完了形に一人称複数の接尾辞が付く。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "集団の訴えに現れる一人称の声"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『私たちを連れ上った』は二人称単数のヒフィル完了形に一人称複数の接尾辞が付く。続く『私を／私の子ら／私の家畜』は単数の声で、集合としての民の訴えが、一人ひとりの暮らしの危機を帯びる。目的を問う言葉は、解放を死への連行として受け取り直している。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "苦情の背後には、自分だけでなく子どもや生活の糧を失う恐れがある。言葉の厳しさだけを評価する前に、その人が守ろうとしている命を聞き取りたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_4_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセは主に叫んで言った。「この民を、私はどうすればよいのですか。もう少しで、彼らは私を石で打ち殺すでしょう。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-4.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『叫ぶ』は民への演説でなく主への呼びかけである。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "指導者自身が危険を訴える"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『叫ぶ』は民への演説でなく主への呼びかけである。『もう少しで』に続く石打ちの言葉は差し迫った危険を表し、実際に石打ちが既に行われたとは書いていない。民の渇きと並んで、モーセの安全と限界も物語の問題となる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "人を導く立場でも、危険や行き詰まりを言葉にしてよい。責任感だけで暴力の恐れを抱え込まず、助けを求められる関係を持ちたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_5_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：主はモーセに言われた。「民の前を進み、イスラエルの長老たちのうち幾人かを伴いなさい。ナイル川を打ったあなたの杖を手に取り、行きなさい。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-5.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『長老たちのうちから』は一部を取り出す表現であり、全員同行と断定しない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "長老を伴い、同じ杖を携えて進む"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『長老たちのうちから』は一部を取り出す表現であり、全員同行と断定しない。取るという命令が同行者と杖の指示を組み立てる。ナイル川を打った杖への言及は過去の行為と次の給水を結ぶが、杖そのものに自動的な力があるという説明ではない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "危機への応答を一人だけの秘密の行動にしない。共に見届ける人を伴い、これまで託されてきた働きを今の必要へ用いたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:6"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_6_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：見よ、私はホレブの岩の上、そこであなたの前に立つ。あなたはその岩を打ちなさい。すると、そこから水が出て、民は飲む。」モーセはイスラエルの長老たちの目の前で、そのとおりに行った。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-6.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『私はあなたの前に立っている』という神の約束が、打つ・水が出る・民が飲むという展開に先行する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "主の先行と、民が飲むための水"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『私はあなたの前に立っている』という神の約束が、打つ・水が出る・民が飲むという展開に先行する。『そこから』の形は一人称複数接尾辞と同形だが、ここでは岩を受ける。最後に長老たちの目の前での実行が記され、応答は見届けられる出来事となる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "神の臨在を語る言葉が、飲める水という具体的な支えへつながっている。励ましだけで終えず、人が実際に生きられる助けを届けたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:7"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_7_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：彼はその場所をマサ、またメリバと名づけた。イスラエルの子らが争い、「主は私たちのただ中におられるのか、それともおられないのか」と言って、主を試したからである。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-7.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：マサとメリバという二つの名が、『試す』と『争う』という行為によって説明される。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "地名が残す争いと臨在への問い"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "マサとメリバという二つの名が、『試す』と『争う』という行為によって説明される。『いるか／いないか』は存在をめぐる対であり、『私たちのただ中』が問いの焦点となる。USCCBの17:7注も二つの地名を試験と争いに結び付けて説明する。給水の出来事は、成功談だけでなく対立の記憶として残る。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "USCCB『New American Bible Revised Edition』出エジプト記17:7、15–16注",
+                    "link": {
+                      "url": "https://bible.usccb.org/bible/exodus/17"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "解決した問題にも、争いや不信の記憶が残る。都合のよい結末だけを語らず、関係が傷ついた過程も記憶して学びたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "水の欠如から、主の臨在を問う言葉へ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1節は主の命令への従順と水の欠如を並べ、2–4節は水を求める声、解放への抗議、指導者自身の叫びへ進む。5–6節では主がモーセの前に立ち、長老たちが実行を見届け、民が飲むことが目的となる。7節の地名は、解決後にも争いと試みの記憶を残す。主の臨在を問う言葉は、生活の必要と共同体の関係に結び付いている。USCCB17:7注はマサを試み、メリバを争いに関係する名と説明する。本稿はこの結びを物語の組み立てとして読むのであり、二つの地名だけから資料数や成立年代を確定するものではない。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "USCCB『New American Bible Revised Edition』出エジプト記17:7、15–16注",
+              "link": {
+                "url": "https://bible.usccb.org/bible/exodus/17"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:8"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_8_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：アマレクが来て、レフィディムでイスラエルと戦った。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-8.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：来る・戦うという二つの叙述形が、給水の物語から戦いへ場面を移す。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "同じ宿営地に外からの脅威が来る"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "来る・戦うという二つの叙述形が、給水の物語から戦いへ場面を移す。集合を表すアマレクが単数で語られる。レフィディムという同じ場所が前後を結ぶ一方、攻撃を民の疑いへの神罰だとする因果関係は、この節自体には書かれていない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "困難の直後に別の脅威が来ても、被害を受けた人の落ち度を探すことを急がない。まず今起きている危険を認め、命を守る支えを考えたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_9_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセはヨシュアに言った。「私たちのために人々を選び、出て行ってアマレクと戦いなさい。明日、私は神の杖を手にして丘の頂に立つ。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-9.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：選べ・出よ・戦えという単数命令はヨシュアに向けられ、『私たちのために』が共同の課題であることを示す。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『私たちのために』という役割の分担"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "選べ・出よ・戦えという単数命令はヨシュアに向けられ、『私たちのために』が共同の課題であることを示す。『私は立つ』は分詞を用いた予定の言い方で、ヨシュアの働きと丘に立つモーセを並べる。『神の杖』は神との関係を示す呼称で、指導者自身を神格化するものではない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "共同の課題を自分だけの働きにしない。託す相手を選び、自分が引き受ける役割も明らかにして、共に担う道を開きたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:10"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_10_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヨシュアはモーセが言ったとおりに行い、アマレクと戦った。一方、モーセとアロンとフルは丘の頂に上った。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-10.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：前半はヨシュア、後半は三人を主語とし、戦いと丘への上昇を分けて描く。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "二つの場所で進む同じ出来事"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "前半はヨシュア、後半は三人を主語とし、戦いと丘への上昇を分けて描く。上ったという複数形はモーセだけでない同行者を明示する。フルの名はここにあるが、この節だけから家系や年齢を補わない。以後の支え合いは、既に一緒に上った人々の間で起こる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "目立つ現場だけが共同体の働きではない。違う場所で務めを担う人々を覚え、支える人を孤立させないようにしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:11"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_11_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセが手を上げているとイスラエルが優勢となり、手を下ろすとアマレクが優勢となった。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-11.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『～するとき』という句が反復され、上げる／下ろすと二つの側の優勢が対応する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "上げる手と下ろす手の反復"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『～するとき』という句が反復され、上げる／下ろすと二つの側の優勢が対応する。ここでは手は単数で、12節では両手が焦点になる。本文はこの対応を描くが、祈りという語を明記してはいない。ミシュナ『ロシュ・ハシャナ』3:8は、手そのものが勝敗を生むのかと問い、民が天の父へ心を向けることとして読む。これは後代の解釈を明示して受け取るべきである。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ミシュナ『ロシュ・ハシャナ』3:8（出17:11の解釈）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Mishnah_Rosh_Hashanah.3.8"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "目に見えるしるしを、操作すれば結果を保証する仕組みにしない。誰かの働きを通して何へ心が向けられているかを問い直したい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:12"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_12_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセの両手は重くなった。そこで彼らは石を取って下に置き、モーセはその上に座った。アロンとフルは、一人はこちら側、一人は反対側から彼の両手を支えた。その両手は、日が沈むまで確かに保たれた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-12.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：重い両手、腰を下ろす石、両側から支える二人という具体的な配置が描かれる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "支えられて確かに保たれる両手"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "重い両手、腰を下ろす石、両側から支える二人という具体的な配置が描かれる。『エムナー』はここでは手の確かさ・安定した状態を述べる名詞で、内面の信仰心だけに置き換えない。安定は他者の支えによって生まれ、日没まで続く。ラシの17:12:3注は、石に座る姿を民の苦しみを共にする態度として読むが、その心中の言葉は本文に直接記された台詞ではない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』17:12:3",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Exodus.17.12.3"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "疲れた人へ、もっと強く信じよと要求する前に、座れる場所と支える手を差し出したい。支えられて持ちこたえることも、確かな歩みである。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:13"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_13_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ヨシュアは、剣の刃によってアマレクとその民を打ち破った。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-13.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『打ち破った』は弱める・圧倒する意味の動詞で、14節の『消し去る』とは別である。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "勝利を語る動詞の範囲"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『打ち破った』は弱める・圧倒する意味の動詞で、14節の『消し去る』とは別である。『剣の口』は刃を表す慣用句。実際の戦いと暴力が記されており、単なる心の葛藤の比喩へ置き換えて消してはならない。一方、この一文からアマレクの全存在がここで消滅したとも言えない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "勝利という言葉が、人の傷や命を見えなくしていないかを考えたい。物語を読む時も、敵と呼ばれた側の人間性を見失わずにいたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "丘の上と戦いの場――支えられる手"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "8節の来襲を受け、9–10節はヨシュアの務めと丘に上る三人を分ける。11節は手の上げ下げと優勢の反復、12節はその持続を可能にする石と二人の支え、13節はヨシュアによる決着を描く。モーセの身体は無限の力を持たず、手の確かさは支えの結果である。ミシュナ『ロシュ・ハシャナ』3:8は手の機械的な力を問うて民の心の向きを重んじる。本文の具体的な協働と、この後代の宗教的解釈を区別しながら読むと、指導者を超人化する読みを避けられる。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "ミシュナ『ロシュ・ハシャナ』3:8（出17:11の解釈）",
+              "link": {
+                "url": "https://www.sefaria.org/Mishnah_Rosh_Hashanah.3.8"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:14"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_14_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：主はモーセに言われた。「これを記念として書に記し、ヨシュアの耳に伝えなさい。私はアマレクの記憶を、天の下から必ず消し去る。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-14.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：書け・耳に置けという命令が、書く記録と聞かせる伝達を結ぶ。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "記す記憶と、消すと語られる記憶"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "書け・耳に置けという命令が、書く記録と聞かせる伝達を結ぶ。『消し去ることを、私は消し去る』は不定詞絶対形と同根動詞による強調である。『記念』を残す命令と『記憶』を消す宣言が同じ節で響き合う。宣言の一人称主体は主であり、読者自身へ任意の敵の抹消権限を渡す命令ではない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "受けた害を忘れないことと、憎しみを次世代へそのまま渡すことは同じではない。何を記録し、何を繰り返さないために伝えるのかを吟味したい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:15"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_15_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセは祭壇を築き、その名を「主は私の旗」と呼んだ。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-15.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『その名』の接尾辞は直前の祭壇を受ける。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "人の名でなく、主を指し示す祭壇名"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『その名』の接尾辞は直前の祭壇を受ける。『主は私の旗』という名詞文で、ニッシーの『私の』も保つ。USCCB17:15注は同じ名の意味を示す。戦いの記念をモーセやヨシュア自身の名だけに集約せず、主への帰属を示す命名として読む。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "USCCB『New American Bible Revised Edition』出エジプト記17:7、15–16注",
+                    "link": {
+                      "url": "https://bible.usccb.org/bible/exodus/17"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "成果を支えた多くの手を忘れ、自分の名だけを掲げないようにしたい。感謝の記念が、自己顕示よりも支えられた事実を指し示すものとなるように。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 17:16"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/112-20261121-r1/audio/112_16_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：そして彼は言った。「まことに、手はヤハ〔主〕の王座の上に。主には、アマレクとの戦いが代々にわたってある。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/112-20261121-r1/exodus-17-16.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：冒頭の『手はヤハの王座の上に』には動詞がなく、誰の手かも明記されない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "短く難しい句を、難しいまま読む"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "冒頭の『手はヤハの王座の上に』には動詞がなく、誰の手かも明記されない。ケースは通常と異なる短い形で王座と理解されるが、15節の旗に合わせた読みも提案される。NET Bible17:16注は王座を保つ読みと、旗への本文修正案を区別し、USCCB注も解釈の難しさを認める。私訳は与えられた本文の王座を保ち、誓いの動作や手の持ち主を確定して補わない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Biblical Studies Press『NET Bible』出エジプト記17:16訳注1",
+                    "link": {
+                      "url": "https://classic.net.bible.org/verse.php?book=Exo&chapter=17&theme=false&verse=16"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "USCCB『New American Bible Revised Edition』出エジプト記17:7、15–16注",
+                    "link": {
+                      "url": "https://bible.usccb.org/bible/exodus/17"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "分かりにくい言葉を、自分に都合よく確定しない謙虚さを持ちたい。代々の争いを語る重い結びを、今の誰かを憎むための標語にしないようにしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "記録・祭壇・難解な結びの句"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "14節の書くことと聞かせること、15節の祭壇の命名、16節の代々という時間が、一度の出来事を継承する記憶へ広げる。『記念を記す』と『記憶を消す』は緊張を含み、物語の勝利だけを無邪気に祝う結びではない。16節は本文上も難しく、NET Bibleはケースを王座として読む場合と、ネースすなわち旗へ修正する提案を分ける。私訳は修正案を元の語に無言で置き換えず、王座を残す。戦いを主へ帰する叙述を、読者が現代の誰かをアマレクと認定し攻撃する許可へ拡張しない。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Biblical Studies Press『NET Bible』出エジプト記17:16訳注1",
+              "link": {
+                "url": "https://classic.net.bible.org/verse.php?book=Exo&chapter=17&theme=false&verse=16"
+              }
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": " ／ "
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "USCCB『New American Bible Revised Edition』出エジプト記17:7、15–16注",
+              "link": {
+                "url": "https://bible.usccb.org/bible/exodus/17"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "まとめ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "『主は私たちのただ中におられるのか』という問いに、物語は飲む水と、疲れた手を支える具体的な助けを並べる。指導者の強さだけで共同体が守られるのではない。必要を訴える民、叫ぶモーセ、共に見届ける長老、役割を担うヨシュア、支えるアロンとフルがそれぞれ描かれる。命を守る助けと重荷の分担を大切にしつつ、戦いと記憶の言葉を今の他者への敵意に短絡させず、受け継ぐべき記憶を吟味したい。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーをさらに学ぶ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "文学・編集上の観察――二つの危機、異なる記憶"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "前半は共同体内部の争いと水の欠如、後半は外から来る攻撃を描き、レフィディムが両者を場所で結ぶ。杖と手も繰り返されるが、5–6節では命に必要な水を与える働き、9–12節では持ち続ける手とそれを支える働きとして現れる。7節のマサ・メリバという地名と、15節の祭壇名は、異なる出来事を記憶する二つの命名となる。これらは現行本文の連関についての独自観察であり、特定の著者・資料層・年代の確定ではない。現代の訳注を比較すると、特に16節で原文の解釈と本文修正の選択が訳に影響することが分かる。曖昧さを隠さず読むことも、このアリヤーの学びに含まれる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "USCCB『New American Bible Revised Edition』出エジプト記17:7、15–16注",
+                    "link": {
+                      "url": "https://bible.usccb.org/bible/exodus/17"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Biblical Studies Press『NET Bible』出エジプト記17:16訳注1",
+                    "link": {
+                      "url": "https://classic.net.bible.org/verse.php?book=Exo&chapter=17&theme=false&verse=16"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダヤ教解釈伝統――手の力ではなく、心の向きと苦しみの共有"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ミシュナ『ロシュ・ハシャナ』3:8は、出17:11を用いて、モーセの手自体が戦いの勝敗を生むのかと問い、イスラエルが上を仰ぎ天の父へ心を従わせることを語る。これは心の向きという観点から物語を読み直す解釈で、11節の語の直訳と同一ではない。ラシの17:12:3注は、石に座るモーセを、民が苦しむ時に自分だけ安楽な座を求めず苦しみを共にする人として描く。本文にない内面の台詞を補って示す注解であり、その補足を史実として本文へ戻さない。双方は別の箇所に焦点を当てつつ、しるしの操作や独りの英雄像へ信仰を縮めない読みを促す。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ミシュナ『ロシュ・ハシャナ』3:8（出17:11の解釈）",
+                    "link": {
+                      "url": "https://www.sefaria.org/Mishnah_Rosh_Hashanah.3.8"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』17:12:3",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Exodus.17.12.3"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "キリスト教受容史――ユスティノスによる十字架の予型"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ユスティノス『トリュフォンとの対話』第90章は、モーセが広げた手とアロン・フルの支えを、十字架を先に示す形として読む。また、ヨシュアとイエスの名の結び付きも論証に用い、十字架の恥辱をめぐる対話へこの物語を配置する。これは後代のキリスト教的な予型解釈であり、出17章のヘブライ語に十字架という語がある、あるいはモーセの正確な姿勢が十字架形に確定するという意味ではない。ミシュナの心の向きへの解釈とも異なる問いを持つ。教父の論争的な読みを学ぶ際にも、ユダヤ教側の本文理解を消したり、今のユダヤ人を物語の敵に対応させたりしない。原文の意味と、後代の信仰共同体が見いだした関連を分けて受け止めたい。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ユスティノス『トリュフォンとの対話』第90章",
+                    "link": {
+                      "url": "https://www.newadvent.org/fathers/01287.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0",
+              "link": {
+                "url": "https://github.com/openscriptures/morphhb"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
