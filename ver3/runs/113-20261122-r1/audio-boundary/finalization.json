@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "113-20261122-r1",
+  "input_sha256": "907e8437ec5c57312c6701f7750779bf3747884f758b02f17db1446e053c5620",
+  "manifest_sha256": "f16eb84987b777075c7de393b2ada1890f71d13a09d03b49ec52bb115fe028b8",
+  "audio_sha256": {
+    "18:1": "7180041100c0c591507771e974b310df5f894f2b380dfd00e87b038f9b16bb41",
+    "18:2": "dcbdd51341482b64f35f30f2fe62c56f1b31b34df3b095428dbdbbcaf1e8cac6",
+    "18:3": "e37de8fac5b08d2a3fea046bad10decb18fb1ef6237699a5cbccca3ddc71a69c",
+    "18:4": "2fa33cb7127e9462b642b4aafdc9d48ad92a6e2895aa8bb7e57b7e08e923df0c",
+    "18:5": "6f90981cd026f05be7bd2121859b7a415f876262739b80890f9669e9c3ff63f5",
+    "18:6": "52663bf8b7558e36b74c00e84e7c85df765d4a5e6cbbafed62f4d868ba29bc04",
+    "18:7": "e160261df1ec3d5744e31810883d675bebf3d36e35d24525ba4a55a83aef3791",
+    "18:8": "d29819bea0fb1befdbaca65766395314c4bed3ba292b129c32883e98a63bdff1",
+    "18:9": "3c8ecfcef2f12e58df6b15ee2b3ec63e7857bcc5f26c7a21d598d8768477ea92",
+    "18:10": "356af8c67cd184e2f0a15be3121be8fd8e16922a9558ef245272caa5d3d9b475",
+    "18:11": "d9af6abd010780099ab7eecead0e4bc72138f8e6ff36ae9369d402951dcee3ef",
+    "18:12": "97c2f32a47fb14c87cfd28f5285d22a0b560077c7369cae538c0a9fa7a71eb01"
+  },
+  "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [
+    {
+      "edge": "18:10/head",
+      "status": "FAIL",
+      "reason": "Only וַיֹּאמֶר is audible, missing יִתְרוֹ בָּרוּךְ at the start."
+    },
+    {
+      "edge": "18:12/head",
+      "status": "FAIL",
+      "reason": "Only וַיִּקַּח is audible, missing יִתְרוֹ חֹתֵן at the start."
+    }
+  ],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-22T13:11:14Z",
+  "evidence": "全24件の外側冒頭／末尾の観察をWorkが照合し、18:10/headと18:12/headを1回だけ原音詳査した。18:12は固定原音185.376243–197.376243秒のcontextで冒頭三語が確認でき、現境界191.376243秒を移動すべき根拠なし。18:10も147.341505–159.341505秒のcontextで切り目後の冒頭二語が明瞭に確認でき、現境界153.341505秒を変更すべき混入・欠落の根拠はない。ただし第三語の確認までは認定せず、6秒範囲の内側端を判定しない。初回4秒の両FAILを無言でPASSへ書き換えず、追加観察の根拠と18:10の限定をメールへ開示する。18:1/head・18:2/head・18:5/headも確認された二語と外側端のみの判定。修復0回・候補0件、現行の再生可能な今回RUN音声をDELIVER_CURRENT。5要求すべて成功、抜粋120秒、保守的予約0.26646 USDで上限到達・API障害なし。全節の音声全内容は未検品でありfull_content_verified=false。",
+  "decision_sha256": "39faea3789d882f058840b47fd02624a73ac7c31881629faa2c7998ae3232173",
+  "usage_sha256": "2b98e0f5570680b12328b108e699f8edbe19b7d8eb711d98fd684c9f253f6b98",
+  "report_sha256": "5378d09165f554bbeeb0de46e2ef63ef809e49ea91b654e80ca960c2115e5f0d",
+  "email_disclosure_required": true
+}
