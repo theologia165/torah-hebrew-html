@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "113-20261122-r1",
+  "sequence": "113",
+  "delivery_status": "PASS",
+  "page_id": "4208aa46-08ae-81a5-81c2-ee447dccfa58",
+  "page_url": "https://app.notion.com/p/113-18-1-12-4208aa4608ae81a581c2ee447dccfa58",
+  "gmail": {
+    "message_id": "1a2036aa536029c7",
+    "subject": "113｜出エジプト記18:1–12",
+    "sent_verified": true
+  },
+  "completed_at": "2026-11-22T13:20:57Z",
+  "verse_count": 12,
+  "token_count": 177,
+  "WORK_JSON2_QUALITY": "PASS",
+  "image_status": "PASS",
+  "cover_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "18:10/head",
+        "status": "FAIL",
+        "reason": "Only וַיֹּאמֶר is audible, missing יִתְרוֹ בָּרוּךְ at the start."
+      },
+      {
+        "edge": "18:12/head",
+        "status": "FAIL",
+        "reason": "Only וַיִּקַּח is audible, missing יִתְרוֹ חֹתֵן at the start."
+      }
+    ],
+    "workflow_notes": [],
+    "finalization_sha256": "016986774acf245ecc7d81eddc7279912c56ad9bed89792686e620d0c4e55479",
+    "disclosed_in_email": true
+  }
+}
