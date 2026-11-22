@@ -1,0 +1,64 @@
+{
+  "run_id": "113-20261122-r1",
+  "input_sha256": "907e8437ec5c57312c6701f7750779bf3747884f758b02f17db1446e053c5620",
+  "manifest_sha256": "f16eb84987b777075c7de393b2ada1890f71d13a09d03b49ec52bb115fe028b8",
+  "audio_sha256": {
+    "18:1": "7180041100c0c591507771e974b310df5f894f2b380dfd00e87b038f9b16bb41",
+    "18:2": "dcbdd51341482b64f35f30f2fe62c56f1b31b34df3b095428dbdbbcaf1e8cac6",
+    "18:3": "e37de8fac5b08d2a3fea046bad10decb18fb1ef6237699a5cbccca3ddc71a69c",
+    "18:4": "2fa33cb7127e9462b642b4aafdc9d48ad92a6e2895aa8bb7e57b7e08e923df0c",
+    "18:5": "6f90981cd026f05be7bd2121859b7a415f876262739b80890f9669e9c3ff63f5",
+    "18:6": "52663bf8b7558e36b74c00e84e7c85df765d4a5e6cbbafed62f4d868ba29bc04",
+    "18:7": "e160261df1ec3d5744e31810883d675bebf3d36e35d24525ba4a55a83aef3791",
+    "18:8": "d29819bea0fb1befdbaca65766395314c4bed3ba292b129c32883e98a63bdff1",
+    "18:9": "3c8ecfcef2f12e58df6b15ee2b3ec63e7857bcc5f26c7a21d598d8768477ea92",
+    "18:10": "356af8c67cd184e2f0a15be3121be8fd8e16922a9558ef245272caa5d3d9b475",
+    "18:11": "d9af6abd010780099ab7eecead0e4bc72138f8e6ff36ae9369d402951dcee3ef",
+    "18:12": "97c2f32a47fb14c87cfd28f5285d22a0b560077c7369cae538c0a9fa7a71eb01"
+  },
+  "observations": [
+    {
+      "id": "18:10/head/context",
+      "ref": "18:10",
+      "side": "context",
+      "audio_sha256": "9443617f571fb9b8654524678995745ccfbf8f5e8069d2b310fa6fa1902463d2",
+      "start": 147.341505,
+      "end": 159.341505,
+      "cut_seconds": 6.0,
+      "source_cut_seconds": 153.341505,
+      "expected": "וַיֹּאמֶר יִתְרוֹ בָּרוּךְ",
+      "other_edge": "הִצִּילוֹ מִיַּד מִצְרָֽיִם",
+      "expected_order": "other_edge then expected",
+      "cache_key": "4f79244a0c0d4d44cb284ca5a3c9453db1499bea7f487372746c25b43a941bdd",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיֹּאמֶר יִתְרוֹ",
+        "evidence": "Clear start with וַיֹּאמֶר יִתְרוֹ after the cut",
+        "request_id": 5,
+        "suggested_cut_seconds": null
+      }
+    },
+    {
+      "id": "18:12/head/context",
+      "ref": "18:12",
+      "side": "context",
+      "audio_sha256": "9443617f571fb9b8654524678995745ccfbf8f5e8069d2b310fa6fa1902463d2",
+      "start": 185.376243,
+      "end": 197.376243,
+      "cut_seconds": 6.0,
+      "source_cut_seconds": 191.376243,
+      "expected": "וַיִּקַּח יִתְרוֹ חֹתֵן",
+      "other_edge": "אֲשֶׁר זָדוּ עֲלֵיהֶֽם",
+      "expected_order": "other_edge then expected",
+      "cache_key": "b52ab67774b66b1f08c335deed1717fc722393f3feded7f588e101dd42a3fcd2",
+      "observation": {
+        "status": "PASS",
+        "heard": "וַיִּקַּח יִתְרוֹ חֹתֵן",
+        "evidence": "Audible beginning matches expected words",
+        "request_id": 5,
+        "suggested_cut_seconds": null
+      }
+    }
+  ],
+  "note": "suggested_cut_seconds is local to the excerpt; add start for original-source seconds. Work must judge it."
+}
