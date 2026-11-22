@@ -1,0 +1,3382 @@
+{
+  "schema_version": "3.0-json3",
+  "run_id": "113-20261122-r1",
+  "json1_sha256": "fc611f585ab056b98b8046b723e304e0c277397d5de68b7c024e4ab00f32c3c6",
+  "json2_sha256": "678f4cace47fc6653666cf1424b6751470827a422827a45371bde063e1ea10fa",
+  "title": "113｜出エジプト記18:1–12",
+  "verses": [
+    {
+      "ref": "Exod.18.1",
+      "tokens": [
+        {
+          "token_id": 24209,
+          "token_index": 1,
+          "surface": "וַיִּשְׁמַ֞ע",
+          "ja": "そして聞いた"
+        },
+        {
+          "token_id": 24210,
+          "token_index": 2,
+          "surface": "יִתְר֨וֹ",
+          "ja": "イトロは"
+        },
+        {
+          "token_id": 24211,
+          "token_index": 3,
+          "surface": "כֹהֵ֤ן",
+          "ja": "祭司"
+        },
+        {
+          "token_id": 24212,
+          "token_index": 4,
+          "surface": "מִדְיָן֙",
+          "ja": "ミディアンの"
+        },
+        {
+          "token_id": 24213,
+          "token_index": 5,
+          "surface": "חֹתֵ֣ן",
+          "ja": "しゅうと"
+        },
+        {
+          "token_id": 24214,
+          "token_index": 6,
+          "surface": "מֹשֶׁ֔ה",
+          "ja": "モーセの"
+        },
+        {
+          "token_id": 24215,
+          "token_index": 7,
+          "surface": "אֵת֩",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24216,
+          "token_index": 8,
+          "surface": "כָּל",
+          "ja": "すべて"
+        },
+        {
+          "token_id": 24217,
+          "token_index": 9,
+          "surface": "אֲשֶׁ֨ר",
+          "ja": "～したこと"
+        },
+        {
+          "token_id": 24218,
+          "token_index": 10,
+          "surface": "עָשָׂ֤ה",
+          "ja": "行われた"
+        },
+        {
+          "token_id": 24219,
+          "token_index": 11,
+          "surface": "אֱלֹהִים֙",
+          "ja": "神が"
+        },
+        {
+          "token_id": 24220,
+          "token_index": 12,
+          "surface": "לְמֹשֶׁ֔ה",
+          "ja": "モーセのために"
+        },
+        {
+          "token_id": 24221,
+          "token_index": 13,
+          "surface": "וּלְיִשְׂרָאֵ֖ל",
+          "ja": "またイスラエルのために"
+        },
+        {
+          "token_id": 24222,
+          "token_index": 14,
+          "surface": "עַמּ֑וֹ",
+          "ja": "ご自分の民"
+        },
+        {
+          "token_id": 24223,
+          "token_index": 15,
+          "surface": "כִּֽי",
+          "ja": "すなわち～ことを"
+        },
+        {
+          "token_id": 24224,
+          "token_index": 16,
+          "surface": "הוֹצִ֧יא",
+          "ja": "連れ出された"
+        },
+        {
+          "token_id": 24225,
+          "token_index": 17,
+          "surface": "יְהוָ֛ה",
+          "ja": "主が"
+        },
+        {
+          "token_id": 24226,
+          "token_index": 18,
+          "surface": "אֶת",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24227,
+          "token_index": 19,
+          "surface": "יִשְׂרָאֵ֖ל",
+          "ja": "イスラエル"
+        },
+        {
+          "token_id": 24228,
+          "token_index": 20,
+          "surface": "מִמִּצְרָֽיִם",
+          "ja": "エジプトから"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.2",
+      "tokens": [
+        {
+          "token_id": 24393,
+          "token_index": 1,
+          "surface": "וַיִּקַּ֗ח",
+          "ja": "そして連れて行った"
+        },
+        {
+          "token_id": 24394,
+          "token_index": 2,
+          "surface": "יִתְרוֹ֙",
+          "ja": "イトロは"
+        },
+        {
+          "token_id": 24395,
+          "token_index": 3,
+          "surface": "חֹתֵ֣ן",
+          "ja": "しゅうと"
+        },
+        {
+          "token_id": 24396,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֔ה",
+          "ja": "モーセの"
+        },
+        {
+          "token_id": 24397,
+          "token_index": 5,
+          "surface": "אֶת",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24398,
+          "token_index": 6,
+          "surface": "צִפֹּרָ֖ה",
+          "ja": "ツィポラ"
+        },
+        {
+          "token_id": 24399,
+          "token_index": 7,
+          "surface": "אֵ֣שֶׁת",
+          "ja": "妻"
+        },
+        {
+          "token_id": 24400,
+          "token_index": 8,
+          "surface": "מֹשֶׁ֑ה",
+          "ja": "モーセの"
+        },
+        {
+          "token_id": 24401,
+          "token_index": 9,
+          "surface": "אַחַ֖ר",
+          "ja": "～の後に"
+        },
+        {
+          "token_id": 24402,
+          "token_index": 10,
+          "surface": "שִׁלּוּחֶֽיהָ",
+          "ja": "彼女が送り返されたこと"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.3",
+      "tokens": [
+        {
+          "token_id": 24529,
+          "token_index": 1,
+          "surface": "וְאֵ֖ת",
+          "ja": "そして～を"
+        },
+        {
+          "token_id": 24530,
+          "token_index": 2,
+          "surface": "שְׁנֵ֣י",
+          "ja": "二人の"
+        },
+        {
+          "token_id": 24531,
+          "token_index": 3,
+          "surface": "בָנֶ֑יהָ",
+          "ja": "彼女の息子たち"
+        },
+        {
+          "token_id": 24532,
+          "token_index": 4,
+          "surface": "אֲשֶׁ֨ר",
+          "ja": "そのうち"
+        },
+        {
+          "token_id": 24533,
+          "token_index": 5,
+          "surface": "שֵׁ֤ם",
+          "ja": "名は"
+        },
+        {
+          "token_id": 24534,
+          "token_index": 6,
+          "surface": "הָֽאֶחָד֙",
+          "ja": "一人の"
+        },
+        {
+          "token_id": 24535,
+          "token_index": 7,
+          "surface": "גֵּֽרְשֹׁ֔ם",
+          "ja": "ゲルショム"
+        },
+        {
+          "token_id": 24536,
+          "token_index": 8,
+          "surface": "כִּ֣י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 24537,
+          "token_index": 9,
+          "surface": "אָמַ֔ר",
+          "ja": "彼は言った"
+        },
+        {
+          "token_id": 24538,
+          "token_index": 10,
+          "surface": "גֵּ֣ר",
+          "ja": "寄留者で"
+        },
+        {
+          "token_id": 24539,
+          "token_index": 11,
+          "surface": "הָיִ֔יתִי",
+          "ja": "私はあった"
+        },
+        {
+          "token_id": 24540,
+          "token_index": 12,
+          "surface": "בְּאֶ֖רֶץ",
+          "ja": "地に"
+        },
+        {
+          "token_id": 24541,
+          "token_index": 13,
+          "surface": "נָכְרִיָּֽה",
+          "ja": "異国の"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.4",
+      "tokens": [
+        {
+          "token_id": 24542,
+          "token_index": 1,
+          "surface": "וְשֵׁ֥ם",
+          "ja": "そして名は"
+        },
+        {
+          "token_id": 24543,
+          "token_index": 2,
+          "surface": "הָאֶחָ֖ד",
+          "ja": "もう一人の"
+        },
+        {
+          "token_id": 24544,
+          "token_index": 3,
+          "surface": "אֱלִיעֶ֑זֶר",
+          "ja": "エリエゼル"
+        },
+        {
+          "token_id": 24545,
+          "token_index": 4,
+          "surface": "כִּֽי",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 24546,
+          "token_index": 5,
+          "surface": "אֱלֹהֵ֤י",
+          "ja": "神が"
+        },
+        {
+          "token_id": 24547,
+          "token_index": 6,
+          "surface": "אָבִי֙",
+          "ja": "私の父の"
+        },
+        {
+          "token_id": 24548,
+          "token_index": 7,
+          "surface": "בְּעֶזְרִ֔י",
+          "ja": "私の助けとなられた"
+        },
+        {
+          "token_id": 24549,
+          "token_index": 8,
+          "surface": "וַיַּצִּלֵ֖נִי",
+          "ja": "そして私を救い出された"
+        },
+        {
+          "token_id": 24550,
+          "token_index": 9,
+          "surface": "מֵחֶ֥רֶב",
+          "ja": "剣から"
+        },
+        {
+          "token_id": 24551,
+          "token_index": 10,
+          "surface": "פַּרְעֹֽה",
+          "ja": "ファラオの"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.5",
+      "tokens": [
+        {
+          "token_id": 24552,
+          "token_index": 1,
+          "surface": "וַיָּבֹ֞א",
+          "ja": "そして来た"
+        },
+        {
+          "token_id": 24553,
+          "token_index": 2,
+          "surface": "יִתְר֨וֹ",
+          "ja": "イトロが"
+        },
+        {
+          "token_id": 24554,
+          "token_index": 3,
+          "surface": "חֹתֵ֥ן",
+          "ja": "しゅうと"
+        },
+        {
+          "token_id": 24555,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֛ה",
+          "ja": "モーセの"
+        },
+        {
+          "token_id": 24556,
+          "token_index": 5,
+          "surface": "וּבָנָ֥יו",
+          "ja": "そして彼〔モーセ〕の息子たちと"
+        },
+        {
+          "token_id": 24557,
+          "token_index": 6,
+          "surface": "וְאִשְׁתּ֖וֹ",
+          "ja": "また彼の妻が"
+        },
+        {
+          "token_id": 24558,
+          "token_index": 7,
+          "surface": "אֶל",
+          "ja": "～のもとへ"
+        },
+        {
+          "token_id": 24559,
+          "token_index": 8,
+          "surface": "מֹשֶׁ֑ה",
+          "ja": "モーセ"
+        },
+        {
+          "token_id": 24560,
+          "token_index": 9,
+          "surface": "אֶל",
+          "ja": "～へ"
+        },
+        {
+          "token_id": 24561,
+          "token_index": 10,
+          "surface": "הַמִּדְבָּ֗ר",
+          "ja": "その荒野"
+        },
+        {
+          "token_id": 24562,
+          "token_index": 11,
+          "surface": "אֲשֶׁר",
+          "ja": "～ところ"
+        },
+        {
+          "token_id": 24563,
+          "token_index": 12,
+          "surface": "ה֛וּא",
+          "ja": "彼が"
+        },
+        {
+          "token_id": 24564,
+          "token_index": 13,
+          "surface": "חֹנֶ֥ה",
+          "ja": "宿営している"
+        },
+        {
+          "token_id": 24565,
+          "token_index": 14,
+          "surface": "שָׁ֖ם",
+          "ja": "そこに"
+        },
+        {
+          "token_id": 24566,
+          "token_index": 15,
+          "surface": "הַ֥ר",
+          "ja": "山"
+        },
+        {
+          "token_id": 24567,
+          "token_index": 16,
+          "surface": "הָאֱלֹהִֽים",
+          "ja": "神の"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.6",
+      "tokens": [
+        {
+          "token_id": 24568,
+          "token_index": 1,
+          "surface": "וַיֹּ֨אמֶר֙",
+          "ja": "そして彼は言った"
+        },
+        {
+          "token_id": 24569,
+          "token_index": 2,
+          "surface": "אֶל",
+          "ja": "～に"
+        },
+        {
+          "token_id": 24570,
+          "token_index": 3,
+          "surface": "מֹשֶׁ֔ה",
+          "ja": "モーセ"
+        },
+        {
+          "token_id": 24571,
+          "token_index": 4,
+          "surface": "אֲנִ֛י",
+          "ja": "私は"
+        },
+        {
+          "token_id": 24572,
+          "token_index": 5,
+          "surface": "חֹתֶנְךָ֥",
+          "ja": "あなたのしゅうと"
+        },
+        {
+          "token_id": 24573,
+          "token_index": 6,
+          "surface": "יִתְר֖וֹ",
+          "ja": "イトロ"
+        },
+        {
+          "token_id": 24574,
+          "token_index": 7,
+          "surface": "בָּ֣א",
+          "ja": "来ています"
+        },
+        {
+          "token_id": 24575,
+          "token_index": 8,
+          "surface": "אֵלֶ֑יךָ",
+          "ja": "あなたのもとへ"
+        },
+        {
+          "token_id": 24576,
+          "token_index": 9,
+          "surface": "וְאִ֨שְׁתְּךָ֔",
+          "ja": "そしてあなたの妻も"
+        },
+        {
+          "token_id": 24577,
+          "token_index": 10,
+          "surface": "וּשְׁנֵ֥י",
+          "ja": "また二人の"
+        },
+        {
+          "token_id": 24578,
+          "token_index": 11,
+          "surface": "בָנֶ֖יהָ",
+          "ja": "彼女の息子たちも"
+        },
+        {
+          "token_id": 24579,
+          "token_index": 12,
+          "surface": "עִמָּֽהּ",
+          "ja": "彼女と共に"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.7",
+      "tokens": [
+        {
+          "token_id": 24580,
+          "token_index": 1,
+          "surface": "וַיֵּצֵ֨א",
+          "ja": "そして出て行った"
+        },
+        {
+          "token_id": 24581,
+          "token_index": 2,
+          "surface": "מֹשֶׁ֜ה",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 24582,
+          "token_index": 3,
+          "surface": "לִקְרַ֣את",
+          "ja": "迎えるために"
+        },
+        {
+          "token_id": 24583,
+          "token_index": 4,
+          "surface": "חֹֽתְנ֗וֹ",
+          "ja": "彼のしゅうとを"
+        },
+        {
+          "token_id": 24584,
+          "token_index": 5,
+          "surface": "וַיִּשְׁתַּ֨חוּ֙",
+          "ja": "そして身をかがめた"
+        },
+        {
+          "token_id": 24585,
+          "token_index": 6,
+          "surface": "וַיִּשַּׁק",
+          "ja": "そして口づけした"
+        },
+        {
+          "token_id": 24586,
+          "token_index": 7,
+          "surface": "ל֔וֹ",
+          "ja": "彼に"
+        },
+        {
+          "token_id": 24587,
+          "token_index": 8,
+          "surface": "וַיִּשְׁאֲל֥וּ",
+          "ja": "そして彼らは尋ねた"
+        },
+        {
+          "token_id": 24588,
+          "token_index": 9,
+          "surface": "אִישׁ",
+          "ja": "それぞれ"
+        },
+        {
+          "token_id": 24589,
+          "token_index": 10,
+          "surface": "לְרֵעֵ֖הוּ",
+          "ja": "その相手に"
+        },
+        {
+          "token_id": 24590,
+          "token_index": 11,
+          "surface": "לְשָׁל֑וֹם",
+          "ja": "安否について"
+        },
+        {
+          "token_id": 24591,
+          "token_index": 12,
+          "surface": "וַיָּבֹ֖אוּ",
+          "ja": "そして彼らは入った"
+        },
+        {
+          "token_id": 24592,
+          "token_index": 13,
+          "surface": "הָאֹֽהֱלָה",
+          "ja": "その天幕の中へ"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.8",
+      "tokens": [
+        {
+          "token_id": 24593,
+          "token_index": 1,
+          "surface": "וַיְסַפֵּ֤ר",
+          "ja": "そして語り聞かせた"
+        },
+        {
+          "token_id": 24594,
+          "token_index": 2,
+          "surface": "מֹשֶׁה֙",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 24595,
+          "token_index": 3,
+          "surface": "לְחֹ֣תְנ֔וֹ",
+          "ja": "彼のしゅうとに"
+        },
+        {
+          "token_id": 24596,
+          "token_index": 4,
+          "surface": "אֵת֩",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24597,
+          "token_index": 5,
+          "surface": "כָּל",
+          "ja": "すべて"
+        },
+        {
+          "token_id": 24598,
+          "token_index": 6,
+          "surface": "אֲשֶׁ֨ר",
+          "ja": "～したこと"
+        },
+        {
+          "token_id": 24599,
+          "token_index": 7,
+          "surface": "עָשָׂ֤ה",
+          "ja": "行われた"
+        },
+        {
+          "token_id": 24600,
+          "token_index": 8,
+          "surface": "יְהוָה֙",
+          "ja": "主が"
+        },
+        {
+          "token_id": 24601,
+          "token_index": 9,
+          "surface": "לְפַרְעֹ֣ה",
+          "ja": "ファラオに対して"
+        },
+        {
+          "token_id": 24602,
+          "token_index": 10,
+          "surface": "וּלְמִצְרַ֔יִם",
+          "ja": "またエジプトに対して"
+        },
+        {
+          "token_id": 24603,
+          "token_index": 11,
+          "surface": "עַ֖ל",
+          "ja": "～のために"
+        },
+        {
+          "token_id": 24604,
+          "token_index": 12,
+          "surface": "אוֹדֹ֣ת",
+          "ja": "事柄〔～のゆえに〕"
+        },
+        {
+          "token_id": 24605,
+          "token_index": 13,
+          "surface": "יִשְׂרָאֵ֑ל",
+          "ja": "イスラエルの"
+        },
+        {
+          "token_id": 24606,
+          "token_index": 14,
+          "surface": "אֵ֤ת",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24607,
+          "token_index": 15,
+          "surface": "כָּל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 24608,
+          "token_index": 16,
+          "surface": "הַתְּלָאָה֙",
+          "ja": "その苦難"
+        },
+        {
+          "token_id": 24609,
+          "token_index": 17,
+          "surface": "אֲשֶׁ֣ר",
+          "ja": "～した"
+        },
+        {
+          "token_id": 24610,
+          "token_index": 18,
+          "surface": "מְצָאָ֣תַם",
+          "ja": "彼らに降りかかった"
+        },
+        {
+          "token_id": 24611,
+          "token_index": 19,
+          "surface": "בַּדֶּ֔רֶךְ",
+          "ja": "その道中に"
+        },
+        {
+          "token_id": 24612,
+          "token_index": 20,
+          "surface": "וַיַּצִּלֵ֖ם",
+          "ja": "そして彼らを救い出された"
+        },
+        {
+          "token_id": 24613,
+          "token_index": 21,
+          "surface": "יְהוָֽה",
+          "ja": "主が"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.9",
+      "tokens": [
+        {
+          "token_id": 24614,
+          "token_index": 1,
+          "surface": "וַיִּ֣חַדְּ",
+          "ja": "そして喜んだ"
+        },
+        {
+          "token_id": 24615,
+          "token_index": 2,
+          "surface": "יִתְר֔וֹ",
+          "ja": "イトロは"
+        },
+        {
+          "token_id": 24616,
+          "token_index": 3,
+          "surface": "עַ֚ל",
+          "ja": "～について"
+        },
+        {
+          "token_id": 24617,
+          "token_index": 4,
+          "surface": "כָּל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 24618,
+          "token_index": 5,
+          "surface": "הַטּוֹבָ֔ה",
+          "ja": "その恵み"
+        },
+        {
+          "token_id": 24619,
+          "token_index": 6,
+          "surface": "אֲשֶׁר",
+          "ja": "～ところの"
+        },
+        {
+          "token_id": 24620,
+          "token_index": 7,
+          "surface": "עָשָׂ֥ה",
+          "ja": "行われた"
+        },
+        {
+          "token_id": 24621,
+          "token_index": 8,
+          "surface": "יְהוָ֖ה",
+          "ja": "主が"
+        },
+        {
+          "token_id": 24622,
+          "token_index": 9,
+          "surface": "לְיִשְׂרָאֵ֑ל",
+          "ja": "イスラエルのために"
+        },
+        {
+          "token_id": 24623,
+          "token_index": 10,
+          "surface": "אֲשֶׁ֥ר",
+          "ja": "～ところの"
+        },
+        {
+          "token_id": 24624,
+          "token_index": 11,
+          "surface": "הִצִּיל֖וֹ",
+          "ja": "それ〔イスラエル〕を救い出された"
+        },
+        {
+          "token_id": 24625,
+          "token_index": 12,
+          "surface": "מִיַּ֥ד",
+          "ja": "手から"
+        },
+        {
+          "token_id": 24626,
+          "token_index": 13,
+          "surface": "מִצְרָֽיִם",
+          "ja": "エジプトの"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.10",
+      "tokens": [
+        {
+          "token_id": 24229,
+          "token_index": 1,
+          "surface": "וַיֹּאמֶר֮",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 24230,
+          "token_index": 2,
+          "surface": "יִתְרוֹ֒",
+          "ja": "イトロは"
+        },
+        {
+          "token_id": 24231,
+          "token_index": 3,
+          "surface": "בָּר֣וּךְ",
+          "ja": "ほめたたえられますように"
+        },
+        {
+          "token_id": 24232,
+          "token_index": 4,
+          "surface": "יְהוָ֔ה",
+          "ja": "主は"
+        },
+        {
+          "token_id": 24233,
+          "token_index": 5,
+          "surface": "אֲשֶׁ֨ר",
+          "ja": "～ところの"
+        },
+        {
+          "token_id": 24234,
+          "token_index": 6,
+          "surface": "הִצִּ֥יל",
+          "ja": "救い出された"
+        },
+        {
+          "token_id": 24235,
+          "token_index": 7,
+          "surface": "אֶתְכֶ֛ם",
+          "ja": "あなたがたを"
+        },
+        {
+          "token_id": 24236,
+          "token_index": 8,
+          "surface": "מִיַּ֥ד",
+          "ja": "手から"
+        },
+        {
+          "token_id": 24237,
+          "token_index": 9,
+          "surface": "מִצְרַ֖יִם",
+          "ja": "エジプトの"
+        },
+        {
+          "token_id": 24238,
+          "token_index": 10,
+          "surface": "וּמִיַּ֣ד",
+          "ja": "そして手から"
+        },
+        {
+          "token_id": 24239,
+          "token_index": 11,
+          "surface": "פַּרְעֹ֑ה",
+          "ja": "ファラオの"
+        },
+        {
+          "token_id": 24240,
+          "token_index": 12,
+          "surface": "אֲשֶׁ֤ר",
+          "ja": "～ところの"
+        },
+        {
+          "token_id": 24241,
+          "token_index": 13,
+          "surface": "הִצִּיל֙",
+          "ja": "救い出された"
+        },
+        {
+          "token_id": 24242,
+          "token_index": 14,
+          "surface": "אֶת",
+          "ja": "～を"
+        },
+        {
+          "token_id": 24243,
+          "token_index": 15,
+          "surface": "הָעָ֔ם",
+          "ja": "その民"
+        },
+        {
+          "token_id": 24244,
+          "token_index": 16,
+          "surface": "מִתַּ֖חַת",
+          "ja": "～の下から"
+        },
+        {
+          "token_id": 24245,
+          "token_index": 17,
+          "surface": "יַד",
+          "ja": "手"
+        },
+        {
+          "token_id": 24246,
+          "token_index": 18,
+          "surface": "מִצְרָֽיִם",
+          "ja": "エジプトの"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.11",
+      "tokens": [
+        {
+          "token_id": 24247,
+          "token_index": 1,
+          "surface": "עַתָּ֣ה",
+          "ja": "今"
+        },
+        {
+          "token_id": 24248,
+          "token_index": 2,
+          "surface": "יָדַ֔עְתִּי",
+          "ja": "私は知った"
+        },
+        {
+          "token_id": 24249,
+          "token_index": 3,
+          "surface": "כִּֽי",
+          "ja": "～ことを"
+        },
+        {
+          "token_id": 24250,
+          "token_index": 4,
+          "surface": "גָד֥וֹל",
+          "ja": "偉大である"
+        },
+        {
+          "token_id": 24251,
+          "token_index": 5,
+          "surface": "יְהוָ֖ה",
+          "ja": "主は"
+        },
+        {
+          "token_id": 24252,
+          "token_index": 6,
+          "surface": "מִכָּל",
+          "ja": "すべてよりも"
+        },
+        {
+          "token_id": 24253,
+          "token_index": 7,
+          "surface": "הָאֱלֹהִ֑ים",
+          "ja": "その神々"
+        },
+        {
+          "token_id": 24254,
+          "token_index": 8,
+          "surface": "כִּ֣י",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 24255,
+          "token_index": 9,
+          "surface": "בַדָּבָ֔ר",
+          "ja": "その事において"
+        },
+        {
+          "token_id": 24256,
+          "token_index": 10,
+          "surface": "אֲשֶׁ֥ר",
+          "ja": "～したところの"
+        },
+        {
+          "token_id": 24257,
+          "token_index": 11,
+          "surface": "זָד֖וּ",
+          "ja": "彼らが高ぶった"
+        },
+        {
+          "token_id": 24258,
+          "token_index": 12,
+          "surface": "עֲלֵיהֶֽם",
+          "ja": "彼ら〔民〕に対して"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.12",
+      "tokens": [
+        {
+          "token_id": 24259,
+          "token_index": 1,
+          "surface": "וַיִּקַּ֞ח",
+          "ja": "そして携えた"
+        },
+        {
+          "token_id": 24260,
+          "token_index": 2,
+          "surface": "יִתְר֨וֹ",
+          "ja": "イトロは"
+        },
+        {
+          "token_id": 24261,
+          "token_index": 3,
+          "surface": "חֹתֵ֥ן",
+          "ja": "しゅうと"
+        },
+        {
+          "token_id": 24262,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֛ה",
+          "ja": "モーセの"
+        },
+        {
+          "token_id": 24263,
+          "token_index": 5,
+          "surface": "עֹלָ֥ה",
+          "ja": "全焼のいけにえを"
+        },
+        {
+          "token_id": 24264,
+          "token_index": 6,
+          "surface": "וּזְבָחִ֖ים",
+          "ja": "また数々のいけにえを"
+        },
+        {
+          "token_id": 24265,
+          "token_index": 7,
+          "surface": "לֵֽאלֹהִ֑ים",
+          "ja": "神に"
+        },
+        {
+          "token_id": 24266,
+          "token_index": 8,
+          "surface": "וַיָּבֹ֨א",
+          "ja": "そして来た"
+        },
+        {
+          "token_id": 24267,
+          "token_index": 9,
+          "surface": "אַהֲרֹ֜ן",
+          "ja": "アロンが"
+        },
+        {
+          "token_id": 24268,
+          "token_index": 10,
+          "surface": "וְכֹ֣ל",
+          "ja": "またすべての"
+        },
+        {
+          "token_id": 24269,
+          "token_index": 11,
+          "surface": "זִקְנֵ֣י",
+          "ja": "長老たちが"
+        },
+        {
+          "token_id": 24270,
+          "token_index": 12,
+          "surface": "יִשְׂרָאֵ֗ל",
+          "ja": "イスラエルの"
+        },
+        {
+          "token_id": 24271,
+          "token_index": 13,
+          "surface": "לֶאֱכָל",
+          "ja": "食べるために"
+        },
+        {
+          "token_id": 24272,
+          "token_index": 14,
+          "surface": "לֶ֛חֶם",
+          "ja": "パンを〔食事を〕"
+        },
+        {
+          "token_id": 24273,
+          "token_index": 15,
+          "surface": "עִם",
+          "ja": "～と共に"
+        },
+        {
+          "token_id": 24274,
+          "token_index": 16,
+          "surface": "חֹתֵ֥ן",
+          "ja": "しゅうと"
+        },
+        {
+          "token_id": 24275,
+          "token_index": 17,
+          "surface": "מֹשֶׁ֖ה",
+          "ja": "モーセの"
+        },
+        {
+          "token_id": 24276,
+          "token_index": 18,
+          "surface": "לִפְנֵ֥י",
+          "ja": "御前で"
+        },
+        {
+          "token_id": 24277,
+          "token_index": 19,
+          "surface": "הָאֱלֹהִֽים",
+          "ja": "神の"
+        }
+      ]
+    }
+  ],
+  "media_status": {
+    "audio_status": "PASS",
+    "audio_implemented_count": 12,
+    "audio_expected_count": 12,
+    "missing_audio_refs": [],
+    "audio_failures": [],
+    "html_status": "PASS",
+    "html_implemented_count": 12,
+    "missing_html_refs": [],
+    "pages_status": "PASS",
+    "ai_generated_audio_refs": [],
+    "open_bible_audio_refs": []
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "イトロ｜第1アリヤー｜出エジプト記18:1–12"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "イトロは、主がイスラエルを救い出された知らせを聞き、モーセの妻と二人の息子を伴って来ます。再会の挨拶の後、モーセは救いだけでなく道中の苦難も語ります。イトロは自分が直接受けた恵みでなくても喜び、主をほめたたえます。ミディアンの祭司であり家族でもあるこの人を、アロンと長老たちは神の前の食事へ迎えます。聞くこと、語ること、共に喜ぶことが、人々の間に食卓を開いてゆくのです。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "聞いた救いを、共に喜ぶ食卓へ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_1_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：ミディアンの祭司でモーセのしゅうとであるイトロは、神がモーセと、ご自分の民イスラエルのために行われたすべてのこと、すなわち主がイスラエルをエジプトから連れ出されたことを聞いた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-1.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：聞いたという動詞に続いて、イトロの名、ミディアンの祭司という立場、モーセのしゅうとという関係が重ねられる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "名前・祭司職・親族関係から始まる出会い"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "聞いたという動詞に続いて、イトロの名、ミディアンの祭司という立場、モーセのしゅうとという関係が重ねられる。『神』を受ける行うという動詞は単数であり、同じ形の語を11節の『神々』と一律に訳さない。聞く内容は個人モーセへの出来事と、民イスラエルの解放にまたがる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "自分の属する輪の外へも、救いの知らせは届く。相手を外の人という一つの呼び名に閉じず、その人の役割や既にある関係にも目を向けたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_2_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセのしゅうとイトロは、送り返された後にいたモーセの妻ツィポラを連れ、"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-2.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『彼女の送り返しの後』は送り出すことに関係する名詞と接尾辞の句で、送り返した際の事情や時期を詳述しない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "送り返された妻を連れて来る"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『彼女の送り返しの後』は送り出すことに関係する名詞と接尾辞の句で、送り返した際の事情や時期を詳述しない。『妻』という呼称は保たれている。語だけから離婚の成立や夫婦の感情を確定せず、次節の二人の息子も連れて来るという一続きの文として読む。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "公の大きな働きの陰に、離れて過ごしてきた家族がいる。事情を決めつけず、再び出会うための道を整える働きにも心を向けたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_3_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：彼女の二人の息子も伴った。一人の名はゲルショムである。モーセが「私は異国の地で寄留者であった」と言ったからである。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-3.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：冒頭の『そして～を』は前節の連れるという動詞へつながる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "息子の名に刻まれる寄留の記憶"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "冒頭の『そして～を』は前節の連れるという動詞へつながる。『彼女の息子たち』という三人称女性単数の接尾辞も保つ。ゲルショムの名は『寄留者であった』というモーセの言葉に結び付けて説明され、家族の紹介の中に本人の過去が挿入される。現代の厳密な語源分析そのものと同一視しない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "家族に伝わる名前や言葉には、居場所を持てなかった経験も残る。その記憶を恥として消さず、今居場所を求める人への理解に変えたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:4"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_4_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：もう一人の名はエリエゼルである。「私の父の神が私の助けとなり、ファラオの剣から私を救い出された」と言ったからである。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-4.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：一人・もう一人という同じ形の表現に、二つの名の説明が対応する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "寄留と並んで記憶される助け"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "一人・もう一人という同じ形の表現に、二つの名の説明が対応する。『私の父の神』と『私の助け』の一人称接尾辞が個人の経験を示し、『救い出された』はヒフィルの叙述形で一人称の目的語を伴う。民全体の解放を語る前に、モーセ自身が守られた記憶が家族の名で語られる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "苦しかった記憶と、助けられた記憶は共に残してよい。誰に、どのように支えられて歩んできたかを、次の世代へ具体的に語りたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_5_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセのしゅうとイトロは、モーセの息子たちと妻を伴い、モーセが宿営していた荒野、神の山のもとへ来た。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-5.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『彼の息子たちと妻』の接尾辞は文脈上モーセを受け、直前の主語イトロの妻子へ取り違えない。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "親族を伴って神の山のもとへ来る"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『彼の息子たちと妻』の接尾辞は文脈上モーセを受け、直前の主語イトロの妻子へ取り違えない。『彼が宿営している』は分詞で場所を説明し、神の山が到着地を限定する。この一文だけで、来訪をシナイの出来事のどの日に置くかを精密に決定することはできない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "知らせを聞いた人が、距離を越えて会いに来る。その移動の労を当然とせず、家族や客を迎えられる余地を自分の暮らしに用意したい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:6"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_6_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：イトロはモーセにこう伝えた。「あなたのしゅうとイトロである私が、あなたのもとへ来ています。あなたの妻と、彼女と共に二人の息子もいます。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-6.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『私は、あなたのしゅうとイトロ』と、名と関係を添えて訪れを知らせる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "来訪を知らせる言葉に含まれる家族"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『私は、あなたのしゅうとイトロ』と、名と関係を添えて訪れを知らせる。来るという分詞はここで進行中の来訪を伝える。妻は『あなたの妻』、息子は『彼女の息子たち』と呼ばれ、関係が複数の方向から示される。どんな使者や伝達手段だったかは本文が明記していない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "迎えてもらいたい時、関係を言葉にして近づくことがある。役割上の予定ばかりを優先せず、あなたに会いに来たという声を受け止めたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "来訪する家族と、名前が語る二つの記憶"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "1節の聞くことから2節の家族を連れる行為へ移り、3–4節は二人の名に託された寄留と救いの記憶を挿入する。5–6節で一行の到着と来訪を伝える言葉へ戻る。物語は公の解放と家族の再会を重ねるが、送り返された事情や子どもの年齢は説明しない。二つの名の由来は、モーセが過去をどう意味付けたかを示す語りであり、その名前だけからすべての出来事の年月日を再構成する材料ではない。家族の関係を示す彼女の・彼の・あなたのという呼び方の変化も、一行が誰を中心に再会へ来たのかを読む手掛かりとなる。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:7"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_7_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセはしゅうとを迎えに出て、身をかがめ、彼に口づけした。二人は互いの安否を尋ね合い、天幕の中へ入った。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-7.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：初めはモーセを主語とする単数の動作が続き、安否を尋ね合うところから複数へ移る。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "迎えに出る敬意と、相互の安否"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "初めはモーセを主語とする単数の動作が続き、安否を尋ね合うところから複数へ移る。『人がその相手に』は相互性を表す。身をかがめる動詞はこの対人場面では敬意を示す挨拶として読み、神への礼拝と同じ意味に固定しない。天幕には方向を示す語尾があり、『中へ』という動きを表す。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "立場が大きくなっても、迎えに出て相手の無事を尋ねる姿勢を失いたくない。自分の報告を始める前に、互いの近況を聞く時間を持ちたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:8"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_8_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセはしゅうとに、主がイスラエルのためにファラオとエジプトに対して行われたすべてのこと、道中で彼らに降りかかったすべての苦難と、主が彼らを救い出されたことを語り聞かせた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-8.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『語り聞かせた』はピエルの叙述形で、1節の聞くという行為に詳しい内容を与える。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "救いだけでなく苦難も語る報告"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『語り聞かせた』はピエルの叙述形で、1節の聞くという行為に詳しい内容を与える。すべての出来事とすべての苦難が並び、勝利だけを切り出さない。苦難を受ける『降りかかった』は女性単数で、目的語は彼ら。最後の救い出すという動詞へ、苦難と解放が共に運ばれる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "助けられた経験を語る時、通ってきた苦難を隠さなくてよい。きれいに整えた成功談より、苦しみと支えを共に語る言葉が人を近づけることもある。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:9"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_9_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：イトロは、主がイスラエルをエジプトの手から救い出し、彼らに与えられたすべての恵みを喜んだ。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-9.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：喜ぶという単数動詞の主語はイトロであり、恵みの受け手はイスラエルである。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "他者のための恵みを喜ぶ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "喜ぶという単数動詞の主語はイトロであり、恵みの受け手はイスラエルである。救い出す動詞の目的語接尾辞も単数で、ここでは集合としてのイスラエルを受ける。直接の受益者だけが喜ぶのではなく、聞いた者が他者の受けた恵みに参与するという関係が描かれる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "自分に利益が戻るかどうかを越えて、誰かが守られたことを喜びたい。共に喜べる関係は、互いを競争相手として見る目を少しずつ変えてゆく。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "敬意ある挨拶から、苦難を含めて語ることへ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "7節はモーセが迎えに出る単数の動作から、安否を尋ね合い天幕へ入る複数の動きへ進む。8節では、1節で既に聞いていた出来事が、本人の語りとして苦難と救いを含めて伝え直される。9節の喜びの主体は聞いたイトロである。知らせを一方的に伝える場面ではなく、迎える・尋ね合う・語る・喜ぶという応答が関係を作ってゆく。ここでの敬意を、後続の助言を受けるためだけの準備へ還元せず、今回の範囲自体が描く再会として読む。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:10"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_10_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：イトロは言った。「あなたがたをエジプトの手とファラオの手から救い出し、民をエジプトの支配の下から救い出された主が、ほめたたえられますように。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-10.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『ほめたたえられた方』は受動分詞を用いる祝福の定型で、主を主語とする。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "喜びが祝福の言葉となる"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『ほめたたえられた方』は受動分詞を用いる祝福の定型で、主を主語とする。『救い出した』が二度現れ、あなたがたという直接の呼びかけから民全体へ視野が広がる。手という語が反復され、身体の手だけでなく支配する力を表す。ミディアンの祭司と紹介された人が、主への祝福を口にしている。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "他者が受けた救いを、自分の言葉でも感謝してよい。支えた人や守られた命を思い起こし、聞いた喜びを祝福の言葉にして伝えたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:11"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_11_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：今、私は主があらゆる神々より偉大であると知りました。彼らが民に対して高ぶった、その事においてこそ〔主の偉大さが示された〕からです。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-11.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『私は知った』は一人称完了形で、今という語が聞いた後の認識を示す。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『今、知った』という告白と、省略を含む後半"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『私は知った』は一人称完了形で、今という語が聞いた後の認識を示す。後半は省略が強く、どの述語を補うかが翻訳上の問題となる。NET Bible18:11訳注もこの点を明示する。私訳の角括弧は文脈からの補足で、対応する動詞が原文に明記されるわけではない。高ぶる側をエジプト、接尾辞が受ける人々をイスラエルと読むが、神々との比較に結び付ける別の理解もある。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Biblical Studies Press『NET Bible』出エジプト記18:11訳注1",
+                    "link": {
+                      "url": "https://classic.net.bible.org/verse.php?book=Exo&chapter=18&theme=false&verse=11"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "今、初めて、あるいはこれまでより深く分かったと言えることは大切である。最初からすべてを知っていたように装わず、聞くことで変わった理解を言葉にしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:12"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/113-20261122-r1/audio/113_12_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセのしゅうとイトロは、全焼のいけにえと数々のいけにえを神に携えた。アロンとイスラエルのすべての長老たちは、神の御前でモーセのしゅうとと共にパンを食べるために来た。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/113-20261122-r1/exodus-18-12.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：携えるという動詞に全焼のいけにえと他のいけにえが並び、その後に共に食べる人々が名指される。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "祭司を囲む、神の前の食事"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "携えるという動詞に全焼のいけにえと他のいけにえが並び、その後に共に食べる人々が名指される。全焼のいけにえ自体を食事の料理と混同しない。『パンを食べる』は食事を共にする表現で、『神の前』がその行為を位置付ける。ラシ18:12:3はモーセが参加者の一覧にない点を問い、立って給仕したと読むが、その補足を本文の明示的な動作へ戻さない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』18:12:3–4",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Exodus.18.12"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "共に感謝することを、言葉だけでなく迎え合う食卓へつなげたい。誰と席を分かち、誰が支える働きを担っているかにも心を配りたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "知ったことを祝福し、共に食べる"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "10節は救い出すという語を二度反復し、11節は今、私は知ったという告白へ、12節はいけにえと共同の食事へ進む。神々との比較が置かれる一方、11節後半は省略が強いため、補った言葉を原文そのものとしない。NET Bible訳注は補訳の異なる可能性を示す。12節ではアロンとすべての長老たちがイトロと共に食べる。食べる人々が名指されることで、感謝は個人的な理解を越えて共同の行為となる。ただしこの場面だけから、後代の改宗手続の全過程が既に実施されたと確定しない。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "参照："
+            }
+          },
+          {
+            "type": "text",
+            "text": {
+              "content": "Biblical Studies Press『NET Bible』出エジプト記18:11訳注1",
+              "link": {
+                "url": "https://classic.net.bible.org/verse.php?book=Exo&chapter=18&theme=false&verse=11"
+              }
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "まとめ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーでは、聞いた知らせが実際の来訪となり、救いと苦難の報告が他者の喜びと祝福へ、そして神の前での食事へつながる。ゲルショムとエリエゼルの名には、寄留の経験と助けの記憶が共に残る。イトロを外の人か内の人かの一語に押し込めず、異なる立場の人と感謝を分かつ関係に注目したい。自分の成功だけを語るのでなく、苦難も聞き合い、他者の恵みを喜び、具体的に席を共にすることを大切にしたい。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーをさらに学ぶ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "文学的観察――聞いた知らせが、共に喜ぶ関係へ変わる"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "全体の流れは、聞くこと、家族を伴う来訪、互いの安否を問う再会、救いと苦難の報告、喜びと祝福、共同の食事である。1節の聞くことと8節の語ること、11節の知ることが、知識を関係の中で深める動きを形作る。3–4節の名の説明では一人称の記憶が挿入され、集団の歴史に家族の経験が重なる。『モーセのしゅうと』という呼称の反復も、外国の祭司という紹介を消すのでなく、近さと異なりの両方を読ませる。これは現行本文の構成についての独自観察であり、資料層や成立年代を特定した研究結果ではない。"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "現代研究――イトロは内の人か、外の人か"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rota Stoneは2023年の論文§Cで、イトロがミディアンの祭司であると同時にモーセの親族である点を、複数の集団への関係として分析する。挨拶、歴史を聞くこと、神への承認、共同の食事が近さを示す一方、異なる立場が一度に消えるわけではない。この視点から読むと、外の人が内の人へ変わったという一直線の説明だけでは捉え切れない。ここから、相手の背景を一括して消さずに感謝を分かつ可能性を問える。これは現代の分析枠組みを用いた読みであり、古代の登場人物が同じ社会心理学用語で自分を説明したという主張ではない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rota Stone, “Is Jethro an Ingroup or an Outgroup? Group Analysis of the Hebrew Bible and Its Early Interpretations,” Old Testament Essays 36/2 (2023), §§C–D",
+                    "link": {
+                      "url": "https://www.scielo.org.za/scielo.php?pid=S1010-99192023000200002&script=sci_arttext"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダヤ教解釈伝統――食卓で仕えるモーセと、神の前で食べること"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ18:12:3は、迎えに出たモーセが食事の参加者の一覧にないことを問い、モーセは立って給仕していたと説明する。同注4は、学ぶ者たちと共にする食事を神の臨在の輝きにあずかることへ結び付ける。どちらも本文の空白や表現から意味を広げる解釈で、給仕という動作や後代の学問共同体への適用は、12節の直訳と同一ではない。食卓の場面を読む際、席に着く人だけでなく場を支える奉仕にも目を向ける読みとして受け止められる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』18:12:3–4",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Exodus.18.12"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "キリスト教受容史――オリゲネスが読む『神の前で食べる』生活"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "オリゲネス『出エジプト記講話』11.5の、ルフィヌスによるラテン語訳本文を確認すると、18:12の食事は第一コリント10:31と結ばれ、食べることも神の栄光のために行う生活として説かれる。これは一回の食事の描写を霊的な生活観へ展開する後代の説教である。同じ箇所にはミディアンの祭司をモーセより低く置く説明もあり、その序列化まで本文の必然として引き継ぐ必要はない。現代のStone論文§Dもこの読みの集団境界に注意を向ける。この講話はギリシャ語原著をルフィヌスがラテン語に訳した形で伝わり、その食事と神の前という表現に即して読む。本文の接待と食卓、ラシの奉仕の読み、教父の霊的な適用は区別して学びたい。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "オリゲネス『出エジプト記講話』11.5（ルフィヌスのラテン語訳、PG 12:378a–379b）",
+                    "link": {
+                      "url": "https://sophiascriptura.com/fathers/origen-homiliae-exodum/11-1/#p-11-5"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Rota Stone, “Is Jethro an Ingroup or an Outgroup? Group Analysis of the Hebrew Bible and Its Early Interpretations,” Old Testament Essays 36/2 (2023), §§C–D",
+                    "link": {
+                      "url": "https://www.scielo.org.za/scielo.php?pid=S1010-99192023000200002&script=sci_arttext"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0",
+              "link": {
+                "url": "https://github.com/openscriptures/morphhb"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

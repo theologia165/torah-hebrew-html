@@ -1,0 +1,28 @@
+{
+  "status": "CREATED",
+  "run_id": "113-20261122-r1",
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "18:10/head",
+        "status": "FAIL",
+        "reason": "Only וַיֹּאמֶר is audible, missing יִתְרוֹ בָּרוּךְ at the start."
+      },
+      {
+        "edge": "18:12/head",
+        "status": "FAIL",
+        "reason": "Only וַיִּקַּח is audible, missing יִתְרוֹ חֹתֵן at the start."
+      }
+    ],
+    "workflow_notes": [],
+    "email_disclosure_required": true,
+    "finalization_sha256": "016986774acf245ecc7d81eddc7279912c56ad9bed89792686e620d0c4e55479"
+  },
+  "page_id": "4208aa46-08ae-81a5-81c2-ee447dccfa58",
+  "page_url": "https://app.notion.com/p/113-18-1-12-4208aa4608ae81a581c2ee447dccfa58"
+}
