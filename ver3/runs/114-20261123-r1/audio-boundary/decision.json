@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0-work-boundary-decision",
+  "run_id": "114-20261123-r1",
+  "report_sha256": "8b406573374b8627fecb7e505d6fb67df96f9d95490dbb4a7ff49f24ce06186f",
+  "action": "DELIVER_CURRENT",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-23T13:08:11Z",
+  "evidence": "全11節・22件の冒頭/末尾観察を期待語と照合した。モデル判定は22件PASS、problem_edges/known_findings/missing_audio_refsは空。隣節の語の混入や原音切断位置の移動を支持する音響根拠・提案秒はないため、修復/候補を作らず今回RUN現行音声を採用する。確認範囲は外側の始端・終端だけ。18:13/head、18:19/head、18:20/headは最初の2語、18:23/tailは末尾2語の観察に限定し、抜粋内側の第3語を確認済みとしない。18:22/headのheardは最終字ם、18:22/tailのheardは末尾ךが書き落とされた形であり、文章上の転記だけから語末音の完全性や欠落を確定しない。モデルの音響説明は期待する始端/終端の一致で、具体的な切断不良の証拠なし。語末子音を独立聴取済みとは認定せず、この確認限界もメールへ記す。全内容検品PASSへ昇格しない。4要求すべてHTTP200、88秒、保守的予約0.20057 USD（実使用量由来見積0.0511675 USD）、API利用不能・上限到達なし。詳査0・修復0・候補0、full_content_verified=false。"
+}
