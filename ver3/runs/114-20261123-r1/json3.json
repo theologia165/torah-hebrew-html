@@ -1,0 +1,3345 @@
+{
+  "schema_version": "3.0-json3",
+  "run_id": "114-20261123-r1",
+  "json1_sha256": "46500d799457c6ce1870a6e08b7ac7867f5f43d75dafd16a2efd1ce09758fa38",
+  "json2_sha256": "58a2eae1a809a95003d766ecc3170d42cd9c95f722e371bc56b7fa98e5f20b00",
+  "title": "114｜出エジプト記18:13–23",
+  "verses": [
+    {
+      "ref": "Exod.18.13",
+      "tokens": [
+        {
+          "token_id": 24278,
+          "token_index": 1,
+          "surface": "וַיְהִי֙",
+          "ja": "そして、そうなった"
+        },
+        {
+          "token_id": 24279,
+          "token_index": 2,
+          "surface": "מִֽמָּחֳרָ֔ת",
+          "ja": "翌日に"
+        },
+        {
+          "token_id": 24280,
+          "token_index": 3,
+          "surface": "וַיֵּ֥שֶׁב",
+          "ja": "そして座った"
+        },
+        {
+          "token_id": 24281,
+          "token_index": 4,
+          "surface": "מֹשֶׁ֖ה",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 24282,
+          "token_index": 5,
+          "surface": "לִשְׁפֹּ֣ט",
+          "ja": "裁くために"
+        },
+        {
+          "token_id": 24283,
+          "token_index": 6,
+          "surface": "אֶת",
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 24284,
+          "token_index": 7,
+          "surface": "הָעָ֑ם",
+          "ja": "その民を"
+        },
+        {
+          "token_id": 24285,
+          "token_index": 8,
+          "surface": "וַיַּעֲמֹ֤ד",
+          "ja": "そして立った"
+        },
+        {
+          "token_id": 24286,
+          "token_index": 9,
+          "surface": "הָעָם֙",
+          "ja": "その民は"
+        },
+        {
+          "token_id": 24287,
+          "token_index": 10,
+          "surface": "עַל",
+          "ja": "～のそばに"
+        },
+        {
+          "token_id": 24288,
+          "token_index": 11,
+          "surface": "מֹשֶׁ֔ה",
+          "ja": "モーセの"
+        },
+        {
+          "token_id": 24289,
+          "token_index": 12,
+          "surface": "מִן",
+          "ja": "～から"
+        },
+        {
+          "token_id": 24290,
+          "token_index": 13,
+          "surface": "הַבֹּ֖קֶר",
+          "ja": "朝"
+        },
+        {
+          "token_id": 24291,
+          "token_index": 14,
+          "surface": "עַד",
+          "ja": "～まで"
+        },
+        {
+          "token_id": 24292,
+          "token_index": 15,
+          "surface": "הָעָֽרֶב",
+          "ja": "夕方"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.14",
+      "tokens": [
+        {
+          "token_id": 24293,
+          "token_index": 1,
+          "surface": "וַיַּרְא֙",
+          "ja": "そして見た"
+        },
+        {
+          "token_id": 24294,
+          "token_index": 2,
+          "surface": "חֹתֵ֣ן",
+          "ja": "しゅうとは"
+        },
+        {
+          "token_id": 24295,
+          "token_index": 3,
+          "surface": "מֹשֶׁ֔ה",
+          "ja": "モーセの"
+        },
+        {
+          "token_id": 24296,
+          "token_index": 4,
+          "surface": "אֵ֛ת",
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 24297,
+          "token_index": 5,
+          "surface": "כָּל",
+          "ja": "すべて"
+        },
+        {
+          "token_id": 24298,
+          "token_index": 6,
+          "surface": "אֲשֶׁר",
+          "ja": "～すること"
+        },
+        {
+          "token_id": 24299,
+          "token_index": 7,
+          "surface": "ה֥וּא",
+          "ja": "彼が"
+        },
+        {
+          "token_id": 24300,
+          "token_index": 8,
+          "surface": "עֹשֶׂ֖ה",
+          "ja": "行っている"
+        },
+        {
+          "token_id": 24301,
+          "token_index": 9,
+          "surface": "לָעָ֑ם",
+          "ja": "その民のために"
+        },
+        {
+          "token_id": 24302,
+          "token_index": 10,
+          "surface": "וַיֹּ֗אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 24303,
+          "token_index": 11,
+          "surface": "מָֽה",
+          "ja": "何か"
+        },
+        {
+          "token_id": 24304,
+          "token_index": 12,
+          "surface": "הַדָּבָ֤ר",
+          "ja": "その事は"
+        },
+        {
+          "token_id": 24305,
+          "token_index": 13,
+          "surface": "הַזֶּה֙",
+          "ja": "この"
+        },
+        {
+          "token_id": 24306,
+          "token_index": 14,
+          "surface": "אֲשֶׁ֨ר",
+          "ja": "～している"
+        },
+        {
+          "token_id": 24307,
+          "token_index": 15,
+          "surface": "אַתָּ֤ה",
+          "ja": "あなたが"
+        },
+        {
+          "token_id": 24308,
+          "token_index": 16,
+          "surface": "עֹשֶׂה֙",
+          "ja": "行っている"
+        },
+        {
+          "token_id": 24309,
+          "token_index": 17,
+          "surface": "לָעָ֔ם",
+          "ja": "その民に対して"
+        },
+        {
+          "token_id": 24310,
+          "token_index": 18,
+          "surface": "מַדּ֗וּעַ",
+          "ja": "なぜ"
+        },
+        {
+          "token_id": 24311,
+          "token_index": 19,
+          "surface": "אַתָּ֤ה",
+          "ja": "あなたは"
+        },
+        {
+          "token_id": 24312,
+          "token_index": 20,
+          "surface": "יוֹשֵׁב֙",
+          "ja": "座っているのか"
+        },
+        {
+          "token_id": 24313,
+          "token_index": 21,
+          "surface": "לְבַדֶּ֔ךָ",
+          "ja": "あなた一人で"
+        },
+        {
+          "token_id": 24314,
+          "token_index": 22,
+          "surface": "וְכָל",
+          "ja": "そしてすべての"
+        },
+        {
+          "token_id": 24315,
+          "token_index": 23,
+          "surface": "הָעָ֛ם",
+          "ja": "その民が"
+        },
+        {
+          "token_id": 24316,
+          "token_index": 24,
+          "surface": "נִצָּ֥ב",
+          "ja": "立っているのか"
+        },
+        {
+          "token_id": 24317,
+          "token_index": 25,
+          "surface": "עָלֶ֖יךָ",
+          "ja": "あなたのそばに"
+        },
+        {
+          "token_id": 24318,
+          "token_index": 26,
+          "surface": "מִן",
+          "ja": "～から"
+        },
+        {
+          "token_id": 24319,
+          "token_index": 27,
+          "surface": "בֹּ֥קֶר",
+          "ja": "朝"
+        },
+        {
+          "token_id": 24320,
+          "token_index": 28,
+          "surface": "עַד",
+          "ja": "～まで"
+        },
+        {
+          "token_id": 24321,
+          "token_index": 29,
+          "surface": "עָֽרֶב",
+          "ja": "夕方"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.15",
+      "tokens": [
+        {
+          "token_id": 24322,
+          "token_index": 1,
+          "surface": "וַיֹּ֥אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 24323,
+          "token_index": 2,
+          "surface": "מֹשֶׁ֖ה",
+          "ja": "モーセは"
+        },
+        {
+          "token_id": 24324,
+          "token_index": 3,
+          "surface": "לְחֹתְנ֑וֹ",
+          "ja": "彼のしゅうとに"
+        },
+        {
+          "token_id": 24325,
+          "token_index": 4,
+          "surface": "כִּֽי",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 24326,
+          "token_index": 5,
+          "surface": "יָבֹ֥א",
+          "ja": "来るからです"
+        },
+        {
+          "token_id": 24327,
+          "token_index": 6,
+          "surface": "אֵלַ֛י",
+          "ja": "私のもとへ"
+        },
+        {
+          "token_id": 24328,
+          "token_index": 7,
+          "surface": "הָעָ֖ם",
+          "ja": "その民が"
+        },
+        {
+          "token_id": 24329,
+          "token_index": 8,
+          "surface": "לִדְרֹ֥שׁ",
+          "ja": "求めるために"
+        },
+        {
+          "token_id": 24330,
+          "token_index": 9,
+          "surface": "אֱלֹהִֽים",
+          "ja": "神を"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.16",
+      "tokens": [
+        {
+          "token_id": 24331,
+          "token_index": 1,
+          "surface": "כִּֽי",
+          "ja": "～の時"
+        },
+        {
+          "token_id": 24332,
+          "token_index": 2,
+          "surface": "יִהְיֶ֨ה",
+          "ja": "生じる"
+        },
+        {
+          "token_id": 24333,
+          "token_index": 3,
+          "surface": "לָהֶ֤ם",
+          "ja": "彼らに"
+        },
+        {
+          "token_id": 24334,
+          "token_index": 4,
+          "surface": "דָּבָר֙",
+          "ja": "案件が"
+        },
+        {
+          "token_id": 24335,
+          "token_index": 5,
+          "surface": "בָּ֣א",
+          "ja": "来るのです（その者が）"
+        },
+        {
+          "token_id": 24336,
+          "token_index": 6,
+          "surface": "אֵלַ֔י",
+          "ja": "私のもとへ"
+        },
+        {
+          "token_id": 24337,
+          "token_index": 7,
+          "surface": "וְשָׁ֣פַטְתִּ֔י",
+          "ja": "そして私は裁きます"
+        },
+        {
+          "token_id": 24338,
+          "token_index": 8,
+          "surface": "בֵּ֥ין",
+          "ja": "～の間を"
+        },
+        {
+          "token_id": 24339,
+          "token_index": 9,
+          "surface": "אִ֖ישׁ",
+          "ja": "ある人"
+        },
+        {
+          "token_id": 24340,
+          "token_index": 10,
+          "surface": "וּבֵ֣ין",
+          "ja": "そして～の間を"
+        },
+        {
+          "token_id": 24341,
+          "token_index": 11,
+          "surface": "רֵעֵ֑הוּ",
+          "ja": "その人の隣人"
+        },
+        {
+          "token_id": 24342,
+          "token_index": 12,
+          "surface": "וְהוֹדַעְתִּ֛י",
+          "ja": "そして私は知らせます"
+        },
+        {
+          "token_id": 24343,
+          "token_index": 13,
+          "surface": "אֶת",
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 24344,
+          "token_index": 14,
+          "surface": "חֻקֵּ֥י",
+          "ja": "定めを"
+        },
+        {
+          "token_id": 24345,
+          "token_index": 15,
+          "surface": "הָאֱלֹהִ֖ים",
+          "ja": "その神の"
+        },
+        {
+          "token_id": 24346,
+          "token_index": 16,
+          "surface": "וְאֶת",
+          "ja": "そして～を（目的語標識）"
+        },
+        {
+          "token_id": 24347,
+          "token_index": 17,
+          "surface": "תּוֹרֹתָֽיו",
+          "ja": "その方の教えを"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.17",
+      "tokens": [
+        {
+          "token_id": 24348,
+          "token_index": 1,
+          "surface": "וַיֹּ֛אמֶר",
+          "ja": "そして言った"
+        },
+        {
+          "token_id": 24349,
+          "token_index": 2,
+          "surface": "חֹתֵ֥ן",
+          "ja": "しゅうとは"
+        },
+        {
+          "token_id": 24350,
+          "token_index": 3,
+          "surface": "מֹשֶׁ֖ה",
+          "ja": "モーセの"
+        },
+        {
+          "token_id": 24351,
+          "token_index": 4,
+          "surface": "אֵלָ֑יו",
+          "ja": "彼に"
+        },
+        {
+          "token_id": 24352,
+          "token_index": 5,
+          "surface": "לֹא",
+          "ja": "～ではない"
+        },
+        {
+          "token_id": 24353,
+          "token_index": 6,
+          "surface": "טוֹב֙",
+          "ja": "よい"
+        },
+        {
+          "token_id": 24354,
+          "token_index": 7,
+          "surface": "הַדָּבָ֔ר",
+          "ja": "その事は"
+        },
+        {
+          "token_id": 24355,
+          "token_index": 8,
+          "surface": "אֲשֶׁ֥ר",
+          "ja": "～している"
+        },
+        {
+          "token_id": 24356,
+          "token_index": 9,
+          "surface": "אַתָּ֖ה",
+          "ja": "あなたが"
+        },
+        {
+          "token_id": 24357,
+          "token_index": 10,
+          "surface": "עֹשֶֽׂה",
+          "ja": "行っている"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.18",
+      "tokens": [
+        {
+          "token_id": 24358,
+          "token_index": 1,
+          "surface": "נָבֹ֣ל",
+          "ja": "必ず疲れ果てることになる"
+        },
+        {
+          "token_id": 24359,
+          "token_index": 2,
+          "surface": "תִּבֹּ֔ל",
+          "ja": "あなたは疲れ果てる"
+        },
+        {
+          "token_id": 24360,
+          "token_index": 3,
+          "surface": "גַּם",
+          "ja": "～も"
+        },
+        {
+          "token_id": 24361,
+          "token_index": 4,
+          "surface": "אַתָּ֕ה",
+          "ja": "あなた"
+        },
+        {
+          "token_id": 24362,
+          "token_index": 5,
+          "surface": "גַּם",
+          "ja": "～も"
+        },
+        {
+          "token_id": 24363,
+          "token_index": 6,
+          "surface": "הָעָ֥ם",
+          "ja": "その民"
+        },
+        {
+          "token_id": 24364,
+          "token_index": 7,
+          "surface": "הַזֶּ֖ה",
+          "ja": "この"
+        },
+        {
+          "token_id": 24365,
+          "token_index": 8,
+          "surface": "אֲשֶׁ֣ר",
+          "ja": "～する"
+        },
+        {
+          "token_id": 24366,
+          "token_index": 9,
+          "surface": "עִמָּ֑ךְ",
+          "ja": "あなたと共にいる"
+        },
+        {
+          "token_id": 24367,
+          "token_index": 10,
+          "surface": "כִּֽי",
+          "ja": "なぜなら"
+        },
+        {
+          "token_id": 24368,
+          "token_index": 11,
+          "surface": "כָבֵ֤ד",
+          "ja": "重すぎる"
+        },
+        {
+          "token_id": 24369,
+          "token_index": 12,
+          "surface": "מִמְּךָ֙",
+          "ja": "あなたの力を超えて"
+        },
+        {
+          "token_id": 24370,
+          "token_index": 13,
+          "surface": "הַדָּבָ֔ר",
+          "ja": "その事は"
+        },
+        {
+          "token_id": 24371,
+          "token_index": 14,
+          "surface": "לֹא",
+          "ja": "～ない"
+        },
+        {
+          "token_id": 24372,
+          "token_index": 15,
+          "surface": "תוּכַ֥ל",
+          "ja": "あなたはできる"
+        },
+        {
+          "token_id": 24373,
+          "token_index": 16,
+          "surface": "עֲשֹׂ֖הוּ",
+          "ja": "それを行うことが"
+        },
+        {
+          "token_id": 24374,
+          "token_index": 17,
+          "surface": "לְבַדֶּֽךָ",
+          "ja": "あなた一人で"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.19",
+      "tokens": [
+        {
+          "token_id": 24375,
+          "token_index": 1,
+          "surface": "עַתָּ֞ה",
+          "ja": "今"
+        },
+        {
+          "token_id": 24376,
+          "token_index": 2,
+          "surface": "שְׁמַ֤ע",
+          "ja": "聞きなさい"
+        },
+        {
+          "token_id": 24377,
+          "token_index": 3,
+          "surface": "בְּקֹלִי֙",
+          "ja": "私の声に"
+        },
+        {
+          "token_id": 24378,
+          "token_index": 4,
+          "surface": "אִיעָ֣צְךָ֔",
+          "ja": "私はあなたに助言しよう"
+        },
+        {
+          "token_id": 24379,
+          "token_index": 5,
+          "surface": "וִיהִ֥י",
+          "ja": "そして共にありますように"
+        },
+        {
+          "token_id": 24380,
+          "token_index": 6,
+          "surface": "אֱלֹהִ֖ים",
+          "ja": "神が"
+        },
+        {
+          "token_id": 24381,
+          "token_index": 7,
+          "surface": "עִמָּ֑ךְ",
+          "ja": "あなたと"
+        },
+        {
+          "token_id": 24382,
+          "token_index": 8,
+          "surface": "הֱיֵ֧ה",
+          "ja": "なりなさい"
+        },
+        {
+          "token_id": 24383,
+          "token_index": 9,
+          "surface": "אַתָּ֣ה",
+          "ja": "あなたが"
+        },
+        {
+          "token_id": 24384,
+          "token_index": 10,
+          "surface": "לָעָ֗ם",
+          "ja": "その民のために"
+        },
+        {
+          "token_id": 24385,
+          "token_index": 11,
+          "surface": "מ֚וּל",
+          "ja": "～の前に立つ者に"
+        },
+        {
+          "token_id": 24386,
+          "token_index": 12,
+          "surface": "הָֽאֱלֹהִ֔ים",
+          "ja": "その神の"
+        },
+        {
+          "token_id": 24387,
+          "token_index": 13,
+          "surface": "וְהֵבֵאתָ֥",
+          "ja": "そして持って行きなさい"
+        },
+        {
+          "token_id": 24388,
+          "token_index": 14,
+          "surface": "אַתָּ֛ה",
+          "ja": "あなたが"
+        },
+        {
+          "token_id": 24389,
+          "token_index": 15,
+          "surface": "אֶת",
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 24390,
+          "token_index": 16,
+          "surface": "הַדְּבָרִ֖ים",
+          "ja": "その案件を"
+        },
+        {
+          "token_id": 24391,
+          "token_index": 17,
+          "surface": "אֶל",
+          "ja": "～のもとへ"
+        },
+        {
+          "token_id": 24392,
+          "token_index": 18,
+          "surface": "הָאֱלֹהִֽים",
+          "ja": "その神の"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.20",
+      "tokens": [
+        {
+          "token_id": 24403,
+          "token_index": 1,
+          "surface": "וְהִזְהַרְתָּ֣ה",
+          "ja": "そして教え諭しなさい"
+        },
+        {
+          "token_id": 24404,
+          "token_index": 2,
+          "surface": "אֶתְהֶ֔ם",
+          "ja": "彼らに"
+        },
+        {
+          "token_id": 24405,
+          "token_index": 3,
+          "surface": "אֶת",
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 24406,
+          "token_index": 4,
+          "surface": "הַחֻקִּ֖ים",
+          "ja": "その定めを"
+        },
+        {
+          "token_id": 24407,
+          "token_index": 5,
+          "surface": "וְאֶת",
+          "ja": "そして～を（目的語標識）"
+        },
+        {
+          "token_id": 24408,
+          "token_index": 6,
+          "surface": "הַתּוֹרֹ֑ת",
+          "ja": "その教えを"
+        },
+        {
+          "token_id": 24409,
+          "token_index": 7,
+          "surface": "וְהוֹדַעְתָּ֣",
+          "ja": "そして知らせなさい"
+        },
+        {
+          "token_id": 24410,
+          "token_index": 8,
+          "surface": "לָהֶ֗ם",
+          "ja": "彼らに"
+        },
+        {
+          "token_id": 24411,
+          "token_index": 9,
+          "surface": "אֶת",
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 24412,
+          "token_index": 10,
+          "surface": "הַדֶּ֨רֶךְ֙",
+          "ja": "その道を"
+        },
+        {
+          "token_id": 24413,
+          "token_index": 11,
+          "surface": "יֵ֣לְכוּ",
+          "ja": "彼らが歩むべき"
+        },
+        {
+          "token_id": 24414,
+          "token_index": 12,
+          "surface": "בָ֔הּ",
+          "ja": "その道の中を"
+        },
+        {
+          "token_id": 24415,
+          "token_index": 13,
+          "surface": "וְאֶת",
+          "ja": "そして～を（目的語標識）"
+        },
+        {
+          "token_id": 24416,
+          "token_index": 14,
+          "surface": "הַֽמַּעֲשֶׂ֖ה",
+          "ja": "その行いを"
+        },
+        {
+          "token_id": 24417,
+          "token_index": 15,
+          "surface": "אֲשֶׁ֥ר",
+          "ja": "～するべき"
+        },
+        {
+          "token_id": 24418,
+          "token_index": 16,
+          "surface": "יַעֲשֽׂוּן",
+          "ja": "彼らが行う"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.21",
+      "tokens": [
+        {
+          "token_id": 24419,
+          "token_index": 1,
+          "surface": "וְאַתָּ֣ה",
+          "ja": "そしてあなたは"
+        },
+        {
+          "token_id": 24420,
+          "token_index": 2,
+          "surface": "תֶחֱזֶ֣ה",
+          "ja": "見定めなさい"
+        },
+        {
+          "token_id": 24421,
+          "token_index": 3,
+          "surface": "מִכָּל",
+          "ja": "すべての中から"
+        },
+        {
+          "token_id": 24422,
+          "token_index": 4,
+          "surface": "הָ֠עָם",
+          "ja": "その民の"
+        },
+        {
+          "token_id": 24423,
+          "token_index": 5,
+          "surface": "אַנְשֵׁי",
+          "ja": "人々を"
+        },
+        {
+          "token_id": 24424,
+          "token_index": 6,
+          "surface": "חַ֜יִל",
+          "ja": "力量のある"
+        },
+        {
+          "token_id": 24425,
+          "token_index": 7,
+          "surface": "יִרְאֵ֧י",
+          "ja": "畏れる者たちを"
+        },
+        {
+          "token_id": 24426,
+          "token_index": 8,
+          "surface": "אֱלֹהִ֛ים",
+          "ja": "神を"
+        },
+        {
+          "token_id": 24427,
+          "token_index": 9,
+          "surface": "אַנְשֵׁ֥י",
+          "ja": "人々を"
+        },
+        {
+          "token_id": 24428,
+          "token_index": 10,
+          "surface": "אֱמֶ֖ת",
+          "ja": "誠実な"
+        },
+        {
+          "token_id": 24429,
+          "token_index": 11,
+          "surface": "שֹׂ֣נְאֵי",
+          "ja": "憎む者たちを"
+        },
+        {
+          "token_id": 24430,
+          "token_index": 12,
+          "surface": "בָ֑צַע",
+          "ja": "不正な利得を"
+        },
+        {
+          "token_id": 24431,
+          "token_index": 13,
+          "surface": "וְשַׂמְתָּ֣",
+          "ja": "そして任命しなさい"
+        },
+        {
+          "token_id": 24432,
+          "token_index": 14,
+          "surface": "עֲלֵהֶ֗ם",
+          "ja": "彼らの上に"
+        },
+        {
+          "token_id": 24433,
+          "token_index": 15,
+          "surface": "שָׂרֵ֤י",
+          "ja": "長たちを"
+        },
+        {
+          "token_id": 24434,
+          "token_index": 16,
+          "surface": "אֲלָפִים֙",
+          "ja": "千人の"
+        },
+        {
+          "token_id": 24435,
+          "token_index": 17,
+          "surface": "שָׂרֵ֣י",
+          "ja": "長たちを"
+        },
+        {
+          "token_id": 24436,
+          "token_index": 18,
+          "surface": "מֵא֔וֹת",
+          "ja": "百人の"
+        },
+        {
+          "token_id": 24437,
+          "token_index": 19,
+          "surface": "שָׂרֵ֥י",
+          "ja": "長たちを"
+        },
+        {
+          "token_id": 24438,
+          "token_index": 20,
+          "surface": "חֲמִשִּׁ֖ים",
+          "ja": "五十人の"
+        },
+        {
+          "token_id": 24439,
+          "token_index": 21,
+          "surface": "וְשָׂרֵ֥י",
+          "ja": "そして長たちを"
+        },
+        {
+          "token_id": 24440,
+          "token_index": 22,
+          "surface": "עֲשָׂרֹֽת",
+          "ja": "十人の"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.22",
+      "tokens": [
+        {
+          "token_id": 24441,
+          "token_index": 1,
+          "surface": "וְשָׁפְט֣וּ",
+          "ja": "そして裁かせなさい"
+        },
+        {
+          "token_id": 24442,
+          "token_index": 2,
+          "surface": "אֶת",
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 24443,
+          "token_index": 3,
+          "surface": "הָעָם֮",
+          "ja": "その民を"
+        },
+        {
+          "token_id": 24444,
+          "token_index": 4,
+          "surface": "בְּכָל",
+          "ja": "あらゆる～に"
+        },
+        {
+          "token_id": 24445,
+          "token_index": 5,
+          "surface": "עֵת֒",
+          "ja": "時"
+        },
+        {
+          "token_id": 24446,
+          "token_index": 6,
+          "surface": "וְהָיָ֞ה",
+          "ja": "そして、こうしなさい"
+        },
+        {
+          "token_id": 24447,
+          "token_index": 7,
+          "surface": "כָּל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 24448,
+          "token_index": 8,
+          "surface": "הַדָּבָ֤ר",
+          "ja": "その案件"
+        },
+        {
+          "token_id": 24449,
+          "token_index": 9,
+          "surface": "הַגָּדֹל֙",
+          "ja": "大きな"
+        },
+        {
+          "token_id": 24450,
+          "token_index": 10,
+          "surface": "יָבִ֣יאוּ",
+          "ja": "彼らが持って来るように"
+        },
+        {
+          "token_id": 24451,
+          "token_index": 11,
+          "surface": "אֵלֶ֔יךָ",
+          "ja": "あなたのもとへ"
+        },
+        {
+          "token_id": 24452,
+          "token_index": 12,
+          "surface": "וְכָל",
+          "ja": "そしてすべての"
+        },
+        {
+          "token_id": 24453,
+          "token_index": 13,
+          "surface": "הַדָּבָ֥ר",
+          "ja": "その案件"
+        },
+        {
+          "token_id": 24454,
+          "token_index": 14,
+          "surface": "הַקָּטֹ֖ן",
+          "ja": "小さな"
+        },
+        {
+          "token_id": 24455,
+          "token_index": 15,
+          "surface": "יִשְׁפְּטוּ",
+          "ja": "裁くように"
+        },
+        {
+          "token_id": 24456,
+          "token_index": 16,
+          "surface": "הֵ֑ם",
+          "ja": "彼ら自身が"
+        },
+        {
+          "token_id": 24457,
+          "token_index": 17,
+          "surface": "וְהָקֵל֙",
+          "ja": "そして軽くしなさい"
+        },
+        {
+          "token_id": 24458,
+          "token_index": 18,
+          "surface": "מֵֽעָלֶ֔יךָ",
+          "ja": "あなたの上から"
+        },
+        {
+          "token_id": 24459,
+          "token_index": 19,
+          "surface": "וְנָשְׂא֖וּ",
+          "ja": "そして担うように"
+        },
+        {
+          "token_id": 24460,
+          "token_index": 20,
+          "surface": "אִתָּֽךְ",
+          "ja": "あなたと共に"
+        }
+      ]
+    },
+    {
+      "ref": "Exod.18.23",
+      "tokens": [
+        {
+          "token_id": 24461,
+          "token_index": 1,
+          "surface": "אִ֣ם",
+          "ja": "もし"
+        },
+        {
+          "token_id": 24462,
+          "token_index": 2,
+          "surface": "אֶת",
+          "ja": "～を（目的語標識）"
+        },
+        {
+          "token_id": 24463,
+          "token_index": 3,
+          "surface": "הַדָּבָ֤ר",
+          "ja": "その事を"
+        },
+        {
+          "token_id": 24464,
+          "token_index": 4,
+          "surface": "הַזֶּה֙",
+          "ja": "この"
+        },
+        {
+          "token_id": 24465,
+          "token_index": 5,
+          "surface": "תַּעֲשֶׂ֔ה",
+          "ja": "あなたが行い"
+        },
+        {
+          "token_id": 24466,
+          "token_index": 6,
+          "surface": "וְצִוְּךָ֣",
+          "ja": "そしてあなたに命じるなら"
+        },
+        {
+          "token_id": 24467,
+          "token_index": 7,
+          "surface": "אֱלֹהִ֔ים",
+          "ja": "神が"
+        },
+        {
+          "token_id": 24468,
+          "token_index": 8,
+          "surface": "וְיָֽכָלְתָּ֖",
+          "ja": "そうすれば、あなたはできる"
+        },
+        {
+          "token_id": 24469,
+          "token_index": 9,
+          "surface": "עֲמֹ֑ד",
+          "ja": "持ちこたえることが"
+        },
+        {
+          "token_id": 24470,
+          "token_index": 10,
+          "surface": "וְגַם֙",
+          "ja": "そして～も"
+        },
+        {
+          "token_id": 24471,
+          "token_index": 11,
+          "surface": "כָּל",
+          "ja": "すべての"
+        },
+        {
+          "token_id": 24472,
+          "token_index": 12,
+          "surface": "הָעָ֣ם",
+          "ja": "その民"
+        },
+        {
+          "token_id": 24473,
+          "token_index": 13,
+          "surface": "הַזֶּ֔ה",
+          "ja": "この"
+        },
+        {
+          "token_id": 24474,
+          "token_index": 14,
+          "surface": "עַל",
+          "ja": "～へ"
+        },
+        {
+          "token_id": 24475,
+          "token_index": 15,
+          "surface": "מְקֹמ֖וֹ",
+          "ja": "それぞれの居場所"
+        },
+        {
+          "token_id": 24476,
+          "token_index": 16,
+          "surface": "יָבֹ֥א",
+          "ja": "帰るだろう"
+        },
+        {
+          "token_id": 24477,
+          "token_index": 17,
+          "surface": "בְשָׁלֽוֹם",
+          "ja": "平安のうちに"
+        }
+      ]
+    }
+  ],
+  "media_status": {
+    "audio_status": "PASS",
+    "audio_implemented_count": 11,
+    "audio_expected_count": 11,
+    "missing_audio_refs": [],
+    "audio_failures": [],
+    "html_status": "PASS",
+    "html_implemented_count": 11,
+    "missing_html_refs": [],
+    "pages_status": "PASS",
+    "ai_generated_audio_refs": [],
+    "open_bible_audio_refs": []
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "イトロ｜第2アリヤー｜出エジプト記18:13–23"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "callout",
+      "callout": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "モーセは朝から夕方まで民を裁き、人々はそのそばに立ち続けます。しゅうとは、疲れ果てるのはモーセだけでなく民も同じだと告げます。提案は仕事を投げ出すことではありません。神の前に立ち、歩む道を教える役割を保ちながら、誠実で利得に惑わされない人々と裁きを分かつことです。目指すのは、働き手が持ちこたえ、民が平安に帰れる営み。一人の献身を増すより、共に担える形を整えるよう招かれます。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "一人で抱えず、民が平安に帰れるように"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:13"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_13_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：翌日、モーセは民を裁くために座り、民は朝から夕方までモーセのそばに立っていた。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-13.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『裁くために』は目的を示す前置詞と不定詞の組合せ。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "座る一人と、立って待つ民"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『裁くために』は目的を示す前置詞と不定詞の組合せ。座るモーセと立つ民が対照をなし、朝から夕方までという両端の時刻が長い一日を描く。民を表す名詞は集合を示す単数で、それに単数の動詞が対応する。『翌日』は語りを次の場面へ進めるが、それだけで他の出来事との精密な暦日を確定しない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "一人が長く働いている時、待ち続ける人々もいる。働き手の献身だけに感心せず、その周囲で誰がどのように待っているかを見てみたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:14"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_14_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセのしゅうとは、モーセが民のためにしていることをすべて見て、言った。「あなたが民にしているこのことは、どういうことですか。なぜあなた一人が座り、民は皆、朝から夕方まであなたのそばに立っているのですか。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-14.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『何か』と『なぜか』という二つの疑問が重なる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "見た事実を、問いに変える"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『何か』と『なぜか』という二つの疑問が重なる。『民のために／民に対して』という同じ前置詞句は、奉仕の目的と実際の影響の両方へ注意を向ける。『あなた一人で』と『すべての民』の対照が問題を可視化する。しゅうとは仕事の内容を聞く前に、まず人々の配置と時間の使われ方を見ている。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "助言を急ぐ前に、実際の現場をよく見たい。いつものやり方を尋ねられた時にも、批判と決めつけず、説明し合う入口として受け止めたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:15"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_15_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセはしゅうとに言った。「民が神に尋ね求めるため、私のもとへ来るからです。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-15.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：来るという未完了形は、ここでは繰り返される営みを説明する。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "民が求めるものと、モーセの役割"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "来るという未完了形は、ここでは繰り返される営みを説明する。『神を求めるために』という目的句によって、裁きは単なる事務処理として語られない。ラシ18:15はこれを神から教えを求めることとして説明する。だからこそ、次の助言は神との関わりを捨てるのでなく、その役割を保ちながら担い方を変える提案となる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』18:15–16（Chabad掲載、ヘブライ語本文・英訳）",
+                    "link": {
+                      "url": "https://www.chabad.org/library/bible_cdo/aid/9879/jewish/Chapter-18.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "人が何を求めて訪れるのかを、表面的な用件だけで決めたくない。同時に、大切な願いを受け止める責任が、すべてを一人で行う理由になっていないかも問い直したい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:16"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_16_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：彼らに案件が生じると、その当事者が私のもとへ来ます。私はある人とその隣人との間を裁き、神の定めとその教えを知らせるのです。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-16.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『彼らに案件がある時』に続く来るという動詞は男性単数で、私訳は文脈上の当事者を補っている。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "裁くことと、知らせること"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『彼らに案件がある時』に続く来るという動詞は男性単数で、私訳は文脈上の当事者を補っている。ラシ18:16も、案件を持つ者が来ると説明する。『～の間と～の間』という対句は当事者間を裁くことを示す。知らせるというヒフィル形には、判定だけでなく規準を伝える役割が含まれる。複数形の『教え』を、ここだけで後代の完成した書物全体と同一視しない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』18:15–16（Chabad掲載、ヘブライ語本文・英訳）",
+                    "link": {
+                      "url": "https://www.chabad.org/library/bible_cdo/aid/9879/jewish/Chapter-18.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "結論を伝えるだけで、相手に規準が伝わったと思わないようにしたい。何を根拠に判断したのかを共有することも、人が共に生きる力を育てる。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "13–16節：営みの目的と、その現場に生じる負担"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "13節の座るモーセと立つ民の対比が、14節ではしゅうとの問いとして繰り返される。15–16節の説明によれば、民は神に尋ね、争いについて裁きを受け、定めと教えを知らされるために来る。目的は大切である。しかし目的の尊さを挙げるだけでは、一人に集中し、人々が一日待つ状況への答えにならない。本文は善意の奉仕を単純に悪とせず、外から見た問いと当事者の説明を並べる。問いに対して、まず何のために行っているかを語り合うことが、次の改善を具体的にする。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:17"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_17_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：モーセのしゅうとは彼に言った。「あなたのしていることは、よくありません。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-17.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『よくない』という述語が先に置かれ、その評価の対象は『あなたがしているこの事』である。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "人を否定せず、行いを評価する"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『よくない』という述語が先に置かれ、その評価の対象は『あなたがしているこの事』である。モーセの人格全体を悪いと言う文ではない。行うという分詞は、目の前で続いている営みを指す。奉仕の動機が尊いことと、現在の方法がよいことを同一にしない問いがここで立てられる。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "大切な働きについて、よくないと言い合える関係を持ちたい。人格の否定にせず、変える必要のある行いを具体的に言葉にする勇気を与えられたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:18"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_18_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：あなたも、あなたと共にいるこの民も、必ず疲れ果ててしまいます。この仕事はあなたの力を超えて重く、一人では行えないからです。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-18.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：同じ語根の絶対不定詞と未完了形を重ねた『必ず疲れ果てる』が、強い警告を作る。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "疲れ果てるのは、あなたも民も"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "同じ語根の絶対不定詞と未完了形を重ねた『必ず疲れ果てる』が、強い警告を作る。『あなたも、民も』という反復により、負担は指導者だけの問題に限定されない。『あなたより重い』という比較表現は、仕事が本人の力を超えることを表す。末尾の『一人で』は14節の問いを受け、解決すべき集中を明らかにする。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "自分だけが耐えればよいと思っても、その仕組みの中で周囲も疲れているかもしれない。一人ではできないと認めることを、責任から逃げる言葉ではなく共に守られる入口にしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:19"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_19_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：今、私の声を聞いてください。あなたに助言します。神があなたと共におられますように。あなたは民のために神の前に立ち、案件を神のもとへ持って行ってください。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-19.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：聞け・なれという命令に、神が共にありますようにという願いの形が挟まる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "助言は、役割の放棄を求めない"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "聞け・なれという命令に、神が共にありますようにという願いの形が挟まる。『民のために、神に向かって』という配置が、モーセの担う仲介の役割を残す。持って行くというヒフィル形では、あなたという代名詞が再度明示される。ラシ18:19は、この助言を神に諮るものとして読む。助言者が自分の案を神の命令そのものとして押し付ける場面にはしない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』18:19、23（Chabad掲載、ヘブライ語本文・英訳）",
+                    "link": {
+                      "url": "https://www.chabad.org/library/bible_cdo/aid/9879/jewish/Chapter-18.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "役割を分ける時、何を手放し、何を大切に担い続けるのかを確かめたい。助言する側も、自分の考えだけで相手の責任を支配しないようにしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:20"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_20_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：あなたは彼らに定めと教えを教え諭し、彼らが歩むべき道と、行うべき行いを知らせてください。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-20.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：教え諭すというヒフィル形に続いて、知らせるというヒフィル形が重なる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "教えを、歩む道と行いへつなぐ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "教え諭すというヒフィル形に続いて、知らせるというヒフィル形が重なる。定め・教えだけでなく、歩む道・行う行いが並び、知識と生活が切り離されない。『その中を』の女性単数接尾辞は道を受ける。最後の動詞末尾のヌンは複数主語の形に加わったもので、別の行為者を追加しない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "担い手を増やすには、仕事を渡すだけでなく、共通の道筋を学ぶ時間が要る。何を大切にし、どんな行いを選ぶのかを、共に理解できる言葉で伝えたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "17–20節：共に疲れ果てる仕組みを変える"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "17節の『よくない』は、18節のあなたも民も疲れ果てるという理由で説明される。解決はモーセの努力を増やす命令ではない。19節では神の前に立つ役割を残し、20節では人々に道と行いを知らせる役割を明確にする。知識を一人の判断に閉じ込めず、共に行動できる規準へ開くのである。人々を教えることと、仕事を分かつことは対立しない。この流れは、指導者を休ませることだけでなく、民が教えを知り、裁きに届くことも視野に入れる。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:21"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_21_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：また、あなたは民全体の中から、力量があり、神を畏れ、誠実で、不正な利得を憎む人々を見定め、千人の長、百人の長、五十人の長、十人の長として民の上に任命してください。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-21.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：見定めるという動詞の対象は、民全体から選ぶ人々である。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "力量と、信頼できる人格"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "見定めるという動詞の対象は、民全体から選ぶ人々である。力量、神への畏れ、誠実、不正な利得を嫌うことが一緒に挙げられ、能力だけの選抜ではない。ラシ18:21:2–4は、力量を迎合の不要な経済的独立へ、誠実を言葉への信頼へ結び付け、自分の財産の扱いにも裁く者の適格性を問う。これは具体的な注解伝統であり、富の多さ自体を本文の唯一の資格に置き換えない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』18:21:2–4",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Exodus.18.21?lang2=en&with=Exodus"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "よく仕事ができるかだけで、人を選んでいないだろうか。約束を守ること、利得のために判断を曲げないことを、担い手を信頼する具体的な規準にしたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:22"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_22_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：彼らにいつでも民を裁かせ、大きな案件はあなたのもとへ持って来させ、小さな案件は彼ら自身に裁かせてください。こうしてあなたの上の重荷を軽くし、彼らがあなたと共に担うようにするのです。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-22.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『大きな案件』と『小さな案件』が対照となり、すべてを一つの窓口へ集める形を変える。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "あなたに代わってでなく、あなたと共に"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『大きな案件』と『小さな案件』が対照となり、すべてを一つの窓口へ集める形を変える。複数の裁く者を受ける『彼ら自身』が明示され、単なる名目上の補助者に留めない。最後は『あなたと共に担う』であり、モーセを不要とするのでなく責任を分かつ。ここは助言の内容であり、既にすべて実施済みだと訳さない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "人に任せながら、最後は全部自分でやり直してしまうことがある。共に担うために、判断できる範囲と相談する範囲を明確にして、相手に本当に委ねたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "出エジプト記 18:23"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "audio",
+      "audio": {
+        "type": "external",
+        "external": {
+          "url": "https://raw.githubusercontent.com/theologia165/torah-hebrew-html/asaichi-torah-ver3/ver3/runs/114-20261123-r1/audio/114_23_r2.mp3"
+        },
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "私訳：あなたがこのことを行い、神もそのようにあなたに命じられるなら、あなたは持ちこたえ、この民も皆、それぞれの居場所へ平安のうちに帰ることができるでしょう。」"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_3",
+      "heading_3": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ヘブライ語"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "embed",
+      "embed": {
+        "url": "https://theologia165.github.io/torah-hebrew-html/ver3-public/114-20261123-r1/exodus-18-23.html",
+        "caption": []
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "簡易な説明：『もし』で始まる条件に、人の実行と神の命令が共に置かれる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "詳しい解説"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "持ちこたえる働き手と、平安に帰る民"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "『もし』で始まる条件に、人の実行と神の命令が共に置かれる。『立つことができる』は文脈上、倒れず持ちこたえること。13–14節では民が長時間立ち続けたが、結びではモーセが持ちこたえ、民が平安に帰るという方向へ変わる。『その場所』の単数接尾辞は集合としての民を受け、各人の居場所へ帰ると訳した。約束の地への到着だけに意味を限定しない。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "heading_3",
+            "heading_3": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "デボーショナルな受けとめ"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "働き手が持ちこたえ、人々が平安に帰れることを、働きの成果として大切にしたい。今日の仕事を終えた後にどんな暮らしが残るかまで見渡して、やり方を選びたい。"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "21–23節：選ぶ規準、裁きの分担、平安という目的"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "21節の資格は、仕事をこなせる力量と判断を曲げない人格を結び付ける。22節は大きな案件と小さな案件を分け、『彼ら自身』が裁く範囲を与える。23節の条件を保つなら、人間の提案がそのまま無条件の神命とされているわけではない。目標は単に処理件数を増すことでなく、モーセが持ちこたえ、民が平安に帰ることである。この範囲ではまだ助言であることを保ち、千・百・五十・十という区分を、そのまま現代組織へ適用すべき唯一の人数配分とはしない。"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "まとめ"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "この範囲は、裁きに集まる民と一人のモーセの姿から、しゅうとの問い、モーセの説明、具体的な提案とその目的へ進む。神を求めるという目的は捨てられず、教える責任と裁く責任をどう分かつかが問われる。力量に加えて畏れ・誠実・不正な利得への拒否が選ぶ規準となり、結びではモーセの持続可能性と民の平安が並ぶ。人を待たせ疲れさせる仕組みまで含めて、共に担う道を考えたい。なお今回の結びは提案の条件と見通しであり、その実施はこの対象範囲の後に語られる。"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "このアリヤーをさらに学ぶ"
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "文学的観察――『一人で』から『共に』へ、立ち続ける民から帰れる民へ"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "14節と18節の『一人で』に対し、22節は『あなたと共に担う』で応じる。13–14節では民が朝から夕方まで立つが、23節ではモーセが持ちこたえ、民が平安に帰る。立つという語の文脈上の働きが変わることで、働き手と受け手の双方が保たれる方向が示される。しゅうとの問いと助言、モーセによる役割の説明を通して改善が語られる点も大切である。これは今回の本文に基づく独自の構成観察で、成立年代や実際の古代司法制度を確定する主張ではない。"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "現代研究――分担を、共同体への責任として読む"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Paul Sciberrasの2023年の論文は、18:8–26を現代の共同体倫理として読み、§5で裁きを受けられるまでの遅延にも注目する。§6では教えること、責任を分かつこと、目標を共有することを結び付ける。この論点は、分担を指導者だけの負担軽減へ縮めず、判断を必要とする民の利益から考える助けとなる。ただし補完性や共同責任という語は現代の倫理的な分析枠組みであり、古代本文に現代制度の用語がそのままあるという説明ではない。今回の範囲では、民の疲弊、教える役割、共に担うこと、平安という表現を根拠として受け止める。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "Paul Sciberras, “Jethro and Moses in Dialogue (Exodus 18: 8–26): Ethics of Communitarian Responsibility,” Religions 14/5 (2023), 587, §§5–6",
+                    "link": {
+                      "url": "https://www.mdpi.com/2077-1444/14/5/587"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "ユダヤ教解釈伝統――裁く者の信頼と、助言を神に諮ること"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ18:21:2–4は、裁く者の力量を迎合に陥らない独立性、誠実をその言葉に信頼を置けることへ具体化する。単に人を増やせばよいのでなく、判断を担わせられる人格を問う読みである。また18:19、23では、助言を神に諮ることを強調する。これは本文の条件と祝願を展開する注解として区別して読む。なおラシ18:13は『翌日』を山から降りた後の日程と関連付け、出来事の記載が年代順ではないと説明する。この伝統的な年代調整を、13節の語だけから直接証明された日付とは扱わない。本文の構文の説明、伝統による具体化、他箇所との調整にはそれぞれ異なる役割がある。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』18:21:2–4",
+                    "link": {
+                      "url": "https://www.sefaria.org/Rashi_on_Exodus.18.21?lang2=en&with=Exodus"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』18:19、23（Chabad掲載、ヘブライ語本文・英訳）",
+                    "link": {
+                      "url": "https://www.chabad.org/library/bible_cdo/aid/9879/jewish/Chapter-18.htm"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": " ／ "
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "ラシ『出エジプト記注解』18:13（Chabad掲載、ヘブライ語本文・英訳）",
+                    "link": {
+                      "url": "https://www.chabad.org/library/bible_cdo/aid/9879/jewish/Chapter-18.htm"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "toggle",
+      "toggle": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "キリスト教受容史――オリゲネスの職務と謙遜の読み"
+            }
+          }
+        ],
+        "children": [
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "オリゲネス『出エジプト記講話』11.6のルフィヌス訳ラテン語本文では、裁きを担う人々の務めが争いを解き和解を促すことへ展開される。さらにモーセがしゅうとの助言を受ける姿を、話し手の地位だけで知恵を退けない謙遜の例とする。この後者は18:24まで含む読みなので、今回の13–23節で既に受諾が実施済みとはしない。同じ講話には教会職制・将来の裁きへの予型や、ユダヤ的な文字の理解を低く置く対比もある。後代のキリスト教的な展開をヘブライ語本文の唯一の意味に戻さず、謙遜への促しと序列化の問題を区別する。ここではサイトの自動英訳だけに依存せず、掲載ラテン語の職務・和解・助言の段落を確認した。"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+              "rich_text": [
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "参照："
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": {
+                    "content": "オリゲネス『出エジプト記講話』11.6（ルフィヌスのラテン語訳、PG 12:379b–381b）",
+                    "link": {
+                      "url": "https://sophiascriptura.com/fathers/origen-homiliae-exodum/11-1/#p-11-6"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "color": "blue_background"
+      }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "rich_text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "本文資料：Open Scriptures Hebrew Bible / MorphHB (WLC), CC BY 4.0",
+              "link": {
+                "url": "https://github.com/openscriptures/morphhb"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
