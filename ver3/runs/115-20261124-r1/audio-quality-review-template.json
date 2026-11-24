@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0-audio-content-review",
+  "run_id": "115-20261124-r1",
+  "input_sha256": "361a5b6b09f892474e48f1bbb2f1bf91765a1bc16000264d2b8c9e66597e5353",
+  "manifest_sha256": "e987063c8206a420ff5f53203f97404b761c2f6a2ea43def26420b2cc87d8d46",
+  "reviewer": "",
+  "method": "",
+  "reviewed_at": "",
+  "verses": [
+    {
+      "ref": "18:24",
+      "r1_sha256": "c8592e01f0dc0ee3ce410490fec463b1e3aaf377362e70e91a1142b79242a81a",
+      "r2_sha256": "b50dd77348e8eab385556d680bcaacf48a5b6de545506f738854ad4823b6e42b",
+      "expected_text": "וַיִּשְׁמַע מֹשֶׁה לְקוֹל חֹתְנוֹ וַיַּעַשׂ כֹּל אֲשֶׁר אָמָֽר",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "18:25",
+      "r1_sha256": "9c6efa6dfc6bf9326a230bb492b4d336f19343b35652b798cff1490113832d9c",
+      "r2_sha256": "0459cd4b8e3f607457080259df262e64168187cb524593288d61f175e871e752",
+      "expected_text": "וַיִּבְחַר מֹשֶׁה אַנְשֵׁי חַיִל מִכָּל יִשְׂרָאֵל וַיִּתֵּן אֹתָם רָאשִׁים עַל הָעָם שָׂרֵי אֲלָפִים שָׂרֵי מֵאוֹת שָׂרֵי חֲמִשִּׁים וְשָׂרֵי עֲשָׂרֹֽת",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "18:26",
+      "r1_sha256": "57c410ca988f96a3f0cd2cd662793e85d156b2eadce6c322784aab289828cc3d",
+      "r2_sha256": "e178e98166aa8826cc2f116211b776b9ae7dc80bcbed41d5bdf351f4c961be0f",
+      "expected_text": "וְשָׁפְטוּ אֶת הָעָם בְּכָל עֵת אֶת הַדָּבָר הַקָּשֶׁה יְבִיאוּן אֶל מֹשֶׁה וְכָל הַדָּבָר הַקָּטֹן יִשְׁפּוּטוּ הֵֽם",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    },
+    {
+      "ref": "18:27",
+      "r1_sha256": "9978d6135f7be39e30fa55af9041526deff24c3883861754ed400b40515e47d9",
+      "r2_sha256": "63f420b2899ca4cd50f1bde83eaee0644ca6ef13f57071d22876916e548b8489",
+      "expected_text": "וַיְשַׁלַּח מֹשֶׁה אֶת חֹתְנוֹ וַיֵּלֶךְ לוֹ אֶל אַרְצֽוֹ",
+      "checks": {
+        "first_word": "PENDING",
+        "last_word": "PENDING",
+        "word_order": "PENDING",
+        "no_other_verse": "PENDING",
+        "no_truncation": "PENDING",
+        "study_speed": "PENDING"
+      },
+      "evidence": ""
+    }
+  ]
+}
