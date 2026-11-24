@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "115-20261124-r1",
+  "input_sha256": "361a5b6b09f892474e48f1bbb2f1bf91765a1bc16000264d2b8c9e66597e5353",
+  "manifest_sha256": "e987063c8206a420ff5f53203f97404b761c2f6a2ea43def26420b2cc87d8d46",
+  "audio_sha256": {
+    "18:24": "b50dd77348e8eab385556d680bcaacf48a5b6de545506f738854ad4823b6e42b",
+    "18:25": "0459cd4b8e3f607457080259df262e64168187cb524593288d61f175e871e752",
+    "18:26": "e178e98166aa8826cc2f116211b776b9ae7dc80bcbed41d5bdf351f4c961be0f",
+    "18:27": "63f420b2899ca4cd50f1bde83eaee0644ca6ef13f57071d22876916e548b8489"
+  },
+  "status": "BOUNDARY_PASS",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-24T13:05:20Z",
+  "evidence": "全4節・8件の冒頭/末尾について、期待する各3token、heard、音響上の説明、隣節の語、known_findingsをWorkが全件照合した。全件で期待語が聞き取られたとの観察があり、problem_edges・既知指摘・欠落節は0。隣節混入・語末欠落や切断位置を動かす根拠・提案秒がないため、詳査0回・修復0回・候補0件として今回RUNの現行音声を採用する。抜粋内側の切断端は判定せず、境界の観察結果を全語順・節中央の脱落確認へ拡大しない。全内容は未検品でfull_content_verified=false。API2要求はすべてHTTP200、抜粋計32秒、保守的予約0.079395 USD、実usage由来見積0.01709 USD。API利用不能・予算上限到達・修復失敗なし。",
+  "decision_sha256": "13cd50f84f0d120ed7b5b72242ba3dd5cbe18280d63c0cbb84bc048038bffa9a",
+  "usage_sha256": "79e99df1be4d492df2e33b61115259cec81434eb15a2568dca3432e8a0c5cea1",
+  "report_sha256": "d724939d4c4c746bf1bfc321265153bb79d5c6b3213f7b55f51536c39ccd92bf",
+  "email_disclosure_required": false
+}
