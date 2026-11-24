@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "115-20261124-r1",
+  "sequence": "115",
+  "delivery_status": "PASS",
+  "page_id": "4228aa46-08ae-810a-bcbe-f6aa3d29f1f5",
+  "page_url": "https://app.notion.com/p/115-18-24-27-4228aa4608ae810abcbef6aa3d29f1f5",
+  "gmail": {
+    "message_id": "1a20db164a99fe8d",
+    "subject": "115｜出エジプト記18:24–27",
+    "sent_verified": true
+  },
+  "completed_at": "2026-11-24T13:14:55Z",
+  "verse_count": 4,
+  "token_count": 51,
+  "WORK_JSON2_QUALITY": "PASS",
+  "image_status": "PASS",
+  "cover_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "status": "BOUNDARY_PASS",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [],
+    "workflow_notes": [],
+    "finalization_sha256": "a889618cf677f5bf8cf1083f43c90bee2d8d81e607ede7f224eb964db7b77798",
+    "disclosed_in_email": true
+  }
+}
