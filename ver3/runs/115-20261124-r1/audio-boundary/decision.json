@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0-work-boundary-decision",
+  "run_id": "115-20261124-r1",
+  "report_sha256": "d724939d4c4c746bf1bfc321265153bb79d5c6b3213f7b55f51536c39ccd92bf",
+  "action": "DELIVER_CURRENT",
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-24T13:05:20Z",
+  "evidence": "全4節・8件の冒頭/末尾について、期待する各3token、heard、音響上の説明、隣節の語、known_findingsをWorkが全件照合した。全件で期待語が聞き取られたとの観察があり、problem_edges・既知指摘・欠落節は0。隣節混入・語末欠落や切断位置を動かす根拠・提案秒がないため、詳査0回・修復0回・候補0件として今回RUNの現行音声を採用する。抜粋内側の切断端は判定せず、境界の観察結果を全語順・節中央の脱落確認へ拡大しない。全内容は未検品でfull_content_verified=false。API2要求はすべてHTTP200、抜粋計32秒、保守的予約0.079395 USD、実usage由来見積0.01709 USD。API利用不能・予算上限到達・修復失敗なし。"
+}
