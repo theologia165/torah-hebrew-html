@@ -1,0 +1,37 @@
+{
+  "run_id": "116-20261125-r1",
+  "input_sha256": "3510c8663ea195950057dbfd7256a1832798013654b0435943805f8f0cf00292",
+  "manifest_sha256": "b8b934ab6de50275b45f27c92519145714e00f309bebc7143a3410ce1c8a14f0",
+  "audio_sha256": {
+    "19:1": "40f8a621d6b3e831b5d4511644675a7a41ee1432f3256d277b651ac2610a34f4",
+    "19:2": "007fd19195844d8548fe6e51479ae1f8023a7caa2939a2f79e01fb1326461244",
+    "19:3": "db1e75f4d817dfddae929edc9d97930b078381ee9302c9c82c4bea8472d21ade",
+    "19:4": "6f97175989f6e3837b1af081d3fb44e565645637b260ece723f0b5e43ba5ee34",
+    "19:5": "ff22669cfb45818715c182cccf799206c6fccc1b20e4bf3a6e0c2ba191a77176",
+    "19:6": "45aa35cf14655e3553f511ed13e2a6cdda005aab6a355ec87550a91bea6dbe19"
+  },
+  "observations": [
+    {
+      "id": "19:1/head/context",
+      "ref": "19:1",
+      "side": "context",
+      "audio_sha256": "a6e697accbd5f97954d678d03c06721da6cad008bcdfca35c927b6c15ec86c7e",
+      "start": 0,
+      "end": 8.159291,
+      "cut_seconds": 2.159291,
+      "source_cut_seconds": 2.159291,
+      "expected": "בַּחֹדֶשׁ הַשְּׁלִישִׁי לְצֵאת",
+      "other_edge": "",
+      "expected_order": "other_edge then expected",
+      "cache_key": "a6a76ea1a686561de486f6fd324631a8539a11b2177826210be6f85314b98191",
+      "observation": {
+        "status": "PASS",
+        "heard": "בַּחֹדֶשׁ הַשְּׁלִישִׁי לְצֵאת",
+        "evidence": "The clip begins clearly with the expected words at the original cut point.",
+        "request_id": 3,
+        "suggested_cut_seconds": null
+      }
+    }
+  ],
+  "note": "suggested_cut_seconds is local to the excerpt; add start for original-source seconds. Work must judge it."
+}

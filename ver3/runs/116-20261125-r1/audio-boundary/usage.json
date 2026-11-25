@@ -75,13 +75,34 @@
     },
     {
       "id": 3,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 8.159291,
       "reserved_usd": 0.025737365599999996,
       "model": "gpt-audio-1.5",
       "clip_keys": [
         "a6a76ea1a686561de486f6fd324631a8539a11b2177826210be6f85314b98191"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_4debfe4987bb403e8a8e0fdcaeed5321",
+      "usage": {
+        "prompt_tokens": 382,
+        "completion_tokens": 73,
+        "total_tokens": 455,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 81,
+          "text_tokens": 301,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 73
+        }
+      },
+      "actual_usd": 0.0040745
     }
   ],
   "cache": {
@@ -170,9 +191,11 @@
       "suggested_cut_seconds": null
     },
     "a6a76ea1a686561de486f6fd324631a8539a11b2177826210be6f85314b98191": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "בַּחֹדֶשׁ הַשְּׁלִישִׁי לְצֵאת",
+      "evidence": "The clip begins clearly with the expected words at the original cut point.",
+      "request_id": 3,
+      "suggested_cut_seconds": null
     }
   }
 }
