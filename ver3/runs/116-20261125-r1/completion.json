@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "116-20261125-r1",
+  "sequence": "116",
+  "delivery_status": "PASS",
+  "page_id": "4238aa46-08ae-81b7-a2c7-f1bfba968a46",
+  "page_url": "https://app.notion.com/p/116-19-1-6-4238aa4608ae81b7a2c7f1bfba968a46",
+  "gmail": {
+    "message_id": "1a212d98d5eb7bd7",
+    "subject": "116｜出エジプト記19:1–6",
+    "sent_verified": true
+  },
+  "completed_at": "2026-11-25T13:16:30Z",
+  "verse_count": 6,
+  "token_count": 85,
+  "WORK_JSON2_QUALITY": "PASS",
+  "image_status": "PASS",
+  "cover_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "19:1/head",
+        "status": "FAIL",
+        "reason": "The word לְצֵאת is missing at the start edge."
+      }
+    ],
+    "workflow_notes": [],
+    "finalization_sha256": "bc253f7ca9e2fb37a26b05725d1f8dbfefe6c3efbc83f93eedbf3430ec6d1fda",
+    "disclosed_in_email": true
+  }
+}
