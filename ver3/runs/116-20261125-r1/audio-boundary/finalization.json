@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "116-20261125-r1",
+  "input_sha256": "3510c8663ea195950057dbfd7256a1832798013654b0435943805f8f0cf00292",
+  "manifest_sha256": "b8b934ab6de50275b45f27c92519145714e00f309bebc7143a3410ce1c8a14f0",
+  "audio_sha256": {
+    "19:1": "40f8a621d6b3e831b5d4511644675a7a41ee1432f3256d277b651ac2610a34f4",
+    "19:2": "007fd19195844d8548fe6e51479ae1f8023a7caa2939a2f79e01fb1326461244",
+    "19:3": "db1e75f4d817dfddae929edc9d97930b078381ee9302c9c82c4bea8472d21ade",
+    "19:4": "6f97175989f6e3837b1af081d3fb44e565645637b260ece723f0b5e43ba5ee34",
+    "19:5": "ff22669cfb45818715c182cccf799206c6fccc1b20e4bf3a6e0c2ba191a77176",
+    "19:6": "45aa35cf14655e3553f511ed13e2a6cdda005aab6a355ec87550a91bea6dbe19"
+  },
+  "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [
+    {
+      "edge": "19:1/head",
+      "status": "FAIL",
+      "reason": "The word לְצֵאת is missing at the start edge."
+    }
+  ],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-25T13:09:20Z",
+  "evidence": "全6節12観察と追加context1件をWorkが照合。初回19:1/headは先頭2語を認める一方、4秒抜粋の第3語不在でFAILとした。固定原音0–8.159291秒の詳査では期待3語 בחודש השלישי לצאת を全て聞き取り、元の開始2.159291秒で明瞭に始まるとの観察PASS、切断変更提案なし。抜粋内側終端の情報不足と整合し、外側開始を動かす根拠なし。修復せず今回RUNの現行音声を採用する。19:2/headも先頭2語は明瞭で観察PASSだが、第3語まで聞いたとの証明には拡張しない。他10辺は期待3語が一致、既知指摘とmissingは0。初回reportのFAIL記録は書き換えず、最終証明が未解決として保持する場合はメールにも初回指摘と詳査結果・判定限界を併記する。詳査1回、修復0回、候補0件。API3要求全てHTTP200、56.159291秒、予約0.1327673656 USD、実usage見積0.029367 USD、API利用不能・予算到達なし。境界検品であって節中央・全語順の検品ではない。",
+  "decision_sha256": "41243805ff51136f1f0ea3c1aa158fb169fa5fe3dfe74d30a1d6126bf2023e86",
+  "usage_sha256": "b9bb1e150e2dd41b7ee920044f901dde255a8137388877e06277b4dacfecbd3c",
+  "report_sha256": "6961eb051fbcd1715f39d3e312fd1c2d90871c64e14738b275564cbed8ac83ac",
+  "email_disclosure_required": true
+}
