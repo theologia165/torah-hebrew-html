@@ -72,6 +72,16 @@
         }
       },
       "actual_usd": 0.0125325
+    },
+    {
+      "id": 3,
+      "status": "RESERVED",
+      "audio_seconds": 8.159291,
+      "reserved_usd": 0.025737365599999996,
+      "model": "gpt-audio-1.5",
+      "clip_keys": [
+        "a6a76ea1a686561de486f6fd324631a8539a11b2177826210be6f85314b98191"
+      ]
     }
   ],
   "cache": {
@@ -158,6 +168,11 @@
       "evidence": "ending phrase is clearly heard",
       "request_id": 2,
       "suggested_cut_seconds": null
+    },
+    "a6a76ea1a686561de486f6fd324631a8539a11b2177826210be6f85314b98191": {
+      "status": "UNCERTAIN",
+      "heard": "",
+      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
     }
   }
 }
