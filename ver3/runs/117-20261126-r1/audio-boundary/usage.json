@@ -147,14 +147,35 @@
     },
     {
       "id": 5,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 8.0,
       "reserved_usd": 0.02588,
       "model": "gpt-audio-1.5",
       "clip_keys": [
         "e0558e1ff339d0ff5cd0552bdb332d231f9d30f90509adcbd0dd71f4f7700a1c",
         "fab9dbd7c71185d04f8cff160a1fc70f1cb0a0f9b466d1ce7c84753ff1c7b6e6"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_c445a27b632c430ea3ecc75530161e50",
+      "usage": {
+        "prompt_tokens": 460,
+        "completion_tokens": 116,
+        "total_tokens": 576,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 80,
+          "text_tokens": 380,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 116
+        }
+      },
+      "actual_usd": 0.00467
     }
   ],
   "cache": {
@@ -327,14 +348,18 @@
       "suggested_cut_seconds": null
     },
     "e0558e1ff339d0ff5cd0552bdb332d231f9d30f90509adcbd0dd71f4f7700a1c": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיְהִי קוֹל הַשּׁוֹפָר",
+      "evidence": "The clip clearly starts with the expected words without clipping.",
+      "request_id": 5,
+      "suggested_cut_seconds": null
     },
     "fab9dbd7c71185d04f8cff160a1fc70f1cb0a0f9b466d1ce7c84753ff1c7b6e6": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "יַעֲנֶנּוּ בְקֽוֹל",
+      "evidence": "The clip clearly ends with the expected words without clipping.",
+      "request_id": 5,
+      "suggested_cut_seconds": null
     }
   }
 }
