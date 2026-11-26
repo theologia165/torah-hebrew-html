@@ -1,0 +1,28 @@
+{
+  "status": "CREATED",
+  "run_id": "117-20261126-r1",
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "19:8/tail",
+        "status": "FAIL",
+        "reason": "extra words 'אֶת דִּבְרֵי' precede the expected ending"
+      },
+      {
+        "edge": "19:9/tail",
+        "status": "FAIL",
+        "reason": "extra words 'אֶת דִּבְרֵי' precede the expected ending"
+      }
+    ],
+    "workflow_notes": [],
+    "email_disclosure_required": true,
+    "finalization_sha256": "6b8b7a877c4428b426efac3ecad1eb43199261536c34b5d9cfe86dc6c8928108"
+  },
+  "page_id": "4248aa46-08ae-8163-aa21-d786db10f173",
+  "page_url": "https://app.notion.com/p/117-19-7-19-4248aa4608ae8163aa21d786db10f173"
+}
