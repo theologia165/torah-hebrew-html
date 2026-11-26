@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "117-20261126-r1",
+  "sequence": "117",
+  "delivery_status": "PASS",
+  "page_id": "4248aa46-08ae-8163-aa21-d786db10f173",
+  "page_url": "https://app.notion.com/p/117-19-7-19-4248aa4608ae8163aa21d786db10f173",
+  "gmail": {
+    "message_id": "1a2180385a8f09d3",
+    "subject": "117｜出エジプト記19:7–19",
+    "sent_verified": true
+  },
+  "completed_at": "2026-11-26T13:20:30Z",
+  "verse_count": 13,
+  "token_count": 204,
+  "WORK_JSON2_QUALITY": "PASS",
+  "image_status": "PASS",
+  "cover_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "19:8/tail",
+        "status": "FAIL",
+        "reason": "extra words 'אֶת דִּבְרֵי' precede the expected ending"
+      },
+      {
+        "edge": "19:9/tail",
+        "status": "FAIL",
+        "reason": "extra words 'אֶת דִּבְרֵי' precede the expected ending"
+      }
+    ],
+    "workflow_notes": [],
+    "finalization_sha256": "6b8b7a877c4428b426efac3ecad1eb43199261536c34b5d9cfe86dc6c8928108",
+    "disclosed_in_email": true
+  }
+}

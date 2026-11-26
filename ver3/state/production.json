@@ -12,20 +12,20 @@
   },
   "ketiv_qere_rule": "ケティーブとケレーがDBに併存する場合は、JSON1・JSON1.1に両方の語ID・本文・分解情報を保持し、HTMLには「ケティーブ」「ケレー」のラベル付きで両方を表示する。朗読用テキスト・音声語数照合・速度計算にはケレーのみを用い、ケティーブを重複して読まない。",
   "last_completed": {
-    "sequence": "116",
-    "run_id": "116-20261125-r1",
-    "page_id": "4238aa46-08ae-81b7-a2c7-f1bfba968a46",
-    "page_url": "https://app.notion.com/p/116-19-1-6-4238aa4608ae81b7a2c7f1bfba968a46",
+    "sequence": "117",
+    "run_id": "117-20261126-r1",
+    "page_id": "4248aa46-08ae-8163-aa21-d786db10f173",
+    "page_url": "https://app.notion.com/p/117-19-7-19-4248aa4608ae8163aa21d786db10f173",
     "status": "PASS",
-    "verse_count": 6,
-    "token_count": 85,
+    "verse_count": 13,
+    "token_count": 204,
     "WORK_JSON2_QUALITY": "PASS",
     "image_status": "PASS",
     "cover_status": "PASS",
-    "gmail_message_id": "1a212d98d5eb7bd7",
-    "gmail_subject": "116｜出エジプト記19:1–6",
+    "gmail_message_id": "1a2180385a8f09d3",
+    "gmail_subject": "117｜出エジプト記19:7–19",
     "gmail_sent_verified": true,
-    "completed_at": "2026-11-25T13:16:30Z",
+    "completed_at": "2026-11-26T13:20:30Z",
     "audio_quality_status": "CONTENT_REVIEW_PENDING",
     "audio_content_verified": false,
     "audio_boundary": {
@@ -36,13 +36,18 @@
       "repair_attempted": false,
       "unresolved": [
         {
-          "edge": "19:1/head",
+          "edge": "19:8/tail",
           "status": "FAIL",
-          "reason": "The word לְצֵאת is missing at the start edge."
+          "reason": "extra words 'אֶת דִּבְרֵי' precede the expected ending"
+        },
+        {
+          "edge": "19:9/tail",
+          "status": "FAIL",
+          "reason": "extra words 'אֶת דִּבְרֵי' precede the expected ending"
         }
       ],
       "workflow_notes": [],
-      "finalization_sha256": "bc253f7ca9e2fb37a26b05725d1f8dbfefe6c3efbc83f93eedbf3430ec6d1fda",
+      "finalization_sha256": "6b8b7a877c4428b426efac3ecad1eb43199261536c34b5d9cfe86dc6c8928108",
       "disclosed_in_email": true
     }
   },
@@ -51,14 +56,15 @@
   "next_passage": {
     "parasha": "Yitro",
     "parasha_jp": "イトロ",
-    "aliyah": 5,
+    "aliyah": 6,
     "book": "Exodus",
     "chapter": 19,
-    "start_verse": 7,
-    "end_verse": 19,
-    "display": "イトロ｜第5アリヤー｜出エジプト記19:7–19"
+    "end_chapter": 20,
+    "start_verse": 20,
+    "end_verse": 14,
+    "display": "イトロ｜第6アリヤー｜出エジプト記19:20–20:14"
   },
-  "next_sequence": "117",
+  "next_sequence": "118",
   "notion_api_version": "2026-03-11",
   "notion_output_rule": {
     "show_development_labels": false,
