@@ -1,0 +1,65 @@
+{
+  "run_id": "117-20261126-r1",
+  "input_sha256": "f5b79d8c9cbf08454a50f54d7e6739fdaa3046aad30b3528f756cb3e416c8bb8",
+  "manifest_sha256": "6855442a6318c6b8a76a8a1879bdf2df0286f69dca19333cb1124af3138ef818",
+  "audio_sha256": {
+    "19:7": "c0536c6c801b1e9a0378d11ba5286e378131ccd9f2cd111e89c3cde2011bbb97",
+    "19:8": "402a0476577fcbcbfec04714ad518a4a65d9dd457b0bac75bc414bc1bba456fe",
+    "19:9": "f7a5de8a2fed09e84ad4c79c9bf3227343cd3a9a683593b1b6a1d9b85900ef5a",
+    "19:10": "fe1bbe2401ba0c9b25b91bcc2777afb32dcbf7800ae51b8c09cb01020bf5fad8",
+    "19:11": "8739496552913369e79b4737ba20aff8cf29d4b51baba79113d2e05d80cda995",
+    "19:12": "927f15ce50eb2999c4871a27c6b0758662f72f2580613123ec59ed9b25ec2e70",
+    "19:13": "77f20600b821c757bfa6be361681fe3772615f9028e59de21f25c4ef7c586767",
+    "19:14": "6b9688c58704ecff7a3b9e2e01b86e975c987f5970bf68775400f3c9b207d3ee",
+    "19:15": "c857b7e152854c8d58d52d6f1406946f872a374ec093603b6d0535093841a31b",
+    "19:16": "debd50826fd154106c2f31f2b57292ed273d7610e6072dcd13c76ed1a77ffc8e",
+    "19:17": "47927fa43e117dcc7dd9d48d99a4b17af2c0c5cd57beb35af3534f9ee6d18ead",
+    "19:18": "1161f7e410c59e4c7a814a6973d18244750a8383b86f3456eb7fb6f7600f701e",
+    "19:19": "5bd059207568d9d99564af16f86f2f5b3fbfbb1de1f285d1e852d4601dba5d51"
+  },
+  "observations": [
+    {
+      "id": "19:8/tail/context",
+      "ref": "19:8",
+      "side": "context",
+      "audio_sha256": "93dc9c9f9e2bc121a7985f4772bae2a545656f5b08db0f912beca10a18d0bd1c",
+      "start": 31.100302,
+      "end": 43.100302,
+      "cut_seconds": 6.0,
+      "source_cut_seconds": 37.100302,
+      "expected": "הָעָם אֶל יְהוָֽה",
+      "other_edge": "וַיֹּאמֶר יְהוָה אֶל",
+      "expected_order": "expected then other_edge",
+      "cache_key": "d044c9606a52e56f6eeca5545b8e38561c6906ba43ed3e73d6890dd6b5c76f7e",
+      "observation": {
+        "status": "FAIL",
+        "heard": "וַיֹּאמֶר יְהוָה אֶל מֹשֶׁה",
+        "evidence": "ending words from the next verse are heard instead of expected tail",
+        "request_id": 6,
+        "suggested_cut_seconds": null
+      }
+    },
+    {
+      "id": "19:9/tail/context",
+      "ref": "19:9",
+      "side": "context",
+      "audio_sha256": "93dc9c9f9e2bc121a7985f4772bae2a545656f5b08db0f912beca10a18d0bd1c",
+      "start": 63.249335,
+      "end": 75.249335,
+      "cut_seconds": 6.0,
+      "source_cut_seconds": 69.249335,
+      "expected": "הָעָם אֶל יְהוָֽה",
+      "other_edge": "וַיֹּאמֶר יְהוָה אֶל",
+      "expected_order": "expected then other_edge",
+      "cache_key": "8df9cc8b95341fe93910bedd41ee686c4846012ecdd9d4a4e0a2b4f9aef3d419",
+      "observation": {
+        "status": "FAIL",
+        "heard": "וַיֹּאמֶר יְהוָה אֶל מֹשֶׁה",
+        "evidence": "ending words from the next verse are heard instead of expected tail",
+        "request_id": 6,
+        "suggested_cut_seconds": null
+      }
+    }
+  ],
+  "note": "suggested_cut_seconds is local to the excerpt; add start for original-source seconds. Work must judge it."
+}

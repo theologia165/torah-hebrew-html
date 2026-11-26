@@ -179,14 +179,35 @@
     },
     {
       "id": 6,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 24.0,
       "reserved_usd": 0.051645,
       "model": "gpt-audio-1.5",
       "clip_keys": [
         "d044c9606a52e56f6eeca5545b8e38561c6906ba43ed3e73d6890dd6b5c76f7e",
         "8df9cc8b95341fe93910bedd41ee686c4846012ecdd9d4a4e0a2b4f9aef3d419"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_b22329aa9b4a4a18b807cbf557c5a114",
+      "usage": {
+        "prompt_tokens": 639,
+        "completion_tokens": 131,
+        "total_tokens": 770,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 240,
+          "text_tokens": 399,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 131
+        }
+      },
+      "actual_usd": 0.0099875
     }
   ],
   "cache": {
@@ -373,14 +394,18 @@
       "suggested_cut_seconds": null
     },
     "d044c9606a52e56f6eeca5545b8e38561c6906ba43ed3e73d6890dd6b5c76f7e": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "FAIL",
+      "heard": "וַיֹּאמֶר יְהוָה אֶל מֹשֶׁה",
+      "evidence": "ending words from the next verse are heard instead of expected tail",
+      "request_id": 6,
+      "suggested_cut_seconds": null
     },
     "8df9cc8b95341fe93910bedd41ee686c4846012ecdd9d4a4e0a2b4f9aef3d419": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "FAIL",
+      "heard": "וַיֹּאמֶר יְהוָה אֶל מֹשֶׁה",
+      "evidence": "ending words from the next verse are heard instead of expected tail",
+      "request_id": 6,
+      "suggested_cut_seconds": null
     }
   }
 }
