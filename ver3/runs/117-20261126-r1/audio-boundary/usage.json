@@ -111,7 +111,7 @@
     },
     {
       "id": 4,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 24.0,
       "reserved_usd": 0.05372,
       "model": "gpt-audio-1.5",
@@ -122,6 +122,38 @@
         "9f2aeff073783e932a051a409e99264e13aea1824a509fab54f8e78859f3aa53",
         "6089cc6c51fa6e0419a645f763d4beed0255934c97d9d55939a0aefa9d5e85b3",
         "19bb773b28bf995ccae1c73ceb62a169f537b810847ddb7a58b8ee3c19b01908"
+      ],
+      "http_status": 200,
+      "api_request_id": "req_d8d1399acc3548e58a29e66c572aa61d",
+      "usage": {
+        "prompt_tokens": 1034,
+        "completion_tokens": 319,
+        "total_tokens": 1353,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 240,
+          "text_tokens": 794,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 319
+        }
+      },
+      "actual_usd": 0.012855
+    },
+    {
+      "id": 5,
+      "status": "RESERVED",
+      "audio_seconds": 8.0,
+      "reserved_usd": 0.02588,
+      "model": "gpt-audio-1.5",
+      "clip_keys": [
+        "e0558e1ff339d0ff5cd0552bdb332d231f9d30f90509adcbd0dd71f4f7700a1c",
+        "fab9dbd7c71185d04f8cff160a1fc70f1cb0a0f9b466d1ce7c84753ff1c7b6e6"
       ]
     }
   ],
@@ -253,31 +285,53 @@
       "suggested_cut_seconds": null
     },
     "412e0254498dc6f4558a6bb300c20cd99a9caa584c8ac6f6f48a0f04610ed5da": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיְהִי בַיּוֹם הַשְּׁלִישִׁי",
+      "evidence": "clear pronunciation of the expected beginning",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "a994550dde98b9e480e322af253e1a641583f8da3c69164fd6824853bbce4051": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "הָעָם אֲשֶׁר בַּמַּחֲנֶה",
+      "evidence": "ending words match expected tail",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "e0838c4f22101b768fe659e703453d08968f6b1d53621a2b91c989c08611e04b": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיּוֹצֵא מֹשֶׁה אֶת",
+      "evidence": "initial words clearly audible",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "9f2aeff073783e932a051a409e99264e13aea1824a509fab54f8e78859f3aa53": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וַיִּתְיַצְּבוּ בְּתַחְתִּית הָהָר",
+      "evidence": "ending phrase matches expected",
+      "request_id": 4,
+      "suggested_cut_seconds": null
     },
     "6089cc6c51fa6e0419a645f763d4beed0255934c97d9d55939a0aefa9d5e85b3": {
+      "status": "PASS",
+      "heard": "וְהַר סִינַי עָשַׁן",
+      "evidence": "beginning words clearly heard",
+      "request_id": 4,
+      "suggested_cut_seconds": null
+    },
+    "19bb773b28bf995ccae1c73ceb62a169f537b810847ddb7a58b8ee3c19b01908": {
+      "status": "PASS",
+      "heard": "כָּל הָהָר מְאֹד",
+      "evidence": "final words match expected tail",
+      "request_id": 4,
+      "suggested_cut_seconds": null
+    },
+    "e0558e1ff339d0ff5cd0552bdb332d231f9d30f90509adcbd0dd71f4f7700a1c": {
       "status": "UNCERTAIN",
       "heard": "",
       "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
     },
-    "19bb773b28bf995ccae1c73ceb62a169f537b810847ddb7a58b8ee3c19b01908": {
+    "fab9dbd7c71185d04f8cff160a1fc70f1cb0a0f9b466d1ce7c84753ff1c7b6e6": {
       "status": "UNCERTAIN",
       "heard": "",
       "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
