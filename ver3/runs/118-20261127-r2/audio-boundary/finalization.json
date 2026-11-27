@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "118-20261127-r2",
+  "input_sha256": "4ecb9fe6bbe9adfffcc0da36bf11e3fa99ad7027c57ba88143719583ffa28f10",
+  "manifest_sha256": "21020bd684a356618a0ea6d293324bb00575811510e3acd7e4d1f429f4098017",
+  "audio_sha256": {
+    "19:20": "84d14daf45edb76ef4d4803f6c3f55bd4acecbfbeb5add77fa091c778f9eb916",
+    "19:21": "63d66e7f8866c0a50f43daa222b5081db24dadc92943b4cb0193f6152404ae7a",
+    "19:22": "2de50b20898d506f9940edabffdd04a70270529c723a97ef4f0b17bd6f675d59",
+    "19:23": "f9259a915b3b86803e3e9779093fc861f2ba95b3b6880e0c885eea52467df7d1",
+    "19:24": "41c8f7fdb79ea752a6c9da3669982007a7d4a9b07922853458f2acee3a14e718",
+    "19:25": "d1e136c46bcb1f909aad7ff0bbe0d114f77436ad766112e75449542000086048",
+    "20:1": "7aaeeb3d67185aa3384ee0920c2df648ae90f02d69dc1bbfe92497bda55c4bb0",
+    "20:2": "a9819f1f82295655e5fbc36941a342aaa820754ca3c9fd55bbacc0a47897f536",
+    "20:3": "f374e7f9fe5c20122a5227184fd95ed42751e95a3371de1b1d4cee94fe2925ec",
+    "20:4": "249ee463b5d218b03974d0ff76b00a00ba99334020958409dcbb000a81f2d410",
+    "20:5": "ab379c3ba0c4485ee038cd3b0a3f045f12aabbbee2533a403fc048626f212f3a",
+    "20:6": "ca296f68a18ef7a8cbfd765327bb3b0d860828af8840a43cbc642ccdbbf777a3",
+    "20:7": "ab1c9fc0d32c4c9cdbe1163c713e4fa4256e79daeaf4f187a8f64ede808d9c27",
+    "20:8": "ff4f586bfe84e6c04f28bebedabd356df8e58622592180a4b302e43ed798e57c",
+    "20:9": "2d87fc14c95e50dbc20659c22a6e565829f167e89f1b54837551d3d2a4650974",
+    "20:10": "6c24113a93f4579b665d0ef8982fa2236eccf1e8e30f40e9d0d4d235153e2d69",
+    "20:11": "18d7d95b4965c142666cc15b591494811e341849d24a01a1bd81f5c7651aba01",
+    "20:12": "acc5c5e0f58c53466c572a14737ba3de10d4623dccd167e2f799b2922dc28a70",
+    "20:13": "ca95425f138bd7c592a836a859c71d1ac086376164e42e7513e204ed661aef79",
+    "20:14": "d1026f77388bc8324e3e76f94e2b94dc5d9d069822505d11239da2eaa2902740",
+    "20:15": "70d6e41c44319ceaebaa8a95fe8a5af6e03683ee2f217e815be93cd04bfb4022",
+    "20:16": "6a962d9553203125450a135289e6b7f318d48d4de12d62f416ab94fd633f8f4f",
+    "20:17": "a007a8bb69d14d563348f71ff6aa751078be667254caafef09787844f7e5f91c"
+  },
+  "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [
+    {
+      "edge": "19:24/head",
+      "status": "FAIL",
+      "reason": "The expected word יְהוָה is replaced by אֲדֹנָי, which does not match the expected edge words."
+    }
+  ],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-27 13:24:50 UTC",
+  "evidence": "全23節の40件のhead/tail/whole観察について、期待語・heard・根拠を本文と照合した。39件は一致。19:20/headの第三期待語が4秒内に記録されないこと自体は内側抜粋端の制限であり外側切断の証拠ではない。唯一のFAIL19:24/headは『וַיֹּאמֶר אֵלָיו אֲדֹנָי』を聞き取り、神名יהוהの慣用的朗読אדניを字面不一致としている。これは隣節混入や語中切断の証拠ではなく、修復用時刻の根拠もない。切断修復・追加API観察を依頼せず現行PocketTorah音声で配信する。自動報告のFAILを削除せずメールで当該判定理由とWorkの判断を開示する。検品範囲は冒頭末尾のみで全語内容PASSではない。",
+  "decision_sha256": "cf62f9b259652c5e69fd670fc138d1b82937e582844ab3323cc77be70d5015c8",
+  "usage_sha256": "2a56d7ee6ddb8f0dbe00f733d87b0c29fbc5eb121c8deb2c2a9053a2b6a58c16",
+  "report_sha256": "f0fcde33bdfba2f89f852b091c40962bacb448ac89cbf3570093240c94f63fd2",
+  "email_disclosure_required": true
+}
