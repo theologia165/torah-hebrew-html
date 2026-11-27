@@ -1,0 +1,23 @@
+{
+  "status": "CREATED",
+  "run_id": "118-20261127-r2",
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "19:24/head",
+        "status": "FAIL",
+        "reason": "The expected word יְהוָה is replaced by אֲדֹנָי, which does not match the expected edge words."
+      }
+    ],
+    "workflow_notes": [],
+    "email_disclosure_required": true,
+    "finalization_sha256": "541ee6891b4437ddff1483f868c4b2888525331d52e5d9a84c51cea49d10ec68"
+  },
+  "page_id": "4258aa46-08ae-81d0-9a63-fe802f8c9be1",
+  "page_url": "https://app.notion.com/p/118-19-20-20-17-4258aa4608ae81d09a63fe802f8c9be1"
+}
