@@ -219,7 +219,7 @@
     },
     {
       "id": 7,
-      "status": "RESERVED",
+      "status": "OBSERVED",
       "audio_seconds": 17.028004,
       "reserved_usd": 0.0412573064,
       "model": "gpt-audio-1.5",
@@ -228,7 +228,28 @@
         "253308f485ff5fd3ed09f2b2f054baff2ea97cf4c87a82e053c0dfbaf4749045",
         "d13a40472f577e0750e1e4fff3d8ef3918cca5b249e87cfdc7383885e4c02d98",
         "a815f57ede5c87ff2ffd0d6522547b67a983f6bc65de2dea9a49ccdbaac59ecb"
-      ]
+      ],
+      "http_status": 200,
+      "api_request_id": "req_c72138c1958441d5b8dce73565664938",
+      "usage": {
+        "prompt_tokens": 721,
+        "completion_tokens": 208,
+        "total_tokens": 929,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 169,
+          "text_tokens": 552,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0,
+          "text_tokens": 208
+        }
+      },
+      "actual_usd": 0.008868
     }
   ],
   "cache": {
@@ -485,24 +506,32 @@
       "suggested_cut_seconds": null
     },
     "f2869773190bd90152b0c78f329d526b5af33ecbbad689d3002a98b457cdf659": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "לֹא תִּגְנֹב",
+      "evidence": "clear pronunciation of expected words",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     },
     "253308f485ff5fd3ed09f2b2f054baff2ea97cf4c87a82e053c0dfbaf4749045": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "לֹֽא תַעֲנֶה בְרֵעֲךָ עֵד שָֽׁקֶר",
+      "evidence": "all expected words audible",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     },
     "d13a40472f577e0750e1e4fff3d8ef3918cca5b249e87cfdc7383885e4c02d98": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "לֹא תַחְמֹד בֵּית",
+      "evidence": "beginning words match expected",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     },
     "a815f57ede5c87ff2ffd0d6522547b67a983f6bc65de2dea9a49ccdbaac59ecb": {
-      "status": "UNCERTAIN",
-      "heard": "",
-      "evidence": "REQUEST_INTERRUPTED_OR_INCOMPLETE"
+      "status": "PASS",
+      "heard": "וְכֹל אֲשֶׁר לְרֵעֶֽךָ",
+      "evidence": "ending words match expected",
+      "request_id": 7,
+      "suggested_cut_seconds": null
     }
   }
 }
