@@ -2,24 +2,43 @@
   "schema_version": "1.0-work-handoff",
   "run_id": "118-20261127-r2",
   "sequence": "118",
-  "phase": "IMAGE",
+  "phase": "EMAIL_AND_STATE",
   "status": "WAITING_FOR_WORK",
-  "next_action": "GENERATE_QA_AND_UPLOAD_COVER",
+  "next_action": "SEND_SUCCESS_EMAIL_AND_ADVANCE_STATE",
   "stage_spec": {
-    "path": "ver3/spec/image-handoff.md",
-    "sha256": "3649b45ab77e5edf6e928e5b448c3cd1e5be96054f5f40171d24ab9de48df09b"
+    "path": "ver3/spec/email-delivery.md",
+    "sha256": "1028683e4c18db6da8cb52f70f7aa3b3c482b167ca33dc41019a73a6c1967907"
   },
   "required_inputs": [
+    "ver3/runs/118-20261127-r2/delivery.json",
     "ver3/runs/118-20261127-r2/json2.json",
-    "ver3/config/image-master.json",
-    "ver3/config/parasha-image/index.json",
-    "ver3/runs/118-20261127-r2/cover-upload.json"
+    "ver3/runs/118-20261127-r2/cover-ready.json",
+    "ver3/runs/118-20261127-r2/audio-quality.json",
+    "ver3/runs/118-20261127-r2/audio-boundary/finalization.json",
+    "ver3/runs/118-20261127-r2/audio-boundary/usage.json"
   ],
   "expected_outputs": [
-    "ver3/runs/118-20261127-r2/cover-ready.json"
+    "ver3/runs/118-20261127-r2/completion.json",
+    "ver3/state/production.json"
   ],
   "research_input_policy": "Use only this RUN json1.1 for research; never read an older RUN json2/json3, Notion page, image, or email as research input.",
   "details": {
-    "cover_ticket_status": "ISSUED_CURRENT"
+    "delivery_status": "PASS",
+    "page_url": "https://app.notion.com/p/118-19-20-20-17-4258aa4608ae81d09a63fe802f8c9be1",
+    "missing_audio_refs": [],
+    "missing_html_refs": [],
+    "cover_status": "PASS",
+    "audio_quality_status": "CONTENT_REVIEW_PENDING",
+    "audio_content_verified": false,
+    "audio_boundary_status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "audio_boundary_unresolved": [
+      {
+        "edge": "19:24/head",
+        "status": "FAIL",
+        "reason": "The expected word יְהוָה is replaced by אֲדֹנָי, which does not match the expected edge words."
+      }
+    ],
+    "audio_boundary_email_disclosure_required": true,
+    "completion_gate_reasons": []
   }
 }
