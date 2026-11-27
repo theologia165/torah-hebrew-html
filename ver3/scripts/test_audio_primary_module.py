@@ -13,6 +13,44 @@ from audio.processing import normalized_atempo
 
 
 def main():
+    # Standard Jewish Yitro-6 is WLC19:20-20:17, never a shortened reading.
+    counts = [16, 15, 10, 20, 19, 6, 7, 9, 7, 16, 21, 6,
+              17, 5, 6, 18, 26, 15, 2, 2, 2, 5, 15]
+    refs = [(19, v) for v in range(20, 26)] + [(20, v) for v in range(1, 18)]
+    yitro = {'passage': {'book': 'Exodus', 'chapter': 19,
+                         'start_verse': 20, 'end_chapter': 20, 'end_verse': 17},
+             'verses': [{'chapter': c, 'verse': v, 'words': [{}] * n}
+                        for (c, v), n in zip(refs, counts)]}
+    begin, end, mapping = pockettorah.source_range(yitro)
+    assert (begin, end) == ('19:20', '20:14')
+    assert mapping['word_count'] == 265 and mapping['wlc_verse_count'] == 23
+    source_fixture = {'parshiot': {'parsha': [{
+        '_id': 'Yitro', '_verse': 'Exodus 18:1 - 20:23',
+        'fullkriyah': {'aliyah': [{'_begin': '19:20', '_end': '20:14',
+                                 '_num': '6'}]}}]}}
+    tree_fixture = {'tree': [{'path': 'data/torah/labels/Yitro-6.txt'}]}
+    with patch.object(pockettorah, 'get_bytes', side_effect=[
+            json.dumps(source_fixture).encode(), json.dumps(tree_fixture).encode()]):
+        resolved = pockettorah.resolve_source(yitro)
+    assert resolved['audio_base'] == 'Yitro-6'
+    assert resolved['verse_numbering_mapping'] == mapping
+    for bad in (dict(yitro, verses=yitro['verses'][:-1]),
+                dict(yitro, verses=list(reversed(yitro['verses'])))):
+        try:
+            pockettorah.source_range(bad)
+        except SystemExit:
+            pass
+        else:
+            raise AssertionError('Incomplete/reordered WLC range accepted')
+    yitro['verses'][-1]['words'] = [{}] * 14
+    try:
+        pockettorah.source_range(yitro)
+    except SystemExit:
+        pass
+    else:
+        raise AssertionError('Changed Yitro word count accepted')
+    assert pockettorah.source_range({'passage': {'book': 'Genesis', 'chapter': 1,
+           'start_verse': 1, 'end_verse': 2}}) == ('1:1', '1:2', None)
     # Reproduce the 093 last-word spill without applying 085's label shift.
     fixture_profile = {
         'id': 'boundary-test', 'audio_base': 'test-source',

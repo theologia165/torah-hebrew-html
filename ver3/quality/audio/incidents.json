@@ -199,6 +199,24 @@
       "pending_refs": [
         "6:24"
       ]
+    },
+    {
+      "id": "AUDIO-118-VERSE-NUMBERING",
+      "sequences": [
+        "118"
+      ],
+      "symptom": "WLC19:20–20:17の音源検索が0件となり音声生成前に停止した。旧状態範囲20:14では十戒の末尾が欠けた。",
+      "cause": "PocketTorahのaliyah.jsonはユダヤ教の節区分、MorphHBはWLCの分割を使用するが、resolve_sourceが両者の章節番号を直接比較していた。",
+      "evidence_level": "CURRENT_INPUT_PINNED_SOURCE_AND_ACTIONS_LOG",
+      "evidence": [
+        "Actions46005577916/job140527756767: PocketTorah aliyah mapping expected 1 match for 19:20-20:17, got []",
+        "PocketTorah8a23287221dd535966ee9914de9a03e71769a469/data/aliyah.json: Yitro6 19:20–20:14",
+        "118-20261127-r2/json1.1.json:23 WLC verses/265 tokens; WLC20:13–16 correspond to Jewish20:13 and WLC20:17 to Jewish20:14"
+      ],
+      "implementation_status": "BOUNDED_NUMBERING_ADAPTER_IMPLEMENTED",
+      "verification_status": "REGRESSION_PASS_PRODUCTION_RETRY_PENDING",
+      "regression": "test_audio_primary_module.py: exact23verse265word mapping to Yitro6; omitted/reordered verses and changedwordcount rejected; unrelated range unchanged; existing source fingerprint, silence, slowdown andffmpeg regression retained",
+      "remaining": "Resume same118-r2, confirm source labelcount, machine checks, boundary Workreview and delivery; code change alone is not closure."
     }
   ],
   "excluded_incidents": [
