@@ -211,12 +211,13 @@
       "evidence": [
         "Actions46005577916/job140527756767: PocketTorah aliyah mapping expected 1 match for 19:20-20:17, got []",
         "PocketTorah8a23287221dd535966ee9914de9a03e71769a469/data/aliyah.json: Yitro6 19:20–20:14",
-        "118-20261127-r2/json1.1.json:23 WLC verses/265 tokens; WLC20:13–16 correspond to Jewish20:13 and WLC20:17 to Jewish20:14"
+        "118-20261127-r2/json1.1.json:23 WLC verses/265 tokens; WLC20:13–16 correspond to Jewish20:13 and WLC20:17 to Jewish20:14",
+        "Actions46006148295:23 implemented verses and all40 boundary observations; no labelcount mismatch. 118/report manifest21020bd684a356618a0ea6d293324bb00575811510e3acd7e4d1f429f4098017"
       ],
-      "implementation_status": "BOUNDED_NUMBERING_ADAPTER_IMPLEMENTED",
-      "verification_status": "REGRESSION_PASS_PRODUCTION_RETRY_PENDING",
+      "implementation_status": "FIXED_BOUNDED_YITRO_6_AND_7_NUMBERING",
+      "verification_status": "118_SOURCE_BUILD_AND_MACHINE_PASS_BOUNDARY_REVIEWED",
       "regression": "test_audio_primary_module.py: exact23verse265word mapping to Yitro6; omitted/reordered verses and changedwordcount rejected; unrelated range unchanged; existing source fingerprint, silence, slowdown andffmpeg regression retained",
-      "remaining": "Resume same118-r2, confirm source labelcount, machine checks, boundary Workreview and delivery; code change alone is not closure."
+      "remaining": "118 final delivery pending; full-content audio verification remains pending. Yitro7 source lookup and full9verse coverage regression-tested; real source labelcount will still be checked by build at next RUN."
     }
   ],
   "excluded_incidents": [

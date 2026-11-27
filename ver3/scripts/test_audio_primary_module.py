@@ -51,6 +51,24 @@ def main():
         raise AssertionError('Changed Yitro word count accepted')
     assert pockettorah.source_range({'passage': {'book': 'Genesis', 'chapter': 1,
            'start_verse': 1, 'end_verse': 2}}) == ('1:1', '1:2', None)
+    # The following standard aliyah uses the same three-verse numbering shift.
+    seventh = {'passage': {'book': 'Exodus', 'chapter': 20,
+                           'start_verse': 18, 'end_verse': 26},
+               'verses': [{'chapter': 20, 'verse': v, 'words': [{}]}
+                          for v in range(18, 27)]}
+    assert pockettorah.source_range(seventh)[:2] == ('20:15', '20:23')
+    source_fixture['parshiot']['parsha'][0]['fullkriyah']['aliyah'] = [
+        {'_begin': '20:15', '_end': '20:23', '_num': '7'}]
+    tree_fixture['tree'][0]['path'] = 'data/torah/labels/Yitro-7.txt'
+    with patch.object(pockettorah, 'get_bytes', side_effect=[
+            json.dumps(source_fixture).encode(), json.dumps(tree_fixture).encode()]):
+        assert pockettorah.resolve_source(seventh)['audio_base'] == 'Yitro-7'
+    try:
+        pockettorah.source_range(dict(seventh, verses=seventh['verses'][:-1]))
+    except SystemExit:
+        pass
+    else:
+        raise AssertionError('Incomplete Yitro-7 WLC range accepted')
     # Reproduce the 093 last-word spill without applying 085's label shift.
     fixture_profile = {
         'id': 'boundary-test', 'audio_base': 'test-source',

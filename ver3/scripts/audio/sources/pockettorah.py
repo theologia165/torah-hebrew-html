@@ -160,7 +160,7 @@ def verified_verse_boundaries(data, source_meta, source_duration, boundaries):
 
 
 def source_range(data):
-    """Translate only the verified Yitro-6 numbering difference.
+    """Translate the verified Yitro numbering differences.
     
     PocketTorah uses Jewish Exod20:13 for four short prohibitions and
     20:14 for coveting; MorphHB/WLC splits these into 20:13-17.
@@ -169,6 +169,20 @@ def source_range(data):
     p = data['passage']
     begin = f"{int(p['chapter'])}:{int(p['start_verse'])}"
     end = f"{int(p.get('end_chapter', p['chapter']))}:{int(p['end_verse'])}"
+    if (p['book'], begin, end) == ('Exodus', '20:18', '20:26'):
+        actual = [(int(v.get('chapter', p['chapter'])), int(v['verse']))
+                  for v in data['verses']]
+        if (actual != [(20, v) for v in range(18, 27)]
+                or any(not v['words'] for v in data['verses'])):
+            fail('MAPPING: Yitro-7 WLC verse identity/coverage changed')
+        # Actual label/word compatibility is still checked by build().
+        return '20:15', '20:23', {
+            'id': 'YITRO_7_JEWISH_TO_WLC',
+            'wlc_begin': begin, 'wlc_end': end,
+            'pockettorah_begin': '20:15', 'pockettorah_end': '20:23',
+            'wlc_verse_count': 9,
+            'word_count': sum(len(v['words']) for v in data['verses']),
+        }
     if (p['book'], begin, end) != ('Exodus', '19:20', '20:17'):
         return begin, end, None
     expected = [(19, v) for v in range(20, 26)] + [(20, v) for v in range(1, 18)]
@@ -205,8 +219,10 @@ def resolve_source(data):
             f'PocketTorah aliyah mapping expected 1 match for '
             f'{begin}-{end}, got {matches}')
     parasha, aliyah_number = matches[0]
-    if numbering and (parasha, aliyah_number) != ('Yitro', '6'):
-        fail('MAPPING: Yitro-6 numbering resolved to a different source')
+    if numbering:
+        expected_aliyah = '6' if numbering['id'] == 'YITRO_6_JEWISH_TO_WLC' else '7'
+        if (parasha, aliyah_number) != ('Yitro', expected_aliyah):
+            fail('MAPPING: Yitro numbering resolved to a different source')
     base = f'{parasha}-{aliyah_number}'
     audio_base = re.sub(r"[\s'’]+", '', base)
     tree = json.loads(get_bytes(
