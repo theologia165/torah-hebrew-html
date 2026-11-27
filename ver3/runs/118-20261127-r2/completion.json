@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "118-20261127-r2",
+  "sequence": "118",
+  "delivery_status": "PASS",
+  "page_id": "4258aa46-08ae-81d0-9a63-fe802f8c9be1",
+  "page_url": "https://app.notion.com/p/118-19-20-20-17-4258aa4608ae81d09a63fe802f8c9be1",
+  "gmail": {
+    "message_id": "1a21d371050ecdc6",
+    "subject": "118｜出エジプト記19:20–20:17",
+    "sent_verified": true,
+    "attachment_filename": "asaichi-torah-118.jpg",
+    "attachment_byte_size": 256449
+  },
+  "completed_at": "2026-11-27T13:35:08Z",
+  "verse_count": 23,
+  "token_count": 265,
+  "WORK_JSON2_QUALITY": "PASS",
+  "image_status": "PASS",
+  "cover_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "status": "DELIVER_WITH_UNRESOLVED_BOUNDARIES",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [
+      {
+        "edge": "19:24/head",
+        "status": "FAIL",
+        "reason": "The expected word יְהוָה is replaced by אֲדֹנָי, which does not match the expected edge words."
+      }
+    ],
+    "workflow_notes": [],
+    "finalization_sha256": "541ee6891b4437ddff1483f868c4b2888525331d52e5d9a84c51cea49d10ec68",
+    "disclosed_in_email": true
+  },
+  "readback": {
+    "notion_audio_count": 23,
+    "notion_html_count": 23,
+    "notion_devotional_count": 23,
+    "summary_matches": true,
+    "cover_type": "file",
+    "sent_body_matches": true,
+    "finalization_sha256_verified": true
+  },
+  "range_resolution": "Standard Jewish19:20–20:14 mapped to completeWLC19:20–20:17 before publication; r1 superseded, r2 delivered."
+}

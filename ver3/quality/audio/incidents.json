@@ -212,12 +212,12 @@
         "Actions46005577916/job140527756767: PocketTorah aliyah mapping expected 1 match for 19:20-20:17, got []",
         "PocketTorah8a23287221dd535966ee9914de9a03e71769a469/data/aliyah.json: Yitro6 19:20–20:14",
         "118-20261127-r2/json1.1.json:23 WLC verses/265 tokens; WLC20:13–16 correspond to Jewish20:13 and WLC20:17 to Jewish20:14",
-        "Actions46006148295:23 implemented verses and all40 boundary observations; no labelcount mismatch. 118/report manifest21020bd684a356618a0ea6d293324bb00575811510e3acd7e4d1f429f4098017"
+        "118-r2 delivery PASS:23audio/23HTML, source265labels/265words, Gmail Sent1a21d371050ecdc6"
       ],
-      "implementation_status": "FIXED_BOUNDED_YITRO_6_AND_7_NUMBERING",
-      "verification_status": "118_SOURCE_BUILD_AND_MACHINE_PASS_BOUNDARY_REVIEWED",
+      "implementation_status": "BOUNDED_NUMBERING_ADAPTER_IMPLEMENTED",
+      "verification_status": "118_MAPPING_FIX_DELIVERED_SENT_VERIFIED",
       "regression": "test_audio_primary_module.py: exact23verse265word mapping to Yitro6; omitted/reordered verses and changedwordcount rejected; unrelated range unchanged; existing source fingerprint, silence, slowdown andffmpeg regression retained",
-      "remaining": "118 final delivery pending; full-content audio verification remains pending. Yitro7 source lookup and full9verse coverage regression-tested; real source labelcount will still be checked by build at next RUN."
+      "remaining": "番号対応障害は復旧・配信済み。境界の神名慣用読みの自動FAILはメール開示済み。全語内容検品は別途PENDING。Yitro7は番号検索・範囲の回帰検証済みで次RUNの実ラベル数検証は未実施。"
     }
   ],
   "excluded_incidents": [
