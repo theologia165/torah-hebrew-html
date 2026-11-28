@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0-boundary-finalization",
+  "run_id": "119-20261128-r1",
+  "input_sha256": "744bc43f42d7d5ccd0670c688feebbf745fcc1d0989b74f0292a80a3c784e1e7",
+  "manifest_sha256": "70dcf5feb4aea29b1e69674d8a0ed28a226960b6cf00607919b199b85b6b3953",
+  "audio_sha256": {
+    "20:18": "25a22d9a83043687ae4b343e268bd4d863f6e4c94a5192c039d12120a31d3725",
+    "20:19": "a3d47a18046c449dfec92bf37d298b41a0009086911e645d94bbe16b916db132",
+    "20:20": "ccb5c19925667c698282866f5994271cfdc84d6fd09a9e54af71dfed0f0b504e",
+    "20:21": "42059e054bde1d930282dcae84f11895e3399d32ef2addb00f7e15e1c87ee8e0",
+    "20:22": "658b3f00e44d8e9cd746e223f95c71fcb514f7cd6af1d4325f7106b5ce37d8a9",
+    "20:23": "b5dba44823c2163172903aca50bc35f87e3a3ddb949d5a56e44e86a4f826819a",
+    "20:24": "3e8f7e40434b92c8f2411c930e9a6d303d9637a2bdcae783c60c12411a1ed5b2",
+    "20:25": "ee602b33a89d11d86bc82034e62a12272e0d66b36ca9bf8784016e5c20667516",
+    "20:26": "f404d81e569907758d7ac4e796d9381993fef4bc5e3850c84ad420422ff48cd0"
+  },
+  "status": "BOUNDARY_PASS",
+  "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+  "full_content_verified": false,
+  "delivery_allowed": true,
+  "candidate_adopted": false,
+  "repair_attempted": false,
+  "unresolved": [],
+  "missing_audio_refs": [],
+  "workflow_notes": [],
+  "reviewer": "Work",
+  "reviewed_at": "2026-11-28 13:10:26 UTC",
+  "evidence": "全9節の冒頭・末尾18観察を、当該RUN本文の期待語、heard、音響根拠と照合した。20:18–23および20:25–26は両外側境界で期待する開始・終了を確認した観察。20:24/headは4秒内で冒頭2語מזבח אדמהが記録され、第三語が抜粋内で未記載であるが、これは内側の4秒抜粋端による観察限界であり、実音声の冒頭切断の根拠ではない。20:24/tailは最後の祝福句が全て聞こえる。隣節語の混入・語中切断の具体的証拠はなく、原音の切断時刻を変える根拠もないため、追加詳査・修復を依頼せずDELIVER_CURRENTとする。境界観察の範囲を越えて全語順・節中央の内容PASSとは認定しない。3要求すべてHTTP200、72秒、API障害・予算到達の記録なし。",
+  "decision_sha256": "1172208ab982fad389ce91e4d3a53260c354d26bd19b8f327908b918b6574dc1",
+  "usage_sha256": "770f16529be099d2fc14da8bb3bed83ec10d13bdeca65d68cb2a67472307c9e9",
+  "report_sha256": "3313d7cd137a1e9c1119eb5abf9f4bee2116a72c99c7913c11a98ce9d9eb74e6",
+  "email_disclosure_required": false
+}
