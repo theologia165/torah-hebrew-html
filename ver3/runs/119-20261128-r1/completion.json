@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0-work-completion",
+  "run_id": "119-20261128-r1",
+  "sequence": "119",
+  "delivery_status": "PASS",
+  "page_id": "4268aa46-08ae-81e9-9ea5-d60ddc9cfc97",
+  "page_url": "https://app.notion.com/p/119-20-18-26-4268aa4608ae81e99ea5d60ddc9cfc97",
+  "gmail": {
+    "message_id": "1a2224fbe6f9d93c",
+    "subject": "119｜出エジプト記20:18–26",
+    "sent_verified": true
+  },
+  "completed_at": "2026-11-28T13:19:49Z",
+  "verse_count": 9,
+  "token_count": 133,
+  "WORK_JSON2_QUALITY": "PASS",
+  "image_status": "PASS",
+  "cover_status": "PASS",
+  "audio_quality_status": "CONTENT_REVIEW_PENDING",
+  "audio_content_verified": false,
+  "audio_boundary": {
+    "status": "BOUNDARY_PASS",
+    "scope": "ALL_IMPLEMENTED_VERSE_HEADS_AND_TAILS_ONLY",
+    "full_content_verified": false,
+    "candidate_adopted": false,
+    "repair_attempted": false,
+    "unresolved": [],
+    "workflow_notes": [],
+    "finalization_sha256": "cefde2ee967b8eecafa60fb3c9f0d9e469edb233d485fee93395e0c0a31409c0",
+    "disclosed_in_email": true
+  }
+}
